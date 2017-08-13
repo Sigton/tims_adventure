@@ -20,6 +20,10 @@ BLACK = (0, 0, 0)
 
 # Terrain Generation Constants
 
+chunk_w = 20
+chunk_h = 15
+num_tiles = chunk_w * chunk_h
+
 # The number of different tiles
 # that make up the ground
 tile_range = [0, 0]
