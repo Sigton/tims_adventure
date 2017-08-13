@@ -7,6 +7,11 @@ This file holds the class for the
 tiles that make up the ground.
 """
 
+# Spritesheet data
+# This is where each tile can be found on terrain.png
+
+generic_ground = (0, 0, 48, 48)
+
 
 class Tile(pygame.sprite.Sprite):
 
