@@ -17,3 +17,9 @@ DISPLAY_SIZE = (DISPLAY_WIDTH, DISPLAY_HEIGHT)
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+
+# Terrain Generation Constants
+
+# The number of different tiles
+# that make up the ground
+tile_range = [0, 0]
