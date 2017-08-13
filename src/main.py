@@ -21,6 +21,9 @@ class Main:
 
         self.clock = pygame.time.Clock()
 
+        self.character = pygame.Surface([48, 48])
+        self.character.fill(constants.BLACK)
+
     def run(self):
 
         game_exit = False
@@ -33,6 +36,8 @@ class Main:
                     game_exit = True
 
             self.display.fill(constants.WHITE)
+
+            self.display.blit(self.character, (200, 200))
 
             pygame.display.update()
             self.clock.tick()
