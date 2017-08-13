@@ -1,7 +1,7 @@
 import pygame
 import random
 
-from src import tiles
+from src import constants, tiles
 
 """
 chunks.py
@@ -18,10 +18,4 @@ saved in the save file and assigned to a location.
 # an array of coordinates
 # as to where that chunk
 # can be found.
-seeds = dict()
-
-
-def create_new_seed():
-
-    # Generates a new random seed
-    pass
+seeds = {}
