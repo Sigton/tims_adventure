@@ -13,9 +13,14 @@ Each chunk has it's unique seed, which is
 saved in the save file and assigned to a location.
 """
 
-# The key is the seed,
+# The key is the seed of the chunk,
 # and then the value is
 # an array of coordinates
 # as to where that chunk
 # can be found.
-seeds = {}
+world_map = {}
+
+def load(chunk):
+
+    # Loads a chunk from the save data
+    pass
