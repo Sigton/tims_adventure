@@ -35,8 +35,8 @@ tile_range = [0, 0]
 # Assorted variables
 
 dir_to_movements = {
-    "U": (0, tile_h),
-    "D": (0, -tile_h),
-    "R": (-tile_w, 0),
-    "L": (tile_w, 0)
+    "U": (0, 1),
+    "D": (0, -1),
+    "R": (-1, 0),
+    "L": (1, 0)
 }
