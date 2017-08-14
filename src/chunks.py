@@ -16,12 +16,13 @@ saved in the save file and assigned to a location.
 
 class ChunkController:
 
-    # The key is the seed of the chunk,
-    # and then the value is
-    # an array of coordinates
-    # as to where that chunk
-    # can be found.
-    world_map = {}
+    def __init__(self):
+
+        # The key is a 4 digit string
+        # to locate the chunk,
+        # and then the value is that
+        # chunks seed.
+        self.world_map = {}
 
     @staticmethod
     def load(chunk):
