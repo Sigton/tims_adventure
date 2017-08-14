@@ -80,16 +80,14 @@ class ChunkController:
 
         self.move_chunks((self.world_offset_x, self.world_offset_y))
 
-    def draw_chunk(self, chunk, display):
+    def draw(self, display):
 
         # Takes a group of tile sprites
         # and draws them to the display
 
-        if chunk not in self.map_tiles:
-            return
-
-        chunk_to_draw = self.map_tiles[chunk]
-        chunk_to_draw.draw(display)
+        for chunk in self.live_chunks:
+            chunk_to_draw = self.map_tiles[chunk]
+            chunk_to_draw.draw(display)
 
     def move_chunks(self, movement):
 

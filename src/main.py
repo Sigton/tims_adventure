@@ -71,7 +71,7 @@ class Main:
                         elif event.key == K_RIGHT:
                             direction += "R"
                             in_movement = True
-            print(direction)
+
             if in_movement and moving == 0:
 
                 moving = 8
@@ -95,7 +95,7 @@ class Main:
 
             self.display.fill(constants.WHITE)
 
-            self.chunk_controller.draw_chunk("0000", self.display)
+            self.chunk_controller.draw(self.display)
             self.player_group.draw(self.display)
 
             pygame.display.update()
