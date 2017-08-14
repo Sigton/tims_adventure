@@ -26,6 +26,9 @@ class ChunkController:
         self.map_tiles = {}
         self.chunk_pos = {}
 
+        self.world_offset_x = 0
+        self.world_offset_y = 0
+
         # temporary - while in dev
         self.create_chunk("0000")
 
