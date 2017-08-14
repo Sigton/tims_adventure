@@ -25,7 +25,9 @@ class ChunkController:
         self.map_seeds = {}
         self.map_tiles = {}
 
+        # temporary - while in dev
         self.load("0000")
+        self.create_chunk("0000")
 
     def load(self, chunk):
 
