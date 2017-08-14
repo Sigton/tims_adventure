@@ -1,7 +1,7 @@
 import pygame
 import json
 
-from src import constants, tiles
+from src import tiles
 
 """
 chunks.py
@@ -13,25 +13,28 @@ Each chunk has it's unique seed, which is
 saved in the save file and assigned to a location.
 """
 
-# The key is the seed of the chunk,
-# and then the value is
-# an array of coordinates
-# as to where that chunk
-# can be found.
-world_map = {}
 
+class ChunkController:
 
-def load(chunk):
+    # The key is the seed of the chunk,
+    # and then the value is
+    # an array of coordinates
+    # as to where that chunk
+    # can be found.
+    world_map = {}
 
-    # Loads a chunk from the save data
+    @staticmethod
+    def load(chunk):
 
-    # Open the save file
-    with open("src/saves/maps.json", "r") as infile:
-        data = json.load(infile)
+        # Loads a chunk from the save data
 
-        if chunk not in data:
-            infile.close()
-            return None
-        else:
-            infile.close()
-            return data[chunk]
+        # Open the save file
+        with open("src/saves/maps.json", "r") as infile:
+            data = json.load(infile)
+
+            if chunk not in data:
+                infile.close()
+                return None
+            else:
+                infile.close()
+                return data[chunk]
