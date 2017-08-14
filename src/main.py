@@ -3,6 +3,12 @@ from pygame.locals import *
 
 from src import constants, chunks
 
+"""
+main.py
+
+This is where the magic happens.
+"""
+
 
 class Main:
 
