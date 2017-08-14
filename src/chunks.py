@@ -21,11 +21,15 @@ class ChunkController:
 
         # The key is a 4 digit string
         # to locate the chunk,
-        # and then the value is that
-        # chunks seed.
+        # and then the value is data
+        # about the chunk.
         self.map_seeds = {}
         self.map_tiles = {}
         self.chunk_pos = {}
+
+        # All the chunks that
+        # are currently being updated
+        self.live_chunks = []
 
         self.world_offset_x = 0
         self.world_offset_y = 0
@@ -72,6 +76,8 @@ class ChunkController:
 
         self.chunk_pos[chunk] = (chunk_x, chunk_y)
 
+        self.live_chunks.append(chunk)
+
     def draw_chunk(self, chunk, display):
 
         # Takes a group of tile sprites
@@ -82,3 +88,10 @@ class ChunkController:
 
         chunk_to_draw = self.map_tiles[chunk]
         chunk_to_draw.draw(display)
+
+    def move_chunks(self, movement):
+
+        # Moves all of the live chunks
+        # by a certain amount.
+
+        pass
