@@ -14,6 +14,8 @@ tiles that make up the ground.
 
 generic_ground = (0, 0, 48, 48)
 
+tiles = [generic_ground]
+
 
 class Tile(pygame.sprite.Sprite):
 
