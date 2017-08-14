@@ -1,7 +1,7 @@
 import pygame
 from pygame.locals import *
 
-from src import constants
+from src import constants, chunks
 
 
 class Main:
@@ -21,8 +21,7 @@ class Main:
 
         self.clock = pygame.time.Clock()
 
-        self.character = pygame.Surface([48, 48])
-        self.character.fill(constants.BLACK)
+        self.chunk_controller = chunks.ChunkController()
 
     def run(self):
 
@@ -37,7 +36,7 @@ class Main:
 
             self.display.fill(constants.WHITE)
 
-            self.display.blit(self.character, (200, 200))
+            self.chunk_controller.draw_chunk("0000", self.display)
 
             pygame.display.update()
             self.clock.tick()
