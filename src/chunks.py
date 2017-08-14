@@ -1,5 +1,6 @@
 import pygame
-import json, os
+import json
+import os
 
 from src import constants, tiles
 
@@ -75,6 +76,9 @@ class ChunkController:
 
         # Takes a group of tile sprites
         # and draws them to the display
+
+        if chunk not in self.map_tiles:
+            return
 
         chunk_to_draw = self.map_tiles[chunk]
         chunk_to_draw.draw(display)
