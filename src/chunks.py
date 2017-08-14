@@ -80,6 +80,19 @@ class ChunkController:
 
         self.move_chunks((self.world_offset_x, self.world_offset_y))
 
+    def delete_chunk(self, chunk):
+
+        # Removes a chunk that
+        # is not currently in use
+
+        if chunk not in self.live_chunks:
+            # Make sure the chunk is currently in use
+            return
+
+        self.live_chunks.remove(chunk)
+        del self.map_tiles[chunk]
+        del self.chunk_pos[chunk]
+
     def draw(self, display):
 
         # Takes a group of tile sprites
