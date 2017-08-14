@@ -62,3 +62,11 @@ class ChunkController:
                 y += 1
 
         self.map_tiles[chunk] = new_chunk
+
+    def draw_chunk(self, chunk, display):
+
+        # Takes a group of tile sprites
+        # and draws them to the display
+
+        chunk_to_draw = self.map_tiles[chunk]
+        chunk_to_draw.draw(display)
