@@ -1,6 +1,8 @@
 import pygame
 from pygame.locals import *
 
+import sys
+
 from src import constants, chunks, player
 
 """
@@ -36,6 +38,7 @@ class Main:
     def run(self):
 
         game_exit = False
+        moving = False
 
         while not game_exit:
 
@@ -55,3 +58,6 @@ class Main:
 if __name__ == "__main__":
     game = Main()
     game.run()
+
+    pygame.quit()
+    sys.exit(0)
