@@ -31,7 +31,7 @@ class ChunkController:
         # are currently being updated
         self.live_chunks = []
 
-        self.world_offset_x = 0
+        self.world_offset_x = 24
         self.world_offset_y = 0
 
         # temporary - while in dev
@@ -78,6 +78,8 @@ class ChunkController:
 
         self.live_chunks.append(chunk)
 
+        self.move_chunks((self.world_offset_x, self.world_offset_y))
+
     def draw_chunk(self, chunk, display):
 
         # Takes a group of tile sprites
@@ -93,6 +95,9 @@ class ChunkController:
 
         # Moves all of the live chunks
         # by a certain amount.
+
+        self.world_offset_x += movement[0]
+        self.world_offset_y += movement[1]
 
         for chunk in self.live_chunks:
             self.chunk_pos[chunk] = (self.chunk_pos[chunk][0]+movement[0],
