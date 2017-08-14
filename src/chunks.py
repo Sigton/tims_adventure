@@ -116,3 +116,7 @@ class ChunkController:
 
             [x.realign(self.chunk_pos[chunk][0],
                        self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
+
+    def get_current_chunk_id(self):
+
+        pass
