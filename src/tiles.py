@@ -36,3 +36,8 @@ class Tile(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x*constants.tile_w
         self.rect.y = y*constants.tile_h
+
+    def realign(self, x, y):
+
+        self.rect.x = x * constants.tile_w
+        self.rect.y = y * constants.tile_h

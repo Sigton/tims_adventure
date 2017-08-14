@@ -94,4 +94,9 @@ class ChunkController:
         # Moves all of the live chunks
         # by a certain amount.
 
-        pass
+        for chunk in self.live_chunks:
+
+            self.chunk_pos[chunk] = (self.chunk_pos[chunk][0]+movement[0],
+                                     self.chunk_pos[chunk][1]+movement[1])
+
+            self.map_tiles[chunk].realign()
