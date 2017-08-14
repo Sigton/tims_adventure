@@ -71,6 +71,8 @@ class Main:
 
                 movement = constants.dir_to_movements[direction]
 
+                self.chunk_controller.move_chunks(movement)
+
                 moving = False
                 direction = ""
 

@@ -95,8 +95,8 @@ class ChunkController:
         # by a certain amount.
 
         for chunk in self.live_chunks:
-
             self.chunk_pos[chunk] = (self.chunk_pos[chunk][0]+movement[0],
                                      self.chunk_pos[chunk][1]+movement[1])
 
-            self.map_tiles[chunk].realign()
+            [x.realign(self.chunk_pos[chunk][0],
+                       self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
