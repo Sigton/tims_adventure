@@ -26,7 +26,7 @@ class Tile(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = spritesheet.SpriteSheet("src/resources/terrain.png").get_image(
+        self.image = spritesheet.SpriteSheet("resources/terrain.png").get_image(
             sprite_sheet_data[0],
             sprite_sheet_data[1],
             sprite_sheet_data[2],

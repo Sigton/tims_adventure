@@ -1,5 +1,5 @@
 import pygame
-import json
+import json, os
 
 from src import constants, tiles
 
@@ -34,7 +34,7 @@ class ChunkController:
         # Loads a chunk from the save data
 
         # Open the save file
-        with open("src/saves/maps.json", "r") as infile:
+        with open(os.path.join("saves", "maps.json"), "r") as infile:
             data = json.load(infile)
             infile.close()
 
