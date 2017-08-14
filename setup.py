@@ -8,7 +8,8 @@ include_files = ["src"]
 packages = ["pygame",
             "os",
             "random",
-            "json"]
+            "json",
+            "operator"]
 
 excludes = ["tkinter",
             "numpy",
