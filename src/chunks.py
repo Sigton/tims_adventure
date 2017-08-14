@@ -66,6 +66,11 @@ class ChunkController:
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
 
+        chunk_x = int(chunk[0:2])*constants.tile_w*constants.chunk_w
+        chunk_y = int(chunk[2:4])*constants.tile_h*constants.chunk_h
+
+        self.chunk_pos[chunk] = (chunk_x, chunk_y)
+
     def draw_chunk(self, chunk, display):
 
         # Takes a group of tile sprites
