@@ -55,28 +55,32 @@ class Main:
 
                 elif event.type == KEYDOWN:
 
-                    if not in_movement:
+                    if not (in_movement and len(direction) > 2):
                         if event.key == K_UP:
-                            direction = "U"
+                            direction += "U"
                             in_movement = True
 
                         elif event.key == K_DOWN:
-                            direction = "D"
+                            direction += "D"
                             in_movement = True
 
                         elif event.key == K_LEFT:
-                            direction = "L"
+                            direction += "L"
                             in_movement = True
 
                         elif event.key == K_RIGHT:
-                            direction = "R"
+                            direction += "R"
                             in_movement = True
-
+            print(direction)
             if in_movement and moving == 0:
 
                 moving = 8
 
-                movement = constants.dir_to_movements[direction]
+                if len(direction) > 1:
+                    movements = [constants.dir_to_movements[d] for d in list(direction)]
+                    movement = tuple(map(operator.add, movements[0], movements[1]))
+                else:
+                    movement = constants.dir_to_movements[direction]
                 movement_interval = tuple(map(operator.floordiv, movement,
                                               [moving for x in range(len(movement))]))
 
