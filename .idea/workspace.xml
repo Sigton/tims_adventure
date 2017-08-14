@@ -35,8 +35,8 @@
           <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/chunks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="772">
-                  <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+                <state relative-caret-position="692">
+                  <caret line="124" column="58" lean-forward="false" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -186,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Created chunks.py, added random to required packages">
-      <created>1502665761398</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1502665761398</updated>
     </task>
     <task id="LOCAL-00014" summary="Updated constants.py">
       <created>1502665906540</created>
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502752855265</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Created get_current_chunk_id method">
+      <created>1502753584280</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1502753584280</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,7 +587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player now draws to the display" />
     <MESSAGE value="Merged load and create_chunk" />
     <MESSAGE value="Created offset attributes" />
     <MESSAGE value="Chunks now set their real position on creation" />
@@ -612,7 +611,8 @@
     <MESSAGE value="Added delete chunk method" />
     <MESSAGE value="Added more seeds" />
     <MESSAGE value="Can assign a starting offset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can assign a starting offset" />
+    <MESSAGE value="Created get_current_chunk_id method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created get_current_chunk_id method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -894,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+        <state relative-caret-position="692">
+          <caret line="124" column="58" lean-forward="false" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

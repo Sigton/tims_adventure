@@ -119,4 +119,11 @@ class ChunkController:
 
     def get_current_chunk_id(self):
 
-        pass
+        current_chunk_x = str((abs(self.world_offset_x+480))//960)
+        while len(current_chunk_x) < 2:
+            current_chunk_x = "0" + current_chunk_x
+        current_chunk_y = str((abs(self.world_offset_y+360))//720)
+        while len(current_chunk_y) < 2:
+            current_chunk_y = "0" + current_chunk_y
+
+        return current_chunk_x + current_chunk_y
