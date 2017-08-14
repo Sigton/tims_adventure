@@ -31,3 +31,12 @@ num_tiles = chunk_w * chunk_h
 # The number of different tiles
 # that make up the ground
 tile_range = [0, 0]
+
+# Assorted variables
+
+dir_to_movements = {
+    "U": (0, tile_h),
+    "D": (0, -tile_h),
+    "R": (-tile_w, 0),
+    "L": (tile_w, 0)
+}

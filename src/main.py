@@ -68,6 +68,9 @@ class Main:
                             moving = True
 
             if moving:
+
+                movement = constants.dir_to_movements[direction]
+
                 moving = False
                 direction = ""
 
