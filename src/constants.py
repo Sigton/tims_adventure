@@ -20,6 +20,9 @@ BLACK = (0, 0, 0)
 
 # Terrain Generation Constants
 
+tile_w = 48
+tile_h = 48
+
 chunk_w = 20
 chunk_h = 15
 num_tiles = chunk_w * chunk_h

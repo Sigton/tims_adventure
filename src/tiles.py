@@ -1,6 +1,6 @@
 import pygame
 
-from src import spritesheet
+from src import constants, spritesheet
 
 """
 tiles.py
@@ -19,7 +19,7 @@ tiles = [generic_ground]
 
 class Tile(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet_data):
+    def __init__(self, sprite_sheet_data, x, y):
 
         # A tile is a 48x48 image that
         # is part of the ground.
@@ -32,3 +32,7 @@ class Tile(pygame.sprite.Sprite):
             sprite_sheet_data[2],
             sprite_sheet_data[3]
         )
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x*constants.tile_w
+        self.rect.y = y*constants.tile_h
