@@ -58,3 +58,5 @@ class ChunkController:
             if x % constants.chunk_w-1 == 0:
                 x = 0
                 y += 1
+
+        self.map_tiles[chunk] = new_chunk
