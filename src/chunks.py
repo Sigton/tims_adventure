@@ -100,4 +100,3 @@ class ChunkController:
 
             [x.realign(self.chunk_pos[chunk][0],
                        self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
-        print(self.chunk_pos[chunk])
