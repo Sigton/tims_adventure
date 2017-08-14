@@ -38,7 +38,10 @@ class Main:
     def run(self):
 
         game_exit = False
-        moving = False
+
+        in_movement = False
+        moving = 0
+
         direction = ""
 
         while not game_exit:
@@ -50,30 +53,36 @@ class Main:
 
                 elif event.type == KEYDOWN:
 
-                    if not moving:
+                    if not in_movement:
                         if event.key == K_UP:
                             direction = "U"
-                            moving = True
+                            in_movement = True
 
                         elif event.key == K_DOWN:
                             direction = "D"
-                            moving = True
+                            in_movement = True
 
                         elif event.key == K_LEFT:
                             direction = "L"
-                            moving = True
+                            in_movement = True
 
                         elif event.key == K_RIGHT:
                             direction = "R"
-                            moving = True
+                            in_movement = True
 
-            if moving:
+            if moving > 0:
+                moving -= 1
+
+            if in_movement:
+
+                moving = 10
 
                 movement = constants.dir_to_movements[direction]
 
                 self.chunk_controller.move_chunks(movement)
 
-                moving = False
+            if moving == 0 and in_movement:
+                in_movement = False
                 direction = ""
 
             self.display.fill(constants.WHITE)
