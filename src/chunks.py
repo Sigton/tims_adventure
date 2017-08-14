@@ -33,4 +33,5 @@ def load(chunk):
             infile.close()
             return None
         else:
+            infile.close()
             return data[chunk]
