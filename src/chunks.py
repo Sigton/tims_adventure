@@ -24,12 +24,12 @@ class ChunkController:
         # chunks seed.
         self.map_seeds = {}
         self.map_tiles = {}
+        self.chunk_pos = {}
 
         # temporary - while in dev
-        self.load("0000")
         self.create_chunk("0000")
 
-    def load(self, chunk):
+    def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
 
@@ -40,18 +40,18 @@ class ChunkController:
 
         self.map_seeds[chunk] = data[chunk]
 
-    def create_chunk(self, chunk):
-
         # Creates a group of tile objects
         # from the seed of the given chunk
 
         seed = self.map_seeds[chunk]
         new_chunk = pygame.sprite.Group()
 
+        # Split the string into each individual tile
         tile_data = [seed[i:i+2] for i in range(0, len(seed), 2)]
         x, y = 0, 0
         for n in tile_data:
 
+            # Create instances of the tiles
             tile = tiles.tiles[int(n)]
             new_chunk.add(tiles.Tile(tile, x, y))
 
@@ -60,6 +60,7 @@ class ChunkController:
                 x = 0
                 y += 1
 
+        # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
 
     def draw_chunk(self, chunk, display):
