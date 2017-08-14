@@ -1,5 +1,5 @@
 import pygame
-import random
+import json
 
 from src import constants, tiles
 
@@ -20,7 +20,17 @@ saved in the save file and assigned to a location.
 # can be found.
 world_map = {}
 
+
 def load(chunk):
 
     # Loads a chunk from the save data
-    pass
+
+    # Open the save file
+    with open("src/saves/maps.json", "r") as infile:
+        data = json.load(infile)
+
+        if chunk not in data:
+            infile.close()
+            return None
+        else:
+            return data[chunk]
