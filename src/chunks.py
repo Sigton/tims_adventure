@@ -61,7 +61,7 @@ class ChunkController:
 
             # Create instances of the tiles
             tile = tiles.tiles[int(n)]
-            new_chunk.add(tiles.Tile(tile, x, y))
+            new_chunk.add(tiles.Tile(tile, x, y, x, y))
 
             x += 1
             if x % constants.chunk_w == 0:
@@ -100,3 +100,4 @@ class ChunkController:
 
             [x.realign(self.chunk_pos[chunk][0],
                        self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
+        print(self.chunk_pos[chunk])

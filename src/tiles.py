@@ -19,7 +19,7 @@ tiles = [generic_ground]
 
 class Tile(pygame.sprite.Sprite):
 
-    def __init__(self, sprite_sheet_data, x, y):
+    def __init__(self, sprite_sheet_data, x, y, o_x, o_y):
 
         # A tile is a 48x48 image that
         # is part of the ground.
@@ -37,7 +37,10 @@ class Tile(pygame.sprite.Sprite):
         self.rect.x = x*constants.tile_w
         self.rect.y = y*constants.tile_h
 
+        self.offset_x = o_x
+        self.offset_y = o_y
+
     def realign(self, x, y):
 
-        self.rect.x = x * constants.tile_w
-        self.rect.y = y * constants.tile_h
+        self.rect.x = x+self.offset_x * constants.tile_w
+        self.rect.y = y+self.offset_y * constants.tile_h
