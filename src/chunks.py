@@ -34,8 +34,16 @@ class ChunkController:
         self.world_offset_x = start_x+24
         self.world_offset_y = start_y+0
 
-        # temporary - while in dev
-        self.create_chunk("0000")
+        # Select the 9 chunks around the players current position
+
+        current_chunk = self.get_current_chunk_id()
+        chunk_x = int(current_chunk[0:2])
+        chunk_y = int(current_chunk[2:4])
+        x_range = range(chunk_x-1, chunk_x+2)
+        y_range = range(chunk_y-1, chunk_y+2)
+
+        chunks_to_create = [[self.create_id(x_range[x], y_range[y])
+                             for x in range(3)] for y in range(3)]
 
     def create_chunk(self, chunk):
 
@@ -119,11 +127,17 @@ class ChunkController:
 
     def get_current_chunk_id(self):
 
-        current_chunk_x = str((abs(self.world_offset_x+480))//960)
-        while len(current_chunk_x) < 2:
-            current_chunk_x = "0" + current_chunk_x
-        current_chunk_y = str((abs(self.world_offset_y+360))//720)
-        while len(current_chunk_y) < 2:
-            current_chunk_y = "0" + current_chunk_y
+        return self.create_id((abs(self.world_offset_x+480))//960,
+                              (abs(self.world_offset_y+360))//720)
 
-        return current_chunk_x + current_chunk_y
+    @staticmethod
+    def create_id(x, y):
+
+        x = str(x)
+        while len(x) < 2:
+            x = "0" + x
+        y = str(y)
+        while len(y) < 2:
+            y = "0" + y
+
+        return x + y
