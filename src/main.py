@@ -77,7 +77,7 @@ class Main:
             self.player_group.draw(self.display)
 
             pygame.display.update()
-            self.clock.tick()
+            self.clock.tick(60)
 
 if __name__ == "__main__":
     game = Main()
