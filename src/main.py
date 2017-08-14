@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 import sys
+import operator
 
 from src import constants, chunks, player
 
@@ -41,6 +42,7 @@ class Main:
 
         in_movement = False
         moving = 0
+        movement_interval = (0, 0)
 
         direction = ""
 
@@ -70,20 +72,22 @@ class Main:
                             direction = "R"
                             in_movement = True
 
-            if moving > 0:
-                moving -= 1
+            if in_movement and moving == 0:
 
-            if in_movement:
-
-                moving = 10
+                moving = 8
 
                 movement = constants.dir_to_movements[direction]
+                movement_interval = tuple(map(operator.floordiv, movement,
+                                              [moving for x in range(len(movement))]))
 
-                self.chunk_controller.move_chunks(movement)
+            if moving > 0:
+                moving -= 1
+                self.chunk_controller.move_chunks(movement_interval)
 
             if moving == 0 and in_movement:
                 in_movement = False
                 direction = ""
+                movement_interval = (0, 0)
 
             self.display.fill(constants.WHITE)
 
