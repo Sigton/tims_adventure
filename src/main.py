@@ -30,7 +30,7 @@ class Main:
 
         self.clock = pygame.time.Clock()
 
-        self.chunk_controller = chunks.ChunkController()
+        self.chunk_controller = chunks.ChunkController(-960, -720)
 
         self.player_group = pygame.sprite.GroupSingle()
         self.player = player.Player()

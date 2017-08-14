@@ -17,7 +17,7 @@ saved in the save file and assigned to a location.
 
 class ChunkController:
 
-    def __init__(self):
+    def __init__(self, start_x, start_y):
 
         # The key is a 4 digit string
         # to locate the chunk,
@@ -31,8 +31,8 @@ class ChunkController:
         # are currently being updated
         self.live_chunks = []
 
-        self.world_offset_x = 24
-        self.world_offset_y = 0
+        self.world_offset_x = start_x+24
+        self.world_offset_y = start_y+0
 
         # temporary - while in dev
         self.create_chunk("0000")
