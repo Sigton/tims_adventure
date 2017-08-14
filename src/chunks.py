@@ -1,7 +1,7 @@
 import pygame
 import json
 
-from src import tiles
+from src import constants, tiles
 
 """
 chunks.py
@@ -22,20 +22,29 @@ class ChunkController:
         # to locate the chunk,
         # and then the value is that
         # chunks seed.
-        self.world_map = {}
+        self.map_seeds = {}
+        self.map_tiles = {}
 
-    @staticmethod
-    def load(chunk):
+        self.load("0000")
+
+    def load(self, chunk):
 
         # Loads a chunk from the save data
 
         # Open the save file
         with open("src/saves/maps.json", "r") as infile:
             data = json.load(infile)
+            infile.close()
 
-            if chunk not in data:
-                infile.close()
-                return None
-            else:
-                infile.close()
-                return data[chunk]
+        self.map_seeds[chunk] = data[chunk]
+
+    def create_chunk(self, chunk):
+
+        # Creates a group of tile objects
+        # from the seed of the given chunk
+
+        seed = self.map_seeds[chunk]
+        new_chunk = pygame.sprite.Group()
+
+        tile_data = [seed[i:i+2] for i in range(0, len(seed), 2)]
+        x, y = 0, 0
