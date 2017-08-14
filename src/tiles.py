@@ -13,8 +13,9 @@ tiles that make up the ground.
 # This is where each tile can be found on terrain.png
 
 generic_ground = (0, 0, 48, 48)
+water = (48, 0, 48, 48)
 
-tiles = [generic_ground]
+tiles = [generic_ground, water]
 
 
 class Tile(pygame.sprite.Sprite):
