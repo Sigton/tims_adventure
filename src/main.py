@@ -39,6 +39,7 @@ class Main:
 
         game_exit = False
         moving = False
+        direction = ""
 
         while not game_exit:
 
@@ -46,6 +47,29 @@ class Main:
                 if event.type == QUIT:
 
                     game_exit = True
+
+                elif event.type == KEYDOWN:
+
+                    if not moving:
+                        if event.key == K_UP:
+                            direction = "U"
+                            moving = True
+
+                        elif event.key == K_DOWN:
+                            direction = "D"
+                            moving = True
+
+                        elif event.key == K_LEFT:
+                            direction = "L"
+                            moving = True
+
+                        elif event.key == K_RIGHT:
+                            direction = "R"
+                            moving = True
+
+            if moving:
+                moving = False
+                direction = ""
 
             self.display.fill(constants.WHITE)
 
