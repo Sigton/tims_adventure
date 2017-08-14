@@ -50,15 +50,13 @@ class ChunkController:
 
         tile_data = [seed[i:i+2] for i in range(0, len(seed), 2)]
         x, y = 0, 0
-
         for n in tile_data:
 
             tile = tiles.tiles[int(n)]
             new_chunk.add(tiles.Tile(tile, x, y))
 
             x += 1
-
-            if x % constants.chunk_w-1 == 0:
+            if x % constants.chunk_w == 0:
                 x = 0
                 y += 1
 
