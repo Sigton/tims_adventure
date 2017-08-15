@@ -42,7 +42,7 @@ def generate_map(blueprint):
     print("Created pixel array with shape {}.".format(map_pix_arr.shape))
 
     chunks_wide = tuple(map(operator.floordiv, map_pix_arr.shape,
-                        (constants.chunk_w, constants.chunk_h)))
+                            (constants.chunk_w, constants.chunk_h)))
     num_chunks = chunks_wide[0] * chunks_wide[1]
     print("Preparing to arrange {} chunks....".format(num_chunks))
 
@@ -65,18 +65,27 @@ def generate_map(blueprint):
     print("Chunks flattened.")
 
     print("Iterating and rendering chunks.")
+    chunk_data = {}
     chunk_x, chunk_y = 0, 0
     for chunk in chunks:
 
         if not all(x == 16777215 for x in chunk):
 
-            None
+            chunk_idx, chunk_idy = chunk_x, chunk_y
+            while len(str(chunk_idx)) < 2:
+                chunk_idx = "0"+str(chunk_idx)
+
+            while len(str(chunk_idy)) < 2:
+                chunk_idy = "0"+str(chunk_idy)
+
+            chunk_data[chunk_idx+chunk_idy] = "".join([tile_colors[x] for x in chunk])
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:
             chunk_x = 0
             chunk_y += 1
 
+    print("Chunk data collected.")
 
 if __name__ == '__main__':
 
