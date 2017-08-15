@@ -35,8 +35,8 @@ class ChunkController:
         self.world_offset_y = start_y+0
 
         # Select the 9 chunks around the players current position
-
         current_chunk = self.get_current_chunk_id()
+
         chunk_x = int(current_chunk[0:2])
         chunk_y = int(current_chunk[2:4])
         x_range = range(chunk_x-1, chunk_x+2)
@@ -86,7 +86,7 @@ class ChunkController:
 
         self.live_chunks.append(chunk)
 
-        self.move_chunks((self.world_offset_x, self.world_offset_y))
+        self.move_chunks((self.world_offset_x, self.world_offset_y), True)
 
     def delete_chunk(self, chunk):
 
@@ -110,13 +110,13 @@ class ChunkController:
             chunk_to_draw = self.map_tiles[chunk]
             chunk_to_draw.draw(display)
 
-    def move_chunks(self, movement):
+    def move_chunks(self, movement, new_chunk):
 
         # Moves all of the live chunks
         # by a certain amount.
-
-        self.world_offset_x += movement[0]
-        self.world_offset_y += movement[1]
+        if not new_chunk:
+            self.world_offset_x += movement[0]
+            self.world_offset_y += movement[1]
 
         for chunk in self.live_chunks:
             self.chunk_pos[chunk] = (self.chunk_pos[chunk][0]+movement[0],

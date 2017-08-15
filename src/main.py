@@ -86,7 +86,7 @@ class Main:
 
             if moving > 0:
                 moving -= 1
-                self.chunk_controller.move_chunks(movement_interval)
+                self.chunk_controller.move_chunks(movement_interval, False)
 
             if moving == 0 and in_movement:
                 in_movement = False
