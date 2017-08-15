@@ -127,8 +127,8 @@ class ChunkController:
 
     def get_current_chunk_id(self):
 
-        return self.create_id((abs(self.world_offset_x+480))//960,
-                              (abs(self.world_offset_y+360))//720)
+        return self.create_id((abs(self.world_offset_x-480))//960,
+                              (abs(self.world_offset_y-360))//720)
 
     @staticmethod
     def create_id(x, y):
