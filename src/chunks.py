@@ -132,13 +132,14 @@ class ChunkController:
         tile_data = [seed[i:i + 2] for i in range(0, len(seed), 2)]
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].sprites():
-            tile += 1
+
             n.reuse(tiles.tiles[int(tile_data[tile])], x, y, x, y)
 
             x += 1
             if x % constants.chunk_w == 0:
                 x = 0
                 y += 1
+            tile += 1
 
         self.map_tiles[new_chunk] = self.map_tiles.pop(old_chunk)
 
