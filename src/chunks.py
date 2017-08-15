@@ -54,6 +54,10 @@ class ChunkController:
         if self.current_chunk != self.old_chunk:
             self.old_chunk = self.current_chunk
 
+            # Player has moved chunk
+            # We now removed chunks that are too far away
+            # And generate new ones
+
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
@@ -62,6 +66,9 @@ class ChunkController:
         with open(os.path.join("saves", "maps.json"), "r") as infile:
             data = json.load(infile)
             infile.close()
+
+        if chunk not in data:
+            return
 
         self.map_seeds[chunk] = data[chunk]
 
