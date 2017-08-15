@@ -11,6 +11,24 @@ Turns a 2000x1500 image into
 JSON data.
 """
 
+tile_colors = {15724527: "00",
+               16776960: "01",
+               0: "02",
+               460551: "03",
+               986895: "04",
+               1513239: "05",
+               2039583: "06",
+               2565927: "07",
+               3092271: "08",
+               3618615: "09",
+               4144959: "10",
+               4671303: "11",
+               5197647: "12",
+               5723991: "13",
+               6250335: "14",
+               6776679: "15",
+               7303023: "16"}
+
 
 def generate_map(blueprint):
 
@@ -24,9 +42,9 @@ def generate_map(blueprint):
     print("Created pixel array with shape {}.".format(map_pix_arr.shape))
 
     chunks_wide = tuple(map(operator.floordiv, map_pix_arr.shape,
-                           (constants.chunk_w, constants.chunk_h)))
+                        (constants.chunk_w, constants.chunk_h)))
     num_chunks = chunks_wide[0] * chunks_wide[1]
-    print("Preparing to arrange {} chunks.".format(num_chunks))
+    print("Preparing to arrange {} chunks....".format(num_chunks))
 
     chunks = []
 
@@ -41,7 +59,9 @@ def generate_map(blueprint):
             chunk_x = 0
             chunk_y += 1
 
-    print("Chunks arranged.")
+    print("Chunks arranged, flattening...")
+    chunks = [sum(chunk, []) for chunk in chunks]
+    print("Chunks flattened.")
 
 
 if __name__ == '__main__':
