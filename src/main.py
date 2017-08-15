@@ -100,6 +100,8 @@ class Main:
                 direction = ""
                 movement_interval = (0, 0)
 
+            self.chunk_controller.update()
+
             self.display.fill(constants.WHITE)
 
             self.chunk_controller.draw(self.display)

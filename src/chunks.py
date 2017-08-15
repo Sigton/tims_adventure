@@ -41,7 +41,7 @@ class ChunkController:
         self.old_chunk = self.current_chunk
 
         for n in chunks_to_create:
-            self.create_chunk()
+            self.create_chunk(n)
 
     def update(self):
 
