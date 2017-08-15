@@ -66,6 +66,20 @@ class Main:
                         elif event.key == K_RIGHT and "R" not in direction:
                             direction += "R"
 
+                elif event.type == KEYUP:
+
+                    if event.key == K_UP:
+                        direction = direction.replace("U", "")
+
+                    elif event.key == K_DOWN:
+                        direction = direction.replace("D", "")
+
+                    elif event.key == K_LEFT:
+                        direction = direction.replace("L", "")
+
+                    elif event.key == K_RIGHT:
+                        direction = direction.replace("R", "")
+
             if direction and moving == 0:
 
                 # Make sure we're not at the edge
@@ -87,10 +101,6 @@ class Main:
             if moving > 0:
                 moving -= 1
                 self.chunk_controller.move_chunks(movement_interval)
-
-            if moving == 0 and direction:
-                direction = ""
-                movement_interval = (0, 0)
 
             self.chunk_controller.update()
 
