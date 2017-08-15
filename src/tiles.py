@@ -1,6 +1,7 @@
 import pygame
 
-from src import constants, spritesheet
+from src import constants
+from src.tile_image_loader import *
 
 """
 tiles.py
@@ -8,16 +9,6 @@ tiles.py
 This file holds the class for the 
 tiles that make up the ground.
 """
-
-# Sprite sheet data
-# This is where each tile can be found on terrain.png
-
-generic_ground = (0, 0, 48, 48)
-water = (48, 0, 48, 48)
-
-tiles = [generic_ground, water]
-
-sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
 
 
 class Tile(pygame.sprite.Sprite):
