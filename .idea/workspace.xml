@@ -19,7 +19,7 @@
           <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="738">
+                <state relative-caret-position="498">
                   <caret line="102" column="42" lean-forward="false" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
@@ -35,8 +35,8 @@
           <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/chunks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+                <state relative-caret-position="318">
+                  <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -169,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Debugging">
-      <created>1502717333721</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1502717333721</updated>
     </task>
     <task id="LOCAL-00031" summary="Fixed the bug">
       <created>1502717667678</created>
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502787162005</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Save data is opened before hand">
+      <created>1502787286204</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1502787286204</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -570,7 +570,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed debugging prints" />
     <MESSAGE value="Added &quot;water&quot;" />
     <MESSAGE value="Movement is now working" />
     <MESSAGE value="Working on smoothing movement" />
@@ -595,7 +594,8 @@
     <MESSAGE value="get_surrounding_chunks now returns 1D array" />
     <MESSAGE value="Now calling update function" />
     <MESSAGE value="Now loads chunks on the go" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now loads chunks on the go" />
+    <MESSAGE value="Save data is opened before hand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save data is opened before hand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -901,7 +901,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
+        <state relative-caret-position="498">
           <caret line="102" column="42" lean-forward="false" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -911,8 +911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="318">
+          <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

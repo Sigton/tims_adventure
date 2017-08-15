@@ -65,20 +65,22 @@ class ChunkController:
             surrounding_chunks = self.get_surrounding_chunks(self.current_chunk)
 
             to_remove = [chunk for chunk in self.live_chunks if chunk not in surrounding_chunks]
-            for chunk in to_remove:
-                self.delete_chunk(chunk)
 
             to_create = [chunk for chunk in surrounding_chunks if chunk not in self.live_chunks]
+            created = 0
             for chunk in to_create:
-                if "-" not in chunk:
+                if "-" not in chunk and chunk in self.data:
+                    created += 1
                     self.create_chunk(chunk)
+            print(len(to_remove), len(to_create), created, len(self.live_chunks))
+
+            # Delete any left over chunks
+            for chunk in to_remove:
+                self.delete_chunk(chunk)
 
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
-
-        if chunk not in self.data:
-            return
 
         self.map_seeds[chunk] = self.data[chunk]
 
@@ -113,6 +115,12 @@ class ChunkController:
         self.live_chunks.append(chunk)
 
         self.assign_chunk_pos(chunk, (self.world_offset_x, self.world_offset_y))
+
+    def reuse_chunk(self, old_chunk, new_chunk):
+
+        # Repurposes the existing tiles of a chunk
+        # to form a new chunk.
+        pass
 
     def delete_chunk(self, chunk):
 
