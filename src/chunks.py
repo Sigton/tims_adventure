@@ -34,6 +34,8 @@ class ChunkController:
         self.world_offset_x = start_x+24
         self.world_offset_y = start_y+0
 
+        tiles.load_images()
+
         # Open the save file
         with open(os.path.join("saves", "maps.json"), "r") as infile:
             self.data = json.load(infile)
