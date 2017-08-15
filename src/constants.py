@@ -40,3 +40,6 @@ dir_to_movements = {
     "R": (-48, 0),
     "L": (48, 0)
 }
+
+# Player constants
+movement_speed = 16

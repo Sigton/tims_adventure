@@ -88,7 +88,7 @@ class Main:
                     direction = ""
                     movement_interval = (0, 0)
                 else:
-                    moving = 8
+                    moving = constants.movement_speed
 
                     if len(direction) > 1:
                         movements = [constants.dir_to_movements[d] for d in list(direction)]
