@@ -1,6 +1,7 @@
 import pygame
 
 import operator
+import json
 
 from src import constants
 
@@ -86,6 +87,13 @@ def generate_map(blueprint):
             chunk_y += 1
 
     print("Chunk data collected.")
+    print("Preparing to dump to saves file...")
+
+    with open("saves/maps.json", "w") as outfile:
+        json.dump(chunk_data, outfile)
+        outfile.close()
+
+    print("Chunk data dumped to saves/maps.json")
 
 if __name__ == '__main__':
 
