@@ -28,13 +28,20 @@ def generate_map(blueprint):
     num_chunks = chunks_wide[0] * chunks_wide[1]
     print("Preparing to arrange {} chunks.".format(num_chunks))
 
+    chunks = []
+
     chunk_x, chunk_y = 0, 0
     for n in range(num_chunks):
+
+        chunks += [[[map_pix_arr[x+chunk_x][y+chunk_y] for x in range(constants.chunk_w)]
+                    for y in range(constants.chunk_h)]]
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:
             chunk_x = 0
             chunk_y += 1
+
+    print("Chunks arranged.")
 
 
 if __name__ == '__main__':
