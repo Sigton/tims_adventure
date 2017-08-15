@@ -49,8 +49,6 @@ class ChunkController:
             for m in n:
                 self.create_chunk(m)
 
-        print(self.chunk_pos)
-
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
@@ -87,13 +85,12 @@ class ChunkController:
 
         chunk_x = int(chunk[0:2])*constants.chunk_w*constants.tile_w
         chunk_y = int(chunk[2:4])*constants.chunk_h*constants.tile_h
-        print(chunk, chunk_x, chunk_y, self.world_offset_x, self.world_offset_y)
 
         self.chunk_pos[chunk] = (chunk_x, chunk_y)
 
         self.live_chunks.append(chunk)
 
-        self.move_chunks((self.world_offset_x, self.world_offset_y))
+        self.assign_chunk_pos(chunk, (self.world_offset_x, self.world_offset_y))
 
     def delete_chunk(self, chunk):
 
@@ -117,7 +114,16 @@ class ChunkController:
             chunk_to_draw = self.map_tiles[chunk]
             chunk_to_draw.draw(display)
 
-    def move_chunks(self, movement:
+    def assign_chunk_pos(self, chunk, movement):
+
+        # Moves a single chunk
+        self.chunk_pos[chunk] = (self.chunk_pos[chunk][0]+movement[0],
+                                 self.chunk_pos[chunk][1]+movement[1])
+
+        [x.realign(self.chunk_pos[chunk][0],
+                   self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
+
+    def move_chunks(self, movement):
 
         # Moves all of the live chunks
         # by a certain amount.
