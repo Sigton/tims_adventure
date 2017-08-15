@@ -41,8 +41,7 @@ class ChunkController:
         self.old_chunk = self.current_chunk
 
         for n in chunks_to_create:
-            for m in n:
-                self.create_chunk(m)
+            self.create_chunk()
 
     def update(self):
 
@@ -57,6 +56,8 @@ class ChunkController:
             # Player has moved chunk
             # We now removed chunks that are too far away
             # And generate new ones
+
+            surrounding_chunks = self.get_surrounding_chunks(self.current_chunk)
 
     def create_chunk(self, chunk):
 
@@ -164,8 +165,8 @@ class ChunkController:
         x_range = range(chunk_x - 1, chunk_x + 2)
         y_range = range(chunk_y - 1, chunk_y + 2)
 
-        return [[self.create_id(x_range[x], y_range[y])
-                 for x in range(3)] for y in range(3)]
+        return sum([[self.create_id(x_range[x], y_range[y])
+                     for x in range(3)] for y in range(3)], [])
 
     @staticmethod
     def create_id(x, y):
