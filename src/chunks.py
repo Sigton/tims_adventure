@@ -67,12 +67,13 @@ class ChunkController:
             to_remove = [chunk for chunk in self.live_chunks if chunk not in surrounding_chunks]
 
             to_create = [chunk for chunk in surrounding_chunks if chunk not in self.live_chunks]
-            created = 0
+
             for chunk in to_create:
                 if "-" not in chunk and chunk in self.data:
-                    created += 1
-                    self.create_chunk(chunk)
-            print(len(to_remove), len(to_create), created, len(self.live_chunks))
+                    if len(to_remove):
+                        self.reuse_chunk(to_remove.pop(), chunk)
+                    else:
+                        self.create_chunk(chunk)
 
             # Delete any left over chunks
             for chunk in to_remove:
@@ -120,7 +121,35 @@ class ChunkController:
 
         # Repurposes the existing tiles of a chunk
         # to form a new chunk.
-        pass
+
+        self.map_seeds[new_chunk] = self.data[new_chunk]
+
+        self.live_chunks.remove(old_chunk)
+        del self.chunk_pos[old_chunk]
+
+        seed = self.map_seeds[new_chunk]
+
+        tile_data = [seed[i:i + 2] for i in range(0, len(seed), 2)]
+        tile, x, y = 0, 0, 0
+        for n in self.map_tiles[old_chunk].sprites():
+            tile += 1
+            n.reuse(tiles.tiles[int(tile_data[tile])], x, y, x, y)
+
+            x += 1
+            if x % constants.chunk_w == 0:
+                x = 0
+                y += 1
+
+        self.map_tiles[new_chunk] = self.map_tiles.pop(old_chunk)
+
+        chunk_x = int(new_chunk[0:2]) * constants.chunk_w * constants.tile_w
+        chunk_y = int(new_chunk[2:4]) * constants.chunk_h * constants.tile_h
+
+        self.chunk_pos[new_chunk] = (chunk_x, chunk_y)
+
+        self.live_chunks.append(new_chunk)
+
+        self.assign_chunk_pos(new_chunk, (self.world_offset_x, self.world_offset_y))
 
     def delete_chunk(self, chunk):
 

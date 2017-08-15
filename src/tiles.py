@@ -45,3 +45,19 @@ class Tile(pygame.sprite.Sprite):
 
         self.rect.x = x+self.offset_x * constants.tile_w
         self.rect.y = y+self.offset_y * constants.tile_h
+
+    def reuse(self, sprite_sheet_data, x, y, o_x, o_y):
+
+        self.image = spritesheet.SpriteSheet("resources/terrain.png").get_image(
+            sprite_sheet_data[0],
+            sprite_sheet_data[1],
+            sprite_sheet_data[2],
+            sprite_sheet_data[3]
+        )
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x * constants.tile_w
+        self.rect.y = y * constants.tile_h
+
+        self.offset_x = o_x
+        self.offset_y = o_y
