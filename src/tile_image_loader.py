@@ -42,7 +42,7 @@ def load_images():
 
     global sprite_sheet, images
 
-    sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+    sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
 
     images += [sprite_sheet.get_image(tile[0],
                                       tile[1],

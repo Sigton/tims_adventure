@@ -37,7 +37,7 @@ class ChunkController:
         tiles.load_images()
 
         # Open the save file
-        with open(os.path.join("saves", "maps.json"), "r") as infile:
+        with open(os.path.join("src", "saves", "maps.json"), "r") as infile:
             self.data = json.load(infile)
             infile.close()
 
