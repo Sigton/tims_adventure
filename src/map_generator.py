@@ -63,6 +63,19 @@ def generate_map(blueprint):
     chunks = [sum(chunk, []) for chunk in chunks]
     print("Chunks flattened.")
 
+    print("Iterating and rendering chunks.")
+    chunk_x, chunk_y = 0, 0
+    for chunk in chunks:
+
+        if not all(x == 16776960 for x in chunk):
+
+            continue
+
+        chunk_x += 1
+        if chunk_x % chunks_wide[0] == 0:
+            chunk_x = 0
+            chunk_y += 1
+
 
 if __name__ == '__main__':
 
