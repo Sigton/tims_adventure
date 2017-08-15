@@ -45,6 +45,10 @@ class ChunkController:
         chunks_to_create = [[self.create_id(x_range[x], y_range[y])
                              for x in range(3)] for y in range(3)]
 
+        for n in chunks_to_create:
+            for m in n:
+                self.create_chunk(m)
+
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
