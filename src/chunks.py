@@ -121,7 +121,7 @@ class ChunkController:
 
     def reuse_chunk(self, old_chunk, new_chunk):
 
-        # Repurposes the existing tiles of a chunk
+        # Re-purposes the existing tiles of a chunk
         # to form a new chunk.
 
         self.map_seeds[new_chunk] = self.data[new_chunk]
