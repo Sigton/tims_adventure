@@ -33,7 +33,7 @@
             <entry file="file://$PROJECT_DIR$/src/chunks.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
-                  <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+                  <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -48,8 +48,8 @@
           <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/tiles.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="752">
-                  <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+                <state relative-caret-position="772">
+                  <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -205,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Created offset attributes">
-      <created>1502722791416</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1502722791416</updated>
     </task>
     <task id="LOCAL-00040" summary="Chunks now set their real position on creation">
       <created>1502723285957</created>
@@ -549,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502805905496</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Loading of chunks no longer has any noticable lag">
+      <created>1502806490934</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1502806490934</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -606,7 +606,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Can assign a starting offset" />
     <MESSAGE value="Created get_current_chunk_id method" />
     <MESSAGE value="Finished get_current_chunk_id" />
     <MESSAGE value="Debugging" />
@@ -631,7 +630,8 @@
     <MESSAGE value="Updated tile_image_loader.py" />
     <MESSAGE value="Updated tiles.py" />
     <MESSAGE value="Images should now load" />
-    <option name="LAST_COMMIT_MESSAGE" value="Images should now load" />
+    <MESSAGE value="Loading of chunks no longer has any noticable lag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loading of chunks no longer has any noticable lag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -985,8 +985,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="772">
+          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -996,7 +996,7 @@
     <entry file="file://$PROJECT_DIR$/src/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
