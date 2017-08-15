@@ -54,3 +54,7 @@ class Tile(pygame.sprite.Sprite):
 
         self.offset_x = o_x
         self.offset_y = o_y
+
+
+def load_images():
+    load_images()

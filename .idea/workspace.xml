@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/tile_image_loader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiles.py" afterPath="$PROJECT_DIR$/src/tiles.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tiles.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/tiles.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
-                  <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="772">
+                  <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -56,7 +56,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/tile_image_loader.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="620">
@@ -95,9 +95,9 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
         <option value="$PROJECT_DIR$/src/chunks.py" />
-        <option value="$PROJECT_DIR$/src/tiles.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/tile_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/tiles.py" />
       </list>
     </option>
   </component>
@@ -204,13 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Updated player.py">
-      <created>1502721920933</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1502721920933</updated>
     </task>
     <task id="LOCAL-00037" summary="Player now draws to the display">
       <created>1502722059767</created>
@@ -548,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502804670507</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Updated tile_image_loader.py">
+      <created>1502805768159</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1502805768159</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -605,7 +605,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Diagonal movement now possible" />
     <MESSAGE value="draw function now draws all live chunks" />
     <MESSAGE value="Added delete chunk method" />
     <MESSAGE value="Can assign a starting offset" />
@@ -630,7 +629,8 @@
     <MESSAGE value="Sped up the reusing system" />
     <MESSAGE value="Updated tiles.py and terrain.png" />
     <MESSAGE value="Created tile_image_loader.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created tile_image_loader.py" />
+    <MESSAGE value="Updated tile_image_loader.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated tile_image_loader.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -979,16 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/terrain.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -999,6 +989,16 @@
         <state relative-caret-position="620">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
