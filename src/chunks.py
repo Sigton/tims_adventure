@@ -49,6 +49,13 @@ class ChunkController:
             for m in n:
                 self.create_chunk(m)
 
+    def update(self):
+
+        # Look for any new chunks that need to be
+        # created and old ones that need removed
+
+        pass
+
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
