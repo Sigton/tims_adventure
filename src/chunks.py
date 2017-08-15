@@ -31,8 +31,8 @@ class ChunkController:
         # are currently being updated
         self.live_chunks = []
 
-        self.world_offset_x = start_x+24
-        self.world_offset_y = start_y+0
+        self.world_offset_x = (-start_x)+24
+        self.world_offset_y = -start_y
 
         tiles.load_images()
 
