@@ -35,8 +35,10 @@ class ChunkController:
         self.world_offset_y = start_y+0
 
         # Select the 9 chunks around the players current position
+        self.current_chunk = self.get_current_chunk_id()
+        chunks_to_create = self.get_surrounding_chunks(self.current_chunk)
 
-        chunks_to_create = self.get_surrounding_chunks()
+        self.old_chunk = self.current_chunk
 
         for n in chunks_to_create:
             for m in n:
@@ -47,7 +49,10 @@ class ChunkController:
         # Look for any new chunks that need to be
         # created and old ones that need removed
 
-        pass
+        self.current_chunk = self.get_current_chunk_id()
+
+        if self.current_chunk != self.old_chunk:
+            self.old_chunk = self.current_chunk
 
     def create_chunk(self, chunk):
 
@@ -142,15 +147,13 @@ class ChunkController:
         return self.create_id((abs(self.world_offset_x-480))//960,
                               (abs(self.world_offset_y-360))//720)
 
-    def get_surrounding_chunks(self):
+    def get_surrounding_chunks(self, chunk):
 
         # Creates a 2D array of the 9
-        # chunks surrounding the player
+        # chunks surrounding the given chunk
 
-        current_chunk = self.get_current_chunk_id()
-
-        chunk_x = int(current_chunk[0:2])
-        chunk_y = int(current_chunk[2:4])
+        chunk_x = int(chunk[0:2])
+        chunk_y = int(chunk[2:4])
         x_range = range(chunk_x - 1, chunk_x + 2)
         y_range = range(chunk_y - 1, chunk_y + 2)
 
