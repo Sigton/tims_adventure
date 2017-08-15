@@ -59,6 +59,15 @@ class ChunkController:
 
             surrounding_chunks = self.get_surrounding_chunks(self.current_chunk)
 
+            to_remove = [chunk for chunk in self.live_chunks if chunk not in surrounding_chunks]
+            for chunk in to_remove:
+                self.delete_chunk(chunk)
+
+            to_create = [chunk for chunk in surrounding_chunks if chunk not in self.live_chunks]
+            for chunk in to_create:
+                if "-" not in chunk:
+                    self.create_chunk(chunk)
+
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
