@@ -13,4 +13,4 @@ def generate_map(blueprint):
     # This function takes a blueprint diagram of a world map
     # and turns it into a format use-able by the terrain engine.
 
-    pass
+    map_img = pygame.image.load("resources/map.png")
