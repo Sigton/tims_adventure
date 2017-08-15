@@ -17,6 +17,8 @@ water = (48, 0, 48, 48)
 
 tiles = [generic_ground, water]
 
+sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
+
 
 class Tile(pygame.sprite.Sprite):
 
@@ -27,9 +29,7 @@ class Tile(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.sprite_sheet = spritesheet.SpriteSheet("resources/terrain.png")
-
-        self.image = self.sprite_sheet.get_image(
+        self.image = sprite_sheet.get_image(
             sprite_sheet_data[0],
             sprite_sheet_data[1],
             sprite_sheet_data[2],
@@ -50,7 +50,7 @@ class Tile(pygame.sprite.Sprite):
 
     def reuse(self, sprite_sheet_data, x, y, o_x, o_y):
 
-        self.image = self.sprite_sheet.get_image(
+        self.image = sprite_sheet.get_image(
             sprite_sheet_data[0],
             sprite_sheet_data[1],
             sprite_sheet_data[2],
