@@ -40,11 +40,9 @@ class Main:
 
         game_exit = False
 
-        in_movement = False
+        direction = ""
         moving = 0
         movement_interval = (0, 0)
-
-        direction = ""
 
         while not game_exit:
 
@@ -55,29 +53,24 @@ class Main:
 
                 elif event.type == KEYDOWN:
 
-                    if not (in_movement and len(direction) > 2):
-                        if event.key == K_UP:
+                    if len(direction) < 2:
+                        if event.key == K_UP and "U" not in direction:
                             direction += "U"
-                            in_movement = True
 
-                        elif event.key == K_DOWN:
+                        elif event.key == K_DOWN and "D" not in direction:
                             direction += "D"
-                            in_movement = True
 
-                        elif event.key == K_LEFT:
+                        elif event.key == K_LEFT and "L" not in direction:
                             direction += "L"
-                            in_movement = True
 
-                        elif event.key == K_RIGHT:
+                        elif event.key == K_RIGHT and "R" not in direction:
                             direction += "R"
-                            in_movement = True
 
-            if in_movement and moving == 0:
+            if direction and moving == 0:
 
                 # Make sure we're not at the edge
                 if (self.chunk_controller.world_offset_x >= -24 and "L" in direction) or\
                         (self.chunk_controller.world_offset_y >= 0 and "U" in direction):
-                    in_movement = False
                     direction = ""
                     movement_interval = (0, 0)
                 else:
@@ -95,8 +88,7 @@ class Main:
                 moving -= 1
                 self.chunk_controller.move_chunks(movement_interval)
 
-            if moving == 0 and in_movement:
-                in_movement = False
+            if moving == 0 and direction:
                 direction = ""
                 movement_interval = (0, 0)
 
