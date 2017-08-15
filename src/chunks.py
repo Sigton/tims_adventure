@@ -34,7 +34,7 @@ class ChunkController:
         self.world_offset_x = start_x+24
         self.world_offset_y = start_y+0
 
-        tiles.load_images()
+        tiles.call_load_images()
 
         # Open the save file
         with open(os.path.join("saves", "maps.json"), "r") as infile:
@@ -99,7 +99,7 @@ class ChunkController:
         for n in tile_data:
 
             # Create instances of the tiles
-            tile = tiles.tiles[int(n)]
+            tile = int(n)
             new_chunk.add(tiles.Tile(tile, x, y, x, y))
 
             x += 1
@@ -135,7 +135,7 @@ class ChunkController:
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].sprites():
 
-            n.reuse(tiles.tiles[int(tile_data[tile])], x, y, x, y)
+            n.reuse(int(tile_data[tile]), x, y, x, y)
 
             x += 1
             if x % constants.chunk_w == 0:
