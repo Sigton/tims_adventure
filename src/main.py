@@ -74,15 +74,22 @@ class Main:
 
             if in_movement and moving == 0:
 
-                moving = 8
-
-                if len(direction) > 1:
-                    movements = [constants.dir_to_movements[d] for d in list(direction)]
-                    movement = tuple(map(operator.add, movements[0], movements[1]))
+                # Make sure we're not at the edge
+                if (self.chunk_controller.world_offset_x >= -24 and "L" in direction) or\
+                        (self.chunk_controller.world_offset_y >= 0 and "U" in direction):
+                    in_movement = False
+                    direction = ""
+                    movement_interval = (0, 0)
                 else:
-                    movement = constants.dir_to_movements[direction]
-                movement_interval = tuple(map(operator.floordiv, movement,
-                                              [moving for x in range(len(movement))]))
+                    moving = 8
+
+                    if len(direction) > 1:
+                        movements = [constants.dir_to_movements[d] for d in list(direction)]
+                        movement = tuple(map(operator.add, movements[0], movements[1]))
+                    else:
+                        movement = constants.dir_to_movements[direction]
+                    movement_interval = tuple(map(operator.floordiv, movement,
+                                                  [moving for x in range(len(movement))]))
 
             if moving > 0:
                 moving -= 1
