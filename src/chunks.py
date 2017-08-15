@@ -34,6 +34,11 @@ class ChunkController:
         self.world_offset_x = start_x+24
         self.world_offset_y = start_y+0
 
+        # Open the save file
+        with open(os.path.join("saves", "maps.json"), "r") as infile:
+            self.data = json.load(infile)
+            infile.close()
+
         # Select the 9 chunks around the players current position
         self.current_chunk = self.get_current_chunk_id()
         chunks_to_create = self.get_surrounding_chunks(self.current_chunk)
@@ -72,15 +77,10 @@ class ChunkController:
 
         # Loads a chunk from the save data
 
-        # Open the save file
-        with open(os.path.join("saves", "maps.json"), "r") as infile:
-            data = json.load(infile)
-            infile.close()
-
-        if chunk not in data:
+        if chunk not in self.data:
             return
 
-        self.map_seeds[chunk] = data[chunk]
+        self.map_seeds[chunk] = self.data[chunk]
 
         # Creates a group of tile objects
         # from the seed of the given chunk
