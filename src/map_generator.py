@@ -51,7 +51,8 @@ def generate_map(blueprint):
     chunk_x, chunk_y = 0, 0
     for n in range(num_chunks):
 
-        chunks += [[[map_pix_arr[x+chunk_x][y+chunk_y] for x in range(constants.chunk_w)]
+        chunks += [[[map_pix_arr[x+(chunk_x*constants.chunk_w)][y+(chunk_y*constants.chunk_h)]
+                     for x in range(constants.chunk_w)]
                     for y in range(constants.chunk_h)]]
 
         chunk_x += 1
@@ -67,9 +68,9 @@ def generate_map(blueprint):
     chunk_x, chunk_y = 0, 0
     for chunk in chunks:
 
-        if not all(x == 16776960 for x in chunk):
+        if not all(x == 16777215 for x in chunk):
 
-            continue
+            None
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:
