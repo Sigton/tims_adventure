@@ -4,6 +4,7 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chunks.py" afterPath="$PROJECT_DIR$/src/chunks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +20,8 @@
           <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+                <state relative-caret-position="372">
+                  <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -35,8 +36,8 @@
           <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/chunks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+                <state relative-caret-position="416">
+                  <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -84,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/player.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/chunks.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -186,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Updated chunks.py">
-      <created>1502708765203</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1502708765203</updated>
     </task>
     <task id="LOCAL-00019" summary="Created some sample data in maps.json">
       <created>1502709861297</created>
@@ -530,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502755413767</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Now generates chunks">
+      <created>1502755588693</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1502755588693</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,7 +588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some error catching" />
     <MESSAGE value="Program finished properly" />
     <MESSAGE value="Added frame for movement" />
     <MESSAGE value="Limit to 60fps" />
@@ -612,7 +612,8 @@
     <MESSAGE value="Updated chunks.py" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="More debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="More debugging" />
+    <MESSAGE value="Now generates chunks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now generates chunks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -894,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="88" column="67" lean-forward="false" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -904,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="416">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

@@ -49,6 +49,8 @@ class ChunkController:
             for m in n:
                 self.create_chunk(m)
 
+        print(self.chunk_pos)
+
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
@@ -83,14 +85,15 @@ class ChunkController:
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
 
-        chunk_x = int(chunk[0:2])*constants.tile_w*constants.chunk_w
-        chunk_y = int(chunk[2:4])*constants.tile_h*constants.chunk_h
+        chunk_x = int(chunk[0:2])*constants.chunk_w*constants.tile_w
+        chunk_y = int(chunk[2:4])*constants.chunk_h*constants.tile_h
+        print(chunk, chunk_x, chunk_y, self.world_offset_x, self.world_offset_y)
 
         self.chunk_pos[chunk] = (chunk_x, chunk_y)
 
         self.live_chunks.append(chunk)
 
-        self.move_chunks((self.world_offset_x, self.world_offset_y), True)
+        self.move_chunks((self.world_offset_x, self.world_offset_y))
 
     def delete_chunk(self, chunk):
 
@@ -114,13 +117,12 @@ class ChunkController:
             chunk_to_draw = self.map_tiles[chunk]
             chunk_to_draw.draw(display)
 
-    def move_chunks(self, movement, new_chunk):
+    def move_chunks(self, movement:
 
         # Moves all of the live chunks
         # by a certain amount.
-        if not new_chunk:
-            self.world_offset_x += movement[0]
-            self.world_offset_y += movement[1]
+        self.world_offset_x += movement[0]
+        self.world_offset_y += movement[1]
 
         for chunk in self.live_chunks:
             self.chunk_pos[chunk] = (self.chunk_pos[chunk][0]+movement[0],
