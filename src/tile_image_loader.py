@@ -27,6 +27,7 @@ path_12 = (144, 96, 48, 48)
 path_13 = (192, 96, 48, 48)
 path_14 = (240, 96, 48, 48)
 path_15 = (288, 96, 48, 48)
+dark_ground = (96, 0, 48, 48)
 
 tiles = [generic_ground, water, path_1,
          path_2, path_3, path_4, path_5,
