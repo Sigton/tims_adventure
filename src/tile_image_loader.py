@@ -33,7 +33,7 @@ tiles = [generic_ground, water, path_1,
          path_2, path_3, path_4, path_5,
          path_6, path_7, path_8, path_9,
          path_10, path_11, path_12,
-         path_13, path_14, path_15]
+         path_13, path_14, path_15, dark_ground]
 images = []
 
 sprite_sheet = None
