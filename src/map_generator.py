@@ -70,7 +70,7 @@ def generate_map(blueprint):
     chunk_x, chunk_y = 0, 0
     for chunk in chunks:
 
-        if not all(x == 16777215 for x in chunk):
+        if 16777215 not in chunk:
 
             chunk_idx, chunk_idy = chunk_x, chunk_y
             while len(str(chunk_idx)) < 2:
