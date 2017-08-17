@@ -85,7 +85,7 @@ class Main:
                 # If we're at the edge then don't allow moving towards the edge
                 if self.chunk_controller.world_offset_x >= -24 and "L" in direction:
                     direction = direction.replace("L", "")
-                elif self.chunk_controller.world_offset_y >= 0 and "U" in direction:
+                if self.chunk_controller.world_offset_y >= 0 and "U" in direction:
                     direction = direction.replace("U", "")
 
                 if direction:
