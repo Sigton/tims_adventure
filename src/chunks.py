@@ -14,7 +14,18 @@ Each chunk has it's unique seed, which is
 saved in the save file and assigned to a location.
 """
 
+def create_id(x, y):
 
+        x = str(x)
+        while len(x) < 2:
+            x = "0" + x
+        y = str(y)
+        while len(y) < 2:
+            y = "0" + y
+
+        return x + y
+
+    
 class ChunkController:
 
     def __init__(self, start_x, start_y):
@@ -201,7 +212,7 @@ class ChunkController:
 
     def get_current_chunk_id(self):
 
-        return self.create_id((abs(self.world_offset_x-480))//960,
+        return create_id((abs(self.world_offset_x-480))//960,
                               (abs(self.world_offset_y-360))//720)
 
     def get_surrounding_chunks(self, chunk):
@@ -214,17 +225,6 @@ class ChunkController:
         x_range = range(chunk_x - 1, chunk_x + 2)
         y_range = range(chunk_y - 1, chunk_y + 2)
 
-        return sum([[self.create_id(x_range[x], y_range[y])
+        return sum([[create_id(x_range[x], y_range[y])
                      for x in range(3)] for y in range(3)], [])
 
-    @staticmethod
-    def create_id(x, y):
-
-        x = str(x)
-        while len(x) < 2:
-            x = "0" + x
-        y = str(y)
-        while len(y) < 2:
-            y = "0" + y
-
-        return x + y
