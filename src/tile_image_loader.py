@@ -34,6 +34,7 @@ wall_3 = (48, 144, 48, 48)
 wall_4 = (48, 192, 48, 48)
 wall_5 = (96, 144, 48, 48)
 wall_6 = (96, 192, 48, 48)
+wall_7 = (144, 144, 48, 48)
 
 tiles = [generic_ground, water, path_1,
          path_2, path_3, path_4, path_5,
@@ -41,7 +42,8 @@ tiles = [generic_ground, water, path_1,
          path_10, path_11, path_12,
          path_13, path_14, path_15,
          dark_ground, wall_1, wall_2,
-         wall_3, wall_4, wall_5, wall_6]
+         wall_3, wall_4, wall_5, wall_6,
+         wall_7]
 images = []
 
 sprite_sheet = None
