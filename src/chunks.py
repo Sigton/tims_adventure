@@ -14,6 +14,7 @@ Each chunk has it's unique seed, which is
 saved in the save file and assigned to a location.
 """
 
+
 def create_id(x, y):
 
         x = str(x)
@@ -105,7 +106,7 @@ class ChunkController:
         new_chunk = pygame.sprite.Group()
 
         # Split the string into each individual tile
-        tile_data = [seed[i:i+2] for i in range(0, len(seed), 2)]
+        tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
         x, y = 0, 0
         for n in tile_data:
 
@@ -142,7 +143,7 @@ class ChunkController:
 
         seed = self.map_seeds[new_chunk]
 
-        tile_data = [seed[i:i + 2] for i in range(0, len(seed), 2)]
+        tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].sprites():
 
@@ -213,7 +214,7 @@ class ChunkController:
     def get_current_chunk_id(self):
 
         return create_id((abs(self.world_offset_x-480))//960,
-                              (abs(self.world_offset_y-360))//720)
+                         (abs(self.world_offset_y-360))//720)
 
     def get_surrounding_chunks(self, chunk):
 
