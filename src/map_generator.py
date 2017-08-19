@@ -98,7 +98,7 @@ def generate_map(blueprint):
     print("Chunk data collected.")
     print("Preparing to dump to saves file...")
 
-    with open("saves/maps.json", "w") as outfile:
+    with open("src/saves/maps.json", "w") as outfile:
         json.dump(chunk_data, outfile)
         outfile.close()
 
@@ -108,4 +108,4 @@ if __name__ == '__main__':
 
     pygame.init()
 
-    generate_map("resources/map.png")
+    generate_map("src/resources/map.png")

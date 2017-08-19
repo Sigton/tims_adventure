@@ -48,7 +48,14 @@ class ChunkController:
 
         tiles.load_images()
 
-        # Open the save file
+        # Check if the file is empty
+        if not os.stat(os.path.join("src", "saves", "maps.json")).st_size:
+            # If the file is empty then
+            # run the map generator
+            from src import map_generator
+            map_generator.generate_map("src/resources/map.png")
+            del map_generator
+
         with open(os.path.join("src", "saves", "maps.json"), "r") as infile:
             self.data = json.load(infile)
             infile.close()
