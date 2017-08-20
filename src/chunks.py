@@ -95,6 +95,10 @@ class ChunkController:
             for x in self.direction:
                 final_pos = list(map(operator.sub, current_pos, ([n//48 for n in constants.dir_to_movements[x]])))
                 final_pos = final_pos[0] % 20, final_pos[1] % 15
+                index = final_pos[1]*20+final_pos[0]
+                target_tile = self.map_seeds[self.get_current_chunk_id()].split(";")[index]
+                if target_tile in solid_tiles:
+                    self.direction = self.direction.replace(x, "")
 
             if self.direction:
 
