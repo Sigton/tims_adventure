@@ -91,7 +91,6 @@ class ChunkController:
                 self.direction = self.direction.replace("U", "")
 
             # Make sure we don't walk over anything we shouldn't
-
             for x in direction:
                 pass
 
