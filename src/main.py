@@ -35,6 +35,9 @@ class Main:
         self.player = player.Player()
         self.player_group.add(self.player)
 
+        self.chunk_controller.px = self.player.rect.x
+        self.chunk_controller.py = self.player.rect.y
+
     def run(self):
 
         game_exit = False
