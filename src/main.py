@@ -2,7 +2,6 @@ import pygame
 from pygame.locals import *
 
 import sys
-import operator
 
 from src import constants, chunks, player
 
@@ -80,31 +79,7 @@ class Main:
                     elif event.key == K_RIGHT:
                         direction = direction.replace("R", "")
 
-            if direction and moving == 0:
-
-                # If we're at the edge then don't allow moving towards the edge
-                if self.chunk_controller.world_offset_x >= -24 and "L" in direction:
-                    direction = direction.replace("L", "")
-                if self.chunk_controller.world_offset_y >= 0 and "U" in direction:
-                    direction = direction.replace("U", "")
-
-                if direction:
-
-                    moving = constants.movement_speed
-
-                    if len(direction) > 1:
-                        movements = [constants.dir_to_movements[d] for d in list(direction)]
-                        movement = tuple(map(operator.add, movements[0], movements[1]))
-                    else:
-                        movement = constants.dir_to_movements[direction]
-                    movement_interval = tuple(map(operator.floordiv, movement,
-                                                  [moving for x in range(len(movement))]))
-
-            if moving > 0:
-                moving -= 1
-                self.chunk_controller.move_chunks(movement_interval)
-
-            self.chunk_controller.update()
+            self.chunk_controller.update(direction, moving)
 
             self.display.fill(constants.WHITE)
 

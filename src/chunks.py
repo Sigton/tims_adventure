@@ -1,6 +1,8 @@
 import pygame
+
 import json
 import os
+import operator
 
 from src import constants, tiles
 
@@ -69,7 +71,31 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-    def update(self):
+    def update(self, direction, moving):
+
+        if direction and moving == 0:
+
+            # If we're at the edge then don't allow moving towards the edge
+            if self.world_offset_x >= -24 and "L" in direction:
+                direction = direction.replace("L", "")
+            if self.world_offset_y >= 0 and "U" in direction:
+                direction = direction.replace("U", "")
+
+            if direction:
+
+                moving = constants.movement_speed
+
+                if len(direction) > 1:
+                    movements = [constants.dir_to_movements[d] for d in list(direction)]
+                    movement = tuple(map(operator.add, movements[0], movements[1]))
+                else:
+                    movement = constants.dir_to_movements[direction]
+                movement_interval = tuple(map(operator.floordiv, movement,
+                                              [moving for x in range(len(movement))]))
+
+        if moving > 0:
+            moving -= 1
+            self.move_chunks(movement_interval)
 
         # Look for any new chunks that need to be
         # created and old ones that need removed
@@ -99,6 +125,7 @@ class ChunkController:
             # Delete any left over chunks
             for chunk in to_remove:
                 self.delete_chunk(chunk)
+
 
     def create_chunk(self, chunk):
 
