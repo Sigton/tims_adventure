@@ -88,7 +88,7 @@ def generate_map(blueprint):
             while len(str(chunk_idy)) < 2:
                 chunk_idy = "0"+str(chunk_idy)
 
-            chunk_data[chunk_idx+chunk_idy] = "".join([tile_colors[x] for x in chunk])
+            chunk_data[chunk_idx+chunk_idy] = "".join([tile_colors[x] + ";" for x in chunk])
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:

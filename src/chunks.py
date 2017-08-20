@@ -113,7 +113,7 @@ class ChunkController:
         new_chunk = pygame.sprite.Group()
 
         # Split the string into each individual tile
-        tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
+        tile_data = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in seed.split(";")], [])
         x, y = 0, 0
         for n in tile_data:
 
@@ -150,7 +150,7 @@ class ChunkController:
 
         seed = self.map_seeds[new_chunk]
 
-        tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
+        tile_data = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in seed.split(";")], [])
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].sprites():
 
@@ -235,4 +235,3 @@ class ChunkController:
 
         return sum([[create_id(x_range[x], y_range[y])
                      for x in range(3)] for y in range(3)], [])
-
