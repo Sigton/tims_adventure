@@ -277,5 +277,14 @@ class ChunkController:
 
     def get_player_tile_nums(self):
 
-        return (((self.px - 4) - self.world_offset_x)//48,
-                ((self.py - 4) - self.world_offset_y)//48)
+        if self.world_offset_x % 960 > 456:
+            tile_x = ((self.px - 4) + (abs(self.world_offset_x) % 960))//48
+        else:
+            tile_x = ((self.px - 4) - (self.world_offset_x % 960)) // 48
+
+        if self.world_offset_y % 720 > 336:
+            tile_y = ((self.py - 4) + (abs(self.world_offset_y) % 720))//48
+        else:
+            tile_y = ((self.py - 4) - (self.world_offset_y % 720)) // 48
+
+        return [tile_x, tile_y]
