@@ -41,7 +41,6 @@ class Main:
 
         direction = ""
         moving = 0
-        movement_interval = (0, 0)
 
         while not game_exit:
 

@@ -48,6 +48,10 @@ class ChunkController:
         self.world_offset_x = (-start_x)+24
         self.world_offset_y = -start_y
 
+        self.direction = ""
+        self.moving = 0
+        self.movement_interval = (0, 0)
+
         tiles.load_images()
 
         # Check if the file is empty
@@ -73,29 +77,29 @@ class ChunkController:
 
     def update(self, direction, moving):
 
-        if direction and moving == 0:
+        if self.direction and self.moving == 0:
 
             # If we're at the edge then don't allow moving towards the edge
-            if self.world_offset_x >= -24 and "L" in direction:
-                direction = direction.replace("L", "")
-            if self.world_offset_y >= 0 and "U" in direction:
-                direction = direction.replace("U", "")
+            if self.world_offset_x >= -24 and "L" in self.direction:
+                self.direction = self.direction.replace("L", "")
+            if self.world_offset_y >= 0 and "U" in self.direction:
+                self.direction = self.direction.replace("U", "")
 
-            if direction:
+            if self.direction:
 
-                moving = constants.movement_speed
+                self.moving = constants.movement_speed
 
-                if len(direction) > 1:
-                    movements = [constants.dir_to_movements[d] for d in list(direction)]
+                if len(self.direction) > 1:
+                    movements = [constants.dir_to_movements[d] for d in list(self.direction)]
                     movement = tuple(map(operator.add, movements[0], movements[1]))
                 else:
-                    movement = constants.dir_to_movements[direction]
-                movement_interval = tuple(map(operator.floordiv, movement,
-                                              [moving for x in range(len(movement))]))
+                    movement = constants.dir_to_movements[self.direction]
+                self.movement_interval = tuple(map(operator.floordiv, movement,
+                                                   [self.moving for x in range(len(movement))]))
 
-        if moving > 0:
-            moving -= 1
-            self.move_chunks(movement_interval)
+        if self.moving > 0:
+            self.moving -= 1
+            self.move_chunks(self.movement_interval)
 
         # Look for any new chunks that need to be
         # created and old ones that need removed
