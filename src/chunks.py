@@ -90,9 +90,11 @@ class ChunkController:
             if self.world_offset_y >= 0 and "U" in self.direction:
                 self.direction = self.direction.replace("U", "")
 
-            # Make sure we don't walk over anything we shouldn't
-            for x in direction:
-                pass
+            # Make sure we don't walk over anything we shouldn't.
+            current_pos = self.get_player_tile_nums()
+            for x in self.direction:
+                final_pos = list(map(operator.sub, current_pos, ([n//48 for n in constants.dir_to_movements[x]])))
+                final_pos = final_pos[0] % 20, final_pos[1] % 15
 
             if self.direction:
 
