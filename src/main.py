@@ -40,7 +40,6 @@ class Main:
         game_exit = False
 
         direction = ""
-        moving = 0
 
         while not game_exit:
 
@@ -78,7 +77,7 @@ class Main:
                     elif event.key == K_RIGHT:
                         direction = direction.replace("R", "")
 
-            self.chunk_controller.update(direction, moving)
+            self.chunk_controller.update(direction)
 
             self.display.fill(constants.WHITE)
 
