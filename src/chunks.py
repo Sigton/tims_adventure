@@ -130,7 +130,6 @@ class ChunkController:
             for chunk in to_remove:
                 self.delete_chunk(chunk)
 
-
     def create_chunk(self, chunk):
 
         # Loads a chunk from the save data
