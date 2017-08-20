@@ -5,6 +5,7 @@ import os
 import operator
 
 from src import constants, tiles
+from src.tile_types import *
 
 """
 chunks.py
@@ -86,6 +87,11 @@ class ChunkController:
                 self.direction = self.direction.replace("L", "")
             if self.world_offset_y >= 0 and "U" in self.direction:
                 self.direction = self.direction.replace("U", "")
+
+            # Make sure we don't walk over anything we shouldn't
+
+            for x in direction:
+                pass
 
             if self.direction:
 

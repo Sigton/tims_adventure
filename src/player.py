@@ -18,4 +18,3 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.Surface([40, 40]).convert()
 
         self.rect = self.image.get_rect()
-        self.rect.center = constants.DISPLAY_CENTER
