@@ -75,7 +75,9 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-    def update(self):
+    def update(self, direction):
+
+        self.direction = direction
 
         if self.direction and self.moving == 0:
 
