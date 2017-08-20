@@ -278,4 +278,5 @@ class ChunkController:
 
     def get_player_tile_nums(self):
 
-        pass
+        return (((self.px - 4) - self.world_offset_x)//48,
+                ((self.py - 4) - self.world_offset_y)//48)
