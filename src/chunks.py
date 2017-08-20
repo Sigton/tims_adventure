@@ -273,3 +273,7 @@ class ChunkController:
 
         return sum([[create_id(x_range[x], y_range[y])
                      for x in range(3)] for y in range(3)], [])
+
+    def get_player_tile_nums(self):
+
+        pass
