@@ -77,7 +77,7 @@ class Main:
                     elif event.key == K_RIGHT:
                         direction = direction.replace("R", "")
 
-            self.chunk_controller.update(direction)
+            self.chunk_controller.update()
 
             self.display.fill(constants.WHITE)
 
