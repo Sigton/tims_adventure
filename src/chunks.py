@@ -96,7 +96,8 @@ class ChunkController:
                 final_pos = list(map(operator.sub, current_pos, ([n//48 for n in constants.dir_to_movements[x]])))
                 final_pos = final_pos[0] % 20, final_pos[1] % 15
                 index = final_pos[1]*20+final_pos[0]
-                target_tile = self.map_seeds[self.get_current_chunk_id()].split(";")[index]
+                target_tile = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in
+                                   self.map_seeds[self.get_current_chunk_id()]], [])[index]
                 if target_tile in solid_tiles:
                     self.direction = self.direction.replace(x, "")
 
@@ -158,7 +159,7 @@ class ChunkController:
         new_chunk = pygame.sprite.Group()
 
         # Split the string into each individual tile
-        tile_data = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in seed.split(";")], [])
+        tile_data = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in seed], [])
         x, y = 0, 0
         for n in tile_data:
 
@@ -195,7 +196,7 @@ class ChunkController:
 
         seed = self.map_seeds[new_chunk]
 
-        tile_data = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in seed.split(";")], [])
+        tile_data = sum([[x[i:i+4] for i in range(0, len(x), 4)] for x in seed], [])
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].sprites():
 
