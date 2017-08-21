@@ -94,9 +94,30 @@ class ChunkController:
             current_pos = self.get_player_tile_nums()
             for x in self.direction:
                 final_pos = list(map(operator.sub, current_pos, ([n//48 for n in constants.dir_to_movements[x]])))
-                final_pos = final_pos[0] % 20, final_pos[1] % 15
+
+                c_o = [0, 0]
+
+                if final_pos[0] > 19:
+                    c_o = [1, 0]
+                    final_pos[0] %= 20
+                elif final_pos[0] < 0:
+                    c_o = [-1, 0]
+                    final_pos[0] %= 20
+
+                if final_pos[1] > 14:
+                    c_o = [0, 1]
+                    final_pos[1] %= 15
+                elif final_pos[1] < 0:
+                    c_o = [0, -1]
+                    final_pos[1] %= 15
+
+                current_chunk = self.get_current_chunk_id()
+                final_chunk_list = list(map(operator.add, [int(current_chunk[0:2]), int(current_chunk[2:4])], c_o))
+                final_chunk = create_id(final_chunk_list[0], final_chunk_list[1])
+
                 index = final_pos[1]*20+final_pos[0]
-                n = self.map_seeds[self.get_current_chunk_id()]
+
+                n = self.map_seeds[final_chunk]
                 target_tile = [n[i:i+4] for i in range(0, len(n), 4)][index]
                 if target_tile in solid_tiles:
                     self.direction = self.direction.replace(x, "")
