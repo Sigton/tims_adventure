@@ -1,4 +1,4 @@
-import pygame
+from src import spritesheet
 
 """
 bean_image_loader.py
@@ -13,4 +13,4 @@ sprite_sheet = None
 def load_sprite_sheet():
 
     global sprite_sheet
-    sprite_sheet = pygame.image.load("src/resources/beans.png")
+    sprite_sheet = spritesheet.SpriteSheet("src/resources/beans.png")
