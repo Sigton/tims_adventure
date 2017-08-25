@@ -15,10 +15,11 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = pygame.Surface([40, 40]).convert()
+        self.head_bean = MainBean()
 
-        self.rect = self.image.get_rect()
-        self.rect.center = constants.DISPLAY_CENTER
+        self.image = self.head_bean.image
+
+        self.rect = self.head_bean.rect
 
 
 class MainBean(pygame.sprite.Sprite):

@@ -31,6 +31,8 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(960, 720)
 
+        player.bean_image_loader.load_sprite_sheet()
+
         self.player_group = pygame.sprite.GroupSingle()
         self.player = player.Player()
         self.player_group.add(self.player)
