@@ -1,6 +1,6 @@
 import pygame
 
-from src import constants, spritesheet
+from src import constants, bean_image_loader
 
 """
 player.py
@@ -26,3 +26,8 @@ class MainBean(pygame.sprite.Sprite):
     def __init__(self):
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.image = bean_image_loader.red()
+
+        self.rect = self.image.get_rect()
+        self.rect.center = constants.DISPLAY_CENTER
