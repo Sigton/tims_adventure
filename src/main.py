@@ -33,9 +33,7 @@ class Main:
 
         player.bean_image_loader.load_sprite_sheet()
 
-        self.player_group = pygame.sprite.GroupSingle()
         self.player = player.Player()
-        self.player_group.add(self.player)
 
         self.chunk_controller.px = self.player.rect.x
         self.chunk_controller.py = self.player.rect.y
@@ -87,7 +85,7 @@ class Main:
             self.display.fill(constants.WHITE)
 
             self.chunk_controller.draw(self.display)
-            self.player_group.draw(self.display)
+            self.player.draw(self.display)
 
             pygame.display.update()
             self.clock.tick(60)
