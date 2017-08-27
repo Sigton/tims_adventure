@@ -1,5 +1,7 @@
 import pygame
 
+import math
+
 from src import constants, bean_image_loader
 
 """
