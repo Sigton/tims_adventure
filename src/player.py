@@ -34,7 +34,18 @@ class MainBean(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = bean_image_loader.red()
+        self.images = {}
+
+        self.create_images(bean_image_loader.red())
+
+        self.image = self.images["R"]
 
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
+
+    def create_images(self, main_image):
+
+        self.images.clear()
+
+        self.images["R"] = main_image
+        self.images["L"] = pygame.transform.flip(main_image, True, False)
