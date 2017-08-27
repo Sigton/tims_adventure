@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
 
     def draw(self, display):
 
-        display.blit(self.head_bean.image, (self.head_bean.rect.x, self.head_bean.rect.x))
+        display.blit(self.head_bean.image, (self.head_bean.rect.x, self.head_bean.rect.y))
 
 
 class MainBean(pygame.sprite.Sprite):

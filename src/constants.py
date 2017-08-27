@@ -43,3 +43,8 @@ dir_to_movements = {
 
 # Player constants
 movement_speed = 16
+
+player_pos_x = 460
+player_pos_y = 340
+
+player_pos = (player_pos_x, player_pos_y)

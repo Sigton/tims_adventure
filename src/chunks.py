@@ -53,7 +53,7 @@ class ChunkController:
         self.moving = 0
         self.movement_interval = (0, 0)
 
-        self.px, self.py = 0, 0
+        self.px, self.py = constants.player_pos
 
         tiles.load_images()
 
