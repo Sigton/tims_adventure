@@ -13,6 +13,8 @@ This is the player you see on screen.
 
 class Player(pygame.sprite.Sprite):
 
+    chunk_controller = None
+
     def __init__(self):
 
         pygame.sprite.Sprite.__init__(self)

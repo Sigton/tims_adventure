@@ -32,6 +32,8 @@ def create_id(x, y):
     
 class ChunkController:
 
+    player = None
+
     def __init__(self, start_x, start_y):
 
         # The key is a 4 digit string
