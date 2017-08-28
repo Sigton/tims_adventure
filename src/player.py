@@ -24,6 +24,11 @@ class Player(pygame.sprite.Sprite):
     def update(self, direction):
 
         [bean.set_image(direction) for bean in self.beans]
+        n = 0
+        head_bean = self.beans[0]
+        for bean in self.beans:
+            bean.rect.x = head_bean.rect.x - 20*n
+            n += 1
 
     def draw(self, display):
 
