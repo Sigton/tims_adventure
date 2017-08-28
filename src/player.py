@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.head_bean = Bean(True)
+        self.head_bean = Bean(False)
 
     def update(self, direction):
 
@@ -42,7 +42,7 @@ class Bean(pygame.sprite.Sprite):
 
         self.images = {}
 
-        self.create_images(bean_image_loader.red())
+        self.create_images(bean_image_loader.pink())
 
         self.image = self.images["R"] if self.large else self.images["SR"]
 
