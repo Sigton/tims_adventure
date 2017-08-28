@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.head_bean = MainBean()
+        self.head_bean = Bean(True)
 
     def update(self, direction):
 
@@ -32,17 +32,19 @@ class Player(pygame.sprite.Sprite):
                       self.head_bean.rect.y+math.sin(((self.chunk_controller.world_offset_x-24) % 48)*2)*4))
 
 
-class MainBean(pygame.sprite.Sprite):
+class Bean(pygame.sprite.Sprite):
 
-    def __init__(self):
+    def __init__(self, large):
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.large = large
 
         self.images = {}
 
         self.create_images(bean_image_loader.red())
 
-        self.image = self.images["R"]
+        self.image = self.images["R"] if self.large else self.images["SR"]
 
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
@@ -50,9 +52,9 @@ class MainBean(pygame.sprite.Sprite):
     def set_image(self, direction):
 
         if direction in ("R", "RU", "UR", "RD", "DR"):
-            self.image = self.images["R"]
+            self.image = self.images["R"] if self.large else self.images["SR"]
         elif direction in ("L", "LD", "DL", "LU", "UL"):
-            self.image = self.images["L"]
+            self.image = self.images["L"] if self.large else self.images["SL"]
 
     def create_images(self, main_image):
 
