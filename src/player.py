@@ -60,3 +60,5 @@ class MainBean(pygame.sprite.Sprite):
 
         self.images["R"] = main_image
         self.images["L"] = pygame.transform.flip(main_image, True, False)
+        self.images["SR"] = pygame.transform.scale(main_image, (20, 20))
+        self.images["SL"] = pygame.transform.flip(self.images["SR"], True, False)
