@@ -136,6 +136,8 @@ class ChunkController:
                 self.movement_interval = tuple(map(operator.floordiv, movement,
                                                    [self.moving for x in range(len(movement))]))
 
+        self.player.update(self.direction)
+
         if self.moving > 0:
             self.moving -= 1
             self.move_chunks(self.movement_interval)

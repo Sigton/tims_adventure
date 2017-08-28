@@ -49,9 +49,9 @@ class MainBean(pygame.sprite.Sprite):
 
     def set_image(self, direction):
 
-        if direction in ("R", "U", "RU", "UR", "RD", "DR"):
+        if direction in ("R", "RU", "UR", "RD", "DR"):
             self.image = self.images["R"]
-        elif direction in ("L", "D", "LD", "DL", "LU", "UL"):
+        elif direction in ("L", "LD", "DL", "LU", "UL"):
             self.image = self.images["L"]
 
     def create_images(self, main_image):
