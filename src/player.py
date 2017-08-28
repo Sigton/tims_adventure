@@ -55,6 +55,9 @@ class Bean(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
 
+        if not self.large:
+            self.rect.y += 8
+
     def set_image(self, direction):
 
         if direction in ("R", "RU", "UR", "RD", "DR"):
