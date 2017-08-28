@@ -33,8 +33,8 @@ class Player(pygame.sprite.Sprite):
     def draw(self, display):
 
         for bean in self.beans:
-            wobble_x = math.cos(((self.chunk_controller.world_offset_y % 48) + 180) * 2) * 4
-            wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + bean.rect.x % 13) % 48) * 2) * 4
+            wobble_x = math.cos((((self.chunk_controller.world_offset_y + (bean.rect.x % 13)) % 48) + 180) * 2) * 4
+            wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (bean.rect.x % 13)) % 48) * 2) * 4
             display.blit(bean.image,
                          (bean.rect.x+(wobble_x if bean.large else wobble_x/2),
                           bean.rect.y+(wobble_y if bean.large else wobble_y/2)))
