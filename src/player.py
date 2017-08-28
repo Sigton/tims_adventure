@@ -19,17 +19,18 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.head_bean = Bean(False)
+        self.beans = [Bean(True)] + [Bean(False) for n in range(4)]
 
     def update(self, direction):
 
-        self.head_bean.set_image(direction)
+        [bean.set_image(direction) for bean in self.beans]
 
     def draw(self, display):
 
-        display.blit(self.head_bean.image,
-                     (self.head_bean.rect.x+math.cos(((self.chunk_controller.world_offset_y % 48)+180)*2)*4,
-                      self.head_bean.rect.y+math.sin(((self.chunk_controller.world_offset_x-24) % 48)*2)*4))
+        for bean in self.beans:
+            display.blit(bean.image,
+                         (bean.rect.x+math.cos(((self.chunk_controller.world_offset_y % 48)+180)*2)*4,
+                          bean.rect.y+math.sin(((self.chunk_controller.world_offset_x-24) % 48)*2)*4))
 
 
 class Bean(pygame.sprite.Sprite):
