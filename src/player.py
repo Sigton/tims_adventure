@@ -21,6 +21,10 @@ class Player(pygame.sprite.Sprite):
 
         self.head_bean = MainBean()
 
+    def update(self, direction):
+
+        self.head_bean.set_image(direction)
+
     def draw(self, display):
 
         display.blit(self.head_bean.image,
@@ -42,6 +46,13 @@ class MainBean(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
+
+    def set_image(self, direction):
+
+        if direction in ("R", "U", "RU", "UR", "RD", "DR"):
+            self.image = self.images["R"]
+        else:
+            self.image = self.images["L"]
 
     def create_images(self, main_image):
 
