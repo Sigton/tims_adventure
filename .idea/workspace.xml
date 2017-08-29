@@ -17,8 +17,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="512">
+              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -86,7 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,6 +102,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -177,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Inputs to update no longer required">
-      <created>1503225659021</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1503225659022</updated>
     </task>
     <task id="LOCAL-00135" summary="Moving works again, but is much neater">
       <created>1503225767155</created>
@@ -521,17 +514,24 @@
       <option name="project" value="LOCAL" />
       <updated>1503941487147</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="Adjusted wobble some more">
+      <created>1503945384705</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1503945384705</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -598,7 +598,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Defined load_sprite_sheet" />
     <MESSAGE value="Updated bean image loader" />
     <MESSAGE value="Created lambdas to load each of the beans" />
@@ -623,7 +622,8 @@
     <MESSAGE value="Small beans now in line with large bean" />
     <MESSAGE value="Increased spacing between beans" />
     <MESSAGE value="Adjusted wobble" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted wobble" />
+    <MESSAGE value="Adjusted wobble some more" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted wobble some more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,16 +977,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="512">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

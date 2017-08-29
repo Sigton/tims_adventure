@@ -21,6 +21,12 @@ class Player(pygame.sprite.Sprite):
 
         self.beans = [Bean(True)] + [Bean(False) for n in range(4)]
 
+        self.trail = [[0, 0],
+                      [-1, 0],
+                      [-2, 0],
+                      [-3, 0],
+                      [-4, 0]]
+
     def update(self, direction):
 
         [bean.set_image(direction) for bean in self.beans]
