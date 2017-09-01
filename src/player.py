@@ -55,13 +55,13 @@ class Player(pygame.sprite.Sprite):
         n = 0
         for direction in self.move_history[-4:]:
             if len(direction) == 1:
-                movement = constants.dir_to_movements[direction],
+                movement = constants.dir_to_movements[direction]
             else:
                 movements = [constants.dir_to_movements[d] for d in list(direction)]
                 movement = tuple(map(operator.add, movements[0], movements[1]))
             self.movement_intervals[n] = tuple(map(operator.floordiv,
                                                    movement,
-                                                   [constants.movement_speed for x in range(len(movement))]))
+                                                   [-constants.movement_speed for x in range(len(movement))]))
             n += 1
 
 
