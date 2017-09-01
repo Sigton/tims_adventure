@@ -48,3 +48,5 @@ player_pos_x = 460
 player_pos_y = 340
 
 player_pos = (player_pos_x, player_pos_y)
+
+max_trail_offset = [0, 1, 2, 3, 4]
