@@ -1,6 +1,7 @@
 import pygame
 
 import math
+import operator
 
 from src import constants, bean_image_loader
 
@@ -28,7 +29,7 @@ class Player(pygame.sprite.Sprite):
                       [-4, 0]]
 
         self.move_history = ["R", "R", "R", "R", "R"]
-        self.movement_intervals = [0, 0, 0, 0]
+        self.movement_intervals = [(0, 0), (0, 0), (0, 0), (0, 0)]
 
     def update(self, direction):
 
@@ -48,6 +49,20 @@ class Player(pygame.sprite.Sprite):
             display.blit(bean.image,
                          (bean.rect.x+(wobble_x if bean.large else wobble_x/2),
                           bean.rect.y+(wobble_y if bean.large else wobble_y/2)))
+
+    def create_movement_intervals(self):
+
+        n = 0
+        for direction in self.move_history[-4:]:
+            if len(direction) == 1:
+                movement = constants.dir_to_movements[direction],
+            else:
+                movements = [constants.dir_to_movements[d] for d in list(direction)]
+                movement = tuple(map(operator.add, movements[0], movements[1]))
+            self.movement_intervals[n] = tuple(map(operator.floordiv,
+                                                   movement,
+                                                   [constants.movement_speed for x in range(len(movement))]))
+            n += 1
 
 
 class Bean(pygame.sprite.Sprite):
@@ -85,7 +100,3 @@ class Bean(pygame.sprite.Sprite):
         self.images["L"] = pygame.transform.flip(main_image, True, False)
         self.images["SR"] = pygame.transform.scale(main_image, (20, 20))
         self.images["SL"] = pygame.transform.flip(self.images["SR"], True, False)
-
-    def create_movement_intervals(self):
-
-        pass
