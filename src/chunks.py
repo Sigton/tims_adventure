@@ -136,7 +136,7 @@ class ChunkController:
                 self.movement_interval = tuple(map(operator.floordiv, movement,
                                                    [self.moving for x in range(len(movement))]))
 
-                self.player.move_history = [direction] + self.player.move_history[:3]
+                self.player.move_history = [direction] + self.player.move_history[:4]
 
         self.player.update(self.direction)
 

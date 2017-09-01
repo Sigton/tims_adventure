@@ -27,7 +27,7 @@ class Player(pygame.sprite.Sprite):
                       [-3, 0],
                       [-4, 0]]
 
-        self.move_history = ["R", "R", "R", "R"]
+        self.move_history = ["R", "R", "R", "R", "R"]
 
     def update(self, direction):
 
