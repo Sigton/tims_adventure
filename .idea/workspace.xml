@@ -36,8 +36,8 @@
                 <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/constants.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="657">
-                        <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+                      <state relative-caret-position="417">
+                        <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
                         <folding />
                       </state>
                     </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="63" column="53" lean-forward="false" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            <state relative-caret-position="512">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -215,13 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Debugging complete">
-      <created>1503235547273</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1503235547273</updated>
     </task>
     <task id="LOCAL-00145" summary="Begun working on checking for solid tiles.">
       <created>1503243232077</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504280557763</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="Required to negate values as player moves opposite direction from terrain">
+      <created>1504280740543</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1504280740543</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +636,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gonna use math with player" />
     <MESSAGE value="Linked the player and chunk controller" />
     <MESSAGE value="The bean wobbles" />
     <MESSAGE value="Defined create_images function" />
@@ -661,7 +660,8 @@
     <MESSAGE value="Created movement_intervals" />
     <MESSAGE value="Defined create_movement_intervals" />
     <MESSAGE value="Calling create_movement_intervals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calling create_movement_intervals" />
+    <MESSAGE value="Required to negate values as player moves opposite direction from terrain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Required to negate values as player moves opposite direction from terrain" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1004,14 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -1020,10 +1012,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="63" column="53" lean-forward="false" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="512">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

@@ -28,7 +28,7 @@ class Player(pygame.sprite.Sprite):
                       [-3, 0],
                       [-4, 0]]
 
-        self.move_history = ["R", "R", "R", "R", "R"]
+        self.move_history = ["", "", "", "", ""]
         self.movement_intervals = [(0, 0), (0, 0), (0, 0), (0, 0)]
 
     def update(self, direction):
@@ -54,15 +54,17 @@ class Player(pygame.sprite.Sprite):
 
         n = 0
         for direction in self.move_history[-4:]:
-            if len(direction) == 1:
-                movement = constants.dir_to_movements[direction]
-            else:
-                movements = [constants.dir_to_movements[d] for d in list(direction)]
-                movement = tuple(map(operator.add, movements[0], movements[1]))
-            self.movement_intervals[n] = tuple(map(operator.floordiv,
-                                                   movement,
-                                                   [-constants.movement_speed for x in range(len(movement))]))
+            if direction is not "":
+                if len(direction) == 1:
+                    movement = constants.dir_to_movements[direction]
+                else:
+                    movements = [constants.dir_to_movements[d] for d in list(direction)]
+                    movement = tuple(map(operator.add, movements[0], movements[1]))
+                self.movement_intervals[n] = tuple(map(operator.floordiv,
+                                                       movement,
+                                                       [-constants.movement_speed for x in range(len(movement))]))
             n += 1
+        print(self.movement_intervals)
 
 
 class Bean(pygame.sprite.Sprite):
