@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Empty values">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/player.py" afterPath="$PROJECT_DIR$/src/player.py" />
     </list>
@@ -36,8 +36,8 @@
                 <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/constants.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="417">
-                        <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+                      <state relative-caret-position="577">
+                        <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
                         <folding />
                       </state>
                     </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+            <state relative-caret-position="412">
+              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -215,13 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00146" summary="Solid tiles are solid">
-      <created>1503243930804</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1503243930804</updated>
     </task>
     <task id="LOCAL-00147" summary="Got a better idea than the semi colon seperator">
       <created>1503296597553</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504281258973</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="No longer initiating with empty strings">
+      <created>1504281789177</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1504281789177</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +636,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="The bean wobbles" />
     <MESSAGE value="Defined create_images function" />
     <MESSAGE value="Added update and set_image functions" />
     <MESSAGE value="Updated set_image function" />
@@ -661,7 +660,8 @@
     <MESSAGE value="Calling create_movement_intervals" />
     <MESSAGE value="Required to negate values as player moves opposite direction from terrain" />
     <MESSAGE value="Fixed a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
+    <MESSAGE value="No longer initiating with empty strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="No longer initiating with empty strings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,16 +1014,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="577">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        <state relative-caret-position="412">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

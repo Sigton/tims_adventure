@@ -35,6 +35,9 @@ class Player(pygame.sprite.Sprite):
 
         [bean.set_image(direction) for bean in self.beans]
 
+        if self.chunk_controller.moving:
+            pass
+
         n = 0
         head_bean = self.beans[0]
         for bean in self.beans:
