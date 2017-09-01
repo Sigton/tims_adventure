@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Empty values">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/player.py" afterPath="$PROJECT_DIR$/src/player.py" />
     </list>
@@ -55,8 +55,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -215,13 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Begun working on checking for solid tiles.">
-      <created>1503243232077</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1503243232077</updated>
     </task>
     <task id="LOCAL-00146" summary="Solid tiles are solid">
       <created>1503243930804</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504280740543</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Fixed a bug">
+      <created>1504281258973</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1504281258973</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +636,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Linked the player and chunk controller" />
     <MESSAGE value="The bean wobbles" />
     <MESSAGE value="Defined create_images function" />
     <MESSAGE value="Added update and set_image functions" />
@@ -661,7 +660,8 @@
     <MESSAGE value="Defined create_movement_intervals" />
     <MESSAGE value="Calling create_movement_intervals" />
     <MESSAGE value="Required to negate values as player moves opposite direction from terrain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Required to negate values as player moves opposite direction from terrain" />
+    <MESSAGE value="Fixed a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
