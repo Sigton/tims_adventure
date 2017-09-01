@@ -77,7 +77,7 @@ class Player(pygame.sprite.Sprite):
                     movement = tuple(map(operator.add, movements[0], movements[1]))
                 self.movement_intervals[n] = tuple(map(operator.floordiv,
                                                        movement,
-                                                       [-constants.movement_speed for x in range(len(movement))]))
+                                                       [constants.movement_speed for x in range(len(movement))]))
             n += 1
 
 
