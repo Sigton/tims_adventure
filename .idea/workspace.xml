@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants.py" afterPath="$PROJECT_DIR$/src/constants.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/player.py" afterPath="$PROJECT_DIR$/src/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,54 +12,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <splitter split-orientation="horizontal" split-proportion="0.5">
-            <split-first>
-              <leaf>
-                <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/chunks.py">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="537">
-                        <caret line="139" column="55" lean-forward="true" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
-                        <folding />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-first>
-            <split-second>
-              <leaf>
-                <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/constants.py">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="897">
-                        <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-                        <folding />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-second>
-          </splitter>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="332">
+              <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="139" column="55" lean-forward="true" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,8 +79,8 @@
         <option value="$PROJECT_DIR$/src/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/chunks.py" />
-        <option value="$PROJECT_DIR$/src/player.py" />
         <option value="$PROJECT_DIR$/src/constants.py" />
+        <option value="$PROJECT_DIR$/src/player.py" />
       </list>
     </option>
   </component>
@@ -215,13 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00148" summary="Fixed bugs">
-      <created>1503297005586</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1503297005586</updated>
     </task>
     <task id="LOCAL-00149" summary="Fixed el buggerino">
       <created>1503345912427</created>
@@ -559,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504281828299</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="Created max_trail_offset">
+      <created>1504283842937</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1504283842937</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +618,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added update and set_image functions" />
     <MESSAGE value="Updated set_image function" />
     <MESSAGE value="Player now turns n stuff" />
     <MESSAGE value="Added more images for the player" />
@@ -661,7 +642,8 @@
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="No longer initiating with empty strings" />
     <MESSAGE value="Updated player.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated player.py" />
+    <MESSAGE value="Created max_trail_offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created max_trail_offset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,7 +996,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
+        <state relative-caret-position="476">
           <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
@@ -1022,8 +1004,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="332">
+          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

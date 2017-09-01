@@ -36,7 +36,19 @@ class Player(pygame.sprite.Sprite):
         [bean.set_image(direction) for bean in self.beans]
 
         if self.chunk_controller.moving:
-            pass
+            n = 0
+            for bean in self.beans:
+                if not bean.large:
+                    move_x = self.movement_intervals[n-1][0]
+                    move_y = self.movement_intervals[n-1][1]
+                    if abs(self.trail[n][0] + move_x) // 48 > constants.max_trail_offset[n-1]:
+                        move_x = 0
+                    if abs(self.trail[n][1] + move_y) // 48 > constants.max_trail_offset[n-1]:
+                        move_y = 0
+                    bean.rect.x += move_x
+                    bean.rect.y += move_y
+
+                n += 1
 
         n = 0
         head_bean = self.beans[0]
@@ -67,7 +79,6 @@ class Player(pygame.sprite.Sprite):
                                                        movement,
                                                        [-constants.movement_speed for x in range(len(movement))]))
             n += 1
-        print(self.movement_intervals)
 
 
 class Bean(pygame.sprite.Sprite):
