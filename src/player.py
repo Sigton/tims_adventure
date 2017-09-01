@@ -28,6 +28,7 @@ class Player(pygame.sprite.Sprite):
                       [-4, 0]]
 
         self.move_history = ["R", "R", "R", "R", "R"]
+        self.movement_intervals = [0, 0, 0, 0]
 
     def update(self, direction):
 
@@ -84,3 +85,7 @@ class Bean(pygame.sprite.Sprite):
         self.images["L"] = pygame.transform.flip(main_image, True, False)
         self.images["SR"] = pygame.transform.scale(main_image, (20, 20))
         self.images["SL"] = pygame.transform.flip(self.images["SR"], True, False)
+
+    def create_movement_intervals(self):
+
+        pass
