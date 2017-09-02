@@ -31,6 +31,12 @@ class Player(pygame.sprite.Sprite):
         self.move_history = ["R", "R", "R", "R", "R"]
         self.movement_intervals = [(0, 0), (0, 0), (0, 0), (0, 0)]
 
+        n = 0
+        head_bean = self.beans[0]
+        for bean in self.beans:
+            bean.rect.centerx = head_bean.rect.centerx + 30 * self.trail[n][0]
+            n += 1
+
     def update(self, direction):
 
         [bean.set_image(direction) for bean in self.beans]
@@ -43,12 +49,6 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.x += self.movement_intervals[n][0]
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
-
-        n = 0
-        head_bean = self.beans[0]
-        for bean in self.beans:
-            bean.rect.centerx = head_bean.rect.centerx + 30*self.trail[n][0]
-            n += 1
 
     def draw(self, display):
 
@@ -80,9 +80,12 @@ class Player(pygame.sprite.Sprite):
                 old_movement = constants.dir_to_movements[old_move]
 
             new_movement = tuple(map(operator.sub, (0, 0), new_movement))
-            movement = tuple(map(operator.add, new_movement, old_movement))
+            old_movement = tuple(map(operator.sub, (0, 0), old_movement))
+
+            movement = tuple(map(operator.sub, old_movement, new_movement))
             self.movement_intervals[n] = tuple(map(operator.floordiv, movement,
                                                    [constants.movement_speed for x in range(len(movement))]))
+        print(self.movement_intervals)
 
 
 class Bean(pygame.sprite.Sprite):
