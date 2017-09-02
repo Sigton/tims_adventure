@@ -37,7 +37,12 @@ class Player(pygame.sprite.Sprite):
 
         if self.chunk_controller.moving:
 
-            pass
+            n = 0
+            for bean in self.beans:
+                if not bean.large:
+                    bean.rect.x += self.movement_intervals[n][0]
+                    bean.rect.y += self.movement_intervals[n][1]
+                    n += 1
 
         n = 0
         head_bean = self.beans[0]
