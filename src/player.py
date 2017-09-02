@@ -52,7 +52,7 @@ class Player(pygame.sprite.Sprite):
 
     def draw(self, display):
 
-        for bean in self.beans:
+        for bean in self.beans[::-1]:
             wobble_x = math.cos((((self.chunk_controller.world_offset_y + (bean.rect.x % 13)) % 48) + 180) * 2) * 4
             wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (bean.rect.x % 13)) % 48) * 2) * 4
             display.blit(bean.image,
