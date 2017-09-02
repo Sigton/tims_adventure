@@ -56,7 +56,23 @@ class Player(pygame.sprite.Sprite):
 
     def create_movement_intervals(self):
 
-        pass
+        for n in range(len(self.movement_intervals)):
+            current_move = self.move_history[0]
+            old_move = self.move_history[n+1]
+
+            if len(current_move) > 1:
+                new_movement = tuple(map(operator.add,
+                                         constants.dir_to_movements(current_move[0]),
+                                         constants.dir_to_movements(current_move[1])))
+            else:
+                new_movement = constants.dir_to_movements(current_move)
+
+            if len(old_move) > 1:
+                old_movement = tuple(map(operator.add,
+                                         constants.dir_to_movements(old_move[0]),
+                                         constants.dir_to_movements(old_move[1])))
+            else:
+                old_movement = constants.dir_to_movements(old_move)
 
 
 class Bean(pygame.sprite.Sprite):
