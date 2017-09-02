@@ -137,7 +137,7 @@ class ChunkController:
                                                    [self.moving for x in range(len(movement))]))
 
                 self.player.move_history = [direction] + self.player.move_history[:4]
-                # self.player.create_movement_intervals()
+                self.player.create_movement_intervals()
 
         self.player.update(self.direction)
 

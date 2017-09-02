@@ -67,17 +67,17 @@ class Player(pygame.sprite.Sprite):
 
             if len(current_move) > 1:
                 new_movement = tuple(map(operator.add,
-                                         constants.dir_to_movements(current_move[0]),
-                                         constants.dir_to_movements(current_move[1])))
+                                         constants.dir_to_movements[current_move[0]],
+                                         constants.dir_to_movements[current_move[1]]))
             else:
-                new_movement = constants.dir_to_movements(current_move)
+                new_movement = constants.dir_to_movements[current_move]
 
             if len(old_move) > 1:
                 old_movement = tuple(map(operator.add,
-                                         constants.dir_to_movements(old_move[0]),
-                                         constants.dir_to_movements(old_move[1])))
+                                         constants.dir_to_movements[old_move[0]],
+                                         constants.dir_to_movements[old_move[1]]))
             else:
-                old_movement = constants.dir_to_movements(old_move)
+                old_movement = constants.dir_to_movements[old_move]
 
             new_movement = tuple(map(operator.sub, (0, 0), new_movement))
             movement = tuple(map(operator.add, new_movement, old_movement))
