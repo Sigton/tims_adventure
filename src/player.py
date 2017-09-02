@@ -34,7 +34,7 @@ class Player(pygame.sprite.Sprite):
         n = 0
         head_bean = self.beans[0]
         for bean in self.beans:
-            bean.rect.centerx = head_bean.rect.centerx + 30 * self.trail[n][0]
+            bean.rect.centerx = head_bean.rect.centerx + 48 * self.trail[n][0]
             n += 1
 
     def update(self, direction):
@@ -85,7 +85,6 @@ class Player(pygame.sprite.Sprite):
             movement = tuple(map(operator.sub, old_movement, new_movement))
             self.movement_intervals[n] = tuple(map(operator.floordiv, movement,
                                                    [constants.movement_speed for x in range(len(movement))]))
-        print(self.movement_intervals)
 
 
 class Bean(pygame.sprite.Sprite):
