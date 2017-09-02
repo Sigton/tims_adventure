@@ -39,7 +39,7 @@ class Player(pygame.sprite.Sprite):
 
     def update(self, direction):
 
-        [bean.set_image(direction) for bean in self.beans]
+        [self.beans[n].set_image(self.move_history[n]) for n in range(len(self.move_history))]
 
         if self.chunk_controller.moving:
 
