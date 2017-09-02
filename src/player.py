@@ -74,6 +74,11 @@ class Player(pygame.sprite.Sprite):
             else:
                 old_movement = constants.dir_to_movements(old_move)
 
+            new_movement = tuple(map(operator.sub, (0, 0), new_movement))
+            movement = tuple(map(operator.add, new_movement, old_movement))
+            self.movement_intervals[n] = tuple(map(operator.floordiv, movement,
+                                                   [constants.movement_speed for x in range(len(movement))]))
+
 
 class Bean(pygame.sprite.Sprite):
 
