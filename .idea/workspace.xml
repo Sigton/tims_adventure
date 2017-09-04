@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/tile_image_loader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map_generator.py" afterPath="$PROJECT_DIR$/src/map_generator.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -34,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map_generator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="map_generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/map_generator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="737">
@@ -71,7 +71,6 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/src/tiles.py" />
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
-        <option value="$PROJECT_DIR$/src/map_generator.py" />
         <option value="$PROJECT_DIR$/src/tile_types.py" />
         <option value="$PROJECT_DIR$/src/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
@@ -79,6 +78,7 @@
         <option value="$PROJECT_DIR$/src/player.py" />
         <option value="$PROJECT_DIR$/src/chunks.py" />
         <option value="$PROJECT_DIR$/src/tile_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/map_generator.py" />
       </list>
     </option>
   </component>
@@ -195,13 +195,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00163" summary="MainBean has image and position attributes">
-      <created>1503644967989</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1503644967989</updated>
     </task>
     <task id="LOCAL-00164" summary="Connected the MainBean class to the player class">
       <created>1503645276384</created>
@@ -539,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504554452202</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="Updated tile_image_loader">
+      <created>1504554628857</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1504554628857</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -616,7 +616,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a trail attribute" />
     <MESSAGE value="Working on the trail" />
     <MESSAGE value="Created move_history" />
     <MESSAGE value="Added some docs" />
@@ -641,7 +640,8 @@
     <MESSAGE value="Each bean now has its own direction" />
     <MESSAGE value="Fixing collision bug" />
     <MESSAGE value="Updated terrain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated terrain" />
+    <MESSAGE value="Updated tile_image_loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated tile_image_loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -991,18 +991,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/map_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding />
         </state>
       </provider>
