@@ -98,6 +98,7 @@ class ChunkController:
                 final_pos = list(map(operator.sub, current_pos,
                                      ([n//48 for n in constants.dir_to_movements[self.direction]])))
             else:
+
                 final_pos = list(map(operator.sub, current_pos,
                                      ([n//48 for n in list(map(operator.add,
                                                                constants.dir_to_movements[self.direction[0]],
