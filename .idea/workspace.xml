@@ -19,9 +19,11 @@
           <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/tiles.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="732">
-                  <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="872">
+                  <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -193,13 +195,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00171" summary="Defined create_images function">
-      <created>1503865685001</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1503865685001</updated>
     </task>
     <task id="LOCAL-00172" summary="Added update and set_image functions">
       <created>1503903144384</created>
@@ -537,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504557619166</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="Created AnimatedTile class">
+      <created>1504557725105</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1504557725105</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -614,7 +616,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Calling create_movement_intervals" />
     <MESSAGE value="Required to negate values as player moves opposite direction from terrain" />
     <MESSAGE value="No longer initiating with empty strings" />
     <MESSAGE value="Updated player.py" />
@@ -639,7 +640,8 @@
     <MESSAGE value="Updated map" />
     <MESSAGE value="Changed artwork for the chocolate river" />
     <MESSAGE value="Created new tile type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new tile type" />
+    <MESSAGE value="Created AnimatedTile class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created AnimatedTile class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -982,14 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -998,11 +992,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="872">
+          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
