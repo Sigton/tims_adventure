@@ -11,7 +11,7 @@ so they can be quickly accessed to improve performance.
 # This is where each tile can be found on terrain.png
 
 generic_ground = (0, 0, 48, 48)
-water = (48, 0, 48, 48)
+blue_ground = (48, 0, 48, 48)
 path_1 = (0, 48, 48, 48)
 path_2 = (48, 48, 48, 48)
 path_3 = (96, 48, 48, 48)
@@ -39,8 +39,9 @@ wall_8 = (144, 192, 48, 48)
 wall_9 = (192, 144, 48, 48)
 wall_10 = (192, 192, 48, 48)
 wall_11 = (240, 144, 48, 48)
+wall_12 = (240, 192, 48, 48)
 
-tiles = [generic_ground, water, path_1,
+tiles = [generic_ground, blue_ground, path_1,
          path_2, path_3, path_4, path_5,
          path_6, path_7, path_8, path_9,
          path_10, path_11, path_12,
@@ -48,7 +49,7 @@ tiles = [generic_ground, water, path_1,
          dark_ground, wall_1, wall_2,
          wall_3, wall_4, wall_5, wall_6,
          wall_7, wall_8, wall_9, wall_10,
-         wall_11]
+         wall_11, wall_12]
 images = []
 
 sprite_sheet = None
