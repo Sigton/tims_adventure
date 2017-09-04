@@ -44,3 +44,10 @@ class Tile(pygame.sprite.Sprite):
 
         self.offset_x = o_x
         self.offset_y = o_y
+
+
+class AnimatedTile(pygame.sprite.Sprite):
+
+    def __init__(self, tile_num, x, y, o_x, o_y):
+
+        pygame.sprite.Sprite.__init__(self)
