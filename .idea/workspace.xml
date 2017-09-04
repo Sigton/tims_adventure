@@ -19,8 +19,8 @@
           <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/tiles.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="872">
-                  <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+                <state relative-caret-position="772">
+                  <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -195,13 +195,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Added update and set_image functions">
-      <created>1503903144384</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1503903144389</updated>
     </task>
     <task id="LOCAL-00173" summary="Updated set_image function">
       <created>1503903235276</created>
@@ -539,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504557725105</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="Added to constructor of AnimatedTile">
+      <created>1504557927992</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1504557927992</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -616,7 +616,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Required to negate values as player moves opposite direction from terrain" />
     <MESSAGE value="No longer initiating with empty strings" />
     <MESSAGE value="Updated player.py" />
     <MESSAGE value="Created max_trail_offset" />
@@ -641,7 +640,8 @@
     <MESSAGE value="Changed artwork for the chocolate river" />
     <MESSAGE value="Created new tile type" />
     <MESSAGE value="Created AnimatedTile class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created AnimatedTile class" />
+    <MESSAGE value="Added to constructor of AnimatedTile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to constructor of AnimatedTile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1002,8 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        <state relative-caret-position="772">
+          <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

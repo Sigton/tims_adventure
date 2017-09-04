@@ -61,3 +61,8 @@ class AnimatedTile(pygame.sprite.Sprite):
 
         self.offset_x = o_x
         self.offset_y = o_y
+
+    def realign(self, x, y):
+
+        self.rect.x = x+self.offset_x * constants.tile_w
+        self.rect.y = y+self.offset_y * constants.tile_h
