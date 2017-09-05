@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +42,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="tiles.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="472">
-                  <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+                <state relative-caret-position="252">
+                  <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -54,11 +54,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+                <state relative-caret-position="772">
+                  <caret line="87" column="72" lean-forward="true" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
@@ -101,10 +101,10 @@
         <option value="$PROJECT_DIR$/src/tile_types.py" />
         <option value="$PROJECT_DIR$/src/tiles.py" />
         <option value="$PROJECT_DIR$/src/chunks.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
       </list>
     </option>
   </component>
@@ -232,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Added some docs">
-      <created>1504277966679</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1504277966679</updated>
     </task>
     <task id="LOCAL-00188" summary="Updated chunks.py">
       <created>1504279322504</created>
@@ -576,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504631057610</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="Now calls animate function">
+      <created>1504631473393</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1504631473393</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,7 +653,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated terrain" />
     <MESSAGE value="Updated tile_image_loader" />
     <MESSAGE value="Started labeling tiles" />
     <MESSAGE value="Continued labeling tiles" />
@@ -678,7 +677,8 @@
     <MESSAGE value="Updated AnimatedTile class" />
     <MESSAGE value="Added tile code attributes" />
     <MESSAGE value="Made tile generator more useable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made tile generator more useable" />
+    <MESSAGE value="Now calls animate function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now calls animate function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,22 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1042,13 +1026,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        <state relative-caret-position="252">
+          <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="87" column="72" lean-forward="true" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>

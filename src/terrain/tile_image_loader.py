@@ -81,8 +81,8 @@ def load_images():
                                               tile[2],
                                               tile[3])]
         else:
-            for frame in tile:
-                images += [[sprite_sheet.get_image(frame[0],
-                                                   frame[1],
-                                                   frame[2],
-                                                   frame[3])]]
+
+            images += [[sprite_sheet.get_image(frame[0],
+                                               frame[1],
+                                               frame[2],
+                                               frame[3]) for frame in tile]]
