@@ -48,11 +48,11 @@ class Tile(pygame.sprite.Sprite):
 
 class AnimatedTile(pygame.sprite.Sprite):
 
-    def __init__(self, tile_imgs, x, y, o_x, o_y):
+    def __init__(self, tile_images_index, x, y, o_x, o_y):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.images = [images[tile] for tile in tile_imgs]
+        self.images = [tile for tile in images[tile_images_index]]
         self.image = self.images[0]
 
         self.rect = self.image.get_rect()
