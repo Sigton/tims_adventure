@@ -1,9 +1,9 @@
+import json
+import operator
+
 import pygame
 
-import operator
-import json
-
-from src import constants
+from src.etc import constants
 
 """
 map_generator.py
@@ -67,7 +67,7 @@ def generate_map(blueprint):
     chunk_x, chunk_y = 0, 0
     for n in range(num_chunks):
 
-        chunks += [[[map_pix_arr[x+(chunk_x*constants.chunk_w)][y+(chunk_y*constants.chunk_h)]
+        chunks += [[[map_pix_arr[x + (chunk_x * constants.chunk_w)][y + (chunk_y * constants.chunk_h)]
                      for x in range(constants.chunk_w)]
                     for y in range(constants.chunk_h)]]
 

@@ -4,9 +4,9 @@ import os
 
 import pygame
 
-from .. import constants
-from src.terrain.tile_types import *
+from src.etc import constants
 from src.terrain import tiles
+from src.terrain.tile_types import *
 
 """
 chunks.py
@@ -98,13 +98,13 @@ class ChunkController:
                 current_pos = self.get_player_tile_nums()
                 if len(self.direction) == 1:
                     final_pos = list(map(operator.sub, current_pos,
-                                         ([n//48 for n in constants.dir_to_movements[self.direction]])))
+                                         ([n // 48 for n in constants.dir_to_movements[self.direction]])))
                 else:
 
                     final_pos = list(map(operator.sub, current_pos,
-                                         ([n//48 for n in list(map(operator.add,
-                                                                   constants.dir_to_movements[self.direction[0]],
-                                                                   constants.dir_to_movements[self.direction[1]]))])
+                                         ([n // 48 for n in list(map(operator.add,
+                                                                     constants.dir_to_movements[self.direction[0]],
+                                                                     constants.dir_to_movements[self.direction[1]]))])
                                          ))
 
                 c_o = [0, 0]
@@ -223,8 +223,8 @@ class ChunkController:
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
 
-        chunk_x = int(chunk[0:2])*constants.chunk_w*constants.tile_w
-        chunk_y = int(chunk[2:4])*constants.chunk_h*constants.tile_h
+        chunk_x = int(chunk[0:2]) * constants.chunk_w * constants.tile_w
+        chunk_y = int(chunk[2:4]) * constants.chunk_h * constants.tile_h
 
         self.chunk_pos[chunk] = (chunk_x, chunk_y)
 

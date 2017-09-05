@@ -1,4 +1,4 @@
-from src import spritesheet
+from src.etc import spritesheet
 
 """
 bean_image_loader.py

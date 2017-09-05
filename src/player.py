@@ -1,9 +1,10 @@
-import pygame
-
 import math
 import operator
 
-from src import constants, bean_image_loader
+import pygame
+
+from src import bean_image_loader
+from src.etc import constants
 
 """
 player.py

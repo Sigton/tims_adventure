@@ -1,6 +1,6 @@
 import pygame
 
-from src import constants
+from src.etc import constants
 
 """
 spritesheet.py

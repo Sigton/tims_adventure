@@ -3,7 +3,8 @@ import sys
 import pygame
 from pygame.locals import *
 
-from src import constants, player
+from src import player
+from src.etc import constants
 from src.terrain import chunks
 
 """
