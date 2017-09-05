@@ -66,7 +66,7 @@ class AnimatedTile(pygame.sprite.Sprite):
         self.offset_x = o_x
         self.offset_y = o_y
 
-        self.timer_threshold = 20
+        self.timer_threshold = 15
         self.current_image = 0
         self.timer = 0
 
@@ -81,5 +81,5 @@ class AnimatedTile(pygame.sprite.Sprite):
 
         if self.timer > self.timer_threshold:
             self.timer = 0
-            self.current_image += 1
+            self.current_image = (self.current_image + 1) % len(self.images)
             self.image = self.images[self.current_image]
