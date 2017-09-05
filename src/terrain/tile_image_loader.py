@@ -72,7 +72,17 @@ def load_images():
 
     sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
 
-    images += [sprite_sheet.get_image(tile[0],
-                                      tile[1],
-                                      tile[2],
-                                      tile[3]) for tile in tiles]
+    for tile in tiles:
+
+        if type(tile[0]) == int:
+
+            images += [sprite_sheet.get_image(tile[0],
+                                              tile[1],
+                                              tile[2],
+                                              tile[3])]
+        else:
+            for frame in tile:
+                images += [sprite_sheet.get_image(frame[0],
+                                                  frame[1],
+                                                  frame[2],
+                                                  frame[3])]
