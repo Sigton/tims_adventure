@@ -150,6 +150,7 @@ class ChunkController:
                 self.player.create_movement_intervals()
 
         self.player.update(self.direction)
+        self.update_chunks()
 
         if self.moving > 0:
             self.moving -= 1
@@ -183,6 +184,12 @@ class ChunkController:
             # Delete any left over chunks
             for chunk in to_remove:
                 self.delete_chunk(chunk)
+
+    def update_chunks(self):
+
+        for chunk in self.live_chunks:
+
+            [tile.animate() for tile in self.map_tiles[chunk] if tile.tile_code in animated_tiles]
 
     def create_chunk(self, chunk):
 
