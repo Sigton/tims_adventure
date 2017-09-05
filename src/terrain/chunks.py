@@ -1,11 +1,11 @@
-import pygame
-
 import json
-import os
 import operator
+import os
+
+import pygame
+from src.tile_types import *
 
 from src import constants, tiles
-from src.tile_types import *
 
 """
 chunks.py
@@ -63,7 +63,7 @@ class ChunkController:
         if not os.stat(os.path.join("src", "saves", "maps.json")).st_size:
             # If the file is empty then
             # run the map generator
-            from src import map_generator
+            from src.terrain import map_generator
             map_generator.generate_map("src/resources/map.png")
             del map_generator
 

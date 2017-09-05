@@ -1,9 +1,10 @@
+import sys
+
 import pygame
 from pygame.locals import *
 
-import sys
-
-from src import constants, chunks, player
+from src import constants, player
+from src.terrain import chunks
 
 """
 main.py

@@ -1,7 +1,7 @@
 import pygame
 
 from src import constants
-from src.tile_image_loader import *
+from src.terrain.tile_image_loader import *
 
 """
 tiles.py
