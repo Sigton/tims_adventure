@@ -66,3 +66,7 @@ class AnimatedTile(pygame.sprite.Sprite):
 
         self.rect.x = x+self.offset_x * constants.tile_w
         self.rect.y = y+self.offset_y * constants.tile_h
+
+    def animate(self):
+
+        pass
