@@ -13,12 +13,14 @@ tiles that make up the ground.
 
 class Tile(pygame.sprite.Sprite):
 
-    def __init__(self, tile_num, x, y, o_x, o_y):
+    def __init__(self, tile_num, x, y, o_x, o_y, tile_code):
 
         # A tile is a 48x48 image that
         # is part of the ground.
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.tile_code = tile_code
 
         self.image = images[tile_num]
 
@@ -48,9 +50,11 @@ class Tile(pygame.sprite.Sprite):
 
 class AnimatedTile(pygame.sprite.Sprite):
 
-    def __init__(self, tile_images_index, x, y, o_x, o_y):
+    def __init__(self, tile_images_index, x, y, o_x, o_y, tile_code):
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.tile_code = tile_code
 
         self.images = [tile for tile in images[tile_images_index]]
         self.image = self.images[0]
