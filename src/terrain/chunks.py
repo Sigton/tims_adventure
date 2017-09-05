@@ -3,9 +3,10 @@ import operator
 import os
 
 import pygame
-from src.tile_types import *
 
-from src import constants, tiles
+from .. import constants
+from src.terrain.tile_types import *
+from src.terrain import tiles
 
 """
 chunks.py
