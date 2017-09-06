@@ -36,7 +36,7 @@ class Tile(pygame.sprite.Sprite):
         self.rect.x = x+ self.offset_x * constants.tile_w
         self.rect.y = y+ self.offset_y * constants.tile_h
 
-    def reuse(self, tile_num, x, y, o_x, o_y):
+    def reuse(self, tile_num, x, y, o_x, o_y, tile_code):
 
         self.image = images[tile_num]
 
@@ -83,3 +83,7 @@ class AnimatedTile(pygame.sprite.Sprite):
             self.timer = 0
             self.current_image = (self.current_image + 1) % len(self.images)
             self.image = self.images[self.current_image]
+
+    def reuse(self):
+
+        pass

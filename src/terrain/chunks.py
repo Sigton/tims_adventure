@@ -248,7 +248,7 @@ class ChunkController:
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].sprites():
 
-            n.reuse(int(tile_data[tile]), x, y, x, y)
+            n.reuse(int(tile_data[tile]), x, y, x, y, tile_data[tile])
 
             x += 1
             if x % constants.chunk_w == 0:
