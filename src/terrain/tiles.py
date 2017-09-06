@@ -34,14 +34,15 @@ class Tile(pygame.sprite.Sprite):
 
     def realign(self, x, y):
 
-        self.rect.x = x+ self.offset_x * constants.tile_w
-        self.rect.y = y+ self.offset_y * constants.tile_h
+        self.rect.x = x + self.offset_x * constants.tile_w
+        self.rect.y = y + self.offset_y * constants.tile_h
 
     def reuse(self, tile_num, x, y, o_x, o_y, tile_code):
 
         if tile_code in animated_tiles:
             new_tile = AnimatedTile(tile_num, x, y, o_x, o_y, tile_code)
             [group.add(new_tile) for group in self.groups()]
+            [group.remove(self) for group in self.groups()]
         else:
             self.tile_code = tile_code
 
@@ -96,6 +97,7 @@ class AnimatedTile(pygame.sprite.Sprite):
         if tile_code not in animated_tiles:
             new_tile = Tile(tile_images_index, x, y, o_x, o_y, tile_code)
             [group.add(new_tile) for group in self.groups()]
+            [group.remove(self) for group in self.groups()]
         else:
             self.tile_code = tile_code
 
