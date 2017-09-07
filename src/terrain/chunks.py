@@ -58,6 +58,8 @@ class ChunkController:
 
         self.animation_clock = 0
 
+        self.global_animation_threshold = max(constants.animation_thresholds.items(), key=operator.itemgetter(1))[0]
+
         self.px, self.py = constants.player_pos
 
         tiles.load_images()
@@ -154,7 +156,8 @@ class ChunkController:
         self.player.update(self.direction)
         self.update_chunks()
 
-        self.animation_clock += 1
+        self.animation_clock = (self.animation_clock + 1) %\
+            constants.animation_thresholds[self.global_animation_threshold]
 
         if self.moving > 0:
             self.moving -= 1

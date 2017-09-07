@@ -17,8 +17,8 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="156" column="33" lean-forward="false" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
+            <state relative-caret-position="540">
+              <caret line="159" column="75" lean-forward="false" selection-start-line="159" selection-start-column="75" selection-end-line="159" selection-end-column="75" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -29,8 +29,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+            <state relative-caret-position="792">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -213,13 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00201" summary="Starting again with a different approach">
-      <created>1504302987947</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1504302987947</updated>
     </task>
     <task id="LOCAL-00202" summary="Updated create_movement_intervals">
       <created>1504343737883</created>
@@ -557,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504798619742</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="Created animation_clock">
+      <created>1504798838988</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1504798838988</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -634,7 +634,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moved some files into sub-directory" />
     <MESSAGE value="Chocolate river now has tuples for each of its frames" />
     <MESSAGE value="Fixed import on chunks.py" />
     <MESSAGE value="Allowed loading of many images" />
@@ -659,7 +658,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated map" />
     <MESSAGE value="Created animation_thresholds var" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created animation_thresholds var" />
+    <MESSAGE value="Created animation_clock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created animation_clock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,16 +1014,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        <state relative-caret-position="792">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="156" column="33" lean-forward="false" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
+        <state relative-caret-position="540">
+          <caret line="159" column="75" lean-forward="false" selection-start-line="159" selection-start-column="75" selection-end-line="159" selection-end-column="75" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
