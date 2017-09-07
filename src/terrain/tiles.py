@@ -82,10 +82,10 @@ class AnimatedTile(pygame.sprite.Sprite):
         self.rect.x = x + self.offset_x * constants.tile_w
         self.rect.y = y + self.offset_y * constants.tile_h
 
-    def animate(self, timer):
+    def animate(self, frame):
 
-        if timer % self.timer_threshold == 0:
-            self.current_image = (self.current_image + 1) % len(self.images)
+        if not frame == self.current_image:
+            self.current_image = frame % len(self.images)
             self.image = self.images[self.current_image]
 
     def reuse(self, tile_images_index, x, y, o_x, o_y, tile_code):

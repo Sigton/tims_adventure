@@ -60,6 +60,10 @@ class ChunkController:
 
         self.global_animation_threshold = max(constants.animation_thresholds.items(), key=operator.itemgetter(1))[0]
 
+        self.current_frames = {
+            "0030": 0
+        }
+
         self.px, self.py = constants.player_pos
 
         tiles.load_images()
@@ -158,6 +162,9 @@ class ChunkController:
 
         self.animation_clock = (self.animation_clock + 1) %\
             constants.animation_thresholds[self.global_animation_threshold]
+        for tile in self.current_frames.keys():
+            if self.animation_clock % constants.animation_thresholds[tile] == 0:
+                self.current_frames[tile] += 1
 
         if self.moving > 0:
             self.moving -= 1
@@ -196,7 +203,8 @@ class ChunkController:
 
         for chunk in self.live_chunks:
 
-            [tile.animate(self.animation_clock) for tile in self.map_tiles[chunk] if tile.tile_code in animated_tiles]
+            [tile.animate(self.current_frames[tile.tile_code]) for tile in self.map_tiles[chunk]
+             if tile.tile_code in animated_tiles]
 
     def create_chunk(self, chunk):
 
