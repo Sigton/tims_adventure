@@ -196,7 +196,7 @@ class ChunkController:
 
         for chunk in self.live_chunks:
 
-            [tile.animate() for tile in self.map_tiles[chunk] if tile.tile_code in animated_tiles]
+            [tile.animate(self.animation_clock) for tile in self.map_tiles[chunk] if tile.tile_code in animated_tiles]
 
     def create_chunk(self, chunk):
 
