@@ -54,5 +54,5 @@ max_trail_offset = [0, 1, 2, 3, 4]
 # Tile information
 
 animation_thresholds = {
-    "0030": 15
+    "0030": 4
 }
