@@ -29,3 +29,21 @@ class SeedDict(object):
         for seed in self.seeds:
             if seed.name == item:
                 return seed
+
+        return KeyError
+
+    def __setitem__(self, key, value):
+
+        for seed in self.seeds:
+            if seed.name == key:
+                self.seeds[seed.name] = value
+
+    def __delitem__(self, key):
+
+        for seed in self.seeds:
+            if seed.name == key:
+                del self.seeds[seed.name]
+
+    def __len__(self):
+
+        return len(self.seeds)
