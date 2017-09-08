@@ -14,3 +14,18 @@ class Seed(object):
         self.tiles = tiles
         self.decs = decs
         self.entities = entities
+
+
+class SeedDict(object):
+
+    __slots__ = ["seeds"]
+
+    def __init__(self, seeds):
+
+        self.seeds = seeds
+
+    def __getitem__(self, item):
+
+        for seed in self.seeds:
+            if seed.name == item:
+                return seed
