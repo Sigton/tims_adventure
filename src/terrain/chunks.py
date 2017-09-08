@@ -4,7 +4,7 @@ import os
 
 import pygame
 
-from src.etc import constants
+from src.etc import constants, containers
 from src.terrain import tiles
 from src.terrain.tile_types import *
 
