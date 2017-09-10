@@ -8,7 +8,7 @@ class Seed(object):
     # Using __slots__ to maximise memory efficiency
     __slots__ = ["name", "tiles", "decs", "entities"]
 
-    def __int__(self, name, tiles, decs, entities):
+    def __init__(self, name, tiles, decs, entities):
 
         self.name = name
         self.tiles = tiles
@@ -60,3 +60,7 @@ class SeedDict(object):
                 return True
 
         return False
+
+    def add(self, seed):
+
+        self.seeds.append(seed)

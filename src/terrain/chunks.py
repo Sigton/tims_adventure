@@ -41,7 +41,7 @@ class ChunkController:
         # to locate the chunk,
         # and then the value is data
         # about the chunk.
-        self.map_seeds = {}
+        self.map_seeds = containers.SeedDict([])
         self.map_tiles = {}
         self.chunk_pos = {}
 
@@ -77,8 +77,11 @@ class ChunkController:
             del map_generator
 
         with open(os.path.join("src", "saves", "maps.json"), "r") as infile:
-            self.data = json.load(infile)
+            data = json.load(infile)
             infile.close()
+
+            for key in list(data.keys()):
+                self.map_seeds.add(containers.Seed(key, data[key], None, None))
 
         # Select the 9 chunks around the players current position
         self.current_chunk = self.get_current_chunk_id()
