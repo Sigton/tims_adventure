@@ -192,7 +192,7 @@ class ChunkController:
             to_create = [chunk for chunk in surrounding_chunks if chunk not in self.live_chunks]
 
             for chunk in to_create:
-                if "-" not in chunk and chunk in self.data:
+                if "-" not in chunk and chunk in self.map_seeds:
                     if len(to_remove):
                         self.reuse_chunk(to_remove.pop(), chunk)
                     else:
@@ -251,12 +251,10 @@ class ChunkController:
         # Re-purposes the existing tiles of a chunk
         # to form a new chunk.
 
-        self.map_seeds[new_chunk] = self.data[new_chunk]
-
         self.live_chunks.remove(old_chunk)
         del self.chunk_pos[old_chunk]
 
-        seed = self.map_seeds[new_chunk]
+        seed = self.map_seeds[new_chunk].tiles
 
         tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
         tile, x, y = 0, 0, 0
