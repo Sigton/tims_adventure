@@ -34,9 +34,14 @@ class SeedDict(object):
 
     def __setitem__(self, key, value):
 
-        for seed in self.seeds:
-            if seed.name == key:
-                self.seeds[seed.name] = value
+        if not self.__contains__(key):
+            self.seeds.append(value)
+
+        else:
+
+            for seed in self.seeds:
+                if seed.name == key:
+                    self.seeds[seed.name] = value
 
     def __delitem__(self, key):
 
@@ -47,3 +52,11 @@ class SeedDict(object):
     def __len__(self):
 
         return len(self.seeds)
+
+    def __contains__(self, item):
+
+        for seed in self.seeds:
+            if seed.name == item:
+                return True
+
+        return False
