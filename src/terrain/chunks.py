@@ -140,7 +140,7 @@ class ChunkController:
 
                 index = final_pos[1]*20+final_pos[0]
 
-                n = self.map_seeds[final_chunk]
+                n = self.map_seeds[final_chunk].tiles
                 target_tile = [n[i:i+4] for i in range(0, len(n), 4)][index]
                 if target_tile in solid_tiles:
                     self.direction = self.direction.replace(self.direction, "")
@@ -211,14 +211,10 @@ class ChunkController:
 
     def create_chunk(self, chunk):
 
-        # Loads a chunk from the save data
-
-        self.map_seeds[chunk] = self.data[chunk]
-
         # Creates a group of tile objects
         # from the seed of the given chunk
 
-        seed = self.map_seeds[chunk]
+        seed = self.map_seeds[chunk].tiles
         new_chunk = pygame.sprite.Group()
 
         # Split the string into each individual tile
