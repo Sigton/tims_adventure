@@ -81,7 +81,7 @@ class ChunkController:
             infile.close()
 
             for key in list(data.keys()):
-                self.map_seeds.add(containers.Seed(key, data[key], None, None))
+                self.map_seeds.add(containers.Seed(key, data[key]["tiles"], None, None))
 
         # Select the 9 chunks around the players current position
         self.current_chunk = self.get_current_chunk_id()
