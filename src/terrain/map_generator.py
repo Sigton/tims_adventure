@@ -111,6 +111,7 @@ def generate_map(blueprint):
 
     print("Chunk data dumped to saves/maps.json")
 
+
 if __name__ == '__main__':
 
     pygame.init()
