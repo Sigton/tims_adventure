@@ -104,8 +104,13 @@ def generate_map(blueprint):
             while len(str(chunk_idy)) < 2:
                 chunk_idy = "0"+str(chunk_idy)
 
-            chunk_data[chunk_idx+chunk_idy] = {}
-            chunk_data[chunk_idx+chunk_idy]["tiles"] = "".join([tile_colors[x] for x in chunk])
+            chunk_id = chunk_idx+chunk_idy
+
+            chunk_data[chunk_id] = {}
+            chunk_data[chunk_id]["tiles"] = "".join([tile_colors[x] for x in chunk])
+
+            if chunk_id in decs:
+                chunk_data[chunk_id]["decs"] = decs[chunk_id]
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:
