@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/map_generator.py" afterPath="$PROJECT_DIR$/src/terrain/map_generator.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +19,7 @@
           <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
+                <state relative-caret-position="100">
                   <caret line="83" column="72" lean-forward="false" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
@@ -35,8 +35,8 @@
           <file leaf-file-name="map_generator.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/map_generator.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="672">
-                  <caret line="103" column="23" lean-forward="true" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+                <state relative-caret-position="282">
+                  <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/player.py" />
-        <option value="$PROJECT_DIR$/src/terrain/map_generator.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/terrain/map_generator.py" />
       </list>
     </option>
   </component>
@@ -232,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00221" summary="Added to constructor of AnimatedTile">
-      <created>1504557927992</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1504557927992</updated>
     </task>
     <task id="LOCAL-00222" summary="Added generic realign function">
       <created>1504558413215</created>
@@ -576,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505321857059</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="Fixed a bug">
+      <created>1505322199110</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1505322199110</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,7 +653,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Tile.reuse" />
     <MESSAGE value="Updated AnimatedTile.reuse" />
     <MESSAGE value="Adjusted map while testing" />
     <MESSAGE value="Fixed bug" />
@@ -678,7 +677,8 @@
     <MESSAGE value="Changed bean colour" />
     <MESSAGE value="Updated map" />
     <MESSAGE value="Seeds now seperated into sections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seeds now seperated into sections" />
+    <MESSAGE value="Fixed a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1028,21 +1028,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/map_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="103" column="23" lean-forward="true" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="100">
           <caret line="83" column="72" lean-forward="false" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/map_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

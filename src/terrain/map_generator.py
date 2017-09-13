@@ -81,7 +81,15 @@ def generate_map(blueprint):
     chunks = [sum(chunk, []) for chunk in chunks]
     print("Chunks flattened.")
 
-    print("Iterating and rendering chunks.")
+    print("Loading decorations data...")
+
+    with open("src/saves/decs.json") as infile:
+        decs = json.load(infile)
+        infile.close()
+
+    print("Decorations data loaded.")
+
+    print("Iterating and rendering chunks...")
     chunk_data = {}
     chunk_x, chunk_y = 0, 0
 
