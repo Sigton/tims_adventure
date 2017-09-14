@@ -111,6 +111,8 @@ def generate_map(blueprint):
 
             if chunk_id in decs:
                 chunk_data[chunk_id]["decs"] = decs[chunk_id]
+            else:
+                chunk_data[chunk_id]["decs"] = []
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:
