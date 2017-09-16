@@ -69,3 +69,9 @@ class SeedDict(object):
 class Chunk(object):
 
     __slots__ = ["name", "tiles", "decs"]
+
+    def __init__(self, name, tiles, decs):
+
+        self.name = name
+        self.tiles = tiles
+        self.decs = decs
