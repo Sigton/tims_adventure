@@ -79,3 +79,11 @@ class Chunk(object):
     def add_tile(self, tile):
 
         self.tiles.append(tile)
+
+    def draw(self, display):
+
+        for tile in self.tiles:
+            display.blit(tile.image, (tile.rect.x, tile.rect.y))
+
+        for tile in self.decs:
+            display.blit(tile.image, (tile.rect.x, tile.rect.y))
