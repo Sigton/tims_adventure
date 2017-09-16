@@ -208,7 +208,7 @@ class ChunkController:
 
         for chunk in self.live_chunks:
 
-            [tile.animate(self.current_frames[tile.tile_code]) for tile in self.map_tiles[chunk]
+            [tile.animate(self.current_frames[tile.tile_code]) for tile in self.map_tiles[chunk].tiles
              if tile.tile_code in animated_tiles]
 
     def create_chunk(self, chunk):
@@ -310,7 +310,7 @@ class ChunkController:
                                  self.chunk_pos[chunk][1]+movement[1])
 
         [x.realign(self.chunk_pos[chunk][0],
-                   self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
+                   self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].tiles]
 
     def move_chunks(self, movement):
 
