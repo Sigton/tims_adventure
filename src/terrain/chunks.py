@@ -217,7 +217,7 @@ class ChunkController:
         # from the seed of the given chunk
 
         seed = self.map_seeds[chunk].tiles
-        new_chunk = pygame.sprite.Group()
+        new_chunk = containers.Chunk(chunk, [], [])
 
         # Split the string into each individual tile
         tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
@@ -227,9 +227,9 @@ class ChunkController:
             # Create instances of the tiles
             tile = int(n)
             if n in animated_tiles:
-                new_chunk.add(tiles.AnimatedTile(tile, x, y, x, y, n))
+                new_chunk.add_tile(tiles.AnimatedTile(tile, x, y, x, y, n))
             else:
-                new_chunk.add(tiles.Tile(tile, x, y, x, y, n))
+                new_chunk.add_tile(tiles.Tile(tile, x, y, x, y, n))
 
             x += 1
             if x % constants.chunk_w == 0:

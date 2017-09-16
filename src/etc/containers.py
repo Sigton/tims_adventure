@@ -75,3 +75,7 @@ class Chunk(object):
         self.name = name
         self.tiles = tiles
         self.decs = decs
+
+    def add_tile(self, tile):
+
+        self.tiles.append(tile)
