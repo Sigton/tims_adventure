@@ -64,3 +64,8 @@ class SeedDict(object):
     def add(self, seed):
 
         self.seeds.append(seed)
+
+
+class Chunk(object):
+
+    __slots__ = ["name", "tiles", "decs"]
