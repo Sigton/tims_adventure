@@ -260,7 +260,7 @@ class ChunkController:
 
         tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
         tile, x, y = 0, 0, 0
-        for n in self.map_tiles[old_chunk].sprites():
+        for n in self.map_tiles[old_chunk].tiles:
 
             n.reuse(int(tile_data[tile]), x, y, x, y, tile_data[tile])
 
@@ -324,7 +324,7 @@ class ChunkController:
                                      self.chunk_pos[chunk][1]+movement[1])
 
             [x.realign(self.chunk_pos[chunk][0],
-                       self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].sprites()]
+                       self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].tiles]
 
     def get_current_chunk_id(self):
 
