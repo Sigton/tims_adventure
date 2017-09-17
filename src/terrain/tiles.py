@@ -41,8 +41,8 @@ class Tile(pygame.sprite.Sprite):
 
         if tile_code in animated_tiles:
             new_tile = AnimatedTile(tile_num, x, y, o_x, o_y, tile_code)
-            [group.add(new_tile) for group in self.groups()]
-            [group.remove(self) for group in self.groups()]
+            chunk.add_tile(new_tile)
+            chunk.remove_tile(self)
         else:
             self.tile_code = tile_code
 
@@ -92,8 +92,8 @@ class AnimatedTile(pygame.sprite.Sprite):
 
         if tile_code not in animated_tiles:
             new_tile = Tile(tile_images_index, x, y, o_x, o_y, tile_code)
-            [group.add(new_tile) for group in self.groups()]
-            [group.remove(self) for group in self.groups()]
+            chunk.add_tile(new_tile)
+            chunk.remove_tile(self)
         else:
             self.tile_code = tile_code
 
