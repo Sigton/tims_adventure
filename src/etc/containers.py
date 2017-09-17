@@ -82,7 +82,7 @@ class Chunk(object):
 
     def remove_tile(self, tile):
 
-        pass
+        self.tiles.remove(tile)
 
     def draw(self, display):
 
