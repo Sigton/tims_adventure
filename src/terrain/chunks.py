@@ -250,6 +250,8 @@ class ChunkController:
 
     def reuse_chunk(self, old_chunk, new_chunk):
 
+        print(old_chunk, new_chunk)
+
         # Re-purposes the existing tiles of a chunk
         # to form a new chunk.
 
@@ -262,7 +264,7 @@ class ChunkController:
         tile, x, y = 0, 0, 0
         for n in self.map_tiles[old_chunk].tiles:
 
-            n.reuse(int(tile_data[tile]), x, y, x, y, tile_data[tile])
+            n.reuse(int(tile_data[tile]), x, y, x, y, tile_data[tile], self.map_tiles[old_chunk])
 
             x += 1
             if x % constants.chunk_w == 0:
