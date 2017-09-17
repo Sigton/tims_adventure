@@ -80,6 +80,10 @@ class Chunk(object):
 
         self.tiles.append(tile)
 
+    def remove_tile(self, tile):
+
+        pass
+
     def draw(self, display):
 
         for tile in self.tiles:
