@@ -195,10 +195,10 @@ class ChunkController:
 
             for chunk in to_create:
                 if "-" not in chunk and chunk in self.map_seeds:
-                    if len(to_remove):
-                        self.reuse_chunk(to_remove.pop(), chunk)
-                    else:
-                        self.create_chunk(chunk)
+                    # if len(to_remove):
+                    #    self.reuse_chunk(to_remove.pop(), chunk)
+                    # else:
+                    self.create_chunk(chunk)
 
             # Delete any left over chunks
             for chunk in to_remove:
@@ -271,7 +271,7 @@ class ChunkController:
                 x = 0
                 y += 1
             tile += 1
-
+        print(len(self.map_tiles[old_chunk].tiles) if new_chunk == "0301" else "")
         self.map_tiles[new_chunk] = self.map_tiles.pop(old_chunk)
 
         chunk_x = int(new_chunk[0:2]) * constants.chunk_w * constants.tile_w
