@@ -241,9 +241,16 @@ class ChunkController:
             tile = dec["tileid"]
 
             if len(position) == 4:
-                new_chunk.add_dec(tiles.Tile(int(tile), int(position[0:2]), int(position[2:4]), tile, True))
+                x, y = int(position[0:2]), int(position[2:4])
+                to_grid = True
             else:
-                new_chunk.add_dec(tiles.Tile(int(tile), int(position[0:3]), int(position[3:6]), tile, False))
+                x, y = int(position[0:3]), int(position[3:6]),
+                to_grid = False
+
+            if tile in animated_tiles:
+                new_chunk.add_dec(tiles.AnimatedTile(int(tile), x, y, tile, to_grid))
+            else:
+                new_chunk.add_dec(tiles.Tile(int(tile), x, y, tile, to_grid))
 
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
