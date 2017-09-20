@@ -14,7 +14,7 @@ tiles that make up the ground.
 
 class Tile:
 
-    def __init__(self, tile_num, x, y, tile_code):
+    def __init__(self, tile_num, x, y, tile_code, to_grid):
 
         # A tile is a 48x48 image that
         # is part of the ground.
@@ -24,8 +24,12 @@ class Tile:
         self.image = images[tile_num]
 
         self.rect = self.image.get_rect()
-        self.rect.x = x * constants.tile_w
-        self.rect.y = y * constants.tile_h
+        if to_grid:
+            self.rect.x = x * constants.tile_w
+            self.rect.y = y * constants.tile_h
+        else:
+            self.rect.x = x
+            self.rect.y = y
 
         self.offset_x = self.rect.x
         self.offset_y = self.rect.y
@@ -38,7 +42,7 @@ class Tile:
 
 class AnimatedTile:
 
-    def __init__(self, tile_images_index, x, y, tile_code):
+    def __init__(self, tile_images_index, x, y, tile_code, to_grid):
 
         self.tile_code = tile_code
 
@@ -46,8 +50,12 @@ class AnimatedTile:
         self.image = self.images[0]
 
         self.rect = self.image.get_rect()
-        self.rect.x = x * constants.tile_w
-        self.rect.y = y * constants.tile_h
+        if to_grid:
+            self.rect.x = x * constants.tile_w
+            self.rect.y = y * constants.tile_h
+        else:
+            self.rect.x = x
+            self.rect.y = y
 
         self.offset_x = self.rect.x
         self.offset_y = self.rect.y

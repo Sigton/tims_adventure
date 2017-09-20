@@ -224,9 +224,9 @@ class ChunkController:
             # Create instances of the tiles
             tile = int(n)
             if n in animated_tiles:
-                new_chunk.add_tile(tiles.AnimatedTile(tile, x, y, n))
+                new_chunk.add_tile(tiles.AnimatedTile(tile, x, y, n, True))
             else:
-                new_chunk.add_tile(tiles.Tile(tile, x, y, n))
+                new_chunk.add_tile(tiles.Tile(tile, x, y, n, True))
 
             x += 1
             if x % constants.chunk_w == 0:
