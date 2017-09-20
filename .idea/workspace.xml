@@ -19,8 +19,8 @@
           <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="436">
-                  <caret line="239" column="32" lean-forward="false" selection-start-line="239" selection-start-column="32" selection-end-line="239" selection-end-column="32" />
+                <state relative-caret-position="376">
+                  <caret line="245" column="107" lean-forward="false" selection-start-line="245" selection-start-column="107" selection-end-line="245" selection-end-column="107" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -259,13 +259,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00243" summary="tile_code is now an input on Tile.reuse">
-      <created>1504712680440</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1504712680440</updated>
     </task>
     <task id="LOCAL-00244" summary="Updated Tile.reuse">
       <created>1504712893113</created>
@@ -603,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505928690763</updated>
     </task>
-    <option name="localTasksCounter" value="292" />
+    <task id="LOCAL-00292" summary="Fixed bug">
+      <created>1505928737292</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1505928737292</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -680,7 +680,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Regenerated map" />
     <MESSAGE value="Fixed formatting" />
     <MESSAGE value="Changed bean colour" />
     <MESSAGE value="Updated map" />
@@ -705,7 +704,8 @@
     <MESSAGE value="Changing up some things with tiles" />
     <MESSAGE value="Option to align tiles to grid or not" />
     <MESSAGE value="Decoration tiles get added to chunk container" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decoration tiles get added to chunk container" />
+    <MESSAGE value="Fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1067,8 +1067,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="239" column="32" lean-forward="false" selection-start-line="239" selection-start-column="32" selection-end-line="239" selection-end-column="32" />
+        <state relative-caret-position="376">
+          <caret line="245" column="107" lean-forward="false" selection-start-line="245" selection-start-column="107" selection-end-line="245" selection-end-column="107" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
