@@ -288,6 +288,9 @@ class ChunkController:
         [x.realign(self.chunk_pos[chunk][0],
                    self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].tiles]
 
+        [x.realign(self.chunk_pos[chunk][0],
+                   self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].decs]
+
     def move_chunks(self, movement):
 
         # Moves all of the live chunks
@@ -301,6 +304,8 @@ class ChunkController:
 
             [x.realign(self.chunk_pos[chunk][0],
                        self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].tiles]
+            [x.realign(self.chunk_pos[chunk][0],
+                       self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].decs]
 
     def get_current_chunk_id(self):
 
