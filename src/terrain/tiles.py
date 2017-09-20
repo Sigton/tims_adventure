@@ -14,7 +14,7 @@ tiles that make up the ground.
 
 class Tile:
 
-    def __init__(self, tile_num, x, y, o_x, o_y, tile_code):
+    def __init__(self, tile_num, x, y, tile_code):
 
         # A tile is a 48x48 image that
         # is part of the ground.
@@ -27,18 +27,18 @@ class Tile:
         self.rect.x = x * constants.tile_w
         self.rect.y = y * constants.tile_h
 
-        self.offset_x = o_x
-        self.offset_y = o_y
+        self.offset_x = self.rect.x
+        self.offset_y = self.rect.y
 
     def realign(self, x, y):
 
-        self.rect.x = x + self.offset_x * constants.tile_w
-        self.rect.y = y + self.offset_y * constants.tile_h
+        self.rect.x = x + self.offset_x
+        self.rect.y = y + self.offset_y
 
 
 class AnimatedTile:
 
-    def __init__(self, tile_images_index, x, y, o_x, o_y, tile_code):
+    def __init__(self, tile_images_index, x, y, tile_code):
 
         self.tile_code = tile_code
 
@@ -49,16 +49,16 @@ class AnimatedTile:
         self.rect.x = x * constants.tile_w
         self.rect.y = y * constants.tile_h
 
-        self.offset_x = o_x
-        self.offset_y = o_y
+        self.offset_x = self.rect.x
+        self.offset_y = self.rect.y
 
         self.timer_threshold = constants.animation_thresholds[self.tile_code]
         self.current_image = 0
 
     def realign(self, x, y):
 
-        self.rect.x = x + self.offset_x * constants.tile_w
-        self.rect.y = y + self.offset_y * constants.tile_h
+        self.rect.x = x + self.offset_x
+        self.rect.y = y + self.offset_y
 
     def animate(self, frame):
 
