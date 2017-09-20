@@ -235,6 +235,16 @@ class ChunkController:
 
         decs_seed = self.map_seeds[chunk].decs
 
+        for dec in decs_seed:
+
+            position = dec.pos
+            tile = dec.tileid
+
+            if len(position) == 4:
+                new_chunk.add_dec(tiles.Tile(int(tile), int(position[0:2]), int(position[2:4]), tile, True))
+            else:
+                new_chunk.add_dec(tiles.Tile(int(tile), int(position[0:3]), int(position[3:6]), tile, True))
+
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
 

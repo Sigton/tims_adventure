@@ -84,6 +84,14 @@ class Chunk(object):
 
         del self.tiles[self.tiles.index(tile)]
 
+    def add_dec(self, dec):
+
+        self.decs.append(dec)
+
+    def remove_dec(self, dec):
+
+        del self.decs[self.decs.index(dec)]
+
     def draw(self, display):
 
         for tile in self.tiles:
