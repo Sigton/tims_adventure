@@ -237,8 +237,8 @@ class ChunkController:
 
         for dec in decs_seed:
 
-            position = dec.pos
-            tile = dec.tileid
+            position = dec["pos"]
+            tile = dec["tileid"]
 
             if len(position) == 4:
                 new_chunk.add_dec(tiles.Tile(int(tile), int(position[0:2]), int(position[2:4]), tile, True))
