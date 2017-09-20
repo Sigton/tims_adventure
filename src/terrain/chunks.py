@@ -213,11 +213,11 @@ class ChunkController:
         # Creates a group of tile objects
         # from the seed of the given chunk
 
-        seed = self.map_seeds[chunk].tiles
+        tile_seed = self.map_seeds[chunk].tiles
         new_chunk = containers.Chunk(chunk, [], [])
 
         # Split the string into each individual tile
-        tile_data = [seed[i:i+4] for i in range(0, len(seed), 4)]
+        tile_data = [tile_seed[i:i+4] for i in range(0, len(tile_seed), 4)]
         x, y = 0, 0
         for n in tile_data:
 
@@ -233,6 +233,8 @@ class ChunkController:
                 x = 0
                 y += 1
 
+        decs_seed = self.map_seeds[chunk].decs
+
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
 
@@ -244,7 +246,6 @@ class ChunkController:
         self.live_chunks.append(chunk)
 
         self.assign_chunk_pos(chunk, (self.world_offset_x, self.world_offset_y))
-
 
     def delete_chunk(self, chunk):
 
