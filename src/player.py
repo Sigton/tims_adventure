@@ -38,6 +38,8 @@ class Player(pygame.sprite.Sprite):
             bean.rect.centerx = head_bean.rect.centerx + 48 * self.trail[n][0]
             n += 1
 
+        self.drawn = False
+
     def update(self, direction):
 
         [self.beans[n].set_image(self.move_history[n]) for n in range(len(self.move_history))]

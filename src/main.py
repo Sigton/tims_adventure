@@ -87,7 +87,10 @@ class Main:
             self.display.fill(constants.WHITE)
 
             self.chunk_controller.draw(self.display)
-            self.player.draw(self.display)
+            if self.player.drawn:
+                self.player.drawn = False
+            else:
+                self.player.draw(self.display)
 
             pygame.display.update()
             self.clock.tick(60)
