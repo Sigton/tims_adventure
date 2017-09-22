@@ -101,6 +101,12 @@ class Chunk(object):
 
             threshold_y = player.beans[0].rect.bottom
 
+            [display.blit(dec.image, (dec.rect.x, dec.rect.y)) for dec in self.decs if dec.rect.bottom < threshold_y]
+            player.draw(display)
+            [display.blit(dec.image, (dec.rect.x, dec.rect.y)) for dec in self.decs if dec.rect.bottom >= threshold_y]
+
+            player.drawn = True
+
         else:
             for tile in self.decs:
                 display.blit(tile.image, (tile.rect.x, tile.rect.y))
