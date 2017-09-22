@@ -99,7 +99,7 @@ class Chunk(object):
 
         if watch_layering:
 
-            pass
+            threshold_y = player.beans[0].rect.bottom
 
         else:
             for tile in self.decs:
