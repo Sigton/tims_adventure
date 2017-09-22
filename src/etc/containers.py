@@ -97,5 +97,10 @@ class Chunk(object):
         for tile in self.tiles:
             display.blit(tile.image, (tile.rect.x, tile.rect.y))
 
-        for tile in self.decs:
-            display.blit(tile.image, (tile.rect.x, tile.rect.y))
+        if watch_layering:
+
+            pass
+
+        else:
+            for tile in self.decs:
+                display.blit(tile.image, (tile.rect.x, tile.rect.y))
