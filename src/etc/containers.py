@@ -92,7 +92,7 @@ class Chunk(object):
 
         del self.decs[self.decs.index(dec)]
 
-    def draw(self, display, watch_layering):
+    def draw(self, display, watch_layering, player):
 
         for tile in self.tiles:
             display.blit(tile.image, (tile.rect.x, tile.rect.y))
