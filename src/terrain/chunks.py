@@ -286,9 +286,10 @@ class ChunkController:
 
         for chunk in self.live_chunks:
             chunk_to_draw = self.map_tiles[chunk]
-            chunk_to_draw.draw(display,
-                               True if chunk_to_draw.name == current_chunk else False,
-                               self.player)
+            if not chunk_to_draw.name == current_chunk:
+                chunk_to_draw.draw(display, False, self.player)
+
+        self.map_tiles[self.live_chunks[self.live_chunks.index(current_chunk)]].draw(display, True, self.player)
 
     def assign_chunk_pos(self, chunk, movement):
 
