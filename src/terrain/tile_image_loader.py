@@ -63,7 +63,7 @@ tiles = [generic_ground, blue_ground, path_1,
          wall_7, wall_8, wall_9, wall_10,
          wall_11, wall_12, choc_river,
          lolipop_tree]
-images = []
+images = {}
 
 sprite_sheet = None
 
@@ -78,13 +78,13 @@ def load_images():
 
         if type(tile[0]) == int:
 
-            images += [sprite_sheet.get_image(tile[0],
-                                              tile[1],
-                                              tile[2],
-                                              tile[3])]
+            images[tiles.index(tile)] = [sprite_sheet.get_image(tile[0],
+                                                                tile[1],
+                                                                tile[2],
+                                                                tile[3])]
         else:
 
-            images += [[sprite_sheet.get_image(frame[0],
-                                               frame[1],
-                                               frame[2],
-                                               frame[3]) for frame in tile]]
+            images[tiles.index(tile)] = [[sprite_sheet.get_image(frame[0],
+                                                                 frame[1],
+                                                                 frame[2],
+                                                                 frame[3]) for frame in tile]]
