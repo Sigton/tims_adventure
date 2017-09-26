@@ -25,3 +25,7 @@ solid_tiles = [
 animated_tiles = [
     "0030"
 ]
+
+templated_tiles = [
+    "0032"
+]

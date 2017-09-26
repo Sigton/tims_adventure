@@ -51,6 +51,8 @@ choc_river = (
     (432, 144, 48, 48)
 )
 lolipop_tree = (336, 96, 48, 96)
+shore_1 = {"template": (0, 240, 48, 48),
+           "material": generic_ground}
 
 
 tiles = [generic_ground, blue_ground, path_1,
@@ -62,7 +64,7 @@ tiles = [generic_ground, blue_ground, path_1,
          wall_3, wall_4, wall_5, wall_6,
          wall_7, wall_8, wall_9, wall_10,
          wall_11, wall_12, choc_river,
-         lolipop_tree]
+         lolipop_tree, shore_1]
 images = {}
 
 sprite_sheet = None
