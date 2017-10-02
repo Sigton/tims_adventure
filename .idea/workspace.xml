@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/etc/spritesheet.py" afterPath="$PROJECT_DIR$/src/etc/spritesheet.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +22,8 @@
                 <file leaf-file-name="map_generator.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/terrain/map_generator.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="800">
-                        <caret line="90" column="37" lean-forward="true" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+                      <state relative-caret-position="300">
+                        <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
                         <folding />
                       </state>
                     </provider>
@@ -93,8 +93,8 @@
           <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="772">
-                  <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+                <state relative-caret-position="758">
+                  <caret line="103" column="95" lean-forward="false" selection-start-line="103" selection-start-column="95" selection-end-line="103" selection-end-column="95" />
                   <folding />
                 </state>
               </provider>
@@ -117,8 +117,8 @@
           <file leaf-file-name="spritesheet.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/etc/spritesheet.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="812">
-                  <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+                <state relative-caret-position="392">
+                  <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -174,9 +174,9 @@
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/map_generator.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="D:/bean_rpg etc/template test.py" />
         <option value="$PROJECT_DIR$/src/etc/spritesheet.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
       </list>
     </option>
   </component>
@@ -320,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00260" summary="Working on implementing the new containers">
-      <created>1505058190952</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1505058190952</updated>
     </task>
     <task id="LOCAL-00261" summary="Making more progress">
       <created>1505058346360</created>
@@ -664,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506969141310</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="Defined function for creating template images">
+      <created>1506970037700</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1506970037700</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -674,7 +674,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -741,7 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="More debugging" />
     <MESSAGE value="Since reusing chunks isnt working I've removed it for now" />
     <MESSAGE value="Tiles are now longer children of pygame.sprite as it wasnt required" />
     <MESSAGE value="Reusing chunks was being really buggy" />
@@ -766,7 +765,8 @@
     <MESSAGE value="Created data for shore tile" />
     <MESSAGE value="Working on implementing templated tiles" />
     <MESSAGE value="Silencing key errors for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Silencing key errors for now" />
+    <MESSAGE value="Defined function for creating template images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined function for creating template images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1095,30 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/map_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="90" column="37" lean-forward="true" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/bean_rpg etc/template test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1129,11 +1105,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/spritesheet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="392">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/map_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="103" column="95" lean-forward="false" selection-start-line="103" selection-start-column="95" selection-end-line="103" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>

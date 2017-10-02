@@ -52,7 +52,7 @@ choc_river = (
 )
 lolipop_tree = (336, 96, 48, 96)
 shore_1 = {"template": (0, 240, 48, 48),
-           "material": generic_ground}
+           "material": 0}
 
 
 tiles = [generic_ground, blue_ground, path_1,
@@ -76,6 +76,8 @@ def load_images():
 
     sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
 
+    template_images = []
+
     for tile in tiles:
 
         try:
@@ -94,4 +96,9 @@ def load_images():
 
         except KeyError:
 
-            pass
+            template_images += [tile]
+
+    for tile in template_images:
+
+        images[tiles.index(tile)] = sprite_sheet.create_template_image(tile["template"],
+                                                                       images[tile["material"]])
