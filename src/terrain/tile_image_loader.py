@@ -78,15 +78,20 @@ def load_images():
 
     for tile in tiles:
 
-        if type(tile[0]) == int:
+        try:
+            if type(tile[0]) == int:
 
-            images[tiles.index(tile)] = sprite_sheet.get_image(tile[0],
-                                                               tile[1],
-                                                               tile[2],
-                                                               tile[3])
-        else:
+                images[tiles.index(tile)] = sprite_sheet.get_image(tile[0],
+                                                                   tile[1],
+                                                                   tile[2],
+                                                                   tile[3])
+            else:
 
-            images[tiles.index(tile)] = [sprite_sheet.get_image(frame[0],
-                                                                frame[1],
-                                                                frame[2],
-                                                                frame[3]) for frame in tile]
+                images[tiles.index(tile)] = [sprite_sheet.get_image(frame[0],
+                                                                    frame[1],
+                                                                    frame[2],
+                                                                    frame[3]) for frame in tile]
+
+        except KeyError:
+
+            pass
