@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/map.png" afterPath="$PROJECT_DIR$/src/resources/map.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,7 +93,7 @@
           <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="758">
+                <state relative-caret-position="442">
                   <caret line="103" column="95" lean-forward="false" selection-start-line="103" selection-start-column="95" selection-end-line="103" selection-end-column="95" />
                   <folding />
                 </state>
@@ -302,8 +302,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.map_generator" />
+        <item index="0" class="java.lang.String" itemvalue="Python.map_generator" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -320,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00261" summary="Making more progress">
-      <created>1505058346360</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
-      <option name="project" value="LOCAL" />
-      <updated>1505058346360</updated>
     </task>
     <task id="LOCAL-00262" summary="finished debugging custom containers">
       <created>1505058518931</created>
@@ -664,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506970037700</updated>
     </task>
-    <option name="localTasksCounter" value="310" />
+    <task id="LOCAL-00310" summary="Template images are now working!">
+      <created>1506970471960</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
+      <option name="project" value="LOCAL" />
+      <updated>1506970471960</updated>
+    </task>
+    <option name="localTasksCounter" value="311" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -741,7 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Since reusing chunks isnt working I've removed it for now" />
     <MESSAGE value="Tiles are now longer children of pygame.sprite as it wasnt required" />
     <MESSAGE value="Reusing chunks was being really buggy" />
     <MESSAGE value="Updated chunks.py" />
@@ -766,7 +765,8 @@
     <MESSAGE value="Working on implementing templated tiles" />
     <MESSAGE value="Silencing key errors for now" />
     <MESSAGE value="Defined function for creating template images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined function for creating template images" />
+    <MESSAGE value="Template images are now working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template images are now working!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,7 +1131,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
+        <state relative-caret-position="442">
           <caret line="103" column="95" lean-forward="false" selection-start-line="103" selection-start-column="95" selection-end-line="103" selection-end-column="95" />
           <folding />
         </state>
