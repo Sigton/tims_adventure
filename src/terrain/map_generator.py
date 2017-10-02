@@ -43,7 +43,8 @@ tile_colors = {15724527: "0000",  # Generic ground
                13092807: "0028",  # Wall 11
                13619151: "0029",  # Wall 12
                3170456: "0030",  # Chocolate River
-               9973906: "0031"  # Lolipop tree
+               9973906: "0031",  # Lolipop tree
+               65535: "0032"  # Shore 1
                }
 
 
