@@ -1,4 +1,5 @@
 import pygame
+from pygame.constants import *
 
 from src.etc import constants
 
@@ -31,4 +32,15 @@ class SpriteSheet(object):
         image.set_colorkey(constants.WHITE)
 
         # Return the image
+        return image
+
+    def create_template_image(self, template, material):
+
+        image = self.get_image(template[0],
+                               template[1],
+                               template[2],
+                               template[3])
+
+        image.blit(material, (0, 0), None, BLEND_ADD)
+
         return image
