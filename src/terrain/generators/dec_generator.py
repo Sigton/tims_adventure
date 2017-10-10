@@ -1,3 +1,4 @@
+import pygame
 import os
 
 """
@@ -15,6 +16,11 @@ def generate_decs(map_dir):
 
     files = os.listdir(map_dir)
 
+    pix_arrays = [pygame.PixelArray(pygame.image.load(file)) for file in files]
+
 
 if __name__ == "__main__":
+
+    pygame.init()
+
     generate_decs("D:/bean_rpg etc/decmaps")
