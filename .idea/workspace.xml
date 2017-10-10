@@ -19,8 +19,8 @@
           <file leaf-file-name="dec_generator.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/generators/dec_generator.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="300">
+                  <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -33,7 +33,7 @@
           <file leaf-file-name="map_generator.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
+                <state relative-caret-position="880">
                   <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
                   <folding />
                 </state>
@@ -179,7 +179,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.map_generator">
+  <component name="RunManager" selected="Python.dec_generator">
+    <configuration name="dec_generator" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bean_rpg" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -214,9 +231,10 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.map_generator" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.dec_generator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.map_generator" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -238,13 +256,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00270" summary="Fixed a bug">
-      <created>1505322199110</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1505322199110</updated>
     </task>
     <task id="LOCAL-00271" summary="Loads decoration data">
       <created>1505322606507</created>
@@ -582,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507650017336</updated>
     </task>
-    <option name="localTasksCounter" value="319" />
+    <task id="LOCAL-00319" summary="Updated dec_generator">
+      <created>1507650503040</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1507650503040</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -659,7 +677,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Decorations are working!" />
     <MESSAGE value="Testing out different positions" />
     <MESSAGE value="Added support for animated decorations" />
     <MESSAGE value="Updated chunkcontroller.draw" />
@@ -684,7 +701,8 @@
     <MESSAGE value="Moved map_generator to its own subfolder" />
     <MESSAGE value="Created dec_generator" />
     <MESSAGE value="Added doc string" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added doc string" />
+    <MESSAGE value="Updated dec_generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated dec_generator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1013,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="880">
           <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding />
         </state>
@@ -1044,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/generators/dec_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
         </state>
       </provider>

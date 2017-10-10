@@ -1,3 +1,5 @@
+import os
+
 """
 dec_generator.py
 
@@ -11,8 +13,8 @@ in runtime.
 
 def generate_decs(map_dir):
 
-    pass
+    files = os.listdir(map_dir)
 
 
 if __name__ == "__main__":
-    generate_decs("D:/bean_rpg_etc/decmaps")
+    generate_decs("D:/bean_rpg etc/decmaps")
