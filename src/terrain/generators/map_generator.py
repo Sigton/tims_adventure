@@ -4,6 +4,7 @@ import operator
 import pygame
 
 from src.etc import constants
+from src.terrain import tile_data
 
 """
 map_generator.py
@@ -11,44 +12,6 @@ map_generator.py
 Turns a 2000x1500 image into
 JSON data.
 """
-
-tile_colors = {15724527: "0000",  # Generic ground
-               16776960: "0001",  # Blue Ground
-               0: "0002",  # Path 1
-               460551: "0003",  # Path 2
-               986895: "0004",  # Path 3
-               1513239: "0005",  # Path 4
-               2039583: "0006",  # Path 5
-               2565927: "0007",  # Path 6
-               3092271: "0008",  # Path 7
-               3618615: "0009",  # Path 8
-               4144959: "0010",  # Path 9
-               4671303: "0011",  # Path 10
-               5197647: "0012",  # Path 11
-               5723991: "0013",  # Path 12
-               6250335: "0014",  # Path 13
-               6776679: "0015",  # Path 14
-               7303023: "0016",  # Path 15
-               15198183: "0017",  # Dark Ground
-               7829367: "0018",  # Wall 1
-               8355711: "0019",  # Wall 2
-               8882055: "0020",  # Wall 3
-               9408399: "0021",  # Wall 4
-               9934743: "0022",  # Wall 5
-               10461087: "0023",  # Wall 6
-               10987431: "0024",  # Wall 7
-               11513775: "0025",  # Wall 8
-               12040119: "0026",  # Wall 9
-               12566463: "0027",  # Wall 10
-               13092807: "0028",  # Wall 11
-               13619151: "0029",  # Wall 12
-               3170456: "0030",  # Chocolate River
-               9973906: "0031",  # Lolipop tree
-               65535: "0032",  # Shore 1
-               59110: "0033",  # Shore 2
-               52428: "0034",  # Shore 3
-               46003: "0035"  # Shore 4
-               }
 
 
 def generate_map(blueprint):
@@ -111,7 +74,7 @@ def generate_map(blueprint):
             chunk_id = chunk_idx+chunk_idy
 
             chunk_data[chunk_id] = {}
-            chunk_data[chunk_id]["tiles"] = "".join([tile_colors[x] for x in chunk])
+            chunk_data[chunk_id]["tiles"] = "".join([tile_data.tile_colors[x] for x in chunk])
 
             if chunk_id in decs:
                 chunk_data[chunk_id]["decs"] = decs[chunk_id]
