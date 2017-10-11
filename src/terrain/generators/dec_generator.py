@@ -20,7 +20,7 @@ def generate_decs(map_dir):
 
     files = os.listdir(map_dir)
 
-    pix_arrays = [pygame.PixelArray(pygame.image.load(file)) for file in files]
+    pix_arrays = [pygame.PixelArray(pygame.image.load(map_dir + "/" + file)) for file in files]
 
     for layer in pix_arrays:
 
