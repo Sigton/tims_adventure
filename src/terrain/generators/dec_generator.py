@@ -59,7 +59,8 @@ def generate_decs(map_dir):
 
                 chunk_id = chunk_idx + chunk_idy
 
-                dec_data[chunk_id] = []
+                if chunk_id not in dec_data.keys():
+                    dec_data[chunk_id] = []
 
                 x, y = 0, 0
                 for dec in chunk:
