@@ -65,7 +65,7 @@ def generate_decs(map_dir):
                 for dec in chunk:
 
                     if dec != 16777215:
-                        print("hello", chunk_id)
+
                         tile_posx, tile_posy = x, y
 
                         while len(str(tile_posx)) < 2:
@@ -74,14 +74,14 @@ def generate_decs(map_dir):
                         while len(str(tile_posy)) < 2:
                             tile_posy = "0" + str(tile_posy)
 
-                        pos = tile_posx + tile_posy
+                        pos = str(tile_posx) + str(tile_posy)
 
                         dec_data[chunk_id] += [{"pos": pos, "tileid": tile_data.tile_colors[dec]}]
 
-                        x += 1
-                        if x % 20 == 0:
-                            x = 0
-                            y += 1
+                    x += 1
+                    if x % 20 == 0:
+                        x = 0
+                        y += 1
             chunk_x += 1
             if chunk_x % chunks_wide[0] == 0:
                 chunk_x = 0
