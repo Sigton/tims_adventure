@@ -60,6 +60,30 @@ def generate_decs(map_dir):
 
                 dec_data[chunk_id] = []
 
+                x, y = 0, 0
+                for dec in chunk:
+
+                    tile_posx, tile_posy = x, y
+
+                    while len(str(tile_posx)) < 2:
+                        tile_posx = "0" + str(tile_posx)
+
+                    while len(str(tile_posy)) < 2:
+                        tile_posy = "0" + str(tile_posy)
+
+                    pos = tile_posx + tile_posy
+
+                    dec_data[chunk_id] += [{"pos": pos, "tileid": tile_data.tile_colors[dec]}]
+
+                    x += 1
+                    if x % 20 == 0:
+                        x = 0
+                        y += 1
+
+        with open("src/saves/decs.json", "w") as outfile:
+            json.dump(dec_data, outfile)
+            outfile.close()
+
 
 if __name__ == "__main__":
 
