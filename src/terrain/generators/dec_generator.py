@@ -23,6 +23,8 @@ def generate_decs(map_dir):
 
     pix_arrays = [pygame.PixelArray(pygame.image.load(map_dir + "/" + file)) for file in files]
 
+    dec_data = {}
+
     for layer in pix_arrays:
 
         chunks_wide = tuple(map(operator.floordiv, layer.shape,
@@ -44,7 +46,6 @@ def generate_decs(map_dir):
 
         chunks = [sum(chunk, []) for chunk in chunks]
 
-        dec_data = {}
         chunk_x, chunk_y = 0, 0
 
         for chunk in chunks:
@@ -60,6 +61,7 @@ def generate_decs(map_dir):
                 chunk_id = chunk_idx + chunk_idy
 
                 if chunk_id not in dec_data.keys():
+                    print(chunk_id, dec_data.keys())
                     dec_data[chunk_id] = []
 
                 x, y = 0, 0
