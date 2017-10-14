@@ -16,6 +16,15 @@ in runtime.
 """
 
 
+def check_equal(iterator):
+    iterator = iter(iterator)
+    try:
+        first = next(iterator)
+    except StopIteration:
+        return True
+    return all(first == rest for rest in iterator)
+
+
 def generate_decs(map_dir):
 
     files = os.listdir(map_dir)
