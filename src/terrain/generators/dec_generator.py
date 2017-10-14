@@ -16,15 +16,6 @@ in runtime.
 """
 
 
-def check_equal(iterator):
-    iterator = iter(iterator)
-    try:
-        first = next(iterator)
-    except StopIteration:
-        return True
-    return all(first == rest for rest in iterator)
-
-
 def generate_decs(map_dir):
 
     files = os.listdir(map_dir)
@@ -57,16 +48,17 @@ def generate_decs(map_dir):
 
         for chunk in chunks:
 
-            chunk_idx, chunk_idy = chunk_x, chunk_y
-            while len(str(chunk_idx)) < 2:
-                chunk_idx = "0" + str(chunk_idx)
+            if False in [x == 16777215 for x in chunk]:
+                chunk_idx, chunk_idy = chunk_x, chunk_y
+                while len(str(chunk_idx)) < 2:
+                    chunk_idx = "0" + str(chunk_idx)
 
-            while len(str(chunk_idy)) < 2:
-                chunk_idy = "0" + str(chunk_idy)
+                while len(str(chunk_idy)) < 2:
+                    chunk_idy = "0" + str(chunk_idy)
 
-            chunk_id = chunk_idx + chunk_idy
+                chunk_id = chunk_idx + chunk_idy
 
-            dec_data[chunk_id] = []
+                dec_data[chunk_id] = []
 
 
 if __name__ == "__main__":
