@@ -64,6 +64,7 @@ def generate_decs(map_dir):
                 for dec in chunk:
 
                     if dec != 16777215:
+                        print("hello", chunk_id)
                         tile_posx, tile_posy = x, y
 
                         while len(str(tile_posx)) < 2:
@@ -80,6 +81,10 @@ def generate_decs(map_dir):
                         if x % 20 == 0:
                             x = 0
                             y += 1
+            chunk_x += 1
+            if chunk_x % chunks_wide[0] == 0:
+                chunk_x = 0
+                chunk_y += 1
 
         with open("src/saves/decs.json", "w") as outfile:
             json.dump(dec_data, outfile)
