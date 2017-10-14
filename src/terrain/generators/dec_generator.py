@@ -43,6 +43,22 @@ def generate_decs(map_dir):
 
         chunks = [sum(chunk, []) for chunk in chunks]
 
+        dec_data = {}
+        chunk_x, chunk_y = 0, 0
+
+        for chunk in chunks:
+
+            chunk_idx, chunk_idy = chunk_x, chunk_y
+            while len(str(chunk_idx)) < 2:
+                chunk_idx = "0" + str(chunk_idx)
+
+            while len(str(chunk_idy)) < 2:
+                chunk_idy = "0" + str(chunk_idy)
+
+            chunk_id = chunk_idx + chunk_idy
+
+            dec_data[chunk_id] = []
+
 
 if __name__ == "__main__":
 
