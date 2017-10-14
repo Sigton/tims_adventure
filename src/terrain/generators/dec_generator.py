@@ -2,6 +2,7 @@ import pygame
 
 from src.etc import constants
 from src.terrain import tile_data
+from src.terrain.generators import map_generator
 
 import os, json, operator
 
@@ -96,3 +97,4 @@ if __name__ == "__main__":
     pygame.init()
 
     generate_decs("D:/bean_rpg etc/decmaps")
+    map_generator.generate_map("src/resources/map.png")
