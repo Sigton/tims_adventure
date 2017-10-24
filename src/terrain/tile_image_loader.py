@@ -59,13 +59,13 @@ shore_3 = {"template": (96, 240, 48, 48),
            "material": 0}
 shore_4 = {"template": (144, 240, 48, 48),
            "material": 0}
-shore_5 = {"template": (144, 240, 48, 48),
+shore_5 = {"template": (0, 288, 48, 48),
            "material": 0}
-shore_6 = {"template": (144, 240, 48, 48),
+shore_6 = {"template": (48, 288, 48, 48),
            "material": 0}
-shore_7 = {"template": (144, 240, 48, 48),
+shore_7 = {"template": (96, 288, 48, 48),
            "material": 0}
-shore_8 = {"template": (144, 240, 48, 48),
+shore_8 = {"template": (144, 288, 48, 48),
            "material": 0}
 
 
@@ -79,7 +79,8 @@ tiles = [generic_ground, blue_ground, path_1,
          wall_7, wall_8, wall_9, wall_10,
          wall_11, wall_12, choc_river,
          lolipop_tree, shore_1, shore_2,
-         shore_3, shore_4]
+         shore_3, shore_4, shore_5, shore_6,
+         shore_7, shore_8]
 images = {}
 
 sprite_sheet = None
