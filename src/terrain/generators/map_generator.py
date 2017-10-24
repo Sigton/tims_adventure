@@ -71,7 +71,7 @@ def generate_map(blueprint):
             while len(str(chunk_idy)) < 2:
                 chunk_idy = "0"+str(chunk_idy)
 
-            chunk_id = chunk_idx+chunk_idy
+            chunk_id = str(chunk_idx)+str(chunk_idy)
 
             chunk_data[chunk_id] = {}
             chunk_data[chunk_id]["tiles"] = "".join([tile_data.tile_colors[x] for x in chunk])
