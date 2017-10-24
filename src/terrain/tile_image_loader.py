@@ -9,6 +9,11 @@ so they can be quickly accessed to improve performance.
 
 # Sprite sheet data
 # This is where each tile can be found on terrain.png
+# Simple 4 item tuples go by the form (x, y, width, height)
+# and are for static, generic tiles.
+# Tuples of tuples are for animated tiles, that contain all of their frames.
+# Dictionaries are for template tiles, where it has the location of the template
+# and then the ID of the material
 
 generic_ground = (0, 0, 48, 48)
 blue_ground = (48, 0, 48, 48)
@@ -69,6 +74,8 @@ shore_8 = {"template": (144, 288, 48, 48),
            "material": 0}
 
 
+# Indexing this array by a tiles' ID will
+# return its surface.
 tiles = [generic_ground, blue_ground, path_1,
          path_2, path_3, path_4, path_5,
          path_6, path_7, path_8, path_9,
@@ -86,35 +93,40 @@ images = {}
 sprite_sheet = None
 
 
+# We need to call this after pygame has been initialized
 def load_images():
 
     global sprite_sheet, images
 
     sprite_sheet = spritesheet.SpriteSheet("src/resources/terrain.png")
 
+    # We need to load template tiles afterwards
+    # so we don't reference yet undefined materials
     template_images = []
 
     for tile in tiles:
 
         try:
             if type(tile[0]) == int:
-
+                # Only generic tiles have an integer as their first value
                 images[tiles.index(tile)] = sprite_sheet.get_image(tile[0],
                                                                    tile[1],
                                                                    tile[2],
                                                                    tile[3])
             else:
-
+                # The other possibility is an animated tile, where we simply repeat the loading process.
                 images[tiles.index(tile)] = [sprite_sheet.get_image(frame[0],
                                                                     frame[1],
                                                                     frame[2],
                                                                     frame[3]) for frame in tile]
 
+        # Template tiles won't work at all,
+        # so we catch the error and assume it's a template tile
         except KeyError:
 
             template_images += [tile]
 
     for tile in template_images:
-
+        # Then we load the template tiles afterwards
         images[tiles.index(tile)] = sprite_sheet.create_template_image(tile["template"],
                                                                        images[tile["material"]])
