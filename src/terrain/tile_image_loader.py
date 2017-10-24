@@ -59,6 +59,14 @@ shore_3 = {"template": (96, 240, 48, 48),
            "material": 0}
 shore_4 = {"template": (144, 240, 48, 48),
            "material": 0}
+shore_5 = {"template": (144, 240, 48, 48),
+           "material": 0}
+shore_6 = {"template": (144, 240, 48, 48),
+           "material": 0}
+shore_7 = {"template": (144, 240, 48, 48),
+           "material": 0}
+shore_8 = {"template": (144, 240, 48, 48),
+           "material": 0}
 
 
 tiles = [generic_ground, blue_ground, path_1,

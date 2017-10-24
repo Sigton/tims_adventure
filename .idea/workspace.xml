@@ -4,9 +4,9 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/terrain.png" afterPath="$PROJECT_DIR$/src/resources/terrain.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/saves/decs.json" afterPath="$PROJECT_DIR$/src/saves/decs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/saves/maps.json" afterPath="$PROJECT_DIR$/src/saves/maps.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" afterPath="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_data.py" afterPath="$PROJECT_DIR$/src/terrain/tile_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_types.py" afterPath="$PROJECT_DIR$/src/terrain/tile_types.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,39 +15,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf>
+                <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="277">
+                        <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+                        <folding />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="640">
+                        <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                        <folding />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dec_generator.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/terrain/generators/dec_generator.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1042">
-                  <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="decs.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/saves/decs.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="97" lean-forward="false" selection-start-line="0" selection-start-column="97" selection-end-line="0" selection-end-column="97" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="61" column="7" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,16 +107,16 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="D:/bean_rpg etc/template test.py" />
         <option value="$PROJECT_DIR$/src/etc/spritesheet.py" />
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/map_generator.py" />
         <option value="$PROJECT_DIR$/src/saves/decs.json" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/generators/map_generator.py" />
         <option value="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
       </list>
     </option>
   </component>
@@ -124,8 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +183,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,13 +287,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00289" summary="Option to align tiles to grid or not">
-      <created>1505928125447</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1505928125447</updated>
     </task>
     <task id="LOCAL-00290" summary="Decoration tiles get added to chunk container">
       <created>1505928684476</created>
@@ -613,23 +624,30 @@
       <option name="project" value="LOCAL" />
       <updated>1507996408006</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="Updated map">
+      <created>1507998605502</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1507998605502</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -691,7 +709,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Template images are now working!" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Added decorative shore to the lake" />
     <MESSAGE value="Documented Seed and SeedDict" />
     <MESSAGE value="Added new tiles" />
@@ -715,7 +732,8 @@
     <MESSAGE value="Now this will work will many layers" />
     <MESSAGE value="Fixed bug and added more decorations" />
     <MESSAGE value="Updated terrain.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated terrain.png" />
+    <MESSAGE value="Updated map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -1034,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1420">
-          <caret line="71" column="38" lean-forward="false" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/maps.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1048,38 +1052,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/decs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="97" lean-forward="false" selection-start-line="0" selection-start-column="97" selection-end-line="0" selection-end-column="97" />
-          <folding />
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/generators/dec_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+        <state relative-caret-position="500">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="61" column="7" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
