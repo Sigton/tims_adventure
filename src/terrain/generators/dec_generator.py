@@ -24,7 +24,7 @@ def generate_decs(map_dir):
     pix_arrays = [pygame.PixelArray(pygame.image.load(map_dir + "/" + file)) for file in files]
 
     dec_data = {}
-
+    print("Images loading, preparing to iterate...")
     for layer in pix_arrays:
 
         chunks_wide = tuple(map(operator.floordiv, layer.shape,
@@ -45,9 +45,10 @@ def generate_decs(map_dir):
                 chunk_y += 1
 
         chunks = [sum(chunk, []) for chunk in chunks]
-
+        print("Assembled chunk " + str(pix_arrays.index(layer)))
         chunk_x, chunk_y = 0, 0
 
+        print("Collecting chunk data...")
         for chunk in chunks:
 
             if False in [x == 16777215 for x in chunk]:
@@ -89,6 +90,7 @@ def generate_decs(map_dir):
                 chunk_x = 0
                 chunk_y += 1
 
+        print("Chunk data collected. Dumping to JSON...")
         with open("src/saves/decs.json", "w") as outfile:
             json.dump(dec_data, outfile)
             outfile.close()
@@ -99,4 +101,10 @@ if __name__ == "__main__":
     pygame.init()
 
     generate_decs("D:/bean_rpg etc/decmaps")
+
+    print("""
+    #####
+    Starting map generator
+    #####
+    """)
     map_generator.generate_map("src/resources/map.png")
