@@ -55,7 +55,7 @@ choc_river = (
     (432, 96, 48, 48),
     (432, 144, 48, 48)
 )
-lolipop_tree = (288, 144, 92, 192)
+tree = (288, 144, 96, 192)
 shore_1 = {"template": (0, 240, 48, 48),
            "material": 0}
 shore_2 = {"template": (48, 240, 48, 48),
@@ -85,7 +85,7 @@ tiles = [generic_ground, blue_ground, path_1,
          wall_3, wall_4, wall_5, wall_6,
          wall_7, wall_8, wall_9, wall_10,
          wall_11, wall_12, choc_river,
-         lolipop_tree, shore_1, shore_2,
+         tree, shore_1, shore_2,
          shore_3, shore_4, shore_5, shore_6,
          shore_7, shore_8]
 images = {}
