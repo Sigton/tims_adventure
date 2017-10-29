@@ -55,7 +55,7 @@ choc_river = (
     (432, 96, 48, 48),
     (432, 144, 48, 48)
 )
-lolipop_tree = (336, 96, 48, 96)
+lolipop_tree = (288, 144, 92, 192)
 shore_1 = {"template": (0, 240, 48, 48),
            "material": 0}
 shore_2 = {"template": (48, 240, 48, 48),
