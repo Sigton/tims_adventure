@@ -3,7 +3,7 @@ import sys
 import pygame
 from pygame.locals import *
 
-from src import player
+from src import player, sounds
 from src.etc import constants
 from src.terrain import chunks
 
@@ -31,10 +31,11 @@ class Main:
 
         self.clock = pygame.time.Clock()
 
+        self.sound_engine = sounds.SoundEngine()
+
         self.chunk_controller = chunks.ChunkController(960, 720)
 
         player.bean_image_loader.load_sprite_sheet()
-
         self.player = player.Player()
 
         self.chunk_controller.player = self.player
@@ -91,6 +92,8 @@ class Main:
                 self.player.drawn = False
             else:
                 self.player.draw(self.display)
+
+            self.sound_engine.play_sounds()
 
             pygame.display.update()
             self.clock.tick(60)
