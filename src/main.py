@@ -47,6 +47,8 @@ class Main:
 
         direction = ""
 
+        self.sound_engine.queued_sounds([self.sound_engine.ambient1_sound, -1])
+
         while not game_exit:
 
             for event in pygame.event.get():
