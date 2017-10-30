@@ -14,3 +14,17 @@ class SoundEngine:
 
         # Load all the sounds
         self.ambient1_sound = pygame.mixer.Sound("src/resources/ambient1.mp3")
+
+        # Link the sounds to the channels they should play in
+        self.channel_linkup = {self.ambient1_sound: self.ambient1_channel}
+
+        # This is all the sounds that need to be played
+        self.queued_sounds = []
+
+    def play_sounds(self):
+
+        # Plays all the queued sounds
+        [self.channel_linkup[sound[0]].play(sound[0], sound[1]) for sound in self.queued_sounds]
+
+        # And empty the queue
+        self.queued_sounds = []
