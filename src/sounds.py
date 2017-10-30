@@ -28,3 +28,8 @@ class SoundEngine:
 
         # And empty the queue
         self.queued_sounds = []
+
+    def queue_sound(self, sound):
+
+        # Add a sound to the queue
+        self.queued_sounds += [sound]
