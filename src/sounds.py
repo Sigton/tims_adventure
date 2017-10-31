@@ -13,7 +13,7 @@ class SoundEngine:
         self.ambient1_channel = pygame.mixer.Channel(0)
 
         # Load all the sounds
-        self.ambient1_sound = pygame.mixer.Sound("src/resources/ambient1.mp3")
+        self.ambient1_sound = pygame.mixer.Sound("src/resources/ambient1.ogg")
 
         # Link the sounds to the channels they should play in
         self.channel_linkup = {self.ambient1_sound: self.ambient1_channel}
