@@ -288,6 +288,11 @@ class ChunkController:
 
             [decs.append(dec) for dec in chunk_to_draw.get_decs()]
 
+        def sort_by_y(elem):
+            return elem.rect.y
+
+        decs.sort(key=sort_by_y)
+
     def assign_chunk_pos(self, chunk, movement):
 
         # Moves a single chunk
