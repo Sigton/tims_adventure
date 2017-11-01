@@ -119,21 +119,7 @@ class Chunk(object):
 
         del self.decs[self.decs.index(dec)]
 
-    def draw(self, display, watch_layering, player):
+    def draw(self, display):
 
         for tile in self.tiles:
             display.blit(tile.image, (tile.rect.x, tile.rect.y))
-
-        if watch_layering:
-
-            threshold_y = player.beans[0].rect.bottom
-
-            [display.blit(dec.image, (dec.rect.x, dec.rect.y)) for dec in self.decs if dec.rect.bottom < threshold_y]
-            player.draw(display)
-            [display.blit(dec.image, (dec.rect.x, dec.rect.y)) for dec in self.decs if dec.rect.bottom >= threshold_y]
-
-            player.drawn = True
-
-        else:
-            for tile in self.decs:
-                display.blit(tile.image, (tile.rect.x, tile.rect.y))
