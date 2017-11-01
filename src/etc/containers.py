@@ -119,6 +119,10 @@ class Chunk(object):
 
         del self.decs[self.decs.index(dec)]
 
+    def get_decs(self):
+
+        return self.decs
+
     def draw(self, display):
 
         for tile in self.tiles:
