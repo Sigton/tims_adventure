@@ -292,6 +292,12 @@ class ChunkController:
             return elem.rect.y
 
         decs.sort(key=sort_by_y)
+        beans = sorted(self.player.beans, key=sort_by_y)
+
+        layers = []
+
+        for bean in beans:
+            pass
 
     def assign_chunk_pos(self, chunk, movement):
 
