@@ -280,9 +280,13 @@ class ChunkController:
         # Takes a group of tile sprites
         # and draws them to the display
 
+        decs = []
+
         for chunk in self.live_chunks:
             chunk_to_draw = self.map_tiles[chunk]
             chunk_to_draw.draw(display)
+
+            [decs.append(dec) for dec in chunk_to_draw.get_decs()]
 
     def assign_chunk_pos(self, chunk, movement):
 
