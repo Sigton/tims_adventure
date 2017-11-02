@@ -29,7 +29,7 @@ class Shadow:
 
     def update(self):
 
-        self.rect.x = self.parent.rect.x
+        self.rect.centerx = self.parent.rect.centerx
         self.rect.y = self.parent.rect.y + (self.parent.rect.height * 0.9)
 
     def draw(self, display):
