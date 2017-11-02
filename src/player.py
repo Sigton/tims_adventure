@@ -53,15 +53,6 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
 
-    def draw(self, display):
-
-        for bean in self.beans[::-1]:
-            wobble_x = math.cos((((self.chunk_controller.world_offset_y + (bean.rect.x % 13)) % 48) + 180) * 2) * 4
-            wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (bean.rect.x % 13)) % 48) * 2) * 4
-            display.blit(bean.image,
-                         (bean.rect.x+(wobble_x if bean.large else wobble_x/2),
-                          bean.rect.y+(wobble_y if bean.large else wobble_y/2)))
-
     def create_movement_intervals(self):
 
         for n in range(len(self.movement_intervals)):
@@ -88,6 +79,12 @@ class Player(pygame.sprite.Sprite):
             movement = tuple(map(operator.sub, old_movement, new_movement))
             self.movement_intervals[n] = tuple(map(operator.floordiv, movement,
                                                    [constants.movement_speed for x in range(len(movement))]))
+
+    def set_chunk_controller(self, ref):
+
+        self.chunk_controller = ref
+        for bean in self.beans:
+            bean.chunk_controller = ref
 
 
 class Bean(pygame.sprite.Sprite):
@@ -125,3 +122,11 @@ class Bean(pygame.sprite.Sprite):
         self.images["L"] = pygame.transform.flip(main_image, True, False)
         self.images["SR"] = pygame.transform.scale(main_image, (20, 20))
         self.images["SL"] = pygame.transform.flip(self.images["SR"], True, False)
+
+    def draw(self, display):
+
+            wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
+            wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
+            display.blit(self.image,
+                         (self.rect.x + (wobble_x if self.large else wobble_x / 2),
+                          self.rect.y + (wobble_y if self.large else wobble_y / 2)))
