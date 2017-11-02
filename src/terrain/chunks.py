@@ -290,12 +290,7 @@ class ChunkController:
 
         [decs.append(bean) for bean in self.player.beans]
 
-        def sort_by_rect_bottom(elem):
-            return elem.rect.bottom
-
-        decs.sort(key=sort_by_rect_bottom)
-
-        for dec in decs:
+        for dec in sorted(decs, key=lambda x: x.rect.bottom):
             dec.draw(display)
 
     def assign_chunk_pos(self, chunk, movement):
