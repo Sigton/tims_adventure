@@ -25,7 +25,11 @@ class Shadow:
         self.rect = pygame.Rect((parent.rect.x, parent.rect.y+(parent.rect.height*0.9)), (self.width, self.height))
 
         self.image = pygame.Surface([self.width, self.height])
-        pygame.draw.ellipse(self.image, constants.BLACK, self.rect)
+
+        self.image.fill(constants.WHITE)
+        self.image.set_colorkey(constants.WHITE)
+
+        pygame.draw.ellipse(self.image, constants.BLACK, [0, 0, self.width, self.height])
 
     def update(self):
 
