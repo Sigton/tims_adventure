@@ -296,7 +296,7 @@ class ChunkController:
         decs.sort(key=sort_by_rect_bottom)
 
         for dec in decs:
-            dec.draw()
+            dec.draw(display)
 
     def assign_chunk_pos(self, chunk, movement):
 
