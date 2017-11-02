@@ -53,7 +53,7 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
 
-                bean.shadow.update()
+        [bean.shadow.update() for bean in self.beans]
 
     def create_movement_intervals(self):
 

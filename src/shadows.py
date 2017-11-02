@@ -19,7 +19,7 @@ class Shadow:
         # off of its parents dimensions.
         self.parent = parent
 
-        self.width = self.parent.rect.width * 0.75
+        self.width = self.parent.rect.width * 0.8
         self.height = self.width * 0.5
 
         self.rect = pygame.Rect((parent.rect.x, parent.rect.y+(parent.rect.height*0.9)), (self.width, self.height))
@@ -30,6 +30,7 @@ class Shadow:
         self.image.set_colorkey(constants.WHITE)
 
         pygame.draw.ellipse(self.image, constants.BLACK, [0, 0, self.width, self.height])
+        self.image.set_alpha(128)
 
     def update(self):
 
