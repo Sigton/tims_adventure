@@ -1,5 +1,6 @@
 import pygame
 
+from src import shadows
 from src.etc import constants
 from src.terrain.tile_image_loader import *
 from src.terrain.tile_types import *
@@ -34,6 +35,15 @@ class Tile:
         self.offset_x = self.rect.x
         self.offset_y = self.rect.y
 
+        if self.tile_code in shadowed_decs:
+            self.shadow = shadows.Shadow(self)
+
+            self.has_shadow = True
+        else:
+            self.shadow = None
+
+            self.has_shadow = False
+
     def realign(self, x, y):
 
         self.rect.x = x + self.offset_x
@@ -41,7 +51,15 @@ class Tile:
 
     def draw(self, display):
 
+        if self.has_shadow:
+            self.shadow.draw(display)
+
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+    def update(self):
+
+        if self.has_shadow:
+            self.shadow.update()
 
 
 class AnimatedTile:
