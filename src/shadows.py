@@ -22,7 +22,7 @@ class Shadow:
         self.width = self.parent.rect.width * 0.8
         self.height = self.width * 0.5
 
-        self.rect = pygame.Rect((parent.rect.x, parent.rect.y+(parent.rect.height*0.9)), (self.width, self.height))
+        self.rect = pygame.Rect((parent.rect.x, parent.rect.y+(parent.rect.height*0.85)), (self.width, self.height))
 
         self.image = pygame.Surface([self.width, self.height])
 
@@ -35,7 +35,7 @@ class Shadow:
     def update(self):
 
         self.rect.centerx = self.parent.rect.centerx
-        self.rect.y = self.parent.rect.y + (self.parent.rect.height * 0.9)
+        self.rect.y = self.parent.rect.y + (self.parent.rect.height * 0.85)
 
     def draw(self, display):
 
