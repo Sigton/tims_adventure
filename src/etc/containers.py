@@ -127,3 +127,6 @@ class Chunk(object):
 
         for tile in self.tiles:
             display.blit(tile.image, (tile.rect.x, tile.rect.y))
+
+        for dec in self.decs:
+            display.blit(dec.image, (dec.rect.x, dec.rect.y))

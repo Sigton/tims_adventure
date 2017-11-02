@@ -288,17 +288,6 @@ class ChunkController:
 
             [decs.append(dec) for dec in chunk_to_draw.get_decs()]
 
-        def sort_by_y(elem):
-            return elem.rect.y
-
-        decs.sort(key=sort_by_y)
-        beans = sorted(self.player.beans, key=sort_by_y)
-
-        layers = []
-
-        for bean in beans:
-            pass
-
     def assign_chunk_pos(self, chunk, movement):
 
         # Moves a single chunk
