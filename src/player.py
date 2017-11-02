@@ -86,6 +86,10 @@ class Player(pygame.sprite.Sprite):
         for bean in self.beans:
             bean.chunk_controller = ref
 
+    def draw(self, display):
+
+        [bean.draw(display) for bean in self.beans]
+
 
 class Bean(pygame.sprite.Sprite):
 
