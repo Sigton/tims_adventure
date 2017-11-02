@@ -22,7 +22,7 @@ class Shadow:
         self.width = self.parent.rect.width * 0.75
         self.height = self.width * 0.5
 
-        self.rect = pygame.Rect((parent.rect.x, parent.rect.y), (self.width, self.height))
+        self.rect = pygame.Rect((parent.rect.x, parent.rect.y+(parent.rect.height*0.9)), (self.width, self.height))
 
         self.image = pygame.Surface([self.width, self.height])
         pygame.draw.ellipse(self.image, constants.BLACK, self.rect)
