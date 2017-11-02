@@ -30,3 +30,7 @@ animated_tiles = [
 templated_tiles = [
     "0032"
 ]
+
+shadowed_decs = [
+    "0031"
+]
