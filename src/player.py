@@ -96,6 +96,7 @@ class Bean(pygame.sprite.Sprite):
     def __init__(self, large):
 
         pygame.sprite.Sprite.__init__(self)
+        self.chunk_controller = None
 
         self.large = large
 
