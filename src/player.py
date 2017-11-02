@@ -3,7 +3,7 @@ import operator
 
 import pygame
 
-from src import bean_image_loader
+from src import bean_image_loader, shadows
 from src.etc import constants
 
 """
@@ -52,6 +52,8 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.x += self.movement_intervals[n][0]
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
+
+                bean.shadow.update()
 
     def create_movement_intervals(self):
 
@@ -112,6 +114,8 @@ class Bean(pygame.sprite.Sprite):
         if not self.large:
             self.rect.y += 8
 
+        self.shadow = shadows.Shadow(self)
+
     def set_image(self, direction):
 
         if direction in ("R", "RU", "UR", "RD", "DR"):
@@ -130,8 +134,10 @@ class Bean(pygame.sprite.Sprite):
 
     def draw(self, display):
 
-            wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
-            wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
-            display.blit(self.image,
-                         (self.rect.x + (wobble_x if self.large else wobble_x / 2),
-                          self.rect.y + (wobble_y if self.large else wobble_y / 2)))
+        self.shadow.draw(display)
+
+        wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
+        wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
+        display.blit(self.image,
+                     (self.rect.x + (wobble_x if self.large else wobble_x / 2),
+                      self.rect.y + (wobble_y if self.large else wobble_y / 2)))
