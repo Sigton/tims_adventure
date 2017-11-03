@@ -19,7 +19,7 @@ class Main:
     def __init__(self):
 
         # Initiate pygame
-        pygame.mixer.pre_init(16000, -16, 1, 512)
+        pygame.mixer.pre_init(22050, -16, 1, 512)
         pygame.mixer.init()
         pygame.init()
 
@@ -47,7 +47,7 @@ class Main:
 
         direction = ""
 
-        self.sound_engine.queue_sound([self.sound_engine.ambient2_sound, -1])
+        self.sound_engine.queue_sound([self.sound_engine.ambient1_sound, -1])
 
         while not game_exit:
 
