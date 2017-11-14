@@ -27,10 +27,6 @@ animated_tiles = [
     "0030"
 ]
 
-templated_tiles = [
-    "0032"
-]
-
 shadowed_decs = [
     "0031",
     "0040"

@@ -47,7 +47,7 @@ class Main:
 
         direction = ""
 
-        self.sound_engine.queue_sound([self.sound_engine.ambient1_sound, -1])
+        self.sound_engine.queue_sound([self.sound_engine.ambient2_sound, -1])
 
         while not game_exit:
 
