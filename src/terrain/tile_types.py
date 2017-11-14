@@ -32,5 +32,6 @@ templated_tiles = [
 ]
 
 shadowed_decs = [
-    "0031"
+    "0031",
+    "0040"
 ]

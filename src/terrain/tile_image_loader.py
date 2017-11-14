@@ -72,6 +72,7 @@ shore_7 = {"template": (96, 288, 48, 48),
            "material": 0}
 shore_8 = {"template": (144, 288, 48, 48),
            "material": 0}
+bush = (384, 192, 96, 48)
 
 
 # Indexing this array by a tiles' ID will
@@ -87,7 +88,7 @@ tiles = [generic_ground, blue_ground, path_1,
          wall_11, wall_12, choc_river,
          tree, shore_1, shore_2,
          shore_3, shore_4, shore_5, shore_6,
-         shore_7, shore_8]
+         shore_7, shore_8, bush]
 images = {}
 
 sprite_sheet = None
