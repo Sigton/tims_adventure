@@ -51,6 +51,8 @@ player_pos = (player_pos_x, player_pos_y)
 
 max_trail_offset = [0, 1, 2, 3, 4]
 
+shadow_offset = 0.7
+
 # Tile information
 
 animation_thresholds = {

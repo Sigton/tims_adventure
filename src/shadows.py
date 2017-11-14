@@ -35,7 +35,7 @@ class Shadow:
     def update(self):
 
         self.rect.centerx = self.parent.rect.centerx
-        self.rect.y = self.parent.rect.y + (self.parent.rect.height * 0.85)
+        self.rect.y = self.parent.rect.y + (self.parent.rect.height * constants.shadow_offset)
 
     def draw(self, display):
 
