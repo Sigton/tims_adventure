@@ -1,6 +1,7 @@
 import pygame
 
 from src.etc import constants
+from src.terrain.tile_types import *
 
 '''
 shadows.py
@@ -22,7 +23,12 @@ class Shadow:
         self.width = self.parent.rect.width * 0.8
         self.height = self.width * 0.5
 
-        self.rect = pygame.Rect((parent.rect.x, parent.rect.y+(parent.rect.height*0.85)), (self.width, self.height))
+        try:
+            self.height_offset = self.parent.rect.height*shadow_ratios[self.parent.tile_code]
+        except AttributeError:
+            self.height_offset = self.parent.rect.height*constants.shadow_offset
+
+        self.rect = pygame.Rect((parent.rect.x, parent.rect.y+self.height_offset), (self.width, self.height))
 
         self.image = pygame.Surface([self.width, self.height])
 
@@ -35,7 +41,7 @@ class Shadow:
     def update(self):
 
         self.rect.centerx = self.parent.rect.centerx
-        self.rect.y = self.parent.rect.y + (self.parent.rect.height * constants.shadow_offset)
+        self.rect.y = self.parent.rect.y + self.height_offset
 
     def draw(self, display):
 
