@@ -33,7 +33,7 @@ class Main:
 
         self.sound_engine = sounds.SoundEngine()
 
-        self.chunk_controller = chunks.ChunkController(960, 720)
+        self.chunk_controller = chunks.ChunkController(16320, 66240)
 
         player.bean_image_loader.load_sprite_sheet()
         self.player = player.Player()
