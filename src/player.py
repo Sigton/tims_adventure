@@ -48,7 +48,7 @@ class Player(pygame.sprite.Sprite):
 
             n = 0
             for bean in self.beans:
-                if not bean.large:
+                if not bean.main:
                     bean.rect.x += self.movement_intervals[n][0]
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
@@ -95,33 +95,33 @@ class Player(pygame.sprite.Sprite):
 
 class Bean(pygame.sprite.Sprite):
 
-    def __init__(self, large):
+    def __init__(self, main):
 
         pygame.sprite.Sprite.__init__(self)
         self.chunk_controller = None
 
-        self.large = large
+        self.main = main
 
         self.images = {}
 
         self.create_images(bean_image_loader.red())
 
-        self.image = self.images["R"] if self.large else self.images["SR"]
+        self.image = self.images["R"]
 
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
 
-        if not self.large:
+        if not self.main:
             self.rect.y += 8
 
         self.shadow = shadows.Shadow(self)
 
     def set_image(self, direction):
 
-        if direction in ("R", "RU", "UR", "RD", "DR"):
-            self.image = self.images["R"] if self.large else self.images["SR"]
-        elif direction in ("L", "LD", "DL", "LU", "UL"):
-            self.image = self.images["L"] if self.large else self.images["SL"]
+        if direction == "R":
+            self.image = self.images["R"]
+        elif direction == "L":
+            self.image = self.images["L"]
 
     def create_images(self, main_image):
 
@@ -129,8 +129,6 @@ class Bean(pygame.sprite.Sprite):
 
         self.images["R"] = main_image
         self.images["L"] = pygame.transform.flip(main_image, True, False)
-        self.images["SR"] = pygame.transform.scale(main_image, (20, 20))
-        self.images["SL"] = pygame.transform.flip(self.images["SR"], True, False)
 
     def draw(self, display):
 
@@ -139,5 +137,5 @@ class Bean(pygame.sprite.Sprite):
         wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
         wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
         display.blit(self.image,
-                     (self.rect.x + (wobble_x if self.large else wobble_x / 2),
-                      self.rect.y + (wobble_y if self.large else wobble_y / 2)))
+                     (self.rect.x + (wobble_x if self.main else wobble_x / 2),
+                      self.rect.y + (wobble_y if self.main else wobble_y / 2)))
