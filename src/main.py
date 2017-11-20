@@ -58,18 +58,17 @@ class Main:
 
                 elif event.type == KEYDOWN:
 
-                    if len(direction) < 2:
-                        if event.key == K_UP and "U" not in direction:
-                            direction += "U"
+                    if event.key == K_UP:
+                        direction = "U"
 
-                        elif event.key == K_DOWN and "D" not in direction:
-                            direction += "D"
+                    elif event.key == K_DOWN:
+                        direction = "D"
 
-                        elif event.key == K_LEFT and "L" not in direction:
-                            direction += "L"
+                    elif event.key == K_LEFT:
+                        direction = "L"
 
-                        elif event.key == K_RIGHT and "R" not in direction:
-                            direction += "R"
+                    elif event.key == K_RIGHT:
+                        direction = "R"
 
                 elif event.type == KEYUP:
 
