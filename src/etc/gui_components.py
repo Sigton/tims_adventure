@@ -90,6 +90,14 @@ class Label:
         self.rect.x = x
         self.rect.y = y
 
+    def update(self, text):
+
+        old_pos = self.rect.topleft
+
+        self.image = constants.font.render(text, False, constants.WHITE)
+        self.rect = self.image.get_rect()
+        self.rect.topleft = old_pos
+
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
