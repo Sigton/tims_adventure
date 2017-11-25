@@ -8,4 +8,8 @@ their max hp, moves, starting damage.
 
 entity_data = {
     "red": {"max_hp": 100, "moves": [0, 1], "attack": 10},
+    "blue": {"max_hp": 100, "moves": [0, 1], "attack": 10},
+    "green": {"max_hp": 100, "moves": [0, 1], "attack": 10},
+    "pink": {"max_hp": 100, "moves": [0, 1], "attack": 10},
+    "yellow": {"max_hp": 100, "moves": [0, 1], "attack": 10}
 }
