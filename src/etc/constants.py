@@ -19,6 +19,11 @@ DISPLAY_CENTER = (DISPLAY_WIDTH//2, DISPLAY_HEIGHT//2)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
+HEALTH_BAR_GREEN = (88, 152, 68)
+HEALTH_BAR_RED = (172, 71, 71)
+XP_BAR_CYAN = (78, 165, 215)
+XP_BAR_BLUE = (19, 82, 196)
+
 # Terrain Generation Constants
 
 tile_w = 48
