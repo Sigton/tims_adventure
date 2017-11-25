@@ -25,10 +25,10 @@ class DuelController:
 
         self.background = self.images["background"]
 
-        self.attack_main_button = gui_components.Button(self.images["attack_main_button"], 508, 584)
-        self.attack_alt_button = gui_components.Button(self.images["attack_alt_button"], 730, 584)
-        self.item_button = gui_components.Button(self.images["item_button"], 508, 645)
-        self.retreat_button = gui_components.Button(self.images["retreat_button"], 730, 645)
+        self.attack_main_button = gui_components.Button(self.images["attack_main_button"], 508, 584, self.callback)
+        self.attack_alt_button = gui_components.Button(self.images["attack_alt_button"], 730, 584, self.callback)
+        self.item_button = gui_components.Button(self.images["item_button"], 508, 645, self.callback)
+        self.retreat_button = gui_components.Button(self.images["retreat_button"], 730, 645, self.callback)
 
         self.buttons = [
             self.attack_main_button,
@@ -112,7 +112,7 @@ class DuelController:
 
     def callback(self):
 
-        pass
+        print("Button pressed!")
 
     def draw(self, display):
 
