@@ -24,6 +24,8 @@ class Main:
         pygame.mixer.init()
         pygame.init()
 
+        constants.load_font()
+
         # Create the display
         self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
 
