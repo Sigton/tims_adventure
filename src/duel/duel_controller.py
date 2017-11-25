@@ -13,10 +13,12 @@ class DuelController:
 
         self.images = load_images()
 
+        self.background = self.images["background"]
+
     def update(self):
 
         pass
 
     def draw(self, display):
 
-        pass
+        display.blit(self.background, (0, 0))
