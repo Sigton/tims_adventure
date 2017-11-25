@@ -4,7 +4,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entities/shadows.py" afterPath="$PROJECT_DIR$/src/entities/shadows.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/tile_types.py" afterPath="$PROJECT_DIR$/src/terrain/tile_types.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -176,8 +175,8 @@
           <file leaf-file-name="shadows.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/entities/shadows.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="417">
-                  <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+                <state relative-caret-position="457">
+                  <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -264,9 +263,9 @@
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
-        <option value="$PROJECT_DIR$/src/entities/shadows.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
+        <option value="$PROJECT_DIR$/src/entities/shadows.py" />
       </list>
     </option>
   </component>
@@ -445,13 +444,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00392" summary="Updated terrain.png">
-      <created>1509749187948</created>
-      <option name="number" value="00392" />
-      <option name="presentableId" value="LOCAL-00392" />
-      <option name="project" value="LOCAL" />
-      <updated>1509749187949</updated>
     </task>
     <task id="LOCAL-00393" summary="Updated sounds">
       <created>1509751595370</created>
@@ -789,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511616213003</updated>
     </task>
-    <option name="localTasksCounter" value="441" />
+    <task id="LOCAL-00441" summary="Added another dictionary to control shadow behaviour">
+      <created>1511617534077</created>
+      <option name="number" value="00441" />
+      <option name="presentableId" value="LOCAL-00441" />
+      <option name="project" value="LOCAL" />
+      <updated>1511617534077</updated>
+    </task>
+    <option name="localTasksCounter" value="442" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -866,7 +865,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished entity meta class" />
     <MESSAGE value="Implementing entity meta" />
     <MESSAGE value="Created duel_controller.py" />
     <MESSAGE value="Created duel_gui.py" />
@@ -891,7 +889,8 @@
     <MESSAGE value="Debugging" />
     <MESSAGE value="Added shadows to beans" />
     <MESSAGE value="Added adjustable height ratios for shadows on the duelling sprites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added adjustable height ratios for shadows on the duelling sprites" />
+    <MESSAGE value="Added another dictionary to control shadow behaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added another dictionary to control shadow behaviour" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1263,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/shadows.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="457">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding />
         </state>
       </provider>
