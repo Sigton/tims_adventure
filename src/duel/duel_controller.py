@@ -82,11 +82,16 @@ class DuelController:
                                                                                (constants.level_up_multiplier **
                                                                                 self.enemy.level)))))
 
+        self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
+        self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
+
         self.text = [
             self.player_hp_label,
             self.enemy_hp_label,
             self.player_xp_label,
-            self.enemy_xp_label
+            self.enemy_xp_label,
+            self.player_level_label,
+            self.enemy_level_label
         ]
 
     def update(self):
