@@ -24,3 +24,5 @@ class EntityMeta:
 
         self.moves = entity_data[self.bean]["moves"]
         self.attack = entity_data[self.bean]["attack"]
+
+        self.images = self.parent.images
