@@ -34,12 +34,17 @@ shadowed_decs = [
 
 shadow_height_ratios = {
     "duel_player": 0.7,
-    "duel_enemy": 0.7,
+    "duel_enemy": 0.75,
     "0031": 0.85,
     "0040": 0.6
 }
 
 shadow_width_ratios = {
-    "duel_player": 0.6,
-    "duel_enemy": 0.6
+    "duel_player": 0.4,
+    "duel_enemy": 0.4
+}
+
+shadow_width_to_parent_ratios = {
+    "duel_player": 0.9
+    "duel_enemy": 0.9
 }
