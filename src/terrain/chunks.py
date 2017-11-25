@@ -1,3 +1,6 @@
+import pygame
+from pygame.locals import *
+
 import json
 import operator
 import os
@@ -33,7 +36,9 @@ class ChunkController:
 
     player = None
 
-    def __init__(self, start_x, start_y):
+    def __init__(self, master, start_x, start_y):
+
+        self.master = master
 
         # The key is a 4 digit string
         # to locate the chunk,
@@ -94,7 +99,38 @@ class ChunkController:
 
     def update(self, direction):
 
-        self.direction = direction
+        for event in pygame.event.get():
+            if event.type == QUIT:
+
+                self.master.game_exit = True
+
+            elif event.type == KEYDOWN:
+
+                if event.key == K_UP:
+                    self.direction = "U"
+
+                elif event.key == K_DOWN:
+                    self.direction = "D"
+
+                elif event.key == K_LEFT:
+                    self.direction = "L"
+
+                elif event.key == K_RIGHT:
+                    self.direction = "R"
+
+            elif event.type == KEYUP:
+
+                if event.key == K_UP:
+                    self.direction = self.direction.replace("U", "")
+
+                elif event.key == K_DOWN:
+                    self.direction = self.direction.replace("D", "")
+
+                elif event.key == K_LEFT:
+                    self.direction = self.direction.replace("L", "")
+
+                elif event.key == K_RIGHT:
+                    self.direction = self.direction.replace("R", "")
 
         if self.direction and self.moving == 0:
 

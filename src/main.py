@@ -35,7 +35,9 @@ class Main:
 
         self.sound_engine = sounds.SoundEngine()
 
-        self.chunk_controller = chunks.ChunkController(16320, 66240)
+        self.game_exit = False
+
+        self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
 
         bean_image_loader.load_sprite_sheet()
         self.player = player.Player()
@@ -43,52 +45,15 @@ class Main:
         self.chunk_controller.player = self.player
         self.player.set_chunk_controller(self.chunk_controller)
 
-        self.duel_controller = duel_controller.DuelController()
+        self.duel_controller = duel_controller.DuelController(self)
 
     def run(self):
 
-        game_exit = False
-
-        direction = ""
-
         self.sound_engine.queue_sound([self.sound_engine.ambient2_sound, -1])
 
-        while not game_exit:
+        while not self.game_exit:
 
-            for event in pygame.event.get():
-                if event.type == QUIT:
-
-                    game_exit = True
-                '''
-                elif event.type == KEYDOWN:
-
-                    if event.key == K_UP:
-                        direction = "U"
-
-                    elif event.key == K_DOWN:
-                        direction = "D"
-
-                    elif event.key == K_LEFT:
-                        direction = "L"
-
-                    elif event.key == K_RIGHT:
-                        direction = "R"
-
-                elif event.type == KEYUP:
-
-                    if event.key == K_UP:
-                        direction = direction.replace("U", "")
-
-                    elif event.key == K_DOWN:
-                        direction = direction.replace("D", "")
-
-                    elif event.key == K_LEFT:
-                        direction = direction.replace("L", "")
-
-                    elif event.key == K_RIGHT:
-                        direction = direction.replace("R", "")'''
-
-            # self.chunk_controller.update(direction)
+            # self.chunk_controller.update()
             self.duel_controller.update()
 
             self.display.fill(constants.WHITE)

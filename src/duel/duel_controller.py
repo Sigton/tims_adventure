@@ -10,7 +10,9 @@ This deals with the game mechanics and GUI of duelling
 
 class DuelController:
 
-    def __init__(self):
+    def __init__(self, master):
+
+        self.master = master
 
         self.images = load_images()
 
