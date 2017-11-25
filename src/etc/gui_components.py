@@ -42,7 +42,7 @@ class ProgressBar:
 
         self.start_image = pygame.Surface([length, width]).convert()
 
-        pygame.draw.line(self.start_image, self.back_color, (0, width//2), (length, width//2), width=width)
+        pygame.draw.line(self.start_image, self.back_color, (0, width//2), (length, width//2), width)
 
         self.image = self.start_image
         self.rect = self.image.get_rect()

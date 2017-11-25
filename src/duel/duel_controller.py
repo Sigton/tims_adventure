@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 
 from src.duel.duel_gui import load_images
-from src.etc import gui_components
+from src.etc import gui_components, constants
 from src.entities import shadows
 
 """
@@ -52,6 +52,9 @@ class DuelController:
 
         self.player_shadow = shadows.Shadow(PlayerShadow())
         self.enemy_shadow = shadows.Shadow(EnemyShadow())
+
+        self.player_hp_bar = gui_components.ProgressBar(587, 449, 203, 30, [constants.HEALTH_BAR_RED,
+                                                                            constants.HEALTH_BAR_GREEN])
 
     def update(self):
 
