@@ -101,7 +101,7 @@ class Bean(pygame.sprite.Sprite):
         self.chunk_controller = None
 
         self.main = main
-        self.bean = "red"
+        self.bean = "red" if self.main else "yellow"
 
         self.images = {}
 

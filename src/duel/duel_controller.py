@@ -37,7 +37,7 @@ class DuelController:
         ]
 
         self.player_image = pygame.transform.scale(self.player.images["R"], (300, 300))
-        self.enemy_image = pygame.transform.scale(self.player.images["L"], (230, 230))
+        self.enemy_image = pygame.transform.scale(self.enemy.images["L"], (230, 230))
 
     def update(self):
 
