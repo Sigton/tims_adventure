@@ -48,3 +48,8 @@ shadow_width_to_parent_ratios = {
     "duel_player": 1.2,
     "duel_enemy": 1.2
 }
+
+shadow_x_offset = {
+    "duel_player": -35,
+    "duel_enemy": -10
+}

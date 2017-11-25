@@ -35,7 +35,12 @@ class Shadow:
         except AttributeError:
             self.height_offset = self.parent.rect.height*constants.shadow_offset
 
-        self.rect = pygame.Rect((parent.rect.x, parent.rect.y+self.height_offset), (self.width, self.height))
+        try:
+            self.x_offset = shadow_x_offset[self.parent.tile_code]
+        except AttributeError:
+            self.x_offset = 0
+
+        self.rect = pygame.Rect((parent.rect.x+self.x_offset, parent.rect.y+self.height_offset), (self.width, self.height))
 
         self.image = pygame.Surface([self.width, self.height])
 
@@ -47,7 +52,7 @@ class Shadow:
 
     def update(self):
 
-        self.rect.centerx = self.parent.rect.centerx
+        self.rect.centerx = self.parent.rect.centerx+self.x_offset
         self.rect.y = self.parent.rect.y + self.height_offset
 
     def draw(self, display):
