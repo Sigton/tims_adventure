@@ -3,8 +3,7 @@ import operator
 
 import pygame
 
-from src.entities import shadows
-from src.entities import bean_image_loader
+from src.entities import shadows, bean_image_loader, entities
 from src.etc import constants
 
 """
@@ -113,8 +112,7 @@ class Bean(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
 
-        if not self.main:
-            self.rect.y += 8
+        self.meta = entities.EntityMeta(self)
 
         self.shadow = shadows.Shadow(self)
 
