@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,11 +76,9 @@
           <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-48">
-                  <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="40">
+                  <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -89,10 +86,10 @@
           <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                <state relative-caret-position="692">
+                  <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
                   <folding>
-                    <element signature="e#0#41#0" expanded="true" />
+                    <element signature="e#0#13#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -200,8 +197,8 @@
         <option value="$PROJECT_DIR$/src/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_gui.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
@@ -369,13 +366,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00383" summary="Fixed bug">
-      <created>1509659060186</created>
-      <option name="number" value="00383" />
-      <option name="presentableId" value="LOCAL-00383" />
-      <option name="project" value="LOCAL" />
-      <updated>1509659060186</updated>
     </task>
     <task id="LOCAL-00384" summary="Fixed a bug and transparency">
       <created>1509659275662</created>
@@ -713,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511613976207</updated>
     </task>
-    <option name="localTasksCounter" value="432" />
+    <task id="LOCAL-00432" summary="Event handling is now done locally">
+      <created>1511614292831</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1511614292832</updated>
+    </task>
+    <option name="localTasksCounter" value="433" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -790,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Created entities.py" />
     <MESSAGE value="Created new entities directory" />
     <MESSAGE value="Fixed imports" />
@@ -815,7 +811,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixing more problems" />
     <MESSAGE value="Asserted positions of buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Asserted positions of buttons" />
+    <MESSAGE value="Event handling is now done locally" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event handling is now done locally" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1181,21 +1178,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="692">
+          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

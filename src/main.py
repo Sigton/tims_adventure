@@ -1,7 +1,6 @@
 import sys
 
 import pygame
-from pygame.locals import *
 
 from src import sounds
 from src.etc import constants
