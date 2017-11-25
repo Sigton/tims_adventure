@@ -56,6 +56,9 @@ class ProgressBar:
 
     def update(self, percent):
 
+        if percent == 0:
+            return
+
         self.new_image = self.start_image.copy()
 
         pygame.draw.line(self.new_image, self.fill_color,

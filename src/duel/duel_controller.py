@@ -77,7 +77,14 @@ class DuelController:
                 self.master.game_exit = True
 
         [button.update() for button in self.buttons]
-        [bar.update(1) for bar in self.progress_bars]
+
+        self.player_hp_bar.update(self.player.hp / self.player.max_hp)
+        self.player_xp_bar.update(self.player.xp / (constants.level_up_base *
+                                                    (constants.level_up_multiplier**self.player.level)))
+
+        self.enemy_hp_bar.update(self.enemy.hp / self.enemy.max_hp)
+        self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
+                                                  (constants.level_up_multiplier**self.enemy.level)))
 
     def draw(self, display):
 
