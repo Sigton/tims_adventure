@@ -98,11 +98,16 @@ class DuelController:
             self.enemy_level_label
         ]
 
+        self.cooldown = 0
+
     def update(self):
 
         for event in pygame.event.get():
             if event.type == QUIT:
                 self.master.game_exit = True
+
+        if self.cooldown > 0:
+            self.cooldown -= 1
 
         [button.update() for button in self.buttons]
 
@@ -116,7 +121,9 @@ class DuelController:
 
     def callback(self, button_id):
 
-        print("Button pressed!")
+        if not self.cooldown:
+            print("Button pressed!")
+            self.cooldown = 5
 
     def draw(self, display):
 
