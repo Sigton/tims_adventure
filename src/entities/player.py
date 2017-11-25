@@ -106,7 +106,7 @@ class Bean(pygame.sprite.Sprite):
 
         self.images = {}
 
-        self.create_images(bean_image_loader.beans[self.bean])
+        self.create_images(bean_image_loader.beans[self.bean]())
 
         self.image = self.images["R"]
 
@@ -139,5 +139,5 @@ class Bean(pygame.sprite.Sprite):
         wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
         wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
         display.blit(self.image,
-                     (self.rect.x + (wobble_x if self.main else wobble_x / 2),
-                      self.rect.y + (wobble_y if self.main else wobble_y / 2)))
+                     (self.rect.x + wobble_x,
+                      self.rect.y + wobble_y))
