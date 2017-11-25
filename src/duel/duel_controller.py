@@ -12,3 +12,11 @@ class DuelController:
     def __init__(self):
 
         self.images = load_images()
+
+    def update(self):
+
+        pass
+
+    def draw(self, display):
+
+        pass

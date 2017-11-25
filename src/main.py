@@ -7,6 +7,7 @@ from src import sounds
 from src.etc import constants
 from src.terrain import chunks
 from src.entities import bean_image_loader, player
+from src.duel import duel_controller
 
 """
 main.py
@@ -42,6 +43,8 @@ class Main:
         self.chunk_controller.player = self.player
         self.player.set_chunk_controller(self.chunk_controller)
 
+        self.duel_controller = duel_controller.DuelController()
+
     def run(self):
 
         game_exit = False
@@ -56,7 +59,7 @@ class Main:
                 if event.type == QUIT:
 
                     game_exit = True
-
+                '''
                 elif event.type == KEYDOWN:
 
                     if event.key == K_UP:
@@ -83,13 +86,15 @@ class Main:
                         direction = direction.replace("L", "")
 
                     elif event.key == K_RIGHT:
-                        direction = direction.replace("R", "")
+                        direction = direction.replace("R", "")'''
 
-            self.chunk_controller.update(direction)
+            # self.chunk_controller.update(direction)
+            self.duel_controller.update()
 
             self.display.fill(constants.WHITE)
 
-            self.chunk_controller.draw(self.display)
+            # self.chunk_controller.draw(self.display)
+            self.duel_controller.draw(self.display)
 
             self.sound_engine.play_sounds()
 
