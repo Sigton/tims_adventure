@@ -58,3 +58,7 @@ shadow_offset = 0.85
 animation_thresholds = {
     "0030": 4
 }
+
+# Entity constants
+level_up_base = 50
+level_up_multiplier = 1.5

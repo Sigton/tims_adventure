@@ -1,3 +1,5 @@
+from src.entities.entity_meta import entity_data
+
 """
 entities.py
 
@@ -13,3 +15,12 @@ class EntityMeta:
         self.parent = parent
 
         self.bean = self.parent.bean
+
+        self.max_hp = entity_data[self.bean]["max_hp"]
+        self.hp = self.max_hp
+
+        self.level = 1
+        self.xp = 0
+
+        self.moves = entity_data[self.bean]["moves"]
+        self.attack = entity_data[self.bean]["attack"]
