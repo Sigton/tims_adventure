@@ -1,3 +1,5 @@
+import pygame
+
 """
 Constants.py
 
@@ -67,3 +69,13 @@ animation_thresholds = {
 # Entity constants
 level_up_base = 50
 level_up_multiplier = 1.5
+
+# The global font to write with
+font = None
+
+
+def load_font():
+
+    global font
+
+    font = pygame.font.Font("src/resources/font.otf", 32)

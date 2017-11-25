@@ -70,3 +70,10 @@ class ProgressBar:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class Label:
+
+    def __init__(self, x, y, text):
+
+        pass
