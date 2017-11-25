@@ -40,7 +40,11 @@ class ProgressBar:
         self.back_color = colors[0]
         self.fill_color = colors[1]
 
+        self.width = width
+        self.length = length
+
         self.start_image = pygame.Surface([length, width]).convert()
+        self.new_image = None
 
         pygame.draw.line(self.start_image, self.back_color, (0, width//2), (length, width//2), width)
 
@@ -49,6 +53,16 @@ class ProgressBar:
 
         self.rect.x = x
         self.rect.y = y - width//2
+
+    def update(self, percent):
+
+        self.new_image = self.start_image.copy()
+
+        pygame.draw.line(self.new_image, self.fill_color,
+                         (0, self.width//2), (self.length*percent, self.width//2),
+                         self.width)
+
+        self.image = self.new_image
 
     def draw(self, display):
 
