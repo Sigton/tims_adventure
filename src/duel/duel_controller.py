@@ -1,3 +1,5 @@
+from src.duel.duel_gui import load_images
+
 """
 duel.py
 
@@ -9,4 +11,4 @@ class DuelController:
 
     def __init__(self):
 
-        pass
+        self.images = load_images()
