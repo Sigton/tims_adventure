@@ -102,10 +102,11 @@ class Bean(pygame.sprite.Sprite):
         self.chunk_controller = None
 
         self.main = main
+        self.bean = "red"
 
         self.images = {}
 
-        self.create_images(bean_image_loader.red())
+        self.create_images(bean_image_loader.beans[self.bean])
 
         self.image = self.images["R"]
 

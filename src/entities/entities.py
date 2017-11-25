@@ -11,3 +11,5 @@ class EntityMeta:
     def __init__(self, parent):
 
         self.parent = parent
+
+        self.bean = self.parent.bean
