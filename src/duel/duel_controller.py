@@ -73,8 +73,14 @@ class DuelController:
         self.player_hp_label = gui_components.Label(807, 429, "{}/{}".format(self.player.hp, self.player.max_hp))
         self.enemy_hp_label = gui_components.Label(323, 18, "{}/{}".format(self.enemy.xp, self.enemy.max_hp))
 
-        self.player_xp_label = gui_components.Label(807, 500, "{}/{}".format(self.player.hp, self.player.max_hp))
-        self.enemy_xp_label = gui_components.Label(323, 89, "{}/{}".format(self.enemy.xp, self.enemy.max_hp))
+        self.player_xp_label = gui_components.Label(807, 500, "{}/{}".format(self.player.hp,
+                                                                             int((constants.level_up_base *
+                                                                                 (constants.level_up_multiplier **
+                                                                                  self.player.level)))))
+        self.enemy_xp_label = gui_components.Label(323, 89, "{}/{}".format(self.enemy.xp,
+                                                                           int((constants.level_up_base *
+                                                                               (constants.level_up_multiplier **
+                                                                                self.enemy.level)))))
 
         self.text = [
             self.player_hp_label,
