@@ -142,7 +142,10 @@ class DuelController:
 
         if button_id == 0:
             if self.player.moves[0] == 0:
+
                 self.enemy.hp -= self.player.attack
+                if self.enemy.hp < 0:
+                    self.enemy.hp = 0
 
     def draw(self, display):
 
