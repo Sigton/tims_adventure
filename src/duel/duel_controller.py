@@ -16,10 +16,10 @@ class DuelController:
 
         self.background = self.images["background"]
 
-        self.attack_main_button = gui_components.Button(self.images["attack_main_button"], 0, 0)
-        self.attack_alt_button = gui_components.Button(self.images["attack_alt_button"], 0, 50)
-        self.item_button = gui_components.Button(self.images["item_button"], 0, 100)
-        self.retreat_button = gui_components.Button(self.images["retreat_button"], 0, 150)
+        self.attack_main_button = gui_components.Button(self.images["attack_main_button"], 508, 584)
+        self.attack_alt_button = gui_components.Button(self.images["attack_alt_button"], 730, 584)
+        self.item_button = gui_components.Button(self.images["item_button"], 508, 645)
+        self.retreat_button = gui_components.Button(self.images["retreat_button"], 730, 645)
 
         self.buttons = [
             self.attack_main_button,
