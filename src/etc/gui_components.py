@@ -31,3 +31,21 @@ class Button:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class ProgressBar:
+
+    def __init__(self, x, y, length, width, colors):
+
+        self.back_color = colors[0]
+        self.fill_color = colors[1]
+
+        self.start_image = pygame.Surface([length, width]).convert()
+
+        pygame.draw.line(self.start_image, self.back_color, (0, width//2), (length, width//2), width=width)
+
+        self.image = self.start_image
+        self.rect = self.image.get_rect()
+
+        self.rect.x = x
+        self.rect.y = y
