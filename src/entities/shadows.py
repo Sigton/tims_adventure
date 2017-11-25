@@ -24,7 +24,7 @@ class Shadow:
         self.height = self.width * 0.5
 
         try:
-            self.height_offset = self.parent.rect.height*shadow_ratios[self.parent.tile_code]
+            self.height_offset = self.parent.rect.height * shadow_height_ratios[self.parent.tile_code]
         except AttributeError:
             self.height_offset = self.parent.rect.height*constants.shadow_offset
 

@@ -32,9 +32,14 @@ shadowed_decs = [
     "0040"
 ]
 
-shadow_ratios = {
+shadow_height_ratios = {
     "duel_player": 0.7,
     "duel_enemy": 0.7,
     "0031": 0.85,
     "0040": 0.6
+}
+
+shadow_width_ratios = {
+    "duel_player": 0.6,
+    "duel_enemy": 0.6
 }
