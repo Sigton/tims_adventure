@@ -48,4 +48,8 @@ class ProgressBar:
         self.rect = self.image.get_rect()
 
         self.rect.x = x
-        self.rect.y = y
+        self.rect.y = y - width//2
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))

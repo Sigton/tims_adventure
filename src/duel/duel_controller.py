@@ -56,6 +56,10 @@ class DuelController:
         self.player_hp_bar = gui_components.ProgressBar(587, 449, 203, 30, [constants.HEALTH_BAR_RED,
                                                                             constants.HEALTH_BAR_GREEN])
 
+        self.progress_bars = [
+            self.player_hp_bar
+        ]
+
     def update(self):
 
         for event in pygame.event.get():
@@ -75,3 +79,4 @@ class DuelController:
         display.blit(self.enemy_image, (640, 53))
 
         [button.draw(display) for button in self.buttons]
+        [bar.draw(display) for bar in self.progress_bars]
