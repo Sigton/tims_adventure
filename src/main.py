@@ -35,7 +35,7 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(16320, 66240)
 
-        player.bean_image_loader.load_sprite_sheet()
+        src.entities.bean_image_loader.load_sprite_sheet()
         self.player = player.Player()
 
         self.chunk_controller.player = self.player

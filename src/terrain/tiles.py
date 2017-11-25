@@ -1,6 +1,4 @@
-import pygame
-
-from src import shadows
+from src.entities import shadows
 from src.etc import constants
 from src.terrain.tile_image_loader import *
 from src.terrain.tile_types import *
