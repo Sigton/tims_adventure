@@ -1,5 +1,7 @@
 import pygame
 
+from src.etc import constants
+
 """
 gui_components.py
 
@@ -76,4 +78,12 @@ class Label:
 
     def __init__(self, x, y, text):
 
-        pass
+        self.image = constants.font.render(text, False, constants.WHITE)
+        self.rect = self.image.get_rect()
+
+        self.rect.x = x
+        self.rect.y = y
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
