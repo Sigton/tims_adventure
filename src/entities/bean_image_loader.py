@@ -15,6 +15,14 @@ green = lambda: sprite_sheet.get_image(80, 0, 40, 40)
 pink = lambda: sprite_sheet.get_image(120, 0, 40, 40)
 yellow = lambda: sprite_sheet.get_image(160, 0, 40, 40)
 
+beans = {
+    "red": red,
+    "blue": blue,
+    "green": green,
+    "pink": pink,
+    "yellow": yellow
+}
+
 
 def load_sprite_sheet():
 
