@@ -39,6 +39,8 @@ class DuelController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
+        [button.update() for button in self.buttons]
+
     def draw(self, display):
 
         display.blit(self.background, (0, 0))

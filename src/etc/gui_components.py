@@ -19,6 +19,10 @@ class Button:
         self.rect.x = x
         self.rect.y = y
 
+    def update(self):
+
+        pass
+
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
