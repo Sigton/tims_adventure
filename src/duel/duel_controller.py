@@ -77,6 +77,7 @@ class DuelController:
                 self.master.game_exit = True
 
         [button.update() for button in self.buttons]
+        [bar.update(1) for bar in self.progress_bars]
 
     def draw(self, display):
 
