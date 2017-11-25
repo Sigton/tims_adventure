@@ -21,4 +21,4 @@ class Button:
 
     def draw(self, display):
 
-        display.blit(self, (self.rect.x, self.rect.y))
+        display.blit(self.image, (self.rect.x, self.rect.y))
