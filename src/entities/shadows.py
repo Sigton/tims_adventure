@@ -20,7 +20,11 @@ class Shadow:
         # off of its parents dimensions.
         self.parent = parent
 
-        self.width = self.parent.rect.width * 0.8
+        try:
+            self.width = self.parent.rect.width * shadow_width_to_parent_ratios[self.parent.tile_code]
+        except AttributeError:
+            self.width = self.parent.rect.width * 0.8
+
         try:
             self.height = self.width * shadow_width_ratios[self.parent.tile_code]
         except AttributeError:
