@@ -70,6 +70,14 @@ class DuelController:
             self.enemy_xp_bar
         ]
 
+        self.player_hp_label = gui_components.Label(819, 431, "{}/{}".format(self.player.hp, self.player.max_hp))
+        self.enemy_hp_label = gui_components.Label(323, 18, "{}/{}".format(self.enemy.hp, self.enemy.max_hp))
+
+        self.text = [
+            self.player_hp_label,
+            self.enemy_hp_label
+        ]
+
     def update(self):
 
         for event in pygame.event.get():
@@ -98,3 +106,4 @@ class DuelController:
 
         [button.draw(display) for button in self.buttons]
         [bar.draw(display) for bar in self.progress_bars]
+        [label.draw(display) for label in self.text]
