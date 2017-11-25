@@ -124,8 +124,11 @@ class DuelController:
         if self.button_cool_down:
             return
 
-        print("Button pressed!")
         self.button_cool_down = 5
+
+        if button_id == 0:
+            if self.player.moves[0] == 0:
+                self.enemy.hp -= self.player.attack
 
     def draw(self, display):
 
