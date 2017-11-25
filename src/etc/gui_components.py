@@ -1,3 +1,5 @@
+import pygame
+
 """
 gui_components.py
 
@@ -21,7 +23,10 @@ class Button:
 
     def update(self):
 
-        pass
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            self.image = self.active_image
+        else:
+            self.image = self.inactive_image
 
     def draw(self, display):
 
