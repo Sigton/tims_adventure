@@ -45,15 +45,15 @@ def load_images():
         "attack_alt_button": [sprite_sheet.get_image(image[0],
                                                      image[1],
                                                      image[2],
-                                                     image[3]) for image in SpriteSheetData.attack_main_button],
+                                                     image[3]) for image in SpriteSheetData.attack_alt_button],
         "item_button": [sprite_sheet.get_image(image[0],
                                                image[1],
                                                image[2],
-                                               image[3]) for image in SpriteSheetData.attack_main_button],
+                                               image[3]) for image in SpriteSheetData.item_button],
         "retreat_button": [sprite_sheet.get_image(image[0],
                                                   image[1],
                                                   image[2],
-                                                  image[3]) for image in SpriteSheetData.attack_main_button],
+                                                  image[3]) for image in SpriteSheetData.retreat_button],
         "background": pygame.image.load("src/resources/duel_gui.png").convert()
     }
 
