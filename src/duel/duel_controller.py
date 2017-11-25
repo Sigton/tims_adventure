@@ -13,9 +13,12 @@ This deals with the game mechanics and GUI of duelling
 
 class DuelController:
 
-    def __init__(self, master):
+    def __init__(self, master, player, enemy):
 
         self.master = master
+
+        self.player = player.meta
+        self.enemy = enemy.meta
 
         self.images = load_images()
 

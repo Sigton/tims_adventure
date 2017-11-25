@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/etc/gui_components.py" afterPath="$PROJECT_DIR$/src/etc/gui_components.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,16 +22,6 @@
               <splitter split-orientation="horizontal" split-proportion="0.48162627">
                 <split-first>
                   <leaf>
-                    <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="false">
-                      <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-                        <provider selected="true" editor-type-id="text-editor">
-                          <state relative-caret-position="300">
-                            <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                            <folding />
-                          </state>
-                        </provider>
-                      </entry>
-                    </file>
                     <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
                       <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
                         <provider selected="true" editor-type-id="text-editor">
@@ -45,16 +36,6 @@
                 </split-first>
                 <split-second>
                   <leaf>
-                    <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
-                      <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-                        <provider selected="true" editor-type-id="text-editor">
-                          <state relative-caret-position="560">
-                            <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-                            <folding />
-                          </state>
-                        </provider>
-                      </entry>
-                    </file>
                     <file leaf-file-name="duel_gui.py" pinned="false" current-in-tab="true">
                       <entry file="file://$PROJECT_DIR$/src/duel/duel_gui.py">
                         <provider selected="true" editor-type-id="text-editor">
@@ -89,30 +70,74 @@
         </state>
       </content>
     </window>
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <splitter split-orientation="horizontal" split-proportion="0.70677084">
+            <split-first>
+              <splitter split-orientation="horizontal" split-proportion="0.62905604">
+                <split-first>
+                  <leaf>
+                    <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+                      <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+                        <provider selected="true" editor-type-id="text-editor">
+                          <state relative-caret-position="740">
+                            <caret line="220" column="43" lean-forward="false" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
+                            <folding>
+                              <element signature="e#0#13#0" expanded="true" />
+                            </folding>
+                          </state>
+                        </provider>
+                      </entry>
+                    </file>
+                  </leaf>
+                </split-first>
+                <split-second>
+                  <leaf>
+                    <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+                      <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+                        <provider selected="true" editor-type-id="text-editor">
+                          <state relative-caret-position="560">
+                            <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                            <folding />
+                          </state>
+                        </provider>
+                      </entry>
+                    </file>
+                  </leaf>
+                </split-second>
+              </splitter>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="300">
+                        <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                        <folding />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5930818">
+    <splitter split-orientation="horizontal" split-proportion="0.4509434">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                <state relative-caret-position="720">
+                  <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="692">
-                  <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -122,11 +147,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+                <state relative-caret-position="400">
+                  <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -198,9 +223,9 @@
         <option value="$PROJECT_DIR$/src/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_gui.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -367,13 +392,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00386" summary="Updated tiles.py to implement shadows">
-      <created>1509659641840</created>
-      <option name="number" value="00386" />
-      <option name="presentableId" value="LOCAL-00386" />
-      <option name="project" value="LOCAL" />
-      <updated>1509659641840</updated>
     </task>
     <task id="LOCAL-00387" summary="Tree shadows are working properly">
       <created>1509659989979</created>
@@ -711,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511614598271</updated>
     </task>
-    <option name="localTasksCounter" value="435" />
+    <task id="LOCAL-00435" summary="Buttons now change appearance when you hover over them">
+      <created>1511614688496</created>
+      <option name="number" value="00435" />
+      <option name="presentableId" value="LOCAL-00435" />
+      <option name="project" value="LOCAL" />
+      <updated>1511614688496</updated>
+    </task>
+    <option name="localTasksCounter" value="436" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -722,7 +747,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -788,7 +813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed imports" />
     <MESSAGE value="Created entity metadata" />
     <MESSAGE value="Added more metadata" />
     <MESSAGE value="Beans now hold an attribute for the type they are." />
@@ -813,7 +837,8 @@
     <MESSAGE value="Event handling is now done locally" />
     <MESSAGE value="Event loop added to duel controller" />
     <MESSAGE value="Calling update on the buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calling update on the buttons" />
+    <MESSAGE value="Buttons now change appearance when you hover over them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buttons now change appearance when you hover over them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1082,7 +1107,7 @@
         <state relative-caret-position="800">
           <caret line="43" column="61" lean-forward="false" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1110,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1125,14 +1142,6 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,40 +1158,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1194,6 +1173,52 @@
         <state relative-caret-position="560">
           <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="220" column="43" lean-forward="false" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
