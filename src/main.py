@@ -3,9 +3,10 @@ import sys
 import pygame
 from pygame.locals import *
 
-from src import player, sounds
+from src import sounds
 from src.etc import constants
 from src.terrain import chunks
+from src.entities import bean_image_loader, player
 
 """
 main.py
@@ -35,7 +36,7 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(16320, 66240)
 
-        src.entities.bean_image_loader.load_sprite_sheet()
+        bean_image_loader.load_sprite_sheet()
         self.player = player.Player()
 
         self.chunk_controller.player = self.player

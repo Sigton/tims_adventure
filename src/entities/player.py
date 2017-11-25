@@ -3,7 +3,7 @@ import operator
 
 import pygame
 
-from src import shadows
+from src.entities import shadows
 from src.entities import bean_image_loader
 from src.etc import constants
 
