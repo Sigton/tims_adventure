@@ -36,6 +36,9 @@ class DuelController:
             self.retreat_button
         ]
 
+        self.player_image = pygame.transform.scale(self.player.images["R"], (300, 300))
+        self.enemy_image = pygame.transform.scale(self.player.images["L"], (230, 230))
+
     def update(self):
 
         for event in pygame.event.get():
@@ -47,5 +50,7 @@ class DuelController:
     def draw(self, display):
 
         display.blit(self.background, (0, 0))
+        display.blit(self.player_image, (75, 368))
+        display.blit(self.enemy_image, (640, 53))
 
         [button.draw(display) for button in self.buttons]
