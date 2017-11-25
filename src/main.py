@@ -54,13 +54,13 @@ class Main:
 
         while not self.game_exit:
 
-            # self.chunk_controller.update()
-            self.duel_controller.update()
+            self.chunk_controller.update()
+            #self.duel_controller.update()
 
             self.display.fill(constants.WHITE)
 
-            # self.chunk_controller.draw(self.display)
-            self.duel_controller.draw(self.display)
+            self.chunk_controller.draw(self.display)
+            #self.duel_controller.draw(self.display)
 
             self.sound_engine.play_sounds()
 

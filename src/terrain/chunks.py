@@ -97,7 +97,7 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-    def update(self, direction):
+    def update(self):
 
         for event in pygame.event.get():
             if event.type == QUIT:
@@ -193,7 +193,7 @@ class ChunkController:
                 self.movement_interval = tuple(map(operator.floordiv, movement,
                                                    [self.moving for x in range(len(movement))]))
 
-                self.player.move_history = [direction] + self.player.move_history[:4]
+                self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
         self.player.update(self.direction)
