@@ -43,10 +43,12 @@ class DuelController:
         class PlayerShadow:
             rect = self.player_image.get_rect()
             rect.topleft = (75, 368)
+            tile_code = "duel_player"
 
         class EnemyShadow:
             rect = self.enemy_image.get_rect()
             rect.topleft = (640, 53)
+            tile_code = "duel_enemy"
 
         self.player_shadow = shadows.Shadow(PlayerShadow())
         self.enemy_shadow = shadows.Shadow(EnemyShadow())

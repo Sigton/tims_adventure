@@ -33,6 +33,8 @@ shadowed_decs = [
 ]
 
 shadow_ratios = {
+    "duel_player": 0.7,
+    "duel_enemy": 0.7,
     "0031": 0.85,
     "0040": 0.6
 }
