@@ -25,10 +25,14 @@ class DuelController:
 
         self.background = self.images["background"]
 
-        self.attack_main_button = gui_components.Button(self.images["attack_main_button"], 508, 584, self.callback)
-        self.attack_alt_button = gui_components.Button(self.images["attack_alt_button"], 730, 584, self.callback)
-        self.item_button = gui_components.Button(self.images["item_button"], 508, 645, self.callback)
-        self.retreat_button = gui_components.Button(self.images["retreat_button"], 730, 645, self.callback)
+        self.attack_main_button = gui_components.Button(self.images["attack_main_button"], 508, 584,
+                                                        lambda: self.callback(0))
+        self.attack_alt_button = gui_components.Button(self.images["attack_alt_button"], 730, 584,
+                                                       lambda: self.callback(1))
+        self.item_button = gui_components.Button(self.images["item_button"], 508, 645,
+                                                 lambda: self.callback(2))
+        self.retreat_button = gui_components.Button(self.images["retreat_button"], 730, 645,
+                                                    lambda: self.callback(3))
 
         self.buttons = [
             self.attack_main_button,
@@ -110,7 +114,7 @@ class DuelController:
         self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
                                                   (constants.level_up_multiplier**self.enemy.level)))
 
-    def callback(self):
+    def callback(self, button_id):
 
         print("Button pressed!")
 
