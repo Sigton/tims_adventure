@@ -110,6 +110,10 @@ class DuelController:
         self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
                                                   (constants.level_up_multiplier**self.enemy.level)))
 
+    def callback(self):
+
+        pass
+
     def draw(self, display):
 
         display.blit(self.background, (0, 0))
