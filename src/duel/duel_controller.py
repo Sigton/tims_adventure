@@ -106,27 +106,7 @@ class DuelController:
 
         [button.update() for button in self.buttons]
 
-        self.player_hp_bar.update(self.player.hp / self.player.max_hp)
-        self.player_xp_bar.update(self.player.xp / (constants.level_up_base *
-                                                    (constants.level_up_multiplier**self.player.level)))
-
-        self.enemy_hp_bar.update(self.enemy.hp / self.enemy.max_hp)
-        self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
-                                                  (constants.level_up_multiplier**self.enemy.level)))
-
-        self.player_hp_label.update("{}/{}".format(self.player.hp, self.player.max_hp))
-        self.enemy_hp_label.update("{}/{}".format(self.enemy.hp, self.enemy.max_hp))
-
-        self.player_xp_label.update("{}/{}".format(self.player.xp,
-                                                   int((constants.level_up_base *
-                                                       (constants.level_up_multiplier **
-                                                        self.player.level)))))
-        self.enemy_xp_label.update("{}/{}".format(self.enemy.xp,
-                                                  int((constants.level_up_base *
-                                                       (constants.level_up_multiplier **
-                                                        self.enemy.level)))))
-        self.player_level_label.update("Level {}".format(self.player.level))
-        self.enemy_level_label.update("Level {}".format(self.enemy.level))
+        self.update_gui_components()
 
     def callback(self, button_id):
 
@@ -136,6 +116,30 @@ class DuelController:
                 self.enemy.hp -= self.player.attack
                 if self.enemy.hp < 0:
                     self.enemy.hp = 0
+
+    def update_gui_components(self):
+
+        self.player_hp_bar.update(self.player.hp / self.player.max_hp)
+        self.player_xp_bar.update(self.player.xp / (constants.level_up_base *
+                                                    (constants.level_up_multiplier ** self.player.level)))
+
+        self.enemy_hp_bar.update(self.enemy.hp / self.enemy.max_hp)
+        self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
+                                                  (constants.level_up_multiplier ** self.enemy.level)))
+
+        self.player_hp_label.update("{}/{}".format(self.player.hp, self.player.max_hp))
+        self.enemy_hp_label.update("{}/{}".format(self.enemy.hp, self.enemy.max_hp))
+
+        self.player_xp_label.update("{}/{}".format(self.player.xp,
+                                                   int((constants.level_up_base *
+                                                        (constants.level_up_multiplier **
+                                                         self.player.level)))))
+        self.enemy_xp_label.update("{}/{}".format(self.enemy.xp,
+                                                  int((constants.level_up_base *
+                                                       (constants.level_up_multiplier **
+                                                        self.enemy.level)))))
+        self.player_level_label.update("Level {}".format(self.player.level))
+        self.enemy_level_label.update("Level {}".format(self.enemy.level))
 
     def draw(self, display):
 
