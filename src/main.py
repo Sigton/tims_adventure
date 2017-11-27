@@ -5,7 +5,7 @@ import pygame
 from src import sounds
 from src.etc import constants
 from src.terrain import chunks
-from src.entities import bean_image_loader, player
+from src.entities import bean_image_loader, player, particles
 from src.duel import duel_controller
 
 """
@@ -35,6 +35,7 @@ class Main:
         self.clock = pygame.time.Clock()
 
         self.sound_engine = sounds.SoundEngine()
+        self.particle_engine = particles.ParticleEngine()
 
         self.game_exit = False
 
@@ -57,10 +58,13 @@ class Main:
             # self.chunk_controller.update()
             self.duel_controller.update()
 
+            self.particle_engine.update()
+
             self.display.fill(constants.WHITE)
 
             # self.chunk_controller.draw(self.display)
             self.duel_controller.draw(self.display)
+            self.particle_engine.draw(self.display)
 
             self.sound_engine.play_sounds()
 
