@@ -16,7 +16,7 @@ class Button:
 
         self.inactive_image = images[0]
         self.active_image = images[1]
-        self.deactivated_image = images[3]
+        self.deactivated_image = images[2]
 
         self.image = self.inactive_image if active else self.deactivated_image
 
