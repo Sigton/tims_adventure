@@ -33,3 +33,11 @@ class Particle:
         self.image = image
 
         self.rect = self.image.get_rect()
+
+    def update(self):
+
+        pass
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
