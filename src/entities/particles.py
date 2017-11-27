@@ -7,6 +7,8 @@ The games particle engine
 
 class Particle:
 
-    def __init__(self):
+    def __init__(self, image):
 
-        pass
+        self.image = image
+
+        self.rect = self.image.get_rect()
