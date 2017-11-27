@@ -107,7 +107,7 @@ class DuelController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
-        [button.update() for button in self.buttons]
+        [button.update(not self.turn and not self.turn_cool_down) for button in self.buttons]
 
         if self.turn_cool_down > 0:
             self.turn_cool_down -= 1
