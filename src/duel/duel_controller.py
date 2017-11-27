@@ -99,6 +99,7 @@ class DuelController:
         ]
 
         self.turn = 0
+        self.turn_cool_down = 50
 
     def update(self):
 
@@ -108,18 +109,22 @@ class DuelController:
 
         [button.update() for button in self.buttons]
 
-        if self.turn == 1:
+        if self.turn_cool_down > 0:
+            self.turn_cool_down -= 1
+
+        if self.turn == 1 and not self.turn_cool_down:
             self.player.hp -= self.enemy.attack
             if self.player.hp < 0:
                 self.player.hp = 0
 
             self.turn = 0
+            self.turn_cool_down = 50
 
         self.update_gui_components()
 
     def callback(self, button_id):
 
-        if self.turn == 1:
+        if self.turn == 1 or self.turn_cool_down:
             return
 
         if button_id == 0:
@@ -130,6 +135,7 @@ class DuelController:
                     self.enemy.hp = 0
 
                 self.turn = 1
+                self.turn_cool_down = 50
 
     def update_gui_components(self):
 
