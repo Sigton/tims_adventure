@@ -11,6 +11,16 @@ class ParticleEngine:
 
         self.particles = []
 
+    def update(self):
+
+        for particle in self.particles:
+            particle.update()
+
+    def draw(self, display):
+
+        for particle in self.particles:
+            particle.draw(display)
+
 
 class Particle:
 
