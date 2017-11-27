@@ -12,12 +12,13 @@ found on most gui's
 
 class Button:
 
-    def __init__(self, images, x, y, command):
+    def __init__(self, images, x, y, command, active=True):
 
         self.inactive_image = images[0]
         self.active_image = images[1]
+        self.deactivated_image = images[3]
 
-        self.image = self.inactive_image
+        self.image = self.inactive_image if active else self.deactivated_image
 
         self.rect = self.image.get_rect()
         self.rect.x = x
@@ -27,7 +28,11 @@ class Button:
 
         self.pressed = False
 
-    def update(self):
+    def update(self, active=True):
+
+        if not active:
+            self.image = self.deactivated_image
+            return
 
         if self.rect.collidepoint(pygame.mouse.get_pos()):
             self.image = self.active_image
