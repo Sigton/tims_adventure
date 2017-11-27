@@ -98,6 +98,8 @@ class DuelController:
             self.enemy_level_label
         ]
 
+        self.turn = 0
+
     def update(self):
 
         for event in pygame.event.get():
@@ -106,9 +108,19 @@ class DuelController:
 
         [button.update() for button in self.buttons]
 
+        if self.turn == 1:
+            self.player.hp -= self.enemy.attack
+            if self.player.hp < 0:
+                self.player.hp = 0
+
+            self.turn = 0
+
         self.update_gui_components()
 
     def callback(self, button_id):
+
+        if self.turn == 1:
+            return
 
         if button_id == 0:
             if self.player.moves[0] == 0:
@@ -116,6 +128,8 @@ class DuelController:
                 self.enemy.hp -= self.player.attack
                 if self.enemy.hp < 0:
                     self.enemy.hp = 0
+
+                self.turn = 1
 
     def update_gui_components(self):
 

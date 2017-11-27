@@ -20,8 +20,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="141" column="74" lean-forward="false" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
+            <state relative-caret-position="276">
+              <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -120,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,6 +155,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,13 +261,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00429" summary="Fixed bug">
-      <created>1511613770362</created>
-      <option name="number" value="00429" />
-      <option name="presentableId" value="LOCAL-00429" />
-      <option name="project" value="LOCAL" />
-      <updated>1511613770362</updated>
     </task>
     <task id="LOCAL-00430" summary="Fixing more problems">
       <created>1511613807077</created>
@@ -605,17 +598,24 @@
       <option name="project" value="LOCAL" />
       <updated>1511653484741</updated>
     </task>
-    <option name="localTasksCounter" value="478" />
+    <task id="LOCAL-00478" summary="Tidied things up">
+      <created>1511692367317</created>
+      <option name="number" value="00478" />
+      <option name="presentableId" value="LOCAL-00478" />
+      <option name="project" value="LOCAL" />
+      <updated>1511692367318</updated>
+    </task>
+    <option name="localTasksCounter" value="479" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15565032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -682,7 +682,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Progress bars now update and can be filled with an assigned value" />
     <MESSAGE value="Progress bars will now work!" />
     <MESSAGE value="Fixed duplicate parts on the spritesheet" />
     <MESSAGE value="Created label class and defined a global font" />
@@ -707,7 +706,8 @@
     <MESSAGE value="Replacing button cooldown" />
     <MESSAGE value="Now only allowed 1 click" />
     <MESSAGE value="Debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
+    <MESSAGE value="Tidied things up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidied things up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1058,8 +1058,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="141" column="74" lean-forward="false" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
+        <state relative-caret-position="276">
+          <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
