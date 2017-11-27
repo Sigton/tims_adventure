@@ -21,6 +21,10 @@ class ParticleEngine:
         for particle in self.particles:
             particle.draw(display)
 
+    def clear_particles(self):
+
+        self.particles = []
+
 
 class Particle:
 
