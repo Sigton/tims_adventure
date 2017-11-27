@@ -5,6 +5,13 @@ The games particle engine
 """
 
 
+class ParticleEngine:
+
+    def __init__(self):
+
+        self.particles = []
+
+
 class Particle:
 
     def __init__(self, image):
