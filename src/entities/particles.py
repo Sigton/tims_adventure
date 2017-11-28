@@ -1,8 +1,12 @@
+from src.etc import spritesheet
+
 """
 particles.py
 
 The games particle engine
 """
+
+particle_sprite_sheet = spritesheet.SpriteSheet("src/resources/particles.png")
 
 
 class ParticleEngine:
