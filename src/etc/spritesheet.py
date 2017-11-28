@@ -18,7 +18,7 @@ class SpriteSheet(object):
     def __init__(self, filename):
 
         # Load the sprite sheet
-        self.sprite_sheet = pygame.image.load(filename).convert()
+        self.sprite_sheet = pygame.image.load(filename).convert_alpha()
 
     def get_image(self, x, y, width, height):
 
