@@ -20,8 +20,8 @@
       <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/particles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="352">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -254,13 +254,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00446" summary="Added some handy comments">
-      <created>1511618298828</created>
-      <option name="number" value="00446" />
-      <option name="presentableId" value="LOCAL-00446" />
-      <option name="project" value="LOCAL" />
-      <updated>1511618298828</updated>
     </task>
     <task id="LOCAL-00447" summary="Added more colours">
       <created>1511618609574</created>
@@ -598,14 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511856436789</updated>
     </task>
-    <option name="localTasksCounter" value="495" />
+    <task id="LOCAL-00495" summary="Moved attributes to the parent class">
+      <created>1511856468660</created>
+      <option name="number" value="00495" />
+      <option name="presentableId" value="LOCAL-00495" />
+      <option name="project" value="LOCAL" />
+      <updated>1511856468660</updated>
+    </task>
+    <option name="localTasksCounter" value="496" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15884861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16044776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -675,7 +675,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Neatened things up" />
     <MESSAGE value="Made a crude attacking system for now" />
     <MESSAGE value="Created update function for Label" />
     <MESSAGE value="Text now updates" />
@@ -700,7 +699,8 @@
     <MESSAGE value="Implemented particle engine" />
     <MESSAGE value="Created FireParticle class" />
     <MESSAGE value="Adding more attributes to fire particle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding more attributes to fire particle" />
+    <MESSAGE value="Moved attributes to the parent class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved attributes to the parent class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1046,16 +1046,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/particles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="352">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

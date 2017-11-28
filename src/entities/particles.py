@@ -20,6 +20,9 @@ class ParticleEngine:
         for particle in self.particles:
             particle.update()
 
+            if particle.lifetime == 0:
+                self.particles.remove(particle)
+
     def draw(self, display):
 
         for particle in self.particles:
@@ -45,7 +48,7 @@ class Particle:
 
     def update(self):
 
-        pass
+        self.lifetime -= 1
 
     def draw(self, display):
 
