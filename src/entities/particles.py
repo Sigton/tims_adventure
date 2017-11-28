@@ -20,6 +20,8 @@ class ParticleEngine:
 
         self.particles = []
 
+        self.fade_particles = []
+
     def update(self):
 
         for particle in self.particles:
@@ -27,6 +29,15 @@ class ParticleEngine:
 
             if particle.lifetime == 0:
                 self.particles.remove(particle)
+                self.fade_particles.append(particle)
+
+        for particle in self.fade_particles:
+
+            particle.fade_time -= 1
+            if particle.fade_time == 0:
+                self.fade_particles.remove(particle)
+            else:
+                particle.image.set_alpha(particle.image.get_alpha()-particle.fade_increment)
 
     def draw(self, display):
 
@@ -36,6 +47,7 @@ class ParticleEngine:
     def clear_particles(self):
 
         self.particles = []
+        self.fade_particles = []
 
     def create_fire_particle(self, x, y, lifetime):
 
@@ -44,7 +56,7 @@ class ParticleEngine:
 
 class Particle:
 
-    def __init__(self, image, x, y, lifetime):
+    def __init__(self, image, x, y, lifetime, fade_time=10):
 
         self.image = image
 
@@ -54,6 +66,8 @@ class Particle:
         self.rect.y = y
 
         self.lifetime = lifetime
+        self.fade_time = fade_time
+        self.fade_increment = 255//fade_time
 
     def update(self):
 
