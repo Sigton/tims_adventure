@@ -45,3 +45,12 @@ class Particle:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class FireParticle(Particle):
+
+    def __init__(self):
+
+        self.image = particle_sprite_sheet.get_image(0, 0, 20, 20)
+
+        Particle.__init__(self, self.image)
