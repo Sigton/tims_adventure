@@ -24,8 +24,6 @@ class Main:
         pygame.mixer.init()
         pygame.init()
 
-        constants.load_font()
-
         # Create the display
         self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
 
@@ -33,6 +31,9 @@ class Main:
         pygame.display.set_caption("Bean RPG")
 
         self.clock = pygame.time.Clock()
+
+        constants.load_font()
+        particles.load_sprite_sheet()
 
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
@@ -53,10 +54,16 @@ class Main:
 
         self.sound_engine.queue_sound([self.sound_engine.ambient2_sound, -1])
 
+        n = 0
+
         while not self.game_exit:
 
             # self.chunk_controller.update()
             self.duel_controller.update()
+
+            if n % 50 == 0:
+                self.particle_engine.create_fire_particle(100, 100, 10)
+            n += 1
 
             self.particle_engine.update()
 

@@ -6,7 +6,12 @@ particles.py
 The games particle engine
 """
 
-particle_sprite_sheet = spritesheet.SpriteSheet("src/resources/particles.png")
+particle_sprite_sheet = None
+
+
+def load_sprite_sheet():
+    global particle_sprite_sheet
+    particle_sprite_sheet = spritesheet.SpriteSheet("src/resources/particles.png")
 
 
 class ParticleEngine:
