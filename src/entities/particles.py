@@ -32,6 +32,10 @@ class ParticleEngine:
 
         self.particles = []
 
+    def create_fire_particle(self, x, y, lifetime):
+
+        self.particles.append(FireParticle(x, y, lifetime))
+
 
 class Particle:
 
