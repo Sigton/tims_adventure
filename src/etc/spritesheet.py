@@ -34,6 +34,14 @@ class SpriteSheet(object):
         # Return the image
         return image
 
+    def get_image_src_alpha(self, x, y, width, height):
+
+        image = pygame.Surface([width, height], flags=SRCALPHA).convert_alpha()
+
+        image.blit(self.sprite_sheet, (0, 0), (x, y, width, height))
+
+        return image
+
     def create_template_image(self, template, material):
 
         image = self.get_image(template[0],
