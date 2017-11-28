@@ -32,11 +32,16 @@ class ParticleEngine:
 
 class Particle:
 
-    def __init__(self, image):
+    def __init__(self, image, x, y, lifetime):
 
         self.image = image
 
         self.rect = self.image.get_rect()
+
+        self.rect.x = x
+        self.rect.y = y
+
+        self.lifetime = lifetime
 
     def update(self):
 
@@ -53,9 +58,4 @@ class FireParticle(Particle):
 
         self.image = particle_sprite_sheet.get_image(0, 0, 20, 20)
 
-        Particle.__init__(self, self.image)
-
-        self.rect.x = x
-        self.rect.y = y
-
-        self.lifetime = lifetime
+        Particle.__init__(self, self.image, x, y, lifetime)
