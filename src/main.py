@@ -54,16 +54,10 @@ class Main:
 
         self.sound_engine.queue_sound([self.sound_engine.ambient2_sound, -1])
 
-        n = 0
-
         while not self.game_exit:
 
             # self.chunk_controller.update()
             self.duel_controller.update()
-
-            if n % 20 == 0:
-                self.particle_engine.create_fire_particle(pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1], 20)
-            n += 1
 
             self.particle_engine.update()
 

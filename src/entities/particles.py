@@ -21,6 +21,10 @@ class ParticleEngine:
         self.particles = []
         self.fade_particles = []
 
+        self.particle_types = {
+            "fire": FireParticle
+        }
+
     def update(self):
 
         for particle in self.particles:
@@ -52,14 +56,14 @@ class ParticleEngine:
         self.particles = []
         self.fade_particles = []
 
-    def create_fire_particle(self, x, y, lifetime):
+    def create_particle_spread(self, type, amount, x, y, noise_x, noise_y, lifetime, noise_lifetime, fadetime):
 
-        self.particles.append(FireParticle(x, y, lifetime))
+        pass
 
 
 class Particle:
 
-    def __init__(self, image, x, y, lifetime, fade_time=10):
+    def __init__(self, image, x, y, lifetime, fade_time):
 
         self.image = image
 
