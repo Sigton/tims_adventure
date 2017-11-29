@@ -56,9 +56,12 @@ class ParticleEngine:
         self.particles = []
         self.fade_particles = []
 
-    def create_particle_spread(self, type, amount, x, y, noise_x, noise_y, lifetime, noise_lifetime, fadetime):
+    def create_particle_spread(self, particle_type, amount, x, y, noise_x, noise_y,
+                               lifetime, noise_lifetime, fade_time):
 
-        pass
+        for n in range(amount):
+
+            self.particle_types[particle_type](x, y, lifetime, fade_time)
 
 
 class Particle:
@@ -87,8 +90,8 @@ class Particle:
 
 class FireParticle(Particle):
 
-    def __init__(self, x, y, lifetime):
+    def __init__(self, x, y, lifetime, fade_time):
 
         self.image = particle_sprite_sheet.get_image_src_alpha(0, 0, 20, 20)
 
-        Particle.__init__(self, self.image, x, y, lifetime)
+        Particle.__init__(self, self.image, x, y, lifetime, fade_time)
