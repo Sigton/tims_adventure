@@ -66,6 +66,7 @@ class Main:
                                                             pygame.mouse.get_pos()[0],
                                                             pygame.mouse.get_pos()[1],
                                                             20, 20, 10, 5, 10)
+            n+=1
 
             self.particle_engine.update()
 
