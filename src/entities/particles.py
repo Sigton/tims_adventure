@@ -1,4 +1,4 @@
-from src.etc import spritesheet
+from src.etc import spritesheet, tools
 
 """
 particles.py
@@ -19,7 +19,6 @@ class ParticleEngine:
     def __init__(self):
 
         self.particles = []
-
         self.fade_particles = []
 
     def update(self):
@@ -30,6 +29,7 @@ class ParticleEngine:
             if particle.lifetime == 0:
                 self.particles.remove(particle)
                 self.fade_particles.append(particle)
+                particle.image.set_alpha(255)
 
         for particle in self.fade_particles:
 
@@ -43,6 +43,9 @@ class ParticleEngine:
 
         for particle in self.particles:
             particle.draw(display)
+
+        for particle in self.fade_particles:
+            tools.blit_alpha(display, particle.image, particle.rect.topleft, particle.image.get_alpha())
 
     def clear_particles(self):
 

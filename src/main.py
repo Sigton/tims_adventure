@@ -61,8 +61,8 @@ class Main:
             # self.chunk_controller.update()
             self.duel_controller.update()
 
-            if n % 50 == 0:
-                self.particle_engine.create_fire_particle(100, 100, 10)
+            if n % 100 == 0:
+                self.particle_engine.create_fire_particle(100, 100, 70)
             n += 1
 
             self.particle_engine.update()
