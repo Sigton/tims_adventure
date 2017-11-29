@@ -139,6 +139,8 @@ class DuelController:
                 self.turn = 1
                 self.turn_cool_down = 50
 
+                self.particle_engine.create_particle_spread("fire", 30, 750, 170, 120, 100, 30, 15, 20)
+
     def update_gui_components(self):
 
         self.player_hp_bar.update(self.player.hp / self.player.max_hp)
