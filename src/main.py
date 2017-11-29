@@ -49,6 +49,7 @@ class Main:
         self.player.set_chunk_controller(self.chunk_controller)
 
         self.duel_controller = duel_controller.DuelController(self, self.player.beans[0], self.player.beans[1])
+        self.duel_controller.particle_engine = self.particle_engine
 
     def run(self):
 
@@ -58,7 +59,6 @@ class Main:
 
             # self.chunk_controller.update()
             self.duel_controller.update()
-
             self.particle_engine.update()
 
             self.display.fill(constants.WHITE)
