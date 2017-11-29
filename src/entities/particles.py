@@ -21,7 +21,8 @@ class ParticleEngine:
     def __init__(self):
 
         self.particles = []
-        self.fade_particles = []
+        self.fade_out_particles = []
+        self.fade_in_particles = []
 
         self.particle_types = {
             "fire": FireParticle
@@ -34,14 +35,14 @@ class ParticleEngine:
 
             if particle.lifetime == 0:
                 self.particles.remove(particle)
-                self.fade_particles.append(particle)
+                self.fade_out_particles.append(particle)
                 particle.image.set_alpha(255)
 
-        for particle in self.fade_particles:
+        for particle in self.fade_out_particles:
 
             particle.fade_out_time -= 1
             if particle.fade_out_time == 0:
-                self.fade_particles.remove(particle)
+                self.fade_out_particles.remove(particle)
             else:
                 particle.image.set_alpha(particle.image.get_alpha()-particle.fade_out_increment)
 
@@ -50,24 +51,24 @@ class ParticleEngine:
         for particle in self.particles:
             particle.draw(display)
 
-        for particle in self.fade_particles:
+        for particle in self.fade_out_particles:
             tools.blit_alpha(display, particle.image, particle.rect.topleft, particle.image.get_alpha())
 
     def clear_particles(self):
 
         self.particles = []
-        self.fade_particles = []
+        self.fade_out_particles = []
 
     def create_particle_spread(self, particle_type, amount, x, y, noise_x, noise_y,
                                lifetime, noise_lifetime, fade_out_time, fade_in_time):
 
         for n in range(amount):
 
-            self.particles.append(self.particle_types[particle_type](x+random.randint(-noise_x, noise_x),
-                                                                     y+random.randint(-noise_y, noise_y),
-                                                                     lifetime+random.randint(-noise_lifetime,
-                                                                                             noise_lifetime),
-                                                                     fade_out_time, fade_in_time))
+            self.fade_in_particles.append(self.particle_types[particle_type](x+random.randint(-noise_x, noise_x),
+                                                                             y+random.randint(-noise_y, noise_y),
+                                                                             lifetime+random.randint(-noise_lifetime,
+                                                                                                     noise_lifetime),
+                                                                             fade_out_time, fade_in_time))
 
 
 class Particle:
