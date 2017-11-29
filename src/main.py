@@ -61,8 +61,8 @@ class Main:
             # self.chunk_controller.update()
             self.duel_controller.update()
 
-            if n % 100 == 0:
-                self.particle_engine.create_fire_particle(100, 100, 70)
+            if n % 20 == 0:
+                self.particle_engine.create_fire_particle(pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1], 20)
             n += 1
 
             self.particle_engine.update()
