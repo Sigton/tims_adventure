@@ -63,10 +63,11 @@ class ParticleEngine:
 
         for n in range(amount):
 
-            self.particle_types[particle_type](x+random.randint(-noise_x, noise_x),
-                                               y+random.randint(-noise_y, noise_y),
-                                               lifetime+random.randint(-noise_lifetime, noise_lifetime),
-                                               fade_time)
+            self.particles.append(self.particle_types[particle_type](x+random.randint(-noise_x, noise_x),
+                                                                     y+random.randint(-noise_y, noise_y),
+                                                                     lifetime+random.randint(-noise_lifetime,
+                                                                                             noise_lifetime),
+                                                                     fade_time))
 
 
 class Particle:

@@ -61,11 +61,11 @@ class Main:
             # self.chunk_controller.update()
             self.duel_controller.update()
 
-            if not n%10:
+            if not n%1:
                 self.particle_engine.create_particle_spread("fire", 2,
                                                             pygame.mouse.get_pos()[0],
                                                             pygame.mouse.get_pos()[1],
-                                                            20, 20, 10, 5, 10)
+                                                            0, 0, 2, 1, 10)
             n+=1
 
             self.particle_engine.update()
