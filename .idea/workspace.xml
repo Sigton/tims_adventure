@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entities/particles.py" afterPath="$PROJECT_DIR$/src/entities/particles.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,17 +17,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="particles.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/particles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="74" column="73" lean-forward="false" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
+            <state relative-caret-position="-24">
+              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
@@ -104,8 +103,8 @@
         <option value="$PROJECT_DIR$/src/etc/spritesheet.py" />
         <option value="$PROJECT_DIR$/src/etc/tools.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/entities/particles.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/entities/particles.py" />
       </list>
     </option>
   </component>
@@ -272,13 +271,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00466" summary="Defined callback function">
-      <created>1511647515328</created>
-      <option name="number" value="00466" />
-      <option name="presentableId" value="LOCAL-00466" />
-      <option name="project" value="LOCAL" />
-      <updated>1511647515328</updated>
     </task>
     <task id="LOCAL-00467" summary="Testing callback from buttons works">
       <created>1511647765939</created>
@@ -616,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511981813669</updated>
     </task>
-    <option name="localTasksCounter" value="515" />
+    <task id="LOCAL-00515" summary="Adding fade in time to particles">
+      <created>1511981933655</created>
+      <option name="number" value="00515" />
+      <option name="presentableId" value="LOCAL-00515" />
+      <option name="project" value="LOCAL" />
+      <updated>1511981933655</updated>
+    </task>
+    <option name="localTasksCounter" value="516" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -693,7 +692,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some more functions to the particle engine" />
     <MESSAGE value="Added a clear particles function" />
     <MESSAGE value="Added more functions to particle" />
     <MESSAGE value="Implemented particle engine" />
@@ -718,7 +716,8 @@
     <MESSAGE value="duel controller can now make use of particle engine" />
     <MESSAGE value="Cool particle effects when you attack" />
     <MESSAGE value="Working on implementing particles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on implementing particles" />
+    <MESSAGE value="Adding fade in time to particles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding fade in time to particles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1063,18 +1062,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/particles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="74" column="73" lean-forward="false" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="141" column="106" lean-forward="false" selection-start-line="141" selection-start-column="106" selection-end-line="141" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/particles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding />
         </state>
       </provider>

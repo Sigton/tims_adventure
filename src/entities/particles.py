@@ -39,11 +39,11 @@ class ParticleEngine:
 
         for particle in self.fade_particles:
 
-            particle.fade_time -= 1
-            if particle.fade_time == 0:
+            particle.fade_out_time -= 1
+            if particle.fade_out_time == 0:
                 self.fade_particles.remove(particle)
             else:
-                particle.image.set_alpha(particle.image.get_alpha()-particle.fade_increment)
+                particle.image.set_alpha(particle.image.get_alpha()-particle.fade_out_increment)
 
     def draw(self, display):
 
@@ -82,8 +82,12 @@ class Particle:
         self.rect.y = y
 
         self.lifetime = lifetime
-        self.fade_time = fade_out_time
-        self.fade_increment = 255 // fade_out_time
+
+        self.fade_out_time = fade_out_time
+        self.fade_out_increment = 255 // fade_out_time
+
+        self.fade_in_time = fade_in_time
+        self.fade_in_increment = 255 // fade_in_time
 
     def update(self):
 
