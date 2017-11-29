@@ -63,6 +63,9 @@ class ParticleEngine:
         for particle in self.fade_out_particles:
             tools.blit_alpha(display, particle.image, particle.rect.topleft, particle.image.get_alpha())
 
+        for particle in self.fade_in_particles:
+            tools.blit_alpha(display, particle.image, particle.rect.topleft, particle.image.get_alpha())
+
     def clear_particles(self):
 
         self.particles = []
