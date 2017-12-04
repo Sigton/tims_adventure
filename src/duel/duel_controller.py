@@ -91,13 +91,18 @@ class DuelController:
         self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
         self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
 
+        self.attack_main_label = gui_components.Label(520, 590, "Main Attack")
+        self.attack_alt_label = gui_components.Label(200, 200, "Alt Attack")
+
         self.text = [
             self.player_hp_label,
             self.enemy_hp_label,
             self.player_xp_label,
             self.enemy_xp_label,
             self.player_level_label,
-            self.enemy_level_label
+            self.enemy_level_label,
+            self.attack_main_label,
+            self.attack_alt_label
         ]
 
         self.turn = 0
