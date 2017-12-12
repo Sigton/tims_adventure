@@ -127,7 +127,7 @@ class DuelController:
             self.turn = 0
             self.turn_cool_down = 150
 
-            self.particle_engine.create_particle_spread("fire", 40, 220, 530, 180, 160, 25, 20, 25, 5)
+            self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
 
         self.update_gui_components()
 
@@ -146,7 +146,7 @@ class DuelController:
                 self.turn = 1
                 self.turn_cool_down = 150
 
-                self.particle_engine.create_particle_spread("fire", 30, 750, 170, 140, 120, 25, 20, 25, 5)
+                self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
 
     def update_gui_components(self):
 
