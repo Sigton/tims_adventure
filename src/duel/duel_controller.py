@@ -5,6 +5,8 @@ from src.duel.duel_gui import load_images
 from src.etc import gui_components, constants
 from src.entities import shadows
 
+import math
+
 """
 duel.py
 
@@ -113,6 +115,7 @@ class DuelController:
 
         self.player_shake = 0
         self.player_shake_distance = 0
+        self.player_shake_w = 0
 
     def update(self):
 
@@ -195,11 +198,14 @@ class DuelController:
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
 
-    def start_shake(self, duration, dx):
+    def start_shake(self, duration, dx, w):
 
         self.player_shake = -duration
         self.player_shake_distance = dx
+        self.player_shake_w = w
 
     def shake_players(self):
 
-        pass
+        c = self.player_shake_distance
+        self.player_image_x = c-(c//math.pow(self.player_shake_w, 2))*self.player_shake
+        self.player_shake += 1
