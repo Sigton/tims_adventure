@@ -1,6 +1,7 @@
 from src.etc import spritesheet, tools
 
 import random
+import math
 
 """
 particles.py
@@ -71,13 +72,19 @@ class ParticleEngine:
         self.particles = []
         self.fade_out_particles = []
 
-    def create_particle_spread(self, particle_type, amount, x, y, noise_x, noise_y,
+    def create_particle_spread(self, particle_type, amount, x, y, noise_pos,
                                lifetime, noise_lifetime, fade_out_time, fade_in_time):
 
         for n in range(amount):
 
-            self.fade_in_particles.append(self.particle_types[particle_type](x+random.randint(-noise_x, noise_x),
-                                                                             y+random.randint(-noise_y, noise_y),
+            ds = random.randint(0, noise_pos)
+            angle = random.randint(0, 360)
+
+            new_p_x = x + ds*math.cos(angle)
+            new_p_y = y + ds*math.sin(angle)
+
+            self.fade_in_particles.append(self.particle_types[particle_type](new_p_x,
+                                                                             new_p_y,
                                                                              lifetime+random.randint(-noise_lifetime,
                                                                                                      noise_lifetime),
                                                                              fade_out_time, fade_in_time))
