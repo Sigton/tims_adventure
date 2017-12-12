@@ -132,6 +132,9 @@ class DuelController:
 
             # self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
 
+        self.player_shadow.update()
+        self.enemy_shadow.update()
+
         self.update_gui_components()
 
     def callback(self, button_id):
