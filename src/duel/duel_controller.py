@@ -46,6 +46,9 @@ class DuelController:
         self.player_image = pygame.transform.scale(self.player.images["R"], (300, 300))
         self.enemy_image = pygame.transform.scale(self.enemy.images["L"], (230, 230))
 
+        self.player_image_x = 75
+        self.enemy_image_x = 640
+
         class PlayerShadow:
             rect = self.player_image.get_rect()
             rect.topleft = (75, 368)
@@ -127,7 +130,7 @@ class DuelController:
             self.turn = 0
             self.turn_cool_down = 150
 
-            self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
+            # self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
 
         self.update_gui_components()
 
@@ -146,7 +149,7 @@ class DuelController:
                 self.turn = 1
                 self.turn_cool_down = 150
 
-                self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
+                # self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
 
     def update_gui_components(self):
 
@@ -179,8 +182,8 @@ class DuelController:
         self.player_shadow.draw(display)
         self.enemy_shadow.draw(display)
 
-        display.blit(self.player_image, (75, 368))
-        display.blit(self.enemy_image, (640, 53))
+        display.blit(self.player_image, (self.player_image_x, 368))
+        display.blit(self.enemy_image, (self.enemy_image_x, 53))
 
         [button.draw(display) for button in self.buttons]
         [bar.draw(display) for bar in self.progress_bars]
