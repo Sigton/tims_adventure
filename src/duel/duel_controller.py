@@ -139,7 +139,7 @@ class DuelController:
             self.turn_cool_down = 150
 
             # self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
-            self.start_shake(21, 20, 10)
+            self.start_shake(18, 10, 10)
 
         self.shake_players()
 
@@ -214,11 +214,7 @@ class DuelController:
 
         if self.player_shake_timer < self.player_shake:
             c = self.player_shake_distance
-            print(c-(c/math.pow(self.player_shake_w, 2))*math.pow(
-                self.player_shake_timer
-                , 2), self.player_shake)
             self.player_image_x += c-(c/math.pow(self.player_shake_w, 2))*math.pow(
                 self.player_shake_timer
                 , 2)
             self.player_shake_timer += 1
-            print(self.player_shake_timer)
