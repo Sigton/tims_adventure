@@ -86,12 +86,12 @@ class DuelController:
 
         self.player_xp_label = gui_components.Label(807, 500, "{}/{}".format(self.player.xp,
                                                                              int((constants.level_up_base *
-                                                                                 (constants.level_up_multiplier **
-                                                                                  self.player.level)))))
+                                                                                  (constants.level_up_multiplier **
+                                                                                   self.player.level)))))
         self.enemy_xp_label = gui_components.Label(323, 89, "{}/{}".format(self.enemy.xp,
                                                                            int((constants.level_up_base *
-                                                                               (constants.level_up_multiplier **
-                                                                                self.enemy.level)))))
+                                                                                (constants.level_up_multiplier **
+                                                                                 self.enemy.level)))))
 
         self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
         self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
@@ -139,7 +139,6 @@ class DuelController:
             self.turn_cool_down = 150
 
             # self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
-            self.start_shake(18, 10, 10)
 
         self.shake_players()
 
@@ -163,7 +162,8 @@ class DuelController:
                 self.turn = 1
                 self.turn_cool_down = 150
 
-                # self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
+                self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
+                self.start_shake(18, 10, 10)
 
     def update_gui_components(self):
 
