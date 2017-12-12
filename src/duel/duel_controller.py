@@ -218,3 +218,5 @@ class DuelController:
                 self.player_shake_timer
                 , 2)
             self.player_shake_timer += 1
+        else:
+            self.player_image_x = 75
