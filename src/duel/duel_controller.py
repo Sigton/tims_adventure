@@ -191,3 +191,11 @@ class DuelController:
         [button.draw(display) for button in self.buttons]
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
+
+    def start_shake(self):
+
+        pass
+
+    def shake_players(self):
+
+        pass
