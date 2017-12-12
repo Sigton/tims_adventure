@@ -111,6 +111,9 @@ class DuelController:
         self.turn = 0
         self.turn_cool_down = 50
 
+        self.player_shake = 0
+        self.player_shake_distance = 0
+
     def update(self):
 
         for event in pygame.event.get():
@@ -192,9 +195,10 @@ class DuelController:
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
 
-    def start_shake(self):
+    def start_shake(self, duration, dx):
 
-        pass
+        self.player_shake = -duration
+        self.player_shake_distance = dx
 
     def shake_players(self):
 
