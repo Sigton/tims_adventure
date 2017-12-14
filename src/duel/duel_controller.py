@@ -119,6 +119,12 @@ class DuelController:
         self.player_shake_shift = 0
         self.player_shake_timer = 0
 
+        self.enemy_shake = 0
+        self.enemy_shake_distance = 0
+        self.enemy_shake_w = 0
+        self.enemy_shake_shift = 0
+        self.enemy_shake_timer = 0
+
     def update(self):
 
         for event in pygame.event.get():
