@@ -163,7 +163,7 @@ class DuelController:
                 self.turn_cool_down = 150
 
                 self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
-                self.start_shake(18, 10, 10)
+                self.start_shake_player(18, 10, 10)
 
     def update_gui_components(self):
 
@@ -203,7 +203,7 @@ class DuelController:
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
 
-    def start_shake(self, duration, dx, w):
+    def start_shake_player(self, duration, dx, w):
 
         self.player_shake = duration
         self.player_shake_distance = dx
