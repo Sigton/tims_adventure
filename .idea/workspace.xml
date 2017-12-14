@@ -20,8 +20,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1148">
-              <caret line="147" column="49" lean-forward="false" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
+            <state relative-caret-position="372">
+              <caret line="227" column="46" lean-forward="false" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -286,13 +286,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00491" summary="Added more functions to particle">
-      <created>1511820711515</created>
-      <option name="number" value="00491" />
-      <option name="presentableId" value="LOCAL-00491" />
-      <option name="project" value="LOCAL" />
-      <updated>1511820711515</updated>
     </task>
     <task id="LOCAL-00492" summary="Implemented particle engine">
       <created>1511821145998</created>
@@ -630,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513269702957</updated>
     </task>
-    <option name="localTasksCounter" value="540" />
+    <task id="LOCAL-00540" summary="Implementing enemy shaking">
+      <created>1513269915471</created>
+      <option name="number" value="00540" />
+      <option name="presentableId" value="LOCAL-00540" />
+      <option name="project" value="LOCAL" />
+      <updated>1513269915471</updated>
+    </task>
+    <option name="localTasksCounter" value="541" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -707,7 +707,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on implementing particles" />
     <MESSAGE value="Adding fade in time to particles" />
     <MESSAGE value="Working on implementing fading in" />
     <MESSAGE value="Getting there with particle fading in" />
@@ -732,7 +731,8 @@
     <MESSAGE value="Renamed function" />
     <MESSAGE value="Created attributes for enemy shake" />
     <MESSAGE value="Created functions for enemy shake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created functions for enemy shake" />
+    <MESSAGE value="Implementing enemy shaking" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing enemy shaking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1074,8 +1074,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1148">
-          <caret line="147" column="49" lean-forward="false" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
+        <state relative-caret-position="372">
+          <caret line="227" column="46" lean-forward="false" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

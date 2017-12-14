@@ -118,12 +118,14 @@ class DuelController:
         self.player_shake_w = 0
         self.player_shake_shift = 0
         self.player_shake_timer = 0
+        self.player_shake_direction = 0
 
         self.enemy_shake = 0
         self.enemy_shake_distance = 0
         self.enemy_shake_w = 0
         self.enemy_shake_shift = 0
         self.enemy_shake_timer = 0
+        self.enemy_shake_direction = 0
 
     def update(self):
 
@@ -216,12 +218,14 @@ class DuelController:
         self.player_shake_distance = dx
         self.player_shake_w = w
         self.player_shake_timer = 0
+        self.player_shake_direction = direction
 
     def start_shake_enemy(self, duration, dx, w, direction):
         self.enemy_shake = duration
         self.enemy_shake_distance = dx
         self.enemy_shake_w = w
         self.enemy_shake_timer = 0
+        self.enemy_shake_direction = direction
 
     def shake_players(self):
 
