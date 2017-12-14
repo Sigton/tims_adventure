@@ -144,7 +144,8 @@ class DuelController:
             self.turn = 0
             self.turn_cool_down = 150
 
-            # self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
+            self.particle_engine.create_particle_spread("fire", 40, 220, 530, 170, 25, 20, 25, 5)
+            self.start_shake_enemy(18, 10, 10, -1)
 
         self.shake_players()
 
@@ -169,7 +170,7 @@ class DuelController:
                 self.turn_cool_down = 150
 
                 self.particle_engine.create_particle_spread("fire", 30, 750, 170, 130, 25, 20, 25, 5)
-                self.start_shake_player(18, 10, 10)
+                self.start_shake_player(18, 10, 10, 1)
 
     def update_gui_components(self):
 
@@ -209,14 +210,14 @@ class DuelController:
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
 
-    def start_shake_player(self, duration, dx, w):
+    def start_shake_player(self, duration, dx, w, direction):
 
         self.player_shake = duration
         self.player_shake_distance = dx
         self.player_shake_w = w
         self.player_shake_timer = 0
 
-    def start_shake_enemy(self, duration, dx, w):
+    def start_shake_enemy(self, duration, dx, w, direction):
         self.enemy_shake = duration
         self.enemy_shake_distance = dx
         self.enemy_shake_w = w
@@ -240,4 +241,4 @@ class DuelController:
                 , 2)
             self.enemy_shake_timer += 1
         else:
-            self.enemy_image_x = 75
+            self.enemy_image_x = 640
