@@ -231,18 +231,18 @@ class DuelController:
 
         if self.player_shake_timer < self.player_shake:
             c = self.player_shake_distance
-            self.player_image_x += c-(c/math.pow(self.player_shake_w, 2))*math.pow(
+            self.player_image_x += (c-(c/math.pow(self.player_shake_w, 2))*math.pow(
                 self.player_shake_timer
-                , 2)
+                , 2)) * self.player_shake_direction
             self.player_shake_timer += 1
         else:
             self.player_image_x = 75
 
         if self.enemy_shake_timer < self.enemy_shake:
             c = self.enemy_shake_distance
-            self.enemy_image_x += c-(c/math.pow(self.enemy_shake_w, 2))*math.pow(
+            self.enemy_image_x += (c-(c/math.pow(self.enemy_shake_w, 2))*math.pow(
                 self.enemy_shake_timer
-                , 2)
+                , 2)) * self.enemy_shake_direction
             self.enemy_shake_timer += 1
         else:
             self.enemy_image_x = 640
