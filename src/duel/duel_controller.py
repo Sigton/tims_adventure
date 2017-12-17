@@ -140,16 +140,16 @@ class DuelController:
             self.turn_cool_down -= 1
 
         if self.turn == 1 and not self.turn_cool_down:
-            self.player.hp -= int(self.enemy.attack * moves[self.player.moves[0]]["str_mod"])
+            self.player.hp -= int(self.enemy.attack * moves[self.enemy.moves[0]]["str_mod"])
             if self.player.hp < 0:
                 self.player.hp = 0
 
             self.turn = 0
             self.turn_cool_down = 150
 
-            move = moves[self.player.moves[0]]["effects"]
+            move = moves[self.enemy.moves[0]]["effects"]
 
-            if moves[self.player.moves[0]]["name"] in constants.shake_moves:
+            if moves[self.enemy.moves[0]]["name"] in constants.shake_moves:
                 move = move.format("enemy", "-")
             exec(move)
 
