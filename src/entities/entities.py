@@ -22,6 +22,8 @@ class EntityMeta:
         self.level = 1
         self.xp = 0
 
+        self.energy = entity_data[self.bean]["energy"]
+
         self.moves = entity_data[self.bean]["moves"]
         self.attack = entity_data[self.bean]["attack"]
 
