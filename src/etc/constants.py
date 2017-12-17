@@ -86,3 +86,6 @@ def load_font():
 shake_moves = [
     "Tackle"
 ]
+positional_moves = [
+    "Burn"
+]

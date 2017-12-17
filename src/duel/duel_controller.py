@@ -156,6 +156,8 @@ class DuelController:
 
                 if moves[self.enemy.moves[move_no]]["name"] in constants.shake_moves:
                     move = move.format("enemy", "-")
+                elif moves[self.enemy.moves[move_no]]["name"] in constants.positional_moves:
+                    move = move.format(220, 520)
                 exec(move)
 
         self.shake_players()
@@ -183,6 +185,8 @@ class DuelController:
 
             if moves[self.player.moves[button_id]]["name"] in constants.shake_moves:
                 move = move.format("player", "")
+            elif moves[self.enemy.moves[button_id]]["name"] in constants.positional_moves:
+                move = move.format(750, 170)
             exec(move)
 
     def update_gui_components(self):
