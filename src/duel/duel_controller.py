@@ -160,7 +160,14 @@ class DuelController:
 
         if self.turn == 1 and not self.turn_cool_down:
 
-            move_no = random.randint(0, 1)
+            possible_moves = [0, 1, 2, 3]
+
+            if self.e_energy - moves[self.enemy.moves[0]]["energy"] < 0:
+                possible_moves.remove(0)
+            if self.e_energy - moves[self.enemy.moves[1]]["energy"] < 0:
+                possible_moves.remove(1)
+
+            move_no = possible_moves[random.randint(0, len(possible_moves))]
 
             if move_no < 2:
                 self.player.hp -= int(self.enemy.attack * moves[self.enemy.moves[move_no]]["str_mod"])
