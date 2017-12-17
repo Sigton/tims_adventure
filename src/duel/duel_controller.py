@@ -174,7 +174,9 @@ class DuelController:
                 if self.player.hp < 0:
                     self.player.hp = 0
 
-                self.e_energy -= moves[self.player.moves[move_no]]["energy"]
+                self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
+
+                self.enemy.xp += moves[self.enemy.moves[move_no]]["xp"]
 
                 self.turn = 0
                 self.turn_cool_down = 150
@@ -206,6 +208,8 @@ class DuelController:
                 self.enemy.hp = 0
 
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
+
+            self.player.xp += moves[self.player.moves[button_id]]["xp"]
 
             self.turn = 1
             self.turn_cool_down = 150
