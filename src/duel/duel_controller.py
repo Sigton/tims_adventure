@@ -94,8 +94,8 @@ class DuelController:
                                                                                 (constants.level_up_multiplier **
                                                                                  self.enemy.level)))))
 
-        self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
-        self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
+        self.player_level_label = gui_components.Label(683, 518, "Level {}".format(self.player.level))
+        self.enemy_level_label = gui_components.Label(198, 107, "Level {}".format(self.enemy.level))
 
         self.attack_main_label = gui_components.Label(524, 584, moves[self.player.moves[0]]["name"])
         self.attack_alt_label = gui_components.Label(756, 584, moves[self.player.moves[1]]["name"])
