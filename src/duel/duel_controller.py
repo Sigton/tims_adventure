@@ -4,6 +4,7 @@ from pygame.locals import *
 from src.duel.duel_gui import load_images
 from src.etc import gui_components, constants
 from src.entities import shadows
+from src.duel.moves import moves
 
 import math
 
@@ -96,8 +97,8 @@ class DuelController:
         self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
         self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
 
-        self.attack_main_label = gui_components.Label(524, 584, "Main Attack")
-        self.attack_alt_label = gui_components.Label(756, 584, "Alt Attack")
+        self.attack_main_label = gui_components.Label(524, 584, moves[self.player.moves[0]]["name"])
+        self.attack_alt_label = gui_components.Label(756, 584, moves[self.player.moves[1]]["name"])
 
         self.text = [
             self.player_hp_label,
