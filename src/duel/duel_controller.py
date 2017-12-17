@@ -185,7 +185,7 @@ class DuelController:
 
             if moves[self.player.moves[button_id]]["name"] in constants.shake_moves:
                 move = move.format("player", "")
-            elif moves[self.enemy.moves[button_id]]["name"] in constants.positional_moves:
+            elif moves[self.player.moves[button_id]]["name"] in constants.positional_moves:
                 move = move.format(750, 170)
             exec(move)
 
