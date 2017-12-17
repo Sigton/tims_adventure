@@ -144,6 +144,15 @@ class DuelController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
+        if self.p_energy - moves[self.player.moves[0]]["energy"] < 0:
+            self.attack_main_button.set_off()
+        else:
+            self.attack_main_button.set_on()
+        if self.p_energy - moves[self.player.moves[1]]["energy"] < 0:
+            self.attack_alt_button.set_off()
+        else:
+            self.attack_alt_button.set_on()
+
         [button.update(not self.turn and not self.turn_cool_down) for button in self.buttons]
 
         if self.turn_cool_down > 0:
