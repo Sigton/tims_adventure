@@ -171,7 +171,11 @@ class DuelController:
             self.turn = 1
             self.turn_cool_down = 150
 
-            exec(moves[self.player.moves[button_id]]["effects"])
+            move = moves[self.player.moves[button_id]]["effects"]
+
+            if moves[self.player.moves[button_id]]["name"] in constants.shake_moves:
+                move = move.format("player", "")
+            exec(move)
 
     def update_gui_components(self):
 

@@ -79,3 +79,10 @@ def load_font():
     global font
 
     font = pygame.font.Font("src/resources/font.otf", 32)
+
+
+# Data used in dueling engine
+
+shake_moves = [
+    "Tackle"
+]
