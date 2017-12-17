@@ -162,16 +162,16 @@ class DuelController:
         if self.turn == 1 or self.turn_cool_down:
             return
 
-        if button_id == 0:
+        if button_id < 2:
 
-            self.enemy.hp -= int(self.player.attack * moves[self.player.moves[0]]["str_mod"])
+            self.enemy.hp -= int(self.player.attack * moves[self.player.moves[button_id]]["str_mod"])
             if self.enemy.hp < 0:
                 self.enemy.hp = 0
 
             self.turn = 1
             self.turn_cool_down = 150
 
-            exec(moves[self.player.moves[0]]["effects"])
+            exec(moves[self.player.moves[button_id]]["effects"])
 
     def update_gui_components(self):
 
