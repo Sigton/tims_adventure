@@ -76,11 +76,15 @@ class DuelController:
         self.enemy_xp_bar = gui_components.ProgressBar(81, 108, 232, 30, [constants.XP_BAR_BLUE,
                                                                           constants.XP_BAR_CYAN])
 
+        self.player_energy_bar = gui_components.ProgressBar(563, 449, 232, 30, [constants.ENERGY_BAR_ORANGE,
+                                                                                constants.ENERGY_BAR_YELLOW])
+
         self.progress_bars = [
             self.player_hp_bar,
             self.enemy_hp_bar,
             self.player_xp_bar,
-            self.enemy_xp_bar
+            self.enemy_xp_bar,
+            self.player_energy_bar
         ]
 
         self.player_hp_label = gui_components.Label(807, 359, "{}/{}".format(self.player.hp, self.player.max_hp))
