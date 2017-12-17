@@ -98,8 +98,8 @@ class Label:
         self.image = constants.font.render(text, False, constants.WHITE)
         self.rect = self.image.get_rect()
 
-        self.rect.x = x
-        self.rect.y = y
+        self.rect.centerx = x
+        self.rect.centery = y
 
     def update(self, text):
 
