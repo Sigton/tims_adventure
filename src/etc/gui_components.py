@@ -27,10 +27,11 @@ class Button:
         self.command = command
 
         self.pressed = False
+        self.force_off = False
 
     def update(self, active=True):
 
-        if not active:
+        if not active or self.force_off:
             self.image = self.deactivated_image
             return
 
@@ -50,6 +51,12 @@ class Button:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+    def set_off(self):
+        self.force_off = True
+
+    def set_on(self):
+        self.force_off = False
 
 
 class ProgressBar:

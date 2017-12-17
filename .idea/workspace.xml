@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/duel/moves.py" afterPath="$PROJECT_DIR$/src/duel/moves.py" />
+      <change beforePath="$PROJECT_DIR$/src/etc/gui_components.py" afterPath="$PROJECT_DIR$/src/etc/gui_components.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +22,8 @@
           <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="168" column="52" lean-forward="true" selection-start-line="168" selection-start-column="52" selection-end-line="168" selection-end-column="52" />
+                <state relative-caret-position="1303">
+                  <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -45,11 +45,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="moves.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="moves.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+                <state relative-caret-position="340">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="692">
+                  <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -106,6 +116,7 @@
       <find>self</find>
       <find>decs.json</find>
       <find>player</find>
+      <find>active</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -153,13 +164,13 @@
         <option value="$PROJECT_DIR$/src/etc/spritesheet.py" />
         <option value="$PROJECT_DIR$/src/etc/tools.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/entities/particles.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
+        <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
       </list>
     </option>
   </component>
@@ -329,13 +340,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00518" summary="Getting there with particle fading in">
-      <created>1511985679840</created>
-      <option name="number" value="00518" />
-      <option name="presentableId" value="LOCAL-00518" />
-      <option name="project" value="LOCAL" />
-      <updated>1511985679840</updated>
     </task>
     <task id="LOCAL-00519" summary="Particle fading in now works">
       <created>1511985720740</created>
@@ -673,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513522272368</updated>
     </task>
-    <option name="localTasksCounter" value="567" />
+    <task id="LOCAL-00567" summary="Rebalancing moves">
+      <created>1513531319830</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1513531319830</updated>
+    </task>
+    <option name="localTasksCounter" value="568" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -750,7 +761,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing shaking in multiple directions" />
     <MESSAGE value="Shaking in multiple directions now works" />
     <MESSAGE value="Created moves.py" />
     <MESSAGE value="Created some moves" />
@@ -775,7 +785,8 @@
     <MESSAGE value="Energy display is now working" />
     <MESSAGE value="Added energy attribute to moves" />
     <MESSAGE value="Energy is implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Energy is implemented" />
+    <MESSAGE value="Rebalancing moves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebalancing moves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1073,14 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="97" column="51" lean-forward="false" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/particles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -1113,20 +1116,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="168" column="52" lean-forward="true" selection-start-line="168" selection-start-column="52" selection-end-line="168" selection-end-column="52" />
+        <state relative-caret-position="1303">
+          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="692">
+          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
           <folding />
         </state>
       </provider>
