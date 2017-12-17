@@ -93,13 +93,17 @@ class ProgressBar:
 
 class Label:
 
-    def __init__(self, x, y, text):
+    def __init__(self, x, y, text, center=False):
 
         self.image = constants.font.render(text, False, constants.WHITE)
         self.rect = self.image.get_rect()
 
-        self.rect.centerx = x
-        self.rect.centery = y
+        if center:
+            self.rect.centerx = x
+            self.rect.centery = y
+        else:
+            self.rect.x = x
+            self.rect.y = y
 
     def update(self, text):
 
