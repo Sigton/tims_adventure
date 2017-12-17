@@ -27,6 +27,9 @@ class DuelController:
         self.player = player.meta
         self.enemy = enemy.meta
 
+        self.p_energy = self.player.energy
+        self.e_energy = self.enemy.energy
+
         self.images = load_images()
 
         self.background = self.images["background"]
@@ -98,7 +101,7 @@ class DuelController:
                                                                            int((constants.level_up_base *
                                                                                 (constants.level_up_multiplier **
                                                                                  self.enemy.level)))))
-        self.player_energy_label = gui_components.Label(807, 429, "{}/{}".format(100, 100))
+        self.player_energy_label = gui_components.Label(807, 429, "{}/{}".format(self.p_energy, self.player.energy))
 
         self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
         self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
@@ -205,6 +208,8 @@ class DuelController:
         self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
                                                   (constants.level_up_multiplier ** self.enemy.level)))
 
+        self.player_energy_bar.update(self.p_energy / self.player.energy)
+
         self.player_hp_label.update("{}/{}".format(self.player.hp, self.player.max_hp))
         self.enemy_hp_label.update("{}/{}".format(self.enemy.hp, self.enemy.max_hp))
 
@@ -216,6 +221,9 @@ class DuelController:
                                                   int((constants.level_up_base *
                                                        (constants.level_up_multiplier **
                                                         self.enemy.level)))))
+
+        self.player_energy_label.update("{}/{}".format(self.p_energy, self.player.energy))
+
         self.player_level_label.update("Level {}".format(self.player.level))
         self.enemy_level_label.update("Level {}".format(self.enemy.level))
 
