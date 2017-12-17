@@ -10,8 +10,8 @@ a player can make.
 moves = [
     {"name": "Tackle", "str_mod": 1, "effects":
         "self.start_shake_{}(18, 10, 10, {}1)",
-     "energy": 2},
+     "energy": 10},
     {"name": "Burn", "str_mod": 1.4, "effects":
         """self.particle_engine.create_particle_spread('fire', 30, {}, {}, 130, 25, 20, 25, 5)""",
-     "energy": 5}
+     "energy": 15}
 ]
