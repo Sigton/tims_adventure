@@ -66,7 +66,7 @@ class DuelController:
         self.player_shadow = shadows.Shadow(PlayerShadow())
         self.enemy_shadow = shadows.Shadow(EnemyShadow())
 
-        self.player_hp_bar = gui_components.ProgressBar(563, 449, 232, 30, [constants.HEALTH_BAR_RED,
+        self.player_hp_bar = gui_components.ProgressBar(563, 379, 232, 30, [constants.HEALTH_BAR_RED,
                                                                             constants.HEALTH_BAR_GREEN])
         self.enemy_hp_bar = gui_components.ProgressBar(81, 38, 232, 30, [constants.HEALTH_BAR_RED,
                                                                          constants.HEALTH_BAR_GREEN])
@@ -83,7 +83,7 @@ class DuelController:
             self.enemy_xp_bar
         ]
 
-        self.player_hp_label = gui_components.Label(807, 429, "{}/{}".format(self.player.hp, self.player.max_hp))
+        self.player_hp_label = gui_components.Label(807, 359, "{}/{}".format(self.player.hp, self.player.max_hp))
         self.enemy_hp_label = gui_components.Label(323, 18, "{}/{}".format(self.enemy.hp, self.enemy.max_hp))
 
         self.player_xp_label = gui_components.Label(807, 500, "{}/{}".format(self.player.xp,
