@@ -98,6 +98,7 @@ class DuelController:
                                                                            int((constants.level_up_base *
                                                                                 (constants.level_up_multiplier **
                                                                                  self.enemy.level)))))
+        self.player_energy_label = gui_components.Label(807, 429, "{}/{}")
 
         self.player_level_label = gui_components.Label(624, 499, "Level {}".format(self.player.level))
         self.enemy_level_label = gui_components.Label(135, 88, "Level {}".format(self.enemy.level))
@@ -110,6 +111,7 @@ class DuelController:
             self.enemy_hp_label,
             self.player_xp_label,
             self.enemy_xp_label,
+            self.player_energy_label,
             self.player_level_label,
             self.enemy_level_label,
             self.attack_main_label,
