@@ -34,6 +34,7 @@ class Main:
 
         constants.load_font()
         particles.load_sprite_sheet()
+        bean_image_loader.load_sprite_sheet()
 
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
@@ -42,7 +43,6 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
 
-        bean_image_loader.load_sprite_sheet()
         self.player = player.Player()
 
         self.chunk_controller.player = self.player
