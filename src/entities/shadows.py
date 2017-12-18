@@ -22,22 +22,22 @@ class Shadow:
 
         try:
             self.width = self.parent.rect.width * shadow_width_to_parent_ratios[self.parent.tile_code]
-        except AttributeError:
+        except (AttributeError, KeyError):
             self.width = self.parent.rect.width * 0.8
 
         try:
             self.height = self.width * shadow_width_ratios[self.parent.tile_code]
-        except AttributeError:
+        except (AttributeError, KeyError):
             self.height = self.width * 0.5
 
         try:
             self.height_offset = self.parent.rect.height * shadow_height_ratios[self.parent.tile_code]
-        except AttributeError:
+        except (AttributeError, KeyError):
             self.height_offset = self.parent.rect.height*constants.shadow_offset
 
         try:
             self.x_offset = shadow_x_offset[self.parent.tile_code]
-        except AttributeError:
+        except (AttributeError, KeyError):
             self.x_offset = 0
 
         self.rect = pygame.Rect((parent.rect.x+self.x_offset, parent.rect.y+self.height_offset), (self.width, self.height))
