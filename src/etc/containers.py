@@ -146,3 +146,6 @@ class Chunk(object):
 
         for dec in self.decs:
             display.blit(dec.image, (dec.rect.x, dec.rect.y))
+
+        for entity in self.entities:
+            display.blit(entity.image, (entity.rect.x, entity.rect.y))
