@@ -86,8 +86,8 @@
           <file leaf-file-name="containers.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="760">
-                  <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+                <state relative-caret-position="712">
+                  <caret line="139" column="28" lean-forward="false" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -344,13 +344,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00532" summary="Added a lot of the maths for the shake">
-      <created>1513104465363</created>
-      <option name="number" value="00532" />
-      <option name="presentableId" value="LOCAL-00532" />
-      <option name="project" value="LOCAL" />
-      <updated>1513104465363</updated>
     </task>
     <task id="LOCAL-00533" summary="Getting there">
       <created>1513106127240</created>
@@ -688,7 +681,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513629230739</updated>
     </task>
-    <option name="localTasksCounter" value="581" />
+    <task id="LOCAL-00581" summary="Defined a get_tiles function">
+      <created>1513629757499</created>
+      <option name="number" value="00581" />
+      <option name="presentableId" value="LOCAL-00581" />
+      <option name="project" value="LOCAL" />
+      <updated>1513629757499</updated>
+    </task>
+    <option name="localTasksCounter" value="582" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -765,7 +765,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on making moves work for both player and enemy" />
     <MESSAGE value="enemy is now using moves from moves file" />
     <MESSAGE value="Enemy moves randomly" />
     <MESSAGE value="More debugging" />
@@ -790,7 +789,8 @@
     <MESSAGE value="Defined create_images" />
     <MESSAGE value="Entities aren't going to be held in the seed" />
     <MESSAGE value="Added entities as an attribute to Chunk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added entities as an attribute to Chunk" />
+    <MESSAGE value="Defined a get_tiles function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined a get_tiles function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="712">
+          <caret line="139" column="28" lean-forward="false" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
           <folding />
         </state>
       </provider>

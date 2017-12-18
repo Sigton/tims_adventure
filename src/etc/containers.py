@@ -127,6 +127,18 @@ class Chunk(object):
 
         return self.decs
 
+    def add_entity(self, entity):
+
+        self.entities.append(entity)
+
+    def remove_entity(self, entity):
+
+        del self.entities[self.entities.inex(entity)]
+
+    def get_entities(self):
+
+        return self.entities
+
     def draw(self, display):
 
         for tile in self.tiles:
