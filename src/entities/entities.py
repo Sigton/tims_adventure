@@ -1,5 +1,6 @@
 import pygame
 
+from src.etc import constants
 from src.entities import bean_image_loader
 from src.entities.entity_meta import entity_data
 
@@ -37,7 +38,7 @@ class EntityMeta:
 
 class RandomBean:
 
-    def __init__(self):
+    def __init__(self, x, y, to_grid):
 
         self.bean = random.choice(list(bean_image_loader.beans.keys()))
 
@@ -47,6 +48,15 @@ class RandomBean:
         self.image = self.images["R"]
 
         self.rect = self.image.get_rect()
+        if to_grid:
+            self.rect.x = x * constants.tile_w
+            self.rect.y = y * constants.tile_h
+        else:
+            self.rect.x = x
+            self.rect.y = y
+
+        self.offset_x = self.rect.x
+        self.offset_y = self.rect.y
 
     def create_images(self, main_img):
 
