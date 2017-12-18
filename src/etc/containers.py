@@ -111,6 +111,10 @@ class Chunk(object):
 
         del self.tiles[self.tiles.index(tile)]
 
+    def get_tiles(self):
+
+        return self.tiles
+
     def add_dec(self, dec):
 
         self.decs.append(dec)
