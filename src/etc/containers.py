@@ -94,13 +94,14 @@ class SeedDict(object):
 
 class Chunk(object):
 
-    __slots__ = ["name", "tiles", "decs"]
+    __slots__ = ["name", "tiles", "decs", "entities"]
 
-    def __init__(self, name, tiles, decs):
+    def __init__(self, name, tiles, decs, entities):
 
         self.name = name
         self.tiles = tiles
         self.decs = decs
+        self.entities = entities
 
     def add_tile(self, tile):
 
