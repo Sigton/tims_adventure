@@ -1,4 +1,7 @@
+from src.entities import bean_image_loader
 from src.entities.entity_meta import entity_data
+
+import random
 
 """
 entities.py
@@ -34,4 +37,8 @@ class RandomBean:
 
     def __init__(self):
 
-        pass
+        self.bean = random.choice(list(bean_image_loader.beans.keys()))
+
+        self.image = bean_image_loader.beans[self.bean]()
+
+        self.rect = self.image.get_rect()
