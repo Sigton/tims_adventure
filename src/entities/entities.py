@@ -28,3 +28,10 @@ class EntityMeta:
         self.attack = entity_data[self.bean]["attack"]
 
         self.images = self.parent.images
+
+
+class RandomBean:
+
+    def __init__(self):
+
+        pass
