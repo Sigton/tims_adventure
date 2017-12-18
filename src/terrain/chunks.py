@@ -8,6 +8,7 @@ import os
 from src.etc import constants, containers
 from src.terrain import tiles
 from src.terrain.tile_types import *
+from src.entities import entities
 
 """
 chunks.py
@@ -287,6 +288,8 @@ class ChunkController:
                 new_chunk.add_dec(tiles.AnimatedTile(int(tile), x, y, tile, to_grid))
             else:
                 new_chunk.add_dec(tiles.Tile(int(tile), x, y, tile, to_grid))
+
+        new_chunk.add_entity(entities.RandomBean(0, 0, True))
 
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
