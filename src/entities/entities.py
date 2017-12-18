@@ -69,3 +69,7 @@ class RandomBean:
 
         self.rect.x = x + self.offset_x
         self.rect.y = y + self.offset_y
+
+    def draw(self, display):
+
+        display.blit(self.image, (self.rect.x, self.rect.y))
