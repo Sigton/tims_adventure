@@ -64,3 +64,8 @@ class RandomBean:
 
         self.images["R"] = main_img
         self.images["L"] = pygame.transform.flip(main_img, True, False)
+
+    def realign(self, x, y):
+
+        self.rect.x = x + self.offset_x
+        self.rect.y = y + self.offset_y
