@@ -1,3 +1,5 @@
+import pygame
+
 from src.entities import bean_image_loader
 from src.entities.entity_meta import entity_data
 
@@ -48,4 +50,7 @@ class RandomBean:
 
     def create_images(self, main_img):
 
-        pass
+        self.images.clear()
+
+        self.images["R"] = main_img
+        self.images["L"] = pygame.transform.flip(main_img, True, False)
