@@ -41,6 +41,7 @@ class RandomBean:
     def __init__(self, x, y, to_grid):
 
         self.bean = random.choice(list(bean_image_loader.beans.keys()))
+        self.meta = entity_data[self.bean]
 
         self.images = {}
         self.create_images(bean_image_loader.beans[self.bean]())
