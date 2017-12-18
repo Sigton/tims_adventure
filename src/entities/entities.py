@@ -39,6 +39,13 @@ class RandomBean:
 
         self.bean = random.choice(list(bean_image_loader.beans.keys()))
 
-        self.image = bean_image_loader.beans[self.bean]()
+        self.images = {}
+        self.create_images(bean_image_loader.beans[self.bean]())
+
+        self.image = self.images["R"]
 
         self.rect = self.image.get_rect()
+
+    def create_images(self, main_img):
+
+        pass
