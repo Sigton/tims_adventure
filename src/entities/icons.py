@@ -1,9 +1,21 @@
+import pygame
+
+from src.etc import spritesheet
+
 """
 icons.py
 
 This file defines class for various
 small icons that appear about the place
 """
+
+sprite_sheet = None
+
+
+def load_sprite_sheet():
+
+    global sprite_sheet
+    sprite_sheet = spritesheet.SpriteSheet("src/resources/icons.py")
 
 
 class Icon:

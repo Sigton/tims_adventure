@@ -5,7 +5,7 @@ import pygame
 from src import sounds
 from src.etc import constants
 from src.terrain import chunks
-from src.entities import bean_image_loader, player, particles
+from src.entities import bean_image_loader, player, particles, icons
 from src.duel import duel_controller
 
 """
@@ -50,6 +50,13 @@ class Main:
 
         self.duel_controller = duel_controller.DuelController(self, self.player.beans[0], self.player.beans[1])
         self.duel_controller.particle_engine = self.particle_engine
+
+    def load_components(self):
+
+        constants.load_font()
+        bean_image_loader.load_sprite_sheet()
+        particles.load_sprite_sheet()
+        icons.load_spirte_sheet()
 
     def run(self):
 
