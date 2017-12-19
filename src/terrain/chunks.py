@@ -100,8 +100,6 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-        icons.PressSpace()
-
         self.assorted_entities = []
 
     def update(self):
@@ -213,7 +211,7 @@ class ChunkController:
 
             if distance < constants.interaction_distance:
                 if entity.interaction_icon is None:
-                    entity.interaction_icon = icons.PressSpace()
+                    entity.interaction_icon = icons.PressSpace(entity.rect.centerx, entity.rect.y - 35)
 
         self.player.update(self.direction)
         self.update_chunks()
@@ -221,7 +219,7 @@ class ChunkController:
         [entity.update() for entity in self.assorted_entities]
 
         self.animation_clock = (self.animation_clock + 1) % \
-                               constants.animation_thresholds[self.global_animation_threshold]
+            constants.animation_thresholds[self.global_animation_threshold]
         for tile in self.current_frames.keys():
             if self.animation_clock % constants.animation_thresholds[tile] == 0:
                 self.current_frames[tile] += 1
@@ -382,8 +380,6 @@ class ChunkController:
 
         for chunk in self.live_chunks:
             self.assign_chunk_pos(chunk, movement)
-
-        [entity.move(movement) for entity in self.assorted_entities]
 
     def get_current_chunk_id(self):
 

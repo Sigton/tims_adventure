@@ -23,8 +23,11 @@ class Icon:
         self.image = image
 
         self.rect = self.image.get_rect()
-        self.rect.x = x
+        self.rect.centerx = x
         self.rect.y = y
+
+        self.offset_x = self.rect.x
+        self.offset_y = self.rect.y
 
         self.flash = flash
         self.flash_threshold = flash_threshold
@@ -46,10 +49,10 @@ class Icon:
         if self.visible and not self.force_off:
             display.blit(self.image, (self.rect.x, self.rect.y))
 
-    def move(self, movement):
+    def realign(self, x, y):
 
-        self.rect.x += movement[0]
-        self.rect.y += movement[1]
+        self.rect.x = x + self.offset_x
+        self.rect.y = y + self.offset_y
 
     def off(self):
         self.force_off = True
@@ -60,6 +63,6 @@ class Icon:
 
 class PressSpace(Icon):
 
-    def __init__(self):
+    def __init__(self, x, y):
 
-        Icon.__init__(self, sprite_sheet.get_image(0, 0, 40, 28), 0, 0, True, 40)
+        Icon.__init__(self, sprite_sheet.get_image(0, 0, 40, 28), x, y, True, 40)

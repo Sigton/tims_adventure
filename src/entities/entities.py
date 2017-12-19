@@ -73,6 +73,9 @@ class RandomBean:
         self.rect.x = x + self.offset_x
         self.rect.y = y + self.offset_y
 
+        if self.interaction_icon is not None:
+            self.interaction_icon.realign(x, y)
+
     def update(self):
 
         if self.interaction_icon is not None:
