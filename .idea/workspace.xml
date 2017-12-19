@@ -20,11 +20,21 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+            <state relative-caret-position="540">
+              <caret line="220" column="56" lean-forward="false" selection-start-line="220" selection-start-column="56" selection-end-line="220" selection-end-column="56" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -289,13 +299,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00560" summary="Defined new colours">
-      <created>1513519597368</created>
-      <option name="number" value="00560" />
-      <option name="presentableId" value="LOCAL-00560" />
-      <option name="project" value="LOCAL" />
-      <updated>1513519597368</updated>
     </task>
     <task id="LOCAL-00561" summary="Created a new progress bar">
       <created>1513519747086</created>
@@ -633,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513704034568</updated>
     </task>
-    <option name="localTasksCounter" value="609" />
+    <task id="LOCAL-00609" summary="Working on icons to appear above beans when the player gets close">
+      <created>1513704968475</created>
+      <option name="number" value="00609" />
+      <option name="presentableId" value="LOCAL-00609" />
+      <option name="project" value="LOCAL" />
+      <updated>1513704968475</updated>
+    </task>
+    <option name="localTasksCounter" value="610" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -710,7 +720,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated chunk controller for new Chunk inputs" />
     <MESSAGE value="Regenerated terrain" />
     <MESSAGE value="Better error handling" />
     <MESSAGE value="Entities have position attributes" />
@@ -735,7 +744,8 @@
     <MESSAGE value="Icons should now move" />
     <MESSAGE value="Icons now appear to be static on the map" />
     <MESSAGE value="Icons can be forced off" />
-    <option name="LAST_COMMIT_MESSAGE" value="Icons can be forced off" />
+    <MESSAGE value="Working on icons to appear above beans when the player gets close" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on icons to appear above beans when the player gets close" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/decs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1088,10 +1091,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="220" column="56" lean-forward="false" selection-start-line="220" selection-start-column="56" selection-end-line="220" selection-end-column="56" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
