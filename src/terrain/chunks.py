@@ -99,6 +99,8 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
+        self.assorted_entities = []
+
     def update(self):
 
         for event in pygame.event.get():
@@ -200,6 +202,8 @@ class ChunkController:
 
         self.player.update(self.direction)
         self.update_chunks()
+
+        [entity.update() for entity in self.assorted_entities]
 
         self.animation_clock = (self.animation_clock + 1) %\
             constants.animation_thresholds[self.global_animation_threshold]
@@ -335,6 +339,8 @@ class ChunkController:
 
         for dec in sorted(layered_render, key=lambda x: x.rect.bottom):
             dec.draw(display)
+
+        [entity.draw(display) for entity in self.assorted_entities]
 
     def assign_chunk_pos(self, chunk, movement):
 
