@@ -210,15 +210,12 @@ class ChunkController:
         for chunk in self.live_chunks:
             [chunk_entities.append(entity) for entity in chunk.get_entities()]
 
-        min_distance = -1
-        entity_id = -1
         for entity in chunk_entities:
             distance = math.sqrt(math.pow(self.player.beans[0].centerx-entity.rect.centerx, 2)
                                  + math.pow(self.player.beans[0].centery-entity.rect.centery, 2))
 
-            if min_distance < 0 or distance < min_distance:
-                min_distance = distance
-                entity_id = chunk_entities.index(entity)
+            if distance < constants.interaction_distance:
+                pass
 
         [entity.update() for entity in self.assorted_entities]
 

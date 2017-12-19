@@ -62,6 +62,8 @@ max_trail_offset = [0, 1, 2, 3, 4]
 
 shadow_offset = 0.85
 
+interaction_distance = 75
+
 # Tile information
 
 animation_thresholds = {
