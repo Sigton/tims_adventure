@@ -101,7 +101,7 @@ class ChunkController:
 
         self.press_space_icon = icons.PressSpace()
 
-        self.assorted_entities = []
+        self.assorted_entities = [self.press_space_icon]
 
     def update(self):
 
