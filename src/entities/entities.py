@@ -1,7 +1,7 @@
 import pygame
 
 from src.etc import constants
-from src.entities import bean_image_loader
+from src.entities import bean_image_loader, icons
 from src.entities.entity_meta import entity_data
 
 import random
@@ -38,8 +38,6 @@ class EntityMeta:
 
 class RandomBean:
 
-    interaction_icon = None
-
     def __init__(self, x, y, to_grid):
 
         self.bean = random.choice(list(bean_image_loader.beans.keys()))
@@ -60,6 +58,8 @@ class RandomBean:
 
         self.offset_x = self.rect.x
         self.offset_y = self.rect.y
+
+        self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
 
     def create_images(self, main_img):
 

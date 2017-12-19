@@ -10,7 +10,7 @@ import math
 from src.etc import constants, containers
 from src.terrain import tiles
 from src.terrain.tile_types import *
-from src.entities import entities, icons
+from src.entities import entities
 
 """
 chunks.py
@@ -210,8 +210,9 @@ class ChunkController:
                                  + math.pow(self.player.beans[0].rect.centery-entity.rect.centery, 2))
 
             if distance < constants.interaction_distance:
-                if entity.interaction_icon is None:
-                    entity.interaction_icon = icons.PressSpace(entity.rect.centerx, entity.rect.y - 35)
+                entity.interaction_icon.on()
+            else:
+                entity.interaction_icon.off()
 
         self.player.update(self.direction)
         self.update_chunks()
