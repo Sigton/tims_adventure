@@ -38,6 +38,8 @@ class EntityMeta:
 
 class RandomBean:
 
+    interaction_icon = None
+
     def __init__(self, x, y, to_grid):
 
         self.bean = random.choice(list(bean_image_loader.beans.keys()))
@@ -70,6 +72,11 @@ class RandomBean:
 
         self.rect.x = x + self.offset_x
         self.rect.y = y + self.offset_y
+
+    def update(self):
+
+        if self.interaction_icon is not None:
+            self.interaction_icon.update()
 
     def draw(self, display):
 
