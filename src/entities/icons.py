@@ -1,5 +1,3 @@
-import pygame
-
 from src.etc import spritesheet
 
 """
@@ -46,3 +44,10 @@ class Icon:
 
         if self.visible:
             display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class PressSpace(Icon):
+
+    def __init__(self):
+
+        Icon.__init__(self, sprite_sheet.get_image(0, 0, 40, 28), 0, 0, True, 40)
