@@ -322,17 +322,18 @@ class ChunkController:
         # Takes a group of tile sprites
         # and draws them to the display
 
-        decs = []
+        layered_render = []
 
         for chunk in self.live_chunks:
             chunk_to_draw = self.map_tiles[chunk]
             chunk_to_draw.draw(display)
 
-            [decs.append(dec) for dec in chunk_to_draw.get_decs()]
+            [layered_render.append(dec) for dec in chunk_to_draw.get_decs()]
+            [layered_render.append(entity) for entity in chunk_to_draw.get_entities()]
 
-        [decs.append(bean) for bean in self.player.beans]
+        [layered_render.append(bean) for bean in self.player.beans]
 
-        for dec in sorted(decs, key=lambda x: x.rect.bottom):
+        for dec in sorted(layered_render, key=lambda x: x.rect.bottom):
             dec.draw(display)
 
     def assign_chunk_pos(self, chunk, movement):
