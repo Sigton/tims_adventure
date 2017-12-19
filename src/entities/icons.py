@@ -31,6 +31,7 @@ class Icon:
         self.flash_counter = 0
 
         self.visible = True
+        self.force_off = False
 
     def update(self):
 
@@ -42,13 +43,19 @@ class Icon:
 
     def draw(self, display):
 
-        if self.visible:
+        if self.visible and not self.force_off:
             display.blit(self.image, (self.rect.x, self.rect.y))
 
     def move(self, movement):
 
         self.rect.x += movement[0]
         self.rect.y += movement[1]
+
+    def off(self):
+        self.force_off = True
+
+    def on(self):
+        self.force_off = False
 
 
 class PressSpace(Icon):
