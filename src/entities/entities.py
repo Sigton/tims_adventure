@@ -81,3 +81,6 @@ class RandomBean:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+        if self.interaction_icon is not None:
+            self.interaction_icon.draw(display)
