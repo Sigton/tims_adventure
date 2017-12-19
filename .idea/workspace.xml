@@ -32,8 +32,8 @@
       <file leaf-file-name="icons.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="540">
+              <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -283,13 +283,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00548" summary="Option to centre labels added">
-      <created>1513510199165</created>
-      <option name="number" value="00548" />
-      <option name="presentableId" value="LOCAL-00548" />
-      <option name="project" value="LOCAL" />
-      <updated>1513510199165</updated>
     </task>
     <task id="LOCAL-00549" summary="Repositioned the labels">
       <created>1513510723395</created>
@@ -627,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513701187606</updated>
     </task>
-    <option name="localTasksCounter" value="597" />
+    <task id="LOCAL-00597" summary="Created Icon parent class">
+      <created>1513701297120</created>
+      <option name="number" value="00597" />
+      <option name="presentableId" value="LOCAL-00597" />
+      <option name="project" value="LOCAL" />
+      <updated>1513701297120</updated>
+    </task>
+    <option name="localTasksCounter" value="598" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -704,7 +704,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Buttons are disabled when player doesn't have enough energy to use" />
     <MESSAGE value="Moves have an xp quotient" />
     <MESSAGE value="Enemy can't use moves which it doesn't have energy for" />
     <MESSAGE value="Xp goes up as moves are made" />
@@ -729,7 +728,8 @@
     <MESSAGE value="Entities now have metadata atrribute" />
     <MESSAGE value="Randomly places bean in chunk" />
     <MESSAGE value="Created icons.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created icons.py" />
+    <MESSAGE value="Created Icon parent class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Icon parent class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1079,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="540">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
           <folding />
         </state>
       </provider>
