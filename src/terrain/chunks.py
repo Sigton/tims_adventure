@@ -99,7 +99,9 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-        self.assorted_entities = [icons.PressSpace()]
+        self.press_space_icon = icons.PressSpace()
+
+        self.assorted_entities = []
 
     def update(self):
 
@@ -366,6 +368,8 @@ class ChunkController:
 
         for chunk in self.live_chunks:
             self.assign_chunk_pos(chunk, movement)
+
+        [entity.move(movement) for entity in self.assorted_entities]
 
     def get_current_chunk_id(self):
 

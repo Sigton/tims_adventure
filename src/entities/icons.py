@@ -45,6 +45,11 @@ class Icon:
         if self.visible:
             display.blit(self.image, (self.rect.x, self.rect.y))
 
+    def move(self, movement):
+
+        self.rect.x += movement[0]
+        self.rect.y += movement[1]
+
 
 class PressSpace(Icon):
 
