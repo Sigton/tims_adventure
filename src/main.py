@@ -32,9 +32,7 @@ class Main:
 
         self.clock = pygame.time.Clock()
 
-        constants.load_font()
-        particles.load_sprite_sheet()
-        bean_image_loader.load_sprite_sheet()
+        self.load_components()
 
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
@@ -56,7 +54,7 @@ class Main:
         constants.load_font()
         bean_image_loader.load_sprite_sheet()
         particles.load_sprite_sheet()
-        icons.load_spirte_sheet()
+        icons.load_sprite_sheet()
 
     def run(self):
 
