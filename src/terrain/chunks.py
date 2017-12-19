@@ -99,9 +99,9 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-        self.press_space_icon = icons.PressSpace()
+        icons.PressSpace()
 
-        self.assorted_entities = [self.press_space_icon]
+        self.assorted_entities = []
 
     def update(self):
 
@@ -204,6 +204,10 @@ class ChunkController:
 
         self.player.update(self.direction)
         self.update_chunks()
+
+        chunk_entities = []
+        for chunk in self.live_chunks:
+            [chunk_entities.append(entity) for entity in chunk.get_entities()]
 
         [entity.update() for entity in self.assorted_entities]
 
