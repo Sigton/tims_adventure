@@ -203,24 +203,25 @@ class ChunkController:
                 self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
+        chunk_entities = []
+        for chunk in self.live_chunks:
+            [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
+
+        for entity in chunk_entities:
+            distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx-entity.rect.centerx, 2)
+                                 + math.pow(self.player.beans[0].rect.centery-entity.rect.centery, 2))
+
+            if distance < constants.interaction_distance:
+                if entity.interaction_icon is None:
+                    entity.interaction_icon = icons.PressSpace()
+
         self.player.update(self.direction)
         self.update_chunks()
 
-        chunk_entities = []
-        for chunk in self.live_chunks:
-            [chunk_entities.append(entity) for entity in chunk.get_entities()]
-
-        for entity in chunk_entities:
-            distance = math.sqrt(math.pow(self.player.beans[0].centerx-entity.rect.centerx, 2)
-                                 + math.pow(self.player.beans[0].centery-entity.rect.centery, 2))
-
-            if distance < constants.interaction_distance:
-                pass
-
         [entity.update() for entity in self.assorted_entities]
 
-        self.animation_clock = (self.animation_clock + 1) %\
-            constants.animation_thresholds[self.global_animation_threshold]
+        self.animation_clock = (self.animation_clock + 1) % \
+                               constants.animation_thresholds[self.global_animation_threshold]
         for tile in self.current_frames.keys():
             if self.animation_clock % constants.animation_thresholds[tile] == 0:
                 self.current_frames[tile] += 1
@@ -263,6 +264,7 @@ class ChunkController:
              if tile.tile_code in animated_tiles]
 
             [dec.update() for dec in self.map_tiles[chunk].decs]
+            [entity.update() for entity in self.map_tiles[chunk].entities]
 
     def create_chunk(self, chunk):
 
