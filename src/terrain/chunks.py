@@ -9,7 +9,7 @@ import random
 from src.etc import constants, containers
 from src.terrain import tiles
 from src.terrain.tile_types import *
-from src.entities import entities
+from src.entities import entities, icons
 
 """
 chunks.py
@@ -99,7 +99,7 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
-        self.assorted_entities = []
+        self.assorted_entities = [icons.PressSpace()]
 
     def update(self):
 
