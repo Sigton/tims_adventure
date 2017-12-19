@@ -15,7 +15,7 @@ sprite_sheet = None
 def load_sprite_sheet():
 
     global sprite_sheet
-    sprite_sheet = spritesheet.SpriteSheet("src/resources/icons.py")
+    sprite_sheet = spritesheet.SpriteSheet("src/resources/icons.png")
 
 
 class Icon:
