@@ -122,6 +122,7 @@ class DuelController:
         self.enemy_shake_direction = 0
 
         self.game_won = False
+        self.game_won_counter = 0
 
     def begin_duel(self, player, enemy):
 
@@ -154,6 +155,7 @@ class DuelController:
         self.text.append(self.attack_alt_label)
 
         self.game_won = False
+        self.game_won_counter = 0
 
     def update(self):
 
@@ -162,6 +164,10 @@ class DuelController:
                 self.master.game_exit = True
 
         if self.game_won:
+            if self.game_won_counter > 0:
+                self.game_won_counter -= 1
+            else:
+                self.master.game_mode = 0
             return
 
         if self.p_energy - moves[self.player.moves[0]]["energy"] < 0:
@@ -193,6 +199,9 @@ class DuelController:
                 self.player.hp -= int(self.enemy.attack * moves[self.enemy.moves[move_no]]["str_mod"])
                 if self.player.hp < 0:
                     self.player.hp = 0
+
+                    self.game_won = True
+                    self.game_won_counter = 120
 
                 self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
 
@@ -226,6 +235,9 @@ class DuelController:
             self.enemy.hp -= int(self.player.attack * moves[self.player.moves[button_id]]["str_mod"])
             if self.enemy.hp < 0:
                 self.enemy.hp = 0
+
+                self.game_won = True
+                self.game_won_counter = 120
 
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
 
