@@ -25,11 +25,11 @@ class DuelController:
 
         self.master = master
 
-        self.player = player.meta
-        self.enemy = enemy.meta
+        self.player = None
+        self.enemy = None
 
-        self.p_energy = self.player.energy
-        self.e_energy = self.enemy.energy
+        self.p_energy = 0
+        self.e_energy = 0
 
         self.images = load_images()
 
@@ -141,7 +141,11 @@ class DuelController:
 
     def begin_duel(self, player, enemy):
 
-        pass
+        self.player = player.meta
+        self.enemy = enemy.meta
+
+        self.p_energy = self.player.energy
+        self.e_energy = self.enemy.energy
 
     def update(self):
 
