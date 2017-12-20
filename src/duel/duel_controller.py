@@ -91,8 +91,8 @@ class DuelController:
         self.player_level_label = gui_components.Label(624, 499, "")
         self.enemy_level_label = gui_components.Label(135, 88, "")
 
-        self.attack_main_label = gui_components.Label(607, 603, "", True)
-        self.attack_alt_label = gui_components.Label(831, 603, "", True)
+        self.attack_main_label = None
+        self.attack_alt_label = None
 
         self.text = [
             self.player_hp_label,
@@ -102,8 +102,6 @@ class DuelController:
             self.player_energy_label,
             self.player_level_label,
             self.enemy_level_label,
-            self.attack_main_label,
-            self.attack_alt_label
         ]
 
         self.turn = 0
@@ -147,8 +145,11 @@ class DuelController:
         self.player_shadow = shadows.Shadow(PlayerShadow())
         self.enemy_shadow = shadows.Shadow(EnemyShadow())
 
-        self.attack_main_label.update(moves[self.player.moves[0]]["name"])
-        self.attack_alt_label.update(moves[self.player.moves[1]]["name"])
+        self.attack_main_label = gui_components.Label(607, 603, moves[self.player.moves[0]]["name"], True)
+        self.attack_alt_label = gui_components.Label(831, 603, moves[self.player.moves[1]]["name"], True)
+
+        self.text.append(self.attack_main_label)
+        self.text.append(self.attack_alt_label)
 
     def update(self):
 
