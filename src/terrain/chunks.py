@@ -138,6 +138,9 @@ class ChunkController:
                 elif event.key == K_RIGHT:
                     self.direction = self.direction.replace("R", "")
 
+                elif event.key == K_SPACE:
+                    self.controller.game_mode = 1
+
         if self.direction and self.moving == 0:
 
             # If we're at the edge then don't allow moving towards the edge
