@@ -156,6 +156,9 @@ class ChunkController:
                     ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
 
                     if len(ordered_ranges):
+
+                        self.master.duel_controller.begin_duel(self.player.beans[0], list(ordered_ranges.items())[0][1])
+
                         self.master.game_mode = 1
 
         if self.direction and self.moving == 0:
