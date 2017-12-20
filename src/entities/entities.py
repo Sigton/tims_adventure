@@ -1,7 +1,7 @@
 import pygame
 
 from src.etc import constants
-from src.entities import bean_image_loader, icons
+from src.entities import bean_image_loader, icons, shadows
 from src.entities.entity_meta import entity_data
 
 import random
@@ -61,6 +61,7 @@ class RandomBean:
         self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
 
         self.meta = EntityMeta(self)
+        self.shadow = shadows.Shadow(self)
 
     def create_images(self, main_img):
 
@@ -82,7 +83,11 @@ class RandomBean:
         if self.interaction_icon is not None:
             self.interaction_icon.update()
 
+        self.shadow.update()
+
     def draw(self, display):
+
+        self.shadow.draw(display)
 
         display.blit(self.image, (self.rect.x, self.rect.y))
 
