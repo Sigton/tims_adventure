@@ -6,6 +6,7 @@ import operator
 import os
 import random
 import math
+import collections
 
 from src.etc import constants, containers
 from src.terrain import tiles
@@ -152,7 +153,10 @@ class ChunkController:
                         if distance < constants.interaction_distance:
                             entity_range[distance] = entity
 
-                    self.controller.game_mode = 1
+                    ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
+
+                    if len(ordered_ranges):
+                        self.controller.game_mode = 1
 
         if self.direction and self.moving == 0:
 
