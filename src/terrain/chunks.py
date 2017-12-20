@@ -139,6 +139,19 @@ class ChunkController:
                     self.direction = self.direction.replace("R", "")
 
                 elif event.key == K_SPACE:
+
+                    chunk_entities = []
+                    for chunk in self.live_chunks:
+                        [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
+
+                    entity_range = {}
+                    for entity in chunk_entities:
+                        distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
+                                             + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
+
+                        if distance < constants.interaction_distance:
+                            entity_range[distance] = entity
+
                     self.controller.game_mode = 1
 
         if self.direction and self.moving == 0:
