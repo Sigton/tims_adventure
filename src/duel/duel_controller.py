@@ -21,7 +21,7 @@ class DuelController:
     particle_engine = None
     controller = None
 
-    def __init__(self, master, player, enemy):
+    def __init__(self, master):
 
         self.master = master
 
