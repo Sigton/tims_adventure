@@ -168,7 +168,6 @@ class DuelController:
                 self.game_won_counter -= 1
             else:
                 self.master.game_mode = 0
-            return
 
         if self.p_energy - moves[self.player.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
@@ -184,7 +183,7 @@ class DuelController:
         if self.turn_cool_down > 0:
             self.turn_cool_down -= 1
 
-        if self.turn == 1 and not self.turn_cool_down:
+        if self.turn == 1 and not self.turn_cool_down and not self.game_won:
 
             possible_moves = [0, 1, 2, 3]
 
@@ -228,6 +227,9 @@ class DuelController:
     def callback(self, button_id):
 
         if self.turn == 1 or self.turn_cool_down:
+            return
+
+        if self.game_won:
             return
 
         if button_id < 2:
