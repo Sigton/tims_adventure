@@ -8,7 +8,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +61,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="900">
+              <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -143,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
   </component>
@@ -320,13 +319,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00577" summary="Working on the RandomBean entity">
-      <created>1513627268658</created>
-      <option name="number" value="00577" />
-      <option name="presentableId" value="LOCAL-00577" />
-      <option name="project" value="LOCAL" />
-      <updated>1513627268658</updated>
     </task>
     <task id="LOCAL-00578" summary="Defined create_images">
       <created>1513627461909</created>
@@ -664,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513787011766</updated>
     </task>
-    <option name="localTasksCounter" value="626" />
+    <task id="LOCAL-00626" summary="Removed unnecessary inputs from DuelController">
+      <created>1513787047434</created>
+      <option name="number" value="00626" />
+      <option name="presentableId" value="LOCAL-00626" />
+      <option name="project" value="LOCAL" />
+      <updated>1513787047434</updated>
+    </task>
+    <option name="localTasksCounter" value="627" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -741,7 +740,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug" />
     <MESSAGE value="Fixed another bug" />
     <MESSAGE value="Entities are rendered in order with decorations now" />
     <MESSAGE value="Created PressSpace icon" />
@@ -766,7 +764,8 @@
     <MESSAGE value="Fixed some things" />
     <MESSAGE value="Created DuelController.begin_duel" />
     <MESSAGE value="Moving setup into the begin_duel function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moving setup into the begin_duel function" />
+    <MESSAGE value="Removed unnecessary inputs from DuelController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary inputs from DuelController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1116,8 +1115,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="900">
+          <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
           <folding />
         </state>
       </provider>
