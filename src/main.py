@@ -69,7 +69,7 @@ class Main:
 
             if self.game_mode == 0:
                 self.chunk_controller.update()
-            else:
+            elif self.game_mode == 1:
                 self.duel_controller.update()
 
             self.particle_engine.update()
@@ -78,7 +78,7 @@ class Main:
 
             if self.game_mode == 0:
                 self.chunk_controller.draw(self.display)
-            else:
+            elif self.game_mode == 1:
                 self.duel_controller.draw(self.display)
 
             self.particle_engine.draw(self.display)
