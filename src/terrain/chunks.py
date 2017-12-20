@@ -38,6 +38,7 @@ def create_id(x, y):
 class ChunkController:
 
     player = None
+    controller = None
 
     def __init__(self, master, start_x, start_y):
 

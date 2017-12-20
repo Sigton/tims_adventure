@@ -19,6 +19,7 @@ This deals with the game mechanics and GUI of duelling
 class DuelController:
 
     particle_engine = None
+    controller = None
 
     def __init__(self, master, player, enemy):
 
