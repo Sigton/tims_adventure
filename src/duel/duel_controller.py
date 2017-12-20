@@ -139,6 +139,10 @@ class DuelController:
         self.enemy_shake_timer = 0
         self.enemy_shake_direction = 0
 
+    def begin_duel(self, player, enemy):
+
+        pass
+
     def update(self):
 
         for event in pygame.event.get():

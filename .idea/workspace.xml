@@ -7,8 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
+      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +61,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2680">
-              <caret line="143" column="40" lean-forward="true" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
+            <state relative-caret-position="340">
+              <caret line="143" column="12" lean-forward="false" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -142,9 +141,9 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
   </component>
@@ -320,13 +319,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00574" summary="Switched back to chunk controller">
-      <created>1513618000895</created>
-      <option name="number" value="00574" />
-      <option name="presentableId" value="LOCAL-00574" />
-      <option name="project" value="LOCAL" />
-      <updated>1513618000896</updated>
     </task>
     <task id="LOCAL-00575" summary="Creating RandomBean class">
       <created>1513626406682</created>
@@ -664,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513786198578</updated>
     </task>
-    <option name="localTasksCounter" value="623" />
+    <task id="LOCAL-00623" summary="Fixed some things">
+      <created>1513786655964</created>
+      <option name="number" value="00623" />
+      <option name="presentableId" value="LOCAL-00623" />
+      <option name="project" value="LOCAL" />
+      <updated>1513786655964</updated>
+    </task>
+    <option name="localTasksCounter" value="624" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -676,7 +675,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -741,7 +740,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created Icon parent class" />
     <MESSAGE value="Created Icon.update" />
     <MESSAGE value="Added drawing and positioning of Icon" />
     <MESSAGE value="Fixed bug" />
@@ -766,7 +764,8 @@
     <MESSAGE value="Ability to switch game mode into the duel" />
     <MESSAGE value="Creating function to find closest entity" />
     <MESSAGE value="Can only switch to duel if close enough to another bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can only switch to duel if close enough to another bean" />
+    <MESSAGE value="Fixed some things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some things" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1106,18 +1105,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2680">
-          <caret line="143" column="40" lean-forward="true" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="143" column="12" lean-forward="false" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
           <folding />
         </state>
       </provider>
