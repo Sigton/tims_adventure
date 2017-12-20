@@ -121,6 +121,8 @@ class DuelController:
         self.enemy_shake_timer = 0
         self.enemy_shake_direction = 0
 
+        self.game_won = False
+
     def begin_duel(self, player, enemy):
 
         self.player = player.meta
@@ -151,11 +153,16 @@ class DuelController:
         self.text.append(self.attack_main_label)
         self.text.append(self.attack_alt_label)
 
+        self.game_won = False
+
     def update(self):
 
         for event in pygame.event.get():
             if event.type == QUIT:
                 self.master.game_exit = True
+
+        if self.game_won:
+            return
 
         if self.p_energy - moves[self.player.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
