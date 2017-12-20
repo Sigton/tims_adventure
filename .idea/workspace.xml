@@ -45,8 +45,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <state relative-caret-position="520">
+              <caret line="178" column="20" lean-forward="false" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -303,13 +303,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00587" summary="Entities have position attributes">
-      <created>1513631967642</created>
-      <option name="number" value="00587" />
-      <option name="presentableId" value="LOCAL-00587" />
-      <option name="project" value="LOCAL" />
-      <updated>1513631967642</updated>
     </task>
     <task id="LOCAL-00588" summary="Defined RandomBean.realign">
       <created>1513632010925</created>
@@ -647,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513807913690</updated>
     </task>
-    <option name="localTasksCounter" value="636" />
+    <task id="LOCAL-00636" summary="Fixed the freezing effect">
+      <created>1513808145729</created>
+      <option name="number" value="00636" />
+      <option name="presentableId" value="LOCAL-00636" />
+      <option name="project" value="LOCAL" />
+      <updated>1513808145729</updated>
+    </task>
+    <option name="localTasksCounter" value="637" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -724,7 +724,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on icons to appear above beans when the player gets close" />
     <MESSAGE value="Gets the id of closest entity" />
     <MESSAGE value="rethought my process" />
     <MESSAGE value="Icons will now be attributed to the entities" />
@@ -749,7 +748,8 @@
     <MESSAGE value="Random beans now have shadows" />
     <MESSAGE value="Added game_won attribute to DuelController" />
     <MESSAGE value="Implemented game won feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented game won feature" />
+    <MESSAGE value="Fixed the freezing effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the freezing effect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        <state relative-caret-position="520">
+          <caret line="178" column="20" lean-forward="false" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
           <folding />
         </state>
       </provider>

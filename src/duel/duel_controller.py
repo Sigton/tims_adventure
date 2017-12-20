@@ -124,6 +124,28 @@ class DuelController:
         self.game_won = False
         self.game_won_counter = 0
 
+    def reset(self):
+
+        self.turn = 0
+        self.turn_cool_down = 50
+
+        self.player_shake = 0
+        self.player_shake_distance = 0
+        self.player_shake_w = 0
+        self.player_shake_shift = 0
+        self.player_shake_timer = 0
+        self.player_shake_direction = 0
+
+        self.enemy_shake = 0
+        self.enemy_shake_distance = 0
+        self.enemy_shake_w = 0
+        self.enemy_shake_shift = 0
+        self.enemy_shake_timer = 0
+        self.enemy_shake_direction = 0
+
+        self.game_won = False
+        self.game_won_counter = 0
+
     def begin_duel(self, player, enemy):
 
         self.player = player.meta
@@ -154,8 +176,7 @@ class DuelController:
         self.text.append(self.attack_main_label)
         self.text.append(self.attack_alt_label)
 
-        self.game_won = False
-        self.game_won_counter = 0
+        self.reset()
 
     def update(self):
 
