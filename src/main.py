@@ -49,6 +49,8 @@ class Main:
         self.duel_controller = duel_controller.DuelController(self, self.player.beans[0], self.player.beans[1])
         self.duel_controller.particle_engine = self.particle_engine
 
+        self.game_mode = 0
+
     def load_components(self):
 
         constants.load_font()
@@ -62,15 +64,19 @@ class Main:
 
         while not self.game_exit:
 
-            self.chunk_controller.update()
-            # self.duel_controller.update()
+            if self.game_mode == 0:
+                self.chunk_controller.update()
+            else:
+                self.duel_controller.update()
 
             self.particle_engine.update()
 
             self.display.fill(constants.WHITE)
 
-            self.chunk_controller.draw(self.display)
-            # self.duel_controller.draw(self.display)
+            if self.game_mode == 0:
+                self.chunk_controller.draw(self.display)
+            else:
+                self.duel_controller.draw(self.display)
 
             self.particle_engine.draw(self.display)
 
