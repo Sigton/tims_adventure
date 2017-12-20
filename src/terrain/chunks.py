@@ -156,7 +156,7 @@ class ChunkController:
                     ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
 
                     if len(ordered_ranges):
-                        self.controller.game_mode = 1
+                        self.master.game_mode = 1
 
         if self.direction and self.moving == 0:
 

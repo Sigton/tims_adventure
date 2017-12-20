@@ -49,9 +49,6 @@ class Main:
         self.duel_controller = duel_controller.DuelController(self, self.player.beans[0], self.player.beans[1])
         self.duel_controller.particle_engine = self.particle_engine
 
-        self.chunk_controller.controller = self
-        self.duel_controller.controller = self
-
         self.game_mode = 0
 
     def load_components(self):

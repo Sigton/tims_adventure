@@ -2,10 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
+    <bookmark url="file://$PROJECT_DIR$/src/main.py" line="77" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,41 +21,49 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="497">
-                    <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf>
+                <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/main.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="499">
+                        <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+                        <folding />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="580">
+                        <caret line="158" column="35" lean-forward="false" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="35" />
+                        <folding>
+                          <element signature="e#0#13#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
         </state>
       </content>
     </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="157" column="43" lean-forward="true" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="2680">
+              <caret line="143" column="40" lean-forward="true" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -79,6 +89,7 @@
       <find>player</find>
       <find>active</find>
       <find>self</find>
+      <find>self.master</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -309,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00573" summary="Debugging">
-      <created>1513617685067</created>
-      <option name="number" value="00573" />
-      <option name="presentableId" value="LOCAL-00573" />
-      <option name="project" value="LOCAL" />
-      <updated>1513617685067</updated>
     </task>
     <task id="LOCAL-00574" summary="Switched back to chunk controller">
       <created>1513618000895</created>
@@ -653,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513785760466</updated>
     </task>
-    <option name="localTasksCounter" value="622" />
+    <task id="LOCAL-00622" summary="Can only switch to duel if close enough to another bean">
+      <created>1513786198577</created>
+      <option name="number" value="00622" />
+      <option name="presentableId" value="LOCAL-00622" />
+      <option name="project" value="LOCAL" />
+      <updated>1513786198578</updated>
+    </task>
+    <option name="localTasksCounter" value="623" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -730,7 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created icons.py" />
     <MESSAGE value="Created Icon parent class" />
     <MESSAGE value="Created Icon.update" />
     <MESSAGE value="Added drawing and positioning of Icon" />
@@ -755,7 +765,8 @@
     <MESSAGE value="Updated main.py" />
     <MESSAGE value="Ability to switch game mode into the duel" />
     <MESSAGE value="Creating function to find closest entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating function to find closest entity" />
+    <MESSAGE value="Can only switch to duel if close enough to another bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can only switch to duel if close enough to another bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1085,29 +1096,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="158" column="35" lean-forward="false" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="2680">
+          <caret line="143" column="40" lean-forward="true" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+        <state relative-caret-position="499">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="157" column="43" lean-forward="true" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
