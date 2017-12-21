@@ -83,7 +83,7 @@ def load_font(font_size=default_font_size):
 
     global font
 
-    font = pygame.font.font("src/resources/font.otf", font_size)
+    font = pygame.font.Font("src/resources/font.otf", font_size)
 
     return font
 
