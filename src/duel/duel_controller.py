@@ -226,6 +226,11 @@ class DuelController:
                 self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
 
                 self.enemy.xp += moves[self.enemy.moves[move_no]]["xp"]
+                if self.enemy.xp > int((constants.level_up_base *
+                                        (constants.level_up_multiplier ** self.enemy.level))):
+                    self.enemy.xp = self.enemy.xp % int((constants.level_up_base *
+                                                           (constants.level_up_multiplier ** self.enemy.level)))
+                    self.enemy.level += 1
 
                 self.turn = 0
                 self.turn_cool_down = 150
@@ -265,6 +270,11 @@ class DuelController:
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
 
             self.player.xp += moves[self.player.moves[button_id]]["xp"]
+            if self.player.xp > int((constants.level_up_base *
+                                    (constants.level_up_multiplier ** self.player.level))):
+                self.player.xp = self.player.xp % int((constants.level_up_base *
+                                                      (constants.level_up_multiplier ** self.player.level)))
+                self.player.level += 1
 
             self.turn = 1
             self.turn_cool_down = 150
