@@ -94,6 +94,8 @@ class DuelController:
         self.attack_main_label = None
         self.attack_alt_label = None
 
+        self.winner_label = None
+
         self.text = [
             self.player_hp_label,
             self.enemy_hp_label,
@@ -101,7 +103,7 @@ class DuelController:
             self.enemy_xp_label,
             self.player_energy_label,
             self.player_level_label,
-            self.enemy_level_label,
+            self.enemy_level_label
         ]
 
         self.turn = 0
@@ -123,6 +125,7 @@ class DuelController:
 
         self.game_won = False
         self.game_won_counter = 0
+        self.winner = ""
 
     def reset(self):
 
@@ -145,6 +148,7 @@ class DuelController:
 
         self.game_won = False
         self.game_won_counter = 0
+        self.winner = ""
 
     def begin_duel(self, player, enemy):
 
