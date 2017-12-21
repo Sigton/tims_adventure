@@ -126,6 +126,7 @@ class DuelController:
         self.game_won = False
         self.game_won_counter = 0
         self.winner = ""
+        self.shown_win = False
 
     def reset(self):
 
@@ -149,6 +150,7 @@ class DuelController:
         self.game_won = False
         self.game_won_counter = 0
         self.winner = ""
+        self.shown_win = False
 
         try:
             self.text.remove(self.winner_label)
@@ -197,7 +199,16 @@ class DuelController:
             if self.game_won_counter > 0:
                 self.game_won_counter -= 1
             else:
-                self.master.game_mode = 0
+                if not self.shown_win:
+
+                    self.shown_win = True
+                    self.game_won_counter = 120
+
+                    self.winner_label = gui_components.Label(480, 280, "{} won!".format(self.winner),
+                                                             True, 128, constants.BLACK)
+                    self.text.append(self.winner_label)
+                else:
+                    self.master.game_mode = 0
 
         if self.p_energy - moves[self.player.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
@@ -232,8 +243,7 @@ class DuelController:
                     self.game_won = True
                     self.game_won_counter = 120
 
-                    self.winner_label = gui_components.Label(480, 280, "Opponent won!", True, 128, constants.BLACK)
-                    self.text.append(self.winner_label)
+                    self.winner = "Opponent"
 
                 self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
 
@@ -279,8 +289,7 @@ class DuelController:
                 self.game_won = True
                 self.game_won_counter = 120
 
-                self.winner_label = gui_components.Label(480, 280, "Player won!", True, 128, constants.BLACK)
-                self.text.append(self.winner_label)
+                self.winner = "Player"
 
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
 
