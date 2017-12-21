@@ -232,7 +232,7 @@ class DuelController:
                     self.game_won = True
                     self.game_won_counter = 120
 
-                    self.winner_label = gui_components.Label(480, 280, "Opponent won!", True, 128)
+                    self.winner_label = gui_components.Label(480, 280, "Opponent won!", True, 128, constants.BLACK)
                     self.text.append(self.winner_label)
 
                 self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
@@ -279,7 +279,7 @@ class DuelController:
                 self.game_won = True
                 self.game_won_counter = 120
 
-                self.winner_label = gui_components.Label(480, 280, "Player won!", True, 128)
+                self.winner_label = gui_components.Label(480, 280, "Player won!", True, 128, constants.BLACK)
                 self.text.append(self.winner_label)
 
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
