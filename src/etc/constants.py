@@ -76,13 +76,16 @@ level_up_multiplier = 1.5
 
 # The global font to write with
 font = None
+default_font_size = 32
 
 
-def load_font():
+def load_font(font_size):
 
     global font
 
-    font = pygame.font.Font("src/resources/font.otf", 32)
+    font = pygame.font.font("src/resources/font.otf", 32)
+
+    return font
 
 
 # Data used in dueling engine
