@@ -100,12 +100,12 @@ class ProgressBar:
 
 class Label:
 
-    def __init__(self, x, y, text, center=False, text_size=32):
+    def __init__(self, x, y, text, center=False, text_size=32, color=constants.WHITE):
 
         if text_size != constants.default_font_size:
-            self.image = constants.load_font(text_size, False).render(text, False, constants.WHITE)
+            self.image = constants.load_font(text_size, False).render(text, False, color)
         else:
-            self.image = constants.font.render(text, False, constants.WHITE)
+            self.image = constants.font.render(text, False, color)
         self.rect = self.image.get_rect()
 
         if center:
