@@ -229,11 +229,11 @@ class DuelController:
                 if self.enemy.xp >= int((constants.level_up_base *
                                         (constants.level_up_multiplier ** self.enemy.level))):
                     self.enemy.xp = self.enemy.xp % int((constants.level_up_base *
-                                                           (constants.level_up_multiplier ** self.enemy.level)))
+                                                        (constants.level_up_multiplier ** self.enemy.level)))
                     self.enemy.level += 1
 
                 self.turn = 0
-                self.turn_cool_down = 150
+                self.turn_cool_down = constants.turn_cool_down
 
                 move = moves[self.enemy.moves[move_no]]["effects"]
 
@@ -277,7 +277,7 @@ class DuelController:
                 self.player.level += 1
 
             self.turn = 1
-            self.turn_cool_down = 150
+            self.turn_cool_down = constants.turn_cool_down
 
             move = moves[self.player.moves[button_id]]["effects"]
 

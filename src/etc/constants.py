@@ -93,3 +93,5 @@ shake_moves = [
 positional_moves = [
     "Burn"
 ]
+
+turn_cool_down = 120
