@@ -79,13 +79,14 @@ font = None
 default_font_size = 32
 
 
-def load_font(font_size=default_font_size):
+def load_font(font_size=default_font_size, set_global=True):
 
     global font
 
-    font = pygame.font.Font("src/resources/font.otf", font_size)
-
-    return font
+    if set_global:
+        font = pygame.font.Font("src/resources/font.otf", font_size)
+    else:
+        return pygame.font.Font("src/resources/font.otf", font_size)
 
 
 # Data used in dueling engine
