@@ -150,6 +150,11 @@ class DuelController:
         self.game_won_counter = 0
         self.winner = ""
 
+        try:
+            self.text.remove(self.winner_label)
+        except:
+            pass
+
     def begin_duel(self, player, enemy):
 
         self.player = player.meta
@@ -227,6 +232,9 @@ class DuelController:
                     self.game_won = True
                     self.game_won_counter = 120
 
+                    self.winner_label = gui_components.Label(480, 360, "Opponent won!", True, 64)
+                    self.text.append(self.winner_label)
+
                 self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
 
                 self.enemy.xp += moves[self.enemy.moves[move_no]]["xp"]
@@ -270,6 +278,9 @@ class DuelController:
 
                 self.game_won = True
                 self.game_won_counter = 120
+
+                self.winner_label = gui_components.Label(480, 360, "Player won!", True, 64)
+                self.text.append(self.winner_label)
 
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
 
