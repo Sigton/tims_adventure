@@ -217,7 +217,7 @@ class DuelController:
 
             if move_no < 2:
                 self.player.hp -= int(self.enemy.attack * moves[self.enemy.moves[move_no]]["str_mod"])
-                if self.player.hp < 0:
+                if self.player.hp <= 0:
                     self.player.hp = 0
 
                     self.game_won = True
@@ -226,7 +226,7 @@ class DuelController:
                 self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
 
                 self.enemy.xp += moves[self.enemy.moves[move_no]]["xp"]
-                if self.enemy.xp > int((constants.level_up_base *
+                if self.enemy.xp >= int((constants.level_up_base *
                                         (constants.level_up_multiplier ** self.enemy.level))):
                     self.enemy.xp = self.enemy.xp % int((constants.level_up_base *
                                                            (constants.level_up_multiplier ** self.enemy.level)))
@@ -261,7 +261,7 @@ class DuelController:
         if button_id < 2:
 
             self.enemy.hp -= int(self.player.attack * moves[self.player.moves[button_id]]["str_mod"])
-            if self.enemy.hp < 0:
+            if self.enemy.hp <= 0:
                 self.enemy.hp = 0
 
                 self.game_won = True
@@ -270,8 +270,8 @@ class DuelController:
             self.p_energy -= moves[self.player.moves[button_id]]["energy"]
 
             self.player.xp += moves[self.player.moves[button_id]]["xp"]
-            if self.player.xp > int((constants.level_up_base *
-                                    (constants.level_up_multiplier ** self.player.level))):
+            if self.player.xp >= int((constants.level_up_base *
+                                     (constants.level_up_multiplier ** self.player.level))):
                 self.player.xp = self.player.xp % int((constants.level_up_base *
                                                       (constants.level_up_multiplier ** self.player.level)))
                 self.player.level += 1
