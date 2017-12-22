@@ -11,7 +11,7 @@ import collections
 from src.etc import constants, containers
 from src.terrain import tiles, hud
 from src.terrain.tile_types import *
-from src.entities import entities
+from src.entities import entities, player
 
 """
 chunks.py
@@ -38,12 +38,12 @@ def create_id(x, y):
     
 class ChunkController:
 
-    player = None
-    controller = None
-
     def __init__(self, master, start_x, start_y):
 
         self.master = master
+
+        self.player = player.Player()
+        self.player.set_chunk_controller(self)
 
         # The key is a 4 digit string
         # to locate the chunk,

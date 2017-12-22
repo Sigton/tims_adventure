@@ -41,11 +41,6 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
 
-        self.player = player.Player()
-
-        self.chunk_controller.player = self.player
-        self.player.set_chunk_controller(self.chunk_controller)
-
         self.duel_controller = duel_controller.DuelController(self)
         self.duel_controller.particle_engine = self.particle_engine
 

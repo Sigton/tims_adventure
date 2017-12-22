@@ -32,8 +32,11 @@ class HUD:
 
     def update_components(self):
 
+        bean_no = 0
         for bar in self.health_bars:
-            bar.update(0)
+            bar.update(self.player.beans[bean_no].meta.hp/self.player.beans[bean_no].meta.max_hp)
+
+            bean_no += 1
 
     def fix_positions(self):
 
