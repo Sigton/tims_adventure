@@ -21,7 +21,7 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.beans = [Bean(True)] + [Bean(False) for n in range(4)]
+        self.beans = [Bean("red")] + [Bean("yellow") for n in range(4)]
 
         self.trail = [[0, 0],
                       [-1, 0],
@@ -48,7 +48,7 @@ class Player(pygame.sprite.Sprite):
 
             n = 0
             for bean in self.beans:
-                if not bean.main:
+                if not self.beans.index(bean) == 0:
                     bean.rect.x += self.movement_intervals[n][0]
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
@@ -95,13 +95,12 @@ class Player(pygame.sprite.Sprite):
 
 class Bean(pygame.sprite.Sprite):
 
-    def __init__(self, main):
+    def __init__(self, bean):
 
         pygame.sprite.Sprite.__init__(self)
         self.chunk_controller = None
 
-        self.main = main
-        self.bean = "red" if self.main else "yellow"
+        self.bean = bean
 
         self.images = {}
 
