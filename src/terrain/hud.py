@@ -1,3 +1,5 @@
+import pygame
+
 from src.etc import gui_components, constants
 
 """
@@ -14,7 +16,7 @@ class HUD:
 
         self.player = player
 
-        self.active_bean_stat = 2
+        self.active_bean_stat = 0
 
         self.x = x
         self.y = y
@@ -40,6 +42,10 @@ class HUD:
                           [self.xp_bar, self.level_label]
 
     def update(self):
+
+        for panel in self.bean_stats:
+            if panel.rect.collidepoint(pygame.mouse.get_pos()):
+                self.active_bean_stat = self.bean_stats.index(panel)
 
         self.update_components()
         self.fix_positions()
@@ -85,10 +91,6 @@ class HUD:
             self.level_label.rect.right = self.background.rect.right - 7
 
             panel_idx += 1
-
-    def check_event(self, event):
-
-        pass
 
     def draw(self, display):
 
