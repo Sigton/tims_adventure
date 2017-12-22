@@ -25,6 +25,15 @@ class HUD:
 
     def update(self):
 
+        self.update_components()
+        self.fix_positions()
+
+    def update_components(self):
+
+        pass
+
+    def fix_positions(self):
+
         panel_idx = 0
         for stat_panel in self.bean_stats:
             if panel_idx == self.active_bean_stat:
