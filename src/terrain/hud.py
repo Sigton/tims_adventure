@@ -30,7 +30,11 @@ class HUD:
         self.xp_bar = gui_components.ProgressBar(9, 37+34*self.active_bean_stat, 182, 4,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
 
-        self.components = [self.background] + self.bean_stats + self.health_bars + self.bean_labels + [self.xp_bar]
+        self.level_label = gui_components.Label(0, 41+35*self.active_bean_stat, "Level {}".format(
+            self.player.beans[self.active_bean_stat].meta.level), False, 20, constants.BLACK)
+
+        self.components = [self.background] + self.bean_stats + self.health_bars + self.bean_labels +\
+                          [self.xp_bar, self.level_label]
 
     def update(self):
 
@@ -73,6 +77,9 @@ class HUD:
                 self.bean_labels[panel_idx].rect.top = self.bean_stats[panel_idx - 1].rect.bottom + 3
 
             self.xp_bar.rect.top = 34 + 35 * self.active_bean_stat
+
+            self.level_label.rect.top = 41 + 35 * self.active_bean_stat
+            self.level_label.rect.right = self.background.rect.right - 7
 
             panel_idx += 1
 
