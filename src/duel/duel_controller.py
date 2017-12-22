@@ -154,7 +154,7 @@ class DuelController:
 
         try:
             self.text.remove(self.winner_label)
-        except:
+        except ValueError:
             pass
 
     def begin_duel(self, player, enemy):
