@@ -1,3 +1,5 @@
+from src.etc import gui_components, constants
+
 """
 hud.py
 
@@ -10,7 +12,9 @@ class HUD:
 
     def __init__(self):
 
-        pass
+        self.background = gui_components.Fill(0, 0, 100, 209, constants.GUI_BACKING)
+
+        self.components = [self.background]
 
     def update(self):
 
@@ -18,4 +22,4 @@ class HUD:
 
     def draw(self, display):
 
-        pass
+        [component.draw(display) for component in self.components]
