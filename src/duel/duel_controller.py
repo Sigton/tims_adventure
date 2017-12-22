@@ -3,7 +3,7 @@ from pygame.locals import *
 
 from src.duel.duel_gui import load_images
 from src.etc import gui_components, constants
-from src.entities import shadows
+from src.duel.duel_players import DuelPlayer
 from src.duel.moves import moves
 
 import math
@@ -47,18 +47,6 @@ class DuelController:
 
         self.player = None
         self.enemy = None
-
-        self.p_energy = 0
-        self.e_energy = 0
-
-        self.player_image = None
-        self.enemy_image = None
-
-        self.player_image_x = 75
-        self.enemy_image_x = 640
-
-        self.player_shadow = None
-        self.enemy_shadow = None
 
         self.player_hp_bar = gui_components.ProgressBar(563, 379, 232, 30, [constants.HEALTH_BAR_RED,
                                                                             constants.HEALTH_BAR_GREEN])
@@ -109,20 +97,6 @@ class DuelController:
         self.turn = 0
         self.turn_cool_down = 50
 
-        self.player_shake = 0
-        self.player_shake_distance = 0
-        self.player_shake_w = 0
-        self.player_shake_shift = 0
-        self.player_shake_timer = 0
-        self.player_shake_direction = 0
-
-        self.enemy_shake = 0
-        self.enemy_shake_distance = 0
-        self.enemy_shake_w = 0
-        self.enemy_shake_shift = 0
-        self.enemy_shake_timer = 0
-        self.enemy_shake_direction = 0
-
         self.game_won = False
         self.game_won_counter = 0
         self.winner = ""
@@ -132,20 +106,6 @@ class DuelController:
 
         self.turn = 0
         self.turn_cool_down = 50
-
-        self.player_shake = 0
-        self.player_shake_distance = 0
-        self.player_shake_w = 0
-        self.player_shake_shift = 0
-        self.player_shake_timer = 0
-        self.player_shake_direction = 0
-
-        self.enemy_shake = 0
-        self.enemy_shake_distance = 0
-        self.enemy_shake_w = 0
-        self.enemy_shake_shift = 0
-        self.enemy_shake_timer = 0
-        self.enemy_shake_direction = 0
 
         self.game_won = False
         self.game_won_counter = 0
@@ -159,30 +119,11 @@ class DuelController:
 
     def begin_duel(self, player, enemy):
 
-        self.player = player.meta
-        self.enemy = enemy.meta
+        self.player = DuelPlayer(player)
+        self.enemy = DuelPlayer(enemy)
 
-        self.p_energy = self.player.energy
-        self.e_energy = self.enemy.energy
-
-        self.player_image = pygame.transform.scale(self.player.images["R"], (300, 300))
-        self.enemy_image = pygame.transform.scale(self.enemy.images["L"], (230, 230))
-
-        class PlayerShadow:
-            rect = self.player_image.get_rect()
-            rect.topleft = (75, 368)
-            tile_code = "duel_player"
-
-        class EnemyShadow:
-            rect = self.enemy_image.get_rect()
-            rect.topleft = (640, 53)
-            tile_code = "duel_enemy"
-
-        self.player_shadow = shadows.Shadow(PlayerShadow())
-        self.enemy_shadow = shadows.Shadow(EnemyShadow())
-
-        self.attack_main_label = gui_components.Label(607, 603, moves[self.player.moves[0]]["name"], True)
-        self.attack_alt_label = gui_components.Label(831, 603, moves[self.player.moves[1]]["name"], True)
+        self.attack_main_label = gui_components.Label(607, 603, moves[self.player.meta.moves[0]]["name"], True)
+        self.attack_alt_label = gui_components.Label(831, 603, moves[self.player.meta.moves[1]]["name"], True)
 
         self.text.append(self.attack_main_label)
         self.text.append(self.attack_alt_label)
@@ -267,8 +208,8 @@ class DuelController:
 
         self.shake_players()
 
-        self.player_shadow.update()
-        self.enemy_shadow.update()
+        self.player.shadow.update()
+        self.enemy.shadow.update()
 
         self.update_gui_components()
 
@@ -344,11 +285,11 @@ class DuelController:
 
         display.blit(self.background, (0, 0))
 
-        self.player_shadow.draw(display)
-        self.enemy_shadow.draw(display)
+        self.player.shadow.draw(display)
+        self.enemy.shadow.draw(display)
 
-        display.blit(self.player_image, (self.player_image_x, 368))
-        display.blit(self.enemy_image, (self.enemy_image_x, 53))
+        display.blit(self.player.image, (self.player.rect.x, 368))
+        display.blit(self.enemy.image, (self.enemy.rect.x, 53))
 
         [button.draw(display) for button in self.buttons]
         [bar.draw(display) for bar in self.progress_bars]
@@ -356,35 +297,35 @@ class DuelController:
 
     def start_shake_player(self, duration, dx, w, direction):
 
-        self.player_shake = duration
-        self.player_shake_distance = dx
-        self.player_shake_w = w
-        self.player_shake_timer = 0
-        self.player_shake_direction = direction
+        self.player.shake = duration
+        self.player.shake_distance = dx
+        self.player.shake_w = w
+        self.player.shake_timer = 0
+        self.player.shake_direction = direction
 
     def start_shake_enemy(self, duration, dx, w, direction):
-        self.enemy_shake = duration
-        self.enemy_shake_distance = dx
-        self.enemy_shake_w = w
-        self.enemy_shake_timer = 0
-        self.enemy_shake_direction = direction
+        self.enemy.shake = duration
+        self.enemy.shake_distance = dx
+        self.enemy.shake_w = w
+        self.enemy.shake_timer = 0
+        self.enemy.shake_direction = direction
 
     def shake_players(self):
 
-        if self.player_shake_timer < self.player_shake:
-            c = self.player_shake_distance
-            self.player_image_x += (c-(c/math.pow(self.player_shake_w, 2))*math.pow(
-                self.player_shake_timer
-                , 2)) * self.player_shake_direction
-            self.player_shake_timer += 1
+        if self.player.shake_timer < self.player.shake:
+            c = self.player.shake_distance
+            self.player.rect.x += (c-(c/math.pow(self.player.shake_w, 2))*math.pow(
+                self.player.shake_timer
+                , 2)) * self.player.shake_direction
+            self.player.shake_timer += 1
         else:
-            self.player_image_x = 75
+            self.player.rect.x = 75
 
-        if self.enemy_shake_timer < self.enemy_shake:
-            c = self.enemy_shake_distance
-            self.enemy_image_x += (c-(c/math.pow(self.enemy_shake_w, 2))*math.pow(
-                self.enemy_shake_timer
-                , 2)) * self.enemy_shake_direction
-            self.enemy_shake_timer += 1
+        if self.enemy.shake_timer < self.enemy.shake:
+            c = self.enemy.shake_distance
+            self.enemy.rect.x += (c-(c/math.pow(self.enemy.shake_w, 2))*math.pow(
+                self.enemy.shake_timer
+                , 2)) * self.enemy.shake_direction
+            self.enemy.shake_timer += 1
         else:
-            self.enemy_image_x = 640
+            self.enemy.rect.x = 640
