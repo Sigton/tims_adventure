@@ -1,7 +1,6 @@
 import pygame
 
 from src.entities import shadows
-from src.entities.entities import EntityMeta
 
 """
 duel_players.py
@@ -11,18 +10,17 @@ to the player and enemy in duelling
 """
 
 
-class DuelPlayer(EntityMeta):
+class DuelPlayer:
 
     def __init__(self, player, facing):
 
-        EntityMeta.__init__(self, player)
-
+        self.meta = player.meta
         self.facing = facing
 
-        self.energy_max = self.energy
+        self.energy_max = self.meta.energy
         self.energy = self.energy_max
 
-        self.image = pygame.transform.scale(self.images[self.facing],
+        self.image = pygame.transform.scale(self.meta.images[self.facing],
                                             (300, 300) if self.facing == "R" else (230, 230))
 
         self.rect = self.image.get_rect()
