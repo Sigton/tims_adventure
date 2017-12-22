@@ -12,7 +12,7 @@ class HUD:
 
     def __init__(self):
 
-        self.background = gui_components.Fill(0, 0, 100, 209, constants.GUI_BACKING)
+        self.background = gui_components.Fill(0, 0, 200, 209, constants.GUI_BACKING)
 
         self.components = [self.background]
 
