@@ -201,7 +201,7 @@ class DuelController:
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
                 if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
-                    move = move.format("enemy", "-")
+                    move = move.format("-")
                 elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
                     move = move.format(220, 520)
                 exec(move)
@@ -236,9 +236,10 @@ class DuelController:
 
             self.player.meta.xp += moves[self.player.meta.moves[button_id]]["xp"]
             if self.player.meta.xp >= int((constants.level_up_base *
-                                     (constants.level_up_multiplier ** self.player.meta.level))):
+                                          (constants.level_up_multiplier ** self.player.meta.level))):
                 self.player.meta.xp = self.player.meta.xp % int((constants.level_up_base *
-                                                      (constants.level_up_multiplier ** self.player.meta.level)))
+                                                                (constants.level_up_multiplier **
+                                                                 self.player.meta.level)))
                 self.player.meta.level += 1
 
             self.turn = 1
@@ -247,7 +248,7 @@ class DuelController:
             move = moves[self.player.meta.moves[button_id]]["effects"]
 
             if moves[self.player.meta.moves[button_id]]["name"] in constants.shake_moves:
-                move = move.format("player", "")
+                move = move.format("")
             elif moves[self.player.meta.moves[button_id]]["name"] in constants.positional_moves:
                 move = move.format(750, 170)
             exec(move)
@@ -295,13 +296,15 @@ class DuelController:
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
 
-    def start_shake_player(self, duration, dx, w, direction):
+    def start_shake(self, duration, dx, w, direction):
 
-        self.player.shake = duration
-        self.player.shake_distance = dx
-        self.player.shake_w = w
-        self.player.shake_timer = 0
-        self.player.shake_direction = direction
+        entity = self.player if direction > 0 else self.enemy
+
+        entity.shake = duration
+        entity.shake_distance = dx
+        entity.shake_w = w
+        entity.shake_timer = 0
+        entity.shake_direction = direction
 
     def start_shake_enemy(self, duration, dx, w, direction):
         self.enemy.shake = duration
