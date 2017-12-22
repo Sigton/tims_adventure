@@ -12,20 +12,25 @@ to the player and enemy in duelling
 
 class DuelPlayer:
 
-    def __init__(self, player, side):
+    def __init__(self, player, facing):
 
         self.meta = player.meta
-        self.side = side
+        self.facing = facing
 
         self.energy_max = self.meta.energy
         self.energy = self.energy_max
 
-        self.image = pygame.transform.scale(self.meta.images[self.side], (300, 300) if self.side == "R" else (230, 230))
+        self.image = pygame.transform.scale(self.meta.images[self.facing],
+                                            (300, 300) if self.facing == "R" else (230, 230))
 
         self.rect = self.image.get_rect()
-        self.rect.x = 75 if self.side == "R" else 640
+        self.rect.x = 75 if self.facing == "R" else 640
+        self.rect.y = 368 if self.facing == "R" else 53
 
         self.default_x = self.rect.x
+        self.default_y = self.rect.y
+
+        self.tile_code = "duel_{}".format("player" if self.facing == "R" else "enemy")
 
         self.shadow = shadows.Shadow(self)
 
