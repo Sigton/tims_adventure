@@ -43,8 +43,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4780">
-              <caret line="311" column="0" lean-forward="true" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+            <state relative-caret-position="-1398">
+              <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -77,6 +77,8 @@
       <find>player_</find>
       <find>enemy_</find>
       <find>image_x</find>
+      <find>e_energy</find>
+      <find>self.enemy.moves</find>
     </findStrings>
     <replaceStrings>
       <replace>player</replace>
@@ -84,6 +86,7 @@
       <replace>player.</replace>
       <replace>enemy.</replace>
       <replace>rect.x</replace>
+      <replace>self.enemy.meta.moves</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -312,13 +315,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00612" summary="Icons will now be attributed to the entities">
-      <created>1513705648249</created>
-      <option name="number" value="00612" />
-      <option name="presentableId" value="LOCAL-00612" />
-      <option name="project" value="LOCAL" />
-      <updated>1513705648249</updated>
     </task>
     <task id="LOCAL-00613" summary="Entities draw their icons now too">
       <created>1513705704554</created>
@@ -656,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513947672086</updated>
     </task>
-    <option name="localTasksCounter" value="661" />
+    <task id="LOCAL-00661" summary="Converting to DuelPlayer class">
+      <created>1513947912782</created>
+      <option name="number" value="00661" />
+      <option name="presentableId" value="LOCAL-00661" />
+      <option name="project" value="LOCAL" />
+      <updated>1513947912782</updated>
+    </task>
+    <option name="localTasksCounter" value="662" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -733,7 +736,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Transition from map to duels works!" />
     <MESSAGE value="Random beans now have shadows" />
     <MESSAGE value="Added game_won attribute to DuelController" />
     <MESSAGE value="Implemented game won feature" />
@@ -758,7 +760,8 @@
     <MESSAGE value="Added more attributes to DuelPlayer" />
     <MESSAGE value="More specific with except statement" />
     <MESSAGE value="Working on duel_players" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on duel_players" />
+    <MESSAGE value="Converting to DuelPlayer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Converting to DuelPlayer class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1108,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4780">
-          <caret line="311" column="0" lean-forward="true" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+        <state relative-caret-position="-1398">
+          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

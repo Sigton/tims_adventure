@@ -119,8 +119,8 @@ class DuelController:
 
     def begin_duel(self, player, enemy):
 
-        self.player = DuelPlayer(player)
-        self.enemy = DuelPlayer(enemy)
+        self.player = DuelPlayer(player, "R")
+        self.enemy = DuelPlayer(enemy, "L")
 
         self.attack_main_label = gui_components.Label(607, 603, moves[self.player.meta.moves[0]]["name"], True)
         self.attack_alt_label = gui_components.Label(831, 603, moves[self.player.meta.moves[1]]["name"], True)
@@ -151,11 +151,11 @@ class DuelController:
                 else:
                     self.master.game_mode = 0
 
-        if self.p_energy - moves[self.player.moves[0]]["energy"] < 0:
+        if self.player.energy - moves[self.player.meta.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
         else:
             self.attack_main_button.set_on()
-        if self.p_energy - moves[self.player.moves[1]]["energy"] < 0:
+        if self.player.energy - moves[self.player.meta.moves[1]]["energy"] < 0:
             self.attack_alt_button.set_off()
         else:
             self.attack_alt_button.set_on()
@@ -169,15 +169,15 @@ class DuelController:
 
             possible_moves = [0, 1, 2, 3]
 
-            if self.e_energy - moves[self.enemy.moves[0]]["energy"] < 0:
+            if self.enemy.energy - moves[self.enemy.meta.moves[0]]["energy"] < 0:
                 possible_moves.remove(0)
-            if self.e_energy - moves[self.enemy.moves[1]]["energy"] < 0:
+            if self.enemy.energy - moves[self.enemy.meta.moves[1]]["energy"] < 0:
                 possible_moves.remove(1)
 
             move_no = possible_moves[random.randint(0, len(possible_moves)-1)]
 
             if move_no < 2:
-                self.player.hp -= int(self.enemy.attack * moves[self.enemy.moves[move_no]]["str_mod"])
+                self.player.hp -= int(self.enemy.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"])
                 if self.player.hp <= 0:
                     self.player.hp = 0
 
@@ -186,9 +186,9 @@ class DuelController:
 
                     self.winner = "Opponent"
 
-                self.e_energy -= moves[self.enemy.moves[move_no]]["energy"]
+                self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
-                self.enemy.xp += moves[self.enemy.moves[move_no]]["xp"]
+                self.enemy.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
                 if self.enemy.xp >= int((constants.level_up_base *
                                         (constants.level_up_multiplier ** self.enemy.level))):
                     self.enemy.xp = self.enemy.xp % int((constants.level_up_base *
@@ -198,11 +198,11 @@ class DuelController:
                 self.turn = 0
                 self.turn_cool_down = constants.turn_cool_down
 
-                move = moves[self.enemy.moves[move_no]]["effects"]
+                move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
-                if moves[self.enemy.moves[move_no]]["name"] in constants.shake_moves:
+                if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
                     move = move.format("enemy", "-")
-                elif moves[self.enemy.moves[move_no]]["name"] in constants.positional_moves:
+                elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
                     move = move.format(220, 520)
                 exec(move)
 
@@ -223,7 +223,7 @@ class DuelController:
 
         if button_id < 2:
 
-            self.enemy.hp -= int(self.player.attack * moves[self.player.moves[button_id]]["str_mod"])
+            self.enemy.hp -= int(self.player.attack * moves[self.player.meta.moves[button_id]]["str_mod"])
             if self.enemy.hp <= 0:
                 self.enemy.hp = 0
 
@@ -232,9 +232,9 @@ class DuelController:
 
                 self.winner = "Player"
 
-            self.p_energy -= moves[self.player.moves[button_id]]["energy"]
+            self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
 
-            self.player.xp += moves[self.player.moves[button_id]]["xp"]
+            self.player.xp += moves[self.player.meta.moves[button_id]]["xp"]
             if self.player.xp >= int((constants.level_up_base *
                                      (constants.level_up_multiplier ** self.player.level))):
                 self.player.xp = self.player.xp % int((constants.level_up_base *
@@ -244,11 +244,11 @@ class DuelController:
             self.turn = 1
             self.turn_cool_down = constants.turn_cool_down
 
-            move = moves[self.player.moves[button_id]]["effects"]
+            move = moves[self.player.meta.moves[button_id]]["effects"]
 
-            if moves[self.player.moves[button_id]]["name"] in constants.shake_moves:
+            if moves[self.player.meta.moves[button_id]]["name"] in constants.shake_moves:
                 move = move.format("player", "")
-            elif moves[self.player.moves[button_id]]["name"] in constants.positional_moves:
+            elif moves[self.player.meta.moves[button_id]]["name"] in constants.positional_moves:
                 move = move.format(750, 170)
             exec(move)
 
@@ -262,7 +262,7 @@ class DuelController:
         self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
                                                   (constants.level_up_multiplier ** self.enemy.level)))
 
-        self.player_energy_bar.update(self.p_energy / self.player.energy)
+        self.player_energy_bar.update(self.player.energy / self.player.energy)
 
         self.player_hp_label.update("{}/{}".format(self.player.hp, self.player.max_hp))
         self.enemy_hp_label.update("{}/{}".format(self.enemy.hp, self.enemy.max_hp))
@@ -276,7 +276,7 @@ class DuelController:
                                                        (constants.level_up_multiplier **
                                                         self.enemy.level)))))
 
-        self.player_energy_label.update("{}/{}".format(self.p_energy, self.player.energy))
+        self.player_energy_label.update("{}/{}".format(self.player.energy, self.player.energy))
 
         self.player_level_label.update("Level {}".format(self.player.level))
         self.enemy_level_label.update("Level {}".format(self.enemy.level))
