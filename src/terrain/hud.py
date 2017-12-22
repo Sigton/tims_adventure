@@ -86,6 +86,10 @@ class HUD:
 
             panel_idx += 1
 
+    def check_event(self, event):
+
+        pass
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
