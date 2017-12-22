@@ -19,3 +19,8 @@ class DuelPlayer:
         self.energy = self.energy_max
 
         self.image = pygame.transform.scale(self.meta.images[self.side], (300, 300) if self.side=="R" else (230, 230))
+
+        self.rect = self.image.get_rect()
+        self.rect.x = 75 if self.side == "R" else 640
+
+        self.default_x = self.rect.x
