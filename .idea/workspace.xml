@@ -16,12 +16,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="400">
+                    <caret line="167" column="87" lean-forward="true" selection-start-line="167" selection-start-column="87" selection-end-line="167" selection-end-column="87" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5780">
+            <state relative-caret-position="0">
               <caret line="302" column="27" lean-forward="false" selection-start-line="302" selection-start-column="27" selection-end-line="302" selection-end-column="27" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -30,21 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="duel_players.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_players.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="400">
+              <caret line="20" column="118" lean-forward="false" selection-start-line="20" selection-start-column="118" selection-end-line="20" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -324,13 +334,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00606" summary="Icons should now move">
-      <created>1513703853540</created>
-      <option name="number" value="00606" />
-      <option name="presentableId" value="LOCAL-00606" />
-      <option name="project" value="LOCAL" />
-      <updated>1513703853540</updated>
     </task>
     <task id="LOCAL-00607" summary="Icons now appear to be static on the map">
       <created>1513703893245</created>
@@ -668,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513946027151</updated>
     </task>
-    <option name="localTasksCounter" value="655" />
+    <task id="LOCAL-00655" summary="Created DuelPlayer class">
+      <created>1513946052213</created>
+      <option name="number" value="00655" />
+      <option name="presentableId" value="LOCAL-00655" />
+      <option name="project" value="LOCAL" />
+      <updated>1513946052213</updated>
+    </task>
+    <option name="localTasksCounter" value="656" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -745,7 +755,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moving setup into the begin_duel function" />
     <MESSAGE value="Removed unnecessary inputs from DuelController" />
     <MESSAGE value="Working on begin_duel" />
     <MESSAGE value="begin_duel should now function" />
@@ -770,7 +779,8 @@
     <MESSAGE value="Now shows winner label after a delay" />
     <MESSAGE value="Added new colours" />
     <MESSAGE value="Created duel_players.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created duel_players.py" />
+    <MESSAGE value="Created DuelPlayer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created DuelPlayer class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1084,7 +1094,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5780">
+        <state relative-caret-position="0">
           <caret line="302" column="27" lean-forward="false" selection-start-line="302" selection-start-column="27" selection-end-line="302" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -1110,16 +1120,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="400">
+          <caret line="167" column="87" lean-forward="true" selection-start-line="167" selection-start-column="87" selection-end-line="167" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_players.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="400">
+          <caret line="20" column="118" lean-forward="false" selection-start-line="20" selection-start-column="118" selection-end-line="20" selection-end-column="118" />
           <folding />
         </state>
       </provider>
