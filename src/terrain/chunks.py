@@ -115,30 +115,30 @@ class ChunkController:
 
             elif event.type == KEYDOWN:
 
-                if event.key == K_UP:
+                if event.key in (K_UP, K_w):
                     self.direction = "U"
 
-                elif event.key == K_DOWN:
+                elif event.key in (K_DOWN, K_s):
                     self.direction = "D"
 
-                elif event.key == K_LEFT:
+                elif event.key in (K_LEFT, K_a):
                     self.direction = "L"
 
-                elif event.key == K_RIGHT:
+                elif event.key in (K_RIGHT, K_d):
                     self.direction = "R"
 
             elif event.type == KEYUP:
 
-                if event.key == K_UP:
+                if event.key in (K_UP, K_w):
                     self.direction = self.direction.replace("U", "")
 
-                elif event.key == K_DOWN:
+                elif event.key in (K_DOWN, K_s):
                     self.direction = self.direction.replace("D", "")
 
-                elif event.key == K_LEFT:
+                elif event.key in (K_LEFT, K_a):
                     self.direction = self.direction.replace("L", "")
 
-                elif event.key == K_RIGHT:
+                elif event.key in (K_RIGHT, K_d):
                     self.direction = self.direction.replace("R", "")
 
                 elif event.key == K_SPACE:
