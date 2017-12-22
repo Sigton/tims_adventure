@@ -281,6 +281,8 @@ class ChunkController:
             for chunk in to_remove:
                 self.delete_chunk(chunk)
 
+        self.hud.update()
+
     def update_chunks(self):
 
         for chunk in self.live_chunks:
