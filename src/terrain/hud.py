@@ -45,6 +45,10 @@ class HUD:
 
             bean_no += 1
 
+        self.xp_bar.update(self.player.beans[self.active_bean_stat].meta.xp/int((constants.level_up_base *
+                                                                                (constants.level_up_multiplier **
+                                                                                 self.player.meta.level))))
+
     def fix_positions(self):
 
         panel_idx = 0
