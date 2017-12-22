@@ -10,27 +10,30 @@ games heads-up display
 
 class HUD:
 
-    def __init__(self, player):
+    def __init__(self, player, x=0, y=0):
 
         self.player = player
 
-        self.active_bean_stat = 1
+        self.active_bean_stat = 2
 
-        self.background = gui_components.Fill(0, 0, 200, 209, constants.GUI_BACKING)
+        self.x = x
+        self.y = y
 
-        self.bean_stats = [gui_components.Fill(5, 5+35*n, 190, 30, constants.GUI_FILL) for n in range(5)]
-        self.health_bars = [gui_components.ProgressBar(9, 27+36*n, 182, 4,
+        self.background = gui_components.Fill(self.x, self.y, 200, 209, constants.GUI_BACKING)
+
+        self.bean_stats = [gui_components.Fill(self.x+5, self.y+5+35*n, 190, 30, constants.GUI_FILL) for n in range(5)]
+        self.health_bars = [gui_components.ProgressBar(self.x+9, self.y+27+36*n, 182, 4,
                                                        (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
                             for n in range(5)]
-        self.bean_labels = [gui_components.Label(9, 3+40*n, "{}{} Bean".format(
+        self.bean_labels = [gui_components.Label(self.x+9, self.y+3+40*n, "{}{} Bean".format(
             self.player.beans[n].bean[0].upper(), self.player.beans[n].bean[1:]),
                                                  False, 20, constants.BLACK)
                             for n in range(5)]
 
-        self.xp_bar = gui_components.ProgressBar(9, 37+34*self.active_bean_stat, 182, 4,
+        self.xp_bar = gui_components.ProgressBar(self.x+9, self.y+37+34*self.active_bean_stat, 182, 4,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
 
-        self.level_label = gui_components.Label(0, 41+35*self.active_bean_stat, "Level {}".format(
+        self.level_label = gui_components.Label(self.x, self.y+41+35*self.active_bean_stat, "Level {}".format(
             self.player.beans[self.active_bean_stat].meta.level), False, 20, constants.BLACK)
 
         self.components = [self.background] + self.bean_stats + self.health_bars + self.bean_labels +\
@@ -68,17 +71,17 @@ class HUD:
                 if not stat_panel.rect.height == 30:
                     stat_panel.resize(stat_panel.rect.width, 30)
             if panel_idx == 0:
-                stat_panel.rect.top = 5
-                self.health_bars[panel_idx].rect.top = 27
-                self.bean_labels[panel_idx].rect.top = 3
+                stat_panel.rect.top = self.x+5
+                self.health_bars[panel_idx].rect.top = self.x+27
+                self.bean_labels[panel_idx].rect.top = self.x+3
             else:
                 stat_panel.rect.top = self.bean_stats[panel_idx-1].rect.bottom + 5
                 self.health_bars[panel_idx].rect.top = self.bean_stats[panel_idx-1].rect.bottom + 27
                 self.bean_labels[panel_idx].rect.top = self.bean_stats[panel_idx - 1].rect.bottom + 3
 
-            self.xp_bar.rect.top = 34 + 35 * self.active_bean_stat
+            self.xp_bar.rect.top = self.y+34 + 35 * self.active_bean_stat
 
-            self.level_label.rect.top = 41 + 35 * self.active_bean_stat
+            self.level_label.rect.top = self.y+41 + 35 * self.active_bean_stat
             self.level_label.rect.right = self.background.rect.right - 7
 
             panel_idx += 1
