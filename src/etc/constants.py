@@ -28,6 +28,9 @@ XP_BAR_BLUE = (19, 82, 196)
 ENERGY_BAR_YELLOW = (225, 241, 45)
 ENERGY_BAR_ORANGE = (193, 110, 29)
 
+GUI_BACKING = (40, 48, 48)
+GUI_FILL = (248, 248, 216)
+
 # Terrain Generation Constants
 
 tile_w = 48
