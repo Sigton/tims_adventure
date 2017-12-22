@@ -41,8 +41,8 @@
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="400">
+              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/src/engines.py" />
         <option value="$PROJECT_DIR$/src/hud.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
-        <option value="$PROJECT_DIR$/src/terrain/hud.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/terrain/hud.py" />
       </list>
     </option>
   </component>
@@ -317,13 +317,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00633" summary="Random beans now have shadows">
-      <created>1513796964781</created>
-      <option name="number" value="00633" />
-      <option name="presentableId" value="LOCAL-00633" />
-      <option name="project" value="LOCAL" />
-      <updated>1513796964781</updated>
     </task>
     <task id="LOCAL-00634" summary="Added game_won attribute to DuelController">
       <created>1513807703497</created>
@@ -661,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513983169780</updated>
     </task>
-    <option name="localTasksCounter" value="682" />
+    <task id="LOCAL-00682" summary="Tidying up HUD.update()">
+      <created>1513983576157</created>
+      <option name="number" value="00682" />
+      <option name="presentableId" value="LOCAL-00682" />
+      <option name="project" value="LOCAL" />
+      <updated>1513983576157</updated>
+    </task>
+    <option name="localTasksCounter" value="683" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -738,7 +738,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on DuelPlayer class" />
     <MESSAGE value="Added position attributes" />
     <MESSAGE value="Added more attributes to DuelPlayer" />
     <MESSAGE value="More specific with except statement" />
@@ -763,7 +762,8 @@
     <MESSAGE value="Calling hud.update" />
     <MESSAGE value="Added list of health bars" />
     <MESSAGE value="Correctly position health bars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correctly position health bars" />
+    <MESSAGE value="Tidying up HUD.update()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidying up HUD.update()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1104,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        <state relative-caret-position="400">
+          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding />
         </state>
       </provider>

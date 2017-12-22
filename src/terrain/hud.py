@@ -15,7 +15,7 @@ class HUD:
         self.background = gui_components.Fill(0, 0, 200, 209, constants.GUI_BACKING)
 
         self.bean_stats = [gui_components.Fill(5, 5+35*n, 190, 30, constants.GUI_FILL) for n in range(5)]
-        self.health_bars = [gui_components.ProgressBar(9, 27+36*n, 182, 2,
+        self.health_bars = [gui_components.ProgressBar(9, 27+36*n, 182, 4,
                                                        (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
                             for n in range(5)]
 
@@ -30,7 +30,8 @@ class HUD:
 
     def update_components(self):
 
-        pass
+        for bar in self.health_bars:
+            bar.update(0)
 
     def fix_positions(self):
 
