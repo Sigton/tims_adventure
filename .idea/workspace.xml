@@ -36,8 +36,8 @@
                 <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="540">
-                        <caret line="273" column="82" lean-forward="false" selection-start-line="271" selection-start-column="51" selection-end-line="273" selection-end-column="82" />
+                      <state relative-caret-position="520">
+                        <caret line="272" column="86" lean-forward="false" selection-start-line="272" selection-start-column="86" selection-end-line="272" selection-end-column="86" />
                         <folding>
                           <element signature="e#0#13#0" expanded="true" />
                         </folding>
@@ -71,8 +71,8 @@
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="49" column="107" lean-forward="false" selection-start-line="49" selection-start-column="107" selection-end-line="49" selection-end-column="107" />
+            <state relative-caret-position="-344">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -376,13 +376,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00641" summary="Added winner attribute">
-      <created>1513885241996</created>
-      <option name="number" value="00641" />
-      <option name="presentableId" value="LOCAL-00641" />
-      <option name="project" value="LOCAL" />
-      <updated>1513885241997</updated>
     </task>
     <task id="LOCAL-00642" summary="Font size is now variable">
       <created>1513885541387</created>
@@ -720,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513984925015</updated>
     </task>
-    <option name="localTasksCounter" value="690" />
+    <task id="LOCAL-00690" summary="XP bar updates">
+      <created>1513985034962</created>
+      <option name="number" value="00690" />
+      <option name="presentableId" value="LOCAL-00690" />
+      <option name="project" value="LOCAL" />
+      <updated>1513985034962</updated>
+    </task>
+    <option name="localTasksCounter" value="691" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,7 +732,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -797,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Actually that would cause issues" />
     <MESSAGE value="DuelPlayer now works" />
     <MESSAGE value="Removing code duplication" />
     <MESSAGE value="Saving more code" />
@@ -822,7 +821,8 @@
     <MESSAGE value="Added list of bean names" />
     <MESSAGE value="Fixing the labels" />
     <MESSAGE value="Added an xp bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added an xp bar" />
+    <MESSAGE value="XP bar updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="XP bar updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1140,16 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="273" column="82" lean-forward="false" selection-start-line="271" selection-start-column="51" selection-end-line="273" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -1168,10 +1158,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="272" column="86" lean-forward="false" selection-start-line="272" selection-start-column="86" selection-end-line="272" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="49" column="107" lean-forward="false" selection-start-line="49" selection-start-column="107" selection-end-line="49" selection-end-column="107" />
+        <state relative-caret-position="-344">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>
