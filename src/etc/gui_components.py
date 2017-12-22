@@ -132,12 +132,24 @@ class Fill:
 
     def __init__(self, x, y, width, height, color):
 
+        self.color = color
+
         self.image = pygame.Surface([width, height]).convert()
         self.image.fill(color)
 
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+
+    def resize(self, width, height):
+
+        old_pos = self.rect.topleft
+
+        self.image = pygame.Surface([width, height]).convert()
+        self.image.fill(self.color)
+
+        self.rect = self.image.get_rect()
+        self.rect.topleft = old_pos
 
     def draw(self, display):
 
