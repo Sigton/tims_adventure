@@ -177,9 +177,9 @@ class DuelController:
             move_no = possible_moves[random.randint(0, len(possible_moves)-1)]
 
             if move_no < 2:
-                self.player.hp -= int(self.enemy.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"])
-                if self.player.hp <= 0:
-                    self.player.hp = 0
+                self.player.meta.hp -= int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"])
+                if self.player.meta.hp <= 0:
+                    self.player.meta.hp = 0
 
                     self.game_won = True
                     self.game_won_counter = 120
@@ -188,12 +188,12 @@ class DuelController:
 
                 self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
-                self.enemy.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
-                if self.enemy.xp >= int((constants.level_up_base *
-                                        (constants.level_up_multiplier ** self.enemy.level))):
-                    self.enemy.xp = self.enemy.xp % int((constants.level_up_base *
-                                                        (constants.level_up_multiplier ** self.enemy.level)))
-                    self.enemy.level += 1
+                self.enemy.meta.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
+                if self.enemy.meta.xp >= int((constants.level_up_base *
+                                        (constants.level_up_multiplier ** self.enemy.meta.level))):
+                    self.enemy.meta.xp = self.enemy.meta.xp % int((constants.level_up_base *
+                                                        (constants.level_up_multiplier ** self.enemy.meta.level)))
+                    self.enemy.meta.level += 1
 
                 self.turn = 0
                 self.turn_cool_down = constants.turn_cool_down
@@ -223,9 +223,9 @@ class DuelController:
 
         if button_id < 2:
 
-            self.enemy.hp -= int(self.player.attack * moves[self.player.meta.moves[button_id]]["str_mod"])
-            if self.enemy.hp <= 0:
-                self.enemy.hp = 0
+            self.enemy.meta.hp -= int(self.player.meta.attack * moves[self.player.meta.moves[button_id]]["str_mod"])
+            if self.enemy.meta.hp <= 0:
+                self.enemy.meta.hp = 0
 
                 self.game_won = True
                 self.game_won_counter = 120
@@ -234,12 +234,12 @@ class DuelController:
 
             self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
 
-            self.player.xp += moves[self.player.meta.moves[button_id]]["xp"]
-            if self.player.xp >= int((constants.level_up_base *
-                                     (constants.level_up_multiplier ** self.player.level))):
-                self.player.xp = self.player.xp % int((constants.level_up_base *
-                                                      (constants.level_up_multiplier ** self.player.level)))
-                self.player.level += 1
+            self.player.meta.xp += moves[self.player.meta.moves[button_id]]["xp"]
+            if self.player.meta.xp >= int((constants.level_up_base *
+                                     (constants.level_up_multiplier ** self.player.meta.level))):
+                self.player.meta.xp = self.player.meta.xp % int((constants.level_up_base *
+                                                      (constants.level_up_multiplier ** self.player.meta.level)))
+                self.player.meta.level += 1
 
             self.turn = 1
             self.turn_cool_down = constants.turn_cool_down
@@ -254,32 +254,32 @@ class DuelController:
 
     def update_gui_components(self):
 
-        self.player_hp_bar.update(self.player.hp / self.player.max_hp)
-        self.player_xp_bar.update(self.player.xp / (constants.level_up_base *
-                                                    (constants.level_up_multiplier ** self.player.level)))
+        self.player_hp_bar.update(self.player.meta.hp / self.player.meta.max_hp)
+        self.player_xp_bar.update(self.player.meta.xp / (constants.level_up_base *
+                                                         (constants.level_up_multiplier ** self.player.meta.level)))
 
-        self.enemy_hp_bar.update(self.enemy.hp / self.enemy.max_hp)
-        self.enemy_xp_bar.update(self.enemy.xp / (constants.level_up_base *
-                                                  (constants.level_up_multiplier ** self.enemy.level)))
+        self.enemy_hp_bar.update(self.enemy.meta.hp / self.enemy.meta.max_hp)
+        self.enemy_xp_bar.update(self.enemy.meta.xp / (constants.level_up_base *
+                                                       (constants.level_up_multiplier ** self.enemy.meta.level)))
 
-        self.player_energy_bar.update(self.player.energy / self.player.energy)
+        self.player_energy_bar.update(self.player.energy / self.player.meta.energy)
 
-        self.player_hp_label.update("{}/{}".format(self.player.hp, self.player.max_hp))
-        self.enemy_hp_label.update("{}/{}".format(self.enemy.hp, self.enemy.max_hp))
+        self.player_hp_label.update("{}/{}".format(self.player.meta.hp, self.player.meta.max_hp))
+        self.enemy_hp_label.update("{}/{}".format(self.enemy.meta.hp, self.enemy.meta.max_hp))
 
-        self.player_xp_label.update("{}/{}".format(self.player.xp,
+        self.player_xp_label.update("{}/{}".format(self.player.meta.xp,
                                                    int((constants.level_up_base *
                                                         (constants.level_up_multiplier **
-                                                         self.player.level)))))
-        self.enemy_xp_label.update("{}/{}".format(self.enemy.xp,
+                                                         self.player.meta.level)))))
+        self.enemy_xp_label.update("{}/{}".format(self.enemy.meta.xp,
                                                   int((constants.level_up_base *
                                                        (constants.level_up_multiplier **
-                                                        self.enemy.level)))))
+                                                        self.enemy.meta.level)))))
 
-        self.player_energy_label.update("{}/{}".format(self.player.energy, self.player.energy))
+        self.player_energy_label.update("{}/{}".format(self.player.energy, self.player.meta.energy))
 
-        self.player_level_label.update("Level {}".format(self.player.level))
-        self.enemy_level_label.update("Level {}".format(self.enemy.level))
+        self.player_level_label.update("Level {}".format(self.player.meta.level))
+        self.enemy_level_label.update("Level {}".format(self.enemy.meta.level))
 
     def draw(self, display):
 

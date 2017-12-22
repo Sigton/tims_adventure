@@ -17,8 +17,7 @@ class DuelPlayer:
         self.meta = player.meta
         self.facing = facing
 
-        self.energy_max = self.meta.energy
-        self.energy = self.energy_max
+        self.energy = self.meta.energy
 
         self.image = pygame.transform.scale(self.meta.images[self.facing],
                                             (300, 300) if self.facing == "R" else (230, 230))
