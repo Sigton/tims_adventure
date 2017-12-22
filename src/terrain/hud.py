@@ -21,8 +21,20 @@ class HUD:
 
     def update(self):
 
-        if self.bean_stats[self.active_bean_stat].rect.height == 30:
-            pass
+        panel_idx = 0
+        for stat_panel in self.bean_stats:
+            if panel_idx == self.active_bean_stat:
+                if not stat_panel.rect.height == 60:
+                    stat_panel.resize(stat_panel.rect.width, 60)
+            else:
+                if not stat_panel.rect.height == 30:
+                    stat_panel.resize(stat_panel.rect.width, 30)
+
+            if panel_idx == 0:
+                stat_panel.rect.top = 5
+            else:
+                stat_panel.rect.top = self.bean_stats[panel_idx-1].rect.bottom + 5
+            panel_idx += 1
 
     def draw(self, display):
 
