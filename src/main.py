@@ -2,10 +2,10 @@ import sys
 
 import pygame
 
-from src import sounds
+from src.engines import sounds, particles
 from src.etc import constants
 from src.terrain import chunks
-from src.entities import bean_image_loader, player, particles, icons
+from src.entities import bean_image_loader, player, icons
 from src.duel import duel_controller
 
 """
