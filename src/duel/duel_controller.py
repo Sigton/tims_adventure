@@ -312,20 +312,12 @@ class DuelController:
 
     def shake_players(self):
 
-        if self.player.shake_timer < self.player.shake:
-            c = self.player.shake_distance
-            self.player.rect.x += (c-(c/math.pow(self.player.shake_w, 2))*math.pow(
-                self.player.shake_timer
-                , 2)) * self.player.shake_direction
-            self.player.shake_timer += 1
-        else:
-            self.player.rect.x = 75
-
-        if self.enemy.shake_timer < self.enemy.shake:
-            c = self.enemy.shake_distance
-            self.enemy.rect.x += (c-(c/math.pow(self.enemy.shake_w, 2))*math.pow(
-                self.enemy.shake_timer
-                , 2)) * self.enemy.shake_direction
-            self.enemy.shake_timer += 1
-        else:
-            self.enemy.rect.x = 640
+        for entity in (self.player, self.enemy):
+            if entity.shake_timer < entity.shake:
+                c = entity.shake_distance
+                entity.rect.x += (c-(c/math.pow(entity.shake_w, 2))*math.pow(
+                    entity.shake_timer
+                    , 2)) * entity.shake_direction
+                entity.shake_timer += 1
+            else:
+                entity.rect.x = entity.default_x
