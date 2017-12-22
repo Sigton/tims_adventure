@@ -20,8 +20,11 @@ class HUD:
         self.health_bars = [gui_components.ProgressBar(9, 27+36*n, 182, 4,
                                                        (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
                             for n in range(5)]
+        self.bean_labels = [gui_components.Label(9, 3+40*n, "{} Bean".format(self.player.beans[n].bean),
+                                                 False, 20, constants.BLACK)
+                            for n in range(5)]
 
-        self.components = [self.background] + self.bean_stats + self.health_bars
+        self.components = [self.background] + self.bean_stats + self.health_bars + self.bean_labels
 
         self.active_bean_stat = 0
 
