@@ -6,10 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/terrain/hud.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/particles.py" afterPath="$PROJECT_DIR$/src/engines/particles.py" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
-      <change beforePath="$PROJECT_DIR$/src/sounds.py" afterPath="$PROJECT_DIR$/src/engines/sounds.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -117,6 +126,8 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/engines.py" />
+        <option value="$PROJECT_DIR$/src/hud.py" />
+        <option value="$PROJECT_DIR$/src/terrain/hud.py" />
       </list>
     </option>
   </component>
@@ -160,7 +171,7 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="engines" type="462c0819:PsiDirectoryNode" />
+              <item name="terrain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,11 +186,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bean_rpg\src\terrain" />
       <recent name="D:\bean_rpg\src\engines" />
       <recent name="D:\bean_rpg\src\duel" />
       <recent name="D:\bean_rpg\src\entities" />
       <recent name="D:\bean_rpg\src\terrain\generators" />
-      <recent name="D:\bean_rpg\src\etc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,13 +285,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00619" summary="Updated main.py">
-      <created>1513785525018</created>
-      <option name="number" value="00619" />
-      <option name="presentableId" value="LOCAL-00619" />
-      <option name="project" value="LOCAL" />
-      <updated>1513785525018</updated>
     </task>
     <task id="LOCAL-00620" summary="Ability to switch game mode into the duel">
       <created>1513785588766</created>
@@ -618,13 +622,21 @@
       <option name="project" value="LOCAL" />
       <updated>1513949512816</updated>
     </task>
-    <option name="localTasksCounter" value="668" />
+    <task id="LOCAL-00668" summary="Created engines directory">
+      <created>1513961688099</created>
+      <option name="number" value="00668" />
+      <option name="presentableId" value="LOCAL-00668" />
+      <option name="project" value="LOCAL" />
+      <updated>1513961688099</updated>
+    </task>
+    <option name="localTasksCounter" value="669" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -694,7 +706,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added turn cool down to constants" />
     <MESSAGE value="Added winner attribute" />
     <MESSAGE value="Font size is now variable" />
     <MESSAGE value="Implementing winner label" />
@@ -719,7 +730,8 @@
     <MESSAGE value="DuelPlayer now works" />
     <MESSAGE value="Removing code duplication" />
     <MESSAGE value="Saving more code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving more code" />
+    <MESSAGE value="Created engines directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created engines directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -728,13 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1070,6 +1075,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding />
         </state>
       </provider>
