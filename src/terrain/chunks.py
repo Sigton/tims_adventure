@@ -9,7 +9,7 @@ import math
 import collections
 
 from src.etc import constants, containers
-from src.terrain import tiles
+from src.terrain import tiles, hud
 from src.terrain.tile_types import *
 from src.entities import entities
 
@@ -103,6 +103,8 @@ class ChunkController:
             self.create_chunk(n)
 
         self.assorted_entities = []
+
+        self.hud = hud.HUD()
 
     def update(self):
 
@@ -380,6 +382,8 @@ class ChunkController:
             dec.draw(display)
 
         [entity.draw(display) for entity in self.assorted_entities]
+
+        self.hud.draw(display)
 
     def assign_chunk_pos(self, chunk, movement):
 
