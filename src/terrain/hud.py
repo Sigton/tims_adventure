@@ -36,8 +36,11 @@ class HUD:
 
             if panel_idx == 0:
                 stat_panel.rect.top = 5
+                self.health_bars[panel_idx].rect.top = 27
             else:
                 stat_panel.rect.top = self.bean_stats[panel_idx-1].rect.bottom + 5
+                self.health_bars[panel_idx].rect.top = self.bean_stats[panel_idx-1].rect.bottom + 27
+
             panel_idx += 1
 
     def draw(self, display):
