@@ -10,7 +10,9 @@ games heads-up display
 
 class HUD:
 
-    def __init__(self):
+    def __init__(self, player):
+
+        self.player = player
 
         self.background = gui_components.Fill(0, 0, 200, 209, constants.GUI_BACKING)
 

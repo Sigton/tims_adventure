@@ -104,7 +104,7 @@ class ChunkController:
 
         self.assorted_entities = []
 
-        self.hud = hud.HUD()
+        self.hud = hud.HUD(self.player)
 
     def update(self):
 
