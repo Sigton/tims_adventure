@@ -14,10 +14,13 @@ games heads-up display
 
 class HUD:
 
-    def __init__(self, player):
+    def __init__(self, player, master):
 
-        self.health_display = HealthDisplay(player)
-        self.bean_select = BeanSelectPopup(player, 297, 452)
+        self.player = player
+        self.master = master
+
+        self.health_display = HealthDisplay(self.player, self.master)
+        self.bean_select = BeanSelectPopup(self.player, self.master, 297, 452)
 
         self.components = [
             self.health_display
@@ -42,9 +45,10 @@ class HUD:
 
 class HealthDisplay:
 
-    def __init__(self, player, x=0, y=0):
+    def __init__(self, player, master, x=0, y=0):
 
         self.player = player
+        self.master = master
 
         self.active_bean_stat = 0
 
@@ -132,9 +136,10 @@ class HealthDisplay:
 
 class BeanSelectPopup:
 
-    def __init__(self, player, x, y):
+    def __init__(self, player, master, x, y):
 
         self.player = player
+        self.master = master
 
         self.x = x
         self.y = y

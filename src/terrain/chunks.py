@@ -104,7 +104,7 @@ class ChunkController:
 
         self.assorted_entities = []
 
-        self.hud = hud.HUD(self.player)
+        self.hud = hud.HUD(self.player, self)
         self.hud_on = True
 
         self.bean_select_popup_open = False
