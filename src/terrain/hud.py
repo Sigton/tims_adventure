@@ -138,10 +138,10 @@ class BeanSelectPopup:
             gui_components.Label(self.x+9, self.y+21, "Which bean accepts the challenge?", False, 20, constants.BLACK)
         ]
 
-        self.options = [gui_components.Label(self.x+27, self.y+39+18*n, "{}{} Bean".format(
+        self.options = [gui_components.Label(self.x+35, self.y+39+18*n, "{}{} Bean".format(
             self.player.beans[n].bean[0].upper(), self.player.beans[n].bean[1:]),
                                              False, 20, constants.BLACK) for n in range(5)]
-        self.options.append(gui_components.Label(self.x+27, self.y+39+18*len(self.options), "I decline the challenge",
+        self.options.append(gui_components.Label(self.x+35, self.y+39+18*len(self.options), "I decline the challenge",
                                                  False, 20, constants.BLACK))
 
         self.space_label = gui_components.Label(self.background.rect.centerx, self.y+159, "<Space to Select>",
