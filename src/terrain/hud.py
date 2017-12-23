@@ -175,10 +175,10 @@ class BeanSelectPopup:
 
         if e.type == KEYUP:
 
-            if e.key == K_UP:
+            if e.key in (K_UP, K_w):
                 self.selected_option = (self.selected_option-1) % 6
 
-            elif e.key == K_DOWN:
+            elif e.key in (K_DOWN, K_s):
                 self.selected_option = (self.selected_option+1) % 6
 
     def draw(self, display):
