@@ -118,6 +118,10 @@ class ChunkController:
 
                 self.master.game_exit = True
 
+            elif self.bean_select_popup_open:
+
+                pass
+
             elif event.type == KEYDOWN:
 
                 if event.key in (K_UP, K_w):
