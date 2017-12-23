@@ -67,6 +67,8 @@ shadow_offset = 0.85
 
 interaction_distance = 75
 
+health_update_rate = 120
+
 # Tile information
 
 animation_thresholds = {

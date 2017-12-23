@@ -107,6 +107,8 @@ class ChunkController:
         self.hud = hud.HUD(self.player)
         self.hud_on = True
 
+        self.update_health_counter = 0
+
     def update(self):
 
         for event in pygame.event.get():
@@ -287,6 +289,12 @@ class ChunkController:
 
         if self.hud_on:
             self.hud.update()
+
+        if self.update_health_counter % constants.health_update_rate == 0:
+            for bean in self.player.beans:
+                if bean.meta.hp < bean.meta.max_hp:
+                    bean.meta.hp += 1
+        self.update_health_counter += 1
 
     def update_chunks(self):
 
