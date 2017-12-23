@@ -108,6 +108,7 @@ class ChunkController:
         self.hud_on = True
 
         self.bean_select_popup_open = False
+        self.selected_bean = None
 
         self.update_health_counter = 0
 
@@ -152,7 +153,7 @@ class ChunkController:
 
                 elif event.key == K_SPACE:
 
-                    if not self.bean_select_popup_open:
+                    if not self.bean_select_popup_open and self.selected_bean is None:
                         self.bean_select_popup_open = True
 
                         self.hud.open_widget(self.hud.bean_select)
@@ -177,6 +178,7 @@ class ChunkController:
                                                                    list(ordered_ranges.items())[0][1])
 
                             self.master.game_mode = 1
+                            self.selected_bean = None
 
         if self.bean_select_popup_open:
             self.update_hud()
