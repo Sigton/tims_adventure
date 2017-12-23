@@ -1,6 +1,7 @@
 import pygame
 
 from src.etc import gui_components, constants
+from src.entities import icons
 
 """
 hud.py
@@ -147,10 +148,13 @@ class BeanSelectPopup:
         self.space_label = gui_components.Label(self.background.rect.centerx, self.y+159, "<Space to Select>",
                                                 True, 20, (79, 80, 68))
 
+        self.arrow = icons.ArrowPointer(self.x, self.y)
+
         self.components = [
             self.background,
             self.background_fill,
-            self.space_label
+            self.space_label,
+            self.arrow
         ] + self.title + self.options
 
     def update(self):
