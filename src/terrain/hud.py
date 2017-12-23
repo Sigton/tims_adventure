@@ -131,6 +131,8 @@ class BeanSelectPopup:
         self.x = x
         self.y = y
 
+        self.selected_option = 0
+
         self.background = gui_components.Fill(self.x, self.y, 366, 176, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 356, 166, constants.GUI_FILL)
 
@@ -148,7 +150,7 @@ class BeanSelectPopup:
         self.space_label = gui_components.Label(self.background.rect.centerx, self.y+159, "<Space to Select>",
                                                 True, 20, (79, 80, 68))
 
-        self.arrow = icons.ArrowPointer(self.x, self.y)
+        self.arrow = icons.ArrowPointer(self.x+23, self.y+44+18*self.selected_option)
 
         self.components = [
             self.background,
