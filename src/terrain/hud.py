@@ -1,4 +1,5 @@
 import pygame
+from pygame.locals import *
 
 from src.etc import gui_components, constants
 from src.entities import icons
@@ -169,6 +170,16 @@ class BeanSelectPopup:
     def update(self):
 
         self.arrow = icons.ArrowPointer(self.x + 23, self.y + 44 + 18 * self.selected_option)
+
+    def handle_event(self, e):
+
+        if e.type == KEYUP:
+
+            if e.key == K_UP:
+                self.selected_option = (self.selected_option-1) % 6
+
+            elif e.key == K_DOWN:
+                self.selected_option = (self.selected_option+1) % 6
 
     def draw(self, display):
 
