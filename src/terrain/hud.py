@@ -186,6 +186,16 @@ class BeanSelectPopup:
             elif e.key in (K_DOWN, K_s):
                 self.selected_option = (self.selected_option+1) % 6
 
+            elif e.key == K_SPACE:
+
+                if self.selected_option == 5:
+                    self.master.hud.close_widget(self.master.hud.bean_select)
+                    self.master.enemy_to_duel = None
+
+                    self.master.bean_select_popup_open = False
+                else:
+                    self.master.start_duel(self.selected_option)
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]

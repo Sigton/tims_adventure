@@ -108,7 +108,7 @@ class ChunkController:
         self.hud_on = True
 
         self.bean_select_popup_open = False
-        self.selected_bean = None
+        self.enemy_to_duel = None
 
         self.update_health_counter = 0
 
@@ -153,32 +153,27 @@ class ChunkController:
 
                 elif event.key == K_SPACE:
 
-                    if not self.bean_select_popup_open and self.selected_bean is None:
-                        self.bean_select_popup_open = True
+                    chunk_entities = []
+                    for chunk in self.live_chunks:
+                        [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
 
-                        self.hud.open_widget(self.hud.bean_select)
-                    else:
-                        chunk_entities = []
-                        for chunk in self.live_chunks:
-                            [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
+                    entity_range = {}
+                    for entity in chunk_entities:
+                        distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
+                                             + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
 
-                        entity_range = {}
-                        for entity in chunk_entities:
-                            distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
-                                                 + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
+                        if distance < constants.interaction_distance:
+                            entity_range[distance] = entity
 
-                            if distance < constants.interaction_distance:
-                                entity_range[distance] = entity
+                    ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
+                    self.enemy_to_duel = list(ordered_ranges.items())[0][1]
 
-                        ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
+                    if len(ordered_ranges):
 
-                        if len(ordered_ranges):
+                        if not self.bean_select_popup_open:
+                            self.bean_select_popup_open = True
 
-                            self.master.duel_controller.begin_duel(self.player.beans[0],
-                                                                   list(ordered_ranges.items())[0][1])
-
-                            self.master.game_mode = 1
-                            self.selected_bean = None
+                            self.hud.open_widget(self.hud.bean_select)
 
         if self.bean_select_popup_open:
             self.update_hud()
@@ -303,6 +298,15 @@ class ChunkController:
                 self.delete_chunk(chunk)
 
         self.update_hud()
+
+    def start_duel(self, bean):
+        self.master.duel_controller.begin_duel(self.player.beans[bean], self.enemy_to_duel)
+
+        self.master.game_mode = 1
+        self.enemy_to_duel = None
+
+        self.bean_select_popup_open = False
+        self.hud.close_widget(self.hud.bean_select)
 
     def update_hud(self):
 
