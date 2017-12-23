@@ -74,3 +74,8 @@ class ArrowPointer(Icon):
     def __init__(self, x, y):
 
         Icon.__init__(self, sprite_sheet.get_image(40, 0, 7, 14), x, y)
+
+    def realign(self, x, y):
+
+        self.rect.x = x
+        self.rect.y = y

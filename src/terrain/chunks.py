@@ -120,7 +120,7 @@ class ChunkController:
 
             elif self.bean_select_popup_open:
 
-                pass
+                self.hud.bean_select.handle_event(event)
 
             elif event.type == KEYDOWN:
 
