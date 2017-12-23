@@ -131,10 +131,15 @@ class BeanSelectPopup:
         self.background = gui_components.Fill(self.x, self.y, 366, 176, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 356, 166, constants.GUI_FILL)
 
+        self.title = [
+            gui_components.Label(self.x+9, self.y+3, "You have been challenged to fight!", False, 20, constants.BLACK),
+            gui_components.Label(self.x+9, self.y+21, "Which bean accepts the challenge?", False, 20, constants.BLACK)
+        ]
+
         self.components = [
             self.background,
             self.background_fill
-        ]
+        ] + self.title
 
     def update(self):
 
