@@ -174,9 +174,6 @@ class ChunkController:
 
                             self.master.game_mode = 1
 
-                elif event.key == K_h:
-                    self.hud_on = False if self.hud_on else True
-
         if self.direction and self.moving == 0:
 
             # If we're at the edge then don't allow moving towards the edge
