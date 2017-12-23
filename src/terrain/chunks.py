@@ -107,6 +107,8 @@ class ChunkController:
         self.hud = hud.HUD(self.player)
         self.hud_on = True
 
+        self.popup_open = False
+
         self.update_health_counter = 0
 
     def update(self):
@@ -146,25 +148,31 @@ class ChunkController:
 
                 elif event.key == K_SPACE:
 
-                    chunk_entities = []
-                    for chunk in self.live_chunks:
-                        [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
+                    if not self.popup_open:
+                        self.popup_open = True
 
-                    entity_range = {}
-                    for entity in chunk_entities:
-                        distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
-                                             + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
+                        self.hud.open_widget(self.hud.bean_select)
+                    else:
+                        chunk_entities = []
+                        for chunk in self.live_chunks:
+                            [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
 
-                        if distance < constants.interaction_distance:
-                            entity_range[distance] = entity
+                        entity_range = {}
+                        for entity in chunk_entities:
+                            distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
+                                                 + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
 
-                    ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
+                            if distance < constants.interaction_distance:
+                                entity_range[distance] = entity
 
-                    if len(ordered_ranges):
+                        ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
 
-                        self.master.duel_controller.begin_duel(self.player.beans[0], list(ordered_ranges.items())[0][1])
+                        if len(ordered_ranges):
 
-                        self.master.game_mode = 1
+                            self.master.duel_controller.begin_duel(self.player.beans[0],
+                                                                   list(ordered_ranges.items())[0][1])
+
+                            self.master.game_mode = 1
 
                 elif event.key == K_h:
                     self.hud_on = False if self.hud_on else True

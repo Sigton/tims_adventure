@@ -19,8 +19,7 @@ class HUD:
         self.bean_select = BeanSelectPopup(player, 480, 360)
 
         self.components = [
-            self.health_display,
-            self.bean_select
+            self.health_display
         ]
 
     def update(self):
