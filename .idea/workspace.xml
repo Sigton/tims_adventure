@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/entities/player.py" afterPath="$PROJECT_DIR$/src/entities/player.py" />
       <change beforePath="$PROJECT_DIR$/src/terrain/hud.py" afterPath="$PROJECT_DIR$/src/terrain/hud.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,14 +69,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="1136">
+              <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entities/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,9 +189,9 @@
         <option value="$PROJECT_DIR$/src/hud.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
+        <option value="$PROJECT_DIR$/src/entities/player.py" />
       </list>
     </option>
   </component>
@@ -356,13 +367,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00651" summary="Big text is now black">
-      <created>1513886580896</created>
-      <option name="number" value="00651" />
-      <option name="presentableId" value="LOCAL-00651" />
-      <option name="project" value="LOCAL" />
-      <updated>1513886580896</updated>
     </task>
     <task id="LOCAL-00652" summary="Now shows winner label after a delay">
       <created>1513886991801</created>
@@ -700,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514017395824</updated>
     </task>
-    <option name="localTasksCounter" value="700" />
+    <task id="LOCAL-00700" summary="Made health and xp bar wider">
+      <created>1514017508251</created>
+      <option name="number" value="00700" />
+      <option name="presentableId" value="LOCAL-00700" />
+      <option name="project" value="LOCAL" />
+      <updated>1514017508251</updated>
+    </task>
+    <option name="localTasksCounter" value="701" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -777,7 +788,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding more to the gui" />
     <MESSAGE value="Working on active bean stats" />
     <MESSAGE value="Defined a resize function for gui_components" />
     <MESSAGE value="Added dynamics to the HUD" />
@@ -802,7 +812,8 @@
     <MESSAGE value="Beans are random" />
     <MESSAGE value="Level label now updates" />
     <MESSAGE value="Fixed bug with gui_components.Label" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with gui_components.Label" />
+    <MESSAGE value="Made health and xp bar wider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made health and xp bar wider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1129,16 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1840">
@@ -1149,11 +1150,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="1136">
+          <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>

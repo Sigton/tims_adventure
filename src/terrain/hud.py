@@ -23,14 +23,15 @@ class HUD:
 
         self.background = gui_components.Fill(self.x, self.y, 200, 209, constants.GUI_BACKING)
 
-        self.bean_stats = [gui_components.Fill(self.x+5, self.y+5+35*n, 190, 30, constants.GUI_FILL) for n in range(5)]
+        self.bean_stats = [gui_components.Fill(self.x+5, self.y+5+35*n, 190, 30, constants.GUI_FILL)
+                           for n in range(len(self.player.beans))]
         self.health_bars = [gui_components.ProgressBar(self.x+9, self.y+27+36*n, 182, 5,
                                                        (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
-                            for n in range(5)]
+                            for n in range(len(self.player.beans))]
         self.bean_labels = [gui_components.Label(self.x+9, self.y+3+40*n, "{}{} Bean".format(
             self.player.beans[n].bean[0].upper(), self.player.beans[n].bean[1:]),
                                                  False, 20, constants.BLACK)
-                            for n in range(5)]
+                            for n in range(len(self.player.beans))]
 
         self.xp_bar = gui_components.ProgressBar(self.x+9, self.y+37+34*self.active_bean_stat, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
