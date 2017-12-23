@@ -105,6 +105,7 @@ class ChunkController:
         self.assorted_entities = []
 
         self.hud = hud.HUD(self.player)
+        self.hud_on = True
 
     def update(self):
 
@@ -162,6 +163,9 @@ class ChunkController:
                         self.master.duel_controller.begin_duel(self.player.beans[0], list(ordered_ranges.items())[0][1])
 
                         self.master.game_mode = 1
+
+                elif event.key == K_h:
+                    self.hud_on = False if self.hud_on else True
 
         if self.direction and self.moving == 0:
 
@@ -281,7 +285,8 @@ class ChunkController:
             for chunk in to_remove:
                 self.delete_chunk(chunk)
 
-        self.hud.update()
+        if self.hud_on:
+            self.hud.update()
 
     def update_chunks(self):
 
@@ -385,7 +390,8 @@ class ChunkController:
 
         [entity.draw(display) for entity in self.assorted_entities]
 
-        self.hud.draw(display)
+        if self.hud_on:
+            self.hud.draw(display)
 
     def assign_chunk_pos(self, chunk, movement):
 
