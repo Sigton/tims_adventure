@@ -161,7 +161,7 @@ class BeanSelectPopup:
 
     def update(self):
 
-        pass
+        self.arrow = icons.ArrowPointer(self.x + 23, self.y + 44 + 18 * self.selected_option)
 
     def draw(self, display):
 
