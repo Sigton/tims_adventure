@@ -22,7 +22,7 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.beans = [Bean(random.choice(list(bean_image_loader.beans.keys()))) for n in range(3)]
+        self.beans = [Bean(random.choice(list(bean_image_loader.beans.keys()))) for n in range(5)]
 
         self.trail = [[0, 0],
                       [-1, 0],
