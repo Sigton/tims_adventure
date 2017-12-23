@@ -38,11 +38,12 @@ class Icon:
 
     def update(self):
 
-        self.flash_counter += 1
+        if self.flash:
+            self.flash_counter += 1
 
-        if self.flash_counter > self.flash_threshold:
-            self.flash_counter = 0
-            self.visible = False if self.visible else True
+            if self.flash_counter > self.flash_threshold:
+                self.flash_counter = 0
+                self.visible = False if self.visible else True
 
     def draw(self, display):
 
@@ -66,3 +67,10 @@ class PressSpace(Icon):
     def __init__(self, x, y):
 
         Icon.__init__(self, sprite_sheet.get_image(0, 0, 40, 28), x, y, True, 40)
+
+
+class ArrowPointer(Icon):
+
+    def __init__(self, x, y):
+
+        Icon.__init__(self, sprite_sheet.get_image(40, 0, 7, 14), x, y)
