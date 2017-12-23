@@ -102,8 +102,11 @@ class Label:
 
     def __init__(self, x, y, text, center=False, text_size=32, color=constants.WHITE):
 
+        self.color = color
+        self.text_size = text_size
+
         if text_size != constants.default_font_size:
-            self.image = constants.load_font(text_size, False).render(text, False, color)
+            self.image = constants.load_font(self.text_size, False).render(text, False, self.color)
         else:
             self.image = constants.font.render(text, False, color)
         self.rect = self.image.get_rect()
@@ -119,7 +122,7 @@ class Label:
 
         old_pos = self.rect.topleft
 
-        self.image = constants.font.render(text, False, constants.WHITE)
+        self.image = self.image = constants.load_font(self.text_size, False).render(text, False, self.color)
         self.rect = self.image.get_rect()
         self.rect.topleft = old_pos
 
