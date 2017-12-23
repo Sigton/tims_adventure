@@ -12,6 +12,25 @@ games heads-up display
 
 class HUD:
 
+    def __init__(self, player):
+
+        self.health_display = HealthDisplay(player)
+
+        self.components = [
+            self.health_display
+        ]
+
+    def update(self):
+
+        [component.update() for component in self.components]
+
+    def draw(self, display):
+
+        [component.draw(display) for component in self.components]
+
+
+class HealthDisplay:
+
     def __init__(self, player, x=0, y=0):
 
         self.player = player
