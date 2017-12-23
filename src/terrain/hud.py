@@ -15,7 +15,7 @@ class HUD:
     def __init__(self, player):
 
         self.health_display = HealthDisplay(player)
-        self.bean_select = BeanSelectPopup(480, 360)
+        self.bean_select = BeanSelectPopup(player, 480, 360)
 
         self.components = [
             self.health_display,
@@ -123,7 +123,9 @@ class HealthDisplay:
 
 class BeanSelectPopup:
 
-    def __init__(self, x, y):
+    def __init__(self, player, x, y):
+
+        self.player = player
 
         self.x = x
         self.y = y
@@ -136,10 +138,15 @@ class BeanSelectPopup:
             gui_components.Label(self.x+9, self.y+21, "Which bean accepts the challenge?", False, 20, constants.BLACK)
         ]
 
+        self.options = [gui_components.Label(self.x+27, self.y+39+18*n, self.player.beans[n].bean,
+                                             False, 20, constants.BLACK) for n in range(5)]
+        self.options.append(gui_components.Label(self.x+27, self.y+39+18*len(self.options), "I decline the challenge",
+                                                 False, 20, constants.BLACK))
+
         self.components = [
             self.background,
             self.background_fill
-        ] + self.title
+        ] + self.title + self.options
 
     def update(self):
 
