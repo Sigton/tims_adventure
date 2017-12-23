@@ -117,3 +117,18 @@ class HealthDisplay:
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
+
+
+class BeanSelectPopup:
+
+    def __init__(self):
+
+        self.components = []
+
+    def update(self):
+
+        pass
+
+    def draw(self, display):
+
+        [component.draw(display) for component in self.components]
