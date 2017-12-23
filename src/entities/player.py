@@ -1,5 +1,6 @@
 import math
 import operator
+import random
 
 import pygame
 
@@ -21,7 +22,7 @@ class Player(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.beans = [Bean("red")] + [Bean("yellow") for n in range(4)]
+        self.beans = [Bean(random.choice(list(bean_image_loader.beans.keys()))) for n in range(5)]
 
         self.trail = [[0, 0],
                       [-1, 0],
