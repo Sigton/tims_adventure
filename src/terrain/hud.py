@@ -15,9 +15,11 @@ class HUD:
     def __init__(self, player):
 
         self.health_display = HealthDisplay(player)
+        self.bean_select = BeanSelectPopup(480, 360)
 
         self.components = [
-            self.health_display
+            self.health_display,
+            self.bean_select
         ]
 
     def update(self):
@@ -121,7 +123,10 @@ class HealthDisplay:
 
 class BeanSelectPopup:
 
-    def __init__(self):
+    def __init__(self, x, y):
+
+        self.x = x
+        self.y = y
 
         self.components = []
 
