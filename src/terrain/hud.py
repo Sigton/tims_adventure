@@ -64,6 +64,8 @@ class HUD:
                                                                   self.player.beans[self.active_bean_stat].meta.level)))
         )
 
+        self.level_label.update("Level {}".format(self.player.beans[self.active_bean_stat].meta.level))
+
     def fix_positions(self):
 
         panel_idx = 0
