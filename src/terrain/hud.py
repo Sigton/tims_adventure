@@ -27,6 +27,14 @@ class HUD:
 
         [component.update() for component in self.components]
 
+    def open_widget(self, widget):
+
+        self.components.append(widget)
+
+    def close_widget(self, widget):
+
+        self.components.remove(widget)
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
