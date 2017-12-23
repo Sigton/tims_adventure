@@ -17,12 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="135" column="22" lean-forward="true" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="141" column="81" lean-forward="false" selection-start-line="141" selection-start-column="81" selection-end-line="141" selection-end-column="81" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -33,7 +33,7 @@
       <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="2000">
               <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
               <folding />
             </state>
@@ -166,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,6 +207,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,13 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00664" summary="Actually that would cause issues">
-      <created>1513948280398</created>
-      <option name="number" value="00664" />
-      <option name="presentableId" value="LOCAL-00664" />
-      <option name="project" value="LOCAL" />
-      <updated>1513948280398</updated>
     </task>
     <task id="LOCAL-00665" summary="DuelPlayer now works">
       <created>1513948801763</created>
@@ -660,14 +653,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514055416086</updated>
     </task>
-    <option name="localTasksCounter" value="713" />
+    <task id="LOCAL-00713" summary="Fixed string formatting">
+      <created>1514055496240</created>
+      <option name="number" value="00713" />
+      <option name="presentableId" value="LOCAL-00713" />
+      <option name="project" value="LOCAL" />
+      <updated>1514055496240</updated>
+    </task>
+    <option name="localTasksCounter" value="714" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21695095" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21908316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -737,7 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing the labels" />
     <MESSAGE value="Added an xp bar" />
     <MESSAGE value="XP bar updates" />
     <MESSAGE value="Fixed XP bar positioning" />
@@ -762,7 +761,8 @@
     <MESSAGE value="Created backing and backing fill" />
     <MESSAGE value="Added title to popup" />
     <MESSAGE value="Added options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added options" />
+    <MESSAGE value="Fixed string formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed string formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1074,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="24" column="96" lean-forward="false" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,15 +1088,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="2000">
           <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
           <folding />
         </state>
@@ -1106,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="135" column="22" lean-forward="true" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="141" column="81" lean-forward="false" selection-start-line="141" selection-start-column="81" selection-end-line="141" selection-end-column="81" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

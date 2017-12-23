@@ -144,9 +144,13 @@ class BeanSelectPopup:
         self.options.append(gui_components.Label(self.x+27, self.y+39+18*len(self.options), "I decline the challenge",
                                                  False, 20, constants.BLACK))
 
+        self.space_label = gui_components.Label(self.background.rect.centerx, self.y+159, "<Space to Select>",
+                                                True, 20, (79, 80, 68))
+
         self.components = [
             self.background,
-            self.background_fill
+            self.background_fill,
+            self.space_label
         ] + self.title + self.options
 
     def update(self):
