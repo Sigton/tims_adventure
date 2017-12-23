@@ -17,7 +17,7 @@ class HUD:
     def __init__(self, player):
 
         self.health_display = HealthDisplay(player)
-        self.bean_select = BeanSelectPopup(player, 480, 360)
+        self.bean_select = BeanSelectPopup(player, 297, 452)
 
         self.components = [
             self.health_display
@@ -151,7 +151,7 @@ class BeanSelectPopup:
 
         self.options = [gui_components.Label(self.x+35, self.y+39+18*n, "{}{} Bean".format(
             self.player.beans[n].bean[0].upper(), self.player.beans[n].bean[1:]),
-                                             False, 20, constants.BLACK) for n in range(5)]
+                                             False, 20, constants.BLACK) for n in range(len(self.player.beans))]
         self.options.append(gui_components.Label(self.x+35, self.y+39+18*len(self.options), "I decline the challenge",
                                                  False, 20, constants.BLACK))
 

@@ -5,7 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main.py" line="72" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Support for W &amp; S">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/terrain/hud.py" afterPath="$PROJECT_DIR$/src/terrain/hud.py" />
     </list>
@@ -21,8 +21,8 @@
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="153" column="109" lean-forward="false" selection-start-line="153" selection-start-column="109" selection-end-line="153" selection-end-column="109" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -326,13 +326,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00677" summary="Defined a resize function for gui_components">
-      <created>1513965543878</created>
-      <option name="number" value="00677" />
-      <option name="presentableId" value="LOCAL-00677" />
-      <option name="project" value="LOCAL" />
-      <updated>1513965543878</updated>
     </task>
     <task id="LOCAL-00678" summary="Added dynamics to the HUD">
       <created>1513982462882</created>
@@ -670,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514059681243</updated>
     </task>
-    <option name="localTasksCounter" value="726" />
+    <task id="LOCAL-00726" summary="Support for W &amp; S">
+      <created>1514059752722</created>
+      <option name="number" value="00726" />
+      <option name="presentableId" value="LOCAL-00726" />
+      <option name="project" value="LOCAL" />
+      <updated>1514059752722</updated>
+    </task>
+    <option name="localTasksCounter" value="727" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -747,7 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Now supports &lt;5 beans" />
     <MESSAGE value="HUD is now toggle-able" />
     <MESSAGE value="Player health auto regenerates" />
     <MESSAGE value="Added new icon to icons.png" />
@@ -772,7 +771,8 @@
     <MESSAGE value="Events should be sent to popup when active" />
     <MESSAGE value="Created event handling function" />
     <MESSAGE value="Got the arrow pointed moving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got the arrow pointed moving" />
+    <MESSAGE value="Support for W &amp; S" />
+    <option name="LAST_COMMIT_MESSAGE" value="Support for W &amp; S" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,8 +1114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="153" column="109" lean-forward="false" selection-start-line="153" selection-start-column="109" selection-end-line="153" selection-end-column="109" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
