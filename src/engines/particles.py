@@ -126,3 +126,12 @@ class FireParticle(Particle):
         self.image = particle_sprite_sheet.get_image_src_alpha(0, 0, 20, 20)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
+
+
+class SnowParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image_src_alpha(20, 0, 11, 11)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
