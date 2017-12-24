@@ -40,8 +40,8 @@
                 <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="455">
-                        <caret line="393" column="29" lean-forward="false" selection-start-line="393" selection-start-column="29" selection-end-line="393" selection-end-column="29" />
+                      <state relative-caret-position="415">
+                        <caret line="391" column="47" lean-forward="false" selection-start-line="391" selection-start-column="47" selection-end-line="391" selection-end-column="47" />
                         <folding />
                       </state>
                     </provider>
@@ -56,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="containers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="containers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="141" column="33" lean-forward="false" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
+            <state relative-caret-position="252">
+              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="619">
@@ -185,9 +185,9 @@
         <option value="$PROJECT_DIR$/src/entities/shadows.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
-        <option value="$PROJECT_DIR$/src/etc/containers.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/etc/containers.py" />
       </list>
     </option>
   </component>
@@ -369,13 +369,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00702" summary="HUD is now toggle-able">
-      <created>1514018042707</created>
-      <option name="number" value="00702" />
-      <option name="presentableId" value="LOCAL-00702" />
-      <option name="project" value="LOCAL" />
-      <updated>1514018042707</updated>
     </task>
     <task id="LOCAL-00703" summary="Player health auto regenerates">
       <created>1514019091475</created>
@@ -713,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514126244925</updated>
     </task>
-    <option name="localTasksCounter" value="751" />
+    <task id="LOCAL-00751" summary="Checks to make sure the enemy can spawn on that tile">
+      <created>1514131701010</created>
+      <option name="number" value="00751" />
+      <option name="presentableId" value="LOCAL-00751" />
+      <option name="project" value="LOCAL" />
+      <updated>1514131701010</updated>
+    </task>
+    <option name="localTasksCounter" value="752" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -790,7 +790,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Support for W &amp; S" />
     <MESSAGE value="Adjusting the bean select menu" />
     <MESSAGE value="Added selected_bean attribute" />
     <MESSAGE value="ChunkController now accessible from HUD widgets" />
@@ -815,7 +814,8 @@
     <MESSAGE value="Added to_grid attribute to tiles" />
     <MESSAGE value="Added it for animated tiles too" />
     <MESSAGE value="Finished containers.Chunk.get_tile_at()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished containers.Chunk.get_tile_at()" />
+    <MESSAGE value="Checks to make sure the enemy can spawn on that tile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checks to make sure the enemy can spawn on that tile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1141,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="393" column="29" lean-forward="false" selection-start-line="393" selection-start-column="29" selection-end-line="393" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -1157,18 +1149,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="141" column="33" lean-forward="false" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="391" column="47" lean-forward="false" selection-start-line="391" selection-start-column="47" selection-end-line="391" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
         </state>
       </provider>
