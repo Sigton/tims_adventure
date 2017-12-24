@@ -19,11 +19,12 @@ class Tile:
         # is part of the ground.
 
         self.tile_code = tile_code
+        self.to_grid = to_grid
 
         self.image = images[tile_num]
 
         self.rect = self.image.get_rect()
-        if to_grid:
+        if self.to_grid:
             self.rect.x = x * constants.tile_w
             self.rect.y = y * constants.tile_h
         else:
