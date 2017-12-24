@@ -382,7 +382,8 @@ class ChunkController:
             else:
                 new_chunk.add_dec(tiles.Tile(int(tile), x, y, tile, to_grid))
 
-        new_chunk.add_entity(entities.RandomBean(random.randint(0, 20), random.randint(0, 15), True))
+        for n in range(random.choice(constants.selection_matrix)):
+            new_chunk.add_entity(entities.RandomBean(random.randint(0, 20), random.randint(0, 15), True))
 
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
