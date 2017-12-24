@@ -31,6 +31,9 @@ class SoundEngine:
         # When the music channel stops playing it should que another sound to be played
         self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
 
+        # Mix the volumes
+        [m.set_volume(0.02) for m in self.music]
+
     def play_sounds(self):
 
         # Plays all the queued sounds
