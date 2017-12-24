@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" afterPath="$PROJECT_DIR$/src/engines/particles.py" />
+      <change beforePath="$PROJECT_DIR$/src/duel/moves.py" afterPath="$PROJECT_DIR$/src/duel/moves.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="particles.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="136" column="87" lean-forward="false" selection-start-line="136" selection-start-column="87" selection-end-line="136" selection-end-column="87" />
+            <state relative-caret-position="172">
+              <caret line="106" column="25" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moves.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -119,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
-        <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/shadows.py" />
@@ -131,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
+        <option value="$PROJECT_DIR$/src/duel/moves.py" />
       </list>
     </option>
   </component>
@@ -312,13 +322,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00708" summary="Updates to Icon adn new ArrowPointer class">
-      <created>1514052471998</created>
-      <option name="number" value="00708" />
-      <option name="presentableId" value="LOCAL-00708" />
-      <option name="project" value="LOCAL" />
-      <updated>1514052471999</updated>
     </task>
     <task id="LOCAL-00709" summary="Added bean select to active widgets for debug purposes">
       <created>1514052997945</created>
@@ -656,13 +659,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514135523400</updated>
     </task>
-    <option name="localTasksCounter" value="757" />
+    <task id="LOCAL-00757" summary="Added SnowParticle class">
+      <created>1514147821186</created>
+      <option name="number" value="00757" />
+      <option name="presentableId" value="LOCAL-00757" />
+      <option name="project" value="LOCAL" />
+      <updated>1514147821186</updated>
+    </task>
+    <option name="localTasksCounter" value="758" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22334754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22334754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -732,7 +743,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reduced turn cool down for faster battling" />
     <MESSAGE value="Updated sound engine" />
     <MESSAGE value="Defined music end event" />
     <MESSAGE value="Set end event for music channel" />
@@ -757,7 +767,8 @@
     <MESSAGE value="And it is debugged" />
     <MESSAGE value="Cool beans" />
     <MESSAGE value="Added new particle to particles.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new particle to particles.png" />
+    <MESSAGE value="Added SnowParticle class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SnowParticle class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1004,14 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
@@ -1112,8 +1115,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="136" column="87" lean-forward="false" selection-start-line="136" selection-start-column="87" selection-end-line="136" selection-end-column="87" />
+        <state relative-caret-position="172">
+          <caret line="106" column="25" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
