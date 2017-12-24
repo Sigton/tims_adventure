@@ -115,6 +115,10 @@ class Chunk(object):
 
         return self.tiles
 
+    def get_tile_at(self, x, y):
+
+        pass
+
     def add_dec(self, dec):
 
         self.decs.append(dec)
