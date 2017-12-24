@@ -15,13 +15,15 @@ class SoundEngine:
         self.music_channel = pygame.mixer.Channel(0)
 
         # Load all the sounds
-        self.music = [pygame.mixer.Sound("src/resources/ambient1.ogg"),
-                      pygame.mixer.Sound("src/resources/ambient2.ogg")]
+        self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
+        self.music2 = pygame.mixer.Sound("src/resources/ambient2.ogg")
+
+        self.music = [self.music1,
+                      self.music2]
 
         # Link the sounds to the channels they should play in
-        # Music channel isn't linked to a specific sound because
-        # it has multiple sounds that will play in it.
-        self.channel_linkup = {}
+        self.channel_linkup = {self.music1: self.music_channel,
+                               self.music2: self.music_channel}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []

@@ -125,11 +125,12 @@ class ChunkController:
 
             elif event.type == constants.MUSIC_START_EVENT:
 
-                pass
+                self.master.sound_engine.queue_sound(random.choice(self.master.sound_engine.music))
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, 0)
 
             elif event.type == constants.MUSIC_END_EVENT:
 
-                pass
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(20, 60)*1000)
 
             elif event.type == KEYDOWN:
 
