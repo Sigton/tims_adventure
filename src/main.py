@@ -55,6 +55,8 @@ class Main:
 
     def run(self):
 
+        pygame.time.set_timer(constants.MUSIC_START_EVENT, 1000)
+
         while not self.game_exit:
 
             if self.game_mode == 0:

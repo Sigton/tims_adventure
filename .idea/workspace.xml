@@ -2,12 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
-    <bookmark url="file://$PROJECT_DIR$/src/main.py" line="70" />
+    <bookmark url="file://$PROJECT_DIR$/src/main.py" line="72" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/engines/sounds.py" afterPath="$PROJECT_DIR$/src/engines/sounds.py" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="212">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -32,8 +32,8 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="127" column="99" lean-forward="true" selection-start-line="127" selection-start-column="99" selection-end-line="127" selection-end-column="99" />
+            <state relative-caret-position="355">
+              <caret line="127" column="104" lean-forward="true" selection-start-line="127" selection-start-column="104" selection-end-line="127" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -159,9 +159,9 @@
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
@@ -344,13 +344,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00688" summary="Fixing the labels">
-      <created>1513984594026</created>
-      <option name="number" value="00688" />
-      <option name="presentableId" value="LOCAL-00688" />
-      <option name="project" value="LOCAL" />
-      <updated>1513984594026</updated>
     </task>
     <task id="LOCAL-00689" summary="Added an xp bar">
       <created>1513984925015</created>
@@ -688,7 +681,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514112830198</updated>
     </task>
-    <option name="localTasksCounter" value="737" />
+    <task id="LOCAL-00737" summary="Implementing music">
+      <created>1514113326329</created>
+      <option name="number" value="00737" />
+      <option name="presentableId" value="LOCAL-00737" />
+      <option name="project" value="LOCAL" />
+      <updated>1514113326329</updated>
+    </task>
+    <option name="localTasksCounter" value="738" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -765,7 +765,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added options" />
     <MESSAGE value="Fixed string formatting" />
     <MESSAGE value="Added helpful message" />
     <MESSAGE value="Small changes" />
@@ -790,7 +789,8 @@
     <MESSAGE value="Set end event for music channel" />
     <MESSAGE value="Defined music start event" />
     <MESSAGE value="Adding event handling for music events" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding event handling for music events" />
+    <MESSAGE value="Implementing music" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing music" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,7 +1101,7 @@
         <state relative-caret-position="272">
           <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1116,8 +1116,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1134,8 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="127" column="99" lean-forward="true" selection-start-line="127" selection-start-column="99" selection-end-line="127" selection-end-column="99" />
+        <state relative-caret-position="355">
+          <caret line="127" column="104" lean-forward="true" selection-start-line="127" selection-start-column="104" selection-end-line="127" selection-end-column="104" />
           <folding />
         </state>
       </provider>
