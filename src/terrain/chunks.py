@@ -387,13 +387,14 @@ class ChunkController:
             entity_y = random.randint(0, 14)
 
             attempts = 0
-            while new_chunk.get_tile_at(entity_x, entity_y).tile_code not in spawn_tiles or attempts < 10:
+            while new_chunk.get_tile_at(entity_x, entity_y).tile_code not in spawn_tiles and attempts < 10:
                 entity_x = random.randint(0, 19)
                 entity_y = random.randint(0, 14)
 
                 attempts += 1
 
-            new_chunk.add_entity(entities.RandomBean(entity_x, entity_y, True))
+            if attempts < 10:
+                new_chunk.add_entity(entities.RandomBean(entity_x, entity_y, True))
 
         # Add them to the dict of tiles
         self.map_tiles[chunk] = new_chunk
