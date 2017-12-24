@@ -35,7 +35,8 @@ class SoundEngine:
         self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
 
         # Mix the volumes
-        [m.set_volume(0.02) for m in self.music]
+        [m.set_volume(0.06) for m in self.music]
+        self.punch.set_volume(0.1)
 
     def play_sounds(self):
 
