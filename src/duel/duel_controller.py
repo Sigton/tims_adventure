@@ -119,6 +119,12 @@ class DuelController:
 
     def begin_duel(self, player, enemy):
 
+        try:
+            self.text.remove(self.attack_main_label)
+            self.text.remove(self.attack_alt_label)
+        except ValueError:
+            pass
+
         self.player = DuelPlayer(player, "R")
         self.enemy = DuelPlayer(enemy, "L")
 
