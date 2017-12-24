@@ -104,3 +104,8 @@ positional_moves = [
 ]
 
 turn_cool_down = 80
+
+
+# User Events
+
+MUSIC_END_EVENT = pygame.USEREVENT+1
