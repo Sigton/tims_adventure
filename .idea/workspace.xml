@@ -26,8 +26,8 @@
                 <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="192">
-                        <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                      <state relative-caret-position="517">
+                        <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
                         <folding />
                       </state>
                     </provider>
@@ -40,8 +40,8 @@
                 <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="735">
-                        <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+                      <state relative-caret-position="535">
+                        <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
                         <folding />
                       </state>
                     </provider>
@@ -349,13 +349,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00699" summary="Fixed bug with gui_components.Label">
-      <created>1514017395824</created>
-      <option name="number" value="00699" />
-      <option name="presentableId" value="LOCAL-00699" />
-      <option name="project" value="LOCAL" />
-      <updated>1514017395824</updated>
     </task>
     <task id="LOCAL-00700" summary="Made health and xp bar wider">
       <created>1514017508251</created>
@@ -693,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514125644224</updated>
     </task>
-    <option name="localTasksCounter" value="748" />
+    <task id="LOCAL-00748" summary="Added to_grid attribute to tiles">
+      <created>1514125801172</created>
+      <option name="number" value="00748" />
+      <option name="presentableId" value="LOCAL-00748" />
+      <option name="project" value="LOCAL" />
+      <updated>1514125801172</updated>
+    </task>
+    <option name="localTasksCounter" value="749" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -770,7 +770,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Events should be sent to popup when active" />
     <MESSAGE value="Created event handling function" />
     <MESSAGE value="Got the arrow pointed moving" />
     <MESSAGE value="Support for W &amp; S" />
@@ -795,7 +794,8 @@
     <MESSAGE value="Added constants for entity spawning" />
     <MESSAGE value="Incorporated the selection matrix" />
     <MESSAGE value="Defining new function in containers.Chunk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defining new function in containers.Chunk" />
+    <MESSAGE value="Added to_grid attribute to tiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to_grid attribute to tiles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1129,18 +1129,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="535">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="517">
+          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
           <folding />
         </state>
       </provider>

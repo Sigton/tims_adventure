@@ -68,12 +68,13 @@ class AnimatedTile:
     def __init__(self, tile_images_index, x, y, tile_code, to_grid):
 
         self.tile_code = tile_code
+        self.to_grid = to_grid
 
         self.images = [tile for tile in images[tile_images_index]]
         self.image = self.images[0]
 
         self.rect = self.image.get_rect()
-        if to_grid:
+        if self.to_grid:
             self.rect.x = x * constants.tile_w
             self.rect.y = y * constants.tile_h
         else:
