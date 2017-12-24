@@ -57,3 +57,8 @@ shadow_x_offset = {
     "duel_player": -35,
     "duel_enemy": -10
 }
+
+
+spawn_tiles = [
+    "0000"
+]
