@@ -1,5 +1,7 @@
 import pygame
 
+from src.etc import constants
+
 # This deals with the loading and playing of sounds.
 # Each sound has it's own channel so that we don't
 # run out of channels.
@@ -23,6 +25,9 @@ class SoundEngine:
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
+
+        # When the music channel stops playing it should que another sound to be played
+        self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
 
     def play_sounds(self):
 
