@@ -109,3 +109,4 @@ turn_cool_down = 80
 # User Events
 
 MUSIC_END_EVENT = pygame.USEREVENT+1
+MUSIC_START_EVENT = pygame.USEREVENT+2
