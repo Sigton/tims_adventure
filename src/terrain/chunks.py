@@ -123,6 +123,14 @@ class ChunkController:
 
                 self.hud.bean_select.handle_event(event)
 
+            elif event.type == constants.MUSIC_START_EVENT:
+
+                pass
+
+            elif event.type == constants.MUSIC_END_EVENT:
+
+                pass
+
             elif event.type == KEYDOWN:
 
                 if event.key in (K_UP, K_w):
