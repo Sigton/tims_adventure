@@ -1,3 +1,5 @@
+from src.etc import constants
+
 """
 containers.py
 """
@@ -117,7 +119,13 @@ class Chunk(object):
 
     def get_tile_at(self, x, y):
 
-        pass
+        for tile in self.tiles:
+            if tile.to_grid:
+                if tile.offset_x // constants.tile_w == x and \
+                   tile.offset_y // constants.tile_h == y:
+                    return tile
+
+        return None
 
     def add_dec(self, dec):
 
