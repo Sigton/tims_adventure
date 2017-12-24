@@ -103,4 +103,4 @@ positional_moves = [
     "Burn"
 ]
 
-turn_cool_down = 120
+turn_cool_down = 80
