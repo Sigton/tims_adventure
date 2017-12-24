@@ -26,7 +26,8 @@ class ParticleEngine:
         self.fade_in_particles = []
 
         self.particle_types = {
-            "fire": FireParticle
+            "fire": FireParticle,
+            "snow": SnowParticle
         }
 
     def update(self):

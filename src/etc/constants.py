@@ -104,7 +104,8 @@ shake_moves = [
     "Tackle"
 ]
 positional_moves = [
-    "Burn"
+    "Burn",
+    "Freeze"
 ]
 
 turn_cool_down = 80
