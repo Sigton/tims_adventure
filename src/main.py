@@ -55,8 +55,6 @@ class Main:
 
     def run(self):
 
-        self.sound_engine.queue_sound([self.sound_engine.ambient2_sound, -1])
-
         while not self.game_exit:
 
             if self.game_mode == 0:
