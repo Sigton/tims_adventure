@@ -78,6 +78,8 @@ class RandomBean:
         if self.interaction_icon is not None:
             self.interaction_icon.realign(x, y)
 
+        self.shadow.update()
+
     def update(self):
 
         if self.interaction_icon is not None:

@@ -40,12 +40,14 @@ class Shadow:
         except (AttributeError, KeyError):
             self.x_offset = 0
 
-        self.rect = pygame.Rect((parent.rect.x+self.x_offset, parent.rect.y+self.height_offset), (self.width, self.height))
-
         self.image = pygame.Surface([self.width, self.height])
 
         self.image.fill(constants.WHITE)
         self.image.set_colorkey(constants.WHITE)
+
+        self.rect = self.image.get_rect()
+        self.rect.centerx = self.parent.rect.centerx + self.x_offset
+        self.rect.y = self.parent.rect.y + self.height_offset
 
         pygame.draw.ellipse(self.image, constants.BLACK, [0, 0, self.width, self.height])
         self.image.set_alpha(128)

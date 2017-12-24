@@ -47,6 +47,9 @@ class Tile:
         self.rect.x = x + self.offset_x
         self.rect.y = y + self.offset_y
 
+        if self.has_shadow:
+            self.shadow.update()
+
     def draw(self, display):
 
         if self.has_shadow:
