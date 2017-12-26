@@ -187,10 +187,7 @@ class DuelController:
                 if self.player.meta.hp <= 0:
                     self.player.meta.hp = 0
 
-                    self.game_won = True
-                    self.game_won_counter = 120
-
-                    self.winner = "Opponent"
+                    self.end_duel("Opponent")
 
                 self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
@@ -215,10 +212,7 @@ class DuelController:
 
             else:
 
-                self.game_won = True
-                self.game_won_counter = 10
-
-                self.winner = "Player"
+                self.end_duel("Player")
 
             self.turn = 0
             self.turn_cool_down = constants.turn_cool_down
@@ -244,10 +238,7 @@ class DuelController:
             if self.enemy.meta.hp <= 0:
                 self.enemy.meta.hp = 0
 
-                self.game_won = True
-                self.game_won_counter = 120
-
-                self.winner = "Player"
+                self.end_duel("Player")
 
             self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
 
@@ -273,10 +264,7 @@ class DuelController:
 
         else:
 
-            self.game_won = True
-            self.game_won_counter = 10
-
-            self.winner = "Enemy"
+            self.end_duel("Opponent")
 
         self.turn = 1
         self.turn_cool_down = constants.turn_cool_down
@@ -352,3 +340,10 @@ class DuelController:
                 entity.shake_timer += 1
             else:
                 entity.rect.x = entity.default_x
+
+    def end_duel(self, winner):
+
+        self.game_won = True
+        self.game_won_counter = 10
+
+        self.winner = winner
