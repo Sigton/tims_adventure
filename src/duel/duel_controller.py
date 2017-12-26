@@ -201,9 +201,6 @@ class DuelController:
                                                         (constants.level_up_multiplier ** self.enemy.meta.level)))
                     self.enemy.meta.level += 1
 
-                self.turn = 0
-                self.turn_cool_down = constants.turn_cool_down
-
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
                 if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
@@ -211,6 +208,9 @@ class DuelController:
                 elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
                     move = move.format(220, 520)
                 exec(move)
+
+            self.turn = 0
+            self.turn_cool_down = constants.turn_cool_down
 
         self.shake_players()
 
