@@ -248,9 +248,6 @@ class DuelController:
                                                                  self.player.meta.level)))
                 self.player.meta.level += 1
 
-            self.turn = 1
-            self.turn_cool_down = constants.turn_cool_down
-
             move = moves[self.player.meta.moves[button_id]]["effects"]
 
             if moves[self.player.meta.moves[button_id]]["name"] in constants.shake_moves:
@@ -258,6 +255,9 @@ class DuelController:
             elif moves[self.player.meta.moves[button_id]]["name"] in constants.positional_moves:
                 move = move.format(750, 170)
             exec(move)
+
+        self.turn = 1
+        self.turn_cool_down = constants.turn_cool_down
 
     def update_gui_components(self):
 
