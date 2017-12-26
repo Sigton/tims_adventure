@@ -193,9 +193,10 @@ class DuelController:
 
                 self.enemy.meta.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
                 if self.enemy.meta.xp >= int((constants.level_up_base *
-                                        (constants.level_up_multiplier ** self.enemy.meta.level))):
+                                             (constants.level_up_multiplier ** self.enemy.meta.level))):
                     self.enemy.meta.xp = self.enemy.meta.xp % int((constants.level_up_base *
-                                                        (constants.level_up_multiplier ** self.enemy.meta.level)))
+                                                                  (constants.level_up_multiplier **
+                                                                   self.enemy.meta.level)))
                     self.enemy.meta.level += 1
 
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
@@ -347,3 +348,13 @@ class DuelController:
         self.game_won_counter = 10
 
         self.winner = winner
+
+        if self.winner == "Player":
+            entity = self.player
+        else:
+            entity = self.enemy
+
+        entity.meta.xp += entity.energy
+        entity.energy = 0
+
+        entity.meta.level += 1
