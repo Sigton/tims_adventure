@@ -209,6 +209,17 @@ class DuelController:
                     move = move.format(220, 520)
                 exec(move)
 
+            elif move_no < 3:
+
+                pass
+
+            else:
+
+                self.game_won = True
+                self.game_won_counter = 10
+
+                self.winner = "Player"
+
             self.turn = 0
             self.turn_cool_down = constants.turn_cool_down
 
@@ -255,6 +266,17 @@ class DuelController:
             elif moves[self.player.meta.moves[button_id]]["name"] in constants.positional_moves:
                 move = move.format(750, 170)
             exec(move)
+
+        elif button_id < 3:
+
+            pass
+
+        else:
+
+            self.game_won = True
+            self.game_won_counter = 10
+
+            self.winner = "Enemy"
 
         self.turn = 1
         self.turn_cool_down = constants.turn_cool_down
