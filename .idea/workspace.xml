@@ -21,8 +21,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="332" column="28" lean-forward="true" selection-start-line="332" selection-start-column="28" selection-end-line="332" selection-end-column="28" />
+            <state relative-caret-position="416">
+              <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -312,13 +312,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00721" summary="Temporarily removed toggling HUD">
-      <created>1514058722632</created>
-      <option name="number" value="00721" />
-      <option name="presentableId" value="LOCAL-00721" />
-      <option name="project" value="LOCAL" />
-      <updated>1514058722632</updated>
     </task>
     <task id="LOCAL-00722" summary="Disabled game updating when popup is open">
       <created>1514059029246</created>
@@ -656,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514304158307</updated>
     </task>
-    <option name="localTasksCounter" value="770" />
+    <task id="LOCAL-00770" summary="Winner gains left over energy and goes up a level">
+      <created>1514305765206</created>
+      <option name="number" value="00770" />
+      <option name="presentableId" value="LOCAL-00770" />
+      <option name="project" value="LOCAL" />
+      <updated>1514305765206</updated>
+    </task>
+    <option name="localTasksCounter" value="771" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -733,7 +733,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I believe the shadow bug is fixed" />
     <MESSAGE value="Added list of tiles suitable for spawning on" />
     <MESSAGE value="Added constants for entity spawning" />
     <MESSAGE value="Incorporated the selection matrix" />
@@ -758,7 +757,8 @@
     <MESSAGE value="Player can now use an item and retreat" />
     <MESSAGE value="Retreating works" />
     <MESSAGE value="Created end_duel function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created end_duel function" />
+    <MESSAGE value="Winner gains left over energy and goes up a level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Winner gains left over energy and goes up a level" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1097,8 +1097,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="332" column="28" lean-forward="true" selection-start-line="332" selection-start-column="28" selection-end-line="332" selection-end-column="28" />
+        <state relative-caret-position="416">
+          <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
           <folding />
         </state>
       </provider>

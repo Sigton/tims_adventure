@@ -184,19 +184,19 @@ class DuelController:
 
             if move_no < 2:
                 self.player.meta.hp -= int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"])
+                self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
+
                 if self.player.meta.hp <= 0:
                     self.player.meta.hp = 0
 
                     self.end_duel("Opponent")
 
-                self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
-
                 self.enemy.meta.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
                 if self.enemy.meta.xp >= int((constants.level_up_base *
-                                             (constants.level_up_multiplier ** self.enemy.meta.level))):
+                                              (constants.level_up_multiplier ** self.enemy.meta.level))):
                     self.enemy.meta.xp = self.enemy.meta.xp % int((constants.level_up_base *
-                                                                  (constants.level_up_multiplier **
-                                                                   self.enemy.meta.level)))
+                                                                   (constants.level_up_multiplier **
+                                                                    self.enemy.meta.level)))
                     self.enemy.meta.level += 1
 
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
@@ -236,19 +236,19 @@ class DuelController:
         if button_id < 2:
 
             self.enemy.meta.hp -= int(self.player.meta.attack * moves[self.player.meta.moves[button_id]]["str_mod"])
+            self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
+
             if self.enemy.meta.hp <= 0:
                 self.enemy.meta.hp = 0
 
                 self.end_duel("Player")
 
-            self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
-
             self.player.meta.xp += moves[self.player.meta.moves[button_id]]["xp"]
             if self.player.meta.xp >= int((constants.level_up_base *
-                                          (constants.level_up_multiplier ** self.player.meta.level))):
+                                           (constants.level_up_multiplier ** self.player.meta.level))):
                 self.player.meta.xp = self.player.meta.xp % int((constants.level_up_base *
-                                                                (constants.level_up_multiplier **
-                                                                 self.player.meta.level)))
+                                                                 (constants.level_up_multiplier **
+                                                                  self.player.meta.level)))
                 self.player.meta.level += 1
 
             move = moves[self.player.meta.moves[button_id]]["effects"]
