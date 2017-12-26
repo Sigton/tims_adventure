@@ -133,6 +133,6 @@ class SnowParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(20, 0, 8, 8)
+        self.image = particle_sprite_sheet.get_image_src_alpha(20, 0, 16, 16)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
