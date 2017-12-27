@@ -15,7 +15,7 @@ class Brain:
         self.inputs = inputs
         self.outputs = outputs
 
-        self.network = [{n: [1 for x in range(self.outputs)]} for n in range(self.inputs)]
+        self.weights = [[1 for n in range(inputs)] for m in range(outputs)]
 
     def get_output(self, in_data):
 
