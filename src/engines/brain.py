@@ -12,7 +12,10 @@ class Brain:
 
     def __init__(self, inputs, outputs):
 
-        self.network = [{n: [1 for x in range(outputs)]} for n in range(inputs)]
+        self.inputs = inputs
+        self.outputs = outputs
+
+        self.network = [{n: [1 for x in range(self.outputs)]} for n in range(self.inputs)]
 
 
 if __name__ == "__main__":
