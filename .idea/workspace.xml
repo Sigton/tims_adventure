@@ -18,41 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="254" column="0" lean-forward="true" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="brain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="339" column="107" lean-forward="false" selection-start-line="339" selection-start-column="107" selection-end-line="339" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="containers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -345,13 +315,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00728" summary="Added selected_bean attribute">
-      <created>1514060347007</created>
-      <option name="number" value="00728" />
-      <option name="presentableId" value="LOCAL-00728" />
-      <option name="project" value="LOCAL" />
-      <updated>1514060347007</updated>
     </task>
     <task id="LOCAL-00729" summary="ChunkController now accessible from HUD widgets">
       <created>1514060454698</created>
@@ -689,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514387187846</updated>
     </task>
-    <option name="localTasksCounter" value="777" />
+    <task id="LOCAL-00777" summary="Added no of ins and outs attributes">
+      <created>1514388260769</created>
+      <option name="number" value="00777" />
+      <option name="presentableId" value="LOCAL-00777" />
+      <option name="project" value="LOCAL" />
+      <updated>1514388260769</updated>
+    </task>
+    <option name="localTasksCounter" value="778" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -766,7 +736,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished containers.Chunk.get_tile_at()" />
     <MESSAGE value="Checks to make sure the enemy can spawn on that tile" />
     <MESSAGE value="And it is debugged" />
     <MESSAGE value="Cool beans" />
@@ -791,7 +760,8 @@
     <MESSAGE value="Created brain.py" />
     <MESSAGE value="Created brain" />
     <MESSAGE value="Initialises network data structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialises network data structure" />
+    <MESSAGE value="Added no of ins and outs attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added no of ins and outs attributes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="400">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding />
         </state>
       </provider>
