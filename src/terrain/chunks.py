@@ -336,6 +336,10 @@ class ChunkController:
              if tile.tile_code in animated_tiles]
 
             [dec.update() for dec in self.map_tiles[chunk].decs]
+
+            [self.map_tiles[chunk].remove_entity(entity) for entity in self.map_tiles[chunk].get_entities()
+             if entity.meta.hp <= 0]
+
             [entity.update() for entity in self.map_tiles[chunk].entities]
 
     def create_chunk(self, chunk):
