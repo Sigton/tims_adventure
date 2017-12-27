@@ -12,4 +12,8 @@ class Brain:
 
     def __init__(self, inputs, outputs):
 
-        pass
+        self.network = [{n: [1 for x in range(outputs)]} for n in range(inputs)]
+
+
+if __name__ == "__main__":
+    test_brain = Brain(8, 4)
