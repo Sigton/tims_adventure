@@ -145,7 +145,7 @@ class Chunk(object):
 
     def remove_entity(self, entity):
 
-        del self.entities[self.entities.inex(entity)]
+        del self.entities[self.entities.index(entity)]
 
     def get_entities(self):
 
