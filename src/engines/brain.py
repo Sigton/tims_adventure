@@ -1,3 +1,6 @@
+import random
+import math
+
 """
 brain.py
 
@@ -15,13 +18,14 @@ class Brain:
         self.inputs = inputs
         self.outputs = outputs
 
-        self.weights = [[0 for n in range(inputs)] for m in range(outputs)]
+        self.weights = [[random.uniform(-1.0, 1.0) for n in range(inputs)] for m in range(outputs)]
         self.bias = [0 for n in range(outputs)]
 
     def get_output(self, in_data):
 
-        out_data = [[sum(m) for m in zip(in_data, self.weights[n])] for n in range(self.outputs)]
-        print(out_data)
+        out_data = [sum(x) for x in
+                    [[sum(m) for m in zip(in_data, self.weights[n])] for n in range(self.outputs)]]
+        print(out_data, [math.tanh(x) for x in out_data])
         return out_data.index(max(out_data))
 
 
