@@ -17,6 +17,11 @@ weights_preset = [
     [-1, -2, 1, 1, -0.5, 0.5, 0.5, -4, 3, 1, 1, 3]
 ]
 
+scenarios = [
+    [100, 0, 14, 10, 100, 0, 0, 0, 0, 15, 5, 0],
+    [10, -40, 14, 10, 20, 1, 2, -1, 90, 15, 5, 80]
+]
+
 
 class Brain:
 
@@ -37,6 +42,8 @@ class Brain:
 if __name__ == "__main__":
     test_brain = Brain(12, 4)
 
-    test_data = [80, 20, 14, 10, 70, 3, 2, 1, 20, 15, 5, 30]
-
-    print(test_brain.get_output(test_data))
+    print("Running test scenarios")
+    n = 0
+    for s in scenarios:
+        n += 1
+        print("Scenario {}: {}".format(n, test_brain.get_output(s)))
