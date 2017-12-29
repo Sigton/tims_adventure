@@ -40,6 +40,15 @@ if __name__ == "__main__":
 
     print("Running test scenarios")
     n = 0
+    c = 0
     for s in scenarios:
         n += 1
-        print("Scenario {}: {}".format(n, test_brain.get_output(s[0])))
+
+        o = test_brain.get_output(s[0])
+
+        if int(s[1]) == o:
+            c += 1
+
+        print("Scenario {}: {}. Expected outcome: {}".format(n, o, s[1]))
+
+    print("Success rate: {}".format(c/n*100))
