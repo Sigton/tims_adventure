@@ -34,6 +34,8 @@ for n in range(int(input("How many scenarios:"))):
          hp_lost, m_attack_en, a_attack_en, energy_lost]
     print(s)
     expected_outcome = input("Expected outcome:")
+    if expected_outcome == "":
+        continue
 
     scenarios += [(s, expected_outcome)]
 
