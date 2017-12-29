@@ -6,8 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/saves/training_data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" afterPath="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,24 +34,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training_data.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -529,13 +519,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00741" summary="Added burn sound">
-      <created>1514119472233</created>
-      <option name="number" value="00741" />
-      <option name="presentableId" value="LOCAL-00741" />
-      <option name="project" value="LOCAL" />
-      <updated>1514119472233</updated>
-    </task>
     <task id="LOCAL-00742" summary="Fixed a bug">
       <created>1514119982469</created>
       <option name="number" value="00742" />
@@ -872,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514572674711</updated>
     </task>
-    <option name="localTasksCounter" value="790" />
+    <task id="LOCAL-00790" summary="Created training_data.json">
+      <created>1514572711098</created>
+      <option name="number" value="00790" />
+      <option name="presentableId" value="LOCAL-00790" />
+      <option name="project" value="LOCAL" />
+      <updated>1514572711098</updated>
+    </task>
+    <option name="localTasksCounter" value="791" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -941,7 +931,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjusting particle effects" />
     <MESSAGE value="Enemy can now use an item and retreat" />
     <MESSAGE value="Player can now use an item and retreat" />
     <MESSAGE value="Retreating works" />
@@ -966,7 +955,8 @@
     <MESSAGE value="Fixed things" />
     <MESSAGE value="Keeping the values as integers&#10;" />
     <MESSAGE value="Allowing excaping of scenarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allowing excaping of scenarios" />
+    <MESSAGE value="Created training_data.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created training_data.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1248,21 +1238,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

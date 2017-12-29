@@ -1,7 +1,9 @@
 import random
 import json
 
-scenarios = []
+with open("src/saves/training_data.json") as infile:
+
+    scenarios = json.load(infile)
 
 for n in range(int(input("How many scenarios:"))):
     maxHP = random.randint(100, 250)
@@ -38,4 +40,7 @@ for n in range(int(input("How many scenarios:"))):
         continue
 
     scenarios += [(s, expected_outcome)]
+
+with open("src/saves/training_data.json") as outfile:
+    json.dump(outfile, scenarios)
 
