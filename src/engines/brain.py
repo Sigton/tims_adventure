@@ -30,11 +30,11 @@ class Brain:
 
     def get_output(self, in_data):
 
-        out_data = []
+        out_data = [sum([in_data[n]*weights_preset[x][n] for n in range(self.inputs)]) for x in range(self.outputs)]
         return out_data.index(max(out_data))
 
 
 if __name__ == "__main__":
-    test_brain = Brain(8, 4)
+    test_brain = Brain(12, 4)
 
-    print(test_brain.get_output([1, 0, 1, 1, 0, 0, 1, 0]))
+    print(test_brain.get_output([]))
