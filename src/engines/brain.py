@@ -11,10 +11,10 @@ in the duelling.
 """
 
 weights_preset = [
-    [1, 1.5, 1.5, 0.5, 1.5, 1, 1, 1.5],
-    [1, 1.5, 0.5, 1.5, 1.5, 1, 1, 1.5],
-    [0.5, 0.5, 0.5, 0.5, 0.5, 1.5, 1.5, 0.5],
-    [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    [2, 3, 3, 0.5, 3, 1, 1, 3, 1, 0.5, 1.5, 0.5],
+    [2, 3, 0.5, 3, 3, 1, 1, 3, 1, 1.5, 0.5, 0.5],
+    [0.5, -1.5, 1, 1, -0.5, 3, 3, -1.5, 6, 1.5, 1.5, 3],
+    [-1, -2, 1, 1, -0.5, 0.5, 0.5, -4, 3, 1, 1, 3]
 ]
 
 
@@ -30,9 +30,7 @@ class Brain:
 
     def get_output(self, in_data):
 
-        out_data = [sum(x) for x in
-                    [[sum(m) for m in zip(in_data, self.weights[n])] for n in range(self.outputs)]]
-        print(out_data, [math.tanh(x) for x in out_data])
+        out_data = []
         return out_data.index(max(out_data))
 
 
