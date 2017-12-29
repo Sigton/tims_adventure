@@ -37,4 +37,6 @@ class Brain:
 if __name__ == "__main__":
     test_brain = Brain(12, 4)
 
-    print(test_brain.get_output([]))
+    test_data = [80, 20, 14, 10, 70, 3, 2, 1, 20, 15, 5, 30]
+
+    print(test_brain.get_output(test_data))
