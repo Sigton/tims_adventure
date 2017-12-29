@@ -5,10 +5,10 @@ scenarios = []
 
 for n in range(int(input("How many scenarios:"))):
     maxHP = random.randint(100, 250)
-    HP = maxHP * random.uniform(0, 1)
+    HP = int(maxHP * random.uniform(0, 1))
     hp_lost = maxHP - HP
 
-    playerHP = random.randint(100, 250)*random.uniform(0, 1)
+    playerHP = int(random.randint(100, 250)*random.uniform(0, 1))
 
     hp_diff = HP - playerHP
 
@@ -16,7 +16,7 @@ for n in range(int(input("How many scenarios:"))):
     a_attack_hp = random.randint(5, 30)
 
     max_energy = 100
-    energy = max_energy*random.uniform(0, 1)
+    energy = int(max_energy*random.uniform(0, 1))
     energy_lost = max_energy-energy
 
     no_hp_items = random.choice([0, 0, 0, 0, 1, 1, 1, 2, 2, 3])
@@ -27,8 +27,8 @@ for n in range(int(input("How many scenarios:"))):
 
     level_diff = level-player_level
 
-    m_attack_en = m_attack_hp*random.uniform(0.5, 1.5)
-    a_attack_en = a_attack_hp*random.uniform(0.5, 1.5)
+    m_attack_en = int(m_attack_hp*random.uniform(0.5, 1.5))
+    a_attack_en = int(a_attack_hp*random.uniform(0.5, 1.5))
 
     s = [HP, hp_diff, m_attack_hp, a_attack_hp, energy, no_hp_items, no_en_items, level_diff,
          hp_lost, m_attack_en, a_attack_en, energy_lost]
