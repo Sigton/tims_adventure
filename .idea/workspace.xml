@@ -5,9 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/main.py" line="72" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Now loads and dumps to training_data.json">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" afterPath="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/saves/training_data.json" afterPath="$PROJECT_DIR$/src/saves/training_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,14 +35,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="447">
+              <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training_data.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="67" lean-forward="true" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,6 +89,7 @@
       <find>enemy.attack</find>
       <find>self.player</find>
       <find>self.main</find>
+      <find>\</find>
     </findStrings>
     <replaceStrings>
       <replace>player</replace>
@@ -91,6 +103,7 @@
       <replace>player.meta.max_hp</replace>
       <replace>enemy.meta.attack</replace>
       <replace>entity</replace>
+      <replace>/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
         <option value="$PROJECT_DIR$/src/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/constants.py" />
@@ -150,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
         <option value="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
+        <option value="$PROJECT_DIR$/src/saves/training_data.json" />
       </list>
     </option>
   </component>
@@ -328,7 +341,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/engines" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -518,13 +531,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00742" summary="Fixed a bug">
-      <created>1514119982469</created>
-      <option name="number" value="00742" />
-      <option name="presentableId" value="LOCAL-00742" />
-      <option name="project" value="LOCAL" />
-      <updated>1514119982469</updated>
     </task>
     <task id="LOCAL-00743" summary="I believe the shadow bug is fixed">
       <created>1514122045039</created>
@@ -862,7 +868,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514572711098</updated>
     </task>
-    <option name="localTasksCounter" value="791" />
+    <task id="LOCAL-00791" summary="Now loads and dumps to training_data.json">
+      <created>1514572850590</created>
+      <option name="number" value="00791" />
+      <option name="presentableId" value="LOCAL-00791" />
+      <option name="project" value="LOCAL" />
+      <updated>1514572850590</updated>
+    </task>
+    <option name="localTasksCounter" value="792" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -931,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Enemy can now use an item and retreat" />
     <MESSAGE value="Player can now use an item and retreat" />
     <MESSAGE value="Retreating works" />
     <MESSAGE value="Created end_duel function" />
@@ -956,7 +968,8 @@
     <MESSAGE value="Keeping the values as integers&#10;" />
     <MESSAGE value="Allowing excaping of scenarios" />
     <MESSAGE value="Created training_data.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created training_data.json" />
+    <MESSAGE value="Now loads and dumps to training_data.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now loads and dumps to training_data.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1238,21 +1251,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="447">
+          <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="67" lean-forward="true" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
