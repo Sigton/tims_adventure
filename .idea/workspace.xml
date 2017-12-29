@@ -5,9 +5,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/main.py" line="72" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Now loads and dumps to training_data.json">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" afterPath="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/saves/training_data.json" afterPath="$PROJECT_DIR$/src/saves/training_data.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+            <state relative-caret-position="56">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -51,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="67" lean-forward="true" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+              <caret line="0" column="2805" lean-forward="false" selection-start-line="0" selection-start-column="2805" selection-end-line="0" selection-end-column="2805" />
               <folding />
             </state>
           </provider>
@@ -532,13 +531,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00743" summary="I believe the shadow bug is fixed">
-      <created>1514122045039</created>
-      <option name="number" value="00743" />
-      <option name="presentableId" value="LOCAL-00743" />
-      <option name="project" value="LOCAL" />
-      <updated>1514122045039</updated>
-    </task>
     <task id="LOCAL-00744" summary="Added list of tiles suitable for spawning on">
       <created>1514123053150</created>
       <option name="number" value="00744" />
@@ -875,7 +867,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514572850590</updated>
     </task>
-    <option name="localTasksCounter" value="792" />
+    <task id="LOCAL-00792" summary="Scenario generator is working">
+      <created>1514573516700</created>
+      <option name="number" value="00792" />
+      <option name="presentableId" value="LOCAL-00792" />
+      <option name="project" value="LOCAL" />
+      <updated>1514573516700</updated>
+    </task>
+    <option name="localTasksCounter" value="793" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -887,7 +886,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.80032736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -944,7 +943,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player can now use an item and retreat" />
     <MESSAGE value="Retreating works" />
     <MESSAGE value="Created end_duel function" />
     <MESSAGE value="Winner gains left over energy and goes up a level" />
@@ -969,7 +967,8 @@
     <MESSAGE value="Allowing excaping of scenarios" />
     <MESSAGE value="Created training_data.json" />
     <MESSAGE value="Now loads and dumps to training_data.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now loads and dumps to training_data.json" />
+    <MESSAGE value="Scenario generator is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scenario generator is working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1253,8 +1252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        <state relative-caret-position="56">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1264,7 +1263,7 @@
     <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="67" lean-forward="true" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+          <caret line="0" column="2805" lean-forward="false" selection-start-line="0" selection-start-column="2805" selection-end-line="0" selection-end-column="2805" />
           <folding />
         </state>
       </provider>
