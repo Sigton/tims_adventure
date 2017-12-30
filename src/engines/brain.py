@@ -44,6 +44,11 @@ def get_cost(out_data, expected_outcome):
     return cost
 
 
+def get_max_idx(out_data):
+
+    return out_data.index(max(out_data))
+
+
 if __name__ == "__main__":
     test_brain = Brain(12, 4)
 
