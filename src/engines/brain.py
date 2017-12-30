@@ -41,7 +41,7 @@ def get_cost(out_data, expected_outcome):
     formatted_outcome = [1.0 if expected_outcome == i else 0.0 for i in range(len(squashed_out_data))]
 
     cost = [math.pow(squashed_out_data[i]-formatted_outcome[i], 2) for i in range(len(squashed_out_data))]
-    return cost
+    return sum(cost)
 
 
 def get_max_idx(out_data):
@@ -70,5 +70,5 @@ if __name__ == "__main__":
             c += 1
 
         print("Scenario {}: {}. Expected outcome: {}. Cost: {}".format(n, output_idx, s[1], output_cost))
-    print(costs)
+
     print("Success rate: {}. Average cost: {}".format(c/n*100, sum(costs)/len(costs)))
