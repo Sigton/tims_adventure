@@ -28,7 +28,6 @@ class Brain:
         self.outputs = outputs
 
         self.weights = weights_preset  # [[random.uniform(-1.0, 1.0) for n in range(inputs)] for m in range(outputs)]
-        self.bias = [0 for n in range(outputs)]
 
     def get_output(self, in_data):
 
