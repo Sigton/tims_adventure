@@ -25,9 +25,11 @@
       <file leaf-file-name="brain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="51" column="73" lean-forward="false" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
-              <folding />
+            <state relative-caret-position="294">
+              <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -507,48 +509,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00746" summary="Incorporated the selection matrix">
-      <created>1514125208847</created>
-      <option name="number" value="00746" />
-      <option name="presentableId" value="LOCAL-00746" />
-      <option name="project" value="LOCAL" />
-      <updated>1514125208847</updated>
-    </task>
-    <task id="LOCAL-00747" summary="Defining new function in containers.Chunk">
-      <created>1514125644224</created>
-      <option name="number" value="00747" />
-      <option name="presentableId" value="LOCAL-00747" />
-      <option name="project" value="LOCAL" />
-      <updated>1514125644224</updated>
-    </task>
-    <task id="LOCAL-00748" summary="Added to_grid attribute to tiles">
-      <created>1514125801172</created>
-      <option name="number" value="00748" />
-      <option name="presentableId" value="LOCAL-00748" />
-      <option name="project" value="LOCAL" />
-      <updated>1514125801172</updated>
-    </task>
-    <task id="LOCAL-00749" summary="Added it for animated tiles too">
-      <created>1514125822402</created>
-      <option name="number" value="00749" />
-      <option name="presentableId" value="LOCAL-00749" />
-      <option name="project" value="LOCAL" />
-      <updated>1514125822402</updated>
-    </task>
-    <task id="LOCAL-00750" summary="Finished containers.Chunk.get_tile_at()">
-      <created>1514126244925</created>
-      <option name="number" value="00750" />
-      <option name="presentableId" value="LOCAL-00750" />
-      <option name="project" value="LOCAL" />
-      <updated>1514126244925</updated>
-    </task>
-    <task id="LOCAL-00751" summary="Checks to make sure the enemy can spawn on that tile">
-      <created>1514131701010</created>
-      <option name="number" value="00751" />
-      <option name="presentableId" value="LOCAL-00751" />
-      <option name="project" value="LOCAL" />
-      <updated>1514131701010</updated>
-    </task>
     <task id="LOCAL-00752" summary="Debugging">
       <created>1514131900665</created>
       <option name="number" value="00752" />
@@ -850,7 +810,49 @@
       <option name="project" value="LOCAL" />
       <updated>1514575292671</updated>
     </task>
-    <option name="localTasksCounter" value="795" />
+    <task id="LOCAL-00795" summary="Evaluates success rate">
+      <created>1514575771500</created>
+      <option name="number" value="00795" />
+      <option name="presentableId" value="LOCAL-00795" />
+      <option name="project" value="LOCAL" />
+      <updated>1514575771500</updated>
+    </task>
+    <task id="LOCAL-00796" summary="Defining get_cost function">
+      <created>1514635053711</created>
+      <option name="number" value="00796" />
+      <option name="presentableId" value="LOCAL-00796" />
+      <option name="project" value="LOCAL" />
+      <updated>1514635053711</updated>
+    </task>
+    <task id="LOCAL-00797" summary="Working on cost function">
+      <created>1514635401551</created>
+      <option name="number" value="00797" />
+      <option name="presentableId" value="LOCAL-00797" />
+      <option name="project" value="LOCAL" />
+      <updated>1514635401551</updated>
+    </task>
+    <task id="LOCAL-00798" summary="Finished cost outcome">
+      <created>1514635545505</created>
+      <option name="number" value="00798" />
+      <option name="presentableId" value="LOCAL-00798" />
+      <option name="project" value="LOCAL" />
+      <updated>1514635545505</updated>
+    </task>
+    <task id="LOCAL-00799" summary="Removed unnecessary list">
+      <created>1514635661637</created>
+      <option name="number" value="00799" />
+      <option name="presentableId" value="LOCAL-00799" />
+      <option name="project" value="LOCAL" />
+      <updated>1514635661637</updated>
+    </task>
+    <task id="LOCAL-00800" summary="Defined a new helper function">
+      <created>1514636905525</created>
+      <option name="number" value="00800" />
+      <option name="presentableId" value="LOCAL-00800" />
+      <option name="project" value="LOCAL" />
+      <updated>1514636905525</updated>
+    </task>
+    <option name="localTasksCounter" value="801" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -919,12 +921,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Winner gains left over energy and goes up a level" />
-    <MESSAGE value="Fixed a bug" />
-    <MESSAGE value="Once a bean has died is removed from the map" />
-    <MESSAGE value="Fixed bug" />
-    <MESSAGE value="Created brain.py" />
-    <MESSAGE value="Created brain" />
     <MESSAGE value="Initialises network data structure" />
     <MESSAGE value="Added no of ins and outs attributes" />
     <MESSAGE value="Defined get_output data" />
@@ -944,7 +940,13 @@
     <MESSAGE value="Scenario generator is working" />
     <MESSAGE value="Created a bunch of training data" />
     <MESSAGE value="brain now imports scenarios from training data" />
-    <option name="LAST_COMMIT_MESSAGE" value="brain now imports scenarios from training data" />
+    <MESSAGE value="Evaluates success rate" />
+    <MESSAGE value="Defining get_cost function" />
+    <MESSAGE value="Working on cost function" />
+    <MESSAGE value="Finished cost outcome" />
+    <MESSAGE value="Removed unnecessary list" />
+    <MESSAGE value="Defined a new helper function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined a new helper function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1236,9 +1238,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="51" column="73" lean-forward="false" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
-          <folding />
+        <state relative-caret-position="294">
+          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

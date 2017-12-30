@@ -32,7 +32,7 @@ class Brain:
     def get_output(self, in_data):
 
         out_data = [sum([in_data[n]*weights_preset[x][n] for n in range(self.inputs)]) for x in range(self.outputs)]
-        return out_data.index(max(out_data))
+        return out_data
 
 
 def get_cost(out_data, expected_outcome):
@@ -55,14 +55,20 @@ if __name__ == "__main__":
     print("Running test scenarios")
     n = 0
     c = 0
+    costs = []
     for s in scenarios:
         n += 1
 
-        o = test_brain.get_output(s[0])
+        raw_output = test_brain.get_output(s[0])
 
-        if int(s[1]) == o:
+        output_idx = get_max_idx(raw_output)
+        output_cost = get_cost(raw_output, int(s[1]))
+
+        costs += [output_cost]
+
+        if int(s[1]) == output_idx:
             c += 1
 
-        print("Scenario {}: {}. Expected outcome: {}".format(n, o, s[1]))
-
-    print("Success rate: {}".format(c/n*100))
+        print("Scenario {}: {}. Expected outcome: {}. Cost: {}".format(n, output_idx, s[1], output_cost))
+    print(costs)
+    print("Success rate: {}. Average cost: {}".format(c/n*100, sum(costs)/len(costs)))
