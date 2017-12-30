@@ -5,6 +5,7 @@ from src.duel.duel_gui import load_images
 from src.etc import gui_components, constants
 from src.duel.duel_players import DuelPlayer
 from src.duel.moves import moves
+from src.engines import brain
 
 import math
 import random
@@ -24,6 +25,8 @@ class DuelController:
     def __init__(self, master):
 
         self.master = master
+
+        self.brain = brain.Brain(12, 4)
 
         self.images = load_images()
 
