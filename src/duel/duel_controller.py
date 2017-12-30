@@ -197,9 +197,9 @@ class DuelController:
                 self.enemy.meta.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
                 if self.enemy.meta.xp >= int((constants.level_up_base *
                                               (constants.level_up_multiplier ** self.enemy.meta.level))):
-                    self.enemy.meta.xp = self.enemy.meta.xp % int((constants.level_up_base *
-                                                                   (constants.level_up_multiplier **
-                                                                    self.enemy.meta.level)))
+                    self.enemy.meta.xp %= int((constants.level_up_base *
+                                               (constants.level_up_multiplier **
+                                                self.enemy.meta.level)))
                     self.enemy.meta.level += 1
 
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
@@ -249,9 +249,9 @@ class DuelController:
             self.player.meta.xp += moves[self.player.meta.moves[button_id]]["xp"]
             if self.player.meta.xp >= int((constants.level_up_base *
                                            (constants.level_up_multiplier ** self.player.meta.level))):
-                self.player.meta.xp = self.player.meta.xp % int((constants.level_up_base *
-                                                                 (constants.level_up_multiplier **
-                                                                  self.player.meta.level)))
+                self.player.meta.xp %= int((constants.level_up_base *
+                                           (constants.level_up_multiplier **
+                                            self.player.meta.level)))
                 self.player.meta.level += 1
 
             move = moves[self.player.meta.moves[button_id]]["effects"]
@@ -339,8 +339,7 @@ class DuelController:
             if entity.shake_timer < entity.shake:
                 c = entity.shake_distance
                 entity.rect.x += (c-(c/math.pow(entity.shake_w, 2))*math.pow(
-                    entity.shake_timer
-                    , 2)) * entity.shake_direction
+                    entity.shake_timer, 2)) * entity.shake_direction
                 entity.shake_timer += 1
             else:
                 entity.rect.x = entity.default_x

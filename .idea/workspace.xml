@@ -25,8 +25,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="335" column="28" lean-forward="true" selection-start-line="335" selection-start-column="28" selection-end-line="335" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -527,13 +527,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00754" summary="And it is debugged">
-      <created>1514132118826</created>
-      <option name="number" value="00754" />
-      <option name="presentableId" value="LOCAL-00754" />
-      <option name="project" value="LOCAL" />
-      <updated>1514132118826</updated>
-    </task>
     <task id="LOCAL-00755" summary="Cool beans">
       <created>1514132805483</created>
       <option name="number" value="00755" />
@@ -870,7 +863,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514650515462</updated>
     </task>
-    <option name="localTasksCounter" value="803" />
+    <task id="LOCAL-00803" summary="Implementing brain into duel controller">
+      <created>1514651300824</created>
+      <option name="number" value="00803" />
+      <option name="presentableId" value="LOCAL-00803" />
+      <option name="project" value="LOCAL" />
+      <updated>1514651300824</updated>
+    </task>
+    <option name="localTasksCounter" value="804" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -939,7 +939,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Defined get_output data" />
     <MESSAGE value="Reworking the data structure" />
     <MESSAGE value="Leaving brain alone for now" />
     <MESSAGE value="Using preset weight values" />
@@ -964,7 +963,8 @@
     <MESSAGE value="Defined a new helper function" />
     <MESSAGE value="Working on implementing cost" />
     <MESSAGE value="Fixed cost function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed cost function" />
+    <MESSAGE value="Implementing brain into duel controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing brain into duel controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1248,15 +1248,15 @@
         <state relative-caret-position="1003">
           <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="335" column="28" lean-forward="true" selection-start-line="335" selection-start-column="28" selection-end-line="335" selection-end-column="28" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
