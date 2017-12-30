@@ -1,3 +1,4 @@
+import math
 import json
 
 """
@@ -35,10 +36,13 @@ class Brain:
         return out_data.index(max(out_data))
 
 
-def get_cost(self, out_data, expected_outcome):
+def get_cost(out_data, expected_outcome):
 
     squashed_out_data = [(x-min(out_data))/(max(out_data)-min(out_data)) for x in out_data]
-    formatted_outcome = [1.0 if expected_outcome == i else 0.0 for i in range(len(out_data))]
+    formatted_outcome = [1.0 if expected_outcome == i else 0.0 for i in range(len(squashed_out_data))]
+
+    cost = [math.pow(squashed_out_data[i]-formatted_outcome[i], 2) for i in range(len(squashed_out_data))]
+    return cost
 
 
 if __name__ == "__main__":
