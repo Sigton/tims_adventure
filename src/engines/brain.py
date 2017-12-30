@@ -34,9 +34,11 @@ class Brain:
         out_data = [sum([in_data[n]*weights_preset[x][n] for n in range(self.inputs)]) for x in range(self.outputs)]
         return out_data.index(max(out_data))
 
-    def get_cost(self, a, b):
 
-        pass
+def get_cost(self, out_data, expected_outcome):
+
+    squashed_out_data = [(x-min(out_data))/(max(out_data)-min(out_data)) for x in out_data]
+    formatted_outcome = [1.0 if expected_outcome == i else 0.0 for i in range(len(out_data))]
 
 
 if __name__ == "__main__":
