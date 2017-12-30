@@ -34,6 +34,10 @@ class Brain:
         out_data = [sum([in_data[n]*weights_preset[x][n] for n in range(self.inputs)]) for x in range(self.outputs)]
         return out_data.index(max(out_data))
 
+    def get_cost(self, a, b):
+
+        pass
+
 
 if __name__ == "__main__":
     test_brain = Brain(12, 4)
