@@ -21,20 +21,38 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="335" column="28" lean-forward="true" selection-start-line="335" selection-start-column="28" selection-end-line="335" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="515">
+                  <caret line="377" column="11" lean-forward="false" selection-start-line="377" selection-start-column="11" selection-end-line="377" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="56">
+                  <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -527,13 +545,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00755" summary="Cool beans">
-      <created>1514132805483</created>
-      <option name="number" value="00755" />
-      <option name="presentableId" value="LOCAL-00755" />
-      <option name="project" value="LOCAL" />
-      <updated>1514132805483</updated>
-    </task>
     <task id="LOCAL-00756" summary="Added new particle to particles.png">
       <created>1514135523400</created>
       <option name="number" value="00756" />
@@ -870,7 +881,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514651300824</updated>
     </task>
-    <option name="localTasksCounter" value="804" />
+    <task id="LOCAL-00804" summary="Fixing some formatting">
+      <created>1514651652947</created>
+      <option name="number" value="00804" />
+      <option name="presentableId" value="LOCAL-00804" />
+      <option name="project" value="LOCAL" />
+      <updated>1514651652947</updated>
+    </task>
+    <option name="localTasksCounter" value="805" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -939,7 +957,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reworking the data structure" />
     <MESSAGE value="Leaving brain alone for now" />
     <MESSAGE value="Using preset weight values" />
     <MESSAGE value="Updated weight preset to account for a bias in each wieght" />
@@ -964,7 +981,8 @@
     <MESSAGE value="Working on implementing cost" />
     <MESSAGE value="Fixed cost function" />
     <MESSAGE value="Implementing brain into duel controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing brain into duel controller" />
+    <MESSAGE value="Fixing some formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing some formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1236,13 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -1253,10 +1264,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="335" column="28" lean-forward="true" selection-start-line="335" selection-start-column="28" selection-end-line="335" selection-end-column="28" />
+        <state relative-caret-position="515">
+          <caret line="377" column="11" lean-forward="false" selection-start-line="377" selection-start-column="11" selection-end-line="377" selection-end-column="11" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

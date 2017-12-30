@@ -360,3 +360,20 @@ class DuelController:
         entity.energy = 0
 
         entity.meta.level += 1
+
+    def get_opponent_move(self):
+
+        return brain.get_max_idx(self.brain.get_output([
+            self.enemy.meta.hp,
+            self.enemy.meta.hp-self.player.meta.hp,
+            int(self.enemy.meta.attack * moves[self.enemy.meta.moves[0]]["str_mod"]),
+            int(self.enemy.meta.attack * moves[self.enemy.meta.moves[1]]["str_mod"]),
+            self.enemy.energy,
+            0,
+            0,
+            self.enemy.meta.level - self.player.meta.level,
+            self.enemy.meta.max_hp-self.enemy.meta.hp,
+            moves[self.enemy.meta.moves[0]]["energy"],
+            moves[self.enemy.meta.moves[1]]["energy"],
+            self.enemy.meta.energy - self.enemy.energy
+        ]))
