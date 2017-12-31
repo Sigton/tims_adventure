@@ -37,7 +37,7 @@ class Brain:
 
 def get_cost(out_data, expected_outcome):
 
-    squashed_out_data = [(x-min(out_data))/(max(out_data)-min(out_data)) for x in out_data]
+    squashed_out_data = squish(out_data)
     formatted_outcome = [1.0 if expected_outcome == i else 0.0 for i in range(len(squashed_out_data))]
 
     cost = [math.pow(squashed_out_data[i]-formatted_outcome[i], 2) for i in range(len(squashed_out_data))]
@@ -47,6 +47,12 @@ def get_cost(out_data, expected_outcome):
 def get_max_idx(out_data):
 
     return out_data.index(max(out_data))
+
+
+def squish(data):
+
+    squished_data = [(x-min(data))/(max(data)-min(data)) for x in data]
+    return squished_data
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engines/brain.py" afterPath="$PROJECT_DIR$/src/engines/brain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,38 +21,30 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="brain_scenario_gen.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="56">
-                  <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="brain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -156,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
         <option value="$PROJECT_DIR$/src/saves/training_data.json" />
-        <option value="$PROJECT_DIR$/src/engines/brain.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/engines/brain.py" />
       </list>
     </option>
   </component>
@@ -545,13 +537,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00757" summary="Added SnowParticle class">
-      <created>1514147821186</created>
-      <option name="number" value="00757" />
-      <option name="presentableId" value="LOCAL-00757" />
-      <option name="project" value="LOCAL" />
-      <updated>1514147821186</updated>
-    </task>
     <task id="LOCAL-00758" summary="Created new move">
       <created>1514154725777</created>
       <option name="number" value="00758" />
@@ -888,7 +873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514652405362</updated>
     </task>
-    <option name="localTasksCounter" value="806" />
+    <task id="LOCAL-00806" summary="AI now makes moves">
+      <created>1514720888841</created>
+      <option name="number" value="00806" />
+      <option name="presentableId" value="LOCAL-00806" />
+      <option name="project" value="LOCAL" />
+      <updated>1514720888841</updated>
+    </task>
+    <option name="localTasksCounter" value="807" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -957,7 +949,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Using preset weight values" />
     <MESSAGE value="Updated weight preset to account for a bias in each wieght" />
     <MESSAGE value="Recreated get_output  function" />
     <MESSAGE value="Running test data" />
@@ -982,7 +973,8 @@
     <MESSAGE value="Implementing brain into duel controller" />
     <MESSAGE value="Fixing some formatting" />
     <MESSAGE value="Defined get_opponent_move" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined get_opponent_move" />
+    <MESSAGE value="AI now makes moves" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI now makes moves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1254,19 +1246,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
+        <state relative-caret-position="42">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
         </state>
@@ -1279,6 +1261,14 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
