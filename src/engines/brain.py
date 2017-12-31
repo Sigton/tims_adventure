@@ -31,8 +31,11 @@ class Brain:
 
     def get_output(self, in_data):
 
-        out_data = [sum([in_data[n]*weights_preset[x][n] for n in range(self.inputs)]) for x in range(self.outputs)]
-        return out_data
+        squished_data = squish(in_data)
+
+        out_data = [sum([squished_data[i]*weights_preset[x][i]
+                         for i in range(self.inputs)]) for x in range(self.outputs)]
+        return squish(out_data)
 
 
 def get_cost(out_data, expected_outcome):

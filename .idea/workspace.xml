@@ -25,8 +25,8 @@
       <file leaf-file-name="brain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state relative-caret-position="549">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -77,6 +77,7 @@
       <find>self.player</find>
       <find>self.main</find>
       <find>\</find>
+      <find>in_data</find>
     </findStrings>
     <replaceStrings>
       <replace>player</replace>
@@ -91,6 +92,7 @@
       <replace>enemy.meta.attack</replace>
       <replace>entity</replace>
       <replace>/</replace>
+      <replace>squished_data</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -537,13 +539,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00758" summary="Created new move">
-      <created>1514154725777</created>
-      <option name="number" value="00758" />
-      <option name="presentableId" value="LOCAL-00758" />
-      <option name="project" value="LOCAL" />
-      <updated>1514154725777</updated>
-    </task>
     <task id="LOCAL-00759" summary="Adding more data for new moves">
       <created>1514154900959</created>
       <option name="number" value="00759" />
@@ -880,7 +875,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514720888841</updated>
     </task>
-    <option name="localTasksCounter" value="807" />
+    <task id="LOCAL-00807" summary="Created a squish function that reduces all numbers in a range to between 0 and 1">
+      <created>1514721020989</created>
+      <option name="number" value="00807" />
+      <option name="presentableId" value="LOCAL-00807" />
+      <option name="project" value="LOCAL" />
+      <updated>1514721020989</updated>
+    </task>
+    <option name="localTasksCounter" value="808" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -949,7 +951,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated weight preset to account for a bias in each wieght" />
     <MESSAGE value="Recreated get_output  function" />
     <MESSAGE value="Running test data" />
     <MESSAGE value="Creating test scenarios" />
@@ -974,7 +975,8 @@
     <MESSAGE value="Fixing some formatting" />
     <MESSAGE value="Defined get_opponent_move" />
     <MESSAGE value="AI now makes moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="AI now makes moves" />
+    <MESSAGE value="Created a squish function that reduces all numbers in a range to between 0 and 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a squish function that reduces all numbers in a range to between 0 and 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1266,8 +1268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        <state relative-caret-position="549">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
