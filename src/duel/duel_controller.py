@@ -8,7 +8,6 @@ from src.duel.moves import moves
 from src.engines import brain
 
 import math
-import random
 
 """
 duel.py
