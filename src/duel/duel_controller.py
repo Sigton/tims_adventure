@@ -183,7 +183,10 @@ class DuelController:
             if self.enemy.energy - moves[self.enemy.meta.moves[1]]["energy"] < 0:
                 possible_moves.remove(1)
 
-            move_no = possible_moves[random.randint(0, len(possible_moves)-1)]
+            move_no = self.get_opponent_move()
+
+            while move_no not in possible_moves:
+                move_no = self.get_opponent_move()
 
             if move_no < 2:
                 self.player.meta.hp -= int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"])
