@@ -340,13 +340,6 @@ class DuelController:
         entity.shake_timer = 0
         entity.shake_direction = direction
 
-    def start_shake_enemy(self, duration, dx, w, direction):
-        self.enemy.shake = duration
-        self.enemy.shake_distance = dx
-        self.enemy.shake_w = w
-        self.enemy.shake_timer = 0
-        self.enemy.shake_direction = direction
-
     def shake_players(self):
 
         for entity in (self.player, self.enemy):
@@ -365,10 +358,7 @@ class DuelController:
 
         self.winner = winner
 
-        if self.winner == "Player":
-            entity = self.player
-        else:
-            entity = self.enemy
+        entity = self.player if self.winner == "Player" else self.enemy
 
         entity.meta.xp_gain(entity.energy)
         entity.energy = 0
