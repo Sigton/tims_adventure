@@ -85,6 +85,9 @@ class DuelController:
         self.attack_main_label = None
         self.attack_alt_label = None
 
+        self.player_name_label = None
+        self.enemy_name_label = None
+
         self.winner_label = None
 
         self.text = [
