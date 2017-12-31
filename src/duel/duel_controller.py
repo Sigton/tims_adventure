@@ -200,7 +200,7 @@ class DuelController:
                 move_no = self.get_opponent_move()
 
             if move_no < 2:
-                self.player.meta.hp -= int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"])
+                self.player.meta.damage(int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"]))
                 self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
                 if self.player.meta.hp <= 0:
@@ -208,13 +208,13 @@ class DuelController:
 
                     self.end_duel("Opponent")
 
-                self.enemy.meta.xp += moves[self.enemy.meta.moves[move_no]]["xp"]
+                self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
                 if self.enemy.meta.xp >= int((constants.level_up_base *
                                               (constants.level_up_multiplier ** self.enemy.meta.level))):
                     self.enemy.meta.xp %= int((constants.level_up_base *
                                                (constants.level_up_multiplier **
                                                 self.enemy.meta.level)))
-                    self.enemy.meta.level += 1
+                    self.enemy.meta.level_up(1)
 
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
@@ -252,7 +252,7 @@ class DuelController:
 
         if button_id < 2:
 
-            self.enemy.meta.hp -= int(self.player.meta.attack * moves[self.player.meta.moves[button_id]]["str_mod"])
+            self.enemy.meta.damage(int(self.player.meta.attack * moves[self.player.meta.moves[button_id]]["str_mod"]))
             self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
 
             if self.enemy.meta.hp <= 0:
@@ -260,13 +260,13 @@ class DuelController:
 
                 self.end_duel("Player")
 
-            self.player.meta.xp += moves[self.player.meta.moves[button_id]]["xp"]
+            self.player.meta.xp_gain(moves[self.player.meta.moves[button_id]]["xp"])
             if self.player.meta.xp >= int((constants.level_up_base *
                                            (constants.level_up_multiplier ** self.player.meta.level))):
                 self.player.meta.xp %= int((constants.level_up_base *
                                            (constants.level_up_multiplier **
                                             self.player.meta.level)))
-                self.player.meta.level += 1
+                self.player.meta.level_up(1)
 
             move = moves[self.player.meta.moves[button_id]]["effects"]
 
@@ -370,10 +370,10 @@ class DuelController:
         else:
             entity = self.enemy
 
-        entity.meta.xp += entity.energy
+        entity.meta.xp_gain(entity.energy)
         entity.energy = 0
 
-        entity.meta.level += 1
+        entity.meta.level_up(1)
 
     def get_opponent_move(self):
 
