@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,14 +22,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="148" column="46" lean-forward="false" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
+            <state relative-caret-position="243">
+              <caret line="133" column="16" lean-forward="true" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
-        <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/shadows.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
@@ -138,10 +147,11 @@
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
         <option value="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
         <option value="$PROJECT_DIR$/src/saves/training_data.json" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/entities/entities.py" />
       </list>
     </option>
   </component>
@@ -209,24 +219,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="etc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -245,7 +237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="engines" />
+              <option name="myItemId" value="entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,27 +538,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00764" summary="Increased particle amount and spread">
-      <created>1514302824067</created>
-      <option name="number" value="00764" />
-      <option name="presentableId" value="LOCAL-00764" />
-      <option name="project" value="LOCAL" />
-      <updated>1514302824067</updated>
-    </task>
-    <task id="LOCAL-00765" summary="Adjusting particle effects">
-      <created>1514303207249</created>
-      <option name="number" value="00765" />
-      <option name="presentableId" value="LOCAL-00765" />
-      <option name="project" value="LOCAL" />
-      <updated>1514303207249</updated>
-    </task>
-    <task id="LOCAL-00766" summary="Enemy can now use an item and retreat">
-      <created>1514303579746</created>
-      <option name="number" value="00766" />
-      <option name="presentableId" value="LOCAL-00766" />
-      <option name="project" value="LOCAL" />
-      <updated>1514303579746</updated>
     </task>
     <task id="LOCAL-00767" summary="Player can now use an item and retreat">
       <created>1514303816018</created>
@@ -890,7 +861,28 @@
       <option name="project" value="LOCAL" />
       <updated>1514736563674</updated>
     </task>
-    <option name="localTasksCounter" value="813" />
+    <task id="LOCAL-00813" summary="Text appears in the correct place">
+      <created>1514736963455</created>
+      <option name="number" value="00813" />
+      <option name="presentableId" value="LOCAL-00813" />
+      <option name="project" value="LOCAL" />
+      <updated>1514736963455</updated>
+    </task>
+    <task id="LOCAL-00814" summary="Fixed formatting">
+      <created>1514737072202</created>
+      <option name="number" value="00814" />
+      <option name="presentableId" value="LOCAL-00814" />
+      <option name="project" value="LOCAL" />
+      <updated>1514737072202</updated>
+    </task>
+    <task id="LOCAL-00815" summary="Temporarily increased bean spawn rate">
+      <created>1514737109208</created>
+      <option name="number" value="00815" />
+      <option name="presentableId" value="LOCAL-00815" />
+      <option name="project" value="LOCAL" />
+      <updated>1514737109208</updated>
+    </task>
+    <option name="localTasksCounter" value="816" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -906,7 +898,7 @@
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -959,9 +951,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Keeping the values as integers&#10;" />
-    <MESSAGE value="Allowing excaping of scenarios" />
-    <MESSAGE value="Created training_data.json" />
     <MESSAGE value="Now loads and dumps to training_data.json" />
     <MESSAGE value="Scenario generator is working" />
     <MESSAGE value="Created a bunch of training data" />
@@ -984,7 +973,10 @@
     <MESSAGE value="Adjusting the weights" />
     <MESSAGE value="Adding in player and enemy name labels" />
     <MESSAGE value="Random module no longer needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Random module no longer needed" />
+    <MESSAGE value="Text appears in the correct place" />
+    <MESSAGE value="Fixed formatting" />
+    <MESSAGE value="Temporarily increased bean spawn rate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temporarily increased bean spawn rate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1163,13 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/shadows.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
@@ -1213,13 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -1249,14 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1273,13 +1243,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="67" column="27" lean-forward="false" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="148" column="46" lean-forward="false" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
+        <state relative-caret-position="243">
+          <caret line="133" column="16" lean-forward="true" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

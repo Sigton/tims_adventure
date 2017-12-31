@@ -35,6 +35,21 @@ class EntityMeta:
 
         self.images = self.parent.images
 
+    def damage(self, amount):
+
+        self.hp -= amount
+
+    def heal(self, amount):
+
+        self.hp += amount
+
+    def xp_gain(self, amount):
+
+        self.xp += amount
+
+    def level_up(self, levels):
+
+        self.level += levels
 
 class RandomBean:
 
