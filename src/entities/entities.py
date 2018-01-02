@@ -53,7 +53,7 @@ class EntityMeta:
 
     def get_level_up_threshold(self):
 
-        pass
+        return int(constants.level_up_base * (constants.level_up_multiplier ** self.level))
 
 
 class RandomBean:
