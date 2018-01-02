@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="220" selection-end-column="72" />
+            <state relative-caret-position="255">
+              <caret line="282" column="36" lean-forward="true" selection-start-line="282" selection-start-column="36" selection-end-line="282" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -34,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -151,8 +151,8 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
   </component>
@@ -504,13 +504,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00774" summary="Created brain.py">
-      <created>1514386753305</created>
-      <option name="number" value="00774" />
-      <option name="presentableId" value="LOCAL-00774" />
-      <option name="project" value="LOCAL" />
-      <updated>1514386753305</updated>
-    </task>
     <task id="LOCAL-00775" summary="Created brain">
       <created>1514386890192</created>
       <option name="number" value="00775" />
@@ -847,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514913279362</updated>
     </task>
-    <option name="localTasksCounter" value="823" />
+    <task id="LOCAL-00823" summary="If the xp goes over the level up threshold then the bean will be leveled up">
+      <created>1514913384445</created>
+      <option name="number" value="00823" />
+      <option name="presentableId" value="LOCAL-00823" />
+      <option name="project" value="LOCAL" />
+      <updated>1514913384445</updated>
+    </task>
+    <option name="localTasksCounter" value="824" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -916,7 +916,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished cost outcome" />
     <MESSAGE value="Removed unnecessary list" />
     <MESSAGE value="Defined a new helper function" />
     <MESSAGE value="Working on implementing cost" />
@@ -941,7 +940,8 @@
     <MESSAGE value="Implemented F11 as fullscreen key" />
     <MESSAGE value="Defining get_level_up_threshold for entity meta class" />
     <MESSAGE value="get_level_up_threshold should now work" />
-    <option name="LAST_COMMIT_MESSAGE" value="get_level_up_threshold should now work" />
+    <MESSAGE value="If the xp goes over the level up threshold then the bean will be leveled up" />
+    <option name="LAST_COMMIT_MESSAGE" value="If the xp goes over the level up threshold then the bean will be leveled up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1222,21 +1222,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="220" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="282" column="36" lean-forward="true" selection-start-line="282" selection-start-column="36" selection-end-line="282" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

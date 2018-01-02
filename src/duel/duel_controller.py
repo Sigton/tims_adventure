@@ -214,12 +214,6 @@ class DuelController:
                     self.end_duel("Opponent")
 
                 self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
-                if self.enemy.meta.xp >= int((constants.level_up_base *
-                                              (constants.level_up_multiplier ** self.enemy.meta.level))):
-                    self.enemy.meta.xp %= int((constants.level_up_base *
-                                               (constants.level_up_multiplier **
-                                                self.enemy.meta.level)))
-                    self.enemy.meta.level_up(1)
 
                 move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
@@ -266,12 +260,6 @@ class DuelController:
                 self.end_duel("Player")
 
             self.player.meta.xp_gain(moves[self.player.meta.moves[button_id]]["xp"])
-            if self.player.meta.xp >= int((constants.level_up_base *
-                                           (constants.level_up_multiplier ** self.player.meta.level))):
-                self.player.meta.xp %= int((constants.level_up_base *
-                                           (constants.level_up_multiplier **
-                                            self.player.meta.level)))
-                self.player.meta.level_up(1)
 
             move = moves[self.player.meta.moves[button_id]]["effects"]
 
@@ -295,26 +283,18 @@ class DuelController:
     def update_gui_components(self):
 
         self.player_hp_bar.update(self.player.meta.hp / self.player.meta.max_hp)
-        self.player_xp_bar.update(self.player.meta.xp / (constants.level_up_base *
-                                                         (constants.level_up_multiplier ** self.player.meta.level)))
+        self.player_xp_bar.update(self.player.meta.xp / self.player.meta.get_level_up_threshold())
 
         self.enemy_hp_bar.update(self.enemy.meta.hp / self.enemy.meta.max_hp)
-        self.enemy_xp_bar.update(self.enemy.meta.xp / (constants.level_up_base *
-                                                       (constants.level_up_multiplier ** self.enemy.meta.level)))
+        self.enemy_xp_bar.update(self.enemy.meta.xp / self.enemy.meta.get_level_up_threshold())
 
         self.player_energy_bar.update(self.player.energy / self.player.meta.energy)
 
         self.player_hp_label.update("{}/{}".format(self.player.meta.hp, self.player.meta.max_hp))
         self.enemy_hp_label.update("{}/{}".format(self.enemy.meta.hp, self.enemy.meta.max_hp))
 
-        self.player_xp_label.update("{}/{}".format(self.player.meta.xp,
-                                                   int((constants.level_up_base *
-                                                        (constants.level_up_multiplier **
-                                                         self.player.meta.level)))))
-        self.enemy_xp_label.update("{}/{}".format(self.enemy.meta.xp,
-                                                  int((constants.level_up_base *
-                                                       (constants.level_up_multiplier **
-                                                        self.enemy.meta.level)))))
+        self.player_xp_label.update("{}/{}".format(self.player.meta.xp, self.player.meta.get_level_up_threshold()))
+        self.enemy_xp_label.update("{}/{}".format(self.enemy.meta.xp, self.enemy.meta.get_level_up_threshold()))
 
         self.player_energy_label.update("{}/{}".format(self.player.energy, self.player.meta.energy))
 
