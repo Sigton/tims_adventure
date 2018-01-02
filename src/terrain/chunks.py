@@ -175,10 +175,10 @@ class ChunkController:
                             entity_range[distance] = entity
 
                     ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
-                    self.enemy_to_duel = list(ordered_ranges.items())[0][1]
 
                     if len(ordered_ranges):
 
+                        self.enemy_to_duel = list(ordered_ranges.items())[0][1]
                         if not self.bean_select_popup_open:
                             self.bean_select_popup_open = True
 
