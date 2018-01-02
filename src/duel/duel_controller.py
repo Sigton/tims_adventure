@@ -50,17 +50,17 @@ class DuelController:
         self.player = None
         self.enemy = None
 
-        self.player_hp_bar = gui_components.ProgressBar(563, 379, 232, 30, [constants.HEALTH_BAR_RED,
+        self.player_hp_bar = gui_components.ProgressBar(563, 379, 282, 30, [constants.HEALTH_BAR_RED,
                                                                             constants.HEALTH_BAR_GREEN])
-        self.enemy_hp_bar = gui_components.ProgressBar(81, 38, 232, 30, [constants.HEALTH_BAR_RED,
+        self.enemy_hp_bar = gui_components.ProgressBar(81, 38, 282, 30, [constants.HEALTH_BAR_RED,
                                                                          constants.HEALTH_BAR_GREEN])
 
-        self.player_xp_bar = gui_components.ProgressBar(563, 519, 232, 30, [constants.XP_BAR_BLUE,
+        self.player_xp_bar = gui_components.ProgressBar(563, 519, 282, 30, [constants.XP_BAR_BLUE,
                                                                             constants.XP_BAR_CYAN])
-        self.enemy_xp_bar = gui_components.ProgressBar(81, 108, 232, 30, [constants.XP_BAR_BLUE,
+        self.enemy_xp_bar = gui_components.ProgressBar(81, 108, 282, 30, [constants.XP_BAR_BLUE,
                                                                           constants.XP_BAR_CYAN])
 
-        self.player_energy_bar = gui_components.ProgressBar(563, 449, 232, 30, [constants.ENERGY_BAR_ORANGE,
+        self.player_energy_bar = gui_components.ProgressBar(563, 449, 282, 30, [constants.ENERGY_BAR_ORANGE,
                                                                                 constants.ENERGY_BAR_YELLOW])
 
         self.progress_bars = [
@@ -78,8 +78,8 @@ class DuelController:
         self.enemy_xp_label = gui_components.Label(373, 89, "")
         self.player_energy_label = gui_components.Label(857, 429, "")
 
-        self.player_level_label = gui_components.Label(624, 499, "")
-        self.enemy_level_label = gui_components.Label(135, 88, "")
+        self.player_level_label = gui_components.Label(649, 499, "")
+        self.enemy_level_label = gui_components.Label(160, 88, "")
 
         self.attack_main_label = None
         self.attack_alt_label = None
