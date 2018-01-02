@@ -40,9 +40,7 @@ class Main:
         self.game_exit = False
 
         self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
-
         self.duel_controller = duel_controller.DuelController(self)
-        self.duel_controller.particle_engine = self.particle_engine
 
         self.game_mode = 0
         self.full_screen = False

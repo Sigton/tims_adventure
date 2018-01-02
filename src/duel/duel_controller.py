@@ -26,6 +26,7 @@ class DuelController:
         self.master = master
 
         self.brain = brain.Brain(12, 4)
+        self.particle_engine = self.master.particle_engine
 
         self.images = load_images()
 
