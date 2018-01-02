@@ -290,13 +290,15 @@ class DuelController:
 
         self.player_energy_bar.update(self.player.energy / self.player.meta.energy)
 
-        self.player_hp_label.update("{}/{}".format(self.player.meta.hp, self.player.meta.max_hp))
-        self.enemy_hp_label.update("{}/{}".format(self.enemy.meta.hp, self.enemy.meta.max_hp))
+        self.player_hp_label.update("{}%".format(int(self.player.meta.hp / self.player.meta.max_hp * 100)))
+        self.enemy_hp_label.update("{}%".format(int(self.enemy.meta.hp / self.enemy.meta.max_hp * 100)))
 
-        self.player_xp_label.update("{}/{}".format(self.player.meta.xp, self.player.meta.get_level_up_threshold()))
-        self.enemy_xp_label.update("{}/{}".format(self.enemy.meta.xp, self.enemy.meta.get_level_up_threshold()))
+        self.player_xp_label.update("{}%".format(int(self.player.meta.xp / self.player.meta.get_level_up_threshold()
+                                                     * 100)))
+        self.enemy_xp_label.update("{}%".format(int(self.enemy.meta.xp / self.enemy.meta.get_level_up_threshold()
+                                                    * 100)))
 
-        self.player_energy_label.update("{}/{}".format(self.player.energy, self.player.meta.energy))
+        self.player_energy_label.update("{}%".format(int(self.player.energy / self.player.meta.energy * 100)))
 
         self.player_level_label.update("Level {}".format(self.player.meta.level))
         self.enemy_level_label.update("Level {}".format(self.enemy.meta.level))
