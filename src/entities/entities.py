@@ -51,6 +51,11 @@ class EntityMeta:
 
         self.level += levels
 
+    def get_level_up_threshold(self):
+
+        pass
+
+
 class RandomBean:
 
     def __init__(self, x, y, to_grid):
