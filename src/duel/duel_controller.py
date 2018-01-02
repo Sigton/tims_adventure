@@ -156,6 +156,11 @@ class DuelController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
+            if event.type == KEYUP:
+
+                if event.key == K_F11:
+                    self.master.set_full_screen()
+
         if self.game_won:
             if self.game_won_counter > 0:
                 self.game_won_counter -= 1
