@@ -45,6 +45,7 @@ class Main:
         self.duel_controller.particle_engine = self.particle_engine
 
         self.game_mode = 0
+        self.full_screen = False
 
     def load_components(self):
 
@@ -52,6 +53,15 @@ class Main:
         bean_image_loader.load_sprite_sheet()
         particles.load_sprite_sheet()
         icons.load_sprite_sheet()
+
+    def set_full_screen(self):
+
+        if not self.full_screen:
+            self.display = pygame.display.set_mode(constants.DISPLAY_SIZE, pygame.FULLSCREEN)
+            self.full_screen = True
+        else:
+            self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
+            self.full_screen = False
 
     def run(self):
 
