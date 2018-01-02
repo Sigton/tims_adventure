@@ -47,6 +47,10 @@ class EntityMeta:
 
         self.xp += amount
 
+        if self.xp > self.get_level_up_threshold():
+            self.xp %= self.get_level_up_threshold()
+            self.level_up(1)
+
     def level_up(self, levels):
 
         self.level += levels
