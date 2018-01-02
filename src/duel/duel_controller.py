@@ -71,12 +71,12 @@ class DuelController:
             self.player_energy_bar
         ]
 
-        self.player_hp_label = gui_components.Label(807, 359, "")
-        self.enemy_hp_label = gui_components.Label(323, 18, "")
+        self.player_hp_label = gui_components.Label(857, 359, "")
+        self.enemy_hp_label = gui_components.Label(373, 18, "")
 
-        self.player_xp_label = gui_components.Label(807, 500, "")
-        self.enemy_xp_label = gui_components.Label(323, 89, "")
-        self.player_energy_label = gui_components.Label(807, 429, "")
+        self.player_xp_label = gui_components.Label(857, 500, "")
+        self.enemy_xp_label = gui_components.Label(373, 89, "")
+        self.player_energy_label = gui_components.Label(857, 429, "")
 
         self.player_level_label = gui_components.Label(624, 499, "")
         self.enemy_level_label = gui_components.Label(135, 88, "")
