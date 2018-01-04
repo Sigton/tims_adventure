@@ -6,8 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/saves/maps.json" afterPath="$PROJECT_DIR$/src/saves/maps.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/bean_rpg.iml" afterPath="$PROJECT_DIR$/.idea/bean_rpg.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,23 +19,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="maps.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/saves/maps.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4622">
+                  <caret line="314" column="0" lean-forward="true" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="horizontal" split-proportion="0.5">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="282">
+                      <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="275">
+                      <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,9 +99,7 @@
       <find>enemy.attack</find>
       <find>self.player</find>
       <find>self.main</find>
-      <find>\</find>
-      <find>in_data</find>
-      <find>meta</find>
+      <find>constants.movement_speed</find>
     </findStrings>
     <replaceStrings>
       <replace>player</replace>
@@ -80,16 +113,19 @@
       <replace>player.meta.max_hp</replace>
       <replace>enemy.meta.attack</replace>
       <replace>entity</replace>
-      <replace>/</replace>
-      <replace>squished_data</replace>
+      <replace>self.movement_speed</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/spritesheet.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/src/saves/maps.json" />
         <option value="$PROJECT_DIR$/src/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/constants.py" />
         <option value="$PROJECT_DIR$/src/tile_image_loader.py" />
@@ -124,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
+        <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/shadows.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
@@ -131,24 +168,20 @@
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
-        <option value="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
-        <option value="$PROJECT_DIR$/src/saves/training_data.json" />
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
-        <option value="$PROJECT_DIR$/src/entities/entities.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
-        <option value="$PROJECT_DIR$/src/saves/maps.json" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-779" />
+    <option name="y" value="-21" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -166,60 +199,73 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean_rpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="saves" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="duel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="terrain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="terrain" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/bean_rpg etc/template test.py" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -243,41 +289,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="map_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="D:\bean_rpg\src\terrain\generators\map_generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -292,160 +304,10 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/engines/brain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="false" name="brain_scenario_gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/engines/brain_scenario_gen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bean_rpg" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="dec_generator" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="dec_generator" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -460,21 +322,56 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="5">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bean_rpg" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="map_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bean_rpg" />
+      <option name="SCRIPT_NAME" value="D:\bean_rpg\src\terrain\generators\map_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.dec_generator" />
       <item index="1" class="java.lang.String" itemvalue="Python.main" />
       <item index="2" class="java.lang.String" itemvalue="Python.map_generator" />
       <item index="3" class="java.lang.String" itemvalue="Python.brain" />
-      <item index="4" class="java.lang.String" itemvalue="Python.brain_scenario_gen" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.main" />
         <item index="1" class="java.lang.String" itemvalue="Python.brain" />
-        <item index="2" class="java.lang.String" itemvalue="Python.brain_scenario_gen" />
-        <item index="3" class="java.lang.String" itemvalue="Python.map_generator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.map_generator" />
       </list>
     </recent_temporary>
   </component>
@@ -492,366 +389,366 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00781" summary="Using preset weight values">
-      <created>1514562476530</created>
+    <task id="LOCAL-00733" summary="Defined music end event">
+      <created>1514112427335</created>
+      <option name="number" value="00733" />
+      <option name="presentableId" value="LOCAL-00733" />
+      <option name="project" value="LOCAL" />
+      <updated>1514112427335</updated>
+    </task>
+    <task id="LOCAL-00734" summary="Set end event for music channel">
+      <created>1514112500004</created>
+      <option name="number" value="00734" />
+      <option name="presentableId" value="LOCAL-00734" />
+      <option name="project" value="LOCAL" />
+      <updated>1514112500004</updated>
+    </task>
+    <task id="LOCAL-00735" summary="Defined music start event">
+      <created>1514112597630</created>
+      <option name="number" value="00735" />
+      <option name="presentableId" value="LOCAL-00735" />
+      <option name="project" value="LOCAL" />
+      <updated>1514112597630</updated>
+    </task>
+    <task id="LOCAL-00736" summary="Adding event handling for music events">
+      <created>1514112830198</created>
+      <option name="number" value="00736" />
+      <option name="presentableId" value="LOCAL-00736" />
+      <option name="project" value="LOCAL" />
+      <updated>1514112830198</updated>
+    </task>
+    <task id="LOCAL-00737" summary="Implementing music">
+      <created>1514113326329</created>
+      <option name="number" value="00737" />
+      <option name="presentableId" value="LOCAL-00737" />
+      <option name="project" value="LOCAL" />
+      <updated>1514113326329</updated>
+    </task>
+    <task id="LOCAL-00738" summary="Music has been fixed!">
+      <created>1514113781029</created>
+      <option name="number" value="00738" />
+      <option name="presentableId" value="LOCAL-00738" />
+      <option name="project" value="LOCAL" />
+      <updated>1514113781029</updated>
+    </task>
+    <task id="LOCAL-00739" summary="Quieter music">
+      <created>1514114161136</created>
+      <option name="number" value="00739" />
+      <option name="presentableId" value="LOCAL-00739" />
+      <option name="project" value="LOCAL" />
+      <updated>1514114161136</updated>
+    </task>
+    <task id="LOCAL-00740" summary="Implemented punch sound">
+      <created>1514115601789</created>
+      <option name="number" value="00740" />
+      <option name="presentableId" value="LOCAL-00740" />
+      <option name="project" value="LOCAL" />
+      <updated>1514115601789</updated>
+    </task>
+    <task id="LOCAL-00741" summary="Added burn sound">
+      <created>1514119472233</created>
+      <option name="number" value="00741" />
+      <option name="presentableId" value="LOCAL-00741" />
+      <option name="project" value="LOCAL" />
+      <updated>1514119472233</updated>
+    </task>
+    <task id="LOCAL-00742" summary="Fixed a bug">
+      <created>1514119982469</created>
+      <option name="number" value="00742" />
+      <option name="presentableId" value="LOCAL-00742" />
+      <option name="project" value="LOCAL" />
+      <updated>1514119982469</updated>
+    </task>
+    <task id="LOCAL-00743" summary="I believe the shadow bug is fixed">
+      <created>1514122045039</created>
+      <option name="number" value="00743" />
+      <option name="presentableId" value="LOCAL-00743" />
+      <option name="project" value="LOCAL" />
+      <updated>1514122045039</updated>
+    </task>
+    <task id="LOCAL-00744" summary="Added list of tiles suitable for spawning on">
+      <created>1514123053150</created>
+      <option name="number" value="00744" />
+      <option name="presentableId" value="LOCAL-00744" />
+      <option name="project" value="LOCAL" />
+      <updated>1514123053150</updated>
+    </task>
+    <task id="LOCAL-00745" summary="Added constants for entity spawning">
+      <created>1514124683681</created>
+      <option name="number" value="00745" />
+      <option name="presentableId" value="LOCAL-00745" />
+      <option name="project" value="LOCAL" />
+      <updated>1514124683681</updated>
+    </task>
+    <task id="LOCAL-00746" summary="Incorporated the selection matrix">
+      <created>1514125208847</created>
+      <option name="number" value="00746" />
+      <option name="presentableId" value="LOCAL-00746" />
+      <option name="project" value="LOCAL" />
+      <updated>1514125208847</updated>
+    </task>
+    <task id="LOCAL-00747" summary="Defining new function in containers.Chunk">
+      <created>1514125644224</created>
+      <option name="number" value="00747" />
+      <option name="presentableId" value="LOCAL-00747" />
+      <option name="project" value="LOCAL" />
+      <updated>1514125644224</updated>
+    </task>
+    <task id="LOCAL-00748" summary="Added to_grid attribute to tiles">
+      <created>1514125801172</created>
+      <option name="number" value="00748" />
+      <option name="presentableId" value="LOCAL-00748" />
+      <option name="project" value="LOCAL" />
+      <updated>1514125801172</updated>
+    </task>
+    <task id="LOCAL-00749" summary="Added it for animated tiles too">
+      <created>1514125822402</created>
+      <option name="number" value="00749" />
+      <option name="presentableId" value="LOCAL-00749" />
+      <option name="project" value="LOCAL" />
+      <updated>1514125822402</updated>
+    </task>
+    <task id="LOCAL-00750" summary="Finished containers.Chunk.get_tile_at()">
+      <created>1514126244925</created>
+      <option name="number" value="00750" />
+      <option name="presentableId" value="LOCAL-00750" />
+      <option name="project" value="LOCAL" />
+      <updated>1514126244925</updated>
+    </task>
+    <task id="LOCAL-00751" summary="Checks to make sure the enemy can spawn on that tile">
+      <created>1514131701010</created>
+      <option name="number" value="00751" />
+      <option name="presentableId" value="LOCAL-00751" />
+      <option name="project" value="LOCAL" />
+      <updated>1514131701010</updated>
+    </task>
+    <task id="LOCAL-00752" summary="Debugging">
+      <created>1514131900665</created>
+      <option name="number" value="00752" />
+      <option name="presentableId" value="LOCAL-00752" />
+      <option name="project" value="LOCAL" />
+      <updated>1514131900665</updated>
+    </task>
+    <task id="LOCAL-00753" summary="Debugging">
+      <created>1514131940173</created>
+      <option name="number" value="00753" />
+      <option name="presentableId" value="LOCAL-00753" />
+      <option name="project" value="LOCAL" />
+      <updated>1514131940173</updated>
+    </task>
+    <task id="LOCAL-00754" summary="And it is debugged">
+      <created>1514132118826</created>
+      <option name="number" value="00754" />
+      <option name="presentableId" value="LOCAL-00754" />
+      <option name="project" value="LOCAL" />
+      <updated>1514132118826</updated>
+    </task>
+    <task id="LOCAL-00755" summary="Cool beans">
+      <created>1514132805483</created>
+      <option name="number" value="00755" />
+      <option name="presentableId" value="LOCAL-00755" />
+      <option name="project" value="LOCAL" />
+      <updated>1514132805483</updated>
+    </task>
+    <task id="LOCAL-00756" summary="Added new particle to particles.png">
+      <created>1514135523400</created>
+      <option name="number" value="00756" />
+      <option name="presentableId" value="LOCAL-00756" />
+      <option name="project" value="LOCAL" />
+      <updated>1514135523400</updated>
+    </task>
+    <task id="LOCAL-00757" summary="Added SnowParticle class">
+      <created>1514147821186</created>
+      <option name="number" value="00757" />
+      <option name="presentableId" value="LOCAL-00757" />
+      <option name="project" value="LOCAL" />
+      <updated>1514147821186</updated>
+    </task>
+    <task id="LOCAL-00758" summary="Created new move">
+      <created>1514154725777</created>
+      <option name="number" value="00758" />
+      <option name="presentableId" value="LOCAL-00758" />
+      <option name="project" value="LOCAL" />
+      <updated>1514154725777</updated>
+    </task>
+    <task id="LOCAL-00759" summary="Adding more data for new moves">
+      <created>1514154900959</created>
+      <option name="number" value="00759" />
+      <option name="presentableId" value="LOCAL-00759" />
+      <option name="project" value="LOCAL" />
+      <updated>1514154900959</updated>
+    </task>
+    <task id="LOCAL-00760" summary="Debugging">
+      <created>1514156042410</created>
+      <option name="number" value="00760" />
+      <option name="presentableId" value="LOCAL-00760" />
+      <option name="project" value="LOCAL" />
+      <updated>1514156042410</updated>
+    </task>
+    <task id="LOCAL-00761" summary="Retextured snow particle">
+      <created>1514297832791</created>
+      <option name="number" value="00761" />
+      <option name="presentableId" value="LOCAL-00761" />
+      <option name="project" value="LOCAL" />
+      <updated>1514297832791</updated>
+    </task>
+    <task id="LOCAL-00762" summary="Updated particle spritesheet data">
+      <created>1514302614127</created>
+      <option name="number" value="00762" />
+      <option name="presentableId" value="LOCAL-00762" />
+      <option name="project" value="LOCAL" />
+      <updated>1514302614127</updated>
+    </task>
+    <task id="LOCAL-00763" summary="Increased particle size">
+      <created>1514302686632</created>
+      <option name="number" value="00763" />
+      <option name="presentableId" value="LOCAL-00763" />
+      <option name="project" value="LOCAL" />
+      <updated>1514302686632</updated>
+    </task>
+    <task id="LOCAL-00764" summary="Increased particle amount and spread">
+      <created>1514302824067</created>
+      <option name="number" value="00764" />
+      <option name="presentableId" value="LOCAL-00764" />
+      <option name="project" value="LOCAL" />
+      <updated>1514302824067</updated>
+    </task>
+    <task id="LOCAL-00765" summary="Adjusting particle effects">
+      <created>1514303207249</created>
+      <option name="number" value="00765" />
+      <option name="presentableId" value="LOCAL-00765" />
+      <option name="project" value="LOCAL" />
+      <updated>1514303207249</updated>
+    </task>
+    <task id="LOCAL-00766" summary="Enemy can now use an item and retreat">
+      <created>1514303579746</created>
+      <option name="number" value="00766" />
+      <option name="presentableId" value="LOCAL-00766" />
+      <option name="project" value="LOCAL" />
+      <updated>1514303579746</updated>
+    </task>
+    <task id="LOCAL-00767" summary="Player can now use an item and retreat">
+      <created>1514303816018</created>
+      <option name="number" value="00767" />
+      <option name="presentableId" value="LOCAL-00767" />
+      <option name="project" value="LOCAL" />
+      <updated>1514303816018</updated>
+    </task>
+    <task id="LOCAL-00768" summary="Retreating works">
+      <created>1514304016628</created>
+      <option name="number" value="00768" />
+      <option name="presentableId" value="LOCAL-00768" />
+      <option name="project" value="LOCAL" />
+      <updated>1514304016628</updated>
+    </task>
+    <task id="LOCAL-00769" summary="Created end_duel function">
+      <created>1514304158307</created>
+      <option name="number" value="00769" />
+      <option name="presentableId" value="LOCAL-00769" />
+      <option name="project" value="LOCAL" />
+      <updated>1514304158307</updated>
+    </task>
+    <task id="LOCAL-00770" summary="Winner gains left over energy and goes up a level">
+      <created>1514305765206</created>
+      <option name="number" value="00770" />
+      <option name="presentableId" value="LOCAL-00770" />
+      <option name="project" value="LOCAL" />
+      <updated>1514305765206</updated>
+    </task>
+    <task id="LOCAL-00771" summary="Fixed a bug">
+      <created>1514310991527</created>
+      <option name="number" value="00771" />
+      <option name="presentableId" value="LOCAL-00771" />
+      <option name="project" value="LOCAL" />
+      <updated>1514310991527</updated>
+    </task>
+    <task id="LOCAL-00772" summary="Once a bean has died is removed from the map">
+      <created>1514379463216</created>
+      <option name="number" value="00772" />
+      <option name="presentableId" value="LOCAL-00772" />
+      <option name="project" value="LOCAL" />
+      <updated>1514379463217</updated>
+    </task>
+    <task id="LOCAL-00773" summary="Fixed bug">
+      <created>1514379652835</created>
+      <option name="number" value="00773" />
+      <option name="presentableId" value="LOCAL-00773" />
+      <option name="project" value="LOCAL" />
+      <updated>1514379652835</updated>
+    </task>
+    <task id="LOCAL-00774" summary="Created brain.py">
+      <created>1514386753305</created>
+      <option name="number" value="00774" />
+      <option name="presentableId" value="LOCAL-00774" />
+      <option name="project" value="LOCAL" />
+      <updated>1514386753305</updated>
+    </task>
+    <task id="LOCAL-00775" summary="Created brain">
+      <created>1514386890192</created>
+      <option name="number" value="00775" />
+      <option name="presentableId" value="LOCAL-00775" />
+      <option name="project" value="LOCAL" />
+      <updated>1514386890192</updated>
+    </task>
+    <task id="LOCAL-00776" summary="Initialises network data structure">
+      <created>1514387187846</created>
+      <option name="number" value="00776" />
+      <option name="presentableId" value="LOCAL-00776" />
+      <option name="project" value="LOCAL" />
+      <updated>1514387187846</updated>
+    </task>
+    <task id="LOCAL-00777" summary="Added no of ins and outs attributes">
+      <created>1514388260769</created>
+      <option name="number" value="00777" />
+      <option name="presentableId" value="LOCAL-00777" />
+      <option name="project" value="LOCAL" />
+      <updated>1514388260769</updated>
+    </task>
+    <task id="LOCAL-00778" summary="Defined get_output data">
+      <created>1514404019077</created>
+      <option name="number" value="00778" />
+      <option name="presentableId" value="LOCAL-00778" />
+      <option name="project" value="LOCAL" />
+      <updated>1514404019077</updated>
+    </task>
+    <task id="LOCAL-00779" summary="Reworking the data structure">
+      <created>1514405597218</created>
+      <option name="number" value="00779" />
+      <option name="presentableId" value="LOCAL-00779" />
+      <option name="project" value="LOCAL" />
+      <updated>1514405597218</updated>
+    </task>
+    <task id="LOCAL-00780" summary="Leaving brain alone for now">
+      <created>1514410575829</created>
+      <option name="number" value="00780" />
+      <option name="presentableId" value="LOCAL-00780" />
+      <option name="project" value="LOCAL" />
+      <updated>1514410575829</updated>
+    </task>
+    <task id="LOCAL-00781" summary="Working on brain">
+      <created>1514454703140</created>
       <option name="number" value="00781" />
       <option name="presentableId" value="LOCAL-00781" />
       <option name="project" value="LOCAL" />
-      <updated>1514562476530</updated>
+      <updated>1514454703140</updated>
     </task>
-    <task id="LOCAL-00782" summary="Updated weight preset to account for a bias in each wieght">
-      <created>1514566082233</created>
-      <option name="number" value="00782" />
-      <option name="presentableId" value="LOCAL-00782" />
-      <option name="project" value="LOCAL" />
-      <updated>1514566082233</updated>
-    </task>
-    <task id="LOCAL-00783" summary="Recreated get_output  function">
-      <created>1514566316115</created>
-      <option name="number" value="00783" />
-      <option name="presentableId" value="LOCAL-00783" />
-      <option name="project" value="LOCAL" />
-      <updated>1514566316115</updated>
-    </task>
-    <task id="LOCAL-00784" summary="Running test data">
-      <created>1514566725560</created>
-      <option name="number" value="00784" />
-      <option name="presentableId" value="LOCAL-00784" />
-      <option name="project" value="LOCAL" />
-      <updated>1514566725560</updated>
-    </task>
-    <task id="LOCAL-00785" summary="Creating test scenarios">
-      <created>1514569634412</created>
-      <option name="number" value="00785" />
-      <option name="presentableId" value="LOCAL-00785" />
-      <option name="project" value="LOCAL" />
-      <updated>1514569634412</updated>
-    </task>
-    <task id="LOCAL-00786" summary="Added expected outcome to test scenarios">
-      <created>1514569913611</created>
-      <option name="number" value="00786" />
-      <option name="presentableId" value="LOCAL-00786" />
-      <option name="project" value="LOCAL" />
-      <updated>1514569913611</updated>
-    </task>
-    <task id="LOCAL-00787" summary="Fixed things">
-      <created>1514571186994</created>
-      <option name="number" value="00787" />
-      <option name="presentableId" value="LOCAL-00787" />
-      <option name="project" value="LOCAL" />
-      <updated>1514571186994</updated>
-    </task>
-    <task id="LOCAL-00788" summary="Keeping the values as integers&#10;">
-      <created>1514572564794</created>
-      <option name="number" value="00788" />
-      <option name="presentableId" value="LOCAL-00788" />
-      <option name="project" value="LOCAL" />
-      <updated>1514572564794</updated>
-    </task>
-    <task id="LOCAL-00789" summary="Allowing excaping of scenarios">
-      <created>1514572674711</created>
-      <option name="number" value="00789" />
-      <option name="presentableId" value="LOCAL-00789" />
-      <option name="project" value="LOCAL" />
-      <updated>1514572674711</updated>
-    </task>
-    <task id="LOCAL-00790" summary="Created training_data.json">
-      <created>1514572711098</created>
-      <option name="number" value="00790" />
-      <option name="presentableId" value="LOCAL-00790" />
-      <option name="project" value="LOCAL" />
-      <updated>1514572711098</updated>
-    </task>
-    <task id="LOCAL-00791" summary="Now loads and dumps to training_data.json">
-      <created>1514572850590</created>
-      <option name="number" value="00791" />
-      <option name="presentableId" value="LOCAL-00791" />
-      <option name="project" value="LOCAL" />
-      <updated>1514572850590</updated>
-    </task>
-    <task id="LOCAL-00792" summary="Scenario generator is working">
-      <created>1514573516700</created>
-      <option name="number" value="00792" />
-      <option name="presentableId" value="LOCAL-00792" />
-      <option name="project" value="LOCAL" />
-      <updated>1514573516700</updated>
-    </task>
-    <task id="LOCAL-00793" summary="Created a bunch of training data">
-      <created>1514575118336</created>
-      <option name="number" value="00793" />
-      <option name="presentableId" value="LOCAL-00793" />
-      <option name="project" value="LOCAL" />
-      <updated>1514575118336</updated>
-    </task>
-    <task id="LOCAL-00794" summary="brain now imports scenarios from training data">
-      <created>1514575292671</created>
-      <option name="number" value="00794" />
-      <option name="presentableId" value="LOCAL-00794" />
-      <option name="project" value="LOCAL" />
-      <updated>1514575292671</updated>
-    </task>
-    <task id="LOCAL-00795" summary="Evaluates success rate">
-      <created>1514575771500</created>
-      <option name="number" value="00795" />
-      <option name="presentableId" value="LOCAL-00795" />
-      <option name="project" value="LOCAL" />
-      <updated>1514575771500</updated>
-    </task>
-    <task id="LOCAL-00796" summary="Defining get_cost function">
-      <created>1514635053711</created>
-      <option name="number" value="00796" />
-      <option name="presentableId" value="LOCAL-00796" />
-      <option name="project" value="LOCAL" />
-      <updated>1514635053711</updated>
-    </task>
-    <task id="LOCAL-00797" summary="Working on cost function">
-      <created>1514635401551</created>
-      <option name="number" value="00797" />
-      <option name="presentableId" value="LOCAL-00797" />
-      <option name="project" value="LOCAL" />
-      <updated>1514635401551</updated>
-    </task>
-    <task id="LOCAL-00798" summary="Finished cost outcome">
-      <created>1514635545505</created>
-      <option name="number" value="00798" />
-      <option name="presentableId" value="LOCAL-00798" />
-      <option name="project" value="LOCAL" />
-      <updated>1514635545505</updated>
-    </task>
-    <task id="LOCAL-00799" summary="Removed unnecessary list">
-      <created>1514635661637</created>
-      <option name="number" value="00799" />
-      <option name="presentableId" value="LOCAL-00799" />
-      <option name="project" value="LOCAL" />
-      <updated>1514635661637</updated>
-    </task>
-    <task id="LOCAL-00800" summary="Defined a new helper function">
-      <created>1514636905525</created>
-      <option name="number" value="00800" />
-      <option name="presentableId" value="LOCAL-00800" />
-      <option name="project" value="LOCAL" />
-      <updated>1514636905525</updated>
-    </task>
-    <task id="LOCAL-00801" summary="Working on implementing cost">
-      <created>1514637188867</created>
-      <option name="number" value="00801" />
-      <option name="presentableId" value="LOCAL-00801" />
-      <option name="project" value="LOCAL" />
-      <updated>1514637188867</updated>
-    </task>
-    <task id="LOCAL-00802" summary="Fixed cost function">
-      <created>1514650515462</created>
-      <option name="number" value="00802" />
-      <option name="presentableId" value="LOCAL-00802" />
-      <option name="project" value="LOCAL" />
-      <updated>1514650515462</updated>
-    </task>
-    <task id="LOCAL-00803" summary="Implementing brain into duel controller">
-      <created>1514651300824</created>
-      <option name="number" value="00803" />
-      <option name="presentableId" value="LOCAL-00803" />
-      <option name="project" value="LOCAL" />
-      <updated>1514651300824</updated>
-    </task>
-    <task id="LOCAL-00804" summary="Fixing some formatting">
-      <created>1514651652947</created>
-      <option name="number" value="00804" />
-      <option name="presentableId" value="LOCAL-00804" />
-      <option name="project" value="LOCAL" />
-      <updated>1514651652947</updated>
-    </task>
-    <task id="LOCAL-00805" summary="Defined get_opponent_move">
-      <created>1514652405362</created>
-      <option name="number" value="00805" />
-      <option name="presentableId" value="LOCAL-00805" />
-      <option name="project" value="LOCAL" />
-      <updated>1514652405362</updated>
-    </task>
-    <task id="LOCAL-00806" summary="AI now makes moves">
-      <created>1514720888841</created>
-      <option name="number" value="00806" />
-      <option name="presentableId" value="LOCAL-00806" />
-      <option name="project" value="LOCAL" />
-      <updated>1514720888841</updated>
-    </task>
-    <task id="LOCAL-00807" summary="Created a squish function that reduces all numbers in a range to between 0 and 1">
-      <created>1514721020989</created>
-      <option name="number" value="00807" />
-      <option name="presentableId" value="LOCAL-00807" />
-      <option name="project" value="LOCAL" />
-      <updated>1514721020989</updated>
-    </task>
-    <task id="LOCAL-00808" summary="Brain should now only work with numbers between 0 and 1">
-      <created>1514721164261</created>
-      <option name="number" value="00808" />
-      <option name="presentableId" value="LOCAL-00808" />
-      <option name="project" value="LOCAL" />
-      <updated>1514721164261</updated>
-    </task>
-    <task id="LOCAL-00809" summary="Going to continue with weights preset only">
-      <created>1514721312489</created>
-      <option name="number" value="00809" />
-      <option name="presentableId" value="LOCAL-00809" />
-      <option name="project" value="LOCAL" />
-      <updated>1514721312489</updated>
-    </task>
-    <task id="LOCAL-00810" summary="Adjusting the weights">
-      <created>1514735206335</created>
-      <option name="number" value="00810" />
-      <option name="presentableId" value="LOCAL-00810" />
-      <option name="project" value="LOCAL" />
-      <updated>1514735206335</updated>
-    </task>
-    <task id="LOCAL-00811" summary="Adding in player and enemy name labels">
-      <created>1514736540242</created>
-      <option name="number" value="00811" />
-      <option name="presentableId" value="LOCAL-00811" />
-      <option name="project" value="LOCAL" />
-      <updated>1514736540242</updated>
-    </task>
-    <task id="LOCAL-00812" summary="Random module no longer needed">
-      <created>1514736563674</created>
-      <option name="number" value="00812" />
-      <option name="presentableId" value="LOCAL-00812" />
-      <option name="project" value="LOCAL" />
-      <updated>1514736563674</updated>
-    </task>
-    <task id="LOCAL-00813" summary="Text appears in the correct place">
-      <created>1514736963455</created>
-      <option name="number" value="00813" />
-      <option name="presentableId" value="LOCAL-00813" />
-      <option name="project" value="LOCAL" />
-      <updated>1514736963455</updated>
-    </task>
-    <task id="LOCAL-00814" summary="Fixed formatting">
-      <created>1514737072202</created>
-      <option name="number" value="00814" />
-      <option name="presentableId" value="LOCAL-00814" />
-      <option name="project" value="LOCAL" />
-      <updated>1514737072202</updated>
-    </task>
-    <task id="LOCAL-00815" summary="Temporarily increased bean spawn rate">
-      <created>1514737109208</created>
-      <option name="number" value="00815" />
-      <option name="presentableId" value="LOCAL-00815" />
-      <option name="project" value="LOCAL" />
-      <updated>1514737109208</updated>
-    </task>
-    <task id="LOCAL-00816" summary="Created some useful methods for entity_meta class">
-      <created>1514737709689</created>
-      <option name="number" value="00816" />
-      <option name="presentableId" value="LOCAL-00816" />
-      <option name="project" value="LOCAL" />
-      <updated>1514737709689</updated>
-    </task>
-    <task id="LOCAL-00817" summary="Using these new methods">
-      <created>1514738185339</created>
-      <option name="number" value="00817" />
-      <option name="presentableId" value="LOCAL-00817" />
-      <option name="project" value="LOCAL" />
-      <updated>1514738185339</updated>
-    </task>
-    <task id="LOCAL-00818" summary="Removing redundant code">
-      <created>1514738397196</created>
-      <option name="number" value="00818" />
-      <option name="presentableId" value="LOCAL-00818" />
-      <option name="project" value="LOCAL" />
-      <updated>1514738397196</updated>
-    </task>
-    <task id="LOCAL-00819" summary="Adding fullscreen support which may work better with smaller screens">
-      <created>1514912549179</created>
-      <option name="number" value="00819" />
-      <option name="presentableId" value="LOCAL-00819" />
-      <option name="project" value="LOCAL" />
-      <updated>1514912549179</updated>
-    </task>
-    <task id="LOCAL-00820" summary="Implemented F11 as fullscreen key">
-      <created>1514912762753</created>
-      <option name="number" value="00820" />
-      <option name="presentableId" value="LOCAL-00820" />
-      <option name="project" value="LOCAL" />
-      <updated>1514912762753</updated>
-    </task>
-    <task id="LOCAL-00821" summary="Defining get_level_up_threshold for entity meta class">
-      <created>1514913002427</created>
-      <option name="number" value="00821" />
-      <option name="presentableId" value="LOCAL-00821" />
-      <option name="project" value="LOCAL" />
-      <updated>1514913002427</updated>
-    </task>
-    <task id="LOCAL-00822" summary="get_level_up_threshold should now work">
-      <created>1514913279362</created>
-      <option name="number" value="00822" />
-      <option name="presentableId" value="LOCAL-00822" />
-      <option name="project" value="LOCAL" />
-      <updated>1514913279362</updated>
-    </task>
-    <task id="LOCAL-00823" summary="If the xp goes over the level up threshold then the bean will be leveled up">
-      <created>1514913384445</created>
-      <option name="number" value="00823" />
-      <option name="presentableId" value="LOCAL-00823" />
-      <option name="project" value="LOCAL" />
-      <updated>1514913384445</updated>
-    </task>
-    <task id="LOCAL-00824" summary="Implementing the new function">
-      <created>1514913694675</created>
-      <option name="number" value="00824" />
-      <option name="presentableId" value="LOCAL-00824" />
-      <option name="project" value="LOCAL" />
-      <updated>1514913694675</updated>
-    </task>
-    <task id="LOCAL-00825" summary="Displays stats as percentages now">
-      <created>1514913946400</created>
-      <option name="number" value="00825" />
-      <option name="presentableId" value="LOCAL-00825" />
-      <option name="project" value="LOCAL" />
-      <updated>1514913946400</updated>
-    </task>
-    <task id="LOCAL-00826" summary="Fixed a bug in code order">
-      <created>1514914218505</created>
-      <option name="number" value="00826" />
-      <option name="presentableId" value="LOCAL-00826" />
-      <option name="project" value="LOCAL" />
-      <updated>1514914218505</updated>
-    </task>
-    <task id="LOCAL-00827" summary="Repositioning labels">
-      <created>1514914689106</created>
-      <option name="number" value="00827" />
-      <option name="presentableId" value="LOCAL-00827" />
-      <option name="project" value="LOCAL" />
-      <updated>1514914689106</updated>
-    </task>
-    <task id="LOCAL-00828" summary="Elongated progress bars to fill the space">
-      <created>1514914903625</created>
-      <option name="number" value="00828" />
-      <option name="presentableId" value="LOCAL-00828" />
-      <option name="project" value="LOCAL" />
-      <updated>1514914903625</updated>
-    </task>
-    <task id="LOCAL-00829" summary="DuelController particle engine now internally assigned">
-      <created>1514915781270</created>
-      <option name="number" value="00829" />
-      <option name="presentableId" value="LOCAL-00829" />
-      <option name="project" value="LOCAL" />
-      <updated>1514915781270</updated>
-    </task>
-    <option name="localTasksCounter" value="830" />
+    <option name="localTasksCounter" value="782" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14372164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3584288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -894,6 +791,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -904,40 +809,47 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Defined get_opponent_move" />
-    <MESSAGE value="AI now makes moves" />
-    <MESSAGE value="Created a squish function that reduces all numbers in a range to between 0 and 1" />
-    <MESSAGE value="Brain should now only work with numbers between 0 and 1" />
-    <MESSAGE value="Going to continue with weights preset only" />
-    <MESSAGE value="Adjusting the weights" />
-    <MESSAGE value="Adding in player and enemy name labels" />
-    <MESSAGE value="Random module no longer needed" />
-    <MESSAGE value="Text appears in the correct place" />
-    <MESSAGE value="Fixed formatting" />
-    <MESSAGE value="Temporarily increased bean spawn rate" />
-    <MESSAGE value="Created some useful methods for entity_meta class" />
-    <MESSAGE value="Using these new methods" />
-    <MESSAGE value="Removing redundant code" />
-    <MESSAGE value="Adding fullscreen support which may work better with smaller screens" />
-    <MESSAGE value="Implemented F11 as fullscreen key" />
-    <MESSAGE value="Defining get_level_up_threshold for entity meta class" />
-    <MESSAGE value="get_level_up_threshold should now work" />
-    <MESSAGE value="If the xp goes over the level up threshold then the bean will be leveled up" />
-    <MESSAGE value="Implementing the new function" />
-    <MESSAGE value="Displays stats as percentages now" />
-    <MESSAGE value="Fixed a bug in code order" />
-    <MESSAGE value="Repositioning labels" />
-    <MESSAGE value="Elongated progress bars to fill the space" />
-    <MESSAGE value="DuelController particle engine now internally assigned" />
-    <option name="LAST_COMMIT_MESSAGE" value="DuelController particle engine now internally assigned" />
+    <MESSAGE value="Added SnowParticle class" />
+    <MESSAGE value="Created new move" />
+    <MESSAGE value="Adding more data for new moves" />
+    <MESSAGE value="Debugging" />
+    <MESSAGE value="Retextured snow particle" />
+    <MESSAGE value="Updated particle spritesheet data" />
+    <MESSAGE value="Increased particle size" />
+    <MESSAGE value="Increased particle amount and spread" />
+    <MESSAGE value="Adjusting particle effects" />
+    <MESSAGE value="Enemy can now use an item and retreat" />
+    <MESSAGE value="Player can now use an item and retreat" />
+    <MESSAGE value="Retreating works" />
+    <MESSAGE value="Created end_duel function" />
+    <MESSAGE value="Winner gains left over energy and goes up a level" />
+    <MESSAGE value="Fixed a bug" />
+    <MESSAGE value="Once a bean has died is removed from the map" />
+    <MESSAGE value="Fixed bug" />
+    <MESSAGE value="Created brain.py" />
+    <MESSAGE value="Created brain" />
+    <MESSAGE value="Initialises network data structure" />
+    <MESSAGE value="Added no of ins and outs attributes" />
+    <MESSAGE value="Defined get_output data" />
+    <MESSAGE value="Reworking the data structure" />
+    <MESSAGE value="Leaving brain alone for now" />
+    <MESSAGE value="Working on brain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on brain" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
@@ -966,20 +878,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Stealth/setup.py" />
+    <entry file="file://D:/Stealth/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-992">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/Labrat/setup.py" />
-    <entry file="file://D:/Stealth/source/main.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1442825926/pygame/base.py" />
+    <entry file="file://D:/Stealth/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1442825926/pygame/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://C:/Python34/Lib/site-packages/pygame/sprite.py" />
-    <entry file="file://D:/bean_rpg etc/template test.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+    <entry file="file://C:/Python34/Lib/site-packages/pygame/sprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="197" column="8" lean-forward="false" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/bean_rpg etc/template test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/maps.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11220">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/terrain.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1442825926/pygame/mixer.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1442825926/pygame/mixer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/beans.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1101,6 +1062,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/shadows.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
@@ -1108,7 +1076,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-1442825926/builtins.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-1442825926/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
@@ -1144,6 +1118,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
@@ -1151,74 +1132,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2805" lean-forward="false" selection-start-line="0" selection-start-column="2805" selection-end-line="0" selection-end-column="2805" />
+        <state relative-caret-position="472">
+          <caret line="254" column="0" lean-forward="true" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/brain_scenario_gen.py">
+    <entry file="file://$PROJECT_DIR$/src/saves/training_data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="876" lean-forward="true" selection-start-line="0" selection-start-column="876" selection-end-line="0" selection-end-column="876" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="320">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="67" column="27" lean-forward="false" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2623">
-          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        <state relative-caret-position="275">
+          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="282">
+          <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/maps.json">
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        <state relative-caret-position="4622">
+          <caret line="314" column="0" lean-forward="true" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -64,6 +64,8 @@ class ChunkController:
         self.moving = 0
         self.movement_interval = (0, 0)
 
+        self.movement_speed = constants.movement_speed
+
         self.animation_clock = 0
 
         self.global_animation_threshold = max(constants.animation_thresholds.items(), key=operator.itemgetter(1))[0]
@@ -242,7 +244,7 @@ class ChunkController:
 
             if self.direction:
 
-                self.moving = constants.movement_speed
+                self.moving = self.movement_speed
 
                 if len(self.direction) > 1:
                     movements = [constants.dir_to_movements[d] for d in list(self.direction)]
