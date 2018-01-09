@@ -157,3 +157,15 @@ class Fill:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class Fade:
+
+    def __init__(self):
+
+        self.image = pygame.Surface(constants.DISPLAY_SIZE).convert()
+        self.image.fill(constants.BLACK)
+
+        self.rect = self.image.get_rect()
+        self.rect.x = 0
+        self.rect.y = 0
