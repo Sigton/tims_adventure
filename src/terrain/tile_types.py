@@ -60,5 +60,7 @@ shadow_x_offset = {
 
 
 spawn_tiles = [
-    "0000"
+    "0000",
+    "0041",
+    "0042"
 ]
