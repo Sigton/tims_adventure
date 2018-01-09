@@ -1,6 +1,6 @@
 import pygame
 
-from src.etc import constants
+from src.etc import constants, tools
 
 """
 gui_components.py
@@ -169,3 +169,15 @@ class Fade:
         self.rect = self.image.get_rect()
         self.rect.x = 0
         self.rect.y = 0
+
+        self.opacity = 255
+
+    def draw(self, display):
+
+        if self.opacity == 255:
+            display.blit(self.image, (self.rect.x, self.rect.y))
+        elif self.opacity == 0:
+            return
+        else:
+            tools.blit_alpha(display, self.image, self.rect.topleft, self.opacity)
+
