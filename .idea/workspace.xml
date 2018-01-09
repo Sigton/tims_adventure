@@ -2,12 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
-    <bookmark url="file://$PROJECT_DIR$/src/main.py" line="80" />
+    <bookmark url="file://$PROJECT_DIR$/src/main.py" line="82" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/gui_components.py" afterPath="$PROJECT_DIR$/src/etc/gui_components.py" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,54 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="181" column="81" lean-forward="false" selection-start-line="181" selection-start-column="81" selection-end-line="181" selection-end-column="81" />
+            <state relative-caret-position="480">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/etc/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="92" column="50" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -171,12 +131,12 @@
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -385,13 +345,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00739" summary="Quieter music">
-      <created>1514114161136</created>
-      <option name="number" value="00739" />
-      <option name="presentableId" value="LOCAL-00739" />
-      <option name="project" value="LOCAL" />
-      <updated>1514114161136</updated>
     </task>
     <task id="LOCAL-00740" summary="Implemented punch sound">
       <created>1514115601789</created>
@@ -729,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515531954157</updated>
     </task>
-    <option name="localTasksCounter" value="788" />
+    <task id="LOCAL-00788" summary="Created a draw function">
+      <created>1515532156648</created>
+      <option name="number" value="00788" />
+      <option name="presentableId" value="LOCAL-00788" />
+      <option name="project" value="LOCAL" />
+      <updated>1515532156648</updated>
+    </task>
+    <option name="localTasksCounter" value="789" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -806,7 +766,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Increased particle size" />
     <MESSAGE value="Increased particle amount and spread" />
     <MESSAGE value="Adjusting particle effects" />
     <MESSAGE value="Enemy can now use an item and retreat" />
@@ -831,7 +790,8 @@
     <MESSAGE value="Added an alternative ground texture" />
     <MESSAGE value="Updated ground alt texture" />
     <MESSAGE value="Created fade class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created fade class" />
+    <MESSAGE value="Created a draw function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a draw function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1094,14 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9168">
@@ -1139,9 +1091,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="181" column="81" lean-forward="false" selection-start-line="181" selection-start-column="81" selection-end-line="181" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
+        <state relative-caret-position="752">
           <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
           <folding />
         </state>
@@ -1155,28 +1133,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+    <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="181" column="81" lean-forward="false" selection-start-line="181" selection-start-column="81" selection-end-line="181" selection-end-column="81" />
+        <state relative-caret-position="480">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

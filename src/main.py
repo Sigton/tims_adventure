@@ -3,9 +3,9 @@ import sys
 import pygame
 
 from src.engines import sounds, particles
-from src.etc import constants
+from src.etc import constants, gui_components
 from src.terrain import chunks
-from src.entities import bean_image_loader, player, icons
+from src.entities import bean_image_loader, icons
 from src.duel import duel_controller
 
 """
@@ -41,6 +41,8 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
         self.duel_controller = duel_controller.DuelController(self)
+
+        self.fade_screen = gui_components.Fade()
 
         self.game_mode = 0
         self.full_screen = False
