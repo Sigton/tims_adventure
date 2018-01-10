@@ -43,6 +43,7 @@ class Main:
         self.duel_controller = duel_controller.DuelController(self)
 
         self.fade_screen = gui_components.Fade()
+        self.fade_screen.set_opacity(0)
 
         self.game_mode = 0
         self.full_screen = False
@@ -84,6 +85,7 @@ class Main:
                 self.duel_controller.draw(self.display)
 
             self.particle_engine.draw(self.display)
+            self.fade_screen.draw(self.display)
 
             self.sound_engine.play_sounds()
 
