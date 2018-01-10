@@ -94,7 +94,7 @@ class Main:
             self.particle_engine.draw(self.display)
 
             if self.fade > 30:
-                self.fade_screen.set_opacity(((self.fade-30)//30)*255)
+                self.fade_screen.set_opacity(int(((30-(self.fade-30))/30)*255))
             elif self.fade > 0:
                 self.fade_screen.set_opacity(int((self.fade/30)*255))
 
