@@ -181,3 +181,6 @@ class Fade:
         else:
             tools.blit_alpha(display, self.image, self.rect.topleft, self.opacity)
 
+    def set_opacity(self, opacity):
+
+        self.opacity = opacity
