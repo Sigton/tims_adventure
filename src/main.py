@@ -48,6 +48,8 @@ class Main:
         self.game_mode = 0
         self.full_screen = False
 
+        self.fade = 0
+
     def load_components(self):
 
         constants.load_font()
@@ -68,12 +70,12 @@ class Main:
 
         pygame.time.set_timer(constants.MUSIC_START_EVENT, 1000)
 
-        fade = 0
+        self.fade = 0
 
         while not self.game_exit:
 
-            if fade > 0:
-                fade -= 1
+            if self.fade > 0:
+                self.fade -= 1
             else:
                 if self.game_mode == 0:
                     self.chunk_controller.update()
