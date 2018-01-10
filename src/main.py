@@ -92,6 +92,12 @@ class Main:
                 self.duel_controller.draw(self.display)
 
             self.particle_engine.draw(self.display)
+
+            if self.fade > 30:
+                self.fade_screen.set_opacity(((self.fade-30)//30)*255)
+            elif self.fade > 0:
+                self.fade_screen.set_opacity(((self.fade-30)//30)*255)
+
             self.fade_screen.draw(self.display)
 
             self.sound_engine.play_sounds()
