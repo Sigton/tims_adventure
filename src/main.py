@@ -68,12 +68,17 @@ class Main:
 
         pygame.time.set_timer(constants.MUSIC_START_EVENT, 1000)
 
+        fade = 0
+
         while not self.game_exit:
 
-            if self.game_mode == 0:
-                self.chunk_controller.update()
-            elif self.game_mode == 1:
-                self.duel_controller.update()
+            if fade > 0:
+                fade -= 1
+            else:
+                if self.game_mode == 0:
+                    self.chunk_controller.update()
+                elif self.game_mode == 1:
+                    self.duel_controller.update()
 
             self.particle_engine.update()
 
