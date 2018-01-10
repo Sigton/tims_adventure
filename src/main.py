@@ -49,6 +49,7 @@ class Main:
         self.full_screen = False
 
         self.fade = 0
+        self.new_game_mode = -1
 
     def load_components(self):
 
@@ -76,6 +77,10 @@ class Main:
 
             if self.fade > 0:
                 self.fade -= 1
+
+                if self.fade == 30 and self.new_game_mode >= 0:
+                    self.switch_game_mode()
+
             else:
                 if self.game_mode == 0:
                     self.chunk_controller.update()
@@ -104,6 +109,11 @@ class Main:
 
             pygame.display.update()
             self.clock.tick(60)
+
+    def switch_game_mode(self):
+
+        self.game_mode = self.new_game_mode
+        self.new_game_mode = -1
 
 
 if __name__ == "__main__":
