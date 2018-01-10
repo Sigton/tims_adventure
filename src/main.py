@@ -96,7 +96,7 @@ class Main:
             if self.fade > 30:
                 self.fade_screen.set_opacity(((self.fade-30)//30)*255)
             elif self.fade > 0:
-                self.fade_screen.set_opacity(((self.fade-30)//30)*255)
+                self.fade_screen.set_opacity(int((self.fade/30)*255))
 
             self.fade_screen.draw(self.display)
 
