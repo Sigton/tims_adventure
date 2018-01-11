@@ -175,7 +175,7 @@ class DuelController:
                                                              True, 128, constants.BLACK)
                     self.text.append(self.winner_label)
                 else:
-                    self.master.game_mode = 0
+                    self.master.switch_to(0)
 
         if self.player.energy - moves[self.player.meta.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
