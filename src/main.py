@@ -115,6 +115,11 @@ class Main:
         self.game_mode = self.new_game_mode
         self.new_game_mode = -1
 
+    def switch_to(self, game_mode):
+
+        self.new_game_mode = game_mode
+        self.fade = 60
+
 
 if __name__ == "__main__":
     game = Main()

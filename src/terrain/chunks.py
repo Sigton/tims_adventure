@@ -316,8 +316,7 @@ class ChunkController:
     def start_duel(self, bean):
         self.master.duel_controller.begin_duel(self.player.beans[bean], self.enemy_to_duel)
 
-        self.master.new_game_mode = 1
-        self.master.fade = 60
+        self.master.switch_to(1)
 
         self.enemy_to_duel = None
 
