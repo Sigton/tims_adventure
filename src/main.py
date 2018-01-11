@@ -51,6 +51,11 @@ class Main:
         self.fade = 0
         self.new_game_mode = -1
 
+        self.controllers = [
+            self.chunk_controller,
+            self.duel_controller
+        ]
+
     def load_components(self):
 
         constants.load_font()
@@ -86,19 +91,13 @@ class Main:
                 if self.fade_screen.opacity > 0:
                     self.fade_screen.set_opacity(0)
 
-                if self.game_mode == 0:
-                    self.chunk_controller.update()
-                elif self.game_mode == 1:
-                    self.duel_controller.update()
+                self.controllers[self.game_mode].update()
 
             self.particle_engine.update()
 
             self.display.fill(constants.WHITE)
 
-            if self.game_mode == 0:
-                self.chunk_controller.draw(self.display)
-            elif self.game_mode == 1:
-                self.duel_controller.draw(self.display)
+            self.controllers[self.game_mode].draw(self.display)
 
             self.particle_engine.draw(self.display)
 
@@ -118,6 +117,8 @@ class Main:
 
         self.game_mode = self.new_game_mode
         self.new_game_mode = -1
+
+        self.controllers[self.game_mode].update()
 
     def switch_to(self, game_mode):
 
