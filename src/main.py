@@ -82,6 +82,10 @@ class Main:
                     self.switch_game_mode()
 
             else:
+
+                if self.fade_screen.opacity > 0:
+                    self.fade_screen.set_opacity(0)
+
                 if self.game_mode == 0:
                     self.chunk_controller.update()
                 elif self.game_mode == 1:
