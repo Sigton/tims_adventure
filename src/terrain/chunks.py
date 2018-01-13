@@ -9,7 +9,8 @@ import math
 import collections
 
 from src.etc import constants, containers
-from src.terrain import tiles, hud
+from src.terrain import tiles
+from src.hud import hud
 from src.terrain.tile_types import *
 from src.entities import entities, player
 
