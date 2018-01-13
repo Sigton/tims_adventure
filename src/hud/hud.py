@@ -52,6 +52,11 @@ class HUD:
 
         self.components.remove(widget)
 
+    def close_hud(self):
+
+        self.components = []
+        self.hud_id = None
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
