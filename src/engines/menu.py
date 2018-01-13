@@ -10,7 +10,9 @@ the different components of the menu.
 
 class MainMenu:
 
-    def __init__(self):
+    def __init__(self, master):
+
+        self.master = master
 
         self.background = gui_components.Image("src/resources/title.png")
 

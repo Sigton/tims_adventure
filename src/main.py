@@ -2,7 +2,7 @@ import sys
 
 import pygame
 
-from src.engines import sounds, particles
+from src.engines import sounds, particles, menu
 from src.etc import constants, gui_components
 from src.terrain import chunks
 from src.entities import bean_image_loader, icons
@@ -42,6 +42,8 @@ class Main:
         self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
         self.duel_controller = duel_controller.DuelController(self)
 
+        self.menu = menu.MainMenu(self)
+
         self.fade_screen = gui_components.Fade()
         self.fade_screen.set_opacity(0)
 
@@ -53,7 +55,8 @@ class Main:
 
         self.controllers = [
             self.chunk_controller,
-            self.duel_controller
+            self.duel_controller,
+            self.menu
         ]
 
     def load_components(self):
