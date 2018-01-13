@@ -1,3 +1,6 @@
+import pygame
+from pygame.constants import *
+
 from src.etc import gui_components
 
 """
@@ -18,7 +21,10 @@ class MainMenu:
 
     def update(self):
 
-        pass
+        for event in pygame.event.get():
+
+            if event.type == QUIT:
+                self.master.game_exit = True
 
     def draw(self, display):
 
