@@ -18,6 +18,11 @@ class HUD:
         self.health_display = hud_widgets.HealthDisplay(self.player, self.master)
         self.bean_select = hud_widgets.BeanSelectPopup(self.player, self.master, 297, 452)
 
+        self.defined_components = {
+            "health_display": self.health_display,
+            "bean_select": self.bean_select
+        }
+
         self.components = []
 
         self.hud_saves = {}
@@ -26,6 +31,11 @@ class HUD:
     def update(self):
 
         [component.update() for component in self.components]
+
+    def load_saved_hud(self, hud_id):
+
+        self.hud_id = hud_id
+        self.components = self.hud_saves[self.hud_id]
 
     def open_widget(self, widget):
 
