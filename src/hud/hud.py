@@ -1,3 +1,5 @@
+from src.hud import hud_widgets
+
 """
 hud.py
 
@@ -13,8 +15,8 @@ class HUD:
         self.player = player
         self.master = master
 
-        self.health_display = HealthDisplay(self.player, self.master)
-        self.bean_select = BeanSelectPopup(self.player, self.master, 297, 452)
+        self.health_display = hud_widgets.HealthDisplay(self.player, self.master)
+        self.bean_select = hud_widgets.BeanSelectPopup(self.player, self.master, 297, 452)
 
         self.components = [
             self.health_display
