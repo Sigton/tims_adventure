@@ -145,6 +145,10 @@ class BeanSelectPopup:
 
         self.arrow.realign(self.x+23, self.y+44+18*self.selected_option)
 
+    def set_position(self, x, y):
+
+        self.x, self.y = x, y
+
     def handle_event(self, e):
 
         if e.type == KEYUP:
