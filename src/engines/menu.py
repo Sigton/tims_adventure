@@ -16,6 +16,6 @@ class MainMenu:
 
         pass
 
-    def draw(self):
+    def draw(self, display):
 
         pass
