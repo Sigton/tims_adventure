@@ -39,7 +39,10 @@ class HUD:
 
     def save_hud(self, hud_id, components, current=False):
 
-        pass
+        if not current:
+            self.hud_saves[hud_id] = [self.defined_components[component] for component in components]
+        else:
+            self.hud_saves[hud_id] = self.components
 
     def open_widget(self, widget):
 

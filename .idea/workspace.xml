@@ -20,8 +20,8 @@
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="592">
+              <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -335,13 +335,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00767" summary="Player can now use an item and retreat">
-      <created>1514303816018</created>
-      <option name="number" value="00767" />
-      <option name="presentableId" value="LOCAL-00767" />
-      <option name="project" value="LOCAL" />
-      <updated>1514303816018</updated>
     </task>
     <task id="LOCAL-00768" summary="Retreating works">
       <created>1514304016628</created>
@@ -679,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515886271187</updated>
     </task>
-    <option name="localTasksCounter" value="816" />
+    <task id="LOCAL-00816" summary="Defining save_hud">
+      <created>1515886341403</created>
+      <option name="number" value="00816" />
+      <option name="presentableId" value="LOCAL-00816" />
+      <option name="project" value="LOCAL" />
+      <updated>1515886341403</updated>
+    </task>
+    <option name="localTasksCounter" value="817" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -756,7 +756,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fade screen draws at 0 opacity be dafault" />
     <MESSAGE value="Controllers don't update when game is fading" />
     <MESSAGE value="Attributes fade to Game" />
     <MESSAGE value="Added setting fade screen opacity based on fade" />
@@ -781,7 +780,8 @@
     <MESSAGE value="Imported hud_widgets to hud" />
     <MESSAGE value="Adapting how the hud will work" />
     <MESSAGE value="Working on implementing new HUD system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on implementing new HUD system" />
+    <MESSAGE value="Defining save_hud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defining save_hud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1128,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="592">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
           <folding />
         </state>
       </provider>
