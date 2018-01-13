@@ -37,6 +37,10 @@ class HUD:
         self.hud_id = hud_id
         self.components = self.hud_saves[self.hud_id]
 
+    def save_hud(self, hud_id, components, current=False):
+
+        pass
+
     def open_widget(self, widget):
 
         self.components.append(widget)
