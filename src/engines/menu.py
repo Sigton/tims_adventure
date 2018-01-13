@@ -1,3 +1,5 @@
+from src.etc import gui_components
+
 """
 menu.py
 
@@ -10,7 +12,7 @@ class MainMenu:
 
     def __init__(self):
 
-        pass
+        self.background = gui_components.Image("src/resources/title.png")
 
     def update(self):
 
@@ -18,4 +20,4 @@ class MainMenu:
 
     def draw(self, display):
 
-        pass
+        self.background.draw(display)
