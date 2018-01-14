@@ -43,7 +43,8 @@ class MainMenu:
 
     def callback(self, button_id):
 
-        pass
+        if button_id == 0:
+            self.master.switch_to(0)
 
     def draw(self, display):
 
