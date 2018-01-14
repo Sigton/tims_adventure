@@ -176,9 +176,13 @@ class BeanSelectPopup:
 
 class SaveSelect:
 
-    def __init__(self):
+    def __init__(self, player, master, x, y):
 
-        pass
+        self.master = master
+        self.player = player
+
+        self.x = x
+        self.y = y
 
     def update(self):
 
