@@ -202,4 +202,4 @@ class SaveSelect:
 
     def draw(self, display):
 
-        pass
+        [component.draw(display) for component in self.components]
