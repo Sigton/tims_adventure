@@ -34,7 +34,18 @@ def load_images():
     sprite_sheet = spritesheet.SpriteSheet("src/resources/menu_buttons.png")
 
     images = {
-
+        "play_button": [sprite_sheet.get_image(image[0],
+                                               image[1],
+                                               image[2],
+                                               image[3]) for image in SpriteSheetData.play_button],
+        "option_button": [sprite_sheet.get_image(image[0],
+                                                 image[1],
+                                                 image[2],
+                                                 image[3]) for image in SpriteSheetData.options_button],
+        "quit_button": [sprite_sheet.get_image(image[0],
+                                               image[1],
+                                               image[2],
+                                               image[3]) for image in SpriteSheetData.quit_button]
     }
 
     return images

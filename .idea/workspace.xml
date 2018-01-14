@@ -22,8 +22,8 @@
           <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="780">
-                  <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+                <state relative-caret-position="712">
+                  <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
@@ -359,13 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00776" summary="Initialises network data structure">
-      <created>1514387187846</created>
-      <option name="number" value="00776" />
-      <option name="presentableId" value="LOCAL-00776" />
-      <option name="project" value="LOCAL" />
-      <updated>1514387187846</updated>
     </task>
     <task id="LOCAL-00777" summary="Added no of ins and outs attributes">
       <created>1514388260769</created>
@@ -703,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515922163590</updated>
     </task>
-    <option name="localTasksCounter" value="825" />
+    <task id="LOCAL-00825" summary="Creating load_images function">
+      <created>1515922364539</created>
+      <option name="number" value="00825" />
+      <option name="presentableId" value="LOCAL-00825" />
+      <option name="project" value="LOCAL" />
+      <updated>1515922364539</updated>
+    </task>
+    <option name="localTasksCounter" value="826" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,7 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Now fades on the way back out of a duel too" />
     <MESSAGE value="Fixed a bug where the opacity of the fade screen wouldn't quite reach 0 and cause lag" />
     <MESSAGE value="More efficient method of calling to the controllers" />
     <MESSAGE value="Created menu.py" />
@@ -805,7 +804,8 @@
     <MESSAGE value="Given the menu its own directory" />
     <MESSAGE value="Created menu_image_loader.py" />
     <MESSAGE value="Defined SpriteSheetData" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined SpriteSheetData" />
+    <MESSAGE value="Creating load_images function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating load_images function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="712">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding />
         </state>
       </provider>
