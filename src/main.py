@@ -2,7 +2,8 @@ import sys
 
 import pygame
 
-from src.engines import sounds, particles, menu
+from src.engines import sounds, particles
+from src.menu import menu
 from src.etc import constants, gui_components
 from src.terrain import chunks
 from src.entities import bean_image_loader, icons
