@@ -40,7 +40,8 @@ class Button:
 
             if pygame.mouse.get_pressed()[0]:
                 if not self.pressed:
-                    self.command()
+                    if self.command is not None:
+                        self.command()
                 self.pressed = True
             else:
                 self.pressed = False
