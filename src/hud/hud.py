@@ -17,10 +17,12 @@ class HUD:
 
         self.health_display = hud_widgets.HealthDisplay(self.player, self.master)
         self.bean_select = hud_widgets.BeanSelectPopup(self.player, self.master, 297, 452)
+        self.save_select = hud_widgets.SaveSelect(self, 238, 178)
 
         self.defined_components = {
             "health_display": self.health_display,
-            "bean_select": self.bean_select
+            "bean_select": self.bean_select,
+            "save_select": self.save_select
         }
 
         self.components = []

@@ -3,6 +3,7 @@ from pygame.constants import *
 
 from src.etc import gui_components
 from src.menu import menu_image_loader
+from src.hud import hud
 
 """
 menu.py
@@ -32,6 +33,11 @@ class MainMenu:
             self.quit_button
         ]
 
+        self.hud = hud.HUD(None, self)
+
+        self.hud.save_hud("menu", ["save_select", ])
+        self.hud.load_saved_hud("menu")
+
     def update(self):
 
         for event in pygame.event.get():
@@ -40,6 +46,8 @@ class MainMenu:
                 self.master.game_exit = True
 
         [button.update() for button in self.buttons]
+
+        self.hud.update()
 
     def callback(self, button_id):
 
@@ -57,3 +65,5 @@ class MainMenu:
         self.background.draw(display)
 
         [button.draw(display) for button in self.buttons]
+
+        self.hud.draw(display)

@@ -176,10 +176,9 @@ class BeanSelectPopup:
 
 class SaveSelect:
 
-    def __init__(self, player, master, x, y):
+    def __init__(self, master, x, y):
 
         self.master = master
-        self.player = player
 
         self.x = x
         self.y = y
@@ -189,7 +188,7 @@ class SaveSelect:
         self.saves = ["Save1", "Save2", "Save3"]
 
         self.background = gui_components.Fill(self.x, self.y, 482, 362, constants.GUI_BACKING)
-        self.background_fill = gui_components.Fill(self.x+212, 264, 350, constants.GUI_FILL)
+        self.background_fill = gui_components.Fill(self.x+212, self.y+6, 264, 350, constants.GUI_FILL)
 
         self.components = [
             self.background,
