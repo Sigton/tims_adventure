@@ -48,7 +48,7 @@ class Main:
         self.fade_screen = gui_components.Fade()
         self.fade_screen.set_opacity(0)
 
-        self.game_mode = 0
+        self.game_mode = 2
         self.full_screen = False
 
         self.fade = 0
