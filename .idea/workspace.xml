@@ -20,8 +20,8 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="852">
+              <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -32,8 +32,18 @@
       <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="640">
+              <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="161" column="38" lean-forward="true" selection-start-line="161" selection-start-column="38" selection-end-line="161" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -363,13 +373,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00779" summary="Reworking the data structure">
-      <created>1514405597218</created>
-      <option name="number" value="00779" />
-      <option name="presentableId" value="LOCAL-00779" />
-      <option name="project" value="LOCAL" />
-      <updated>1514405597218</updated>
     </task>
     <task id="LOCAL-00780" summary="Leaving brain alone for now">
       <created>1514410575829</created>
@@ -707,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515922724337</updated>
     </task>
-    <option name="localTasksCounter" value="828" />
+    <task id="LOCAL-00828" summary="Added buttons into main menu">
+      <created>1515925965272</created>
+      <option name="number" value="00828" />
+      <option name="presentableId" value="LOCAL-00828" />
+      <option name="project" value="LOCAL" />
+      <updated>1515925965272</updated>
+    </task>
+    <option name="localTasksCounter" value="829" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -784,7 +794,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created menu.py" />
     <MESSAGE value="Created MainMenu class" />
     <MESSAGE value="Added display as an input to MainMenu.draw" />
     <MESSAGE value="Created an image class" />
@@ -809,7 +818,8 @@
     <MESSAGE value="Creating load_images function" />
     <MESSAGE value="Created content of images" />
     <MESSAGE value="Linked image_loader to main menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linked image_loader to main menu" />
+    <MESSAGE value="Added buttons into main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added buttons into main menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1129,16 +1139,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="131" column="52" lean-forward="true" selection-start-line="131" selection-start-column="52" selection-end-line="131" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="95">
+          <caret line="161" column="38" lean-forward="true" selection-start-line="161" selection-start-column="38" selection-end-line="161" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1151,10 +1153,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="852">
+          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

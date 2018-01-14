@@ -26,6 +26,12 @@ class MainMenu:
         self.options_button = gui_components.Button(self.images["option_button"], 0, 100, None)
         self.quit_button = gui_components.Button(self.images["quit_button"], 0, 200, None)
 
+        self.buttons = [
+            self.play_button,
+            self.options_button,
+            self.quit_button
+        ]
+
     def update(self):
 
         for event in pygame.event.get():
@@ -33,6 +39,10 @@ class MainMenu:
             if event.type == QUIT:
                 self.master.game_exit = True
 
+        [button.update() for button in self.buttons]
+
     def draw(self, display):
 
         self.background.draw(display)
+
+        [button.draw(display) for button in self.buttons]
