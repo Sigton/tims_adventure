@@ -22,9 +22,9 @@ class MainMenu:
 
         self.background = gui_components.Image("src/resources/title.png")
 
-        self.play_button = gui_components.Button(self.images["play_button"], 0, 0, None)
-        self.options_button = gui_components.Button(self.images["option_button"], 0, 100, None)
-        self.quit_button = gui_components.Button(self.images["quit_button"], 0, 200, None)
+        self.play_button = gui_components.Button(self.images["play_button"], 11, 25, None)
+        self.options_button = gui_components.Button(self.images["option_button"], 11, 136, None)
+        self.quit_button = gui_components.Button(self.images["quit_button"], 11, 249, None)
 
         self.buttons = [
             self.play_button,
