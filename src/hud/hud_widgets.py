@@ -184,6 +184,18 @@ class SaveSelect:
         self.x = x
         self.y = y
 
+        self.selected_save = 0
+
+        self.saves = ["Save1", "Save2", "Save3"]
+
+        self.background = gui_components.Fill(self.x, self.y, 482, 362, constants.GUI_BACKING)
+        self.background_fill = gui_components.Fill(self.x+212, 264, 350, constants.GUI_FILL)
+
+        self.components = [
+            self.background,
+            self.background_fill
+        ]
+
     def update(self):
 
         pass
