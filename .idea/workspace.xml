@@ -16,28 +16,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_gui.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/duel/duel_gui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="780">
+                  <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="duel_gui.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/duel/duel_gui.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -351,13 +359,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00775" summary="Created brain">
-      <created>1514386890192</created>
-      <option name="number" value="00775" />
-      <option name="presentableId" value="LOCAL-00775" />
-      <option name="project" value="LOCAL" />
-      <updated>1514386890192</updated>
     </task>
     <task id="LOCAL-00776" summary="Initialises network data structure">
       <created>1514387187846</created>
@@ -695,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515921784783</updated>
     </task>
-    <option name="localTasksCounter" value="824" />
+    <task id="LOCAL-00824" summary="Defined SpriteSheetData">
+      <created>1515922163590</created>
+      <option name="number" value="00824" />
+      <option name="presentableId" value="LOCAL-00824" />
+      <option name="project" value="LOCAL" />
+      <updated>1515922163590</updated>
+    </task>
+    <option name="localTasksCounter" value="825" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -772,7 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created a function to switch gamemodes" />
     <MESSAGE value="Now fades on the way back out of a duel too" />
     <MESSAGE value="Fixed a bug where the opacity of the fade screen wouldn't quite reach 0 and cause lag" />
     <MESSAGE value="More efficient method of calling to the controllers" />
@@ -797,7 +804,8 @@
     <MESSAGE value="Defined a set_position for hud widget" />
     <MESSAGE value="Given the menu its own directory" />
     <MESSAGE value="Created menu_image_loader.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created menu_image_loader.py" />
+    <MESSAGE value="Defined SpriteSheetData" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined SpriteSheetData" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1134,16 +1142,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="780">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding />
         </state>
       </provider>

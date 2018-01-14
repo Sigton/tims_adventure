@@ -1,3 +1,5 @@
+from src.etc import spritesheet
+
 """
 menu_image_loader.py
 
@@ -25,3 +27,14 @@ class SpriteSheetData:
         (212, 184, 212, 92),
         (424, 92, 212, 92)
     ]
+
+
+def load_images():
+
+    sprite_sheet = spritesheet.SpriteSheet("src/resources/menu_buttons.png")
+
+    images = {
+
+    }
+
+    return images
