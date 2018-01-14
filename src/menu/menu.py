@@ -46,6 +46,12 @@ class MainMenu:
         if button_id == 0:
             self.master.switch_to(0)
 
+        elif button_id == 1:
+            pass
+
+        else:
+            self.master.game_exit = True
+
     def draw(self, display):
 
         self.background.draw(display)

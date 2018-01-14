@@ -30,8 +30,8 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="772">
+              <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -353,13 +353,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00785" summary="Added an alternative ground texture">
-      <created>1515531201195</created>
-      <option name="number" value="00785" />
-      <option name="presentableId" value="LOCAL-00785" />
-      <option name="project" value="LOCAL" />
-      <updated>1515531201195</updated>
     </task>
     <task id="LOCAL-00786" summary="Updated ground alt texture">
       <created>1515531296952</created>
@@ -697,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515927376434</updated>
     </task>
-    <option name="localTasksCounter" value="834" />
+    <task id="LOCAL-00834" summary="Play button switches to chunk controller">
+      <created>1515927476969</created>
+      <option name="number" value="00834" />
+      <option name="presentableId" value="LOCAL-00834" />
+      <option name="project" value="LOCAL" />
+      <updated>1515927476969</updated>
+    </task>
+    <option name="localTasksCounter" value="835" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -774,7 +774,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Connected the menu to main" />
     <MESSAGE value="Added events loop to menu" />
     <MESSAGE value="Testing menu screen" />
     <MESSAGE value="Reworking HUD system" />
@@ -799,7 +798,8 @@
     <MESSAGE value="Corrected positioning of buttons" />
     <MESSAGE value="Buttons dont crash if there is no command set" />
     <MESSAGE value="Defined a callback function and linked it to buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined a callback function and linked it to buttons" />
+    <MESSAGE value="Play button switches to chunk controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Play button switches to chunk controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1144,8 +1144,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="772">
+          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
