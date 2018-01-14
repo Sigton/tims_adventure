@@ -22,9 +22,9 @@ class MainMenu:
 
         self.background = gui_components.Image("src/resources/title.png")
 
-        self.play_button = gui_components.Button(self.images["play_button"], 11, 25, None)
-        self.options_button = gui_components.Button(self.images["option_button"], 11, 136, None)
-        self.quit_button = gui_components.Button(self.images["quit_button"], 11, 249, None)
+        self.play_button = gui_components.Button(self.images["play_button"], 11, 25, lambda: self.callback(0))
+        self.options_button = gui_components.Button(self.images["option_button"], 11, 136, lambda: self.callback(1))
+        self.quit_button = gui_components.Button(self.images["quit_button"], 11, 249, lambda: self.callback(2))
 
         self.buttons = [
             self.play_button,
@@ -40,6 +40,10 @@ class MainMenu:
                 self.master.game_exit = True
 
         [button.update() for button in self.buttons]
+
+    def callback(self, button_id):
+
+        pass
 
     def draw(self, display):
 
