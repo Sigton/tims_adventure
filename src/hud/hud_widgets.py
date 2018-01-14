@@ -172,3 +172,18 @@ class BeanSelectPopup:
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
+
+
+class SaveSelect:
+
+    def __init__(self):
+
+        pass
+
+    def update(self):
+
+        pass
+
+    def draw(self, display):
+
+        pass
