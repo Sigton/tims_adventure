@@ -24,6 +24,8 @@ class HealthDisplay:
         self.x = x
         self.y = y
 
+        self.id = "health_display"
+
         self.background = gui_components.Fill(self.x, self.y, 200, 209, constants.GUI_BACKING)
 
         self.bean_stats = [gui_components.Fill(self.x+5, self.y+5+35*n, 190, 30, constants.GUI_FILL)
@@ -113,6 +115,8 @@ class BeanSelectPopup:
         self.x = x
         self.y = y
 
+        self.id = "bean_select"
+
         self.selected_option = 0
 
         self.background = gui_components.Fill(self.x, self.y, 366, 176, constants.GUI_BACKING)
@@ -162,7 +166,7 @@ class BeanSelectPopup:
             elif e.key == K_SPACE:
 
                 if self.selected_option == 5:
-                    self.master.hud.close_widget(self.master.hud.bean_select)
+                    self.master.hud.close_widget("bean_select")
                     self.master.enemy_to_duel = None
 
                     self.master.bean_select_popup_open = False
@@ -182,6 +186,8 @@ class SaveSelect:
 
         self.x = x
         self.y = y
+
+        self.id = "save_select"
 
         self.selected_save = 0
 

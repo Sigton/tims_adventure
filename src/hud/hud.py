@@ -48,14 +48,14 @@ class HUD:
 
     def open_widget(self, widget):
 
-        self.components.append(widget)
+        self.components.append(self.defined_components[widget]())
 
         if self.hud_id is not None:
             self.save_hud(self.hud_id, None, True)
 
     def close_widget(self, widget):
 
-        self.components.remove(widget)
+        self.components.remove([w for w in self.components if w.id == widget])
 
         if self.hud_id is not None:
             self.save_hud(self.hud_id, None, True)

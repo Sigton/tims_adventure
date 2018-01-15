@@ -189,7 +189,7 @@ class ChunkController:
                         if not self.bean_select_popup_open:
                             self.bean_select_popup_open = True
 
-                            self.hud.open_widget(self.hud.bean_select)
+                            self.hud.open_widget("bean_select")
 
                     elif event.key == K_F11:
                         self.master.set_full_screen()
@@ -326,7 +326,7 @@ class ChunkController:
         self.enemy_to_duel = None
 
         self.bean_select_popup_open = False
-        self.hud.close_widget(self.hud.bean_select)
+        self.hud.close_widget("bean_select")
 
     def update_hud(self):
 
