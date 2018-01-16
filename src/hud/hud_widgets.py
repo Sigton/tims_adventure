@@ -204,15 +204,29 @@ class SaveSelect:
 
         self.arrow = icons.ArrowPointer(self.x+222, self.y+18+(44*self.selected_save))
 
+        self.new_save_button = gui_components.Button(self.images["new_save_button"], self.x+7, self.y+7, None)
+        self.load_save_button = gui_components.Button(self.images["load_save_button"], self.x+7, self.y+95, None)
+        self.delete_save_button = gui_components.Button(self.images["delete_save_button"], self.x+7, self.y+183, None)
+        self.cancel_button = gui_components.Button(self.images["cancel_save_button"], self.x+7, self.y+271, None)
+
+        self.buttons = [
+            self.new_save_button,
+            self.load_save_button,
+            self.delete_save_button,
+            self.cancel_button
+        ]
+
         self.components = [
             self.background,
             self.background_fill,
             self.arrow
-        ] + self.save_labels
+        ] + self.save_labels + self.buttons
 
     def update(self):
 
         self.arrow.realign(self.x+222, self.y+18+(44*self.selected_save))
+
+        [button.update() for button in self.buttons]
 
     def handle_event(self, e):
 
