@@ -15,10 +15,11 @@ displayed in the heads-up display
 
 class HealthDisplay:
 
-    def __init__(self, player, master, x=0, y=0):
+    def __init__(self, player, master, controller, x=0, y=0):
 
         self.player = player
         self.master = master
+        self.controller = controller
 
         self.active_bean_stat = 0
 
@@ -108,10 +109,11 @@ class HealthDisplay:
 
 class BeanSelectPopup:
 
-    def __init__(self, player, master, x, y):
+    def __init__(self, player, master, controller, x, y):
 
         self.player = player
         self.master = master
+        self.controller = controller
 
         self.x = x
         self.y = y
@@ -181,9 +183,10 @@ class BeanSelectPopup:
 
 class SaveSelect:
 
-    def __init__(self, master, x, y):
+    def __init__(self, master, controller, x, y):
 
         self.master = master
+        self.controller = controller
 
         self.x = x
         self.y = y

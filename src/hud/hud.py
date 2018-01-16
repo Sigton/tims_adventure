@@ -15,9 +15,9 @@ class HUD:
         self.player = player
         self.master = master
 
-        self.health_display = lambda: hud_widgets.HealthDisplay(self.player, self.master)
-        self.bean_select = lambda: hud_widgets.BeanSelectPopup(self.player, self.master, 297, 452)
-        self.save_select = lambda: hud_widgets.SaveSelect(self, 238, 178)
+        self.health_display = lambda: hud_widgets.HealthDisplay(self.player, self.master, self)
+        self.bean_select = lambda: hud_widgets.BeanSelectPopup(self.player, self.master, self, 297, 452)
+        self.save_select = lambda: hud_widgets.SaveSelect(self, self, 238, 178)
 
         self.defined_components = {
             "health_display": self.health_display,
