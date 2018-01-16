@@ -65,6 +65,10 @@ class HUD:
         self.components = []
         self.hud_id = None
 
+    def get_component(self, name):
+
+        return [component for component in self.components if component.id == name][0]
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
