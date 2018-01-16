@@ -128,7 +128,7 @@ class ChunkController:
 
             elif self.bean_select_popup_open:
 
-                self.hud.bean_select.handle_event(event)
+                self.hud.get_component("bean_select").handle_event(event)
 
             elif event.type == constants.MUSIC_START_EVENT:
 

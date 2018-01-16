@@ -55,7 +55,7 @@ class HUD:
 
     def close_widget(self, widget):
 
-        self.components.remove([w for w in self.components if w.id == widget])
+        self.components.remove([w for w in self.components if w.id == widget][0])
 
         if self.hud_id is not None:
             self.save_hud(self.hud_id, None, True)
