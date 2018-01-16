@@ -38,6 +38,8 @@ class MainMenu:
         self.hud.save_hud("menu", ["save_select", ])
         self.hud.load_saved_hud("menu")
 
+        self.save_select_open = False
+
     def update(self):
 
         for event in pygame.event.get():
@@ -45,7 +47,7 @@ class MainMenu:
             if event.type == QUIT:
                 self.master.game_exit = True
 
-            else:
+            elif self.save_select_open:
                 self.hud.get_component("save_select").handle_event(event)
 
         [button.update() for button in self.buttons]
@@ -55,7 +57,7 @@ class MainMenu:
     def callback(self, button_id):
 
         if button_id == 0:
-            self.master.switch_to(0)
+            self.save_select_open = True
 
         elif button_id == 1:
             pass
@@ -69,4 +71,5 @@ class MainMenu:
 
         [button.draw(display) for button in self.buttons]
 
-        self.hud.draw(display)
+        if self.save_select_open:
+            self.hud.draw(display)
