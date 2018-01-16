@@ -257,7 +257,8 @@ class SaveSelect:
             pass
 
         elif button_id == 3:
-            pass
+            self.controller.close_widget(self.id)
+            self.master.save_select_open = False
 
     def draw(self, display):
 
