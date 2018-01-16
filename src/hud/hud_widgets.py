@@ -199,9 +199,12 @@ class SaveSelect:
         self.save_labels = [gui_components.Label(self.x+235, self.y+2+(44*n), self.saves[n], False, 36, constants.BLACK)
                             for n in range(len(self.saves))]
 
+        self.arrow = icons.ArrowPointer(self.x+222, self.y+18)
+
         self.components = [
             self.background,
-            self.background_fill
+            self.background_fill,
+            self.arrow
         ] + self.save_labels
 
     def update(self):
