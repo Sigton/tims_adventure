@@ -191,15 +191,18 @@ class SaveSelect:
 
         self.selected_save = 0
 
-        self.saves = ["Save1", "Save2", "Save3"]
+        self.saves = ["Save1", "Save2", "Save3", "Save4", "Save5"]
 
         self.background = gui_components.Fill(self.x, self.y, 482, 362, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+212, self.y+6, 264, 350, constants.GUI_FILL)
 
+        self.save_labels = [gui_components.Label(self.x+235, self.y+2+(44*n), self.saves[n], False, 36, constants.BLACK)
+                            for n in range(len(self.saves))]
+
         self.components = [
             self.background,
             self.background_fill
-        ]
+        ] + self.save_labels
 
     def update(self):
 
