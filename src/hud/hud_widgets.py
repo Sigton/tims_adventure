@@ -211,6 +211,10 @@ class SaveSelect:
 
         pass
 
+    def handle_event(self, e):
+
+        pass
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
