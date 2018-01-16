@@ -199,7 +199,7 @@ class SaveSelect:
         self.save_labels = [gui_components.Label(self.x+235, self.y+2+(44*n), self.saves[n], False, 36, constants.BLACK)
                             for n in range(len(self.saves))]
 
-        self.arrow = icons.ArrowPointer(self.x+222, self.y+18)
+        self.arrow = icons.ArrowPointer(self.x+222, self.y+18+(44*self.selected_save))
 
         self.components = [
             self.background,
@@ -209,7 +209,7 @@ class SaveSelect:
 
     def update(self):
 
-        pass
+        self.arrow.realign(self.x+222, self.y+18+(44*self.selected_save))
 
     def handle_event(self, e):
 
