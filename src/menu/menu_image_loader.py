@@ -61,15 +61,38 @@ def load_images():
         "play_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                          image[1],
                                                          image[2],
-                                                         image[3]) for image in SpriteSheetData.play_button],
+                                                         image[3]) for image in
+                        SpriteSheetData.play_button],
         "option_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                            image[1],
                                                            image[2],
-                                                           image[3]) for image in SpriteSheetData.options_button],
+                                                           image[3]) for image in
+                          SpriteSheetData.options_button],
         "quit_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                          image[1],
                                                          image[2],
-                                                         image[3]) for image in SpriteSheetData.quit_button]
+                                                         image[3]) for image in
+                        SpriteSheetData.quit_button],
+        "new_save_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                             image[1],
+                                                             image[2],
+                                                             image[3]) for image in
+                            SpriteSheetData.new_save_button],
+        "load_save_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                              image[1],
+                                                              image[2],
+                                                              image[3]) for image in
+                             SpriteSheetData.load_save_button],
+        "delete_save_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                                image[1],
+                                                                image[2],
+                                                                image[3]) for image in
+                               SpriteSheetData.delete_save_button],
+        "cancel_save_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                                image[1],
+                                                                image[2],
+                                                                image[3]) for image
+                               in SpriteSheetData.cancel_save_button]
     }
 
     return images
