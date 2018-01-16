@@ -207,10 +207,14 @@ class SaveSelect:
 
         self.arrow = icons.ArrowPointer(self.x+222, self.y+18+(44*self.selected_save))
 
-        self.new_save_button = gui_components.Button(self.images["new_save_button"], self.x+7, self.y+7, None)
-        self.load_save_button = gui_components.Button(self.images["load_save_button"], self.x+7, self.y+95, None)
-        self.delete_save_button = gui_components.Button(self.images["delete_save_button"], self.x+7, self.y+183, None)
-        self.cancel_button = gui_components.Button(self.images["cancel_save_button"], self.x+7, self.y+271, None)
+        self.new_save_button = gui_components.Button(self.images["new_save_button"], self.x+7, self.y+7,
+                                                     lambda: self.callback(0))
+        self.load_save_button = gui_components.Button(self.images["load_save_button"], self.x+7, self.y+95,
+                                                      lambda: self.callback(1))
+        self.delete_save_button = gui_components.Button(self.images["delete_save_button"], self.x+7, self.y+183,
+                                                        lambda: self.callback(2))
+        self.cancel_button = gui_components.Button(self.images["cancel_save_button"], self.x+7, self.y+271,
+                                                   lambda: self.callback(3))
 
         self.buttons = [
             self.new_save_button,
@@ -240,6 +244,20 @@ class SaveSelect:
 
             elif e.key in (K_DOWN, K_s):
                 self.selected_save = (self.selected_save+1) % len(self.saves)
+
+    def callback(self, button_id):
+
+        if button_id == 0:
+            pass
+
+        elif button_id == 1:
+            pass
+
+        elif button_id == 2:
+            pass
+
+        elif button_id == 3:
+            pass
 
     def draw(self, display):
 

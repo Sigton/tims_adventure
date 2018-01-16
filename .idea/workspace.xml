@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud.py" afterPath="$PROJECT_DIR$/src/hud/hud.py" />
       <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,8 +82,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="241" column="77" lean-forward="false" selection-start-line="241" selection-start-column="77" selection-end-line="241" selection-end-column="77" />
+            <state relative-caret-position="-88">
+              <caret line="220" column="34" lean-forward="true" selection-start-line="220" selection-start-column="34" selection-end-line="220" selection-end-column="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -417,13 +416,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00808" summary="Added a background image to the menu">
-      <created>1515883186382</created>
-      <option name="number" value="00808" />
-      <option name="presentableId" value="LOCAL-00808" />
-      <option name="project" value="LOCAL" />
-      <updated>1515883186382</updated>
     </task>
     <task id="LOCAL-00809" summary="Connected the menu to main">
       <created>1515883417588</created>
@@ -761,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516136659682</updated>
     </task>
-    <option name="localTasksCounter" value="857" />
+    <task id="LOCAL-00857" summary="Added controller attribute to hud widgets">
+      <created>1516137761101</created>
+      <option name="number" value="00857" />
+      <option name="presentableId" value="LOCAL-00857" />
+      <option name="project" value="LOCAL" />
+      <updated>1516137761101</updated>
+    </task>
+    <option name="localTasksCounter" value="858" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -838,7 +837,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Buttons dont crash if there is no command set" />
     <MESSAGE value="Defined a callback function and linked it to buttons" />
     <MESSAGE value="Play button switches to chunk controller" />
     <MESSAGE value="Quit button also functions" />
@@ -863,7 +861,8 @@
     <MESSAGE value="Updated load_images()" />
     <MESSAGE value="Added the buttons" />
     <MESSAGE value="Clicking play now opens load save menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clicking play now opens load save menu" />
+    <MESSAGE value="Added controller attribute to hud widgets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added controller attribute to hud widgets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1208,8 +1207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="241" column="77" lean-forward="false" selection-start-line="241" selection-start-column="77" selection-end-line="241" selection-end-column="77" />
+        <state relative-caret-position="-88">
+          <caret line="220" column="34" lean-forward="true" selection-start-line="220" selection-start-column="34" selection-end-line="220" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
