@@ -213,7 +213,13 @@ class SaveSelect:
 
     def handle_event(self, e):
 
-        pass
+        if e.type == KEYUP:
+
+            if e.key in (K_UP, K_w):
+                self.selected_save = (self.selected_save-1) % len(self.saves)
+
+            elif e.key in (K_DOWN, K_s):
+                self.selected_save = (self.selected_save+1) % len(self.saves)
 
     def draw(self, display):
 
