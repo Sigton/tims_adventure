@@ -3,6 +3,7 @@ from pygame.locals import *
 
 from src.etc import gui_components, constants
 from src.entities import icons
+from src.menu import menu_image_loader
 
 """
 hud_widgets.py
@@ -190,6 +191,8 @@ class SaveSelect:
         self.id = "save_select"
 
         self.selected_save = 0
+
+        self.images = menu_image_loader.load_images()
 
         self.saves = ["Save1", "Save2", "Save3", "Save4", "Save5", "Save6", "Save7", "Save8"]
 

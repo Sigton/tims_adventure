@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/menu/menu_image_loader.py" afterPath="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
-      <change beforePath="$PROJECT_DIR$/src/resources/menu_buttons.png" afterPath="$PROJECT_DIR$/src/resources/menu_buttons.png" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +32,8 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
+            <state relative-caret-position="-288">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -42,21 +41,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="592">
+              <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="-248">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -377,13 +378,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00803" summary="Created menu.py">
-      <created>1515842577148</created>
-      <option name="number" value="00803" />
-      <option name="presentableId" value="LOCAL-00803" />
-      <option name="project" value="LOCAL" />
-      <updated>1515842577148</updated>
     </task>
     <task id="LOCAL-00804" summary="Created MainMenu class">
       <created>1515866547485</created>
@@ -721,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516124032844</updated>
     </task>
-    <option name="localTasksCounter" value="852" />
+    <task id="LOCAL-00852" summary="Added new spritesheet data">
+      <created>1516127473557</created>
+      <option name="number" value="00852" />
+      <option name="presentableId" value="LOCAL-00852" />
+      <option name="project" value="LOCAL" />
+      <updated>1516127473557</updated>
+    </task>
+    <option name="localTasksCounter" value="853" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,7 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Linked image_loader to main menu" />
     <MESSAGE value="Added buttons into main menu" />
     <MESSAGE value="Buttons now update and draw" />
     <MESSAGE value="Fixed irritating edges to the buttons" />
@@ -823,7 +823,8 @@
     <MESSAGE value="Added event handling to move arrow" />
     <MESSAGE value="Added some more test saves" />
     <MESSAGE value="Added new button sprites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new button sprites" />
+    <MESSAGE value="Added new spritesheet data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new spritesheet data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1140,16 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4218">
@@ -1158,19 +1149,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-288">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="-248">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
