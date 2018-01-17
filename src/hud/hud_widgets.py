@@ -251,7 +251,7 @@ class SaveSelect:
             pass
 
         elif button_id == 1:
-            pass
+            self.master.master.switch_to(0)
 
         elif button_id == 2:
             pass
