@@ -48,6 +48,9 @@ class MainMenu:
                 self.master.game_exit = True
 
             elif self.save_select_open:
+                if not self.hud.has_component("save_select"):
+                    self.hud.open_widget("save_select")
+
                 self.hud.get_component("save_select").handle_event(event)
 
         [button.update() for button in self.buttons]
