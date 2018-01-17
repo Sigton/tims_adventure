@@ -4,9 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="New save button deactivates when at max saves">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/engines/save.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/resources/menu_buttons.png" afterPath="$PROJECT_DIR$/src/resources/menu_buttons.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,87 +15,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <splitter split-orientation="horizontal" split-proportion="0.5">
-            <split-first>
-              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="120">
-                        <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-                        <folding />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-first>
-            <split-second>
-              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="657">
-                        <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-                        <folding />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-second>
-          </splitter>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
+      <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="227" column="33" lean-forward="true" selection-start-line="227" selection-start-column="33" selection-end-line="227" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="78" column="79" lean-forward="false" selection-start-line="78" selection-start-column="79" selection-end-line="78" selection-end-column="79" />
+            <state relative-caret-position="160">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/map_generator.py" />
         <option value="$PROJECT_DIR$/src/tile_types.py" />
         <option value="$PROJECT_DIR$/src/tiles.py" />
@@ -209,6 +134,7 @@
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/engines/save.py" />
       </list>
     </option>
   </component>
@@ -435,13 +361,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00815" summary="Working on implementing new HUD system">
-      <created>1515886271187</created>
-      <option name="number" value="00815" />
-      <option name="presentableId" value="LOCAL-00815" />
-      <option name="project" value="LOCAL" />
-      <updated>1515886271187</updated>
     </task>
     <task id="LOCAL-00816" summary="Defining save_hud">
       <created>1515886341403</created>
@@ -779,16 +698,24 @@
       <option name="project" value="LOCAL" />
       <updated>1516185269950</updated>
     </task>
-    <option name="localTasksCounter" value="864" />
+    <task id="LOCAL-00864" summary="Exaggerated image of deactivated button">
+      <created>1516185491794</created>
+      <option name="number" value="00864" />
+      <option name="presentableId" value="LOCAL-00864" />
+      <option name="project" value="LOCAL" />
+      <updated>1516185491794</updated>
+    </task>
+    <option name="localTasksCounter" value="865" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -855,7 +782,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Populated draw function" />
     <MESSAGE value="Working on hud" />
     <MESSAGE value="Attempting to fix things" />
     <MESSAGE value="Attempting to fix hud" />
@@ -880,7 +806,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Load button starts game" />
     <MESSAGE value="New save button deactivates when at max saves" />
-    <option name="LAST_COMMIT_MESSAGE" value="New save button deactivates when at max saves" />
+    <MESSAGE value="Exaggerated image of deactivated button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exaggerated image of deactivated button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,13 +816,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Stealth/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-992">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Labrat/setup.py" />
     <entry file="file://D:/Stealth/source/main.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1215,6 +1135,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1223,13 +1153,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="227" column="33" lean-forward="true" selection-start-line="227" selection-start-column="33" selection-end-line="227" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
