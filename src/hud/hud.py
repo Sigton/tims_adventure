@@ -69,6 +69,10 @@ class HUD:
 
         return [component for component in self.components if component.id == name][0]
 
+    def has_component(self, name):
+
+        return bool(len([component for component in self.components if component.id == name]))
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
