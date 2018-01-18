@@ -115,3 +115,8 @@ turn_cool_down = 80
 
 MUSIC_END_EVENT = pygame.USEREVENT+1
 MUSIC_START_EVENT = pygame.USEREVENT+2
+
+
+# Save Engine vars
+
+DEFAULT_SAVE_DIRECTORY = "src/saves/gamesaves"
