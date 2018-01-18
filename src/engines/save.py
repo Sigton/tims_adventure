@@ -23,6 +23,17 @@ class SaveEngine:
 
         save_dir_contents = os.listdir(self.save_dir)
 
+        for file in save_dir_contents:
+
+            valid = False
+            if "." in file:
+                if file.split(".")[1] == "meta":
+                    valid = True
+
+            if not valid:
+                save_dir_contents.remove(file)
+
+        return save_dir_contents
 
 if __name__ == "__main__":
 
