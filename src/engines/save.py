@@ -12,11 +12,8 @@ class SaveEngine:
 
     def __init__(self):
 
-        pass
+        self.saves = self.get_saves()
 
-
-class Save:
-
-    def __init__(self):
+    def get_saves(self):
 
         pass
