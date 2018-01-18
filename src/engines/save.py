@@ -22,3 +22,9 @@ class SaveEngine:
     def get_saves(self):
 
         return os.listdir(self.save_dir)
+
+
+if __name__ == "__main__":
+
+    save_engine = SaveEngine()
+    print(save_engine.saves)
