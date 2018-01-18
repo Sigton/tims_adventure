@@ -36,6 +36,11 @@ class SaveEngine:
 
         return save_dir_contents
 
+    def create_save(self, name):
+
+        if name in self.get_saves():
+            return
+
 
 if __name__ == "__main__":
 

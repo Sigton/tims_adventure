@@ -20,8 +20,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="792">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -269,11 +269,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bean_rpg\src\saves\gamesaves\save1" />
+      <recent name="D:\bean_rpg\src\saves\" />
+      <recent name="D:\bean_rpg\src\saves\save1" />
       <recent name="D:\bean_rpg\src\menu" />
       <recent name="D:\bean_rpg\src\hud" />
-      <recent name="D:\bean_rpg\src\engines" />
-      <recent name="D:\bean_rpg\src\terrain" />
-      <recent name="D:\bean_rpg\src\duel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -408,13 +408,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00824" summary="Defined SpriteSheetData">
-      <created>1515922163590</created>
-      <option name="number" value="00824" />
-      <option name="presentableId" value="LOCAL-00824" />
-      <option name="project" value="LOCAL" />
-      <updated>1515922163590</updated>
     </task>
     <task id="LOCAL-00825" summary="Creating load_images function">
       <created>1515922364539</created>
@@ -752,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516298144162</updated>
     </task>
-    <option name="localTasksCounter" value="873" />
+    <task id="LOCAL-00873" summary="Fixed validation code">
+      <created>1516298294081</created>
+      <option name="number" value="00873" />
+      <option name="presentableId" value="LOCAL-00873" />
+      <option name="project" value="LOCAL" />
+      <updated>1516298294081</updated>
+    </task>
+    <option name="localTasksCounter" value="874" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -829,7 +829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Events are passed onto hud for handling" />
     <MESSAGE value="Arrow can now switch between saves" />
     <MESSAGE value="Added event handling to move arrow" />
     <MESSAGE value="Added some more test saves" />
@@ -854,7 +853,8 @@
     <MESSAGE value="Added a test save" />
     <MESSAGE value="Created a meta file" />
     <MESSAGE value="Checks to make sure saves are valid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checks to make sure saves are valid" />
+    <MESSAGE value="Fixed validation code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed validation code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1133,6 +1133,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1209,8 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="792">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
