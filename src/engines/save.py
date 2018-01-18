@@ -21,7 +21,7 @@ class SaveEngine:
 
     def get_saves(self):
 
-        return os.listdir(self.save_dir)
+        save_dir_contents = os.listdir(self.save_dir)
 
 
 if __name__ == "__main__":
