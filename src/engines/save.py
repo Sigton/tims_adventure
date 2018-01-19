@@ -41,8 +41,11 @@ class SaveEngine:
         if name in self.get_saves():
             return
 
+        os.mkdir(os.path.join(self.save_dir, name))
+
 
 if __name__ == "__main__":
 
     save_engine = SaveEngine()
     print(save_engine.saves)
+    save_engine.create_save("save2")
