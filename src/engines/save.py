@@ -41,7 +41,10 @@ class SaveEngine:
         if name in self.get_saves():
             return
 
-        os.mkdir(os.path.join(self.save_dir, name))
+        save_path = os.path.join(self.save_dir, name)
+        os.mkdir(save_path)
+
+        open(os.path.join(save_path, name+".meta")).close()
 
 
 if __name__ == "__main__":
