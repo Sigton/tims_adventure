@@ -44,7 +44,10 @@ class SaveEngine:
         save_path = os.path.join(self.save_dir, name)
         os.mkdir(save_path)
 
-        open(os.path.join(save_path, name+".meta")).close()
+        open(os.path.join(save_path, name+".meta"), "w").close()
+        open(os.path.join(save_path, "progress.json"), "w").close()
+        open(os.path.join(save_path, "maps.json"), "w").close()
+        open(os.path.join(save_path, "decs.json"), "w").close()
 
 
 if __name__ == "__main__":

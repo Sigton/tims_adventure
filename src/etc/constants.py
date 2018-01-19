@@ -119,4 +119,4 @@ MUSIC_START_EVENT = pygame.USEREVENT+2
 
 # Save Engine vars
 
-DEFAULT_SAVE_DIRECTORY = "src/saves/gamesaves"
+DEFAULT_SAVE_DIRECTORY = "src\\saves\\gamesaves"
