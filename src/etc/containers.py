@@ -12,7 +12,7 @@ class Seed(object):
     # Using __slots__ to maximise memory efficiency
     __slots__ = ["name", "tiles", "decs"]
 
-    def __init__(self, name, tiles, decs, entities):
+    def __init__(self, name, tiles, decs):
 
         # Assign all of the attributes their values
         self.name = name
