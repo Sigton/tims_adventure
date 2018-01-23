@@ -15,21 +15,24 @@ JSON data.
 """
 
 
+logging.basicConfig(level=logging.INFO)
+
+
 def generate_map(blueprint, dest):
 
     # This function takes a blueprint diagram of a world map
     # and turns it into a format use-able by the terrain engine.
 
     map_img = pygame.image.load(blueprint)
-    print("Image loaded.")
+    logging.debug("Image loaded.")
 
     map_pix_arr = pygame.PixelArray(map_img)
-    print("Created pixel array with shape {}.".format(map_pix_arr.shape))
+    logging.debug("Created pixel array with shape {}.".format(map_pix_arr.shape))
 
     chunks_wide = tuple(map(operator.floordiv, map_pix_arr.shape,
                             (constants.chunk_w, constants.chunk_h)))
     num_chunks = chunks_wide[0] * chunks_wide[1]
-    print("Preparing to arrange {} chunks....".format(num_chunks))
+    logging.debug("Preparing to arrange {} chunks....".format(num_chunks))
 
     chunks = []
 
@@ -45,19 +48,19 @@ def generate_map(blueprint, dest):
             chunk_x = 0
             chunk_y += 1
 
-    print("Chunks arranged, flattening...")
+    logging.debug("Chunks arranged, flattening...")
     chunks = [sum(chunk, []) for chunk in chunks]
-    print("Chunks flattened.")
+    logging.debug("Chunks flattened.")
 
-    print("Loading decorations data...")
+    logging.debug("Loading decorations data...")
 
     with open("src/saves/decs.json") as infile:
         decs = json.load(infile)
         infile.close()
 
-    print("Decorations data loaded.")
+    logging.debug("Decorations data loaded.")
 
-    print("Iterating and rendering chunks...")
+    logging.debug("Iterating and rendering chunks...")
     chunk_data = {}
     chunk_x, chunk_y = 0, 0
 
@@ -87,14 +90,14 @@ def generate_map(blueprint, dest):
             chunk_x = 0
             chunk_y += 1
 
-    print("Chunk data collected.")
-    print("Preparing to dump to saves file...")
+    logging.debug("Chunk data collected.")
+    logging.debug("Preparing to dump to saves file...")
 
     with open(dest, "w") as outfile:
         json.dump(chunk_data, outfile)
         outfile.close()
 
-    print("Chunk data dumped to saves/maps.json")
+    logging.debug("Chunk data dumped to saves/maps.json")
 
 
 if __name__ == '__main__':
