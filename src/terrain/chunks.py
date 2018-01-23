@@ -84,7 +84,7 @@ class ChunkController:
             # If the file is empty then
             # run the map generator
             from src.terrain.generators import map_generator
-            map_generator.generate_map("src/resources/map.png")
+            map_generator.generate_map("src/resources/map.png", "src/saves/maps.json")
             del map_generator
 
         with open(os.path.join("src", "saves", "maps.json"), "r") as infile:

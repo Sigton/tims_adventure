@@ -107,4 +107,4 @@ if __name__ == "__main__":
     Starting map generator
     #####
     """)
-    map_generator.generate_map("src/resources/map.png")
+    map_generator.generate_map("src/resources/map.png", "src/saves/maps.json")

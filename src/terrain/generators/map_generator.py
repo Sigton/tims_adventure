@@ -14,7 +14,7 @@ JSON data.
 """
 
 
-def generate_map(blueprint):
+def generate_map(blueprint, dest):
 
     # This function takes a blueprint diagram of a world map
     # and turns it into a format use-able by the terrain engine.
@@ -89,7 +89,7 @@ def generate_map(blueprint):
     print("Chunk data collected.")
     print("Preparing to dump to saves file...")
 
-    with open("src/saves/maps.json", "w") as outfile:
+    with open(dest, "w") as outfile:
         json.dump(chunk_data, outfile)
         outfile.close()
 
@@ -100,4 +100,4 @@ if __name__ == '__main__':
 
     pygame.init()
 
-    generate_map("src/resources/map.png")
+    generate_map("src/resources/map.png", "src/saves/maps.json")

@@ -49,10 +49,9 @@ class SaveEngine:
         open(os.path.join(save_path, name+".meta"), "w").close()
         open(os.path.join(save_path, "progress.json"), "w").close()
         open(os.path.join(save_path, "maps.json"), "w").close()
-        open(os.path.join(save_path, "decs.json"), "w").close()
+        shutil.copy("src/saves/default_decs.json", os.path.join(save_path, "decs.json"))
 
-        map_generator.generate_map("src/resources/map.png")
-        shutil.copy("src/saves/default_decs.json", save_path)
+        map_generator.generate_map("src/resources/map.png", os.path.join((save_path, "maps.json")))
 
 
 if __name__ == "__main__":
