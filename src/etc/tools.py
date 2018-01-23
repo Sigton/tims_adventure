@@ -1,4 +1,6 @@
 import pygame
+import gzip
+import shutil
 
 """
 tools.py
@@ -15,3 +17,9 @@ def blit_alpha(target, source, location, opacity):
     temp.blit(source, (0, 0))
     temp.set_alpha(opacity)
     target.blit(temp, location)
+
+
+def compress(file):
+    with open(file, 'rb') as f_in:
+        with gzip.open(file + ".gz", "wb") as f_out:
+            shutil.copyfileobj(f_in, f_out)
