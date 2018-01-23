@@ -28,10 +28,8 @@ class SaveEngine:
         for save in save_dir_contents:
 
             valid = False
-            for file in os.listdir(os.path.join(self.save_dir, save)):
-                if "." in file:
-                    if file.split(".")[1] == "meta":
-                        valid = True
+            if "meta.json" in os.listdir(os.path.join(self.save_dir, save)):
+                valid = True
 
             if not valid:
                 save_dir_contents.remove(save)
@@ -46,8 +44,7 @@ class SaveEngine:
         save_path = os.path.join(self.save_dir, name)
         os.mkdir(save_path)
 
-        open(os.path.join(save_path, name+".meta"), "w").close()
-        open(os.path.join(save_path, "progress.json"), "w").close()
+        open(os.path.join(save_path, "meta.json"), "w").close()
         open(os.path.join(save_path, "maps.json"), "w").close()
         shutil.copy("src/saves/default_decs.json", os.path.join(save_path, "decs.json"))
 
