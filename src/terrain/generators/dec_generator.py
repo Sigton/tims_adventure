@@ -1,6 +1,6 @@
 import pygame
 
-from src.etc import constants
+from src.etc import constants, tools
 from src.terrain import tile_data
 from src.terrain.generators import map_generator
 
@@ -17,7 +17,7 @@ in runtime.
 """
 
 
-def generate_decs(map_dir):
+def generate_decs(map_dir, dest, compress=False):
 
     files = os.listdir(map_dir)
 
@@ -91,16 +91,20 @@ def generate_decs(map_dir):
                 chunk_y += 1
 
         print("Chunk data collected. Dumping to JSON...")
-        with open("src/saves/decs.json", "w") as outfile:
+        with open(dest, "w") as outfile:
             json.dump(dec_data, outfile)
             outfile.close()
+
+        if compress:
+            tools.compress(dest)
+            os.remove(dest)
 
 
 if __name__ == "__main__":
 
     pygame.init()
 
-    generate_decs("D:/bean_rpg etc/decmaps")
+    generate_decs("D:/bean_rpg etc/decmaps", "src/saves/decs.json")
 
     print("""
     #####
