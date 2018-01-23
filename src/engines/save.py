@@ -1,7 +1,9 @@
 from src.etc import constants
+from src.terrain.generators import map_generator
 
 import json
 import os
+import shutil
 
 """
 save.py
@@ -48,6 +50,9 @@ class SaveEngine:
         open(os.path.join(save_path, "progress.json"), "w").close()
         open(os.path.join(save_path, "maps.json"), "w").close()
         open(os.path.join(save_path, "decs.json"), "w").close()
+
+        map_generator.generate_map("src/resources/map.png")
+        shutil.copy("src/saves/default_decs.json", save_path)
 
 
 if __name__ == "__main__":
