@@ -95,16 +95,16 @@ def generate_decs(map_dir, dest, compress=False):
             json.dump(dec_data, outfile)
             outfile.close()
 
-        if compress:
-            tools.compress(dest)
-            os.remove(dest)
+    if compress:
+        tools.compress(dest)
+        os.remove(dest)
 
 
 if __name__ == "__main__":
 
     pygame.init()
 
-    generate_decs("D:/bean_rpg etc/decmaps", "src/saves/decs.json")
+    generate_decs("D:/bean_rpg etc/decmaps", "src/saves/default_decs.json", True)
 
     print("""
     #####
