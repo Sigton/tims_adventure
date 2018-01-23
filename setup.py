@@ -9,7 +9,9 @@ packages = ["pygame",
             "os",
             "random",
             "json",
-            "operator"]
+            "operator",
+            "logging",
+            "shutil"]
 
 excludes = ["tkinter",
             "numpy",
