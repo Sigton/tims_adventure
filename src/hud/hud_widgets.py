@@ -188,6 +188,8 @@ class SaveSelect:
         self.master = master
         self.controller = controller
 
+        self.save_engine = self.master.master.save_engine
+
         self.x = x
         self.y = y
 
@@ -197,7 +199,7 @@ class SaveSelect:
 
         self.images = menu_image_loader.load_images()
 
-        self.saves = ["Save1", "Save2", "Save3", "Save4", "Save5", "Save6", "Save7", "Save8"]
+        self.saves = self.save_engine.get_saves()
 
         self.background = gui_components.Fill(self.x, self.y, 482, 362, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+212, self.y+6, 264, 350, constants.GUI_FILL)
