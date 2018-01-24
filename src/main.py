@@ -2,7 +2,7 @@ import sys
 
 import pygame
 
-from src.engines import sounds, particles
+from src.engines import sounds, particles, save
 from src.menu import menu
 from src.etc import constants, gui_components
 from src.terrain import chunks
@@ -37,6 +37,7 @@ class Main:
 
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
+        self.save_engine = save.SaveEngine()
 
         self.game_exit = False
 
