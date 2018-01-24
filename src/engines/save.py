@@ -3,7 +3,7 @@ from src.terrain.generators import map_generator
 
 import json
 import os
-import shutil
+import gzip
 
 """
 save.py
@@ -46,7 +46,13 @@ class SaveEngine:
 
         open(os.path.join(save_path, "meta.json"), "w").close()
         open(os.path.join(save_path, "maps.json"), "w").close()
-        shutil.copy("src/saves/default_decs.json", os.path.join(save_path, "decs.json"))
+
+        with gzip.open("src/saves/default_decs.json.gz", 'rb') as infile:
+            decs_data = json.loads(infile.read().decode())
+
+        with open(os.path.join(save_path, "decs.json"), 'w') as outfile:
+            json.dump(decs_data, outfile)
+            del decs_data
 
         map_generator.generate_map("src/resources/map.png", os.path.join(save_path, "maps.json"))
 
@@ -55,4 +61,4 @@ if __name__ == "__main__":
 
     save_engine = SaveEngine()
     print(save_engine.saves)
-    save_engine.create_save("save2")
+    save_engine.create_save("save1")
