@@ -23,3 +23,12 @@ def compress(file):
     with open(file, 'rb') as f_in:
         with gzip.open(file + ".gz", "wb") as f_out:
             shutil.copyfileobj(f_in, f_out)
+
+
+def combine_images(images):
+
+    image = pygame.Surface(max([(i.rect.width, i.rect.height) for i in images]))
+
+    [image.blit(i.image, i.rect.topleft) for i in images]
+
+    return image
