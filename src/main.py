@@ -4,7 +4,7 @@ import pygame
 
 from src.engines import sounds, particles, save
 from src.menu import menu
-from src.etc import constants, gui_components
+from src.etc import constants, gui_components, tools
 from src.terrain import chunks
 from src.entities import bean_image_loader, icons
 from src.duel import duel_controller
@@ -48,6 +48,11 @@ class Main:
 
         self.fade_screen = gui_components.Fade()
         self.fade_screen.set_opacity(0)
+
+        self.loading_screen = gui_components.Fade()
+        self.loading_screen.image = tools.combine_images((self.loading_screen,
+                                                          gui_components.Label(340, 322, "Loading...", False, 64)))
+        self.loading_screen.set_opacity(0)
 
         self.game_mode = 2
         self.full_screen = False
@@ -112,6 +117,7 @@ class Main:
                 self.fade_screen.set_opacity(int((self.fade/30)*255))
 
             self.fade_screen.draw(self.display)
+            self.loading_screen.draw(self.display)
 
             self.sound_engine.play_sounds()
 
