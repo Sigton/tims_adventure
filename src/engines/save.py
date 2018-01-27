@@ -21,6 +21,10 @@ class SaveEngine:
 
         self.saves = self.get_saves()
 
+    def refresh(self):
+
+        self.saves = self.get_saves()
+
     def get_saves(self):
 
         save_dir_contents = os.listdir(self.save_dir)
