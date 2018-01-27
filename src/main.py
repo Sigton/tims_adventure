@@ -139,9 +139,10 @@ class Main:
 
         self.controllers[self.game_mode].update()
 
-    def switch_to(self, game_mode):
+    def switch_to(self, game_mode, force_controller_change=True):
 
-        self.new_game_mode = game_mode
+        if force_controller_change:
+            self.new_game_mode = game_mode
         self.fade = 60
 
     def load_save(self, save_dir):
