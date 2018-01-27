@@ -134,6 +134,11 @@ class Main:
         if self.new_game_mode == -1:
             return
 
+        if self.new_game_mode == 3:
+            self.show_loading = True
+        else:
+            self.show_loading = False
+
         self.game_mode = self.new_game_mode
         self.new_game_mode = -1
 
@@ -147,7 +152,7 @@ class Main:
 
     def load_save(self, save_dir):
 
-        pass
+        self.switch_to(3)
 
 
 if __name__ == "__main__":
