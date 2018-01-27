@@ -160,6 +160,11 @@ class Main:
 
         self.switch_to(3)
 
+        if save_dir in self.save_engine.saves:
+            pass
+        else:
+            self.save_engine.create_save(save_dir)
+
 
 if __name__ == "__main__":
     game = Main()
