@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-496">
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="692">
+              <caret line="143" column="12" lean-forward="false" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -374,13 +374,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00845" summary="Added labels for each of the saves">
-      <created>1516122242943</created>
-      <option name="number" value="00845" />
-      <option name="presentableId" value="LOCAL-00845" />
-      <option name="project" value="LOCAL" />
-      <updated>1516122242943</updated>
     </task>
     <task id="LOCAL-00846" summary="Added arrow icon">
       <created>1516122476840</created>
@@ -718,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517052420429</updated>
     </task>
-    <option name="localTasksCounter" value="894" />
+    <task id="LOCAL-00894" summary="Defining load_from_save function">
+      <created>1517053949277</created>
+      <option name="number" value="00894" />
+      <option name="presentableId" value="LOCAL-00894" />
+      <option name="project" value="LOCAL" />
+      <updated>1517053949277</updated>
+    </task>
+    <option name="localTasksCounter" value="895" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created some test for save engine" />
     <MESSAGE value="Added a test save" />
     <MESSAGE value="Created a meta file" />
     <MESSAGE value="Checks to make sure saves are valid" />
@@ -820,7 +819,8 @@
     <MESSAGE value="Created a loading screen" />
     <MESSAGE value="Created an empty update function for Fade" />
     <MESSAGE value="Added to switch_game_mode just in case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to switch_game_mode just in case" />
+    <MESSAGE value="Defining load_from_save function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defining load_from_save function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1129,18 +1129,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-496">
           <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="143" column="12" lean-forward="false" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
           <folding />
         </state>
       </provider>

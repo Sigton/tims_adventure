@@ -139,6 +139,10 @@ class Main:
         self.new_game_mode = game_mode
         self.fade = 60
 
+    def load_save(self, save_dir):
+
+        pass
+
 
 if __name__ == "__main__":
     game = Main()
