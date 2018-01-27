@@ -173,6 +173,10 @@ class Fade:
 
         self.opacity = 255
 
+    def update(self):
+
+        pass
+
     def draw(self, display):
 
         if self.opacity == 255:
