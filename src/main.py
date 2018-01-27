@@ -35,6 +35,18 @@ class Main:
 
         self.load_components()
 
+        self.loading_screen = gui_components.Image(tools.combine_images((gui_components.Fill(0, 0, 960, 720,
+                                                                                             constants.BLACK),
+                                                                        gui_components.Label(340, 322, "Loading...",
+                                                                                             False, 64))),
+                                                   0, 0, False)
+
+        self.loading_screen.draw(self.display)
+        pygame.display.update()
+
+        self.fade_screen = gui_components.Fade()
+        self.fade_screen.set_opacity(0)
+
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
         self.save_engine = save.SaveEngine()
@@ -45,15 +57,6 @@ class Main:
         self.duel_controller = duel_controller.DuelController(self)
 
         self.menu = menu.MainMenu(self)
-
-        self.fade_screen = gui_components.Fade()
-        self.fade_screen.set_opacity(0)
-
-        self.loading_screen = gui_components.Image(tools.combine_images((gui_components.Fill(0, 0, 960, 720,
-                                                                                             constants.BLACK),
-                                                                        gui_components.Label(340, 322, "Loading...",
-                                                                                             False, 64))),
-                                                   0, 0, False)
 
         self.show_loading = False
 
