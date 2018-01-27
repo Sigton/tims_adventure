@@ -55,6 +55,8 @@ class Main:
                                                                                              False, 64))),
                                                    0, 0, False)
 
+        self.show_loading = False
+
         self.game_mode = 2
         self.full_screen = False
 
@@ -118,7 +120,9 @@ class Main:
                 self.fade_screen.set_opacity(int((self.fade/30)*255))
 
             self.fade_screen.draw(self.display)
-            self.loading_screen.draw(self.display)
+
+            if self.show_loading:
+                self.loading_screen.draw(self.display)
 
             self.sound_engine.play_sounds()
 
