@@ -119,6 +119,10 @@ class ChunkController:
 
         self.update_health_counter = 0
 
+    def load_from_save(self, save_dir):
+
+        pass
+
     def update(self):
 
         for event in pygame.event.get():
