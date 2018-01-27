@@ -126,6 +126,9 @@ class Main:
 
     def switch_game_mode(self):
 
+        if self.new_game_mode == -1:
+            return
+
         self.game_mode = self.new_game_mode
         self.new_game_mode = -1
 
