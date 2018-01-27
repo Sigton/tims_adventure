@@ -193,9 +193,12 @@ class Fade:
 
 class Image:
 
-    def __init__(self, image_path, x=0, y=0):
+    def __init__(self, image_path, x=0, y=0, load_image=True):
 
-        self.image = pygame.image.load(image_path).convert()
+        if load_image:
+            self.image = pygame.image.load(image_path).convert()
+        else:
+            self.image = image_path
 
         self.rect = self.image.get_rect()
         self.rect.x = x
