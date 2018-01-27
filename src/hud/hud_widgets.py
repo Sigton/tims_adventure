@@ -199,7 +199,7 @@ class SaveSelect:
 
         self.images = menu_image_loader.load_images()
 
-        self.saves = self.save_engine.get_saves()
+        self.saves = self.save_engine.saves
 
         self.background = gui_components.Fill(self.x, self.y, 482, 362, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+212, self.y+6, 264, 350, constants.GUI_FILL)
