@@ -255,7 +255,7 @@ class SaveSelect:
     def callback(self, button_id):
 
         if button_id == 0:
-            self.save_engine.create_save("save{}".format(len(self.saves)+1))
+            self.master.master.load_save("save{}".format(len(self.saves)+1))
 
         elif button_id == 1:
             self.master.master.switch_to(0)

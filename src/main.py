@@ -119,10 +119,10 @@ class Main:
             elif self.fade > 0:
                 self.fade_screen.set_opacity(int((self.fade/30)*255))
 
-            self.fade_screen.draw(self.display)
-
             if self.show_loading:
                 self.loading_screen.draw(self.display)
+
+            self.fade_screen.draw(self.display)
 
             self.sound_engine.play_sounds()
 
@@ -136,6 +136,9 @@ class Main:
 
         if self.new_game_mode == 3:
             self.show_loading = True
+            self.new_game_mode = -1
+
+            return
         else:
             self.show_loading = False
 
