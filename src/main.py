@@ -72,6 +72,9 @@ class Main:
             self.menu
         ]
 
+        self.load_function = None
+        self.after_load = -1
+
     def load_components(self):
 
         constants.load_font()
@@ -103,6 +106,16 @@ class Main:
                     self.switch_game_mode()
 
             else:
+
+                if self.show_loading:
+
+                    if self.load_function is not None:
+                        self.load_function()
+
+                        self.load_function = None
+
+                    self.switch_to(self.after_load)
+                    self.after_load = -1
 
                 if self.fade_screen.opacity > 0:
                     self.fade_screen.set_opacity(0)
@@ -163,7 +176,8 @@ class Main:
         if save_dir in self.save_engine.saves:
             pass
         else:
-            self.save_engine.create_save(save_dir)
+            self.load_function = lambda: self.save_engine.create_save(save_dir)
+            self.after_load = 0
 
 
 if __name__ == "__main__":

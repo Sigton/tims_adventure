@@ -258,7 +258,7 @@ class SaveSelect:
             self.master.master.load_save("save{}".format(len(self.saves)+1))
 
         elif button_id == 1:
-            self.master.master.switch_to(0)
+            self.master.master.load_save(self.saves[self.selected_save])
 
         elif button_id == 2:
             pass
