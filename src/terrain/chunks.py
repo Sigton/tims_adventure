@@ -77,7 +77,28 @@ class ChunkController:
 
         self.px, self.py = constants.player_pos
 
+        self.current_chunk = self.get_current_chunk_id()
+        self.old_chunk = self.current_chunk
+
         tiles.load_images()
+
+        self.load_from_save("")
+
+        self.assorted_entities = []
+
+        self.hud = hud.HUD(self.player, self)
+
+        self.hud.save_hud("main", ["health_display", ])
+        self.hud.load_saved_hud("main")
+
+        self.hud_on = True
+
+        self.bean_select_popup_open = False
+        self.enemy_to_duel = None
+
+        self.update_health_counter = 0
+
+    def load_from_save(self, save_dir):
 
         # Check if the file is empty
         if not os.stat(os.path.join("src", "saves", "maps.json")).st_size:
@@ -104,24 +125,6 @@ class ChunkController:
 
         for n in chunks_to_create:
             self.create_chunk(n)
-
-        self.assorted_entities = []
-
-        self.hud = hud.HUD(self.player, self)
-
-        self.hud.save_hud("main", ["health_display", ])
-        self.hud.load_saved_hud("main")
-
-        self.hud_on = True
-
-        self.bean_select_popup_open = False
-        self.enemy_to_duel = None
-
-        self.update_health_counter = 0
-
-    def load_from_save(self, save_dir):
-
-        pass
 
     def update(self):
 
