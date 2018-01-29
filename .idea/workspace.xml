@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/engines/save.py" afterPath="$PROJECT_DIR$/src/engines/save.py" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,12 +17,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="260" column="35" lean-forward="false" selection-start-line="260" selection-start-column="35" selection-end-line="260" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="692">
+              <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/etc/tools.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -384,13 +406,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00860" summary="Added new method to hud">
-      <created>1516181361760</created>
-      <option name="number" value="00860" />
-      <option name="presentableId" value="LOCAL-00860" />
-      <option name="project" value="LOCAL" />
-      <updated>1516181361761</updated>
     </task>
     <task id="LOCAL-00861" summary="Fixed bug">
       <created>1516184869631</created>
@@ -728,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517210141347</updated>
     </task>
-    <option name="localTasksCounter" value="909" />
+    <task id="LOCAL-00909" summary="decs.json is no longer needed after map has been initially generated">
+      <created>1517210234702</created>
+      <option name="number" value="00909" />
+      <option name="presentableId" value="LOCAL-00909" />
+      <option name="project" value="LOCAL" />
+      <updated>1517210234702</updated>
+    </task>
+    <option name="localTasksCounter" value="910" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -805,7 +827,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merged progress.json and save.meta into meta.json" />
     <MESSAGE value="Created a file compressor function" />
     <MESSAGE value="Option to compress dec generator output file" />
     <MESSAGE value="Connected save engine to main" />
@@ -830,7 +851,8 @@
     <MESSAGE value="The loading screen appears and it loads" />
     <MESSAGE value="Populated load_from_save" />
     <MESSAGE value="load_from_save now works" />
-    <option name="LAST_COMMIT_MESSAGE" value="load_from_save now works" />
+    <MESSAGE value="decs.json is no longer needed after map has been initially generated" />
+    <option name="LAST_COMMIT_MESSAGE" value="decs.json is no longer needed after map has been initially generated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1089,6 +1111,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="195" column="8" lean-forward="false" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,20 +1137,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save2/maps.json" />
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="173" column="25" lean-forward="false" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="260" column="72" lean-forward="false" selection-start-line="260" selection-start-column="72" selection-end-line="260" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
@@ -1144,11 +1153,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="260" column="35" lean-forward="false" selection-start-line="260" selection-start-column="35" selection-end-line="260" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="680">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

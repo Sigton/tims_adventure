@@ -1,4 +1,5 @@
 import sys
+import os
 
 import pygame
 
@@ -174,10 +175,11 @@ class Main:
         self.switch_to(3)
 
         if save_dir in self.save_engine.saves:
-            pass
+            self.load_function = lambda: self.chunk_controller.load_from_save(os.path.join(self.save_engine.save_dir,
+                                                                                           save_dir))
         else:
             self.load_function = lambda: self.save_engine.create_save(save_dir)
-            self.after_load = 0
+        self.after_load = 0
 
 
 if __name__ == "__main__":
