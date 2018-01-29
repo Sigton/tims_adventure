@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+      <change beforePath="$PROJECT_DIR$/src/saves/gamesaves/save1/maps.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +29,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="260" column="35" lean-forward="false" selection-start-line="260" selection-start-column="35" selection-end-line="260" selection-end-column="35" />
+            <state relative-caret-position="404">
+              <caret line="244" column="42" lean-forward="true" selection-start-line="244" selection-start-column="42" selection-end-line="244" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icons.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="880">
+              <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -49,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5484">
-              <caret line="356" column="0" lean-forward="true" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+            <state relative-caret-position="164">
+              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,12 +174,12 @@
         <option value="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
         <option value="$PROJECT_DIR$/src/etc/tools.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/generators/map_generator.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -229,21 +241,6 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="saves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-              <item name="save1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -414,13 +411,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00863" summary="New save button deactivates when at max saves">
-      <created>1516185269950</created>
-      <option name="number" value="00863" />
-      <option name="presentableId" value="LOCAL-00863" />
-      <option name="project" value="LOCAL" />
-      <updated>1516185269950</updated>
     </task>
     <task id="LOCAL-00864" summary="Exaggerated image of deactivated button">
       <created>1516185491794</created>
@@ -758,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517213072967</updated>
     </task>
-    <option name="localTasksCounter" value="912" />
+    <task id="LOCAL-00912" summary="Fixed bug in terrain engine">
+      <created>1517213180513</created>
+      <option name="number" value="00912" />
+      <option name="presentableId" value="LOCAL-00912" />
+      <option name="project" value="LOCAL" />
+      <updated>1517213180514</updated>
+    </task>
+    <option name="localTasksCounter" value="913" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -835,7 +832,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Connected save engine to main" />
     <MESSAGE value="Linked save select menu to save engine" />
     <MESSAGE value="New button creates a new save" />
     <MESSAGE value="Created a simple function to combine multiple images onto a single surface" />
@@ -860,7 +856,8 @@
     <MESSAGE value="decs.json is no longer needed after map has been initially generated" />
     <MESSAGE value="Load button should work now" />
     <MESSAGE value="Fixed bug with map generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with map generator" />
+    <MESSAGE value="Fixed bug in terrain engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in terrain engine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -899,13 +896,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines.py" />
-    <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="80" column="23" lean-forward="false" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1138,14 +1128,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save2/maps.json" />
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="260" column="35" lean-forward="false" selection-start-line="260" selection-start-column="35" selection-end-line="260" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1184,8 +1166,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5484">
-          <caret line="356" column="0" lean-forward="true" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="244" column="42" lean-forward="true" selection-start-line="244" selection-start-column="42" selection-end-line="244" selection-end-column="42" />
           <folding />
         </state>
       </provider>

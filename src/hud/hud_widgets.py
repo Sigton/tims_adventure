@@ -234,6 +234,12 @@ class SaveSelect:
     def update(self):
 
         self.arrow.realign(self.x+222, self.y+18+(44*self.selected_save))
+        if not len(self.saves):
+            self.arrow.off()
+            self.load_save_button.set_off()
+        else:
+            self.arrow.on()
+            self.load_save_button.set_on()
 
         if len(self.saves) >= 8:
             self.new_save_button.set_off()
