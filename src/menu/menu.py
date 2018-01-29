@@ -1,7 +1,7 @@
 import pygame
 from pygame.constants import *
 
-from src.etc import gui_components
+from src.etc import constants, gui_components, tools
 from src.menu import menu_image_loader
 from src.hud import hud
 
@@ -33,6 +33,12 @@ class MainMenu:
             self.quit_button
         ]
 
+        dark_screen = gui_components.Fill(0, 0, 960, 720, constants.BLACK)
+        dark_screen.image.set_alpha(128)
+
+        self.dark_background = tools.combine_images([self.background] + self.buttons + [dark_screen])
+        self.normal_background = self.background.image
+
         self.hud = hud.HUD(None, self)
 
         self.hud.save_hud("menu", ["save_select", ])
@@ -53,6 +59,11 @@ class MainMenu:
 
                 self.hud.get_component("save_select").handle_event(event)
 
+        if self.save_select_open:
+            self.background.image = self.dark_background
+        else:
+            self.background.image = self.normal_background
+
         [button.update() for button in self.buttons]
 
         self.hud.update()
@@ -72,7 +83,7 @@ class MainMenu:
 
         self.background.draw(display)
 
-        [button.draw(display) for button in self.buttons]
-
         if self.save_select_open:
             self.hud.draw(display)
+        else:
+            [button.draw(display) for button in self.buttons]

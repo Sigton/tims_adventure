@@ -27,7 +27,7 @@ def compress(file):
 
 def combine_images(images):
 
-    image = pygame.Surface(max([(i.rect.width, i.rect.height) for i in images]))
+    image = pygame.Surface([960, 720])
 
     [image.blit(i.image, i.rect.topleft) for i in images]
 
