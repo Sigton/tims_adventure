@@ -1,6 +1,7 @@
 import json
 import operator
 import logging
+import os
 
 import pygame
 
@@ -54,7 +55,7 @@ def generate_map(blueprint, dest):
 
     logging.debug("Loading decorations data...")
 
-    with open("src/saves/decs.json") as infile:
+    with open(os.path.join(dest[0:-9], "decs.json")) as infile:
         decs = json.load(infile)
         infile.close()
 
