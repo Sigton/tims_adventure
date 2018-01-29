@@ -82,8 +82,6 @@ class ChunkController:
 
         tiles.load_images()
 
-        self.load_from_save("")
-
         self.assorted_entities = []
 
         self.hud = hud.HUD(self.player, self)
@@ -100,15 +98,7 @@ class ChunkController:
 
     def load_from_save(self, save_dir):
 
-        # Check if the file is empty
-        if not os.stat(os.path.join("src", "saves", "maps.json")).st_size:
-            # If the file is empty then
-            # run the map generator
-            from src.terrain.generators import map_generator
-            map_generator.generate_map("src/resources/map.png", "src/saves/maps.json")
-            del map_generator
-
-        with open(os.path.join("src", "saves", "maps.json"), "r") as infile:
+        with open(os.path.join(save_dir, "maps.json"), "r") as infile:
             data = json.load(infile)
             infile.close()
 
