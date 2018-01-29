@@ -116,6 +116,9 @@ class ChunkController:
         for n in chunks_to_create:
             self.create_chunk(n)
 
+        self.current_chunk = self.get_current_chunk_id()
+        self.old_chunk = self.current_chunk
+
     def update(self):
 
         for event in pygame.event.get():
