@@ -59,6 +59,7 @@ class SaveEngine:
             del decs_data
 
         map_generator.generate_map("src/resources/map.png", os.path.join(save_path, "maps.json"))
+        os.remove(os.path.join(save_path, "decs.json"))
 
 
 if __name__ == "__main__":
