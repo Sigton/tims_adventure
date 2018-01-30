@@ -178,7 +178,11 @@ class Main:
             self.load_function = lambda: self.chunk_controller.load_from_save(os.path.join(self.save_engine.save_dir,
                                                                                            save_dir))
         else:
-            self.load_function = lambda: self.save_engine.create_save(save_dir)
+
+            def load_function():
+                self.save_engine.create_save(save_dir)
+                self.chunk_controller.load_from_save(os.path.join(self.save_engine.save_dir, save_dir))
+            self.load_function = load_function
         self.after_load = 0
 
 
