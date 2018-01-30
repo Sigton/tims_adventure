@@ -241,7 +241,7 @@ class SaveSelect:
         else:
             self.arrow.on()
             self.load_save_button.set_on()
-            self.delete_save_button.set_off()
+            self.delete_save_button.set_on()
 
         if len(self.saves) >= 8:
             self.new_save_button.set_off()
