@@ -185,6 +185,9 @@ class Main:
             self.load_function = load_function
         self.after_load = 0
 
+    def delete_save(self, save_dir):
+
+        pass
 
 if __name__ == "__main__":
     game = Main()
