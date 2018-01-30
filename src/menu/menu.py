@@ -34,7 +34,7 @@ class MainMenu:
         ]
 
         dark_screen = gui_components.Fill(0, 0, 960, 720, constants.BLACK)
-        dark_screen.image.set_alpha(128)
+        dark_screen.image.set_alpha(200)
 
         self.dark_background = tools.combine_images([self.background] + self.buttons + [dark_screen])
         self.normal_background = self.background.image
