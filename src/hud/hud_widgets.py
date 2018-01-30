@@ -269,7 +269,7 @@ class SaveSelect:
             self.master.master.load_save(self.saves[self.selected_save])
 
         elif button_id == 2:
-            pass
+            self.master.master.delete_save(self.saves[self.selected_save])
 
         elif button_id == 3:
             self.controller.close_widget(self.id)

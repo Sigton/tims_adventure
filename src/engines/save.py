@@ -4,6 +4,7 @@ from src.terrain.generators import map_generator
 import json
 import os
 import gzip
+import shutil
 
 """
 save.py
@@ -67,7 +68,7 @@ class SaveEngine:
             return
 
         save_path = os.path.join(self.save_dir, name)
-        os.rmdir(save_path)
+        shutil.rmtree(save_path)
 
 
 if __name__ == "__main__":

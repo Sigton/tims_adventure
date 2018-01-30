@@ -187,7 +187,8 @@ class Main:
 
     def delete_save(self, save_dir):
 
-        pass
+        self.save_engine.delete_save(save_dir)
+
 
 if __name__ == "__main__":
     game = Main()
