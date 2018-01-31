@@ -270,10 +270,25 @@ class SaveSelect:
 
         elif button_id == 2:
             self.master.master.delete_save(self.saves[self.selected_save])
+            self.refresh()
 
         elif button_id == 3:
             self.controller.close_widget(self.id)
             self.master.save_select_open = False
+
+    def refresh(self):
+
+        self.save_engine.refresh()
+        self.saves = self.save_engine.saves
+
+        self.save_labels = [gui_components.Label(self.x+235, self.y+2+(44*n), self.saves[n], False, 36, constants.BLACK)
+                            for n in range(len(self.saves))]
+
+        self.components = [
+                              self.background,
+                              self.background_fill,
+                              self.arrow
+                          ] + self.save_labels + self.buttons
 
     def draw(self, display):
 
