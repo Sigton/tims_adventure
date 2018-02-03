@@ -272,6 +272,9 @@ class SaveSelect:
             self.master.master.delete_save(self.saves[self.selected_save])
             self.refresh()
 
+            if self.selected_save >= len(self.saves):
+                self.selected_save -= 1
+
         elif button_id == 3:
             self.controller.close_widget(self.id)
             self.master.save_select_open = False
