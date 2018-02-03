@@ -62,7 +62,7 @@ class EntityMeta:
 
 class RandomBean:
 
-    def __init__(self, x, y, to_grid, bean=random.choice(list(bean_image_loader.beans.keys()))):
+    def __init__(self, x, y, to_grid, bean=random.choice(list(bean_image_loader.beans.keys())), meta=None):
 
         self.bean = bean
 
@@ -84,7 +84,10 @@ class RandomBean:
 
         self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
 
-        self.meta = EntityMeta(self)
+        if meta is not None:
+            self.meta = meta
+        else:
+            self.meta = EntityMeta(self)
         self.shadow = shadows.Shadow(self)
 
     def create_images(self, main_img):
@@ -119,3 +122,10 @@ class RandomBean:
 
         if self.interaction_icon is not None:
             self.interaction_icon.draw(display)
+
+
+def create_from_meta(entity, meta, x, y, to_grid):
+
+    new_entity = RandomBean(x, y, to_grid, meta.bean, meta)
+
+    return new_entity
