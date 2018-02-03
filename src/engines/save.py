@@ -63,6 +63,7 @@ class SaveEngine:
 
         map_generator.generate_map("src/resources/map.png", os.path.join(save_path, "maps.json"))
         os.remove(os.path.join(save_path, "decs.json"))
+        os.remove(os.path.join(save_path, "entities.json"))
 
     def delete_save(self, name):
 

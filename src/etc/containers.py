@@ -10,14 +10,15 @@ containers.py
 class Seed(object):
 
     # Using __slots__ to maximise memory efficiency
-    __slots__ = ["name", "tiles", "decs"]
+    __slots__ = ["name", "tiles", "decs", "entities"]
 
-    def __init__(self, name, tiles, decs):
+    def __init__(self, name, tiles, decs, entities):
 
         # Assign all of the attributes their values
         self.name = name
         self.tiles = tiles
         self.decs = decs
+        self.entities = entities
 
 
 # A SeedDict holds a list of seeds
