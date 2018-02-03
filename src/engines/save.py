@@ -59,6 +59,8 @@ class SaveEngine:
             json.dump(decs_data, outfile)
             del decs_data
 
+        shutil.copy("src/saves/default_entities.json", os.path.join(save_path, "entities.json"))
+
         map_generator.generate_map("src/resources/map.png", os.path.join(save_path, "maps.json"))
         os.remove(os.path.join(save_path, "decs.json"))
 
