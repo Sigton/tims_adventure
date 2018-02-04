@@ -132,12 +132,20 @@ def create_entity_from_meta(entity, meta, x, y, to_grid):
     return new_entity
 
 
-def create_random_entity(pos, bean):
+def create_random_entity(pos):
+
+    bean = random.choice(entity_data.keys())
 
     return {
         "pos": pos,
         "bean": bean,
         "meta": {
-
+            "max_hp": entity_data[bean]["max_hp"],
+            "moves": entity_data[bean]["moves"],
+            "attack": entity_data[bean]["attack"],
+            "energy": entity_data[bean]["energy"],
+            "hp": entity_data[bean]["max_hp"],
+            "xp": 0,
+            "level": 1
         }
     }
