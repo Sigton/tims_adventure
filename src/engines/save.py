@@ -49,7 +49,6 @@ class SaveEngine:
         save_path = os.path.join(self.save_dir, name)
         os.mkdir(save_path)
 
-        open(os.path.join(save_path, "meta.json"), "w").close()
         open(os.path.join(save_path, "maps.json"), "w").close()
 
         with gzip.open("src/saves/default_decs.json.gz", 'rb') as infile:
@@ -62,6 +61,13 @@ class SaveEngine:
         shutil.copy("src/saves/default_entities.json", os.path.join(save_path, "entities.json"))
 
         map_generator.generate_map("src/resources/map.png", os.path.join(save_path, "maps.json"))
+
+        with open(os.path.join(save_path, "entities.json"), "r") as infile:
+            entity_data = json.load(infile)
+
+        with open(os.path.join(save_path, "meta.json"), "w") as outfile:
+            json.dump(entity_data, outfile)
+
         os.remove(os.path.join(save_path, "decs.json"))
         os.remove(os.path.join(save_path, "entities.json"))
 
