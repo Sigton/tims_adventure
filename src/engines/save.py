@@ -71,6 +71,8 @@ class SaveEngine:
         with open(os.path.join(save_path, "meta.json"), "w") as outfile:
             json.dump(entity_data, outfile)
 
+        gen_random_entities(save_path)
+
         os.remove(os.path.join(save_path, "decs.json"))
         os.remove(os.path.join(save_path, "entities.json"))
 
@@ -105,6 +107,8 @@ def gen_random_entities(save_path):
                 attempts += 1
 
             if attempts < 10:
+                if chunk not in entity_data["entities"].keys():
+                    entity_data["entities"][chunk] = []
                 entity_data["entities"][chunk].append(entities.create_random_entity([entity_x, entity_y]))
 
     with open(os.path.join(save_path, "meta.json"), "w") as outfile:

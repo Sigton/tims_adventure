@@ -134,7 +134,7 @@ def create_entity_from_meta(entity, meta, x, y, to_grid):
 
 def create_random_entity(pos):
 
-    bean = random.choice(entity_data.keys())
+    bean = random.choice(list(entity_data.keys()))
 
     return {
         "pos": pos,
