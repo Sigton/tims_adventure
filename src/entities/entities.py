@@ -152,8 +152,8 @@ def create_random_entity(pos):
 
     return {
         "pos": pos,
-        "bean": bean,
         "meta": {
+            "bean": bean,
             "max_hp": entity_data[bean]["max_hp"],
             "moves": entity_data[bean]["moves"],
             "attack": entity_data[bean]["attack"],

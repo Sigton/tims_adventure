@@ -17,6 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="102" column="66" lean-forward="false" selection-start-line="102" selection-start-column="66" selection-end-line="102" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,8 +40,8 @@
       <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+            <state relative-caret-position="592">
+              <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -393,13 +403,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00892" summary="Created an empty update function for Fade">
-      <created>1517051976560</created>
-      <option name="number" value="00892" />
-      <option name="presentableId" value="LOCAL-00892" />
-      <option name="project" value="LOCAL" />
-      <updated>1517051976560</updated>
-    </task>
     <task id="LOCAL-00893" summary="Added to switch_game_mode just in case">
       <created>1517052420429</created>
       <option name="number" value="00893" />
@@ -736,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517777089651</updated>
     </task>
-    <option name="localTasksCounter" value="941" />
+    <task id="LOCAL-00941" summary="Updated EntityMeta class to be able to create from JSON">
+      <created>1517777860227</created>
+      <option name="number" value="00941" />
+      <option name="presentableId" value="LOCAL-00941" />
+      <option name="project" value="LOCAL" />
+      <updated>1517777860227</updated>
+    </task>
+    <option name="localTasksCounter" value="942" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -813,7 +823,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Darker" />
     <MESSAGE value="Delete save button now also off when no saves" />
     <MESSAGE value="debugging" />
     <MESSAGE value="Created delete_save function" />
@@ -838,7 +847,8 @@
     <MESSAGE value="gen_random_entities now outputs into meta.json" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Working on implementing loading entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on implementing loading entities" />
+    <MESSAGE value="Updated EntityMeta class to be able to create from JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated EntityMeta class to be able to create from JSON" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,16 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1140,10 +1140,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="102" column="66" lean-forward="false" selection-start-line="102" selection-start-column="66" selection-end-line="102" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        <state relative-caret-position="592">
+          <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
