@@ -103,7 +103,7 @@ class ChunkController:
             infile.close()
 
             for key in list(data.keys()):
-                self.map_seeds.add(containers.Seed(key, data[key]["tiles"], data[key]["decs"], data[key]["entities"]))
+                self.map_seeds.add(containers.Seed(key, data[key]["tiles"], data[key]["decs"], None))
 
             del data
 

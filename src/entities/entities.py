@@ -130,3 +130,14 @@ def create_entity_from_meta(entity, meta, x, y, to_grid):
     new_entity = RandomBean(x, y, to_grid, meta.bean, meta)
 
     return new_entity
+
+
+def create_random_entity(pos, bean):
+
+    return {
+        "pos": pos,
+        "bean": bean,
+        "meta": {
+
+        }
+    }
