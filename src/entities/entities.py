@@ -101,6 +101,7 @@ class RandomBean:
         if meta is not None:
             self.meta = meta
             self.meta.parent = self
+            self.meta.images = self.images
         else:
             self.meta = EntityMeta(self)
         self.shadow = shadows.Shadow(self)
