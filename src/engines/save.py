@@ -1,10 +1,13 @@
 from src.etc import constants
 from src.terrain.generators import map_generator
+from src.terrain.tile_types import *
+from src.entities import entities
 
 import json
 import os
 import gzip
 import shutil
+import random
 
 """
 save.py
@@ -84,6 +87,24 @@ def gen_random_entities(save_path):
 
     with open(os.path.join(save_path, "maps.json"), "r") as infile:
         map_data = json.load(infile)
+
+    created_entities = []
+
+    for chunk in map_data.keys():
+        for n in range(random.choice(constants.selection_matrix)):
+            entity_x = random.randint(0, 19)
+            entity_y = random.randint(0, 14)
+
+            attempts = 0
+            tile_no = (entity_y*20)+entity_x
+            while map_data[chunk]["tiles"][tile_no*4:tile_no*4+4] not in spawn_tiles and attempts < 10:
+                entity_x = random.randint(0, 19)
+                entity_y = random.randint(0, 14)
+
+                attempts += 1
+
+            if attempts < 10:
+                created_entities.append(entities.create_random_entity([entity_x, entity_y]))
 
 
 if __name__ == "__main__":

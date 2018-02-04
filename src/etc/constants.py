@@ -45,7 +45,7 @@ num_tiles = chunk_w * chunk_h
 
 weights = [0, 0, 1]  # [1000, 300, 100]
 
-selection_matrix = [0]  # [int(x) for x in sum([list(x*y) for x, y in zip(["0", "1", "2"], weights)], [])]
+selection_matrix = [int(x) for x in sum([list(x*y) for x, y in zip(["0", "1", "2"], weights)], [])]
 
 
 # Assorted variables
