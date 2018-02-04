@@ -80,6 +80,12 @@ class SaveEngine:
         shutil.rmtree(save_path)
 
 
+def gen_random_entities(save_path):
+
+    with open(os.path.join(save_path, "maps.json"), "r") as infile:
+        map_data = json.load(infile)
+
+
 if __name__ == "__main__":
 
     save_engine = SaveEngine()
