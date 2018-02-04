@@ -105,8 +105,13 @@ class ChunkController:
         with open(os.path.join(save_dir, "meta.json"), "r") as infile:
             entity_data = json.load(infile)
 
-        self.entities = [entities.create_entity_from_meta(None, True, entity["pos"][0], entity["pos"][1])
-                         for entity in entity_data["entities"]]
+        self.entities = {}
+
+        for chunk in entity_data["entities"]:
+            print(chunk, chunk[0])
+            self.entities[chunk] = [entities.create_entity_from_json(entity)
+                                    for entity in entity_data["entities"][chunk]]
+        print(self.entities)
 
         for key in list(map_data.keys()):
             self.map_seeds.add(containers.Seed(key, map_data[key]["tiles"], map_data[key]["decs"], None))

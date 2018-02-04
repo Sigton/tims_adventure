@@ -139,9 +139,11 @@ class RandomBean:
             self.interaction_icon.draw(display)
 
 
-def create_entity_from_meta(meta, x, y, to_grid):
+def create_entity_from_json(entity_json):
+    print(entity_json)
+    meta = EntityMeta(None, entity_json["meta"])
 
-    new_entity = RandomBean(x, y, to_grid, meta.bean, meta)
+    new_entity = RandomBean(entity_data["pos"][0], entity_data["pos"][1], True, meta.bean, meta)
 
     return new_entity
 
