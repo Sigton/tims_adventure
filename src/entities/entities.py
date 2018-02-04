@@ -140,7 +140,7 @@ class RandomBean:
 
 
 def create_entity_from_json(entity_json):
-    print(entity_json)
+
     meta = EntityMeta(None, entity_json["meta"])
 
     new_entity = RandomBean(entity_json["pos"][0], entity_json["pos"][1], True, meta.bean, meta)

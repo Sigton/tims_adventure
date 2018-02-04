@@ -369,7 +369,7 @@ class ChunkController:
         # from the seed of the given chunk
 
         tile_seed = self.map_seeds[chunk].tiles
-        new_chunk = containers.Chunk(chunk, [], [], [])
+        new_chunk = containers.Chunk(chunk, [], [], self.entities[chunk])
 
         # Split the string into each individual tile
         tile_data = [tile_seed[i:i+4] for i in range(0, len(tile_seed), 4)]
