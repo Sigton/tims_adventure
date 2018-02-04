@@ -88,7 +88,8 @@ def gen_random_entities(save_path):
     with open(os.path.join(save_path, "maps.json"), "r") as infile:
         map_data = json.load(infile)
 
-    created_entities = []
+    with open(os.path.join(save_path, "meta.json"), "r") as infile:
+        entity_data = json.load(infile)
 
     for chunk in map_data.keys():
         for n in range(random.choice(constants.selection_matrix)):
@@ -104,7 +105,10 @@ def gen_random_entities(save_path):
                 attempts += 1
 
             if attempts < 10:
-                created_entities.append(entities.create_random_entity([entity_x, entity_y]))
+                entity_data["entities"][chunk].append(entities.create_random_entity([entity_x, entity_y]))
+
+    with open(os.path.join(save_path, "meta.json"), "w") as outfile:
+        json.dump(entity_data, outfile)
 
 
 if __name__ == "__main__":

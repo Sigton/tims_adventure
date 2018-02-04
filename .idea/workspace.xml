@@ -7,8 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/engines/save.py" afterPath="$PROJECT_DIR$/src/engines/save.py" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +42,11 @@
                     </provider>
                   </entry>
                 </file>
-                <file leaf-file-name="maps.json" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/maps.json">
+                <file leaf-file-name="meta.json" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="20">
-                        <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+                      <state relative-caret-position="0">
+                        <caret line="0" column="160" lean-forward="false" selection-start-line="0" selection-start-column="160" selection-end-line="0" selection-end-column="160" />
                         <folding />
                       </state>
                     </provider>
@@ -123,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="632">
-              <caret line="106" column="92" lean-forward="true" selection-start-line="106" selection-start-column="92" selection-end-line="106" selection-end-column="92" />
+              <caret line="110" column="39" lean-forward="true" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -503,13 +501,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00888" summary="Linked save select menu to save engine">
-      <created>1516819281906</created>
-      <option name="number" value="00888" />
-      <option name="presentableId" value="LOCAL-00888" />
-      <option name="project" value="LOCAL" />
-      <updated>1516819281907</updated>
-    </task>
     <task id="LOCAL-00889" summary="New button creates a new save">
       <created>1516897185790</created>
       <option name="number" value="00889" />
@@ -846,7 +837,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517760518125</updated>
     </task>
-    <option name="localTasksCounter" value="937" />
+    <task id="LOCAL-00937" summary="Working on gen_random_entities">
+      <created>1517761346826</created>
+      <option name="number" value="00937" />
+      <option name="presentableId" value="LOCAL-00937" />
+      <option name="project" value="LOCAL" />
+      <updated>1517761346826</updated>
+    </task>
+    <option name="localTasksCounter" value="938" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -923,7 +921,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug in terrain engine" />
     <MESSAGE value="Cannot select and load when theres no saves" />
     <MESSAGE value="Menu gui darkens when gui opens" />
     <MESSAGE value="Darker" />
@@ -948,7 +945,8 @@
     <MESSAGE value="Defining create_random_entity" />
     <MESSAGE value="Finished create_random_entity" />
     <MESSAGE value="Defining gen_random_entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defining gen_random_entities" />
+    <MESSAGE value="Working on gen_random_entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on gen_random_entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,13 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="160" lean-forward="false" selection-start-line="0" selection-start-column="160" selection-end-line="0" selection-end-column="160" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1222,26 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="401" column="12" lean-forward="false" selection-start-line="401" selection-start-column="12" selection-end-line="412" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/maps.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1254,10 +1229,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="401" column="12" lean-forward="false" selection-start-line="401" selection-start-column="12" selection-end-line="412" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/maps.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="0" column="11216" lean-forward="false" selection-start-line="0" selection-start-column="11216" selection-end-line="0" selection-end-column="11216" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="160" lean-forward="false" selection-start-line="0" selection-start-column="160" selection-end-line="0" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
-          <caret line="106" column="92" lean-forward="true" selection-start-line="106" selection-start-column="92" selection-end-line="106" selection-end-column="92" />
+          <caret line="110" column="39" lean-forward="true" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
