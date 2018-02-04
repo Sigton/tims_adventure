@@ -82,6 +82,7 @@ class ChunkController:
 
         tiles.load_images()
 
+        self.entities = []
         self.assorted_entities = []
 
         self.hud = hud.HUD(self.player, self)
@@ -99,13 +100,19 @@ class ChunkController:
     def load_from_save(self, save_dir):
 
         with open(os.path.join(save_dir, "maps.json"), "r") as infile:
-            data = json.load(infile)
-            infile.close()
+            map_data = json.load(infile)
 
-            for key in list(data.keys()):
-                self.map_seeds.add(containers.Seed(key, data[key]["tiles"], data[key]["decs"], None))
+        with open(os.path.join(save_dir, "meta.json"), "r") as infile:
+            entity_data = json.load(infile)
 
-            del data
+        self.entities = [entities.create_entity_from_meta(None, True, entity["pos"][0], entity["pos"][1])
+                         for entity in entity_data["entities"]]
+
+        for key in list(map_data.keys()):
+            self.map_seeds.add(containers.Seed(key, map_data[key]["tiles"], map_data[key]["decs"], None))
+
+        del map_data
+        del entity_data
 
         # Select the 9 chunks around the players current position
         self.current_chunk = self.get_current_chunk_id()

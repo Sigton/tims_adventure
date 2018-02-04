@@ -125,7 +125,7 @@ class RandomBean:
             self.interaction_icon.draw(display)
 
 
-def create_entity_from_meta(entity, meta, x, y, to_grid):
+def create_entity_from_meta(meta, x, y, to_grid):
 
     new_entity = RandomBean(x, y, to_grid, meta.bean, meta)
 
