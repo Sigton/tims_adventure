@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
+      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="445" column="76" lean-forward="true" selection-start-line="445" selection-start-column="76" selection-end-line="445" selection-end-column="76" />
+              <caret line="445" column="76" lean-forward="false" selection-start-line="445" selection-start-column="76" selection-end-line="445" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -47,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+            <state relative-caret-position="632">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -171,11 +181,11 @@
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
         <option value="$PROJECT_DIR$/src/terrain/generators/map_generator.py" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/maps.json" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
   </component>
@@ -219,13 +229,7 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="engines" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -251,14 +255,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="saves" type="462c0819:PsiDirectoryNode" />
               <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-              <item name="save1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -428,13 +424,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00899" summary="Switch to is more fade to now">
-      <created>1517055104891</created>
-      <option name="number" value="00899" />
-      <option name="presentableId" value="LOCAL-00899" />
-      <option name="project" value="LOCAL" />
-      <updated>1517055104891</updated>
     </task>
     <task id="LOCAL-00900" summary="Hopefully loading screen will work now">
       <created>1517055194602</created>
@@ -772,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517780541981</updated>
     </task>
-    <option name="localTasksCounter" value="948" />
+    <task id="LOCAL-00948" summary="Debugging">
+      <created>1517780577996</created>
+      <option name="number" value="00948" />
+      <option name="presentableId" value="LOCAL-00948" />
+      <option name="project" value="LOCAL" />
+      <updated>1517780577996</updated>
+    </task>
+    <option name="localTasksCounter" value="949" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -782,7 +778,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23294243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -870,11 +866,11 @@
     <MESSAGE value="Working on implementing loading entities" />
     <MESSAGE value="Updated EntityMeta class to be able to create from JSON" />
     <MESSAGE value="Bean attribute is now within meta" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="More debugging" />
     <MESSAGE value="Even more debugging" />
     <MESSAGE value="Almost works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost works" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,13 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -1170,15 +1159,23 @@
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="445" column="76" lean-forward="true" selection-start-line="445" selection-start-column="76" selection-end-line="445" selection-end-column="76" />
+          <caret line="445" column="76" lean-forward="false" selection-start-line="445" selection-start-column="76" selection-end-line="445" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+        <state relative-caret-position="632">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding />
         </state>
       </provider>

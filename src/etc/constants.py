@@ -43,7 +43,7 @@ num_tiles = chunk_w * chunk_h
 
 # Entity Spawning data
 
-weights = [0, 0, 1]  # [1000, 300, 100]
+weights = [1000, 300, 100]
 
 selection_matrix = [int(x) for x in sum([list(x*y) for x, y in zip(["0", "1", "2"], weights)], [])]
 
