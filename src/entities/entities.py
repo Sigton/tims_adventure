@@ -16,24 +16,38 @@ and metadata about entities
 
 class EntityMeta:
 
-    def __init__(self, parent):
+    def __init__(self, parent=None, json_data=None):
 
-        self.parent = parent
+        if parent is not None:
+            self.parent = parent
 
-        self.bean = self.parent.bean
+            self.bean = self.parent.bean
 
-        self.max_hp = entity_data[self.bean]["max_hp"]
-        self.hp = self.max_hp
+            self.max_hp = entity_data[self.bean]["max_hp"]
+            self.hp = self.max_hp
 
-        self.level = 1
-        self.xp = 0
+            self.level = 1
+            self.xp = 0
 
-        self.energy = entity_data[self.bean]["energy"]
+            self.energy = entity_data[self.bean]["energy"]
 
-        self.moves = entity_data[self.bean]["moves"]
-        self.attack = entity_data[self.bean]["attack"]
+            self.moves = entity_data[self.bean]["moves"]
+            self.attack = entity_data[self.bean]["attack"]
 
-        self.images = self.parent.images
+            self.images = self.parent.images
+        else:
+            self.bean = json_data["bean"]
+
+            self.max_hp = json_data["max_hp"]
+            self.hp = json_data["hp"]
+
+            self.level = json_data["level"]
+            self.xp = json_data["xp"]
+
+            self.energy = json_data["energy"]
+
+            self.moves = json_data["moves"]
+            self.attack = entity_data["attack"]
 
     def damage(self, amount):
 
