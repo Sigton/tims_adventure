@@ -108,10 +108,8 @@ class ChunkController:
         self.entities = {}
 
         for chunk in entity_data["entities"]:
-            print(chunk, chunk[0])
             self.entities[chunk] = [entities.create_entity_from_json(entity)
                                     for entity in entity_data["entities"][chunk]]
-        print(self.entities)
 
         for key in list(map_data.keys()):
             self.map_seeds.add(containers.Seed(key, map_data[key]["tiles"], map_data[key]["decs"], None))

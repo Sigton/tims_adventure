@@ -47,7 +47,7 @@ class EntityMeta:
             self.energy = json_data["energy"]
 
             self.moves = json_data["moves"]
-            self.attack = entity_data["attack"]
+            self.attack = json_data["attack"]
 
     def damage(self, amount):
 
