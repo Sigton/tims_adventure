@@ -59,10 +59,6 @@ def generate_map(blueprint, dest):
         decs = json.load(infile)
         infile.close()
 
-    with open(os.path.join(dest[0:-9], "entities.json")) as infile:
-        entities = json.load(infile)
-        infile.close()
-
     logging.debug("Decorations data loaded.")
 
     logging.debug("Iterating and rendering chunks...")
@@ -89,11 +85,6 @@ def generate_map(blueprint, dest):
                 chunk_data[chunk_id]["decs"] = decs[chunk_id]
             else:
                 chunk_data[chunk_id]["decs"] = []
-
-            if chunk_id in entities:
-                chunk_data[chunk_id]["entities"] = entities[chunk_id]
-            else:
-                chunk_data[chunk_id]["entities"] = []
 
         chunk_x += 1
         if chunk_x % chunks_wide[0] == 0:
