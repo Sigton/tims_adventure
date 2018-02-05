@@ -151,7 +151,19 @@ def create_entity_from_json(entity_json):
 
 def create_json_from_entity(entity):
 
-    pass
+    return {
+        "pos": [0, 0],
+        "meta": {
+            "bean": "",
+            "max_hp": 0,
+            "moves": [],
+            "attack": 0,
+            "energy": 0,
+            "hp": 0,
+            "xp": 0,
+            "level": 1
+        }
+    }
 
 
 def create_random_entity(pos):
