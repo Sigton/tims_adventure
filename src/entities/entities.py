@@ -149,6 +149,11 @@ def create_entity_from_json(entity_json):
     return new_entity
 
 
+def create_json_from_entity(entity):
+
+    pass
+
+
 def create_random_entity(pos):
 
     bean = random.choice(list(entity_data.keys()))
