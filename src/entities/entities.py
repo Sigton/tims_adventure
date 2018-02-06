@@ -152,16 +152,17 @@ def create_entity_from_json(entity_json):
 def create_json_from_entity(entity):
 
     return {
-        "pos": [0, 0],
+        "pos": [entity.offset_x//constants.tile_w,
+                entity.offset_y//constants.tile_h],
         "meta": {
-            "bean": "",
-            "max_hp": 0,
-            "moves": [],
-            "attack": 0,
-            "energy": 0,
-            "hp": 0,
-            "xp": 0,
-            "level": 1
+            "bean": entity.meta.bean,
+            "max_hp": entity.meta.max_hp,
+            "moves": entity.meta.moves,
+            "attack": entity.meta.attack,
+            "energy": entity.meta.energy,
+            "hp": entity.meta.hp,
+            "xp": entity.meta.xp,
+            "level": entity.meta.level
         }
     }
 
