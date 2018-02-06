@@ -129,6 +129,13 @@ class ChunkController:
         self.current_chunk = self.get_current_chunk_id()
         self.old_chunk = self.current_chunk
 
+    def close_save(self):
+
+        json_entities = []
+
+        for entity in self.entities:
+            json_entities.append(entities.create_json_from_entity(entity))
+
     def update(self):
 
         for event in pygame.event.get():
