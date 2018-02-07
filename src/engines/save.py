@@ -84,6 +84,18 @@ class SaveEngine:
         save_path = os.path.join(self.save_dir, name)
         shutil.rmtree(save_path)
 
+    def dump_to_save(self, name, save_data):
+
+        save_path = os.path.join(self.save_dir, name)
+
+        with open(os.path.join(save_path, "meta.json"), 'r') as infile:
+            entity_data = json.load(infile)
+
+        entity_data["entities"] = save_data["entities"]
+
+        with open(os.path.join(save_path, "meta.json"), 'w') as outfile:
+            json.dump(entity_data, outfile)
+
 
 def gen_random_entities(save_path):
 
