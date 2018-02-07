@@ -133,8 +133,9 @@ class ChunkController:
 
         json_entities = []
 
-        for entity in self.entities:
-            json_entities.append(entities.create_json_from_entity(entity))
+        for chunk in self.entities:
+            for entity in self.entities[chunk]:
+                json_entities.append(entities.create_json_from_entity(entity))
 
         return {
             "entities": json_entities
