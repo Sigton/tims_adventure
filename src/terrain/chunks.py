@@ -131,11 +131,11 @@ class ChunkController:
 
     def close_save(self):
 
-        json_entities = []
-
+        json_entities = {}
         for chunk in self.entities:
+            json_entities[chunk] = []
             for entity in self.entities[chunk]:
-                json_entities.append(entities.create_json_from_entity(entity))
+                json_entities[chunk].append(entities.create_json_from_entity(entity))
 
         return {
             "entities": json_entities
