@@ -76,6 +76,8 @@ class Main:
         self.load_function = None
         self.after_load = -1
 
+        self.current_save = ""
+
     def load_components(self):
 
         constants.load_font()
@@ -185,9 +187,17 @@ class Main:
             self.load_function = load_function
         self.after_load = 0
 
+        self.current_save = save_dir
+
     def delete_save(self, save_dir):
 
         self.save_engine.delete_save(save_dir)
+
+    def update_save(self):
+
+        save_data = self.chunk_controller.close_save()
+
+        self.save_engine.dump_to_save(self.current_save, save_data)
 
 
 if __name__ == "__main__":

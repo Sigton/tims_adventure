@@ -136,7 +136,9 @@ class ChunkController:
         for entity in self.entities:
             json_entities.append(entities.create_json_from_entity(entity))
 
-        self.master.save_engine.dump_to_save()
+        return {
+            "entities": json_entities
+        }
 
     def update(self):
 

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +23,7 @@
           <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/engines/save.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1058">
+                <state relative-caret-position="938">
                   <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
                   <folding />
                 </state>
@@ -49,11 +50,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="592">
-                  <caret line="138" column="45" lean-forward="false" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+                <state relative-caret-position="812">
+                  <caret line="202" column="26" lean-forward="true" selection-start-line="202" selection-start-column="26" selection-end-line="202" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="265" column="31" lean-forward="false" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -63,11 +74,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="680">
                   <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="484">
+                  <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -174,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/saves/maps.json" />
         <option value="$PROJECT_DIR$/src/etc/tools.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
         <option value="$PROJECT_DIR$/src/terrain/generators/map_generator.py" />
@@ -184,6 +204,7 @@
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -421,13 +442,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00907" summary="Populated load_from_save">
-      <created>1517174153951</created>
-      <option name="number" value="00907" />
-      <option name="presentableId" value="LOCAL-00907" />
-      <option name="project" value="LOCAL" />
-      <updated>1517174153952</updated>
     </task>
     <task id="LOCAL-00908" summary="load_from_save now works">
       <created>1517210141347</created>
@@ -765,7 +779,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517990939052</updated>
     </task>
-    <option name="localTasksCounter" value="956" />
+    <task id="LOCAL-00956" summary="Updated chunks.py">
+      <created>1518023290663</created>
+      <option name="number" value="00956" />
+      <option name="presentableId" value="LOCAL-00956" />
+      <option name="project" value="LOCAL" />
+      <updated>1518023290664</updated>
+    </task>
+    <option name="localTasksCounter" value="957" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -842,7 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Defined create_from_meta" />
     <MESSAGE value="Default entities gets copied to each save directory" />
     <MESSAGE value="Default entities now get loaded into each save" />
     <MESSAGE value="Renamed function" />
@@ -867,7 +887,8 @@
     <MESSAGE value="Updated create_json_from_entity" />
     <MESSAGE value="Created ChunkController.close_save()" />
     <MESSAGE value="Worked on dump_to_save function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on dump_to_save function" />
+    <MESSAGE value="Updated chunks.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated chunks.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1071,20 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="186" column="0" lean-forward="true" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="275" column="39" lean-forward="true" selection-start-line="275" selection-start-column="39" selection-end-line="275" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -1160,16 +1167,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
+        <state relative-caret-position="938">
           <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="265" column="31" lean-forward="false" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="138" column="45" lean-forward="false" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+        <state relative-caret-position="484">
+          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="202" column="26" lean-forward="true" selection-start-line="202" selection-start-column="26" selection-end-line="202" selection-end-column="26" />
           <folding />
         </state>
       </provider>
