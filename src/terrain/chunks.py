@@ -145,6 +145,9 @@ class ChunkController:
         for event in pygame.event.get():
             if event.type == QUIT:
 
+                self.master.update_save()
+                self.master.close_save()
+
                 self.master.game_exit = True
 
             elif self.bean_select_popup_open:

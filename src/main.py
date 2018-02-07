@@ -199,6 +199,10 @@ class Main:
 
         self.save_engine.dump_to_save(self.current_save, save_data)
 
+    def close_save(self):
+
+        self.current_save = ""
+
 
 if __name__ == "__main__":
     game = Main()
