@@ -105,10 +105,3 @@ if __name__ == "__main__":
     pygame.init()
 
     generate_decs("D:/bean_rpg etc/decmaps", "src/saves/default_decs.json", True)
-
-    print("""
-    #####
-    Starting map generator
-    #####
-    """)
-    map_generator.generate_map("src/resources/map.png", "src/saves/maps.json")
