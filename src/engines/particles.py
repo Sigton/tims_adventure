@@ -1,4 +1,4 @@
-from src.etc import spritesheet, tools
+from src.etc import spritesheet, tools, constants
 
 import random
 import math
@@ -103,13 +103,21 @@ class Particle:
         self.rect.x = x
         self.rect.y = y
 
-        self.lifetime = lifetime
+        self.lifetime = int(lifetime * constants.PARTICLE_LIFE_MULTIPLIER)
+        if self.lifetime <= 0:
+            self.lifetime = 1
 
-        self.fade_out_time = fade_out_time
-        self.fade_out_increment = 255 // fade_out_time
+        self.fade_out_time = int(fade_out_time * constants.PARTICLE_LIFE_MULTIPLIER)
+        if self.fade_out_time <= 0:
+            self.fade_out_time = 1
+        self.fade_out_increment = 255 // self.fade_out_time
 
-        self.fade_in_time = fade_in_time
-        self.fade_in_increment = 255 // fade_in_time
+        self.fade_in_time = int(fade_in_time * constants.PARTICLE_LIFE_MULTIPLIER)
+        if self.fade_in_time <= 0:
+            self.fade_in_time = 1
+        self.fade_in_increment = 255 // self.fade_in_time
+
+        print(self.fade_out_increment, self.fade_in_increment)
 
     def update(self):
 

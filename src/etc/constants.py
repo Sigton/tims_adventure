@@ -108,7 +108,7 @@ positional_moves = [
     "Freeze"
 ]
 
-turn_cool_down = 20
+turn_cool_down = 30
 
 
 # User Events
@@ -125,3 +125,4 @@ DEFAULT_SAVE_DIRECTORY = "src\\saves\\gamesaves"
 # etc
 
 LOADING_SCREEN_TIME = 10
+PARTICLE_LIFE_MULTIPLIER = 0.25
