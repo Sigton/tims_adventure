@@ -58,7 +58,7 @@ dir_to_movements = {
 }
 
 # Player constants
-movement_speed = 16  # Must be a factor of 48
+movement_speed = 4  # Must be a factor of 48
 
 player_pos_x = 460
 player_pos_y = 340
@@ -120,3 +120,8 @@ MUSIC_START_EVENT = pygame.USEREVENT+2
 # Save Engine vars
 
 DEFAULT_SAVE_DIRECTORY = "src\\saves\\gamesaves"
+
+
+# etc
+
+LOADING_SCREEN_TIME = 10

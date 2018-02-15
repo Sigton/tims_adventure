@@ -66,6 +66,7 @@ class Main:
 
         self.fade = 0
         self.new_game_mode = -1
+        self.loading_screen_time = constants.LOADING_SCREEN_TIME
 
         self.controllers = [
             self.chunk_controller,
@@ -105,7 +106,7 @@ class Main:
             if self.fade > 0:
                 self.fade -= 1
 
-                if self.fade == 30 and self.new_game_mode >= 0:
+                if self.fade == self.loading_screen_time//2 and self.new_game_mode >= 0:
                     self.switch_game_mode()
 
             else:
@@ -133,10 +134,12 @@ class Main:
 
             self.particle_engine.draw(self.display)
 
-            if self.fade > 30:
-                self.fade_screen.set_opacity(int(((30-(self.fade-30))/30)*255))
+            if self.fade > self.loading_screen_time//2:
+                self.fade_screen.set_opacity(int((((self.loading_screen_time//2) -
+                                                   (self.fade-(self.loading_screen_time//2)))
+                                                  / (self.loading_screen_time//2))*255))
             elif self.fade > 0:
-                self.fade_screen.set_opacity(int((self.fade/30)*255))
+                self.fade_screen.set_opacity(int((self.fade/(self.loading_screen_time//2))*255))
 
             if self.show_loading:
                 self.loading_screen.draw(self.display)
@@ -146,7 +149,7 @@ class Main:
             self.sound_engine.play_sounds()
 
             pygame.display.update()
-            self.clock.tick(60)
+            self.clock.tick(15)
 
     def switch_game_mode(self):
 
@@ -170,7 +173,7 @@ class Main:
 
         if force_controller_change:
             self.new_game_mode = game_mode
-        self.fade = 60
+        self.fade = self.loading_screen_time
 
     def load_save(self, save_dir):
 
