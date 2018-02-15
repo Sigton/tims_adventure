@@ -108,7 +108,7 @@ positional_moves = [
     "Freeze"
 ]
 
-turn_cool_down = 80
+turn_cool_down = 20
 
 
 # User Events

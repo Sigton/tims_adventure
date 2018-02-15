@@ -101,7 +101,7 @@ class DuelController:
         ]
 
         self.turn = 0
-        self.turn_cool_down = 50
+        self.turn_cool_down = constants.turn_cool_down
 
         self.game_won = False
         self.game_won_counter = 0
@@ -111,7 +111,7 @@ class DuelController:
     def reset(self):
 
         self.turn = 0
-        self.turn_cool_down = 50
+        self.turn_cool_down = constants.turn_cool_down
 
         self.game_won = False
         self.game_won_counter = 0
