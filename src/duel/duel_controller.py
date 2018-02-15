@@ -8,6 +8,7 @@ from src.duel.moves import moves
 from src.engines import brain
 
 import math
+import random
 
 """
 duel.py
@@ -193,7 +194,7 @@ class DuelController:
 
         if self.turn == 1 and not self.turn_cool_down and not self.game_won:
 
-            possible_moves = [0, 1, 2, 3]
+            possible_moves = [0, 1, 3]  # 2 has not been implemented yet
 
             if self.enemy.energy - moves[self.enemy.meta.moves[0]]["energy"] < 0:
                 possible_moves.remove(0)
@@ -355,6 +356,7 @@ class DuelController:
 
     def get_opponent_move(self):
 
+        """
         return brain.get_max_idx(self.brain.get_output([
             self.enemy.meta.hp,
             self.enemy.meta.hp-self.player.meta.hp,
@@ -369,3 +371,11 @@ class DuelController:
             moves[self.enemy.meta.moves[1]]["energy"],
             self.enemy.meta.energy - self.enemy.energy
         ]))
+        """
+
+        choices = [0 for n in range(5)] + [1 for n in range(5)] + [3]
+
+        if self.enemy.meta.hp < self.enemy.meta.max_hp*0.15:
+            choices += [3 for n in range(6)]
+
+        return random.choice(choices)
