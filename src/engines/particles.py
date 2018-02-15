@@ -117,8 +117,6 @@ class Particle:
             self.fade_in_time = 1
         self.fade_in_increment = 255 // self.fade_in_time
 
-        print(self.fade_out_increment, self.fade_in_increment)
-
     def update(self):
 
         self.lifetime -= 1
