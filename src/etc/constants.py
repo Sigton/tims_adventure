@@ -126,3 +126,10 @@ DEFAULT_SAVE_DIRECTORY = "src\\saves\\gamesaves"
 
 LOADING_SCREEN_TIME = 10
 PARTICLE_LIFE_MULTIPLIER = 0.25
+
+
+# Performance control
+
+performance_profiles = {
+
+}
