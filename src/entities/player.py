@@ -112,6 +112,9 @@ class Bean(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = constants.DISPLAY_CENTER
 
+        if self.bean in constants.bean_image_offset.keys():
+            self.image_offset_x, self.image_offset_y = constants.bean_image_offset[self.bean]
+
         self.meta = entities.EntityMeta(self)
 
         self.shadow = shadows.Shadow(self)
@@ -137,5 +140,5 @@ class Bean(pygame.sprite.Sprite):
         wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
         wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
         display.blit(self.image,
-                     (self.rect.x + wobble_x,
-                      self.rect.y + wobble_y))
+                     (self.rect.x + wobble_x - self.image_offset_x,
+                      self.rect.y + wobble_y - self.image_offset_y))

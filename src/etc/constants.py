@@ -138,5 +138,5 @@ performance_profiles = {
 # Bean related
 
 bean_image_offset = {
-    "carrot": (-2, -6)
+    "carrot": (2, 6)
 }

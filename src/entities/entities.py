@@ -96,6 +96,9 @@ class RandomBean:
         self.offset_x = self.rect.x
         self.offset_y = self.rect.y
 
+        if self.bean in constants.bean_image_offset.keys():
+            self.image_offset_x, self.image_offset_y = constants.bean_image_offset[self.bean]
+
         self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
 
         if meta is not None:
@@ -134,7 +137,7 @@ class RandomBean:
 
         self.shadow.draw(display)
 
-        display.blit(self.image, (self.rect.x, self.rect.y))
+        display.blit(self.image, (self.rect.x-self.image_offset_x, self.rect.y-self.image_offset_y))
 
         if self.interaction_icon is not None:
             self.interaction_icon.draw(display)
