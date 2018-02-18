@@ -39,21 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bean_image_loader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bean_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="460">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+            <state relative-caret-position="220">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -96,6 +96,7 @@
       <find>constants.turn</find>
       <find>= 50</find>
       <find>math</find>
+      <find>green</find>
     </findStrings>
     <replaceStrings>
       <replace>player</replace>
@@ -111,6 +112,7 @@
       <replace>entity</replace>
       <replace>self.movement_speed</replace>
       <replace>logging.debug</replace>
+      <replace>poison</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -169,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
+        <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
       </list>
     </option>
   </component>
@@ -377,13 +379,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00924" summary="RandomBean can take a preset bean">
-      <created>1517661210916</created>
-      <option name="number" value="00924" />
-      <option name="presentableId" value="LOCAL-00924" />
-      <option name="project" value="LOCAL" />
-      <updated>1517661210916</updated>
     </task>
     <task id="LOCAL-00925" summary="Fixed bug with pointer in save select">
       <created>1517661358433</created>
@@ -721,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518954903731</updated>
     </task>
-    <option name="localTasksCounter" value="973" />
+    <task id="LOCAL-00973" summary="Added lemon bean">
+      <created>1518955993679</created>
+      <option name="number" value="00973" />
+      <option name="presentableId" value="LOCAL-00973" />
+      <option name="project" value="LOCAL" />
+      <updated>1518955993679</updated>
+    </task>
+    <option name="localTasksCounter" value="974" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,7 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bean attribute is now within meta" />
     <MESSAGE value="More debugging" />
     <MESSAGE value="Even more debugging" />
     <MESSAGE value="Almost works" />
@@ -823,7 +824,8 @@
     <MESSAGE value="Adding new beans at last" />
     <MESSAGE value="Running at 60fps again" />
     <MESSAGE value="Working on the beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the beans" />
+    <MESSAGE value="Added lemon bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lemon bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1097,18 +1099,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="220">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        <state relative-caret-position="460">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
