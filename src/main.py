@@ -149,7 +149,7 @@ class Main:
             self.sound_engine.play_sounds()
 
             pygame.display.update()
-            self.clock.tick(15)
+            self.clock.tick(60)
 
     def switch_game_mode(self):
 
