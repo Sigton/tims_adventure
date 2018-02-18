@@ -11,5 +11,5 @@ entity_data = {
     "cool": {"max_hp": 100, "moves": [0, 2], "attack": 10, "energy": 100},
     "green": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
     "strawberry": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
-    "yellow": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100}
+    "lemon": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100}
 }
