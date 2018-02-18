@@ -114,6 +114,8 @@ class Bean(pygame.sprite.Sprite):
 
         if self.bean in constants.bean_image_offset.keys():
             self.image_offset_x, self.image_offset_y = constants.bean_image_offset[self.bean]
+        else:
+            self.image_offset_x, self.image_offset_y = (0, 0)
 
         self.meta = entities.EntityMeta(self)
 
