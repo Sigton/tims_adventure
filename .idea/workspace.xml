@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/entities/bean_image_loader.py" afterPath="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
+      <change beforePath="$PROJECT_DIR$/src/entities/entity_meta.py" afterPath="$PROJECT_DIR$/src/entities/entity_meta.py" />
       <change beforePath="$PROJECT_DIR$/src/resources/beans.png" afterPath="$PROJECT_DIR$/src/resources/beans.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,21 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bean_image_loader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bean_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="296">
+              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -95,6 +97,7 @@
       <find>= 50</find>
       <find>math</find>
       <find>green</find>
+      <find>poison</find>
     </findStrings>
     <replaceStrings>
       <replace>player</replace>
@@ -111,6 +114,7 @@
       <replace>self.movement_speed</replace>
       <replace>logging.debug</replace>
       <replace>poison</replace>
+      <replace>pickle</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -175,10 +179,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="2063" />
-    <option name="height" value="1085" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -377,13 +381,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00929" summary="Renamed function">
-      <created>1517741029058</created>
-      <option name="number" value="00929" />
-      <option name="presentableId" value="LOCAL-00929" />
-      <option name="project" value="LOCAL" />
-      <updated>1517741029058</updated>
     </task>
     <task id="LOCAL-00930" summary="Defined a testing entity">
       <created>1517744729162</created>
@@ -721,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518980196977</updated>
     </task>
-    <option name="localTasksCounter" value="978" />
+    <task id="LOCAL-00978" summary="Adjusting textures">
+      <created>1518984269342</created>
+      <option name="number" value="00978" />
+      <option name="presentableId" value="LOCAL-00978" />
+      <option name="project" value="LOCAL" />
+      <updated>1518984269342</updated>
+    </task>
+    <option name="localTasksCounter" value="979" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -798,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created new function" />
     <MESSAGE value="Updated create_json_from_entity" />
     <MESSAGE value="Created ChunkController.close_save()" />
     <MESSAGE value="Worked on dump_to_save function" />
@@ -823,7 +826,8 @@
     <MESSAGE value="Fixed texture" />
     <MESSAGE value="Added rainbow bean" />
     <MESSAGE value="Added a unicorn bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a unicorn bean" />
+    <MESSAGE value="Adjusting textures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusting textures" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1097,18 +1101,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="220">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
