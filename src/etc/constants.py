@@ -133,3 +133,10 @@ PARTICLE_LIFE_MULTIPLIER = 1
 performance_profiles = {
 
 }
+
+
+# Bean related
+
+bean_image_offset = {
+    "carrot": (-2, -6)
+}
