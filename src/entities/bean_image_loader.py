@@ -18,6 +18,7 @@ rainbow = lambda: sprite_sheet.get_image(200, 0, 40, 40)
 unicorn = lambda: sprite_sheet.get_image(240, 0, 40, 40)
 hedgehog = lambda: sprite_sheet.get_image(280, 0, 40, 40)
 poison = lambda: sprite_sheet.get_image(320, 0, 40, 40)
+carrot = lambda: sprite_sheet.get_image(0, 40, 42, 46)
 
 beans = {
     "chili": chili,
@@ -28,7 +29,8 @@ beans = {
     "rainbow": rainbow,
     "unicorn": unicorn,
     "hedgehog": hedgehog,
-    "poison": poison
+    "poison": poison,
+    "carrot": carrot
 }
 
 

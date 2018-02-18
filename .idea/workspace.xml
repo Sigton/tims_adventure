@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player.py" afterPath="$PROJECT_DIR$/src/entities/player.py" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
+      <change beforePath="$PROJECT_DIR$/src/entities/bean_image_loader.py" afterPath="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
+      <change beforePath="$PROJECT_DIR$/src/entities/entity_meta.py" afterPath="$PROJECT_DIR$/src/entities/entity_meta.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/player.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -62,18 +61,18 @@
       <file leaf-file-name="bean_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="376">
+              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -190,11 +189,11 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/terrain/generators/dec_generator.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
+        <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
       </list>
     </option>
   </component>
@@ -401,13 +400,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00935" summary="Finished create_random_entity">
-      <created>1517755974845</created>
-      <option name="number" value="00935" />
-      <option name="presentableId" value="LOCAL-00935" />
-      <option name="project" value="LOCAL" />
-      <updated>1517755974845</updated>
     </task>
     <task id="LOCAL-00936" summary="Defining gen_random_entities">
       <created>1517760518124</created>
@@ -745,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518986868042</updated>
     </task>
-    <option name="localTasksCounter" value="984" />
+    <task id="LOCAL-00984" summary="Implemented image offset">
+      <created>1518987068386</created>
+      <option name="number" value="00984" />
+      <option name="presentableId" value="LOCAL-00984" />
+      <option name="project" value="LOCAL" />
+      <updated>1518987068386</updated>
+    </task>
+    <option name="localTasksCounter" value="985" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -822,7 +821,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on implementing saving progress" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Lotta performance optimizations for lower fps" />
@@ -847,7 +845,8 @@
     <MESSAGE value="Added poison bean and increased spawn rates" />
     <MESSAGE value="Added carrot bean texture" />
     <MESSAGE value="Created bean_image_offset dict in constants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created bean_image_offset dict in constants" />
+    <MESSAGE value="Implemented image offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented image offset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1099,22 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
@@ -1135,6 +1118,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
