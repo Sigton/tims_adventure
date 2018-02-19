@@ -20,6 +20,7 @@ hedgehog = lambda: sprite_sheet.get_image(280, 0, 40, 40)
 poison = lambda: sprite_sheet.get_image(320, 0, 40, 40)
 carrot = lambda: sprite_sheet.get_image(0, 40, 42, 46)
 rabbit = lambda: sprite_sheet.get_image(360, 0, 40, 40)
+what = lambda: sprite_sheet.get_image(42, 40, 40, 40)
 
 beans = {
     "chili": chili,
@@ -32,7 +33,8 @@ beans = {
     "hedgehog": hedgehog,
     "poison": poison,
     "carrot": carrot,
-    "rabbit": rabbit
+    "rabbit": rabbit,
+    "what": what
 }
 
 
