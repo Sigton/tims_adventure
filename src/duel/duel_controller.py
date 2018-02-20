@@ -213,7 +213,7 @@ class DuelController:
                 if self.player.meta.hp <= 0:
                     self.player.meta.hp = 0
 
-                    self.end_duel("Opponent")
+                    self.end_duel("Opponent", False)
 
                 self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
 
@@ -231,7 +231,7 @@ class DuelController:
 
             else:
 
-                self.end_duel("Player")
+                self.end_duel("Player", True)
 
             self.turn = 0
             self.turn_cool_down = constants.turn_cool_down
@@ -259,7 +259,7 @@ class DuelController:
             if self.enemy.meta.hp <= 0:
                 self.enemy.meta.hp = 0
 
-                self.end_duel("Player")
+                self.end_duel("Player", False)
 
             self.player.meta.xp_gain(moves[self.player.meta.moves[button_id]]["xp"])
 
@@ -277,7 +277,7 @@ class DuelController:
 
         else:
 
-            self.end_duel("Opponent")
+            self.end_duel("Opponent", True)
 
         self.turn = 1
         self.turn_cool_down = constants.turn_cool_down
@@ -340,7 +340,7 @@ class DuelController:
             else:
                 entity.rect.x = entity.default_x
 
-    def end_duel(self, winner):
+    def end_duel(self, winner, retreat):
 
         self.game_won = True
         self.game_won_counter = 10
@@ -349,10 +349,11 @@ class DuelController:
 
         entity = self.player if self.winner == "Player" else self.enemy
 
-        entity.meta.xp_gain(entity.energy)
-        entity.energy = 0
+        if not retreat:
+            entity.meta.level_up(1)
+            entity.meta.xp_gain(entity.energy)
 
-        entity.meta.level_up(1)
+        entity.energy = 0
 
     def get_opponent_move(self):
 
