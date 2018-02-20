@@ -89,6 +89,14 @@ class Player(pygame.sprite.Sprite):
         for bean in self.beans:
             bean.chunk_controller = ref
 
+    def add_bean(self):
+
+        pass
+
+    def remove_bean(self):
+
+        pass
+
     def draw(self, display):
 
         [bean.draw(display) for bean in self.beans]
