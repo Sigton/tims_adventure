@@ -68,6 +68,8 @@ class SaveEngine:
         with open(os.path.join(save_path, "entities.json"), "r") as infile:
             entity_data = json.load(infile)
 
+        entity_data["new_save"] = True
+
         with open(os.path.join(save_path, "meta.json"), "w") as outfile:
             json.dump(entity_data, outfile)
 
