@@ -472,7 +472,7 @@ class ChunkController:
                     if dec.has_shadow:
                         dec.shadow.draw(display)
                 
-                    tools.blit_alpha(display, dec.image, dec.rect.topleft, 128)
+                    tools.blit_alpha(display, dec.image, dec.rect.topleft, 180)
                 else:
                     dec.draw(display)
             else:
