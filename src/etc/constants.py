@@ -57,6 +57,7 @@ dir_to_movements = {
     "L": (48, 0)
 }
 
+
 # Player constants
 movement_speed = 16  # Must be a factor of 48
 
@@ -73,15 +74,23 @@ interaction_distance = 75
 
 health_update_rate = 120
 
+
 # Tile information
 
 animation_thresholds = {
     "0030": 4
 }
 
+no_fade_sprites = [
+    "Bean",
+    "RandomBean"
+]
+
+
 # Entity constants
 level_up_base = 50
 level_up_multiplier = 1.5
+
 
 # The global font to write with
 font = None
