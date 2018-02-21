@@ -465,7 +465,7 @@ class ChunkController:
         [layered_render.append(bean) for bean in self.player.beans]
 
         for dec in sorted(layered_render, key=lambda x: x.rect.bottom):
-            if not dec.__class__.__name__ == "Bean":
+            if dec.__class__.__name__ not in constants.no_fade_sprites:
 
                 if any([dec.rect.colliderect(bean.rect) for bean in self.player.beans]):
                     tools.blit_alpha(display, dec.image, dec.rect.topleft, 128)
