@@ -8,11 +8,12 @@ import random
 import math
 import collections
 
-from src.etc import constants, containers
+from src.etc import constants, containers, tools
 from src.terrain import tiles
 from src.hud import hud
 from src.terrain.tile_types import *
 from src.entities import entities, player
+
 
 """
 chunks.py
@@ -466,9 +467,8 @@ class ChunkController:
         for dec in sorted(layered_render, key=lambda x: x.rect.bottom):
             if not dec.__class__.__name__ == "Bean":
 
-                player_heights = [bean.rect.top for bean in self.player.beans]
-                if any([]):
-                    pass
+                if any([dec.rect.top > bean.rect.top for bean in self.player.beans]):
+                    tools.blit_alpha(display, dec.image, dec.rect.topleft, 128)
                 else:
                     dec.draw(display)
             else:
