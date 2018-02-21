@@ -18,5 +18,6 @@ entity_data = {
     "poison": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
     "carrot": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
     "rabbit": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
-    "what": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100}
+    "what": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
+    "chicken": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100}
 }
