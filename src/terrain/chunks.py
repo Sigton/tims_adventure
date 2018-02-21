@@ -464,7 +464,15 @@ class ChunkController:
         [layered_render.append(bean) for bean in self.player.beans]
 
         for dec in sorted(layered_render, key=lambda x: x.rect.bottom):
-            dec.draw(display)
+            if not dec.__class__.__name__ == "Bean":
+
+                player_heights = [bean.rect.top for bean in self.player.beans]
+                if any([]):
+                    pass
+                else:
+                    dec.draw(display)
+            else:
+                dec.draw(display)
 
         [entity.draw(display) for entity in self.assorted_entities]
 
