@@ -468,6 +468,10 @@ class ChunkController:
             if dec.__class__.__name__ not in constants.no_fade_sprites:
 
                 if any([dec.rect.colliderect(bean.rect) for bean in self.player.beans]):
+
+                    if dec.has_shadow:
+                        dec.shadow.draw(display)
+                
                     tools.blit_alpha(display, dec.image, dec.rect.topleft, 128)
                 else:
                     dec.draw(display)
