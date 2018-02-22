@@ -37,4 +37,5 @@ class DialogueController:
 
     def draw(self, display):
 
-        pass
+        display.blit(self.player.image, (50, 400))
+        display.blit(self.other_bean.image, (500, 50))
