@@ -158,7 +158,7 @@ class Main:
         if self.new_game_mode == -1:
             return
 
-        if self.new_game_mode == 3:
+        if self.new_game_mode == 4:
             self.show_loading = True
             self.new_game_mode = -1
 
@@ -179,7 +179,7 @@ class Main:
 
     def load_save(self, save_dir):
 
-        self.switch_to(3)
+        self.switch_to(4)
 
         if save_dir in self.save_engine.saves:
             self.load_function = lambda: self.chunk_controller.load_from_save(os.path.join(self.save_engine.save_dir,
