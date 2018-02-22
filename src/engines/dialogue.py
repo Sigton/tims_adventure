@@ -20,6 +20,8 @@ class DialogueController:
 
         }
 
+        self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
+
         self.player = None
         self.other_bean = None
 
@@ -36,6 +38,11 @@ class DialogueController:
                 self.master.game_exit = True
 
     def draw(self, display):
+
+        display.blit(self.background, (0, 0))
+
+        self.player.shadow.draw(display)
+        self.other_bean.shadow.draw(display)
 
         display.blit(self.player.image, (75, 368))
         display.blit(self.other_bean.image, (640, 53))
