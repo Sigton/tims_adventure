@@ -1,3 +1,6 @@
+import pygame
+from pygame.locals import *
+
 """
 dialogue.py
 
@@ -21,7 +24,10 @@ class DialogueController:
 
     def update(self):
 
-        pass
+        for event in pygame.event.get():
+
+            if event.type == QUIT:
+                self.master.game_exit = True
 
     def draw(self, display):
 
