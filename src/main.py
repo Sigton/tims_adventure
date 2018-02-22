@@ -3,7 +3,7 @@ import os
 
 import pygame
 
-from src.engines import sounds, particles, save
+from src.engines import sounds, particles, save, dialogue
 from src.menu import menu
 from src.etc import constants, gui_components, tools
 from src.terrain import chunks
@@ -56,6 +56,7 @@ class Main:
 
         self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
         self.duel_controller = duel_controller.DuelController(self)
+        self.dialogue_controller = dialogue.DialogueController(self)
 
         self.menu = menu.MainMenu(self)
 
@@ -71,7 +72,8 @@ class Main:
         self.controllers = [
             self.chunk_controller,
             self.duel_controller,
-            self.menu
+            self.menu,
+            self.dialogue_controller
         ]
 
         self.load_function = None

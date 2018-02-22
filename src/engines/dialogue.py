@@ -7,14 +7,14 @@ Handles interactions between characters.
 
 class DialogueController:
 
-    def __init__(self):
+    def __init__(self, master):
 
-        pass
+        self.master = master
 
     def update(self):
 
         pass
 
-    def draw(self):
+    def draw(self, display):
 
         pass
