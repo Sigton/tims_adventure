@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
+      <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="300">
+              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+            <state relative-caret-position="622">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
       </list>
     </option>
   </component>
@@ -394,13 +394,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00953" summary="Updated create_json_from_entity">
-      <created>1517939138859</created>
-      <option name="number" value="00953" />
-      <option name="presentableId" value="LOCAL-00953" />
-      <option name="project" value="LOCAL" />
-      <updated>1517939138860</updated>
     </task>
     <task id="LOCAL-00954" summary="Created ChunkController.close_save()">
       <created>1517941622560</created>
@@ -738,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519317043335</updated>
     </task>
-    <option name="localTasksCounter" value="1002" />
+    <task id="LOCAL-01002" summary="Loading screens ID is now 4">
+      <created>1519317127437</created>
+      <option name="number" value="01002" />
+      <option name="presentableId" value="LOCAL-01002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519317127438</updated>
+    </task>
+    <option name="localTasksCounter" value="1003" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,7 +815,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a unicorn bean" />
     <MESSAGE value="Adjusting textures" />
     <MESSAGE value="Added hedgehog bean and pickle bean" />
     <MESSAGE value="Updated hedgehog bean texture" />
@@ -840,7 +839,8 @@
     <MESSAGE value="Added chicken bean" />
     <MESSAGE value="Created dialogue.py" />
     <MESSAGE value="Connected dialogue controller to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected dialogue controller to main" />
+    <MESSAGE value="Loading screens ID is now 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loading screens ID is now 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,13 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1192">
-          <caret line="372" column="54" lean-forward="true" selection-start-line="372" selection-start-column="54" selection-end-line="372" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/icon.ico" />
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1118,21 +1111,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="972">
+          <caret line="352" column="35" lean-forward="true" selection-start-line="352" selection-start-column="35" selection-end-line="352" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="622">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
