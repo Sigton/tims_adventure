@@ -17,7 +17,12 @@ class DialogueController:
         self.master = master
 
         self.scenes = {
-
+            "test_scene": [
+                            ("Wow I can speak!", 0),
+                            ("Ayy me too!", 1),
+                            ("That crazy man...", 0),
+                            ("Sure is bruh", 1)
+                          ]
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
