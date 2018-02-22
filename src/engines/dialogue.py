@@ -1,6 +1,8 @@
 import pygame
 from pygame.locals import *
 
+from src.duel import duel_players
+
 """
 dialogue.py
 
@@ -18,9 +20,13 @@ class DialogueController:
 
         }
 
+        self.player = None
+        self.other_bean = None
+
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
 
-        pass
+        self.player = duel_players.DuelPlayer(entity1, "R")
+        self.other_bean = duel_players.DuelPlayer(entity2, "L")
 
     def update(self):
 
