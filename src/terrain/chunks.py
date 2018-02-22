@@ -345,9 +345,12 @@ class ChunkController:
         self.update_hud()
 
     def start_duel(self, bean):
-        self.master.duel_controller.begin_duel(self.player.beans[bean], self.enemy_to_duel)
+        # self.master.duel_controller.begin_duel(self.player.beans[bean], self.enemy_to_duel)
 
-        self.master.switch_to(1)
+        # self.master.switch_to(1)
+
+        self.master.dialogue_controller.start_scene(self.player.beans[bean], self.enemy_to_duel, None, None, None)
+        self.master.switch_to(3)
 
         self.enemy_to_duel = None
 
