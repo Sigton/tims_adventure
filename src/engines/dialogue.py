@@ -11,6 +11,10 @@ class DialogueController:
 
         self.master = master
 
+        self.scenes = {
+
+        }
+
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
 
         pass
