@@ -76,7 +76,13 @@ class DialogueController:
 
     def render_next(self):
 
-        pass
+        self.scene_progress += 1
+
+        current_dialogue = self.current_scene[self.scene_progress][0]
+
+        n = len(self.scene)
+        while n > 0:
+            pass
         
     def draw(self, display):
 
