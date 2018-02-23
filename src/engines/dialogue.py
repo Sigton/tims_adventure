@@ -4,6 +4,8 @@ from pygame.locals import *
 from src.duel import duel_players
 from src.etc import gui_components, constants
 
+from collections import deque
+
 """
 dialogue.py
 
@@ -80,9 +82,14 @@ class DialogueController:
 
         current_dialogue = self.current_scene[self.scene_progress][0]
 
-        n = len(self.scene)
-        while n > 0:
-            pass
+        text_queue = deque(list(current_dialogue), len(current_dialogue))
+
+        sorted_lines = []
+
+        for n in range(len(current_dialogue), 0, -1):
+            if constants.font.size("") < 300:
+                pass
+            
         
     def draw(self, display):
 
