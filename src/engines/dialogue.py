@@ -31,8 +31,8 @@ class DialogueController:
         self.player = None
         self.other_bean = None
 
-        self.text_box_background = gui_components.Fill(0, 0, 100, 100, constants.GUI_BACKING)
-        self.text_box_fill = gui_components.Fill(4, 4, 92, 92, constants.GUI_FILL)
+        self.text_box_background = gui_components.Fill(0, 0, 350, 262, constants.GUI_BACKING)
+        self.text_box_fill = gui_components.Fill(5, 5, 340, 252, constants.GUI_FILL)
 
         self.components = [
             self.text_box_background,
