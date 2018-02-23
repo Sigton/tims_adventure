@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 from src.duel import duel_players
+from src.etc import gui_components, constants
 
 """
 dialogue.py
@@ -30,6 +31,14 @@ class DialogueController:
         self.player = None
         self.other_bean = None
 
+        self.player_gui_background = gui_components.Fill(0, 0, 100, 100, constants.GUI_BACKING)
+        self.player_gui_fill = gui_components.Fill(4, 4, 92, 92, constants.GUI_FILL)
+
+        self.components = [
+            self.player_gui_background,
+            self.player_gui_fill
+        ]
+
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
 
         self.player = duel_players.DuelPlayer(entity1, "R")
@@ -51,3 +60,5 @@ class DialogueController:
 
         display.blit(self.player.image, (75, 368))
         display.blit(self.other_bean.image, (640, 53))
+
+        [component.draw(display) for component in self.components]
