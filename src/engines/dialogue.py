@@ -41,12 +41,28 @@ class DialogueController:
 
         self.current_scene = []
 
+        self.exit_func = None
+        self.after_controller = -1
+
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
 
         self.player = duel_players.DuelPlayer(entity1, "R")
         self.other_bean = duel_players.DuelPlayer(entity2, "L")
 
         self.current_scene = self.scenes[scene]
+
+        self.exit_func = exit_func
+        self.after_controller = after_controller
+
+    def reset(self):
+
+        self.player = None
+        self.other_bean = None
+
+        self.current_scene = []
+
+        self.exit_func = None
+        self.after_controller = -1
 
     def update(self):
 
