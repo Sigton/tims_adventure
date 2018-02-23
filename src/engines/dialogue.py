@@ -105,7 +105,7 @@ class DialogueController:
 
             n -= 1
 
-        self.text = [gui_components.Label(24, n*constants.font.get_linesize()+24
+        self.text = [gui_components.Label(24, n*constants.font.get_linesize()+24,
                                           sorted_lines[n], False, 32, constants.BLACK)
                      for n in range(len(sorted_lines))
                      ]
