@@ -40,6 +40,7 @@ class DialogueController:
         ]
 
         self.current_scene = []
+        self.scene_progress = 0
 
         self.exit_func = None
         self.after_controller = -1
@@ -50,6 +51,7 @@ class DialogueController:
         self.other_bean = duel_players.DuelPlayer(entity2, "L")
 
         self.current_scene = self.scenes[scene]
+        self.scene_progress = 0
 
         self.exit_func = exit_func
         self.after_controller = after_controller
@@ -60,6 +62,7 @@ class DialogueController:
         self.other_bean = None
 
         self.current_scene = []
+        self.scene_progress = []
 
         self.exit_func = None
         self.after_controller = -1
@@ -71,6 +74,10 @@ class DialogueController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
+    def render_next(self):
+
+        pass
+        
     def draw(self, display):
 
         display.blit(self.background, (0, 0))
