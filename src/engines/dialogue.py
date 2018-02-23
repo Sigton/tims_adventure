@@ -31,12 +31,12 @@ class DialogueController:
         self.player = None
         self.other_bean = None
 
-        self.player_gui_background = gui_components.Fill(0, 0, 100, 100, constants.GUI_BACKING)
-        self.player_gui_fill = gui_components.Fill(4, 4, 92, 92, constants.GUI_FILL)
+        self.text_box_background = gui_components.Fill(0, 0, 100, 100, constants.GUI_BACKING)
+        self.text_box_fill = gui_components.Fill(4, 4, 92, 92, constants.GUI_FILL)
 
         self.components = [
-            self.player_gui_background,
-            self.player_gui_fill
+            self.text_box_background,
+            self.text_box_fill
         ]
 
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
