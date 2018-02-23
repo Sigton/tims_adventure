@@ -39,10 +39,14 @@ class DialogueController:
             self.text_box_fill
         ]
 
+        self.current_scene = []
+
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
 
         self.player = duel_players.DuelPlayer(entity1, "R")
         self.other_bean = duel_players.DuelPlayer(entity2, "L")
+
+        self.current_scene = self.scenes[scene]
 
     def update(self):
 
