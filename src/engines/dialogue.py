@@ -39,6 +39,10 @@ class DialogueController:
             self.text_box_fill
         ]
 
+        self.text = [
+
+        ]
+
         self.current_scene = []
         self.scene_progress = 0
 
@@ -53,6 +57,10 @@ class DialogueController:
         self.current_scene = self.scenes[scene]
         self.scene_progress = 0
 
+        self.text = [
+
+        ]
+
         self.exit_func = exit_func
         self.after_controller = after_controller
 
@@ -62,7 +70,11 @@ class DialogueController:
         self.other_bean = None
 
         self.current_scene = []
-        self.scene_progress = []
+        self.scene_progress = 0
+
+        self.text = [
+
+        ]
 
         self.exit_func = None
         self.after_controller = -1
@@ -92,7 +104,11 @@ class DialogueController:
                 n = len(current_dialogue)
 
             n -= 1
-            
+
+        self.text = [gui_components.Label(24, n*constants.font.get_linesize()+24
+                                          sorted_lines[n], False, 32, constants.BLACK)
+                     for n in range(len(sorted_lines))
+                     ]
         
     def draw(self, display):
 
