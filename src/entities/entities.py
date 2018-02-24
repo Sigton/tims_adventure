@@ -116,7 +116,8 @@ class RandomBean:
         self.shadow = shadows.Shadow(self)
 
         self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
-        self.interaction_icon.off()
+        if not self.meta.important:
+            self.interaction_icon.off()
 
     def create_images(self, main_img):
 
