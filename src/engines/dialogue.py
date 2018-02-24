@@ -97,17 +97,18 @@ class DialogueController:
     def render_next(self):
 
         current_dialogue = self.current_scene[self.scene_progress][0]
+        dialogue_in_words = current_dialogue.split(" ")
 
         sorted_lines = []
 
-        n = len(current_dialogue)
+        n = len(dialogue_in_words)
         while n > 0:
-            if constants.font.size(current_dialogue[0:n])[0] < 300:
+            if constants.font.size(" ".join(dialogue_in_words[0:n]))[0] < 300:
                 
-                sorted_lines.append("".join(current_dialogue[0:n]))
-                current_dialogue = current_dialogue[n:len(current_dialogue)]
+                sorted_lines.append(" ".join(dialogue_in_words[0:n]))
+                dialogue_in_words = dialogue_in_words[n:len(dialogue_in_words)]
 
-                n = len(current_dialogue)
+                n = len(dialogue_in_words)+1
 
             n -= 1
 
