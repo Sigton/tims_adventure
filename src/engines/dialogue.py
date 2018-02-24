@@ -64,6 +64,8 @@ class DialogueController:
         self.exit_func = exit_func
         self.after_controller = after_controller
 
+        self.render_next()
+
     def reset(self):
 
         self.player = None
@@ -86,9 +88,12 @@ class DialogueController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
-    def render_next(self):
+            if event.type == KEYUP:
 
-        self.scene_progress += 1
+                if event.key == K_SPACE:
+                    self.render_next()
+
+    def render_next(self):
 
         current_dialogue = self.current_scene[self.scene_progress][0]
 
@@ -96,7 +101,7 @@ class DialogueController:
 
         n = len(current_dialogue)
         while n > 0:
-            if constants.font.size(current_dialogue[0:n]) < 300:
+            if constants.font.size(current_dialogue[0:n])[0] < 300:
                 
                 sorted_lines.append("".join(current_dialogue[0:n]))
                 current_dialogue = current_dialogue[n:len(current_dialogue)]
@@ -109,6 +114,8 @@ class DialogueController:
                                           sorted_lines[n], False, 32, constants.BLACK)
                      for n in range(len(sorted_lines))
                      ]
+
+        self.scene_progress += 1
         
     def draw(self, display):
 
@@ -121,3 +128,4 @@ class DialogueController:
         display.blit(self.other_bean.image, (640, 53))
 
         [component.draw(display) for component in self.components]
+        [text.draw(display) for text in self.text]
