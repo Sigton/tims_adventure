@@ -130,6 +130,7 @@ class Bean(pygame.sprite.Sprite):
 
         if meta is not None:
             self.meta = meta
+            self.meta.images = self.images
         else:
             self.meta = entities.EntityMeta(self)
 
