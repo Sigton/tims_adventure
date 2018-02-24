@@ -18,11 +18,11 @@ class Player(pygame.sprite.Sprite):
 
     chunk_controller = None
 
-    def __init__(self):
+    def __init__(self, beans=None):
 
         pygame.sprite.Sprite.__init__(self)
 
-        self.beans = [Bean(random.choice(list(bean_image_loader.beans.keys()))) for n in range(5)]
+        self.beans = [Bean(None, bean) for bean in beans]
 
         self.trail = [[0, 0],
                       [-1, 0],

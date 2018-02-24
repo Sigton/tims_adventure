@@ -44,8 +44,7 @@ class ChunkController:
 
         self.master = master
 
-        self.player = player.Player()
-        self.player.set_chunk_controller(self)
+        self.player = None
 
         # The key is a 4 digit string
         # to locate the chunk,
@@ -114,6 +113,9 @@ class ChunkController:
 
         for key in list(map_data.keys()):
             self.map_seeds.add(containers.Seed(key, map_data[key]["tiles"], map_data[key]["decs"], None))
+
+        self.player = player.Player([entities.EntityMeta(None, bean) for bean in entity_data["player"]])
+        self.player.set_chunk_controller(self)
 
         del map_data
         del entity_data
