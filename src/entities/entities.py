@@ -105,8 +105,6 @@ class RandomBean:
         else:
             self.image_offset_x, self.image_offset_y = (0, 0)
 
-        self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
-
         if meta is not None:
             self.meta = meta
             self.meta.parent = self
@@ -114,6 +112,9 @@ class RandomBean:
         else:
             self.meta = EntityMeta(self)
         self.shadow = shadows.Shadow(self)
+
+        self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
+        self.interaction_icon.off()
 
     def create_images(self, main_img):
 
