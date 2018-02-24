@@ -103,7 +103,12 @@ class DialogueController:
             if event.type == KEYUP:
 
                 if event.key == K_SPACE:
-                    self.render_next()
+                    if self.scene_progress >= len(self.current_scene):
+                        if self.exit_func is not None:
+                            self.exit_func()
+                        self.master.switch_to(self.after_controller)
+                    else:
+                        self.render_next()
 
     def render_next(self):
 

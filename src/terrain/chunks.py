@@ -350,7 +350,7 @@ class ChunkController:
         # self.master.switch_to(1)
 
         self.master.dialogue_controller.start_scene(self.player.beans[bean], self.enemy_to_duel,
-                                                    "test_scene", None, None)
+                                                    "test_scene", None, 0)
         self.master.switch_to(3)
 
         self.enemy_to_duel = None
