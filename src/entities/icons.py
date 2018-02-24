@@ -85,4 +85,4 @@ class ImportantPressSpace(Icon):
 
     def __init__(self, x, y):
 
-        Icon.__init__(self, sprite_sheet.get_image(0, 28, 56, 28), x, y)
+        Icon.__init__(self, sprite_sheet.get_image(0, 28, 56, 28), x, y, True, 40)
