@@ -1,8 +1,9 @@
 {"entities":{
   "1792": [
     {"pos": [0, 0], "meta":
-      {"bean": "cool", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100,
-        "hp": 100, "xp": 0, "level": 1, "interaction": null}
+      {"bean": "cool", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
+        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'test_scene', None, 0);self.master.switch_to(3)"
+      }
     }
   ]
 }}

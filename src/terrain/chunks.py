@@ -212,10 +212,14 @@ class ChunkController:
                     if len(ordered_ranges):
 
                         self.enemy_to_duel = list(ordered_ranges.items())[0][1]
-                        if not self.bean_select_popup_open:
-                            self.bean_select_popup_open = True
 
-                            self.hud.open_widget("bean_select")
+                        if self.enemy_to_duel.meta.interaction is not None:
+                            exec(self.enemy_to_duel.meta.interaction)
+                        else:
+                            if not self.bean_select_popup_open:
+                                self.bean_select_popup_open = True
+
+                                self.hud.open_widget("bean_select")
 
                     elif event.key == K_F11:
                         self.master.set_full_screen()
@@ -345,13 +349,9 @@ class ChunkController:
         self.update_hud()
 
     def start_duel(self, bean):
-        # self.master.duel_controller.begin_duel(self.player.beans[bean], self.enemy_to_duel)
+        self.master.duel_controller.begin_duel(self.player.beans[bean], self.enemy_to_duel)
 
-        # self.master.switch_to(1)
-
-        self.master.dialogue_controller.start_scene(self.player.beans[bean], self.enemy_to_duel,
-                                                    "test_scene", None, 0)
-        self.master.switch_to(3)
+        self.master.switch_to(1)
 
         self.enemy_to_duel = None
 
