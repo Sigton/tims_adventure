@@ -104,12 +104,15 @@ class Player(pygame.sprite.Sprite):
 
 class Bean(pygame.sprite.Sprite):
 
-    def __init__(self, bean):
+    def __init__(self, bean=None, meta=None):
 
         pygame.sprite.Sprite.__init__(self)
         self.chunk_controller = None
 
-        self.bean = bean
+        if meta is not None:
+            self.bean = meta.bean
+        else:
+            self.bean = bean
 
         self.images = {}
 
@@ -125,7 +128,10 @@ class Bean(pygame.sprite.Sprite):
         else:
             self.image_offset_x, self.image_offset_y = (0, 0)
 
-        self.meta = entities.EntityMeta(self)
+        if meta is not None:
+            self.meta = meta
+        else:
+            self.meta = entities.EntityMeta(self)
 
         self.shadow = shadows.Shadow(self)
 
