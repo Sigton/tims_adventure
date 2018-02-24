@@ -7,7 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" />
-      <change beforePath="$PROJECT_DIR$/src/resources/title.png" afterPath="$PROJECT_DIR$/src/resources/title.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +20,18 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+            <state relative-caret-position="252">
+              <caret line="52" column="57" lean-forward="false" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -231,6 +240,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="saves" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -409,13 +424,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00986" summary="Fixed bug">
-      <created>1518987168540</created>
-      <option name="number" value="00986" />
-      <option name="presentableId" value="LOCAL-00986" />
-      <option name="project" value="LOCAL" />
-      <updated>1518987168540</updated>
     </task>
     <task id="LOCAL-00987" summary="Added rabbit bean texture">
       <created>1518988577092</created>
@@ -753,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519476425004</updated>
     </task>
-    <option name="localTasksCounter" value="1035" />
+    <task id="LOCAL-01035" summary="Added names to text boxes">
+      <created>1519484006746</created>
+      <option name="number" value="01035" />
+      <option name="presentableId" value="LOCAL-01035" />
+      <option name="project" value="LOCAL" />
+      <updated>1519484006746</updated>
+    </task>
+    <option name="localTasksCounter" value="1036" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -765,7 +780,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -830,7 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Background and shadows draw to display" />
     <MESSAGE value="Added a test dialogue scene" />
     <MESSAGE value="Added some gui components to be used as a text box" />
     <MESSAGE value="Renamed attributes" />
@@ -855,7 +869,8 @@
     <MESSAGE value="Added a new random bean that cant be interacted with" />
     <MESSAGE value="Should stop entities spawning on top of each other" />
     <MESSAGE value="Forces interaction icon off for entities with no interactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forces interaction icon off for entities with no interactions" />
+    <MESSAGE value="Added names to text boxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added names to text boxes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,11 +922,6 @@
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save2/decs.json" />
     <entry file="file://$PROJECT_DIR$/src/saves/maps.json" />
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save2/maps.json" />
-    <entry file="file://$PROJECT_DIR$/src/resources/title.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1053,14 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3420">
@@ -1132,10 +1134,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="106" column="34" lean-forward="false" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/title.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+        <state relative-caret-position="252">
+          <caret line="52" column="57" lean-forward="false" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
           <folding />
         </state>
       </provider>

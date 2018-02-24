@@ -49,9 +49,13 @@ class DialogueController:
         self.text_box_background = gui_components.Fill(self.text_x, self.text_y, 350, 262, constants.GUI_BACKING)
         self.text_box_fill = gui_components.Fill(self.text_x+10, self.text_y+10, 330, 242, constants.GUI_FILL)
 
+        self.press_space = gui_components.Label(self.text_x+51, self.text_y+223, "Press Space to Continue",
+                                                False, 20, constants.BLACK)
+
         self.components = [
             self.text_box_background,
-            self.text_box_fill
+            self.text_box_fill,
+            self.press_space
         ]
 
         self.text = [
@@ -132,6 +136,7 @@ class DialogueController:
 
         self.text_box_background.rect.topleft = [self.text_x, self.text_y]
         self.text_box_fill.rect.topleft = [self.text_x+10, self.text_y+10]
+        self.press_space.rect.topleft = [self.text_x + 51, self.text_y + 223]
 
         dialogue_in_words = current_dialogue.split(" ")
 
