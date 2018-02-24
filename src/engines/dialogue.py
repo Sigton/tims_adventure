@@ -116,6 +116,9 @@ class DialogueController:
             self.text_x = self.player_text_x
             self.text_y = self.player_text_y
 
+        self.text_box_background.rect.topleft = [self.text_x, self.text_y]
+        self.text_box_fill.rect.topleft = [self.text_x+10, self.text_y+10]
+
         dialogue_in_words = current_dialogue.split(" ")
 
         sorted_lines = []
