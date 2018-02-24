@@ -42,7 +42,7 @@ class DialogueController:
         self.text_y = self.other_text_y
 
         self.text_box_background = gui_components.Fill(self.text_x, self.text_y, 350, 262, constants.GUI_BACKING)
-        self.text_box_fill = gui_components.Fill(self.text_x+5, self.text_y+5, 340, 252, constants.GUI_FILL)
+        self.text_box_fill = gui_components.Fill(self.text_x+10, self.text_y+10, 330, 242, constants.GUI_FILL)
 
         self.components = [
             self.text_box_background,

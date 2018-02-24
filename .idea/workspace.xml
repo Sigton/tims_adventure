@@ -20,8 +20,8 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1792">
-              <caret line="114" column="44" lean-forward="true" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+            <state relative-caret-position="132">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -403,13 +403,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-00973" summary="Added lemon bean">
-      <created>1518955993679</created>
-      <option name="number" value="00973" />
-      <option name="presentableId" value="LOCAL-00973" />
-      <option name="project" value="LOCAL" />
-      <updated>1518955993679</updated>
-    </task>
     <task id="LOCAL-00974" summary="Added poison bean">
       <created>1518956109421</created>
       <option name="number" value="00974" />
@@ -746,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519468855830</updated>
     </task>
-    <option name="localTasksCounter" value="1022" />
+    <task id="LOCAL-01022" summary="Implementing variable positioning of the text box">
+      <created>1519469441676</created>
+      <option name="number" value="01022" />
+      <option name="presentableId" value="LOCAL-01022" />
+      <option name="project" value="LOCAL" />
+      <updated>1519469441676</updated>
+    </task>
+    <option name="localTasksCounter" value="1023" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,7 +823,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working on decorations going transparent when the player walks behind" />
     <MESSAGE value="Decs are more opaque when you hover over them" />
     <MESSAGE value="Added chicken bean" />
     <MESSAGE value="Created dialogue.py" />
@@ -848,7 +847,8 @@
     <MESSAGE value="Changes speech on space key press" />
     <MESSAGE value="Testing it out with long text" />
     <MESSAGE value="Now asserts lengths by words rather than characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now asserts lengths by words rather than characters" />
+    <MESSAGE value="Implementing variable positioning of the text box" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing variable positioning of the text box" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1121,8 +1121,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1792">
-          <caret line="114" column="44" lean-forward="true" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+        <state relative-caret-position="132">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
