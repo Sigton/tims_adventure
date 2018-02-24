@@ -34,6 +34,9 @@ class DialogueController:
         self.player = None
         self.other_bean = None
 
+        self.player_ref = None
+        self.other_bean_ref = None
+
         self.other_text_x = 197
         self.other_text_y = 48
 
@@ -66,6 +69,9 @@ class DialogueController:
         self.player = duel_players.DuelPlayer(entity1, "R")
         self.other_bean = duel_players.DuelPlayer(entity2, "L")
 
+        self.player_ref = entity1
+        self.other_bean_ref = entity2
+
         self.current_scene = self.scenes[scene]
         self.scene_progress = 0
 
@@ -82,6 +88,9 @@ class DialogueController:
 
         self.player = None
         self.other_bean = None
+
+        self.player_ref = None
+        self.other_bean_ref = None
 
         self.current_scene = []
         self.scene_progress = 0
@@ -105,7 +114,7 @@ class DialogueController:
                 if event.key == K_SPACE:
                     if self.scene_progress >= len(self.current_scene):
                         if self.exit_func is not None:
-                            self.exit_func()
+                            exec(self.exit_func)
                         self.master.switch_to(self.after_controller)
                     else:
                         self.render_next()

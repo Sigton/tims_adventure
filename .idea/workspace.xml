@@ -4,10 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Executes">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" />
       <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="220" column="0" lean-forward="true" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -32,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="128" lean-forward="false" selection-start-line="4" selection-start-column="128" selection-end-line="4" selection-end-column="128" />
+              <caret line="4" column="202" lean-forward="false" selection-start-line="4" selection-start-column="202" selection-end-line="4" selection-end-column="202" />
               <folding />
             </state>
           </provider>
@@ -163,10 +173,10 @@
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/entities.json" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
@@ -404,13 +414,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-00981" summary="Added poison bean and increased spawn rates">
-      <created>1518985420948</created>
-      <option name="number" value="00981" />
-      <option name="presentableId" value="LOCAL-00981" />
-      <option name="project" value="LOCAL" />
-      <updated>1518985420948</updated>
     </task>
     <task id="LOCAL-00982" summary="Added carrot bean texture">
       <created>1518986784546</created>
@@ -748,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519472242530</updated>
     </task>
-    <option name="localTasksCounter" value="1030" />
+    <task id="LOCAL-01030" summary="Variable interactions now work">
+      <created>1519473433554</created>
+      <option name="number" value="01030" />
+      <option name="presentableId" value="LOCAL-01030" />
+      <option name="project" value="LOCAL" />
+      <updated>1519473433554</updated>
+    </task>
+    <option name="localTasksCounter" value="1031" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -825,7 +835,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added basic events loop" />
     <MESSAGE value="Reusing DuelPlayer class for dialogue scenes" />
     <MESSAGE value="Dialogue should sorta draw" />
     <MESSAGE value="Switched duelling for dialogue for testing purposes" />
@@ -850,7 +859,8 @@
     <MESSAGE value="Added interaction event attribute to entity meta" />
     <MESSAGE value="Making sure I'm not missing anywhere" />
     <MESSAGE value="Updated default_entities to have interaction attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated default_entities to have interaction attribute" />
+    <MESSAGE value="Variable interactions now work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Variable interactions now work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1064,16 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
@@ -1132,8 +1132,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="220" column="0" lean-forward="true" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+        <state relative-caret-position="298">
+          <caret line="347" column="0" lean-forward="false" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1141,7 +1149,7 @@
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="128" lean-forward="false" selection-start-line="4" selection-start-column="128" selection-end-line="4" selection-end-column="128" />
+          <caret line="4" column="202" lean-forward="false" selection-start-line="4" selection-start-column="202" selection-end-line="4" selection-end-column="202" />
           <folding />
         </state>
       </provider>
