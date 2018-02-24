@@ -36,7 +36,7 @@ class EntityMeta:
 
             self.images = self.parent.images
 
-            self.interaction_event = None
+            self.interaction = None
         else:
             self.bean = json_data["bean"]
 
@@ -51,7 +51,7 @@ class EntityMeta:
             self.moves = json_data["moves"]
             self.attack = json_data["attack"]
 
-            self.interaction_event = json_data["interaction"]
+            self.interaction = json_data["interaction"]
 
     def damage(self, amount):
 
@@ -171,7 +171,8 @@ def create_json_from_entity(entity):
             "energy": entity.meta.energy,
             "hp": entity.meta.hp,
             "xp": entity.meta.xp,
-            "level": entity.meta.level
+            "level": entity.meta.level,
+            "interaction": entity.meta.interaction
         }
     }
 
@@ -190,6 +191,7 @@ def create_random_entity(pos):
             "energy": entity_data[bean]["energy"],
             "hp": entity_data[bean]["max_hp"],
             "xp": 0,
-            "level": 1
+            "level": 1,
+            "interaction": None
         }
     }
