@@ -29,14 +29,16 @@ class DialogueController:
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
 
+        self.body_font = constants.load_font(20, False)
+
         self.player = None
         self.other_bean = None
 
         self.other_text_x = 197
         self.other_text_y = 48
 
-        self.player_text_x = 0
-        self.player_text_y = 0
+        self.player_text_x = 429
+        self.player_text_y = 392
 
         self.text_x = self.other_text_x
         self.text_y = self.other_text_y
@@ -120,7 +122,7 @@ class DialogueController:
 
         n = len(dialogue_in_words)
         while n > 0:
-            if constants.font.size(" ".join(dialogue_in_words[0:n]))[0] < 300:
+            if self.body_font.size(" ".join(dialogue_in_words[0:n]))[0] < 310:
                 
                 sorted_lines.append(" ".join(dialogue_in_words[0:n]))
                 dialogue_in_words = dialogue_in_words[n:len(dialogue_in_words)]
@@ -129,8 +131,8 @@ class DialogueController:
 
             n -= 1
 
-        self.text = [gui_components.Label(24, n*constants.font.get_linesize()+24,
-                                          sorted_lines[n], False, 32, constants.BLACK)
+        self.text = [gui_components.Label(self.text_x+20, n*self.body_font.get_linesize()+self.text_y+49,
+                                          sorted_lines[n], False, 20, constants.BLACK)
                      for n in range(len(sorted_lines))
                      ]
 
