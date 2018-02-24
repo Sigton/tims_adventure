@@ -85,10 +85,7 @@ class ChunkController:
         self.entities = {}
         self.assorted_entities = []
 
-        self.hud = hud.HUD(self.player, self)
-
-        self.hud.save_hud("main", ["health_display", ])
-        self.hud.load_saved_hud("main")
+        self.hud = None
 
         self.hud_on = True
 
@@ -116,6 +113,11 @@ class ChunkController:
 
         self.player = player.Player([entities.EntityMeta(None, bean) for bean in entity_data["player"]])
         self.player.set_chunk_controller(self)
+
+        self.hud = hud.HUD(self.player, self)
+
+        self.hud.save_hud("main", ["health_display", ])
+        self.hud.load_saved_hud("main")
 
         del map_data
         del entity_data
