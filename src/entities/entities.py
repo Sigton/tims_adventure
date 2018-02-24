@@ -35,6 +35,8 @@ class EntityMeta:
             self.attack = entity_data[self.bean]["attack"]
 
             self.images = self.parent.images
+
+            self.interaction_event = None
         else:
             self.bean = json_data["bean"]
 
@@ -48,6 +50,8 @@ class EntityMeta:
 
             self.moves = json_data["moves"]
             self.attack = json_data["attack"]
+
+            self.interaction_event = json_data["interaction"]
 
     def damage(self, amount):
 
