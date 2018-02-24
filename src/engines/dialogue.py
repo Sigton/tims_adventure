@@ -32,8 +32,17 @@ class DialogueController:
         self.player = None
         self.other_bean = None
 
-        self.text_box_background = gui_components.Fill(0, 0, 350, 262, constants.GUI_BACKING)
-        self.text_box_fill = gui_components.Fill(5, 5, 340, 252, constants.GUI_FILL)
+        self.other_text_x = 197
+        self.other_text_y = 48
+
+        self.player_text_x = 0
+        self.player_text_y = 0
+
+        self.text_x = self.other_text_x
+        self.text_y = self.other_text_y
+
+        self.text_box_background = gui_components.Fill(self.text_x, self.text_y, 350, 262, constants.GUI_BACKING)
+        self.text_box_fill = gui_components.Fill(self.text_x+5, self.text_y+5, 340, 252, constants.GUI_FILL)
 
         self.components = [
             self.text_box_background,
@@ -96,7 +105,15 @@ class DialogueController:
 
     def render_next(self):
 
-        current_dialogue = self.current_scene[self.scene_progress][0]
+        current_dialogue, speaker = self.current_scene[self.scene_progress]
+
+        if speaker:
+            self.text_x = self.other_text_x
+            self.text_y = self.other_text_y
+        else:
+            self.text_x = self.player_text_x
+            self.text_y = self.player_text_y
+
         dialogue_in_words = current_dialogue.split(" ")
 
         sorted_lines = []
