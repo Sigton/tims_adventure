@@ -22,7 +22,8 @@ class DialogueController:
                             ("Wow I can speak!", 0),
                             ("Ayy me too!", 1),
                             ("That crazy man...", 0),
-                            ("Sure is bruh", 1)
+                            ("Sure is bruh", 1),
+                            ("This is some really really long text just to test out having it over multiple lines", 0)
                           ]
         }
 
