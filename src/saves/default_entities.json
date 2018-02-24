@@ -4,6 +4,11 @@
       {"bean": "cool", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
         "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'test_scene', 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"
       }
+    },
+    {"pos": [5, 0], "meta":
+      {"bean": "rainbow", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
+        "interaction": "pass"
+      }
     }
   ]
 }}
