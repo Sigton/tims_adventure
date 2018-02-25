@@ -163,4 +163,15 @@ class Bean(pygame.sprite.Sprite):
 
 def create_json_from_player(player):
 
-    pass
+    return {
+        "bean": player.meta.bean,
+        "max_hp": player.meta.max_hp,
+        "moves": player.meta.moves,
+        "attack": player.meta.attack,
+        "energy": player.meta.energy,
+        "hp": player.meta.hp,
+        "xp": player.meta.xp,
+        "level": player.meta.level,
+        "interaction": player.meta.interaction,
+        "important": player.meta.important
+    }
