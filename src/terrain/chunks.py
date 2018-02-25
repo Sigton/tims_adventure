@@ -232,8 +232,11 @@ class ChunkController:
 
                                 self.hud.open_widget("bean_select")
 
-                    elif event.key == K_F11:
-                        self.master.set_full_screen()
+                elif event.key == K_F11:
+                    self.master.set_full_screen()
+
+                elif event.key == K_ESCAPE:
+                    self.master.exit_to_menu()
 
         if self.bean_select_popup_open:
             self.update_hud()

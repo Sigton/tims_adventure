@@ -194,6 +194,13 @@ class Main:
 
         self.current_save = save_dir
 
+    def exit_to_menu(self):
+
+        self.switch_to(4)
+
+        self.load_function = lambda: self.chunk_controller.close_save()
+        self.after_load = 2
+
     def delete_save(self, save_dir):
 
         self.save_engine.delete_save(save_dir)
