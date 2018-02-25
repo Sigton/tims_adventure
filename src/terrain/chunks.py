@@ -142,8 +142,11 @@ class ChunkController:
             for entity in self.entities[chunk]:
                 json_entities[chunk].append(entities.create_json_from_entity(entity))
 
+        player_data = [player.create_json_from_player(bean) for bean in self.player.beans]
+
         return {
-            "entities": json_entities
+            "entities": json_entities,
+            "player": player_data
         }
 
     def update(self):
