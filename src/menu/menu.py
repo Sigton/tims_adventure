@@ -66,7 +66,8 @@ class MainMenu:
 
         [button.update() for button in self.buttons]
 
-        self.hud.update()
+        if self.save_select_open:
+            self.hud.update()
 
     def callback(self, button_id):
 
