@@ -96,6 +96,7 @@ class SaveEngine:
 
         entity_data["entities"] = save_data["entities"]
         entity_data["player"] = save_data["player"]
+        entity_data["position"] = save_data["position"]
 
         with open(os.path.join(save_path, "meta.json"), 'w') as outfile:
             json.dump(entity_data, outfile)
