@@ -58,8 +58,8 @@ class ChunkController:
         # are currently being updated
         self.live_chunks = []
 
-        self.world_offset_x = (-start_x)+24
-        self.world_offset_y = -start_y
+        self.world_offset_x = 0
+        self.world_offset_y = 0
 
         self.direction = ""
         self.moving = 0
@@ -101,6 +101,9 @@ class ChunkController:
 
         with open(os.path.join(save_dir, "meta.json"), "r") as infile:
             entity_data = json.load(infile)
+
+        self.world_offset_x = entity_data["position"][0]
+        self.world_offset_y = entity_data["position"][1]
 
         self.entities = {}
 
@@ -146,7 +149,8 @@ class ChunkController:
 
         return {
             "entities": json_entities,
-            "player": player_data
+            "player": player_data,
+            "position": [self.world_offset_x, self.world_offset_y]
         }
 
     def update(self):

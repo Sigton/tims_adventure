@@ -40,7 +40,7 @@ chunk_w = 20
 chunk_h = 15
 num_tiles = chunk_w * chunk_h
 
-default_start = (16320, 66240)
+default_start = (16344, -66240)
 
 
 # Entity Spawning data
