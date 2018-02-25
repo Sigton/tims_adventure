@@ -58,8 +58,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="166" column="33" lean-forward="false" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
+            <state relative-caret-position="216">
+              <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,18 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+            <state relative-caret-position="520">
+              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -78,8 +88,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+            <state relative-caret-position="432">
+              <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -467,13 +477,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01004" summary="Added scenes attribute to DialogueController">
-      <created>1519337992010</created>
-      <option name="number" value="01004" />
-      <option name="presentableId" value="LOCAL-01004" />
-      <option name="project" value="LOCAL" />
-      <updated>1519337992011</updated>
-    </task>
     <task id="LOCAL-01005" summary="Added basic events loop">
       <created>1519338041141</created>
       <option name="number" value="01005" />
@@ -810,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519546261082</updated>
     </task>
-    <option name="localTasksCounter" value="1053" />
+    <task id="LOCAL-01053" summary="Disabled randomly generating beans while testing player saving">
+      <created>1519546493700</created>
+      <option name="number" value="01053" />
+      <option name="presentableId" value="LOCAL-01053" />
+      <option name="project" value="LOCAL" />
+      <updated>1519546493700</updated>
+    </task>
+    <option name="localTasksCounter" value="1054" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -887,7 +897,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Making sure I'm not missing anywhere" />
     <MESSAGE value="Updated default_entities to have interaction attribute" />
     <MESSAGE value="Variable interactions now work" />
     <MESSAGE value="Can now go from dialogue into duels" />
@@ -912,7 +921,8 @@
     <MESSAGE value="Defining new function" />
     <MESSAGE value="Finished create_json_from_player" />
     <MESSAGE value="Player data now gets saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player data now gets saved" />
+    <MESSAGE value="Disabled randomly generating beans while testing player saving" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled randomly generating beans while testing player saving" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1168,32 +1178,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="166" column="33" lean-forward="false" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
+        <state relative-caret-position="216">
+          <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="0" column="1611" lean-forward="false" selection-start-line="0" selection-start-column="1611" selection-end-line="0" selection-end-column="1611" />
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+        <state relative-caret-position="520">
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+        <state relative-caret-position="432">
+          <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
           <folding />
         </state>
       </provider>
