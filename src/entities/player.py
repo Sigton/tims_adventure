@@ -159,3 +159,8 @@ class Bean(pygame.sprite.Sprite):
         display.blit(self.image,
                      (self.rect.x + wobble_x - self.image_offset_x,
                       self.rect.y + wobble_y - self.image_offset_y))
+
+
+def create_json_from_player(player):
+
+    pass
