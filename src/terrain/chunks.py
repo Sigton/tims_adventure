@@ -253,16 +253,8 @@ class ChunkController:
             if self.direction:
                 # Make sure we don't walk over anything we shouldn't.
                 current_pos = self.get_player_tile_nums()
-                if len(self.direction) == 1:
-                    final_pos = list(map(operator.sub, current_pos,
-                                         ([n // 48 for n in constants.dir_to_movements[self.direction]])))
-                else:
-
-                    final_pos = list(map(operator.sub, current_pos,
-                                         ([n // 48 for n in list(map(operator.add,
-                                                                     constants.dir_to_movements[self.direction[0]],
-                                                                     constants.dir_to_movements[self.direction[1]]))])
-                                         ))
+                final_pos = list(map(operator.sub, current_pos,
+                                     ([n // 48 for n in constants.dir_to_movements[self.direction]])))
 
                 c_o = [0, 0]
 
@@ -295,11 +287,7 @@ class ChunkController:
 
                 self.moving = self.movement_speed
 
-                if len(self.direction) > 1:
-                    movements = [constants.dir_to_movements[d] for d in list(self.direction)]
-                    movement = tuple(map(operator.add, movements[0], movements[1]))
-                else:
-                    movement = constants.dir_to_movements[self.direction]
+                movement = constants.dir_to_movements[self.direction]
                 self.movement_interval = tuple(map(operator.floordiv, movement,
                                                    [self.moving for x in range(len(movement))]))
 
@@ -308,9 +296,10 @@ class ChunkController:
 
         chunk_entities = []
         for chunk in self.live_chunks:
-            [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()]
+            [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()
+             if not entity.meta.interaction == "pass" and not entity.meta.important]
 
-        for entity in [x for x in chunk_entities if not x.meta.interaction == "pass" and not x.meta.important]:
+        for entity in chunk_entities:
             distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx-entity.rect.centerx, 2)
                                  + math.pow(self.player.beans[0].rect.centery-entity.rect.centery, 2))
 
