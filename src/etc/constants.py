@@ -61,7 +61,7 @@ dir_to_movements = {
 
 
 # Player constants
-movement_speed = 16  # Must be a factor of 48
+movement_speed = 12  # Must be a factor of 48
 
 player_pos_x = 460
 player_pos_y = 340
@@ -119,7 +119,7 @@ positional_moves = [
     "Freeze"
 ]
 
-turn_cool_down = 80
+turn_cool_down = 60
 
 
 # User Events
@@ -135,10 +135,10 @@ DEFAULT_SAVE_DIRECTORY = "src\\saves\\gamesaves"
 
 # etc
 
-FPS = 60
+FPS = 45
 
-LOADING_SCREEN_TIME = 60
-PARTICLE_LIFE_MULTIPLIER = 1
+LOADING_SCREEN_TIME = 45
+PARTICLE_LIFE_MULTIPLIER = 0.75
 
 
 # Performance control
