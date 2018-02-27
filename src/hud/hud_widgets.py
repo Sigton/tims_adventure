@@ -49,11 +49,17 @@ class HealthDisplay:
         self.components = [self.background] + self.bean_stats + self.health_bars + self.bean_labels +\
                           [self.xp_bar, self.level_label]
 
+        self.update_required = True
+
     def update(self):
 
         for panel in self.bean_stats:
             if panel.rect.collidepoint(pygame.mouse.get_pos()):
-                self.active_bean_stat = self.bean_stats.index(panel)
+                if not self.bean_stats.index(panel) == self.active_bean_stat:
+                    self.active_bean_stat = self.bean_stats.index(panel)
+                    self.update_required = True
+                else:
+                    self.update_required = False
 
         self.update_components()
         self.fix_positions()
@@ -76,31 +82,31 @@ class HealthDisplay:
 
     def fix_positions(self):
 
-        panel_idx = 0
-        for stat_panel in self.bean_stats:
+        if self.update_required:
+            panel_idx = 0
+            for stat_panel in self.bean_stats:
 
-            if panel_idx == self.active_bean_stat:
-                if not stat_panel.rect.height == 60:
+                if panel_idx == self.active_bean_stat:
                     stat_panel.resize(stat_panel.rect.width, 60)
 
-            else:
-                if not stat_panel.rect.height == 30:
+                else:
                     stat_panel.resize(stat_panel.rect.width, 30)
-            if panel_idx == 0:
-                stat_panel.rect.top = self.x+5
-                self.health_bars[panel_idx].rect.top = self.x+27
-                self.bean_labels[panel_idx].rect.top = self.x+3
-            else:
-                stat_panel.rect.top = self.bean_stats[panel_idx-1].rect.bottom + 5
-                self.health_bars[panel_idx].rect.top = self.bean_stats[panel_idx-1].rect.bottom + 27
-                self.bean_labels[panel_idx].rect.top = self.bean_stats[panel_idx - 1].rect.bottom + 3
+                if panel_idx == 0:
+                    stat_panel.rect.top = self.x+5
+                    self.health_bars[panel_idx].rect.top = self.x+27
+                    self.bean_labels[panel_idx].rect.top = self.x+3
+                else:
+                    stat_panel.rect.top = self.bean_stats[panel_idx-1].rect.bottom + 5
+                    self.health_bars[panel_idx].rect.top = self.bean_stats[panel_idx-1].rect.bottom + 27
+                    self.bean_labels[panel_idx].rect.top = self.bean_stats[panel_idx - 1].rect.bottom + 3
 
-            self.xp_bar.rect.top = self.y+34 + 35 * self.active_bean_stat
+                self.xp_bar.rect.top = self.y+34 + 35 * self.active_bean_stat
 
-            self.level_label.rect.top = self.y+41 + 35 * self.active_bean_stat
-            self.level_label.rect.right = self.background.rect.right - 7
+                self.level_label.rect.top = self.y+41 + 35 * self.active_bean_stat
+                self.level_label.rect.right = self.background.rect.right - 7
 
-            panel_idx += 1
+                panel_idx += 1
+            self.update_required = False
 
     def draw(self, display):
 
