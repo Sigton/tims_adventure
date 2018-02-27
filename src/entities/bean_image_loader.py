@@ -1,3 +1,5 @@
+import pygame
+
 from src.etc import spritesheet
 
 """
@@ -47,3 +49,13 @@ def load_sprite_sheet():
         "chicken": chicken
     }
 
+
+def create_images(image):
+
+    images = dict()
+
+    images["R"] = sprite_sheet.get_image(image[0],
+                                         image[1],
+                                         image[2],
+                                         image[3])
+    images["L"] = pygame.transform.flip(images["R"], True, False)
