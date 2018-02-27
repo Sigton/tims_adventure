@@ -34,19 +34,19 @@ def load_sprite_sheet():
     sprite_sheet = spritesheet.SpriteSheet("src/resources/beans.png")
 
     beans = {
-        "chili": chili,
-        "cool": cool,
-        "pickle": pickle,
-        "strawberry": strawberry,
-        "lemon": lemon,
-        "rainbow": rainbow,
-        "unicorn": unicorn,
-        "hedgehog": hedgehog,
-        "poison": poison,
-        "carrot": carrot,
-        "rabbit": rabbit,
-        "what": what,
-        "chicken": chicken
+        "chili": create_images(chili),
+        "cool": create_images(cool),
+        "pickle": create_images(pickle),
+        "strawberry": create_images(strawberry),
+        "lemon": create_images(lemon),
+        "rainbow": create_images(rainbow),
+        "unicorn": create_images(unicorn),
+        "hedgehog": create_images(hedgehog),
+        "poison": create_images(poison),
+        "carrot": create_images(carrot),
+        "rabbit": create_images(rabbit),
+        "what": create_images(what),
+        "chicken": create_images(chicken)
     }
 
 
@@ -59,3 +59,5 @@ def create_images(image):
                                          image[2],
                                          image[3])
     images["L"] = pygame.transform.flip(images["R"], True, False)
+
+    return images

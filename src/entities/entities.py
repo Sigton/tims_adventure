@@ -86,8 +86,7 @@ class RandomBean:
 
         self.bean = bean
 
-        self.images = {}
-        self.create_images(bean_image_loader.beans[self.bean]())
+        self.images = bean_image_loader.beans[self.bean]
 
         self.image = self.images["R"]
 
