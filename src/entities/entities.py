@@ -82,7 +82,7 @@ class EntityMeta:
 
 class RandomBean:
 
-    def __init__(self, x, y, to_grid, bean=random.choice(list(bean_image_loader.beans.keys())), meta=None):
+    def __init__(self, x, y, to_grid, bean, meta=None):
 
         self.bean = bean
 
