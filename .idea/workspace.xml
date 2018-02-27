@@ -7,7 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/entities/bean_image_loader.py" afterPath="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
-      <change beforePath="$PROJECT_DIR$/src/resources/beans.png" afterPath="$PROJECT_DIR$/src/resources/beans.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="bean_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="792">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -77,7 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>self</find>
       <find>self.master</find>
       <find>enemy</find>
       <find>player</find>
@@ -107,6 +105,7 @@
       <find>960, 720</find>
       <find>ch</find>
       <find>create_chunk</find>
+      <find>lambda: sprite_sheet.get_image</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -410,13 +409,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01015" summary="Using test scene">
-      <created>1519373164589</created>
-      <option name="number" value="01015" />
-      <option name="presentableId" value="LOCAL-01015" />
-      <option name="project" value="LOCAL" />
-      <updated>1519373164589</updated>
     </task>
     <task id="LOCAL-01016" summary="Resized text box">
       <created>1519373428573</created>
@@ -754,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519750928054</updated>
     </task>
-    <option name="localTasksCounter" value="1064" />
+    <task id="LOCAL-01064" summary="Defining a default create_images function in bean_image_loader">
+      <created>1519761658962</created>
+      <option name="number" value="01064" />
+      <option name="presentableId" value="LOCAL-01064" />
+      <option name="project" value="LOCAL" />
+      <updated>1519761658962</updated>
+    </task>
+    <option name="localTasksCounter" value="1065" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -831,7 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added 'important' flag to entities" />
     <MESSAGE value="Important beans always have the press space icon" />
     <MESSAGE value="Added new icon to icons.png" />
     <MESSAGE value="Created new icon class" />
@@ -856,7 +854,8 @@
     <MESSAGE value="You can now exit to menu (and debugged fullscreen mode)" />
     <MESSAGE value="Added more default players" />
     <MESSAGE value="Removing redundant code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing redundant code" />
+    <MESSAGE value="Defining a default create_images function in bean_image_loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defining a default create_images function in bean_image_loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1141,8 +1140,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        <state relative-caret-position="792">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
