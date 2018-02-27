@@ -135,6 +135,8 @@ DEFAULT_SAVE_DIRECTORY = "src\\saves\\gamesaves"
 
 # etc
 
+FPS = 60
+
 LOADING_SCREEN_TIME = 60
 PARTICLE_LIFE_MULTIPLIER = 1
 

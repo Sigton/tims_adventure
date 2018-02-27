@@ -152,7 +152,7 @@ class Main:
             self.sound_engine.play_sounds()
 
             pygame.display.update()
-            self.clock.tick(60)
+            self.clock.tick(constants.FPS)
 
     def switch_game_mode(self):
 
