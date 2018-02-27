@@ -44,3 +44,7 @@ def load_sprite_sheet():
 
     global sprite_sheet
     sprite_sheet = spritesheet.SpriteSheet("src/resources/beans.png")
+
+def create_images(bean):
+
+    pass
