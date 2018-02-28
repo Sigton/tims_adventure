@@ -159,7 +159,7 @@ class Item(icons.Icon):
 
     def __init__(self, image, x, y):
 
-        icons.Icon.__init__(image, x, y)
+        icons.Icon.__init__(self, image, x, y)
 
 
 class EnlightenmentPotion(Item):
