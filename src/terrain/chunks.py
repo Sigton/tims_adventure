@@ -83,6 +83,7 @@ class ChunkController:
         tiles.load_images()
 
         self.entities = {}
+        self.items = {}
         self.assorted_entities = []
 
         self.hud = None
@@ -110,6 +111,12 @@ class ChunkController:
         for chunk in entity_data["entities"]:
             self.entities[chunk] = [entities.create_entity_from_json(entity)
                                     for entity in entity_data["entities"][chunk]]
+
+        self.items = {}
+
+        for chunk in entity_data["items"]:
+            self.items[chunk] = [entities.create_item_from_json(item)
+                                 for item in entity_data["items"][chunk]]
 
         for key in list(map_data.keys()):
             self.map_seeds.add(containers.Seed(key, map_data[key]["tiles"], map_data[key]["decs"], None))
@@ -392,7 +399,9 @@ class ChunkController:
         # from the seed of the given chunk
 
         tile_seed = self.map_seeds[chunk].tiles
-        new_chunk = containers.Chunk(chunk, [], [], self.entities[chunk] if chunk in self.entities.keys() else [])
+        new_chunk = containers.Chunk(chunk, [], [],
+                                     self.entities[chunk] if chunk in self.entities.keys() else [],
+                                     self.items[chunk] if chunk in self.items.keys() else [])
 
         # Split the string into each individual tile
         tile_data = [tile_seed[i:i+4] for i in range(0, len(tile_seed), 4)]
