@@ -391,7 +391,7 @@ class ChunkController:
             [self.map_tiles[chunk].remove_entity(entity) for entity in self.map_tiles[chunk].get_entities()
              if entity.meta.hp <= 0]
 
-            [entity.update() for entity in self.map_tiles[chunk].entities]
+            [entity.update() for entity in (self.map_tiles[chunk].entities + self.map_tiles[chunk].items)]
 
     def create_chunk(self, chunk):
 

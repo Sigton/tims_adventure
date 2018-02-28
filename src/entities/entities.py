@@ -161,6 +161,10 @@ class Item(icons.Icon):
 
         icons.Icon.__init__(self, image, x, y)
 
+    def update(self):
+
+        pass
+
 
 class EnlightenmentPotion(Item):
 

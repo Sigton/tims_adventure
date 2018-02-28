@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
       <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="165" column="12" lean-forward="false" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="394" column="0" lean-forward="true" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,11 +166,11 @@
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
-        <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/entities/entities.py" />
       </list>
     </option>
   </component>
@@ -396,13 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01049" summary="Fixed bug">
-      <created>1519506380370</created>
-      <option name="number" value="01049" />
-      <option name="presentableId" value="LOCAL-01049" />
-      <option name="project" value="LOCAL" />
-      <updated>1519506380370</updated>
     </task>
     <task id="LOCAL-01050" summary="Defining new function">
       <created>1519545987808</created>
@@ -740,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519821152050</updated>
     </task>
-    <option name="localTasksCounter" value="1098" />
+    <task id="LOCAL-01098" summary="Items get loaded into chunk controller">
+      <created>1519821372614</created>
+      <option name="number" value="01098" />
+      <option name="presentableId" value="LOCAL-01098" />
+      <option name="project" value="LOCAL" />
+      <updated>1519821372614</updated>
+    </task>
+    <option name="localTasksCounter" value="1099" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -820,7 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Optimised code in hud_widgets.py to only update widgets when necessary" />
     <MESSAGE value="Using an FPS constant" />
     <MESSAGE value="Running at 45 FPS" />
@@ -845,7 +855,8 @@
     <MESSAGE value="Time for a function to generate items" />
     <MESSAGE value="More efficient to put it in with entity generation" />
     <MESSAGE value="Updated default_entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated default_entities" />
+    <MESSAGE value="Items get loaded into chunk controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Items get loaded into chunk controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,14 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="872">
@@ -1127,8 +1130,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="394" column="0" lean-forward="true" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="165" column="12" lean-forward="false" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
           <folding />
         </state>
       </provider>
