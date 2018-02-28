@@ -140,7 +140,7 @@ class Bean(pygame.sprite.Sprite):
     def update(self):
 
         self.wobble_x = math.cos((self.chunk_controller.world_offset_x-(self.rect.x*100))/10)*3
-        self.wobble_y = math.cos((self.chunk_controller.world_offset_y - (self.rect.y * 100)) / 10) * 3
+        self.wobble_y = math.sin((self.chunk_controller.world_offset_y-(self.rect.y*100))/10)*3
 
         self.shadow.update()
 
