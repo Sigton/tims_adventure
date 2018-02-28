@@ -152,7 +152,7 @@ class ChunkController:
             "entities": json_entities,
             "player": player_data,
             "position": [self.world_offset_x, self.world_offset_y],
-            "player_meta": {"trail": self.player.trail, "move_history": self.player.move_history}
+            "player_meta": {"trail": self.player.get_trail(), "move_history": self.player.move_history}
         }
 
     def update(self):

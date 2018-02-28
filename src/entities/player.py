@@ -108,6 +108,8 @@ class Player(pygame.sprite.Sprite):
                 (self.beans[n].rect.centery-self.beans[0].rect.centery)//constants.tile_h
             ]
 
+        return trail
+
     def draw(self, display):
 
         [bean.draw(display) for bean in self.beans]
