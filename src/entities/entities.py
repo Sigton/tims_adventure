@@ -155,6 +155,20 @@ class RandomBean:
             self.interaction_icon.draw(display)
 
 
+class Item(icons.Icon):
+
+    def __init__(self, image, x, y):
+
+        icons.Icon.__init__(image, x, y)
+
+
+class EnlightenmentPotion(Item):
+
+    def __init__(self, x, y):
+
+        Item.__init__(icons.sprite_sheet.get_image(56, 0, 12, 26), x, y)
+
+
 def create_entity_from_json(entity_json):
 
     meta = EntityMeta(None, entity_json["meta"])
