@@ -230,3 +230,8 @@ def create_random_item(pos):
         "pos": pos,
         "item": random.choice(list(items.keys()))
     }
+
+
+def create_item_from_json(json):
+
+    return items[json["item"]](json["pos"][0], json["pos"][1])
