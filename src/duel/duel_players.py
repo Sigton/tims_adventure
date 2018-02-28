@@ -39,3 +39,5 @@ class DuelPlayer:
         self.shake_shift = 0
         self.shake_timer = 0
         self.shake_direction = 0
+
+        self.terrain_entity = player
