@@ -10,6 +10,7 @@ the bean images
 """
 
 sprite_sheet = None
+grey_sprite_sheet = None
 
 chili = (0, 0, 40, 40)
 cool = (40, 0, 40, 40)
@@ -30,8 +31,9 @@ beans = {}
 
 def load_sprite_sheet():
 
-    global sprite_sheet, beans
+    global sprite_sheet, grey_sprite_sheet, beans
     sprite_sheet = spritesheet.SpriteSheet("src/resources/beans.png")
+    grey_sprite_sheet = spritesheet.SpriteSheet("src/resources/grey_beans.png")
 
     beans = {
         "chili": create_images(chili),
@@ -59,5 +61,11 @@ def create_images(image):
                                          image[2],
                                          image[3])
     images["L"] = pygame.transform.flip(images["R"], True, False)
+
+    images["GR"] = grey_sprite_sheet.get_image(image[0],
+                                               image[1],
+                                               image[2],
+                                               image[3])
+    images["GL"] = pygame.transform.flip(images["GR"], True, False)
 
     return images
