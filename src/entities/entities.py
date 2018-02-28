@@ -178,7 +178,7 @@ class EnlightenmentPotion(Item):
 
     def __init__(self, x, y):
 
-        Item.__init__(self, icons.sprite_sheet.get_image(56, 0, 12, 26), x, y)
+        Item.__init__(self, icons.sprite_sheet.get_image(54, 0, 48, 48), x, y)
 
 
 items = {
