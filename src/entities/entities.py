@@ -38,6 +38,8 @@ class EntityMeta:
 
             self.interaction = None
             self.important = False
+
+            self.evil = True
         else:
             self.bean = json_data["bean"]
 
@@ -54,6 +56,8 @@ class EntityMeta:
 
             self.interaction = json_data["interaction"]
             self.important = json_data["important"]
+
+            self.evil = json_data["evil"]
 
     def damage(self, amount):
 
@@ -214,7 +218,8 @@ def create_json_from_entity(entity):
                 "xp": entity.meta.xp,
                 "level": entity.meta.level,
                 "interaction": entity.meta.interaction,
-                "important": entity.meta.important
+                "important": entity.meta.important,
+                "evil": entity.meta.evil
             }
         }
     else:
@@ -241,7 +246,8 @@ def create_random_entity(pos):
             "xp": 0,
             "level": 1,
             "interaction": None,
-            "important": False
+            "important": False,
+            "evil": True
         }
     }
 
