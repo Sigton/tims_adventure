@@ -54,7 +54,7 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
 
-        [bean.shadow.update() for bean in self.beans]
+        [bean.update() for bean in self.beans]
 
     def create_movement_intervals(self):
 
@@ -134,6 +134,16 @@ class Bean(pygame.sprite.Sprite):
 
         self.shadow = shadows.Shadow(self)
 
+        self.wobble_x = 0
+        self.wobble_y = 0
+
+    def update(self):
+
+        self.wobble_x = math.cos((self.chunk_controller.world_offset_x-(self.rect.x*100))/10)*3
+        self.wobble_y = math.cos((self.chunk_controller.world_offset_y - (self.rect.y * 100)) / 10) * 3
+
+        self.shadow.update()
+
     def set_image(self, direction):
 
         if direction == "R":
@@ -152,11 +162,9 @@ class Bean(pygame.sprite.Sprite):
 
         self.shadow.draw(display)
 
-        wobble_x = math.cos((((self.chunk_controller.world_offset_y + (self.rect.x % 13)) % 48) + 180) * 2) * 4
-        wobble_y = math.sin(((self.chunk_controller.world_offset_x - 24 + (self.rect.x % 13)) % 48) * 2) * 4
         display.blit(self.image,
-                     (self.rect.x + wobble_x - self.image_offset_x,
-                      self.rect.y + wobble_y - self.image_offset_y))
+                     (self.rect.x + self.wobble_x - self.image_offset_x,
+                      self.rect.y + self.wobble_y - self.image_offset_y))
 
 
 def create_json_from_player(player):
