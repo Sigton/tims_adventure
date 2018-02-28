@@ -514,6 +514,9 @@ class ChunkController:
         [x.realign(self.chunk_pos[chunk][0],
                    self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].entities]
 
+        [x.realign(self.chunk_pos[chunk][0],
+                   self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].items]
+
     def move_chunks(self, movement):
 
         # Moves all of the live chunks
