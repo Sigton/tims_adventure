@@ -20,8 +20,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -30,8 +30,8 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="295" column="79" lean-forward="false" selection-start-line="295" selection-start-column="67" selection-end-line="295" selection-end-column="79" />
+            <state relative-caret-position="294">
+              <caret line="296" column="28" lean-forward="false" selection-start-line="296" selection-start-column="28" selection-end-line="296" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="meta.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="0" column="3844305" lean-forward="false" selection-start-line="0" selection-start-column="3844209" selection-end-line="0" selection-end-column="3844305" />
+            <state relative-caret-position="-176">
+              <caret line="0" column="901522" lean-forward="false" selection-start-line="0" selection-start-column="901522" selection-end-line="0" selection-end-column="901522" />
               <folding />
             </state>
           </provider>
@@ -438,13 +438,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01065" summary="Reworking things a little bit">
-      <created>1519761904543</created>
-      <option name="number" value="01065" />
-      <option name="presentableId" value="LOCAL-01065" />
-      <option name="project" value="LOCAL" />
-      <updated>1519761904543</updated>
-    </task>
     <task id="LOCAL-01066" summary="Populated create_images function">
       <created>1519762045511</created>
       <option name="number" value="01066" />
@@ -781,7 +774,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519831512165</updated>
     </task>
-    <option name="localTasksCounter" value="1114" />
+    <task id="LOCAL-01114" summary="Removed old code">
+      <created>1519832695969</created>
+      <option name="number" value="01114" />
+      <option name="presentableId" value="LOCAL-01114" />
+      <option name="project" value="LOCAL" />
+      <updated>1519832695969</updated>
+    </task>
+    <option name="localTasksCounter" value="1115" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -792,7 +792,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -861,7 +861,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added dict of items" />
     <MESSAGE value="Defined create_random_item" />
     <MESSAGE value="Defined create_item_from_json" />
@@ -886,7 +885,8 @@
     <MESSAGE value="Defined load_player function" />
     <MESSAGE value="Dumping player meta into save file" />
     <MESSAGE value="Loads player meta from save and updated default entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loads player meta from save and updated default entities" />
+    <MESSAGE value="Removed old code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed old code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1154,24 +1154,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="0" column="3844305" lean-forward="false" selection-start-line="0" selection-start-column="3844209" selection-end-line="0" selection-end-column="3844305" />
+        <state relative-caret-position="-176">
+          <caret line="0" column="901522" lean-forward="false" selection-start-line="0" selection-start-column="901522" selection-end-line="0" selection-end-column="901522" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="295" column="79" lean-forward="false" selection-start-line="295" selection-start-column="67" selection-end-line="295" selection-end-column="79" />
+        <state relative-caret-position="294">
+          <caret line="296" column="28" lean-forward="false" selection-start-line="296" selection-start-column="28" selection-end-line="296" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding />
         </state>
       </provider>

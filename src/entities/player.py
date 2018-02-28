@@ -37,6 +37,7 @@ class Player(pygame.sprite.Sprite):
         head_bean = self.beans[0]
         for bean in self.beans:
             bean.rect.centerx = head_bean.rect.centerx + 48 * self.trail[n][0]
+            bean.rect.centery = head_bean.rect.centery + 48 * self.trail[n][1]
             n += 1
 
         self.drawn = False
