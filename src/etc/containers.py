@@ -97,14 +97,15 @@ class SeedDict(object):
 
 class Chunk(object):
 
-    __slots__ = ["name", "tiles", "decs", "entities"]
+    __slots__ = ["name", "tiles", "decs", "entities", "items"]
 
-    def __init__(self, name, tiles, decs, entities):
+    def __init__(self, name, tiles, decs, entities, items):
 
         self.name = name
         self.tiles = tiles
         self.decs = decs
         self.entities = entities
+        self.items = items
 
     def add_tile(self, tile):
 
@@ -151,6 +152,18 @@ class Chunk(object):
     def get_entities(self):
 
         return self.entities
+
+    def add_item(self, item):
+
+        self.items.append(item)
+
+    def remove_item(self, item):
+
+        del self.items[self.items.index(item)]
+
+    def get_items(self):
+
+        return self.items
 
     def draw(self, display):
 
