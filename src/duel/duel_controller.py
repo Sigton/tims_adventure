@@ -353,6 +353,9 @@ class DuelController:
             entity.meta.level_up(1)
             entity.meta.xp_gain(entity.energy)
 
+        if winner == "Player" and self.enemy.meta.evil:
+            self.enemy.meta.evil = False
+
         entity.energy = 0
 
     def get_opponent_move(self):
