@@ -148,7 +148,6 @@ def gen_random_entities(save_path):
             if attempts < 10:
                 entity_data["items"][chunk].append(entities.create_random_item([item_x, item_y]))
 
-
     with open(os.path.join(save_path, "meta.json"), "w") as outfile:
         json.dump(entity_data, outfile)
 
