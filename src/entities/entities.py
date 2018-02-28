@@ -222,3 +222,11 @@ def create_random_entity(pos):
             "important": False
         }
     }
+
+
+def create_random_item(pos):
+
+    return {
+        "pos": pos,
+        "item": random.choice(list(items.keys()))
+    }
