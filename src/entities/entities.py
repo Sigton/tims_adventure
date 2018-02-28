@@ -125,6 +125,11 @@ class RandomBean:
             self.interaction_icon = icons.ImportantPressSpace(self.rect.centerx, self.rect.y - 35)
             self.interaction_icon.on()
 
+        if self.meta.evil:
+            self.image = self.images["GR"]
+        else:
+            self.image = self.images["R"]
+
     def create_images(self, main_img):
 
         self.images.clear()
