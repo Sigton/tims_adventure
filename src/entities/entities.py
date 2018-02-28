@@ -166,7 +166,7 @@ class EnlightenmentPotion(Item):
 
     def __init__(self, x, y):
 
-        Item.__init__(icons.sprite_sheet.get_image(56, 0, 12, 26), x, y)
+        Item.__init__(self, icons.sprite_sheet.get_image(56, 0, 12, 26), x, y)
 
 
 def create_entity_from_json(entity_json):
