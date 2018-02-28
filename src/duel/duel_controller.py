@@ -355,6 +355,7 @@ class DuelController:
 
         if winner == "Player" and self.enemy.meta.evil:
             self.enemy.meta.evil = False
+            self.enemy.terrain_entity.update_image()
 
         entity.energy = 0
 
