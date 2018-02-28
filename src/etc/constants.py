@@ -154,3 +154,10 @@ performance_profiles = {
 bean_image_offset = {
     "carrot": (0, 3)
 }
+
+
+# Items
+
+items = [
+    "EnlightenmentPotion"
+]

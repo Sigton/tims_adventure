@@ -297,9 +297,11 @@ class ChunkController:
         chunk_entities = []
         for chunk in self.live_chunks:
             [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()
-             if not entity.meta.interaction == "pass" and not entity.meta.important]
+             if not entity.__class__.__name__ in constants.items]
 
         for entity in chunk_entities:
+            if entity.meta.interaction == "pass" or entity.meta.important:
+                continue
             distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx-entity.rect.centerx, 2)
                                  + math.pow(self.player.beans[0].rect.centery-entity.rect.centery, 2))
 
