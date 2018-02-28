@@ -170,7 +170,7 @@ class EnlightenmentPotion(Item):
 
 
 items = {
-    "enlightenment_potion": EnlightenmentPotion
+    "EnlightenmentPotion": EnlightenmentPotion
 }
 
 
@@ -235,3 +235,12 @@ def create_random_item(pos):
 def create_item_from_json(json):
 
     return items[json["item"]](json["pos"][0], json["pos"][1])
+
+
+def create_json_from_item(item):
+
+    return {
+        "pos": [item.rect.x // constants.tile_w,
+                item.rect.y // constants.tile_h],
+        "item": item.__class__.__name__
+    }
