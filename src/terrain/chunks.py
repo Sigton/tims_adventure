@@ -476,7 +476,7 @@ class ChunkController:
             chunk_to_draw.draw(display)
 
             [layered_render.append(dec) for dec in chunk_to_draw.get_decs()]
-            [layered_render.append(entity) for entity in chunk_to_draw.get_entities()]
+            [layered_render.append(entity) for entity in (chunk_to_draw.get_entities() + chunk_to_draw.get_items())]
 
         [layered_render.append(bean) for bean in self.player.beans]
 
