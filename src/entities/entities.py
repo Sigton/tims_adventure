@@ -169,6 +169,11 @@ class EnlightenmentPotion(Item):
         Item.__init__(self, icons.sprite_sheet.get_image(56, 0, 12, 26), x, y)
 
 
+items = {
+    "enlightenment_potion": EnlightenmentPotion
+}
+
+
 def create_entity_from_json(entity_json):
 
     meta = EntityMeta(None, entity_json["meta"])
