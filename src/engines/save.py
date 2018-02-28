@@ -134,6 +134,11 @@ def gen_random_entities(save_path):
         json.dump(entity_data, outfile)
 
 
+def generate_random_items(save_path):
+
+    pass
+
+
 if __name__ == "__main__":
 
     save_engine = SaveEngine()
