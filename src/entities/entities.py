@@ -188,11 +188,14 @@ items = {
 
 def create_entity_from_json(entity_json):
 
-    meta = EntityMeta(None, entity_json["meta"])
+    if "item" not in list(entity_json.keys()):
+        meta = EntityMeta(None, entity_json["meta"])
 
-    new_entity = RandomBean(entity_json["pos"][0], entity_json["pos"][1], True, meta.bean, meta)
+        new_entity = RandomBean(entity_json["pos"][0], entity_json["pos"][1], True, meta.bean, meta)
 
-    return new_entity
+        return new_entity
+    else:
+        return items[entity_json["item"]](entity_json["pos"][0], entity_json["pos"][1])
 
 
 def create_json_from_entity(entity):
@@ -242,11 +245,6 @@ def create_random_item(pos):
         "pos": pos,
         "item": random.choice(list(items.keys()))
     }
-
-
-def create_item_from_json(json):
-
-    return items[json["item"]](json["pos"][0], json["pos"][1])
 
 
 def create_json_from_item(item):
