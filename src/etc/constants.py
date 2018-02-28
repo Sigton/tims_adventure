@@ -47,7 +47,7 @@ default_start = (-16344, -66240)
 
 weights = [0, 0, 0, 1]
 
-selection_matrix = [int(x) for x in sum([list(x*y) for x, y in zip(["0", "1", "2", "3"], weights)], [])]
+entity_selection_matrix = [int(x) for x in sum([list(x * y) for x, y in zip(["0", "1", "2", "3"], weights)], [])]
 
 
 # Assorted variables

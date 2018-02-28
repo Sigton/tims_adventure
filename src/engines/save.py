@@ -113,7 +113,10 @@ def gen_random_entities(save_path):
     for chunk in map_data.keys():
         if chunk not in entity_data["entities"]:
             entity_data["entities"][chunk] = []
-        for n in range(random.choice(constants.selection_matrix)):
+        if chunk not in entity_data["items"]:
+            entity_data["items"][chunk] = []
+
+        for n in range(random.choice(constants.entity_selection_matrix)):
             entity_x = random.randint(0, 19)
             entity_y = random.randint(0, 14)
 
@@ -130,13 +133,24 @@ def gen_random_entities(save_path):
             if attempts < 10:
                 entity_data["entities"][chunk].append(entities.create_random_entity([entity_x, entity_y]))
 
+        for n in range(2):
+            item_x = random.randint(0, 19)
+            item_y = random.randint(0, 14)
+
+            attemps = 0
+            tile_no = (item_y*20)+item_x
+            while (map_data[chunk]["tiles"][tile_no*4:tile_no*4+4] not in spawn_tiles) and attempts < 10:
+                item_x = random.randint(0, 19)
+                item_y = random.randint(0, 14)
+
+                attempts += 1
+
+            if attempts < 10:
+                entity_data["items"][chunk].append(entities.create_random_item([item_x, item_y]))
+
+
     with open(os.path.join(save_path, "meta.json"), "w") as outfile:
         json.dump(entity_data, outfile)
-
-
-def generate_random_items(save_path):
-
-    pass
 
 
 if __name__ == "__main__":
