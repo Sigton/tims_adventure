@@ -383,8 +383,10 @@ class ChunkController:
 
             [dec.update() for dec in self.map_tiles[chunk].decs]
 
-            [self.map_tiles[chunk].remove_entity(entity) for entity in self.map_tiles[chunk].get_entities()
-             if entity.meta.hp <= 0]
+            for entity in self.map_tiles[chunk].get_entities():
+                if entity.__class__.__name__ not in constants.items:
+                    if entity.meta.hp <= 0:
+                        self.map_tiles[chunk].remove_entity(entity)
 
             [entity.update() for entity in self.map_tiles[chunk].entities]
 

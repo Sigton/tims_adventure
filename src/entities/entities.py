@@ -200,22 +200,29 @@ def create_entity_from_json(entity_json):
 
 def create_json_from_entity(entity):
 
-    return {
-        "pos": [entity.offset_x//constants.tile_w,
-                entity.offset_y//constants.tile_h],
-        "meta": {
-            "bean": entity.meta.bean,
-            "max_hp": entity.meta.max_hp,
-            "moves": entity.meta.moves,
-            "attack": entity.meta.attack,
-            "energy": entity.meta.energy,
-            "hp": entity.meta.hp,
-            "xp": entity.meta.xp,
-            "level": entity.meta.level,
-            "interaction": entity.meta.interaction,
-            "important": entity.meta.important
+    if entity.__class__.__name__ not in constants.items:
+        return {
+            "pos": [entity.offset_x//constants.tile_w,
+                    entity.offset_y//constants.tile_h],
+            "meta": {
+                "bean": entity.meta.bean,
+                "max_hp": entity.meta.max_hp,
+                "moves": entity.meta.moves,
+                "attack": entity.meta.attack,
+                "energy": entity.meta.energy,
+                "hp": entity.meta.hp,
+                "xp": entity.meta.xp,
+                "level": entity.meta.level,
+                "interaction": entity.meta.interaction,
+                "important": entity.meta.important
+            }
         }
-    }
+    else:
+        return {
+            "pos": [entity.rect.x // constants.tile_w,
+                    entity.rect.y // constants.tile_h],
+            "item": entity.__class__.__name__
+        }
 
 
 def create_random_entity(pos):
@@ -244,13 +251,4 @@ def create_random_item(pos):
     return {
         "pos": pos,
         "item": random.choice(list(items.keys()))
-    }
-
-
-def create_json_from_item(item):
-
-    return {
-        "pos": [item.rect.x // constants.tile_w,
-                item.rect.y // constants.tile_h],
-        "item": item.__class__.__name__
     }
