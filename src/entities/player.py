@@ -97,8 +97,8 @@ class Player(pygame.sprite.Sprite):
         trail = []
         for n in range(len(self.beans)):
             trail += [
-                (self.beans[0].rect.centerx-self.beans[n].rect.centerx)//constants.tile_w,
-                (self.beans[0].rect.centery-self.beans[n].rect.centery)//constants.tile_h
+                (self.beans[n].rect.centerx-self.beans[0].rect.centerx)//constants.tile_w,
+                (self.beans[n].rect.centery-self.beans[0].rect.centery)//constants.tile_h
             ]
 
     def draw(self, display):
