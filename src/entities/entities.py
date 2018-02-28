@@ -137,6 +137,13 @@ class RandomBean:
         self.images["R"] = main_img
         self.images["L"] = pygame.transform.flip(main_img, True, False)
 
+    def update_image(self):
+
+        if self.meta.evil:
+            self.image = self.images["GR"]
+        else:
+            self.image = self.images["R"]
+
     def realign(self, x, y):
 
         self.rect.x = x + self.offset_x
