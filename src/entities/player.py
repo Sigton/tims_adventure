@@ -41,6 +41,11 @@ class Player(pygame.sprite.Sprite):
 
         self.drawn = False
 
+    def load_player(self, trail, move_history):
+
+        self.trail = trail
+        self.move_history = move_history
+
     def update(self, direction):
 
         [self.beans[n].set_image(self.move_history[n]) for n in range(len(self.beans))]
