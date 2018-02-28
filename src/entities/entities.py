@@ -161,9 +161,17 @@ class Item(icons.Icon):
 
         icons.Icon.__init__(self, image, x, y)
 
+        self.shadow = shadows.Shadow(self)
+
     def update(self):
 
-        pass
+        self.shadow.update()
+
+    def draw(self, display):
+
+        self.shadow.draw(display)
+
+        display.blit(self.image, self.rect.topleft)
 
 
 class EnlightenmentPotion(Item):
