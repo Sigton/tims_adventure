@@ -83,7 +83,6 @@ class ChunkController:
         tiles.load_images()
 
         self.entities = {}
-        self.items = {}
         self.assorted_entities = []
 
         self.hud = None
@@ -111,12 +110,6 @@ class ChunkController:
         for chunk in entity_data["entities"]:
             self.entities[chunk] = [entities.create_entity_from_json(entity)
                                     for entity in entity_data["entities"][chunk]]
-
-        self.items = {}
-
-        for chunk in entity_data["items"]:
-            self.items[chunk] = [entities.create_item_from_json(item)
-                                 for item in entity_data["items"][chunk]]
 
         for key in list(map_data.keys()):
             self.map_seeds.add(containers.Seed(key, map_data[key]["tiles"], map_data[key]["decs"], None))
@@ -391,7 +384,7 @@ class ChunkController:
             [self.map_tiles[chunk].remove_entity(entity) for entity in self.map_tiles[chunk].get_entities()
              if entity.meta.hp <= 0]
 
-            [entity.update() for entity in (self.map_tiles[chunk].entities + self.map_tiles[chunk].items)]
+            [entity.update() for entity in self.map_tiles[chunk].entities]
 
     def create_chunk(self, chunk):
 
@@ -400,8 +393,7 @@ class ChunkController:
 
         tile_seed = self.map_seeds[chunk].tiles
         new_chunk = containers.Chunk(chunk, [], [],
-                                     self.entities[chunk] if chunk in self.entities.keys() else [],
-                                     self.items[chunk] if chunk in self.items.keys() else [])
+                                     self.entities[chunk] if chunk in self.entities.keys() else [])
 
         # Split the string into each individual tile
         tile_data = [tile_seed[i:i+4] for i in range(0, len(tile_seed), 4)]
@@ -476,7 +468,7 @@ class ChunkController:
             chunk_to_draw.draw(display)
 
             [layered_render.append(dec) for dec in chunk_to_draw.get_decs()]
-            [layered_render.append(entity) for entity in (chunk_to_draw.get_entities() + chunk_to_draw.get_items())]
+            [layered_render.append(entity) for entity in chunk_to_draw.get_entities()]
 
         [layered_render.append(bean) for bean in self.player.beans]
 
@@ -513,9 +505,6 @@ class ChunkController:
 
         [x.realign(self.chunk_pos[chunk][0],
                    self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].entities]
-
-        [x.realign(self.chunk_pos[chunk][0],
-                   self.chunk_pos[chunk][1]) for x in self.map_tiles[chunk].items]
 
     def move_chunks(self, movement):
 
