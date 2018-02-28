@@ -116,6 +116,7 @@ class ChunkController:
 
         self.player = player.Player([entities.EntityMeta(None, bean) for bean in entity_data["player"]])
         self.player.set_chunk_controller(self)
+        self.player.load_player(entity_data["player_meta"]["trail"], entity_data["player_meta"]["move_history"])
 
         self.hud = hud.HUD(self.player, self)
 
