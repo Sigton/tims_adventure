@@ -20,8 +20,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -258,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.dec_generator">
     <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -378,13 +378,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01032" summary="Added a new random bean that cant be interacted with">
-      <created>1519475415930</created>
-      <option name="number" value="01032" />
-      <option name="presentableId" value="LOCAL-01032" />
-      <option name="project" value="LOCAL" />
-      <updated>1519475415931</updated>
     </task>
     <task id="LOCAL-01033" summary="Should stop entities spawning on top of each other">
       <created>1519475914356</created>
@@ -722,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519814654320</updated>
     </task>
-    <option name="localTasksCounter" value="1081" />
+    <task id="LOCAL-01081" summary="Adding those wee corner bits">
+      <created>1519814927550</created>
+      <option name="number" value="01081" />
+      <option name="presentableId" value="LOCAL-01081" />
+      <option name="project" value="LOCAL" />
+      <updated>1519814927550</updated>
+    </task>
+    <option name="localTasksCounter" value="1082" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player data now gets saved" />
     <MESSAGE value="Disabled randomly generating beans while testing player saving" />
     <MESSAGE value="Fixed inaccuracies in default_entities" />
     <MESSAGE value="Added default start to constants" />
@@ -827,7 +826,8 @@
     <MESSAGE value="Adding shore to ocean" />
     <MESSAGE value="Forgot to run dec generator oops" />
     <MESSAGE value="More shore has been added" />
-    <option name="LAST_COMMIT_MESSAGE" value="More shore has been added" />
+    <MESSAGE value="Adding those wee corner bits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding those wee corner bits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1102,8 +1102,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
           <folding />
         </state>
       </provider>
