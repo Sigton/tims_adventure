@@ -316,8 +316,26 @@ class Taskbar:
         self.y = y
 
         self.inventory_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
-                                                      self.x, self.y, None)
+                                                      self.x, self.y, lambda: self.callback(0))
         self.journal_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
-                                                    self.x, self.y, None)
+                                                    self.x, self.y+56, lambda: self.callback(1))
         self.map_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
-                                                self.x, self.y, None)
+                                                self.x, self.y+112, lambda: self.callback(2))
+
+        self.components = [
+            self.inventory_button,
+            self.journal_button,
+            self.map_button
+        ]
+
+    def callback(self, button_id):
+
+        pass
+
+    def update(self):
+
+        [component.update() for component in self.components]
+
+    def draw(self, display):
+
+        [component.draw(display) for component in self.components]

@@ -20,8 +20,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="322" column="69" lean-forward="true" selection-start-line="322" selection-start-column="69" selection-end-line="322" selection-end-column="69" />
+            <state relative-caret-position="492">
+              <caret line="326" column="32" lean-forward="true" selection-start-line="326" selection-start-column="32" selection-end-line="326" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
       <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="660">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -407,13 +407,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01088" summary="Fixed bug">
-      <created>1519817698802</created>
-      <option name="number" value="01088" />
-      <option name="presentableId" value="LOCAL-01088" />
-      <option name="project" value="LOCAL" />
-      <updated>1519817698803</updated>
-    </task>
     <task id="LOCAL-01089" summary="Fixed bug">
       <created>1519818466783</created>
       <option name="number" value="01089" />
@@ -750,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519903849610</updated>
     </task>
-    <option name="localTasksCounter" value="1137" />
+    <task id="LOCAL-01137" summary="Added buttons">
+      <created>1519904220456</created>
+      <option name="number" value="01137" />
+      <option name="presentableId" value="LOCAL-01137" />
+      <option name="project" value="LOCAL" />
+      <updated>1519904220456</updated>
+    </task>
+    <option name="localTasksCounter" value="1138" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -830,7 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Defined load_player function" />
     <MESSAGE value="Dumping player meta into save file" />
     <MESSAGE value="Loads player meta from save and updated default entities" />
     <MESSAGE value="Removed old code" />
@@ -855,7 +854,8 @@
     <MESSAGE value="Updated hud_image_loader" />
     <MESSAGE value="Populated spritesheet data" />
     <MESSAGE value="Finished hud_image_loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished hud_image_loader" />
+    <MESSAGE value="Added buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1133,14 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1149,10 +1141,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="322" column="69" lean-forward="true" selection-start-line="322" selection-start-column="69" selection-end-line="322" selection-end-column="69" />
+        <state relative-caret-position="492">
+          <caret line="326" column="32" lean-forward="true" selection-start-line="326" selection-start-column="32" selection-end-line="326" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
