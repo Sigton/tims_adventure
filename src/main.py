@@ -10,6 +10,7 @@ from src.etc import constants, gui_components, tools
 from src.terrain import chunks
 from src.entities import bean_image_loader, icons
 from src.duel import duel_controller
+from src.hud import hud_image_loader
 
 """
 main.py
@@ -88,6 +89,7 @@ class Main:
         bean_image_loader.load_sprite_sheet()
         particles.load_sprite_sheet()
         icons.load_sprite_sheet()
+        hud_image_loader.load_sprite_sheet()
 
     def set_full_screen(self):
 

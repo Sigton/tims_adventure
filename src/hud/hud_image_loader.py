@@ -37,7 +37,7 @@ def load_sprite_sheet():
 
 def load_images(image):
 
-    return [sprite_sheet.get_image(image[0],
-                                   image[1],
-                                   image[2],
-                                   image[3]) for image in sprite_sheet_data[image]]
+    return [sprite_sheet.get_image(i[0],
+                                   i[1],
+                                   i[2],
+                                   i[3]) for i in sprite_sheet_data[image]]
