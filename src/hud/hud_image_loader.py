@@ -7,6 +7,9 @@ Loads various images that are used in the hud widgets
 """
 
 
+sprite_sheet = None
+
+
 sprite_sheet_data = {
     "inventory_button": [
         (0, 56, 60, 60),
@@ -26,6 +29,15 @@ sprite_sheet_data = {
 }
 
 
+def load_sprite_sheet():
+
+    global sprite_sheet
+    sprite_sheet = spritesheet.SpriteSheet("src/resources/icons.png")
+
+
 def load_images(image):
 
-    pass
+    return [sprite_sheet.get_image(image[0],
+                                   image[1],
+                                   image[2],
+                                   image[3]) for image in sprite_sheet_data[image]]
