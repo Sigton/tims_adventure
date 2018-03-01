@@ -334,7 +334,9 @@ class Taskbar:
 
         if button_id == 0:
 
-            if not self.controller.has_component("inventory_display"):
+            if self.controller.has_component("inventory_display"):
+                self.controller.close_widget("inventory_display")
+            else:
                 self.controller.open_widget("inventory_display")
 
     def update(self):
