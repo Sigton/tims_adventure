@@ -350,3 +350,13 @@ class InventoryDisplay:
 
         self.x = x
         self.y = y
+
+        self.background = gui_components.Image("src/resources/tasks_backing", self.x, self.y)
+
+        self.components = [
+            self.background
+        ]
+
+    def draw(self, display):
+
+        [component.draw(display) for component in self.components]
