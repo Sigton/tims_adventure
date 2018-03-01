@@ -161,3 +161,7 @@ bean_image_offset = {
 items = [
     "EnlightenmentPotion"
 ]
+
+item_images = {
+    "EnlightenmentPotion": (62, 11, 32, 32)
+}
