@@ -364,6 +364,10 @@ class InventoryDisplay:
             self.background
         ]
 
+    def update(self):
+
+        pass
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
