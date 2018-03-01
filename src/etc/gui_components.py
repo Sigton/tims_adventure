@@ -28,11 +28,16 @@ class Button:
 
         self.pressed = False
         self.force_off = False
+        self.force_on = False
 
     def update(self, active=True):
 
         if not active or self.force_off:
             self.image = self.deactivated_image
+            return
+
+        if self.force_on:
+            self.image = self.active_image
             return
 
         if self.rect.collidepoint(pygame.mouse.get_pos()):
@@ -58,6 +63,12 @@ class Button:
 
     def set_on(self):
         self.force_off = False
+
+    def force_active(self):
+        self.force_on = True
+
+    def no_force_active(self):
+        self.force_on = False
 
 
 class ProgressBar:
