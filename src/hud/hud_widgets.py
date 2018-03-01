@@ -401,3 +401,18 @@ class JournalDisplay(TaskGUI):
     def update(self):
 
         pass
+
+
+class MapDisplay(TaskGUI):
+
+    def __init__(self, master, controller, x, y):
+
+        TaskGUI.__init__(self, master, controller, x, y, "map_display")
+
+        self.title = gui_components.Label(self.x+9, self.y, "Map", False, 32, constants.BLACK)
+
+        self.components.append(self.title)
+
+    def update(self):
+
+        pass

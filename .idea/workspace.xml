@@ -58,8 +58,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="403" column="0" lean-forward="true" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
+            <state relative-caret-position="416">
+              <caret line="414" column="0" lean-forward="true" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -78,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>self.player</find>
       <find>self.main</find>
       <find>constants.movement_speed</find>
       <find>hud</find>
@@ -108,6 +107,7 @@
       <find>trail</find>
       <find>meta.hp</find>
       <find>Inventory</find>
+      <find>Journal</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -131,6 +131,7 @@
       <replace>item</replace>
       <replace>entity</replace>
       <replace>journal</replace>
+      <replace>Map</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -391,13 +392,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01109" summary="Debugging">
-      <created>1519825851653</created>
-      <option name="number" value="01109" />
-      <option name="presentableId" value="LOCAL-01109" />
-      <option name="project" value="LOCAL" />
-      <updated>1519825851653</updated>
     </task>
     <task id="LOCAL-01110" summary="Changed potion image">
       <created>1519827365768</created>
@@ -735,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519921883593</updated>
     </task>
-    <option name="localTasksCounter" value="1158" />
+    <task id="LOCAL-01158" summary="Created journal display class">
+      <created>1519921970566</created>
+      <option name="number" value="01158" />
+      <option name="presentableId" value="LOCAL-01158" />
+      <option name="project" value="LOCAL" />
+      <updated>1519921970566</updated>
+    </task>
+    <option name="localTasksCounter" value="1159" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,7 +816,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added button variants" />
     <MESSAGE value="Created hud_image_loader" />
     <MESSAGE value="Updated hud_image_loader" />
     <MESSAGE value="Populated spritesheet data" />
@@ -840,7 +840,8 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added title" />
     <MESSAGE value="Using parent classes for tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using parent classes for tasks" />
+    <MESSAGE value="Created journal display class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created journal display class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1140,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="403" column="0" lean-forward="true" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
+        <state relative-caret-position="416">
+          <caret line="414" column="0" lean-forward="true" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
