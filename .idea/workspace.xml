@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_image_loader.py" afterPath="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +30,18 @@
       <file leaf-file-name="hud_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="460">
+              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_image_loader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-168">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -241,6 +251,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="terrain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -399,13 +415,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01084" summary="Finished the ocean shore">
-      <created>1519815553189</created>
-      <option name="number" value="01084" />
-      <option name="presentableId" value="LOCAL-01084" />
-      <option name="project" value="LOCAL" />
-      <updated>1519815553190</updated>
     </task>
     <task id="LOCAL-01085" summary="Slowing it down again">
       <created>1519815833570</created>
@@ -743,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519903245784</updated>
     </task>
-    <option name="localTasksCounter" value="1133" />
+    <task id="LOCAL-01133" summary="Created hud_image_loader">
+      <created>1519903314834</created>
+      <option name="number" value="01133" />
+      <option name="presentableId" value="LOCAL-01133" />
+      <option name="project" value="LOCAL" />
+      <updated>1519903314835</updated>
+    </task>
+    <option name="localTasksCounter" value="1134" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,7 +839,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed some functions" />
     <MESSAGE value="Excluding items from interactions" />
     <MESSAGE value="Combined functions" />
     <MESSAGE value="Changed potion image" />
@@ -848,7 +863,8 @@
     <MESSAGE value="Created taskbar class" />
     <MESSAGE value="Added taskbar icons" />
     <MESSAGE value="Added button variants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button variants" />
+    <MESSAGE value="Created hud_image_loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created hud_image_loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -857,7 +873,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/saves/default_decs.json" />
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1134,10 +1149,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding />
         </state>
       </provider>
