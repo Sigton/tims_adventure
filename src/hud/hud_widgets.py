@@ -350,9 +350,9 @@ class Taskbar:
         [component.draw(display) for component in self.components]
 
 
-class InventoryDisplay:
+class TaskGUI:
 
-    def __init__(self, master, controller, x, y):
+    def __init__(self, master, controller, x, y, widget_id):
 
         self.master = master
         self.controller = controller
@@ -360,21 +360,29 @@ class InventoryDisplay:
         self.x = x
         self.y = y
 
-        self.id = "inventory_display"
+        self.id = widget_id
 
         self.background = gui_components.Image("src/resources/tasks_background.png", self.x, self.y)
 
-        self.title = gui_components.Label(self.x+9, self.y, "Inventory", False, 32, constants.BLACK)
-
         self.components = [
             self.background,
-            self.title
         ]
-
-    def update(self):
-
-        pass
 
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
+
+
+class InventoryDisplay(TaskGUI):
+
+    def __init__(self, master, controller, x, y):
+
+        TaskGUI.__init__(self, master, controller, x, y, "inventory_display")
+
+        self.title = gui_components.Label(self.x+9, self.y, "Inventory", False, 32, constants.BLACK)
+
+        self.components.append(self.title)
+
+    def update(self):
+
+        pass
