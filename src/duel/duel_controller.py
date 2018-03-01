@@ -353,9 +353,9 @@ class DuelController:
             entity.meta.level_up(1)
             entity.meta.xp_gain(entity.energy)
 
-        if winner == "Player" and self.enemy.meta.evil:
-            self.enemy.meta.evil = False
-            self.enemy.terrain_entity.update_image()
+            if winner == "Player" and self.enemy.meta.evil:
+                self.enemy.meta.evil = False
+                self.enemy.terrain_entity.update_image()
 
         entity.energy = 0
 
