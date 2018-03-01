@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_image_loader.py" afterPath="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +17,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="287" column="22" lean-forward="true" selection-start-line="287" selection-start-column="22" selection-end-line="287" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="772">
+              <caret line="322" column="69" lean-forward="true" selection-start-line="322" selection-start-column="69" selection-end-line="322" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_image_loader.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
@@ -178,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -404,13 +406,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01087" summary="Added some new classes to entities.py">
-      <created>1519817674979</created>
-      <option name="number" value="01087" />
-      <option name="presentableId" value="LOCAL-01087" />
-      <option name="project" value="LOCAL" />
-      <updated>1519817674979</updated>
     </task>
     <task id="LOCAL-01088" summary="Fixed bug">
       <created>1519817698802</created>
@@ -748,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519903625485</updated>
     </task>
-    <option name="localTasksCounter" value="1136" />
+    <task id="LOCAL-01136" summary="Finished hud_image_loader">
+      <created>1519903849610</created>
+      <option name="number" value="01136" />
+      <option name="presentableId" value="LOCAL-01136" />
+      <option name="project" value="LOCAL" />
+      <updated>1519903849610</updated>
+    </task>
+    <option name="localTasksCounter" value="1137" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -828,7 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed potion image" />
     <MESSAGE value="Defined load_player function" />
     <MESSAGE value="Dumping player meta into save file" />
     <MESSAGE value="Loads player meta from save and updated default entities" />
@@ -853,7 +854,8 @@
     <MESSAGE value="Created hud_image_loader" />
     <MESSAGE value="Updated hud_image_loader" />
     <MESSAGE value="Populated spritesheet data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Populated spritesheet data" />
+    <MESSAGE value="Finished hud_image_loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished hud_image_loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1102,14 +1104,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="287" column="22" lean-forward="true" selection-start-line="287" selection-start-column="22" selection-end-line="287" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/icons.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1152,6 +1146,16 @@
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="322" column="69" lean-forward="true" selection-start-line="322" selection-start-column="69" selection-end-line="322" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

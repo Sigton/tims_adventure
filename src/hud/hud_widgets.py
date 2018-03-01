@@ -4,6 +4,7 @@ from pygame.locals import *
 from src.etc import gui_components, constants
 from src.entities import icons
 from src.menu import menu_image_loader
+from src.hud import hud_image_loader
 
 """
 hud_widgets.py
@@ -313,3 +314,10 @@ class Taskbar:
 
         self.x = x
         self.y = y
+
+        self.inventory_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
+                                                      self.x, self.y, None)
+        self.journal_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
+                                                    self.x, self.y, None)
+        self.map_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
+                                                self.x, self.y, None)
