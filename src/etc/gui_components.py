@@ -36,10 +36,6 @@ class Button:
             self.image = self.deactivated_image
             return
 
-        if self.force_on:
-            self.image = self.active_image
-            return
-
         if self.rect.collidepoint(pygame.mouse.get_pos()):
             self.image = self.active_image
 
@@ -51,8 +47,10 @@ class Button:
             else:
                 self.pressed = False
 
-        else:
+        elif not self.force_on:
             self.image = self.inactive_image
+        else:
+            self.image = self.active_image
 
     def draw(self, display):
 
