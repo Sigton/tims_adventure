@@ -17,3 +17,8 @@ class StoryTracker:
 
         self.inventory = inventory
         self.quests = quests
+
+    def get_story_data(self):
+
+        return {"inventory": self.inventory,
+                "quests": self.quests}
