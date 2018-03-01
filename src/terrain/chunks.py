@@ -40,7 +40,7 @@ def create_id(x, y):
     
 class ChunkController:
 
-    def __init__(self, master, start_x, start_y):
+    def __init__(self, master):
 
         self.master = master
 

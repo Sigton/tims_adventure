@@ -57,7 +57,7 @@ class Main:
 
         self.game_exit = False
 
-        self.chunk_controller = chunks.ChunkController(self, 16320, 66240)
+        self.chunk_controller = chunks.ChunkController(self)
         self.duel_controller = duel_controller.DuelController(self)
         self.dialogue_controller = dialogue.DialogueController(self)
 
