@@ -343,7 +343,10 @@ class Taskbar:
 
 class InventoryDisplay:
 
-    def __init__(self, master, controller):
+    def __init__(self, master, controller, x, y):
 
         self.master = master
         self.controller = controller
+
+        self.x = x
+        self.y = y
