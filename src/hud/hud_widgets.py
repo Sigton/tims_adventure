@@ -302,3 +302,14 @@ class SaveSelect:
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
+
+
+class Taskbar:
+
+    def __init__(self, master, controller, x, y):
+
+        self.master = master
+        self.controller = controller
+
+        self.x = x
+        self.y = y
