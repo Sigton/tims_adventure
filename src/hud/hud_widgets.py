@@ -336,8 +336,10 @@ class Taskbar:
 
             if self.controller.has_component("inventory_display"):
                 self.controller.close_widget("inventory_display")
+                self.inventory_button.no_force_active()
             else:
                 self.controller.open_widget("inventory_display")
+                self.inventory_button.force_active()
 
     def update(self):
 
