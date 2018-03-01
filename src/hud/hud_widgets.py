@@ -333,13 +333,30 @@ class Taskbar:
     def callback(self, button_id):
 
         if button_id == 0:
+            current_display = "inventory_display"
+            other_displays = ("journal_display", "map_display")
+            current_button = self.inventory_button
+        elif button_id == 1:
+            current_display = "journal_display"
+            other_displays = ("inventory_display", "map_display")
+            current_button = self.journal_button
+        else:
+            current_display = "map_display"
+            other_displays = ("inventory_display", "journal_display")
+            current_button = self.map_button
 
-            if self.controller.has_component("inventory_display"):
-                self.controller.close_widget("inventory_display")
-                self.inventory_button.no_force_active()
-            else:
-                self.controller.open_widget("inventory_display")
-                self.inventory_button.force_active()
+        if self.controller.has_component(current_display):
+            self.controller.close_widget(current_display)
+            current_button.no_force_active()
+        else:
+
+            [button.no_force_active() for button in self.components]
+            for display in other_displays:
+                if self.controller.has_component(display):
+                    self.controller.close_widget(display)
+
+            self.controller.open_widget(current_display)
+            current_button.force_active()
 
     def update(self):
 

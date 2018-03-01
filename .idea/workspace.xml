@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud.py" afterPath="$PROJECT_DIR$/src/hud/hud.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +26,7 @@
                   <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
                     <provider selected="true" editor-type-id="text-editor">
                       <state relative-caret-position="720">
-                        <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                        <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
                         <folding />
                       </state>
                     </provider>
@@ -58,8 +58,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="414" column="0" lean-forward="true" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="348" column="57" lean-forward="true" selection-start-line="348" selection-start-column="57" selection-end-line="348" selection-end-column="57" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -190,8 +190,8 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -392,13 +392,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01111" summary="Defined load_player function">
-      <created>1519830743861</created>
-      <option name="number" value="01111" />
-      <option name="presentableId" value="LOCAL-01111" />
-      <option name="project" value="LOCAL" />
-      <updated>1519830743861</updated>
     </task>
     <task id="LOCAL-01112" summary="Dumping player meta into save file">
       <created>1519831257267</created>
@@ -736,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519922064163</updated>
     </task>
-    <option name="localTasksCounter" value="1160" />
+    <task id="LOCAL-01160" summary="Linked things together">
+      <created>1519922142943</created>
+      <option name="number" value="01160" />
+      <option name="presentableId" value="LOCAL-01160" />
+      <option name="project" value="LOCAL" />
+      <updated>1519922142943</updated>
+    </task>
+    <option name="localTasksCounter" value="1161" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -816,7 +816,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated hud_image_loader" />
     <MESSAGE value="Populated spritesheet data" />
     <MESSAGE value="Finished hud_image_loader" />
     <MESSAGE value="Added buttons" />
@@ -841,7 +840,8 @@
     <MESSAGE value="Using parent classes for tasks" />
     <MESSAGE value="Created journal display class" />
     <MESSAGE value="Created map display class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created map display class" />
+    <MESSAGE value="Linked things together" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linked things together" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1134,15 +1134,15 @@
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="414" column="0" lean-forward="true" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="348" column="57" lean-forward="true" selection-start-line="348" selection-start-column="57" selection-end-line="348" selection-end-column="57" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
