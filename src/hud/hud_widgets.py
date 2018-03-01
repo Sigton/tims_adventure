@@ -330,7 +330,10 @@ class Taskbar:
 
     def callback(self, button_id):
 
-        pass
+        if button_id == 0:
+
+            if not self.controller.has_component("inventory_display"):
+                self.controller.open_widget("inventory_display")
 
     def update(self):
 
