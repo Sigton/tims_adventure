@@ -364,8 +364,11 @@ class InventoryDisplay:
 
         self.background = gui_components.Image("src/resources/tasks_background.png", self.x, self.y)
 
+        self.title = gui_components.Label(self.x+9, self.y, "Inventory", False, 32, constants.BLACK)
+
         self.components = [
-            self.background
+            self.background,
+            self.title
         ]
 
     def update(self):
