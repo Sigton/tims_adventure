@@ -4,7 +4,7 @@ import cProfile
 
 import pygame
 
-from src.engines import sounds, particles, save, dialogue
+from src.engines import sounds, particles, save, dialogue, story_tracker
 from src.menu import menu
 from src.etc import constants, gui_components, tools
 from src.terrain import chunks
@@ -53,6 +53,7 @@ class Main:
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
         self.save_engine = save.SaveEngine()
+        self.story_tracker = story_tracker.StoryTracker()
 
         self.game_exit = False
 
