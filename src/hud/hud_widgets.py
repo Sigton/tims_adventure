@@ -339,3 +339,11 @@ class Taskbar:
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
+
+
+class InventoryDisplay:
+
+    def __init__(self, master, controller):
+
+        self.master = master
+        self.controller = controller
