@@ -398,10 +398,13 @@ class InventoryDisplay(TaskGUI):
 
         self.title = gui_components.Label(self.x+9, self.y, "Inventory", False, 32, constants.BLACK)
 
-        for item in self.master.master.story_tracker.inventory.items():
-            print(item)
+        items = list(self.master.master.story_tracker.inventory.items())
+        self.labels = [gui_components.Label(self.x+45, self.y+(41*n)+44, "x{} Potion of {}".format(items[n][1],
+                                                                                                   items[n][0]),
+                                            False, 32, constants.BLACK)
+                       for n in range(len(items))]
 
-        self.components.append(self.title)
+        self.components += [self.title] + self.labels
 
     def update(self):
 
