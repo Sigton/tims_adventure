@@ -358,7 +358,7 @@ class InventoryDisplay:
 
         self.id = "inventory_display"
 
-        self.background = gui_components.Image("src/resources/tasks_backing", self.x, self.y)
+        self.background = gui_components.Image("src/resources/tasks_background.png", self.x, self.y)
 
         self.components = [
             self.background
