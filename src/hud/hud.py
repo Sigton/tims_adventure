@@ -20,13 +20,17 @@ class HUD:
         self.save_select = lambda: hud_widgets.SaveSelect(self.master, self, 238, 178)
         self.taskbar = lambda: hud_widgets.Taskbar(self.master, self, 900, 274)
         self.inventory_display = lambda: hud_widgets.InventoryDisplay(self.master, self, 237, 179)
+        self.journal_display = lambda: hud_widgets.JournalDisplay(self.master, self, 237, 179)
+        self.map_display = lambda: hud_widgets.MapDisplay(self.master, self, 237, 179)
 
         self.defined_components = {
             "health_display": self.health_display,
             "bean_select": self.bean_select,
             "save_select": self.save_select,
             "taskbar": self.taskbar,
-            "inventory_display": self.inventory_display
+            "inventory_display": self.inventory_display,
+            "journal_display": self.journal_display,
+            "map_display": self.map_display
         }
 
         self.components = []
