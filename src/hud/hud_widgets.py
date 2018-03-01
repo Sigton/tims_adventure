@@ -318,7 +318,7 @@ class Taskbar:
         self.inventory_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
                                                       self.x, self.y, lambda: self.callback(0))
         self.journal_button = gui_components.Button(hud_image_loader.load_images("journal_button"),
-                                                    self.x, self.y+56, lambda: self.callback(1))
+                                                    self.x, self.y+60, lambda: self.callback(1))
         self.map_button = gui_components.Button(hud_image_loader.load_images("map_button"),
                                                 self.x, self.y+112, lambda: self.callback(2))
 
