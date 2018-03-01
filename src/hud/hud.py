@@ -19,12 +19,14 @@ class HUD:
         self.bean_select = lambda: hud_widgets.BeanSelectPopup(self.player, self.master, self, 297, 452)
         self.save_select = lambda: hud_widgets.SaveSelect(self.master, self, 238, 178)
         self.taskbar = lambda: hud_widgets.Taskbar(self.master, self, 900, 274)
+        self.inventory_display = lambda: hud_widgets.InventoryDisplay(self.master, self, 237, 179)
 
         self.defined_components = {
             "health_display": self.health_display,
             "bean_select": self.bean_select,
             "save_select": self.save_select,
-            "taskbar": self.taskbar
+            "taskbar": self.taskbar,
+            "inventory_display": self.inventory_display
         }
 
         self.components = []

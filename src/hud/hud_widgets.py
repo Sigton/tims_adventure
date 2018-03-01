@@ -315,6 +315,8 @@ class Taskbar:
         self.x = x
         self.y = y
 
+        self.id = "taskbar"
+
         self.inventory_button = gui_components.Button(hud_image_loader.load_images("inventory_button"),
                                                       self.x, self.y, lambda: self.callback(0))
         self.journal_button = gui_components.Button(hud_image_loader.load_images("journal_button"),
@@ -353,6 +355,8 @@ class InventoryDisplay:
 
         self.x = x
         self.y = y
+
+        self.id = "inventory_display"
 
         self.background = gui_components.Image("src/resources/tasks_backing", self.x, self.y)
 
