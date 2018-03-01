@@ -386,3 +386,18 @@ class InventoryDisplay(TaskGUI):
     def update(self):
 
         pass
+
+
+class JournalDisplay(TaskGUI):
+
+    def __init__(self, master, controller, x, y):
+
+        TaskGUI.__init__(self, master, controller, x, y, "journal_display")
+
+        self.title = gui_components.Label(self.x+9, self.y, "Journal", False, 32, constants.BLACK)
+
+        self.components.append(self.title)
+
+    def update(self):
+
+        pass
