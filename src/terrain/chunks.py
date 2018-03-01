@@ -105,6 +105,8 @@ class ChunkController:
         self.world_offset_x = entity_data["position"][0]
         self.world_offset_y = entity_data["position"][1]
 
+        self.master.story_tracker.load_from_save(entity_data["story_data"])
+
         self.entities = {}
 
         for chunk in entity_data["entities"]:
