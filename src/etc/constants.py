@@ -162,6 +162,10 @@ items = [
     "EnlightenmentPotion"
 ]
 
+item_display_names = {
+    "EnlightenmentPotion": "Enlightenment"
+}
+
 item_images = {
     "EnlightenmentPotion": (62, 11, 32, 32)
 }
