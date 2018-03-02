@@ -216,3 +216,10 @@ class Image:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+
+class Tooltip:
+
+    def __init__(self, text, x, y):
+
+        pass
