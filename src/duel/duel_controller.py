@@ -186,20 +186,25 @@ class DuelController:
                 else:
                     self.master.switch_to(0)
 
-        if self.player.energy - moves[self.player.meta.moves[0]]["energy"] < 0:
-            self.attack_main_button.set_off()
-        else:
-            self.attack_main_button.set_on()
-        if self.player.energy - moves[self.player.meta.moves[1]]["energy"] < 0:
-            self.attack_alt_button.set_off()
-        else:
-            self.attack_alt_button.set_on()
-
-        [button.update(not self.turn and not self.turn_cool_down) for button in self.buttons]
+        [button.set_on() for button in self.buttons]
 
         if self.hud_open:
             self.hud.update()
-            return
+
+            self.attack_main_button.set_off()
+            self.attack_alt_button.set_off()
+            self.retreat_button.set_off()
+        else:
+            if self.player.energy - moves[self.player.meta.moves[0]]["energy"] < 0:
+                self.attack_main_button.set_off()
+            else:
+                self.attack_main_button.set_on()
+            if self.player.energy - moves[self.player.meta.moves[1]]["energy"] < 0:
+                self.attack_alt_button.set_off()
+            else:
+                self.attack_alt_button.set_on()
+
+        [button.update(not self.turn and not self.turn_cool_down) for button in self.buttons]
 
         if self.turn_cool_down > 0:
             self.turn_cool_down -= 1
@@ -288,7 +293,7 @@ class DuelController:
             self.end_duel("Opponent", True)
 
         if button_id == 2:
-            self.hud_open = True
+            self.hud_open = True if not self.hud_open else False
         else:
             self.turn = 1
             self.turn_cool_down = constants.turn_cool_down
