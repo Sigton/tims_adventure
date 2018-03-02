@@ -472,6 +472,29 @@ class ItemSelect(InventoryDisplay):
             elif e.key in (K_DOWN, K_s):
                 self.selected_item = (self.selected_item+1) % len(self.items)
 
+    def refresh(self):
+
+        self.items = list(self.master.master.story_tracker.inventory.items())
+        self.labels = [
+            gui_components.Label(self.x + 45, self.y + (40 * n) + 44, "x{} Potion of {}".format(self.items[n][1][0],
+                                                                                                self.items[n][1][1]),
+                                 False, 32, constants.BLACK)
+            for n in range(len(self.items))]
+        image_data = lambda x: constants.item_images[self.items[x][0]]
+        self.item_images = [gui_components.Image(icons.sprite_sheet.get_image(image_data(n)[0],
+                                                                              image_data(n)[1],
+                                                                              image_data(n)[2],
+                                                                              image_data(n)[3]),
+                                                 self.x + 13, self.y + (40 * n) + 50, False)
+                            for n in range(len(self.items))]
+
+        self.components = [
+                              self.background,
+                              self.title,
+                              self.press_space,
+                              self.pointer
+                          ] + self.labels + self.item_images
+
     def update(self):
 
         self.pointer.realign(self.x+10, self.y+59+(40*self.selected_item))
