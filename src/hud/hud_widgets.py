@@ -329,7 +329,8 @@ class Taskbar:
         self.components = [
             self.inventory_button,
             self.journal_button,
-            self.map_button
+            self.map_button,
+            self.inventory_tooltip
         ]
 
     def callback(self, button_id):
@@ -366,6 +367,7 @@ class Taskbar:
 
         if self.inventory_button.active:
             self.inventory_tooltip.set_on()
+            self.inventory_tooltip.rect.topright = pygame.mouse.get_pos()
         else:
             self.inventory_tooltip.set_off()
 

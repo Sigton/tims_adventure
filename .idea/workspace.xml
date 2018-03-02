@@ -18,21 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="276">
+              <caret line="243" column="21" lean-forward="false" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="370" column="0" lean-forward="true" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+            <state relative-caret-position="32">
+              <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -163,8 +163,8 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
-        <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
       </list>
     </option>
   </component>
@@ -378,13 +378,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01164" summary="Added story_data to default_entities">
-      <created>1519925365363</created>
-      <option name="number" value="01164" />
-      <option name="presentableId" value="LOCAL-01164" />
-      <option name="project" value="LOCAL" />
-      <updated>1519925365363</updated>
     </task>
     <task id="LOCAL-01165" summary="ChunkController doesnt take inputs for start pos anymore">
       <created>1519925427223</created>
@@ -722,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520015285801</updated>
     </task>
-    <option name="localTasksCounter" value="1213" />
+    <task id="LOCAL-01213" summary="Working on the tooltips when hovering on the buttons">
+      <created>1520015669090</created>
+      <option name="number" value="01213" />
+      <option name="presentableId" value="LOCAL-01213" />
+      <option name="project" value="LOCAL" />
+      <updated>1520015669090</updated>
+    </task>
+    <option name="localTasksCounter" value="1214" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,7 +732,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -802,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Attributed items to the inventory display" />
     <MESSAGE value="Created a subclass of the InventoryDisplay for ItemSelect" />
     <MESSAGE value="Linked item display into HUD" />
     <MESSAGE value="Gave ItemSelect and id" />
@@ -827,7 +826,8 @@
     <MESSAGE value="Added a rect to tooltips for better positioning" />
     <MESSAGE value="Switching tooltips on and off" />
     <MESSAGE value="Added tooltips to the taskbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tooltips to the taskbar" />
+    <MESSAGE value="Working on the tooltips when hovering on the buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on the tooltips when hovering on the buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1107,7 +1107,7 @@
         <state relative-caret-position="1224">
           <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1136,18 +1136,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="370" column="0" lean-forward="true" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+        <state relative-caret-position="276">
+          <caret line="243" column="21" lean-forward="false" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="32">
+          <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
           <folding />
         </state>
       </provider>

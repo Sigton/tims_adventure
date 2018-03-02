@@ -241,6 +241,9 @@ class Tooltip:
 
         self.on = False
 
+    def update(self):
+        pass
+
     def draw(self, display):
 
         if self.on:
