@@ -458,7 +458,8 @@ class ItemSelect(InventoryDisplay):
         self.components = [
             self.background,
             self.title,
-            self.press_space
+            self.press_space,
+            self.pointer
         ] + self.labels + self.item_images
 
     def handle_event(self, e):
