@@ -447,3 +447,7 @@ class ItemSelect(InventoryDisplay):
         InventoryDisplay.__init__(self, master, controller, x, y)
 
         self.id = "item_select"
+
+        self.selected_item = 0
+
+        self.pointer = icons.ArrowPointer(self.x+10, self.y+59+(40*self.selected_item))
