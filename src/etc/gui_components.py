@@ -29,15 +29,18 @@ class Button:
         self.pressed = False
         self.force_off = False
         self.force_on = False
+        self.active = False
 
     def update(self, active=True):
 
+        self.active = False
         if not active or self.force_off:
             self.image = self.deactivated_image
             return
 
         if self.rect.collidepoint(pygame.mouse.get_pos()):
             self.image = self.active_image
+            self.active = True
 
             if pygame.mouse.get_pressed()[0]:
                 if not self.pressed:

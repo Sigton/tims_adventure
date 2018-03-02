@@ -364,6 +364,11 @@ class Taskbar:
 
         [component.update() for component in self.components]
 
+        if self.inventory_button.active:
+            self.inventory_tooltip.set_on()
+        else:
+            self.inventory_tooltip.set_off()
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
