@@ -236,6 +236,15 @@ class Tooltip:
             self.text
         ]
 
+        self.on = False
+
     def draw(self, display):
 
-        [component.draw(display) for component in self.components]
+        if self.on:
+            [component.draw(display) for component in self.components]
+
+    def set_on(self):
+        self.on = True
+
+    def set_off(self):
+        self.on = False
