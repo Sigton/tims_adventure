@@ -115,6 +115,8 @@ class DuelController:
         self.hud.save_hud("duel", ["item_select"])
         self.hud.load_saved_hud("duel")
 
+        self.hud_open = False
+
     def reset(self):
 
         self.turn = 0
@@ -183,6 +185,10 @@ class DuelController:
                     self.text.append(self.winner_label)
                 else:
                     self.master.switch_to(0)
+
+        if self.hud_open:
+            self.hud.update()
+            return
 
         if self.player.energy - moves[self.player.meta.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
@@ -324,6 +330,9 @@ class DuelController:
         [button.draw(display) for button in self.buttons]
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
+
+        if self.hud_open:
+            self.hud.draw(display)
 
     def start_shake(self, duration, dx, w, direction):
 

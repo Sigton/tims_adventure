@@ -88,8 +88,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+            <state relative-caret-position="1024">
+              <caret line="332" column="8" lean-forward="true" selection-start-line="332" selection-start-column="8" selection-end-line="332" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -443,13 +443,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01148" summary="Working on opening inventory">
-      <created>1519919768462</created>
-      <option name="number" value="01148" />
-      <option name="presentableId" value="LOCAL-01148" />
-      <option name="project" value="LOCAL" />
-      <updated>1519919768463</updated>
-    </task>
     <task id="LOCAL-01149" summary="Adding in ids and links">
       <created>1519919915565</created>
       <option name="number" value="01149" />
@@ -786,7 +779,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519984220854</updated>
     </task>
-    <option name="localTasksCounter" value="1197" />
+    <task id="LOCAL-01197" summary="Implemented hud into duel controller">
+      <created>1519985275967</created>
+      <option name="number" value="01197" />
+      <option name="presentableId" value="LOCAL-01197" />
+      <option name="project" value="LOCAL" />
+      <updated>1519985275967</updated>
+    </task>
+    <option name="localTasksCounter" value="1198" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -866,7 +866,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Adding labels" />
     <MESSAGE value="Added display name to inventory items" />
     <MESSAGE value="Now displays display name instead of id" />
@@ -891,7 +890,8 @@
     <MESSAGE value="Created new list of components" />
     <MESSAGE value="Defined a handle event function" />
     <MESSAGE value="Defined ItemSelect.update()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined ItemSelect.update()" />
+    <MESSAGE value="Implemented hud into duel controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented hud into duel controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1208,8 +1208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+        <state relative-caret-position="1024">
+          <caret line="332" column="8" lean-forward="true" selection-start-line="332" selection-start-column="8" selection-end-line="332" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
