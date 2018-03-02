@@ -326,6 +326,12 @@ class Taskbar:
 
         self.inventory_tooltip = gui_components.Tooltip("Inventory", 0, 0, 20, constants.BLACK)
 
+        self.buttons = [
+            self.inventory_button,
+            self.journal_button,
+            self.map_button
+        ]
+
         self.components = [
             self.inventory_button,
             self.journal_button,
@@ -353,7 +359,7 @@ class Taskbar:
             current_button.no_force_active()
         else:
 
-            [button.no_force_active() for button in self.components]
+            [button.no_force_active() for button in self.buttons]
             for display in other_displays:
                 if self.controller.has_component(display):
                     self.controller.close_widget(display)
