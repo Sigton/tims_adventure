@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/gui_components.py" afterPath="$PROJECT_DIR$/src/etc/gui_components.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="248" column="22" lean-forward="true" selection-start-line="248" selection-start-column="22" selection-end-line="248" selection-end-column="22" />
+            <state relative-caret-position="512">
+              <caret line="236" column="9" lean-forward="true" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="327" column="0" lean-forward="true" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,12 +158,12 @@
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -197,6 +207,12 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="etc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hud" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -361,13 +377,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01162" summary="Created story_tracker.py">
-      <created>1519925182929</created>
-      <option name="number" value="01162" />
-      <option name="presentableId" value="LOCAL-01162" />
-      <option name="project" value="LOCAL" />
-      <updated>1519925182929</updated>
     </task>
     <task id="LOCAL-01163" summary="Implemented story_tracker into main">
       <created>1519925237652</created>
@@ -705,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520015086318</updated>
     </task>
-    <option name="localTasksCounter" value="1211" />
+    <task id="LOCAL-01211" summary="Switching tooltips on and off">
+      <created>1520015139125</created>
+      <option name="number" value="01211" />
+      <option name="presentableId" value="LOCAL-01211" />
+      <option name="project" value="LOCAL" />
+      <updated>1520015139125</updated>
+    </task>
+    <option name="localTasksCounter" value="1212" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -785,7 +801,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removing unnecessary function calls" />
     <MESSAGE value="Cleaning up a bit" />
     <MESSAGE value="Attributed items to the inventory display" />
     <MESSAGE value="Created a subclass of the InventoryDisplay for ItemSelect" />
@@ -810,7 +825,8 @@
     <MESSAGE value="Fixed widths and heights" />
     <MESSAGE value="Added component list and draw function" />
     <MESSAGE value="Added a rect to tooltips for better positioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a rect to tooltips for better positioning" />
+    <MESSAGE value="Switching tooltips on and off" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switching tooltips on and off" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1077,14 +1093,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="440" column="0" lean-forward="false" selection-start-line="440" selection-start-column="0" selection-end-line="440" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_players.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -1129,8 +1137,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="248" column="22" lean-forward="true" selection-start-line="248" selection-start-column="22" selection-end-line="248" selection-end-column="22" />
+        <state relative-caret-position="512">
+          <caret line="236" column="9" lean-forward="true" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="327" column="0" lean-forward="true" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
           <folding />
         </state>
       </provider>
