@@ -159,13 +159,16 @@ bean_image_offset = {
 # Items
 
 items = [
-    "EnlightenmentPotion"
+    "EnlightenmentPotion",
+    "HealthPotion"
 ]
 
 item_display_names = {
-    "EnlightenmentPotion": "Enlightenment"
+    "EnlightenmentPotion": "Enlightenment",
+    "HealthPotion": "Healing"
 }
 
 item_images = {
-    "EnlightenmentPotion": (62, 11, 32, 32)
+    "EnlightenmentPotion": (62, 11, 32, 32),
+    "HealthPotion": (94, 11, 32, 32)
 }

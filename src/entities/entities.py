@@ -216,7 +216,8 @@ class HealthPotion(Item):
 
 
 items = {
-    "EnlightenmentPotion": EnlightenmentPotion
+    "EnlightenmentPotion": EnlightenmentPotion,
+    "HealthPotion": HealthPotion
 }
 
 
