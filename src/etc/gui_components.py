@@ -242,7 +242,9 @@ class Tooltip:
         self.on = False
 
     def update(self):
+        pass
 
+    def reposition(self):
         self.rect.x = self.background.rect.x
         self.rect.y = self.background.rect.y
 

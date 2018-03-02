@@ -368,6 +368,7 @@ class Taskbar:
         if self.inventory_button.active:
             self.inventory_tooltip.set_on()
             self.inventory_tooltip.rect.topright = pygame.mouse.get_pos()
+            self.inventory_tooltip.reposition()
         else:
             self.inventory_tooltip.set_off()
 
