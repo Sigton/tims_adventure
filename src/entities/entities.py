@@ -5,6 +5,7 @@ from src.entities import bean_image_loader, icons, shadows
 from src.entities.entity_meta import entity_data
 
 import random
+import math
 
 """
 entities.py
@@ -182,6 +183,9 @@ class Item(icons.Icon):
     def update(self):
 
         self.shadow.update()
+
+        dist = math.sqrt(math.pow((constants.DISPLAY_CENTER[0]-self.rect.centerx), 2) +
+                         math.pow((constants.DISPLAY_CENTER[1]-self.rect.centery), 2))
 
     def draw(self, display):
 
