@@ -160,8 +160,6 @@ class RandomBean:
         if self.interaction_icon is not None:
             self.interaction_icon.update()
 
-        self.shadow.update()
-
     def draw(self, display):
 
         self.shadow.draw(display)
@@ -184,12 +182,17 @@ class Item(icons.Icon):
 
     def update(self):
 
-        self.shadow.update()
-
         dist = math.sqrt(math.pow((constants.DISPLAY_CENTER[0]-self.rect.centerx), 2) +
                          math.pow((constants.DISPLAY_CENTER[1]-self.rect.centery), 2))
         if dist < 30:
             self.pickup = True
+
+    def realign(self, x, y):
+
+        self.rect.x = x + self.offset_x
+        self.rect.y = y + self.offset_y
+
+        self.shadow.update()
 
     def draw(self, display):
 
