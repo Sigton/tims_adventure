@@ -7,6 +7,7 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,14 +86,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1024">
-              <caret line="332" column="8" lean-forward="true" selection-start-line="332" selection-start-column="8" selection-end-line="332" selection-end-column="8" />
+            <state relative-caret-position="284">
+              <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="404" column="69" lean-forward="false" selection-start-line="404" selection-start-column="69" selection-end-line="404" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,8 +233,8 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -442,13 +453,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01149" summary="Adding in ids and links">
-      <created>1519919915565</created>
-      <option name="number" value="01149" />
-      <option name="presentableId" value="LOCAL-01149" />
-      <option name="project" value="LOCAL" />
-      <updated>1519919915565</updated>
     </task>
     <task id="LOCAL-01150" summary="Debugging">
       <created>1519920725642</created>
@@ -786,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519985275967</updated>
     </task>
-    <option name="localTasksCounter" value="1198" />
+    <task id="LOCAL-01198" summary="Adding in the hud">
+      <created>1519985349643</created>
+      <option name="number" value="01198" />
+      <option name="presentableId" value="LOCAL-01198" />
+      <option name="project" value="LOCAL" />
+      <updated>1519985349643</updated>
+    </task>
+    <option name="localTasksCounter" value="1199" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,7 +807,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -866,7 +877,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding labels" />
     <MESSAGE value="Added display name to inventory items" />
     <MESSAGE value="Now displays display name instead of id" />
     <MESSAGE value="Added item images to constants" />
@@ -891,7 +901,8 @@
     <MESSAGE value="Defined a handle event function" />
     <MESSAGE value="Defined ItemSelect.update()" />
     <MESSAGE value="Implemented hud into duel controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented hud into duel controller" />
+    <MESSAGE value="Adding in the hud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding in the hud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,14 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="476" column="0" lean-forward="true" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-220">
@@ -1208,11 +1211,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="332" column="8" lean-forward="true" selection-start-line="332" selection-start-column="8" selection-end-line="332" selection-end-column="8" />
+        <state relative-caret-position="284">
+          <caret line="112" column="31" lean-forward="false" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="404" column="69" lean-forward="false" selection-start-line="404" selection-start-column="69" selection-end-line="404" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

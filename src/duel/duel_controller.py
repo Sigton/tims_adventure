@@ -110,7 +110,7 @@ class DuelController:
         self.winner = ""
         self.shown_win = False
 
-        self.hud = hud.HUD(self.player.terrain_entity, self)
+        self.hud = hud.HUD(None, self)
 
         self.hud.save_hud("duel", ["item_select"])
         self.hud.load_saved_hud("duel")
