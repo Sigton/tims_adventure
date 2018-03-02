@@ -445,3 +445,5 @@ class ItemSelect(InventoryDisplay):
     def __init__(self, master, controller, x, y):
 
         InventoryDisplay.__init__(self, master, controller, x, y)
+
+        self.id = "item_select"
