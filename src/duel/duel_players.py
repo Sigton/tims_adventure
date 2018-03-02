@@ -19,7 +19,7 @@ class DuelPlayer:
 
         self.energy = self.meta.energy
 
-        self.image = pygame.transform.scale(self.meta.images[self.facing],
+        self.image = pygame.transform.scale(self.meta.images["G" + self.facing if self.meta.evil else self.facing],
                                             (300, 300) if self.facing == "R" else (230, 230))
 
         self.rect = self.image.get_rect()
