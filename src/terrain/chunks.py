@@ -299,21 +299,20 @@ class ChunkController:
                 self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
-        chunk_entities = []
         for chunk in self.live_chunks:
-            [chunk_entities.append(entity) for entity in self.map_tiles[chunk].get_entities()
-             if not entity.__class__.__name__ in constants.items]
+            for entity in self.map_tiles[chunk].get_entities():
+                if entity.__class__.__name__ not in constants.items:
+                    if entity.meta.interaction == "pass" or entity.meta.important:
+                        continue
+                    distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
+                                         + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
 
-        for entity in chunk_entities:
-            if entity.meta.interaction == "pass" or entity.meta.important:
-                continue
-            distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx-entity.rect.centerx, 2)
-                                 + math.pow(self.player.beans[0].rect.centery-entity.rect.centery, 2))
-
-            if distance < constants.interaction_distance:
-                entity.interaction_icon.on()
-            else:
-                entity.interaction_icon.off()
+                    if distance < constants.interaction_distance:
+                        entity.interaction_icon.on()
+                    else:
+                        entity.interaction_icon.off()
+                elif entity.pickup:
+                    print("pickup entity")
 
         self.player.update(self.direction)
         self.update_chunks()
