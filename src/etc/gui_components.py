@@ -242,7 +242,12 @@ class Tooltip:
         self.on = False
 
     def update(self):
-        pass
+
+        self.rect.x = self.background.rect.x
+        self.rect.y = self.background.rect.y
+
+        self.background_fill.rect.topleft = (self.rect.x+4, self.rect.y+4)
+        self.text.rect.topleft = (self.rect.x+8, self.rect.y+2)
 
     def draw(self, display):
 

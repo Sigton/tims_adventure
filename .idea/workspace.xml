@@ -7,7 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/etc/gui_components.py" afterPath="$PROJECT_DIR$/src/etc/gui_components.py" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="243" column="21" lean-forward="false" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
+            <state relative-caret-position="456">
+              <caret line="249" column="62" lean-forward="false" selection-start-line="249" selection-start-column="62" selection-end-line="249" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+            <state relative-caret-position="212">
+              <caret line="338" column="49" lean-forward="false" selection-start-line="338" selection-start-column="49" selection-end-line="338" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -379,13 +378,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01165" summary="ChunkController doesnt take inputs for start pos anymore">
-      <created>1519925427223</created>
-      <option name="number" value="01165" />
-      <option name="presentableId" value="LOCAL-01165" />
-      <option name="project" value="LOCAL" />
-      <updated>1519925427223</updated>
-    </task>
     <task id="LOCAL-01166" summary="Added new function to story tracker">
       <created>1519925608287</created>
       <option name="number" value="01166" />
@@ -722,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520015669090</updated>
     </task>
-    <option name="localTasksCounter" value="1214" />
+    <task id="LOCAL-01214" summary="Debugging">
+      <created>1520015779421</created>
+      <option name="number" value="01214" />
+      <option name="presentableId" value="LOCAL-01214" />
+      <option name="project" value="LOCAL" />
+      <updated>1520015779421</updated>
+    </task>
+    <option name="localTasksCounter" value="1215" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -812,7 +811,6 @@
     <MESSAGE value="Defined ItemSelect.update()" />
     <MESSAGE value="Implemented hud into duel controller" />
     <MESSAGE value="Adding in the hud" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Hud opens when use item button pressed" />
     <MESSAGE value="Item select menu opens and closes as expected" />
     <MESSAGE value="Forgot pointer from components list" />
@@ -827,7 +825,8 @@
     <MESSAGE value="Switching tooltips on and off" />
     <MESSAGE value="Added tooltips to the taskbar" />
     <MESSAGE value="Working on the tooltips when hovering on the buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the tooltips when hovering on the buttons" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,18 +1135,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="243" column="21" lean-forward="false" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
+        <state relative-caret-position="212">
+          <caret line="338" column="49" lean-forward="false" selection-start-line="338" selection-start-column="49" selection-end-line="338" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+        <state relative-caret-position="456">
+          <caret line="249" column="62" lean-forward="false" selection-start-line="249" selection-start-column="62" selection-end-line="249" selection-end-column="62" />
           <folding />
         </state>
       </provider>
