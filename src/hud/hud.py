@@ -22,6 +22,7 @@ class HUD:
         self.inventory_display = lambda: hud_widgets.InventoryDisplay(self.master, self, 237, 179)
         self.journal_display = lambda: hud_widgets.JournalDisplay(self.master, self, 237, 179)
         self.map_display = lambda: hud_widgets.MapDisplay(self.master, self, 237, 179)
+        self.item_display = lambda: hud_widgets.ItemSelect(self.master, self, 237, 179)
 
         self.defined_components = {
             "health_display": self.health_display,
@@ -30,7 +31,8 @@ class HUD:
             "taskbar": self.taskbar,
             "inventory_display": self.inventory_display,
             "journal_display": self.journal_display,
-            "map_display": self.map_display
+            "map_display": self.map_display,
+            "item_display": self.item_display
         }
 
         self.components = []
