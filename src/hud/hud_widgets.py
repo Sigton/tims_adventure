@@ -325,6 +325,8 @@ class Taskbar:
                                                 self.x, self.y+112, lambda: self.callback(2))
 
         self.inventory_tooltip = gui_components.Tooltip("Inventory", 0, 0, 20, constants.BLACK)
+        self.journal_tooltip = gui_components.Tooltip("Journal", 0, 0, 20, constants.BLACK)
+        self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK)
 
         self.buttons = [
             self.inventory_button,
@@ -336,7 +338,9 @@ class Taskbar:
             self.inventory_button,
             self.journal_button,
             self.map_button,
-            self.inventory_tooltip
+            self.inventory_tooltip,
+            self.journal_tooltip,
+            self.map_tooltip
         ]
 
     def callback(self, button_id):
@@ -377,6 +381,20 @@ class Taskbar:
             self.inventory_tooltip.reposition()
         else:
             self.inventory_tooltip.set_off()
+
+        if self.journal_button.active:
+            self.journal_tooltip.set_on()
+            self.journal_tooltip.rect.topright = pygame.mouse.get_pos()
+            self.journal_tooltip.reposition()
+        else:
+            self.journal_tooltip.set_off()
+
+        if self.map_button.active:
+            self.map_tooltip.set_on()
+            self.map_tooltip.rect.topright = pygame.mouse.get_pos()
+            self.map_tooltip.reposition()
+        else:
+            self.map_tooltip.set_off()
 
     def draw(self, display):
 
