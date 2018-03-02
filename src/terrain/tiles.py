@@ -59,8 +59,7 @@ class Tile:
         display.blit(self.image, (self.rect.x, self.rect.y))
 
     def update(self):
-        if self.has_shadow:
-            self.shadow.update()
+        pass
 
 
 class AnimatedTile:
@@ -99,5 +98,4 @@ class AnimatedTile:
             self.image = self.images[self.current_image]
 
     def update(self):
-
         pass
