@@ -454,3 +454,9 @@ class ItemSelect(InventoryDisplay):
 
         self.title = gui_components.Label(self.x+9, self.y, "Item Select", False, 32, constants.BLACK)
         self.press_space = gui_components.Label(self.x+211, self.y, "<Space to Select>", False, 32, constants.BLACK)
+
+        self.components = [
+            self.background,
+            self.title,
+            self.press_space
+        ] + self.labels + self.item_images
