@@ -208,6 +208,13 @@ class EnlightenmentPotion(Item):
         Item.__init__(self, icons.sprite_sheet.get_image(54, 0, 48, 48), x, y)
 
 
+class HealthPotion(Item):
+
+    def __init__(self, x, y):
+
+        Item.__init__(self, icons.sprite_sheet.get_image(86, 0, 48, 48), x, y)
+
+
 items = {
     "EnlightenmentPotion": EnlightenmentPotion
 }
