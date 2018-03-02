@@ -385,6 +385,10 @@ class TaskGUI:
             self.background,
         ]
 
+    def update(self):
+
+        pass
+
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
@@ -413,10 +417,6 @@ class InventoryDisplay(TaskGUI):
 
         self.components += [self.title] + self.labels + self.item_images
 
-    def update(self):
-
-        pass
-
 
 class JournalDisplay(TaskGUI):
 
@@ -427,10 +427,6 @@ class JournalDisplay(TaskGUI):
         self.title = gui_components.Label(self.x+9, self.y, "Journal", False, 32, constants.BLACK)
 
         self.components.append(self.title)
-
-    def update(self):
-
-        pass
 
 
 class MapDisplay(TaskGUI):
@@ -443,6 +439,9 @@ class MapDisplay(TaskGUI):
 
         self.components.append(self.title)
 
-    def update(self):
 
-        pass
+class ItemSelect(InventoryDisplay):
+
+    def __init__(self, master, controller, x, y):
+
+        InventoryDisplay.__init__(self, master, controller, x, y)
