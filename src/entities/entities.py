@@ -186,6 +186,8 @@ class Item(icons.Icon):
 
         dist = math.sqrt(math.pow((constants.DISPLAY_CENTER[0]-self.rect.centerx), 2) +
                          math.pow((constants.DISPLAY_CENTER[1]-self.rect.centery), 2))
+        if dist < 30:
+            print("pick up")
 
     def draw(self, display):
 
