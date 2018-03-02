@@ -470,3 +470,7 @@ class ItemSelect(InventoryDisplay):
 
             elif e.key in (K_DOWN, K_s):
                 self.selected_item = (self.selected_item+1) % len(self.items)
+
+    def update(self):
+
+        self.pointer.realign(self.x+10, self.y+59+(40*self.selected_item))
