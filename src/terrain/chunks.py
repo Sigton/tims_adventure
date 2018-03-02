@@ -391,8 +391,6 @@ class ChunkController:
             [tile.animate(self.current_frames[tile.tile_code]) for tile in self.map_tiles[chunk].tiles
              if tile.tile_code in animated_tiles]
 
-            [dec.update() for dec in self.map_tiles[chunk].decs]
-
             for entity in self.map_tiles[chunk].get_entities():
                 if entity.__class__.__name__ not in constants.items:
                     if entity.meta.hp < entity.meta.max_hp:
