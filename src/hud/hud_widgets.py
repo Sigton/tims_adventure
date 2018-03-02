@@ -460,3 +460,13 @@ class ItemSelect(InventoryDisplay):
             self.title,
             self.press_space
         ] + self.labels + self.item_images
+
+    def handle_event(self, e):
+
+        if e.type == KEYUP:
+
+            if e.key in (K_UP, K_w):
+                self.selected_item = (self.selected_item-1) % len(self.items)
+
+            elif e.key in (K_DOWN, K_s):
+                self.selected_item = (self.selected_item+1) % len(self.items)

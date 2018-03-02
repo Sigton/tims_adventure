@@ -78,8 +78,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="462" column="0" lean-forward="true" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+            <state relative-caret-position="672">
+              <caret line="466" column="0" lean-forward="true" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,7 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hud</find>
       <find>print</find>
       <find>constants.turn</find>
       <find>= 50</find>
@@ -126,6 +125,7 @@
       <find>items</find>
       <find>item</find>
       <find>item_display</find>
+      <find>save</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -146,12 +146,12 @@
       <replace>player</replace>
       <replace>: create_images(</replace>
       <replace>items</replace>
-      <replace>item</replace>
       <replace>entity</replace>
       <replace>journal</replace>
       <replace>Map</replace>
       <replace>self.items</replace>
       <replace>item_select</replace>
+      <replace>item</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -448,13 +448,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01145" summary="Created InventoryDisplay class">
-      <created>1519909219189</created>
-      <option name="number" value="01145" />
-      <option name="presentableId" value="LOCAL-01145" />
-      <option name="project" value="LOCAL" />
-      <updated>1519909219189</updated>
     </task>
     <task id="LOCAL-01146" summary="Added position vector">
       <created>1519918927314</created>
@@ -792,7 +785,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519983833843</updated>
     </task>
-    <option name="localTasksCounter" value="1194" />
+    <task id="LOCAL-01194" summary="Created new list of components">
+      <created>1519984027664</created>
+      <option name="number" value="01194" />
+      <option name="presentableId" value="LOCAL-01194" />
+      <option name="project" value="LOCAL" />
+      <updated>1519984027664</updated>
+    </task>
+    <option name="localTasksCounter" value="1195" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -872,7 +872,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Loading story data from save" />
     <MESSAGE value="Added some items to inventory to test with" />
     <MESSAGE value="Checking if you can get the inventory from the hud widget" />
     <MESSAGE value="Debugging" />
@@ -897,7 +896,8 @@
     <MESSAGE value="Gave ItemSelect and id" />
     <MESSAGE value="Adding things to item select" />
     <MESSAGE value="Adding more text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding more text" />
+    <MESSAGE value="Created new list of components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new list of components" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1205,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="462" column="0" lean-forward="true" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+        <state relative-caret-position="672">
+          <caret line="466" column="0" lean-forward="true" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
           <folding />
         </state>
       </provider>
