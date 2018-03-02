@@ -6,6 +6,7 @@ from src.etc import gui_components, constants
 from src.duel.duel_players import DuelPlayer
 from src.duel.moves import moves
 from src.engines import brain
+from src.hud import hud
 
 import math
 import random
@@ -108,6 +109,11 @@ class DuelController:
         self.game_won_counter = 0
         self.winner = ""
         self.shown_win = False
+
+        self.hud = hud.HUD(self.player.terrain_entity, self)
+
+        self.hud.save_hud("duel", ["item_select"])
+        self.hud.load_saved_hud("duel")
 
     def reset(self):
 
