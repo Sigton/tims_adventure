@@ -186,10 +186,6 @@ class DuelController:
                 else:
                     self.master.switch_to(0)
 
-        if self.hud_open:
-            self.hud.update()
-            return
-
         if self.player.energy - moves[self.player.meta.moves[0]]["energy"] < 0:
             self.attack_main_button.set_off()
         else:
@@ -200,6 +196,10 @@ class DuelController:
             self.attack_alt_button.set_on()
 
         [button.update(not self.turn and not self.turn_cool_down) for button in self.buttons]
+
+        if self.hud_open:
+            self.hud.update()
+            return
 
         if self.turn_cool_down > 0:
             self.turn_cool_down -= 1
@@ -283,16 +283,15 @@ class DuelController:
                 move = move.format(750, 170)
             exec(move)
 
-        elif button_id < 3:
-
-            pass
-
-        else:
+        elif button_id == 3:
 
             self.end_duel("Opponent", True)
 
-        self.turn = 1
-        self.turn_cool_down = constants.turn_cool_down
+        if button_id == 2:
+            self.hud_open = True
+        else:
+            self.turn = 1
+            self.turn_cool_down = constants.turn_cool_down
 
     def update_gui_components(self):
 
