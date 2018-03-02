@@ -222,12 +222,13 @@ class Tooltip:
 
     def __init__(self, text, x, y, size, colour):
 
-        self.x = x
-        self.y = y
-
         self.text = Label(x+8, y+2, text, False, size, colour)
         self.background = Fill(x, y, self.text.rect.width+16, self.text.rect.height+8, constants.GUI_BACKING)
         self.background_fill = Fill(x+4, y+4, self.text.rect.width+8, self.text.rect.height, constants.GUI_FILL)
+
+        self.rect = self.background.rect
+        self.rect.x = x
+        self.rect.y = y
 
         self.components = [
             self.background,
