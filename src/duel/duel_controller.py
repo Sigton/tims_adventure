@@ -293,7 +293,11 @@ class DuelController:
             self.end_duel("Opponent", True)
 
         if button_id == 2:
-            self.hud_open = True if not self.hud_open else False
+            if self.hud_open:
+                self.hud_open = False
+            else:
+                self.hud_open = True
+                self.hud.refresh()
         else:
             self.turn = 1
             self.turn_cool_down = constants.turn_cool_down

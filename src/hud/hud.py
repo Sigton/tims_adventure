@@ -86,3 +86,7 @@ class HUD:
     def draw(self, display):
 
         [component.draw(display) for component in self.components]
+
+    def refresh(self):
+
+        [component.refresh() for component in self.components]
