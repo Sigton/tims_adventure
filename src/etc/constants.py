@@ -86,7 +86,8 @@ animation_thresholds = {
 no_fade_sprites = [
     "Bean",
     "RandomBean",
-    "EnlightenmentPotion"
+    "EnlightenmentPotion",
+    "HealthPotion"
 ]
 
 

@@ -183,6 +183,7 @@ class Item(icons.Icon):
         icons.Icon.__init__(self, image, x*constants.tile_w, y*constants.tile_h)
 
         self.shadow = shadows.Shadow(self)
+        self.has_shadow = True
 
         self.pickup = False
 
