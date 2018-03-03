@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+      <change beforePath="$PROJECT_DIR$/src/engines/story_tracker.py" afterPath="$PROJECT_DIR$/src/engines/story_tracker.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="558" column="23" lean-forward="false" selection-start-line="558" selection-start-column="23" selection-end-line="558" selection-end-column="23" />
+            <state relative-caret-position="436">
+              <caret line="559" column="9" lean-forward="true" selection-start-line="559" selection-start-column="9" selection-end-line="559" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+            <state relative-caret-position="436">
+              <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -50,8 +50,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="416" column="21" lean-forward="false" selection-start-line="416" selection-start-column="21" selection-end-line="416" selection-end-column="21" />
+            <state relative-caret-position="456">
+              <caret line="421" column="37" lean-forward="false" selection-start-line="421" selection-start-column="37" selection-end-line="421" selection-end-column="37" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -80,7 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>constants.turn</find>
       <find>= 50</find>
       <find>math</find>
       <find>green</find>
@@ -110,6 +109,7 @@
       <find>item_display</find>
       <find>save</find>
       <find>inventory</find>
+      <find>inv</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -191,12 +191,12 @@
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
-        <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
-        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
+        <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
       </list>
     </option>
   </component>
@@ -258,6 +258,27 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
+              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
+              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
+              <item name="save1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -422,13 +443,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01192" summary="Adding things to item select">
-      <created>1519983761172</created>
-      <option name="number" value="01192" />
-      <option name="presentableId" value="LOCAL-01192" />
-      <option name="project" value="LOCAL" />
-      <updated>1519983761172</updated>
     </task>
     <task id="LOCAL-01193" summary="Adding more text">
       <created>1519983833843</created>
@@ -766,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520075459412</updated>
     </task>
-    <option name="localTasksCounter" value="1241" />
+    <task id="LOCAL-01241" summary="Added in progress bars">
+      <created>1520075719466</created>
+      <option name="number" value="01241" />
+      <option name="presentableId" value="LOCAL-01241" />
+      <option name="project" value="LOCAL" />
+      <updated>1520075719466</updated>
+    </task>
+    <option name="localTasksCounter" value="1242" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -846,7 +867,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Switching tooltips on and off" />
     <MESSAGE value="Added tooltips to the taskbar" />
     <MESSAGE value="Working on the tooltips when hovering on the buttons" />
     <MESSAGE value="Added to tooltip.update" />
@@ -871,7 +891,8 @@
     <MESSAGE value="Creating enemy stat class" />
     <MESSAGE value="Adding some components" />
     <MESSAGE value="Added update and draw functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added update and draw functions" />
+    <MESSAGE value="Added in progress bars" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in progress bars" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1108,13 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="0" column="3293549" lean-forward="false" selection-start-line="0" selection-start-column="3293549" selection-end-line="0" selection-end-column="3293549" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1138,28 +1152,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="416" column="21" lean-forward="false" selection-start-line="416" selection-start-column="21" selection-end-line="416" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1174,8 +1170,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="558" column="23" lean-forward="false" selection-start-line="558" selection-start-column="23" selection-end-line="558" selection-end-column="23" />
+        <state relative-caret-position="436">
+          <caret line="559" column="9" lean-forward="true" selection-start-line="559" selection-start-column="9" selection-end-line="559" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="421" column="37" lean-forward="false" selection-start-line="421" selection-start-column="37" selection-end-line="421" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="0" column="4100224" lean-forward="false" selection-start-line="0" selection-start-column="4100224" selection-end-line="0" selection-end-column="4100224" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -47,3 +47,10 @@ class StoryTracker:
     def use_item(self, item, amount):
 
         self.inventory[item][0] -= amount
+
+        if not self.get_amount_of(item):
+            self.delete_item(item)
+
+    def delete_item(self, item):
+
+        del self.inventory[item]
