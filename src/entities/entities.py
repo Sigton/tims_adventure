@@ -3,6 +3,7 @@ import pygame
 from src.etc import constants
 from src.entities import bean_image_loader, icons, shadows
 from src.entities.entity_meta import entity_data
+from src.hud import hud_widgets
 
 import random
 import math
@@ -131,6 +132,8 @@ class RandomBean:
         else:
             self.interaction_icon = icons.ImportantPressSpace(self.rect.centerx, self.rect.y - 35)
             self.interaction_icon.on()
+
+        self.stat_panel = hud_widgets.EnemyStat(self, self.rect.x-230, self.rect.y)
 
         if self.meta.evil:
             self.image = self.images["GR"]
