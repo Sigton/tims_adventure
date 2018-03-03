@@ -94,6 +94,8 @@ class ChunkController:
 
         self.update_health_counter = 0
 
+        self.other_bean_stat_count = -1
+
     def load_from_save(self, save_dir):
 
         with open(os.path.join(save_dir, "maps.json"), "r") as infile:
