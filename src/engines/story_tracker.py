@@ -39,3 +39,7 @@ class StoryTracker:
             return False
         else:
             pass
+
+    def get_amount_of(self, item):
+
+        return 0 if item not in self.inventory.keys() else self.inventory[item][0]
