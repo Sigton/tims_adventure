@@ -50,8 +50,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="587" column="28" lean-forward="true" selection-start-line="587" selection-start-column="28" selection-end-line="587" selection-end-column="28" />
+            <state relative-caret-position="332">
+              <caret line="583" column="44" lean-forward="true" selection-start-line="583" selection-start-column="44" selection-end-line="583" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -81,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="506" column="67" lean-forward="true" selection-start-line="506" selection-start-column="67" selection-end-line="506" selection-end-column="67" />
+              <caret line="506" column="67" lean-forward="false" selection-start-line="506" selection-start-column="67" selection-end-line="506" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -91,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+              <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -487,13 +487,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01240" summary="Added update and draw functions">
-      <created>1520075459411</created>
-      <option name="number" value="01240" />
-      <option name="presentableId" value="LOCAL-01240" />
-      <option name="project" value="LOCAL" />
-      <updated>1520075459412</updated>
-    </task>
     <task id="LOCAL-01241" summary="Added in progress bars">
       <created>1520075719466</created>
       <option name="number" value="01241" />
@@ -830,7 +823,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520091640497</updated>
     </task>
-    <option name="localTasksCounter" value="1289" />
+    <task id="LOCAL-01289" summary="Removed individual backgrounds from stat panels">
+      <created>1520091742022</created>
+      <option name="number" value="01289" />
+      <option name="presentableId" value="LOCAL-01289" />
+      <option name="project" value="LOCAL" />
+      <updated>1520091742022</updated>
+    </task>
+    <option name="localTasksCounter" value="1290" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -840,7 +840,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -910,7 +910,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Back to the drawing board" />
     <MESSAGE value="Going to attribute the stat panel to each random bean" />
     <MESSAGE value="Making changes to the enemy stat class to fit under a random bean" />
     <MESSAGE value="Working on entity stat panels" />
@@ -935,7 +934,8 @@
     <MESSAGE value="Increasing and decreasing counter" />
     <MESSAGE value="Added a list for stat panels" />
     <MESSAGE value="Stat panels get drawn by chunk controller after hud" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stat panels get drawn by chunk controller after hud" />
+    <MESSAGE value="Removed individual backgrounds from stat panels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed individual backgrounds from stat panels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1225,7 +1225,7 @@
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="506" column="67" lean-forward="true" selection-start-line="506" selection-start-column="67" selection-end-line="506" selection-end-column="67" />
+          <caret line="506" column="67" lean-forward="false" selection-start-line="506" selection-start-column="67" selection-end-line="506" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1233,7 +1233,7 @@
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1242,8 +1242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="587" column="28" lean-forward="true" selection-start-line="587" selection-start-column="28" selection-end-line="587" selection-end-column="28" />
+        <state relative-caret-position="332">
+          <caret line="583" column="44" lean-forward="true" selection-start-line="583" selection-start-column="44" selection-end-line="583" selection-end-column="44" />
           <folding />
         </state>
       </provider>
