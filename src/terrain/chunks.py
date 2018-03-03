@@ -122,7 +122,7 @@ class ChunkController:
 
         self.hud = hud.HUD(self.player, self)
 
-        self.hud.save_hud("main", ["health_display", "taskbar"])
+        self.hud.save_hud("main", ["backing", "health_display", "taskbar"])
         self.hud.load_saved_hud("main")
 
         del map_data
