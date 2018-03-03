@@ -7,6 +7,7 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,8 +81,8 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4020">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="317" column="28" lean-forward="false" selection-start-line="317" selection-start-column="28" selection-end-line="317" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -90,8 +91,8 @@
       <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="136" column="34" lean-forward="false" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+            <state relative-caret-position="660">
+              <caret line="195" column="38" lean-forward="false" selection-start-line="195" selection-start-column="38" selection-end-line="195" selection-end-column="38" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -487,13 +488,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01235" summary="Added use item function">
-      <created>1520074898253</created>
-      <option name="number" value="01235" />
-      <option name="presentableId" value="LOCAL-01235" />
-      <option name="project" value="LOCAL" />
-      <updated>1520074898254</updated>
-    </task>
     <task id="LOCAL-01236" summary="Using items decreases item count">
       <created>1520074934954</created>
       <option name="number" value="01236" />
@@ -830,7 +824,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520091331219</updated>
     </task>
-    <option name="localTasksCounter" value="1284" />
+    <task id="LOCAL-01284" summary="Added a stat panel state bool">
+      <created>1520091373519</created>
+      <option name="number" value="01284" />
+      <option name="presentableId" value="LOCAL-01284" />
+      <option name="project" value="LOCAL" />
+      <updated>1520091373519</updated>
+    </task>
+    <option name="localTasksCounter" value="1285" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -910,7 +911,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Can toggle EnemyStat on/off" />
     <MESSAGE value="Linked EnemyStat to HUD" />
     <MESSAGE value="Created a move function" />
     <MESSAGE value="Implementing enemy stats" />
@@ -935,7 +935,8 @@
     <MESSAGE value="Adding more components to backing" />
     <MESSAGE value="Added a counter for number of stat panels" />
     <MESSAGE value="Added inputs to create stat panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added inputs to create stat panel" />
+    <MESSAGE value="Added a stat panel state bool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a stat panel state bool" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1190,14 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="116" column="39" lean-forward="false" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3720">
@@ -1230,18 +1223,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="116" column="39" lean-forward="false" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4020">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="317" column="28" lean-forward="false" selection-start-line="317" selection-start-column="28" selection-end-line="317" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="136" column="34" lean-forward="false" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+        <state relative-caret-position="660">
+          <caret line="195" column="38" lean-forward="false" selection-start-line="195" selection-start-column="38" selection-end-line="195" selection-end-column="38" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

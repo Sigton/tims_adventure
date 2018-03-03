@@ -134,7 +134,7 @@ class RandomBean:
             self.interaction_icon.on()
 
         self.stat_panel = None
-        self.stat_panel_on = False
+        self.stat_panel_active = False
 
         if self.meta.evil:
             self.image = self.images["GR"]
@@ -188,10 +188,12 @@ class RandomBean:
     def stat_panel_on(self, panel_id, x, y):
 
         self.stat_panel = hud_widgets.EnemyStat(self, x+5, y+(43*panel_id)+273)
+        self.stat_panel_active = True
 
     def stat_panel_off(self):
 
         self.stat_panel = None
+        self.stat_panel_active = False
 
 
 class Item(icons.Icon):
