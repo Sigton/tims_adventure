@@ -133,7 +133,7 @@ class RandomBean:
             self.interaction_icon = icons.ImportantPressSpace(self.rect.centerx, self.rect.y - 35)
             self.interaction_icon.on()
 
-        self.stat_panel = hud_widgets.EnemyStat(self, self.rect.x-230, self.rect.y)
+        self.stat_panel = None
 
         if self.meta.evil:
             self.image = self.images["GR"]
@@ -169,6 +169,9 @@ class RandomBean:
         if self.interaction_icon is not None:
             self.interaction_icon.update()
 
+        if self.stat_panel is not None:
+            self.stat_panel.update()
+
     def draw(self, display):
 
         self.shadow.draw(display)
@@ -177,6 +180,17 @@ class RandomBean:
 
         if self.interaction_icon is not None:
             self.interaction_icon.draw(display)
+
+        if self.stat_panel is not None:
+            self.stat_panel.draw(display)
+
+    def stat_panel_on(self):
+
+        self.stat_panel = hud_widgets.EnemyStat(self, self.rect.x - 230, self.rect.y)
+
+    def stat_panel_off(self):
+
+        self.stat_panel = None
 
 
 class Item(icons.Icon):
