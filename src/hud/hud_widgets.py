@@ -507,7 +507,7 @@ class ItemSelect(InventoryDisplay):
                 self.selected_item = (self.selected_item+1) % len(self.items)
 
             elif e.key == K_SPACE:
-                self.master.use_item(self.selected_item)
+                self.master.use_item(self.items[self.selected_item])
 
     def refresh(self):
 
