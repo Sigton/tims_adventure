@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/engines/story_tracker.py" afterPath="$PROJECT_DIR$/src/engines/story_tracker.py" />
+      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="812">
@@ -57,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="411" column="0" lean-forward="true" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
+            <state relative-caret-position="692">
+              <caret line="416" column="21" lean-forward="true" selection-start-line="416" selection-start-column="21" selection-end-line="416" selection-end-column="21" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -204,9 +204,9 @@
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
   </component>
@@ -432,13 +432,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01186" summary="Removing unnecessary function calls">
-      <created>1519982099803</created>
-      <option name="number" value="01186" />
-      <option name="presentableId" value="LOCAL-01186" />
-      <option name="project" value="LOCAL" />
-      <updated>1519982099804</updated>
     </task>
     <task id="LOCAL-01187" summary="Cleaning up a bit">
       <created>1519982270147</created>
@@ -776,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520074807098</updated>
     </task>
-    <option name="localTasksCounter" value="1235" />
+    <task id="LOCAL-01235" summary="Added use item function">
+      <created>1520074898253</created>
+      <option name="number" value="01235" />
+      <option name="presentableId" value="LOCAL-01235" />
+      <option name="project" value="LOCAL" />
+      <updated>1520074898254</updated>
+    </task>
+    <option name="localTasksCounter" value="1236" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,7 +856,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating tooltip class" />
     <MESSAGE value="Added some components to tooltip" />
     <MESSAGE value="Fixed widths and heights" />
     <MESSAGE value="Added component list and draw function" />
@@ -881,7 +880,8 @@
     <MESSAGE value="Defining can_use_item" />
     <MESSAGE value="Defined get_amount_of" />
     <MESSAGE value="Finished can_use_item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished can_use_item" />
+    <MESSAGE value="Added use item function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added use item function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1147,16 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="411" column="0" lean-forward="true" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -1186,6 +1176,16 @@
         <state relative-caret-position="812">
           <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="416" column="21" lean-forward="true" selection-start-line="416" selection-start-column="21" selection-end-line="416" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
