@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
+      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="499" column="0" lean-forward="false" selection-start-line="499" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="506" column="77" lean-forward="false" selection-start-line="506" selection-start-column="77" selection-end-line="506" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -32,6 +32,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
               <caret line="173" column="12" lean-forward="false" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -160,11 +170,11 @@
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
-        <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/entities/entities.py" />
       </list>
     </option>
   </component>
@@ -208,6 +218,12 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="duel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -378,13 +394,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01174" summary="Added display name to inventory items">
-      <created>1519926665215</created>
-      <option name="number" value="01174" />
-      <option name="presentableId" value="LOCAL-01174" />
-      <option name="project" value="LOCAL" />
-      <updated>1519926665215</updated>
     </task>
     <task id="LOCAL-01175" summary="Now displays display name instead of id">
       <created>1519926743108</created>
@@ -722,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520069359528</updated>
     </task>
-    <option name="localTasksCounter" value="1223" />
+    <task id="LOCAL-01223" summary="Debugging">
+      <created>1520069578029</created>
+      <option name="number" value="01223" />
+      <option name="presentableId" value="LOCAL-01223" />
+      <option name="project" value="LOCAL" />
+      <updated>1520069578029</updated>
+    </task>
+    <option name="localTasksCounter" value="1224" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,7 +748,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14872068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -821,13 +837,13 @@
     <MESSAGE value="Added tooltips to the taskbar" />
     <MESSAGE value="Working on the tooltips when hovering on the buttons" />
     <MESSAGE value="Added to tooltip.update" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Added in more tooltips" />
     <MESSAGE value="Added new potion to icons.png" />
     <MESSAGE value="Created new potion class" />
     <MESSAGE value="Added data about Health Potions" />
     <MESSAGE value="When hud is open events get passed along and handled by the widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="When hud is open events get passed along and handled by the widget" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1099,17 +1115,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="506" column="77" lean-forward="false" selection-start-line="506" selection-start-column="77" selection-end-line="506" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1122,10 +1139,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="499" column="0" lean-forward="false" selection-start-line="499" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
+        <state relative-caret-position="680">
+          <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
           <folding />
         </state>
       </provider>
