@@ -134,6 +134,7 @@ class RandomBean:
             self.interaction_icon.on()
 
         self.stat_panel = None
+        self.stat_panel_on = False
 
         if self.meta.evil:
             self.image = self.images["GR"]
