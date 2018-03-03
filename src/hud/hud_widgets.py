@@ -551,6 +551,8 @@ class EnemyStat:
         self.x = x
         self.y = y
 
+        self.enemy_meta = enemy_meta
+
         self.background = gui_components.Fill(self.x, self.y, 200, 70, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 190, 60, constants.GUI_FILL)
 
@@ -558,6 +560,9 @@ class EnemyStat:
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
         self.xp_bar = gui_components.ProgressBar(self.x+9, self.y+35, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
+
+        self.health_bar.update(self.enemy_meta.hp/self.enemy_meta.max_hp)
+        self.xp_bar.update(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold())
 
         self.components = [
             self.background,
@@ -568,7 +573,8 @@ class EnemyStat:
 
     def update(self):
 
-        pass
+        self.health_bar.update(self.enemy_meta.hp/self.enemy_meta.max_hp)
+        self.xp_bar.update(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold())
 
     def draw(self, display):
 
