@@ -601,7 +601,7 @@ class EnemyStat:
 
         self.background.rect.topleft = [x, y]
         self.health_bar.rect.topleft = [x+4, y+22]
-        self.health_bar.rect.topleft = [x+4, y+30]
+        self.xp_bar.rect.topleft = [x+4, y+30]
 
     def update(self):
 
