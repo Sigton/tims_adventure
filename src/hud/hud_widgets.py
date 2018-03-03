@@ -280,7 +280,7 @@ class SaveSelect:
             self.refresh()
 
             if self.selected_save >= len(self.saves):
-                self.selected_save -= 1
+                self.selected_save = len(self.saves)-1
 
         elif button_id == 3:
             self.controller.close_widget(self.id)

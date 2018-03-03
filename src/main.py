@@ -219,6 +219,9 @@ class Main:
 
         self.update_save()
         self.current_save = ""
+        if self.after_load == 2:
+            self.menu.hud.get_component("save_select").refresh()
+            self.menu.hud.update()
 
 
 if __name__ == "__main__":
