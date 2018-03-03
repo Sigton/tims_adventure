@@ -7,6 +7,7 @@ from src.duel.duel_players import DuelPlayer
 from src.duel.moves import moves
 from src.engines import brain
 from src.hud import hud
+from src.entities import entity_meta
 
 import math
 import random
@@ -413,4 +414,8 @@ class DuelController:
 
     def use_item(self, item):
 
-        print(item)
+        self.turn = 1
+        self.turn_cool_down = constants.turn_cool_down
+        self.hud_open = False
+
+        exec(entity_meta.item_effects[item[0]])
