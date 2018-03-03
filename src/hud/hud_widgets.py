@@ -128,7 +128,7 @@ class HealthDisplay:
                 self.xp_bar.rect.top = self.y+34 + 35 * self.active_bean_stat
 
                 self.level_label.rect.top = self.y+41 + 35 * self.active_bean_stat
-                self.level_label.rect.x = self.x + 119
+                self.level_label.rect.right = self.x + 193
 
                 panel_idx += 1
             self.update_required = False
