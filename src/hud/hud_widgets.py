@@ -546,11 +546,12 @@ class ItemSelect(InventoryDisplay):
 
 class EnemyStat:
 
-    def __init__(self, x, y):
+    def __init__(self, master, x, y):
 
         self.x = x
         self.y = y
 
+        self.master = master
         self.enemy_meta = None
 
         self.background = gui_components.Fill(self.x, self.y, 200, 70, constants.GUI_BACKING)
