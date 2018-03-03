@@ -535,3 +535,11 @@ class ItemSelect(InventoryDisplay):
     def update(self):
 
         self.pointer.realign(self.x+10, self.y+59+(40*self.selected_item))
+
+
+class EnemyStat:
+
+    def __init__(self, x, y, enemy_meta):
+
+        self.x = x
+        self.y = y
