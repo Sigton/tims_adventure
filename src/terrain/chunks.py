@@ -311,10 +311,12 @@ class ChunkController:
                     if distance < constants.interaction_distance:
                         entity.interaction_icon.on()
                         if not entity.stat_panel_active:
+                            self.other_bean_stat_count += 1
                             entity.stat_panel_on()
                     else:
                         entity.interaction_icon.off()
                         if entity.stat_panel_active:
+                            self.other_bean_stat_count -= 1
                             entity.stat_panel_off()
 
                 elif entity.pickup:
