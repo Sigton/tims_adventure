@@ -21,3 +21,8 @@ entity_data = {
     "what": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100},
     "chicken": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100}
 }
+
+item_effects = {
+    "EnlightenmentPotion": "",
+    "HealingPotion": ""
+}
