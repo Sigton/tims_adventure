@@ -308,8 +308,10 @@ class ChunkController:
 
                     if distance < constants.interaction_distance:
                         entity.interaction_icon.on()
+                        entity.stat_panel_on()
                     else:
                         entity.interaction_icon.off()
+                        entity.stat_panel_off()
 
                 elif entity.pickup:
                     self.master.story_tracker.add_item(entity.__class__.__name__, 1)
