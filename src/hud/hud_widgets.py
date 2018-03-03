@@ -540,6 +540,9 @@ class ItemSelect(InventoryDisplay):
         else:
             self.pointer.on()
 
+        if self.selected_item > len(self.items)-1:
+            self.selected_item = len(self.items)-1
+
 
 class EnemyStat:
 
