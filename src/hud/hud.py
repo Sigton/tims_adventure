@@ -15,7 +15,7 @@ class HUD:
         self.player = player
         self.master = master
 
-        self.health_display = lambda: hud_widgets.HealthDisplay(self.player, self.master, self)
+        self.health_display = lambda: hud_widgets.HealthDisplay(self.player, self.master, self, 0, 34)
         self.bean_select = lambda: hud_widgets.BeanSelectPopup(self.player, self.master, self, 297, 452)
         self.save_select = lambda: hud_widgets.SaveSelect(self.master, self, 238, 178)
         self.taskbar = lambda: hud_widgets.Taskbar(self.master, self, 900, 274)

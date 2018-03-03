@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud.py" afterPath="$PROJECT_DIR$/src/hud/hud.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,21 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+            <state relative-caret-position="336">
+              <caret line="23" column="94" lean-forward="false" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="218">
+              <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -236,8 +236,8 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud.py" />
       </list>
     </option>
   </component>
@@ -476,13 +476,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01229" summary="Implementing item effects">
-      <created>1520073524138</created>
-      <option name="number" value="01229" />
-      <option name="presentableId" value="LOCAL-01229" />
-      <option name="project" value="LOCAL" />
-      <updated>1520073524138</updated>
     </task>
     <task id="LOCAL-01230" summary="Added effect for health potion">
       <created>1520073765063</created>
@@ -820,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520089653255</updated>
     </task>
-    <option name="localTasksCounter" value="1278" />
+    <task id="LOCAL-01278" summary="Finished off the backing class infrastructure">
+      <created>1520089685458</created>
+      <option name="number" value="01278" />
+      <option name="presentableId" value="LOCAL-01278" />
+      <option name="project" value="LOCAL" />
+      <updated>1520089685458</updated>
+    </task>
+    <option name="localTasksCounter" value="1279" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -900,7 +900,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Saves game when exiting to menu" />
     <MESSAGE value="Dont want to call update_save twice consecutively" />
     <MESSAGE value="Working on the progress bars" />
     <MESSAGE value="Added a bool to tell when the enemy stats open" />
@@ -925,7 +924,8 @@
     <MESSAGE value="Implemented backing" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Adding draw and update functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding draw and update functions" />
+    <MESSAGE value="Finished off the backing class infrastructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished off the backing class infrastructure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1214,14 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3720">
@@ -1232,8 +1224,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+        <state relative-caret-position="336">
+          <caret line="23" column="94" lean-forward="false" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding />
         </state>
       </provider>
