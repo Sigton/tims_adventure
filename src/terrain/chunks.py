@@ -92,6 +92,8 @@ class ChunkController:
         self.bean_select_popup_open = False
         self.enemy_to_duel = None
 
+        self.enemy_stat_on = False
+
         self.update_health_counter = 0
 
     def load_from_save(self, save_dir):
@@ -308,8 +310,10 @@ class ChunkController:
 
                     if distance < constants.interaction_distance:
                         entity.interaction_icon.on()
+                        self.enemy_stat_on = True
                     else:
                         entity.interaction_icon.off()
+                        self.enemy_stat_on = False
                 elif entity.pickup:
                     self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                     self.map_tiles[chunk].remove_entity(entity)
