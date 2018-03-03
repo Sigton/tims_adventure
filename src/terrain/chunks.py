@@ -313,6 +313,7 @@ class ChunkController:
                         entity.interaction_icon.off()
                 elif entity.pickup:
                     self.master.story_tracker.add_item(entity.__class__.__name__, 1)
+                    self.map_tiles[chunk].remove_entity(entity)
 
         self.player.update(self.direction)
         self.update_chunks()
