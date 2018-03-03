@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="553" column="31" lean-forward="true" selection-start-line="553" selection-start-column="31" selection-end-line="553" selection-end-column="31" />
+            <state relative-caret-position="-444">
+              <caret line="561" column="33" lean-forward="false" selection-start-line="561" selection-start-column="33" selection-end-line="561" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="315" column="25" lean-forward="true" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+            <state relative-caret-position="280">
+              <caret line="306" column="112" lean-forward="true" selection-start-line="306" selection-start-column="112" selection-end-line="306" selection-end-column="112" />
               <folding />
             </state>
           </provider>
@@ -214,8 +214,8 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
   </component>
@@ -454,13 +454,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01211" summary="Switching tooltips on and off">
-      <created>1520015139125</created>
-      <option name="number" value="01211" />
-      <option name="presentableId" value="LOCAL-01211" />
-      <option name="project" value="LOCAL" />
-      <updated>1520015139125</updated>
     </task>
     <task id="LOCAL-01212" summary="Added tooltips to the taskbar">
       <created>1520015285801</created>
@@ -798,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520085017506</updated>
     </task>
-    <option name="localTasksCounter" value="1260" />
+    <task id="LOCAL-01260" summary="Debugging">
+      <created>1520085116749</created>
+      <option name="number" value="01260" />
+      <option name="presentableId" value="LOCAL-01260" />
+      <option name="project" value="LOCAL" />
+      <updated>1520085116749</updated>
+    </task>
+    <option name="localTasksCounter" value="1261" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -894,7 +894,6 @@
     <MESSAGE value="Duel controller saves save data" />
     <MESSAGE value="Saves game when exiting to menu" />
     <MESSAGE value="Dont want to call update_save twice consecutively" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Working on the progress bars" />
     <MESSAGE value="Added a bool to tell when the enemy stats open" />
     <MESSAGE value="Allowing entity_meta to be None" />
@@ -903,7 +902,8 @@
     <MESSAGE value="Linked EnemyStat to HUD" />
     <MESSAGE value="Created a move function" />
     <MESSAGE value="Implementing enemy stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing enemy stats" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,10 +1187,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="315" column="25" lean-forward="true" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+        <state relative-caret-position="-444">
+          <caret line="561" column="33" lean-forward="false" selection-start-line="561" selection-start-column="33" selection-end-line="561" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1203,10 +1203,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="553" column="31" lean-forward="true" selection-start-line="553" selection-start-column="31" selection-end-line="553" selection-end-column="31" />
+        <state relative-caret-position="280">
+          <caret line="306" column="112" lean-forward="true" selection-start-line="306" selection-start-column="112" selection-end-line="306" selection-end-column="112" />
           <folding />
         </state>
       </provider>

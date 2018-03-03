@@ -309,13 +309,13 @@ class ChunkController:
                     if distance < constants.interaction_distance:
                         enemy_stats = self.hud.get_component("enemy_stats")
                         entity.interaction_icon.on()
-                        enemy_stats.on()
+                        enemy_stats.set_on()
                         if not enemy_stats.entity_meta == entity.meta:
                             enemy_stats.assign_entity(entity)
                         enemy_stats.move(entity.rect.x-230, entity.rect.y)
                     else:
                         entity.interaction_icon.off()
-                        self.hud.get_component("enemy_stats").on()
+                        self.hud.get_component("enemy_stats").set_off()
                 elif entity.pickup:
                     self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                     self.map_tiles[chunk].remove_entity(entity)
