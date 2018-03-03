@@ -348,9 +348,9 @@ class Taskbar:
         self.map_button = gui_components.Button(hud_image_loader.load_images("map_button"),
                                                 self.x, self.y+112, lambda: self.callback(2))
 
-        self.inventory_tooltip = gui_components.Tooltip("Inventory", 0, 0, 20, constants.BLACK)
-        self.journal_tooltip = gui_components.Tooltip("Journal", 0, 0, 20, constants.BLACK)
-        self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK)
+        self.inventory_tooltip = gui_components.Tooltip("Inventory", 0, 0, 20, constants.BLACK, "L")
+        self.journal_tooltip = gui_components.Tooltip("Journal", 0, 0, 20, constants.BLACK, "L")
+        self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK, "L")
 
         self.buttons = [
             self.inventory_button,
