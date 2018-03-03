@@ -29,8 +29,6 @@ class HealthDisplay:
 
         self.id = "health_display"
 
-        self.background = gui_components.Fill(self.x, self.y, 200, 209, constants.GUI_BACKING)
-
         self.bean_stats = [gui_components.Fill(self.x+5, self.y+5+35*n, 190, 30, constants.GUI_FILL)
                            for n in range(len(self.player.beans))]
         self.health_bars = [gui_components.ProgressBar(self.x+9, self.y+27+36*n, 182, 5,
@@ -47,8 +45,7 @@ class HealthDisplay:
         self.level_label = gui_components.Label(self.x, self.y+41+35*self.active_bean_stat, "Level {}".format(
             self.player.beans[self.active_bean_stat].meta.level), False, 20, constants.BLACK)
 
-        self.components = [self.background] + self.bean_stats + self.health_bars + self.bean_labels +\
-                          [self.xp_bar, self.level_label]
+        self.components = self.bean_stats + self.health_bars + self.bean_labels + [self.xp_bar, self.level_label]
 
         self.update_required = True
 
@@ -104,7 +101,7 @@ class HealthDisplay:
                 self.xp_bar.rect.top = self.y+34 + 35 * self.active_bean_stat
 
                 self.level_label.rect.top = self.y+41 + 35 * self.active_bean_stat
-                self.level_label.rect.right = self.background.rect.right - 7
+                self.level_label.rect.x = self.x + 119
 
                 panel_idx += 1
             self.update_required = False
