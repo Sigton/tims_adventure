@@ -570,7 +570,7 @@ class EnemyStat:
             self.xp_bar
         ]
 
-        self.on = False
+        self.on = True
 
     def move(self, x, y):
 
