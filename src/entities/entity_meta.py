@@ -24,5 +24,5 @@ entity_data = {
 
 item_effects = {
     "EnlightenmentPotion": "",
-    "HealingPotion": ""
+    "HealingPotion": "self.player.meta.heal(20)"
 }
