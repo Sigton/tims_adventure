@@ -38,7 +38,7 @@ class StoryTracker:
             self.add_item(item, 0)
             return False
         else:
-            pass
+            return amount > self.get_amount_of(item)
 
     def get_amount_of(self, item):
 
