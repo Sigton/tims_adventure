@@ -322,6 +322,10 @@ class ChunkController:
                             self.other_bean_stat_panels.remove(entity.stat_panel)
                             entity.stat_panel_off()
 
+                            if self.other_bean_stat_count > -1:
+                                for panel in self.other_bean_stat_panels:
+                                    pass
+
                 elif entity.pickup:
                     self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                     self.map_tiles[chunk].remove_entity(entity)
