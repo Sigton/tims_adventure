@@ -186,7 +186,7 @@ class RandomBean:
 
     def stat_panel_on(self):
 
-        self.stat_panel = hud_widgets.EnemyStat(self, self.rect.x - 230, self.rect.y)
+        self.stat_panel = hud_widgets.EnemyStat(self, self.rect.x - 205, self.rect.y)
 
     def stat_panel_off(self):
 
