@@ -595,7 +595,8 @@ class EnemyStat:
             self.background,
             self.health_bar,
             self.xp_bar,
-            self.bean_name
+            self.bean_name,
+            self.bean_level
         ]
 
         self.on = True
@@ -609,6 +610,7 @@ class EnemyStat:
         self.health_bar.rect.topleft = [x+4, y+20]
         self.xp_bar.rect.topleft = [x+4, y+28]
         self.bean_name.rect.topleft = [x+4, y-2]
+        self.bean_level.rect.topright = [x+188, y-2]
 
     def update(self):
 
