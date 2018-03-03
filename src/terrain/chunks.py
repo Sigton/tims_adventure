@@ -95,6 +95,7 @@ class ChunkController:
         self.update_health_counter = 0
 
         self.other_bean_stat_count = -1
+        self.other_bean_stat_panels = []
 
     def load_from_save(self, save_dir):
 
@@ -312,7 +313,7 @@ class ChunkController:
                         entity.interaction_icon.on()
                         if not entity.stat_panel_active:
                             self.other_bean_stat_count += 1
-                            entity.stat_panel_on()
+                            entity.stat_panel_on(self.other_bean_stat_count, 0, 0)
                     else:
                         entity.interaction_icon.off()
                         if entity.stat_panel_active:
