@@ -543,3 +543,11 @@ class EnemyStat:
 
         self.x = x
         self.y = y
+
+        self.background = gui_components.Fill(self.x, self.y, 200, 70, constants.GUI_BACKING)
+        self.background_fill = gui_components.Fill(self.x+5, self.y+5, 190, 60, constants.GUI_FILL)
+
+        self.components = [
+            self.background,
+            self.background_fill
+        ]
