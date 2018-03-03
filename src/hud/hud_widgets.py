@@ -585,11 +585,15 @@ class EnemyStat:
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
         self.xp_bar = gui_components.ProgressBar(self.x+4, self.y+30, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
+        self.bean_name = gui_components.Label(self.x+4, self.y-2, "{}{} Bean".format(self.enemy_meta.bean[0].upper(),
+                                                                                     self.enemy_meta.bean[1:]),
+                                              False, 20, constants.BLACK)
 
         self.components = [
             self.background,
             self.health_bar,
-            self.xp_bar
+            self.xp_bar,
+            self.bean_name
         ]
 
         self.on = True
@@ -602,6 +606,7 @@ class EnemyStat:
         self.background.rect.topleft = [x, y]
         self.health_bar.rect.topleft = [x+4, y+20]
         self.xp_bar.rect.topleft = [x+4, y+28]
+        self.bean_name.rect.topleft = [x+4, y-2]
 
     def update(self):
 
