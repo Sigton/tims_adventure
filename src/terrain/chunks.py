@@ -310,7 +310,7 @@ class ChunkController:
                         enemy_stats = self.hud.get_component("enemy_stats")
                         entity.interaction_icon.on()
                         enemy_stats.set_on()
-                        if not enemy_stats.entity_meta == entity.meta:
+                        if not enemy_stats.enemy_meta == entity.meta:
                             enemy_stats.assign_entity(entity)
                         enemy_stats.move(entity.rect.x-230, entity.rect.y)
                     else:
