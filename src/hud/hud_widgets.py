@@ -14,6 +14,16 @@ displayed in the heads-up display
 """
 
 
+class Backing:
+
+    def __init__(self, x, y):
+
+        self.x = x
+        self.y = y
+
+        self.background = gui_components.Fill(self.x, self.y, 200, 488, constants.GUI_BACKING)
+
+
 class HealthDisplay:
 
     def __init__(self, player, master, controller, x=0, y=0):
