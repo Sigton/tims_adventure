@@ -546,15 +546,14 @@ class ItemSelect(InventoryDisplay):
 
 class EnemyStat:
 
-    def __init__(self, master, x, y):
+    def __init__(self, entity, x, y):
 
         self.x = x
         self.y = y
 
         self.id = "enemy_stats"
 
-        self.master = master
-        self.enemy_meta = None
+        self.enemy_meta = entity.meta
 
         self.background = gui_components.Fill(self.x, self.y, 200, 70, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 190, 60, constants.GUI_FILL)
@@ -582,10 +581,6 @@ class EnemyStat:
         self.background_fill.rect.topleft = [x+5, y+5]
         self.health_bar.rect.topleft = [x+9, y+27]
         self.health_bar.rect.topleft = [x+9, y+35]
-
-    def assign_entity(self, entity):
-
-        self.enemy_meta = entity.meta
 
     def update(self):
 
