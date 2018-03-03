@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/engines/story_tracker.py" afterPath="$PROJECT_DIR$/src/engines/story_tracker.py" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,21 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
+            <state relative-caret-position="616">
               <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="319" column="63" lean-forward="false" selection-start-line="319" selection-start-column="63" selection-end-line="319" selection-end-column="63" />
+            <state relative-caret-position="180">
+              <caret line="314" column="83" lean-forward="false" selection-start-line="314" selection-start-column="83" selection-end-line="314" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -185,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
@@ -197,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
   </component>
@@ -443,13 +443,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01193" summary="Adding more text">
-      <created>1519983833843</created>
-      <option name="number" value="01193" />
-      <option name="presentableId" value="LOCAL-01193" />
-      <option name="project" value="LOCAL" />
-      <updated>1519983833843</updated>
     </task>
     <task id="LOCAL-01194" summary="Created new list of components">
       <created>1519984027664</created>
@@ -787,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520075719466</updated>
     </task>
-    <option name="localTasksCounter" value="1242" />
+    <task id="LOCAL-01242" summary="Now removes item from inventory when you run out">
+      <created>1520076089462</created>
+      <option name="number" value="01242" />
+      <option name="presentableId" value="LOCAL-01242" />
+      <option name="project" value="LOCAL" />
+      <updated>1520076089462</updated>
+    </task>
+    <option name="localTasksCounter" value="1243" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -867,7 +867,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added tooltips to the taskbar" />
     <MESSAGE value="Working on the tooltips when hovering on the buttons" />
     <MESSAGE value="Added to tooltip.update" />
     <MESSAGE value="Added in more tooltips" />
@@ -892,7 +891,8 @@
     <MESSAGE value="Adding some components" />
     <MESSAGE value="Added update and draw functions" />
     <MESSAGE value="Added in progress bars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in progress bars" />
+    <MESSAGE value="Now removes item from inventory when you run out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now removes item from inventory when you run out" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1144,14 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="319" column="63" lean-forward="false" selection-start-line="319" selection-start-column="63" selection-end-line="319" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1196,8 +1188,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
+        <state relative-caret-position="616">
           <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="314" column="83" lean-forward="false" selection-start-line="314" selection-start-column="83" selection-end-line="314" selection-end-column="83" />
           <folding />
         </state>
       </provider>
