@@ -171,7 +171,7 @@ class DuelController:
                 if event.key == K_F11:
                     self.master.set_full_screen()
 
-            elif self.hud_open:
+            if self.hud_open:
                 self.hud.get_component("item_select").handle_event(event)
 
         if self.game_won:
