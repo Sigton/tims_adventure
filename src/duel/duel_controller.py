@@ -410,3 +410,7 @@ class DuelController:
             choices += [3 for n in range(6)]
 
         return random.choice(choices)
+
+    def use_item(self, item):
+
+        print(item)
