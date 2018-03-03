@@ -245,12 +245,13 @@ class Tooltip:
     def update(self):
         pass
 
-    def reposition(self):
-        self.rect.x = self.background.rect.x
-        self.rect.y = self.background.rect.y
+    def reposition(self, pos):
+        self.x = pos[0] if self.direction == "R" else pos[0]-self.background.rect.width
+        self.y = pos[1]
 
-        self.background_fill.rect.topleft = (self.rect.x+4, self.rect.y+4)
-        self.text.rect.topleft = (self.rect.x+8, self.rect.y+2)
+        self.background.rect.topleft = (self.x, self.y)
+        self.background_fill.rect.topleft = (self.x+4, self.y+4)
+        self.text.rect.topleft = (self.x+8, self.y+2)
 
     def draw(self, display):
 

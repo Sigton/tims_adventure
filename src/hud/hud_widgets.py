@@ -401,22 +401,19 @@ class Taskbar:
 
         if self.inventory_button.active:
             self.inventory_tooltip.set_on()
-            self.inventory_tooltip.rect.topright = pygame.mouse.get_pos()
-            self.inventory_tooltip.reposition()
+            self.inventory_tooltip.reposition(pygame.mouse.get_pos())
         else:
             self.inventory_tooltip.set_off()
 
         if self.journal_button.active:
             self.journal_tooltip.set_on()
-            self.journal_tooltip.rect.topright = pygame.mouse.get_pos()
-            self.journal_tooltip.reposition()
+            self.journal_tooltip.reposition(pygame.mouse.get_pos())
         else:
             self.journal_tooltip.set_off()
 
         if self.map_button.active:
             self.map_tooltip.set_on()
-            self.map_tooltip.rect.topright = pygame.mouse.get_pos()
-            self.map_tooltip.reposition()
+            self.map_tooltip.reposition(pygame.mouse.get_pos())
         else:
             self.map_tooltip.set_off()
 
