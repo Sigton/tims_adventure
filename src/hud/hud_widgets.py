@@ -547,9 +547,16 @@ class EnemyStat:
         self.background = gui_components.Fill(self.x, self.y, 200, 70, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 190, 60, constants.GUI_FILL)
 
+        self.health_bar = gui_components.ProgressBar(self.x+9, self.y+27, 182, 5,
+                                                     (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
+        self.xp_bar = gui_components.ProgressBar(self.x+9, self.y+35, 182, 5,
+                                                 (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
+
         self.components = [
             self.background,
-            self.background_fill
+            self.background_fill,
+            self.health_bar,
+            self.xp_bar
         ]
 
     def update(self):
