@@ -37,7 +37,7 @@ class Backing:
 
 class HealthDisplay:
 
-    def __init__(self, player, master, controller, x=0, y=0):
+    def __init__(self, player, master, controller, x, y):
 
         self.player = player
         self.master = master
@@ -111,9 +111,9 @@ class HealthDisplay:
                 else:
                     stat_panel.resize(stat_panel.rect.width, 30)
                 if panel_idx == 0:
-                    stat_panel.rect.top = self.x+5
-                    self.health_bars[panel_idx].rect.top = self.x+27
-                    self.bean_labels[panel_idx].rect.top = self.x+3
+                    stat_panel.rect.top = self.y+5
+                    self.health_bars[panel_idx].rect.top = self.y+27
+                    self.bean_labels[panel_idx].rect.top = self.y+3
                 else:
                     stat_panel.rect.top = self.bean_stats[panel_idx-1].rect.bottom + 5
                     self.health_bars[panel_idx].rect.top = self.bean_stats[panel_idx-1].rect.bottom + 27
