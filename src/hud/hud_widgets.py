@@ -546,12 +546,12 @@ class ItemSelect(InventoryDisplay):
 
 class EnemyStat:
 
-    def __init__(self, x, y, enemy_meta):
+    def __init__(self, x, y):
 
         self.x = x
         self.y = y
 
-        self.enemy_meta = enemy_meta
+        self.enemy_meta = None
 
         self.background = gui_components.Fill(self.x, self.y, 200, 70, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 190, 60, constants.GUI_FILL)
@@ -573,8 +573,9 @@ class EnemyStat:
 
     def update(self):
 
-        self.health_bar.update(self.enemy_meta.hp/self.enemy_meta.max_hp)
-        self.xp_bar.update(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold())
+        if self.enemy_meta is not None:
+            self.health_bar.update(self.enemy_meta.hp/self.enemy_meta.max_hp)
+            self.xp_bar.update(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold())
 
     def draw(self, display):
 
