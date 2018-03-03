@@ -551,6 +551,8 @@ class EnemyStat:
         self.x = x
         self.y = y
 
+        self.id = "enemy_stats"
+
         self.master = master
         self.enemy_meta = None
 
@@ -561,9 +563,6 @@ class EnemyStat:
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
         self.xp_bar = gui_components.ProgressBar(self.x+9, self.y+35, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
-
-        self.health_bar.update(self.enemy_meta.hp/self.enemy_meta.max_hp)
-        self.xp_bar.update(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold())
 
         self.components = [
             self.background,
