@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
+      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,42 +16,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="247" column="44" lean-forward="false" selection-start-line="247" selection-start-column="44" selection-end-line="247" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="387" column="45" lean-forward="true" selection-start-line="387" selection-start-column="45" selection-end-line="387" selection-end-column="45" />
+            <state relative-caret-position="652">
+              <caret line="506" column="77" lean-forward="true" selection-start-line="506" selection-start-column="77" selection-end-line="506" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="219" column="32" lean-forward="true" selection-start-line="219" selection-start-column="32" selection-end-line="219" selection-end-column="32" />
+            <state relative-caret-position="460">
+              <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="174" column="0" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+            <state relative-caret-position="675">
+              <caret line="177" column="41" lean-forward="true" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -135,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/duel.py" />
         <option value="$PROJECT_DIR$/src/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_gui.py" />
@@ -180,12 +168,13 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
   </component>
@@ -211,7 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,13 +217,7 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="duel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -246,13 +229,13 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
+              <item name="terrain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,13 +388,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01172" summary="Debugging">
-      <created>1519926014581</created>
-      <option name="number" value="01172" />
-      <option name="presentableId" value="LOCAL-01172" />
-      <option name="project" value="LOCAL" />
-      <updated>1519926014581</updated>
     </task>
     <task id="LOCAL-01173" summary="Adding labels">
       <created>1519926624562</created>
@@ -749,17 +725,24 @@
       <option name="project" value="LOCAL" />
       <updated>1520021362459</updated>
     </task>
-    <option name="localTasksCounter" value="1221" />
+    <task id="LOCAL-01221" summary="Added data about Health Potions">
+      <created>1520021514976</created>
+      <option name="number" value="01221" />
+      <option name="presentableId" value="LOCAL-01221" />
+      <option name="project" value="LOCAL" />
+      <updated>1520021514976</updated>
+    </task>
+    <option name="localTasksCounter" value="1222" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14872068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -829,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding more text" />
     <MESSAGE value="Created new list of components" />
     <MESSAGE value="Defined a handle event function" />
     <MESSAGE value="Defined ItemSelect.update()" />
@@ -854,7 +836,8 @@
     <MESSAGE value="Added in more tooltips" />
     <MESSAGE value="Added new potion to icons.png" />
     <MESSAGE value="Created new potion class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new potion class" />
+    <MESSAGE value="Added data about Health Potions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added data about Health Potions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,14 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="712">
           <caret line="154" column="28" lean-forward="false" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="0" column="3840266" lean-forward="true" selection-start-line="0" selection-start-column="3840266" selection-end-line="0" selection-end-column="3840266" />
         </state>
       </provider>
     </entry>
@@ -1004,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="140" column="40" lean-forward="false" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
           <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,9 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-220">
           <caret line="40" column="106" lean-forward="true" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,25 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="122" column="23" lean-forward="false" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="895">
           <caret line="91" column="61" lean-forward="false" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,30 +1092,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="247" column="44" lean-forward="false" selection-start-line="247" selection-start-column="44" selection-end-line="247" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="387" column="45" lean-forward="true" selection-start-line="387" selection-start-column="45" selection-end-line="387" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="219" column="32" lean-forward="true" selection-start-line="219" selection-start-column="32" selection-end-line="219" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="352">
+          <caret line="0" column="3293549" lean-forward="false" selection-start-line="0" selection-start-column="3293549" selection-end-line="0" selection-end-column="3293549" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="174" column="0" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="506" column="77" lean-forward="true" selection-start-line="506" selection-start-column="77" selection-end-line="506" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="177" column="41" lean-forward="true" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
           <folding />
         </state>
       </provider>

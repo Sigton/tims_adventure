@@ -166,10 +166,13 @@ class DuelController:
             if event.type == QUIT:
                 self.master.game_exit = True
 
-            if event.type == KEYUP:
+            elif event.type == KEYUP:
 
                 if event.key == K_F11:
                     self.master.set_full_screen()
+
+            elif self.hud_open:
+                self.hud.get_component("item_select").handle_event(event)
 
         if self.game_won:
             if self.game_won_counter > 0:
