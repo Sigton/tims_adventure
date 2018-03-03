@@ -577,8 +577,7 @@ class EnemyStat:
 
         self.enemy_meta = entity.meta
 
-        self.background = gui_components.Fill(self.x, self.y, 200, 48, constants.GUI_BACKING)
-        self.background_fill = gui_components.Fill(self.x+5, self.y+5, 190, 38, constants.GUI_FILL)
+        self.background = gui_components.Fill(self.x, self.y, 190, 38, constants.GUI_FILL)
 
         self.health_bar = gui_components.ProgressBar(self.x+9, self.y+27, 182, 5,
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
@@ -587,7 +586,6 @@ class EnemyStat:
 
         self.components = [
             self.background,
-            self.background_fill,
             self.health_bar,
             self.xp_bar
         ]
@@ -600,7 +598,6 @@ class EnemyStat:
         self.y = y
 
         self.background.rect.topleft = [x, y]
-        self.background_fill.rect.topleft = [x+5, y+5]
         self.health_bar.rect.topleft = [x+9, y+27]
         self.health_bar.rect.topleft = [x+9, y+35]
 
