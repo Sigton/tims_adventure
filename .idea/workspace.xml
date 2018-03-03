@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" afterPath="$PROJECT_DIR$/src/entities/entities.py" />
       <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +81,8 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="97" column="39" lean-forward="false" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+            <state relative-caret-position="480">
+              <caret line="512" column="48" lean-forward="true" selection-start-line="512" selection-start-column="48" selection-end-line="512" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -90,8 +91,8 @@
       <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="195" column="38" lean-forward="false" selection-start-line="195" selection-start-column="38" selection-end-line="195" selection-end-column="38" />
+            <state relative-caret-position="240">
+              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -487,13 +488,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01238" summary="Creating enemy stat class">
-      <created>1520075308807</created>
-      <option name="number" value="01238" />
-      <option name="presentableId" value="LOCAL-01238" />
-      <option name="project" value="LOCAL" />
-      <updated>1520075308807</updated>
-    </task>
     <task id="LOCAL-01239" summary="Adding some components">
       <created>1520075415866</created>
       <option name="number" value="01239" />
@@ -830,7 +824,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520091482404</updated>
     </task>
-    <option name="localTasksCounter" value="1287" />
+    <task id="LOCAL-01287" summary="Added a list for stat panels">
+      <created>1520091558306</created>
+      <option name="number" value="01287" />
+      <option name="presentableId" value="LOCAL-01287" />
+      <option name="project" value="LOCAL" />
+      <updated>1520091558306</updated>
+    </task>
+    <option name="localTasksCounter" value="1288" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -910,7 +911,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing enemy stats" />
     <MESSAGE value="More debugging" />
     <MESSAGE value="Back to the drawing board" />
     <MESSAGE value="Going to attribute the stat panel to each random bean" />
@@ -935,7 +935,8 @@
     <MESSAGE value="Added a stat panel state bool" />
     <MESSAGE value="Functions only get executed once" />
     <MESSAGE value="Increasing and decreasing counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Increasing and decreasing counter" />
+    <MESSAGE value="Added a list for stat panels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a list for stat panels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1232,8 +1233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="195" column="38" lean-forward="false" selection-start-line="195" selection-start-column="38" selection-end-line="195" selection-end-column="38" />
+        <state relative-caret-position="240">
+          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1242,8 +1243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="97" column="39" lean-forward="false" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+        <state relative-caret-position="480">
+          <caret line="512" column="48" lean-forward="true" selection-start-line="512" selection-start-column="48" selection-end-line="512" selection-end-column="48" />
           <folding />
         </state>
       </provider>

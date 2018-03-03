@@ -314,10 +314,12 @@ class ChunkController:
                         if not entity.stat_panel_active:
                             self.other_bean_stat_count += 1
                             entity.stat_panel_on(self.other_bean_stat_count, 0, 0)
+                            self.other_bean_stat_panels.append(entity.stat_panel)
                     else:
                         entity.interaction_icon.off()
                         if entity.stat_panel_active:
                             self.other_bean_stat_count -= 1
+                            self.other_bean_stat_panels.remove(entity.stat_panel)
                             entity.stat_panel_off()
 
                 elif entity.pickup:
@@ -506,6 +508,7 @@ class ChunkController:
 
         if self.hud_on:
             self.hud.draw(display)
+            [panel.draw(display) for panel in self.other_bean_stat_panels]
 
     def assign_chunk_pos(self, chunk, movement):
 

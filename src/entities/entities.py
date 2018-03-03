@@ -182,9 +182,6 @@ class RandomBean:
         if self.interaction_icon is not None:
             self.interaction_icon.draw(display)
 
-        if self.stat_panel is not None:
-            self.stat_panel.draw(display)
-
     def stat_panel_on(self, panel_id, x, y):
 
         self.stat_panel = hud_widgets.EnemyStat(self, x+5, y+(43*panel_id)+273)
