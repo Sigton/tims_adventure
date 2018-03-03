@@ -23,6 +23,12 @@ class Backing:
 
         self.background = gui_components.Fill(self.x, self.y, 200, 488, constants.GUI_BACKING)
 
+    def update(self):
+        pass
+
+    def draw(self, display):
+        pass
+
 
 class HealthDisplay:
 
