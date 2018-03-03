@@ -571,6 +571,10 @@ class EnemyStat:
             self.xp_bar
         ]
 
+    def assign_entity(self, entity):
+
+        self.enemy_meta = entity.meta
+
     def update(self):
 
         if self.enemy_meta is not None:
