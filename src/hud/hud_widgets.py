@@ -571,6 +571,8 @@ class EnemyStat:
             self.xp_bar
         ]
 
+        self.on = False
+
     def assign_entity(self, entity):
 
         self.enemy_meta = entity.meta
@@ -583,4 +585,13 @@ class EnemyStat:
 
     def draw(self, display):
 
-        [component.draw(display) for component in self.components]
+        if self.on:
+            [component.draw(display) for component in self.components]
+
+    def set_on(self):
+
+        self.on = True
+
+    def set_off(self):
+
+        self.on = False

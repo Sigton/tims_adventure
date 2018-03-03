@@ -30,8 +30,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="575" column="37" lean-forward="false" selection-start-line="575" selection-start-column="37" selection-end-line="575" selection-end-column="37" />
+            <state relative-caret-position="692">
+              <caret line="592" column="22" lean-forward="true" selection-start-line="592" selection-start-column="22" selection-end-line="592" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -50,8 +50,8 @@
       <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6100">
-              <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+            <state relative-caret-position="640">
+              <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -455,13 +455,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01206" summary="Creating tooltip class">
-      <created>1520014090472</created>
-      <option name="number" value="01206" />
-      <option name="presentableId" value="LOCAL-01206" />
-      <option name="project" value="LOCAL" />
-      <updated>1520014090472</updated>
-    </task>
     <task id="LOCAL-01207" summary="Added some components to tooltip">
       <created>1520014278185</created>
       <option name="number" value="01207" />
@@ -798,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520081368861</updated>
     </task>
-    <option name="localTasksCounter" value="1255" />
+    <task id="LOCAL-01255" summary="Defined an assign entity function">
+      <created>1520081887066</created>
+      <option name="number" value="01255" />
+      <option name="presentableId" value="LOCAL-01255" />
+      <option name="project" value="LOCAL" />
+      <updated>1520081887066</updated>
+    </task>
+    <option name="localTasksCounter" value="1256" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -878,7 +878,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added event for space in select item menu" />
     <MESSAGE value="Defined use_item" />
     <MESSAGE value="Implementing item effects" />
     <MESSAGE value="Added effect for health potion" />
@@ -903,7 +902,8 @@
     <MESSAGE value="Working on the progress bars" />
     <MESSAGE value="Added a bool to tell when the enemy stats open" />
     <MESSAGE value="Allowing entity_meta to be None" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allowing entity_meta to be None" />
+    <MESSAGE value="Defined an assign entity function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined an assign entity function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,26 +1186,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="86" lean-forward="false" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6100">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+        <state relative-caret-position="640">
+          <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="575" column="37" lean-forward="false" selection-start-line="575" selection-start-column="37" selection-end-line="575" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="86" lean-forward="false" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+        <state relative-caret-position="692">
+          <caret line="592" column="22" lean-forward="true" selection-start-line="592" selection-start-column="22" selection-end-line="592" selection-end-column="22" />
           <folding />
         </state>
       </provider>
