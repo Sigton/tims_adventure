@@ -31,3 +31,11 @@ class StoryTracker:
             self.inventory[item][0] += amount
         else:
             self.inventory[item] = [amount, constants.item_display_names[item]]
+
+    def can_use_item(self, item, amount):
+
+        if item not in self.inventory.keys():
+            self.add_item(item, 0)
+            return False
+        else:
+            pass
