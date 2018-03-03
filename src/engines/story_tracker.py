@@ -1,3 +1,5 @@
+from src.etc import constants
+
 """
 story_tracker.py
 
@@ -22,3 +24,10 @@ class StoryTracker:
 
         return {"inventory": self.inventory,
                 "quests": self.quests}
+
+    def add_item(self, item, amount):
+
+        if item in self.inventory.keys():
+            self.inventory[item][0] += amount
+        else:
+            self.inventory[item] = [amount, constants.item_display_names[item]]
