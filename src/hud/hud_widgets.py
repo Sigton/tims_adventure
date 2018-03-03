@@ -506,6 +506,9 @@ class ItemSelect(InventoryDisplay):
             elif e.key in (K_DOWN, K_s):
                 self.selected_item = (self.selected_item+1) % len(self.items)
 
+            elif e.key == K_SPACE:
+                self.master.use_item(self.selected_item)
+
     def refresh(self):
 
         self.items = list(self.master.master.story_tracker.inventory.items())
