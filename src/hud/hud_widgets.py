@@ -21,6 +21,8 @@ class Backing:
         self.x = x
         self.y = y
 
+        self.id = "backing"
+
         self.background = gui_components.Fill(self.x, self.y, 200, 488, constants.GUI_BACKING)
         self.my_beans = gui_components.Label(self.x+5, self.y, "My Beans", False, 30, constants.WHITE)
         self.other_beans = gui_components.Label(self.x+5, self.y+239, "Other Beans", False, 30, constants.WHITE)
