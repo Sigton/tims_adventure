@@ -420,3 +420,4 @@ class DuelController:
 
         exec(entity_meta.item_effects[item[0]])
         self.master.story_tracker.use_item(item[0], 1)
+        self.hud.refresh()
