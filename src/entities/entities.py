@@ -184,9 +184,9 @@ class RandomBean:
         if self.stat_panel is not None:
             self.stat_panel.draw(display)
 
-    def stat_panel_on(self):
+    def stat_panel_on(self, panel_id, x, y):
 
-        self.stat_panel = hud_widgets.EnemyStat(self, self.rect.x - 205, self.rect.y)
+        self.stat_panel = hud_widgets.EnemyStat(self, x+5, y+(43*panel_id)+273)
 
     def stat_panel_off(self):
 
