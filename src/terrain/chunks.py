@@ -395,6 +395,11 @@ class ChunkController:
                 if bean.meta.hp < bean.meta.max_hp:
                     bean.meta.heal(1)
             self.update_health_counter = 0
+            for chunk in self.live_chunks:
+                for entity in self.map_tiles[chunk].get_entities():
+                    if entity.__class__.__name__ not in constants.items:
+                        if entity.meta.hp < entity.meta.max_hp:
+                            entity.meta.heal(1)
         self.update_health_counter += 1
 
     def update_chunks(self):
@@ -403,11 +408,6 @@ class ChunkController:
 
             [tile.animate(self.current_frames[tile.tile_code]) for tile in self.map_tiles[chunk].tiles
              if tile.tile_code in animated_tiles]
-
-            for entity in self.map_tiles[chunk].get_entities():
-                if entity.__class__.__name__ not in constants.items:
-                    if entity.meta.hp < entity.meta.max_hp:
-                        entity.meta.heal(1)
 
             [entity.update() for entity in self.map_tiles[chunk].entities]
 
