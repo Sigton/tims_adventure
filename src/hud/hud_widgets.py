@@ -574,6 +574,16 @@ class EnemyStat:
 
         self.on = False
 
+    def move(self, x, y):
+
+        self.x = x
+        self.y = y
+
+        self.background.rect.topleft = [x, y]
+        self.background_fill.rect.topleft = [x+5, y+5]
+        self.health_bar.rect.topleft = [x+9, y+27]
+        self.health_bar.rect.topleft = [x+9, y+35]
+
     def assign_entity(self, entity):
 
         self.enemy_meta = entity.meta
