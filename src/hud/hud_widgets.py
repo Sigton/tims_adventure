@@ -26,6 +26,8 @@ class Backing:
         self.background = gui_components.Fill(self.x, self.y, 200, 488, constants.GUI_BACKING)
         self.my_beans = gui_components.Label(self.x+5, self.y, "My Beans", False, 30, constants.WHITE)
         self.other_beans = gui_components.Label(self.x+5, self.y+239, "Other Beans", False, 30, constants.WHITE)
+        self.open_hud_button = gui_components.Button(hud_image_loader.load_images("open_hud_button"),
+                                                     self.x+200, self.y+225, None)
 
         self.components = [
             self.background,
