@@ -5,6 +5,7 @@ from src.etc import gui_components, constants
 from src.entities import icons
 from src.menu import menu_image_loader
 from src.hud import hud_image_loader
+from src.etc import tools
 
 """
 hud_widgets.py
@@ -33,7 +34,6 @@ class Backing:
                                                       self.x+200, self.y+225, lambda: self.callback(1))
 
         self.open_components = [
-            self.background,
             self.my_beans,
             self.other_beans,
             self.close_hud_button
@@ -64,6 +64,9 @@ class Backing:
             self.open_hud_button.update()
 
     def draw(self, display):
+
+        if self.hud_open:
+            tools.blit_alpha(display, self.background.image, self.background.rect.topleft, 128)
 
         [component.draw(display) for component in self.components]
 
