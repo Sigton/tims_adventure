@@ -45,15 +45,23 @@ class Backing:
 
         self.components = self.open_components
 
+        self.hud_open = True
+
     def callback(self, button_id):
 
         if button_id == 0:
             self.components = self.open_components
+            self.hud_open = True
         else:
             self.components = self.close_components
+            self.hud_open = False
 
     def update(self):
-        pass
+
+        if self.hud_open:
+            self.close_hud_button.update()
+        else:
+            self.open_hud_button.update()
 
     def draw(self, display):
 
