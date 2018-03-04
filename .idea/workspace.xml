@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="517" column="16" lean-forward="false" selection-start-line="517" selection-start-column="16" selection-end-line="517" selection-end-column="16" />
+            <state relative-caret-position="423">
+              <caret line="499" column="71" lean-forward="true" selection-start-line="499" selection-start-column="71" selection-end-line="499" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="116" column="36" lean-forward="true" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+            <state relative-caret-position="532">
+              <caret line="619" column="0" lean-forward="true" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,8 +174,8 @@
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -389,13 +389,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01266" summary="Working on entity stat panels">
-      <created>1520087690284</created>
-      <option name="number" value="01266" />
-      <option name="presentableId" value="LOCAL-01266" />
-      <option name="project" value="LOCAL" />
-      <updated>1520087690284</updated>
     </task>
     <task id="LOCAL-01267" summary="Tryna get it working">
       <created>1520087801185</created>
@@ -733,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520157283153</updated>
     </task>
-    <option name="localTasksCounter" value="1315" />
+    <task id="LOCAL-01315" summary="Did the same for other beans">
+      <created>1520157417134</created>
+      <option name="number" value="01315" />
+      <option name="presentableId" value="LOCAL-01315" />
+      <option name="project" value="LOCAL" />
+      <updated>1520157417134</updated>
+    </task>
+    <option name="localTasksCounter" value="1316" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -813,7 +813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Increasing and decreasing counter" />
     <MESSAGE value="Added a list for stat panels" />
     <MESSAGE value="Stat panels get drawn by chunk controller after hud" />
     <MESSAGE value="Removed individual backgrounds from stat panels" />
@@ -838,7 +837,8 @@
     <MESSAGE value="Working on opening and closing the hud" />
     <MESSAGE value="Yay it works" />
     <MESSAGE value="Hides health panels when hud closed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hides health panels when hud closed" />
+    <MESSAGE value="Did the same for other beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did the same for other beans" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1126,18 +1126,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="116" column="36" lean-forward="true" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+        <state relative-caret-position="423">
+          <caret line="499" column="71" lean-forward="true" selection-start-line="499" selection-start-column="71" selection-end-line="499" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="517" column="16" lean-forward="false" selection-start-line="517" selection-start-column="16" selection-end-line="517" selection-end-column="16" />
+        <state relative-caret-position="532">
+          <caret line="619" column="0" lean-forward="true" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
           <folding />
         </state>
       </provider>

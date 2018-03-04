@@ -605,7 +605,7 @@ class EnemyStat:
 
         self.enemy_meta = entity.meta
 
-        self.background = gui_components.Fill(self.x, self.y, 190, 38, constants.GUI_FILL)
+        self.background = gui_components.Fill(self.x, self.y, 190, 60, constants.GUI_FILL)
 
         self.health_bar = gui_components.ProgressBar(self.x+4, self.y+22, 182, 5,
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
@@ -614,9 +614,9 @@ class EnemyStat:
         self.bean_name = gui_components.Label(self.x+4, self.y-2, "{}{} Bean".format(self.enemy_meta.bean[0].upper(),
                                                                                      self.enemy_meta.bean[1:]),
                                               False, 20, constants.BLACK)
-        self.bean_level = gui_components.Label(self.x+152, self.y-2, "Lv:{}".format(self.enemy_meta.level),
+        self.bean_level = gui_components.Label(self.x+152, self.y+36, "Lv:{}".format(self.enemy_meta.level),
                                                False, 20, constants.BLACK)
-        self.bean_level.rect.topright = [self.x+188, self.y-2]
+        self.bean_level.rect.topright = [self.x+188, self.y+36]
 
         self.components = [
             self.background,
