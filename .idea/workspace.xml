@@ -30,10 +30,17 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="400">
+              <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icons.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/icons.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -225,6 +232,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="terrain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -383,13 +396,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01261" summary="Debugging">
-      <created>1520085206407</created>
-      <option name="number" value="01261" />
-      <option name="presentableId" value="LOCAL-01261" />
-      <option name="project" value="LOCAL" />
-      <updated>1520085206407</updated>
     </task>
     <task id="LOCAL-01262" summary="More debugging">
       <created>1520085381756</created>
@@ -727,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520156111609</updated>
     </task>
-    <option name="localTasksCounter" value="1310" />
+    <task id="LOCAL-01310" summary="Added callback function">
+      <created>1520156233411</created>
+      <option name="number" value="01310" />
+      <option name="presentableId" value="LOCAL-01310" />
+      <option name="project" value="LOCAL" />
+      <updated>1520156233412</updated>
+    </task>
+    <option name="localTasksCounter" value="1311" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -807,7 +820,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding more components to backing" />
     <MESSAGE value="Added a counter for number of stat panels" />
     <MESSAGE value="Added inputs to create stat panel" />
     <MESSAGE value="Added a stat panel state bool" />
@@ -832,7 +844,8 @@
     <MESSAGE value="Added spritesheet data" />
     <MESSAGE value="Added hud open button" />
     <MESSAGE value="Added hud close button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added hud close button" />
+    <MESSAGE value="Added callback function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added callback function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -961,11 +974,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/menu_buttons.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/icons.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1128,10 +1136,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/icons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="400">
+          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
           <folding />
         </state>
       </provider>
