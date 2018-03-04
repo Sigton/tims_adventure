@@ -40,8 +40,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -402,13 +402,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01270" summary="Changed the size of the stat panel">
-      <created>1520088626000</created>
-      <option name="number" value="01270" />
-      <option name="presentableId" value="LOCAL-01270" />
-      <option name="project" value="LOCAL" />
-      <updated>1520088626000</updated>
-    </task>
     <task id="LOCAL-01271" summary="Moved stat panel">
       <created>1520088711930</created>
       <option name="number" value="01271" />
@@ -745,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520158476309</updated>
     </task>
-    <option name="localTasksCounter" value="1319" />
+    <task id="LOCAL-01319" summary="HUD backing is now slightly transparent">
+      <created>1520158778351</created>
+      <option name="number" value="01319" />
+      <option name="presentableId" value="LOCAL-01319" />
+      <option name="project" value="LOCAL" />
+      <updated>1520158778351</updated>
+    </task>
+    <option name="localTasksCounter" value="1320" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -825,7 +825,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed individual backgrounds from stat panels" />
     <MESSAGE value="Fixed positionings of components on stat panels" />
     <MESSAGE value="Creating loop to fix positions of panels" />
     <MESSAGE value="Moving panel based off new panel id" />
@@ -850,7 +849,8 @@
     <MESSAGE value="Changing the gui for other bean stats" />
     <MESSAGE value="Adjusted spacing" />
     <MESSAGE value="Fixing things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing things" />
+    <MESSAGE value="HUD backing is now slightly transparent" />
+    <option name="LAST_COMMIT_MESSAGE" value="HUD backing is now slightly transparent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1156,8 +1156,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

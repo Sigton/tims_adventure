@@ -70,6 +70,10 @@ class Backing:
 
         [component.draw(display) for component in self.components]
 
+    def resize(self, num_beans):
+
+        self.background.resize(200, 275+(num_beans*65))
+
 
 class HealthDisplay:
 
