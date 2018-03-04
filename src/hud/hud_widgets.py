@@ -607,14 +607,14 @@ class EnemyStat:
 
         self.background = gui_components.Fill(self.x, self.y, 190, 60, constants.GUI_FILL)
 
-        self.health_bar = gui_components.ProgressBar(self.x+4, self.y+22, 182, 5,
+        self.health_bar = gui_components.ProgressBar(self.x+4, self.y+24, 182, 5,
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
-        self.xp_bar = gui_components.ProgressBar(self.x+4, self.y+30, 182, 5,
+        self.xp_bar = gui_components.ProgressBar(self.x+4, self.y+32, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
         self.bean_name = gui_components.Label(self.x+4, self.y-2, "{}{} Bean".format(self.enemy_meta.bean[0].upper(),
                                                                                      self.enemy_meta.bean[1:]),
                                               False, 20, constants.BLACK)
-        self.bean_level = gui_components.Label(self.x+152, self.y+36, "Lv:{}".format(self.enemy_meta.level),
+        self.bean_level = gui_components.Label(self.x+152, self.y+36, "Level {}".format(self.enemy_meta.level),
                                                False, 20, constants.BLACK)
         self.bean_level.rect.topright = [self.x+188, self.y+36]
 
@@ -634,10 +634,10 @@ class EnemyStat:
         self.y = y
 
         self.background.rect.topleft = [x, y]
-        self.health_bar.rect.topleft = [x+4, y+20]
-        self.xp_bar.rect.topleft = [x+4, y+28]
+        self.health_bar.rect.topleft = [x+4, y+22]
+        self.xp_bar.rect.topleft = [x+4, y+30]
         self.bean_name.rect.topleft = [x+4, y-2]
-        self.bean_level.rect.topright = [x+188, y-2]
+        self.bean_level.rect.topright = [x+188, y+36]
 
     def update(self):
 
