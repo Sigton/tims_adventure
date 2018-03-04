@@ -315,6 +315,7 @@ class ChunkController:
                             self.other_bean_stat_count += 1
                             entity.stat_panel_on(self.other_bean_stat_count, 0, 0)
                             self.other_bean_stat_panels.append(entity.stat_panel)
+                            self.hud.get_component("backing").resize(self.other_bean_stat_count+1)
                     else:
                         entity.interaction_icon.off()
                         if entity.stat_panel_active:
@@ -327,6 +328,7 @@ class ChunkController:
                                 for panel in self.other_bean_stat_panels:
                                     panel.move(5, (65*n)+273)
                                     n += 1
+                            self.hud.get_component("backing").resize(self.other_bean_stat_count + 1)
 
                 elif entity.pickup:
                     self.master.story_tracker.add_item(entity.__class__.__name__, 1)
