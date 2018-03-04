@@ -110,6 +110,7 @@ class DuelController:
         self.game_won_counter = 0
         self.winner = ""
         self.shown_win = False
+        self.retreat = False
 
         self.hud = hud.HUD(None, self)
 
@@ -127,6 +128,7 @@ class DuelController:
         self.game_won_counter = 0
         self.winner = ""
         self.shown_win = False
+        self.retreat = False
 
         try:
             self.text.remove(self.winner_label)
@@ -187,8 +189,17 @@ class DuelController:
                     self.shown_win = True
                     self.game_won_counter = 120
 
-                    self.winner_label = gui_components.Label(480, 280, "{} won!".format(self.winner),
-                                                             True, 128, constants.BLACK)
+                    if not self.retreat:
+                        self.winner_label = gui_components.Label(480, 280, "{} won!".format(self.winner),
+                                                                 True, 72, constants.BLACK)
+                    else:
+                        if self.winner == "Player":
+                            self.winner_label = gui_components.Label(480, 280, "The Opponent Retreated!",
+                                                                     True, 72, constants.BLACK)
+                        else:
+                            self.winner_label = gui_components.Label(480, 280, "You Retreated!",
+                                                                     True, 72, constants.BLACK)
+
                     self.text.append(self.winner_label)
                 else:
                     self.master.switch_to(0)
@@ -376,6 +387,7 @@ class DuelController:
         self.game_won_counter = 10
 
         self.winner = winner
+        self.retreat = retreat
 
         entity = self.player if self.winner == "Player" else self.enemy
 
