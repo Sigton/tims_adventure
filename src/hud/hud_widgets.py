@@ -29,6 +29,9 @@ class Backing:
         self.open_hud_button = gui_components.Button(hud_image_loader.load_images("open_hud_button"),
                                                      self.x+200, self.y+225, None)
 
+        self.close_hud_button = gui_components.Button(hud_image_loader.load_images("close_hud_button"),
+                                                      self.x, self.y+225, None)
+
         self.components = [
             self.background,
             self.my_beans,
