@@ -326,7 +326,7 @@ class ChunkController:
                             if self.other_bean_stat_count > -1:
                                 n = 0
                                 for panel in self.other_bean_stat_panels:
-                                    panel.move(5, (65*n)+273)
+                                    panel.move(5, (65*n)+275)
                                     n += 1
                             self.hud.get_component("backing").resize(self.other_bean_stat_count + 1)
 
