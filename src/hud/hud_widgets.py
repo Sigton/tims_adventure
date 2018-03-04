@@ -27,20 +27,30 @@ class Backing:
         self.my_beans = gui_components.Label(self.x+5, self.y, "My Beans", False, 30, constants.WHITE)
         self.other_beans = gui_components.Label(self.x+5, self.y+239, "Other Beans", False, 30, constants.WHITE)
         self.open_hud_button = gui_components.Button(hud_image_loader.load_images("open_hud_button"),
-                                                     self.x, self.y+225, self.callback(0))
+                                                     self.x, self.y+225, lambda: self.callback(0))
 
         self.close_hud_button = gui_components.Button(hud_image_loader.load_images("close_hud_button"),
-                                                      self.x+200, self.y+225, self.callback(1))
+                                                      self.x+200, self.y+225, lambda: self.callback(1))
 
-        self.components = [
+        self.open_components = [
             self.background,
             self.my_beans,
             self.other_beans,
+            self.close_hud_button
         ]
+
+        self.close_components = [
+            self.open_hud_button
+        ]
+
+        self.components = self.open_components
 
     def callback(self, button_id):
 
-        pass
+        if button_id == 0:
+            self.components = self.open_components
+        else:
+            self.components = self.close_components
 
     def update(self):
         pass
