@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="511">
-              <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+              <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="62" column="69" lean-forward="true" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+            <state relative-caret-position="360">
+              <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -402,13 +402,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01274" summary="connected backing to hud">
-      <created>1520089435140</created>
-      <option name="number" value="01274" />
-      <option name="presentableId" value="LOCAL-01274" />
-      <option name="project" value="LOCAL" />
-      <updated>1520089435140</updated>
-    </task>
     <task id="LOCAL-01275" summary="Implemented backing">
       <created>1520089526876</created>
       <option name="number" value="01275" />
@@ -745,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520159488681</updated>
     </task>
-    <option name="localTasksCounter" value="1323" />
+    <task id="LOCAL-01323" summary="Centres open and close buttons">
+      <created>1520159589468</created>
+      <option name="number" value="01323" />
+      <option name="presentableId" value="LOCAL-01323" />
+      <option name="project" value="LOCAL" />
+      <updated>1520159589468</updated>
+    </task>
+    <option name="localTasksCounter" value="1324" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -825,7 +825,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added bean names to stat panel" />
     <MESSAGE value="Fixed entity super fast healing" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Adding bean level label" />
@@ -850,7 +849,8 @@
     <MESSAGE value="Defined a resize function" />
     <MESSAGE value="Resizes background when number of other beans change" />
     <MESSAGE value="Fixed all the sizes and spacings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed all the sizes and spacings" />
+    <MESSAGE value="Centres open and close buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Centres open and close buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1141,7 +1141,7 @@
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
-          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1156,8 +1156,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="62" column="69" lean-forward="true" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+        <state relative-caret-position="360">
+          <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

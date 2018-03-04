@@ -55,6 +55,7 @@ class Backing:
         else:
             self.components = self.close_components
             self.hud_open = False
+            self.open_hud_button.rect.centery = (self.background.rect.height // 2) + self.y
 
     def update(self):
 
@@ -63,7 +64,6 @@ class Backing:
             self.close_hud_button.rect.centery = (self.background.rect.height//2)+self.y
         else:
             self.open_hud_button.update()
-            self.open_hud_button.rect.centery = (self.background.rect.height // 2) + self.y
 
     def draw(self, display):
 
