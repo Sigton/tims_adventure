@@ -105,16 +105,17 @@ class HealthDisplay:
 
     def update(self):
 
-        for panel in self.bean_stats:
-            if panel.rect.collidepoint(pygame.mouse.get_pos()):
-                if not self.bean_stats.index(panel) == self.active_bean_stat:
-                    self.active_bean_stat = self.bean_stats.index(panel)
-                    self.update_required = True
-                else:
-                    self.update_required = False
+        if self.controller.get_component("backing").hud_open:
+            for panel in self.bean_stats:
+                if panel.rect.collidepoint(pygame.mouse.get_pos()):
+                    if not self.bean_stats.index(panel) == self.active_bean_stat:
+                        self.active_bean_stat = self.bean_stats.index(panel)
+                        self.update_required = True
+                    else:
+                        self.update_required = False
 
-        self.update_components()
-        self.fix_positions()
+            self.update_components()
+            self.fix_positions()
 
     def update_components(self):
 
@@ -162,7 +163,8 @@ class HealthDisplay:
 
     def draw(self, display):
 
-        [component.draw(display) for component in self.components]
+        if self.controller.get_component("backing").hud_open:
+            [component.draw(display) for component in self.components]
 
 
 class BeanSelectPopup:
