@@ -514,7 +514,8 @@ class ChunkController:
 
         if self.hud_on:
             self.hud.draw(display)
-            [panel.draw(display) for panel in self.other_bean_stat_panels]
+            if self.hud.get_component("backing").hud_open:
+                [panel.draw(display) for panel in self.other_bean_stat_panels]
 
     def assign_chunk_pos(self, chunk, movement):
 
