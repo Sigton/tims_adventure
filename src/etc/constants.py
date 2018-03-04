@@ -145,12 +145,25 @@ PARTICLE_LIFE_MULTIPLIER = 0.75
 
 # Performance control
 
-performance_profiles = {
-    60: {"loading": 60, "particle": 1, "cooldown": 80, "movement": 16},
-    45: {"loading": 45, "particle": 0.75, "cooldown": 60, "movement": 12},
-    30: {"loading": 30, "particle": 0.5, "cooldown": 40, "movement": 8},
-    15: {"loading": 15, "particle": 0.25, "cooldown": 20, "movement": 4}
-}
+performance_profiles = [
+    {"fps": 60, "loading": 60, "particle": 1, "cooldown": 80, "movement": 16},
+    {"fps": 45, "loading": 45, "particle": 0.75, "cooldown": 60, "movement": 12},
+    {"fps": 30, "loading": 30, "particle": 0.5, "cooldown": 40, "movement": 8},
+    {"fps": 15, "loading": 15, "particle": 0.25, "cooldown": 20, "movement": 4}
+]
+
+
+def load_performance_profile(idx):
+
+    global FPS, LOADING_SCREEN_TIME, PARTICLE_LIFE_MULTIPLIER, turn_cool_down, movement_speed
+
+    profile = performance_profiles[idx]
+
+    FPS = profile["fps"]
+    LOADING_SCREEN_TIME = profile["loading"]
+    PARTICLE_LIFE_MULTIPLIER = profile["particle"]
+    turn_cool_down = profile["cooldown"]
+    movement_speed = profile["movement"]
 
 
 # Bean related
