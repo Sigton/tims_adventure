@@ -169,7 +169,8 @@ def load_performance_profile(idx):
 # Bean related
 
 bean_image_offset = {
-    "carrot": (0, 3)
+    "carrot": (0, 3),
+    "wizard": (0, 10)
 }
 
 
