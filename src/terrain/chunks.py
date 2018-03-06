@@ -301,6 +301,41 @@ class ChunkController:
                 self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
+        self.player.update(self.direction)
+        self.update_chunks()
+
+        [entity.update() for entity in self.assorted_entities]
+
+        if self.moving > 0:
+            self.moving -= 1
+            self.move_chunks(self.movement_interval)
+
+        # Look for any new chunks that need to be
+        # created and old ones that need removed
+
+        self.current_chunk = self.get_current_chunk_id()
+
+        if self.current_chunk != self.old_chunk:
+            self.old_chunk = self.current_chunk
+
+            # Player has moved chunk
+            # We now removed chunks that are too far away
+            # And generate new ones
+
+            surrounding_chunks = self.get_surrounding_chunks(self.current_chunk)
+
+            to_remove = [chunk for chunk in self.live_chunks if chunk not in surrounding_chunks]
+
+            to_create = [chunk for chunk in surrounding_chunks if chunk not in self.live_chunks]
+
+            for chunk in to_create:
+                if "-" not in chunk and chunk in self.map_seeds:
+                    self.create_chunk(chunk)
+
+            # Delete any left over chunks
+            for chunk in to_remove:
+                self.delete_chunk(chunk)
+
         if not self.moving:
             for chunk in self.live_chunks:
                 for entity in self.map_tiles[chunk].get_entities():
@@ -335,46 +370,11 @@ class ChunkController:
                         self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                         self.map_tiles[chunk].remove_entity(entity)
 
-        self.player.update(self.direction)
-        self.update_chunks()
-
-        [entity.update() for entity in self.assorted_entities]
-
         self.animation_clock = (self.animation_clock + 1) % \
             constants.animation_thresholds[self.global_animation_threshold]
         for tile in self.current_frames.keys():
             if self.animation_clock % constants.animation_thresholds[tile] == 0:
                 self.current_frames[tile] += 1
-
-        if self.moving > 0:
-            self.moving -= 1
-            self.move_chunks(self.movement_interval)
-
-        # Look for any new chunks that need to be
-        # created and old ones that need removed
-
-        self.current_chunk = self.get_current_chunk_id()
-
-        if self.current_chunk != self.old_chunk:
-            self.old_chunk = self.current_chunk
-
-            # Player has moved chunk
-            # We now removed chunks that are too far away
-            # And generate new ones
-
-            surrounding_chunks = self.get_surrounding_chunks(self.current_chunk)
-
-            to_remove = [chunk for chunk in self.live_chunks if chunk not in surrounding_chunks]
-
-            to_create = [chunk for chunk in surrounding_chunks if chunk not in self.live_chunks]
-
-            for chunk in to_create:
-                if "-" not in chunk and chunk in self.map_seeds:
-                    self.create_chunk(chunk)
-
-            # Delete any left over chunks
-            for chunk in to_remove:
-                self.delete_chunk(chunk)
 
         self.update_hud()
 
