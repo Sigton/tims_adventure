@@ -76,7 +76,7 @@ bush = (384, 192, 96, 48)
 grass = (480, 0, 48, 48)
 ground_alt = (144, 0, 48, 48)
 house_1 = (480, 48, 192, 192)
-solid_ground = (0, 0, 48, 48)
+solid_ground = (192, 0, 48, 48)
 
 
 # Indexing this array by a tiles' ID will
