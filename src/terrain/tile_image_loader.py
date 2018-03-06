@@ -76,6 +76,7 @@ bush = (384, 192, 96, 48)
 grass = (480, 0, 48, 48)
 ground_alt = (144, 0, 48, 48)
 house_1 = (480, 48, 192, 192)
+solid_ground = (0, 0, 48, 48)
 
 
 # Indexing this array by a tiles' ID will
@@ -92,7 +93,7 @@ tiles = [generic_ground, blue_ground, path_1,
          tree, shore_1, shore_2,
          shore_3, shore_4, shore_5, shore_6,
          shore_7, shore_8, bush, grass, ground_alt,
-         house_1]
+         house_1, solid_ground]
 images = {}
 
 sprite_sheet = None
