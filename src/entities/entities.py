@@ -100,7 +100,9 @@ class RandomBean:
 
         self.images = bean_image_loader.beans[self.bean]
 
-        self.image = self.images["R"]
+        self.facing = random.choice(["R", "L"])
+
+        self.image = self.images[self.facing]
 
         self.rect = self.image.get_rect()
         if to_grid:
@@ -137,9 +139,9 @@ class RandomBean:
         self.stat_panel_active = False
 
         if self.meta.evil:
-            self.image = self.images["GR"]
+            self.image = self.images["G" + self.facing]
         else:
-            self.image = self.images["R"]
+            self.image = self.images[self.facing]
 
     def create_images(self, main_img):
 
