@@ -7,7 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/resources/terrain.png" afterPath="$PROJECT_DIR$/src/resources/terrain.png" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+            <state relative-caret-position="72">
+              <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -387,13 +386,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01288" summary="Stat panels get drawn by chunk controller after hud">
-      <created>1520091640497</created>
-      <option name="number" value="01288" />
-      <option name="presentableId" value="LOCAL-01288" />
-      <option name="project" value="LOCAL" />
-      <updated>1520091640497</updated>
-    </task>
     <task id="LOCAL-01289" summary="Removed individual backgrounds from stat panels">
       <created>1520091742022</created>
       <option name="number" value="01289" />
@@ -730,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520344909700</updated>
     </task>
-    <option name="localTasksCounter" value="1337" />
+    <task id="LOCAL-01337" summary="Fixing the house image">
+      <created>1520345193340</created>
+      <option name="number" value="01337" />
+      <option name="presentableId" value="LOCAL-01337" />
+      <option name="project" value="LOCAL" />
+      <updated>1520345193340</updated>
+    </task>
+    <option name="localTasksCounter" value="1338" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -740,7 +739,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15671642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -810,7 +809,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed logic error" />
     <MESSAGE value="Working on opening and closing the hud" />
     <MESSAGE value="Yay it works" />
     <MESSAGE value="Hides health panels when hud closed" />
@@ -835,7 +833,8 @@
     <MESSAGE value="Added tile id and colour for house" />
     <MESSAGE value="Updated default decs" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Fixing the house image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing the house image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,8 +1147,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        <state relative-caret-position="72">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
           <folding />
         </state>
       </provider>
