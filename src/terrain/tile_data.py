@@ -47,4 +47,5 @@ tile_colors = {15724527: "0000",  # Generic ground
                10892447: "0040",  # Bush
                2263613: "0041",  # Grass
                15521264: "0042",  # Ground Alt
+               11882385: "0043",  # House 1
                }

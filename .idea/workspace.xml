@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/tile_data.py" afterPath="$PROJECT_DIR$/src/terrain/tile_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="652">
               <caret line="94" column="16" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/engines/menu.py" />
         <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
@@ -156,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
       </list>
     </option>
   </component>
@@ -363,13 +373,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01284" summary="Added a stat panel state bool">
-      <created>1520091373519</created>
-      <option name="number" value="01284" />
-      <option name="presentableId" value="LOCAL-01284" />
-      <option name="project" value="LOCAL" />
-      <updated>1520091373519</updated>
     </task>
     <task id="LOCAL-01285" summary="Functions only get executed once">
       <created>1520091442929</created>
@@ -707,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520343025081</updated>
     </task>
-    <option name="localTasksCounter" value="1333" />
+    <task id="LOCAL-01333" summary="Adding in data for the house">
+      <created>1520343200534</created>
+      <option name="number" value="01333" />
+      <option name="presentableId" value="LOCAL-01333" />
+      <option name="project" value="LOCAL" />
+      <updated>1520343200534</updated>
+    </task>
+    <option name="localTasksCounter" value="1334" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spritesheet data" />
     <MESSAGE value="Added hud open button" />
     <MESSAGE value="Added hud close button" />
     <MESSAGE value="Added callback function" />
@@ -812,7 +821,8 @@
     <MESSAGE value="Added meta and other data for wizard bean" />
     <MESSAGE value="Using lower performance profile" />
     <MESSAGE value="Added a basic house to the terrain spritesheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a basic house to the terrain spritesheet" />
+    <MESSAGE value="Adding in data for the house" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding in data for the house" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,13 +831,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/terrain/generators/map_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save2/meta.json" />
     <entry file="file://$PROJECT_DIR$/src/engines/brain.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1126,6 +1129,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="652">
           <caret line="94" column="16" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
