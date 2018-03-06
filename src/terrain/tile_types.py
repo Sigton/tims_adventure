@@ -30,7 +30,8 @@ animated_tiles = [
 
 shadowed_decs = [
     "0031",
-    "0040"
+    "0040",
+    "0043"
 ]
 
 # Vertical distance from sprite to shadow
