@@ -75,7 +75,7 @@ shore_8 = {"template": (144, 288, 48, 48),
 bush = (384, 192, 96, 48)
 grass = (480, 0, 48, 48)
 ground_alt = (144, 0, 48, 48)
-house_1 = (480, 48, 184, 166)
+house_1 = (480, 48, 192, 192)
 
 
 # Indexing this array by a tiles' ID will
