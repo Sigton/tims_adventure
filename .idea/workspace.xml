@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
+      <change beforePath="$PROJECT_DIR$/src/engines/save.py" afterPath="$PROJECT_DIR$/src/engines/save.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="134" column="110" lean-forward="false" selection-start-line="134" selection-start-column="110" selection-end-line="134" selection-end-column="110" />
+            <state relative-caret-position="795">
+              <caret line="137" column="44" lean-forward="true" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+            <state relative-caret-position="551">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/engines/save.py" />
       </list>
     </option>
   </component>
@@ -501,13 +501,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01309" summary="Added hud close button">
-      <created>1520156111609</created>
-      <option name="number" value="01309" />
-      <option name="presentableId" value="LOCAL-01309" />
-      <option name="project" value="LOCAL" />
-      <updated>1520156111609</updated>
     </task>
     <task id="LOCAL-01310" summary="Added callback function">
       <created>1520156233411</created>
@@ -845,7 +838,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520447807668</updated>
     </task>
-    <option name="localTasksCounter" value="1358" />
+    <task id="LOCAL-01358" summary="Fixed the chunks in the no spawn area">
+      <created>1520448967025</created>
+      <option name="number" value="01358" />
+      <option name="presentableId" value="LOCAL-01358" />
+      <option name="project" value="LOCAL" />
+      <updated>1520448967026</updated>
+    </task>
+    <option name="localTasksCounter" value="1359" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -925,7 +925,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Performance profiles work" />
     <MESSAGE value="Added a new bean" />
     <MESSAGE value="Added meta and other data for wizard bean" />
     <MESSAGE value="Using lower performance profile" />
@@ -950,7 +949,8 @@
     <MESSAGE value="Fixed the downsides of the performance optimization" />
     <MESSAGE value="Creating system to exempt chunks from entity spawning" />
     <MESSAGE value="Added chunks to the no spawn chunks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added chunks to the no spawn chunks" />
+    <MESSAGE value="Fixed the chunks in the no spawn area" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the chunks in the no spawn area" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,6 +1196,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1160">
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,18 +1253,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="134" column="110" lean-forward="false" selection-start-line="134" selection-start-column="110" selection-end-line="134" selection-end-column="110" />
+        <state relative-caret-position="551">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+        <state relative-caret-position="795">
+          <caret line="137" column="44" lean-forward="true" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
           <folding />
         </state>
       </provider>
