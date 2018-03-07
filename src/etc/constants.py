@@ -42,6 +42,8 @@ num_tiles = chunk_w * chunk_h
 
 default_start = (-15768, -64800)
 
+no_spawn_chunks = []
+
 
 # Entity Spawning data
 
