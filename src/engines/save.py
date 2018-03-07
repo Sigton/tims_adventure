@@ -147,7 +147,7 @@ def gen_random_entities(save_path):
             item_x = random.randint(0, 19)
             item_y = random.randint(0, 14)
 
-            attemps = 0
+            attempts = 0
             tile_no = (item_y*20)+item_x
             while (map_data[chunk]["tiles"][tile_no*4:tile_no*4+4] not in spawn_tiles) and attempts < 10:
                 item_x = random.randint(0, 19)
