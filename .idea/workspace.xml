@@ -20,8 +20,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+            <state relative-caret-position="440">
+              <caret line="138" column="33" lean-forward="true" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -417,13 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01311" summary="Fixed logic error">
-      <created>1520156311191</created>
-      <option name="number" value="01311" />
-      <option name="presentableId" value="LOCAL-01311" />
-      <option name="project" value="LOCAL" />
-      <updated>1520156311191</updated>
-    </task>
     <task id="LOCAL-01312" summary="Working on opening and closing the hud">
       <created>1520156723939</created>
       <option name="number" value="01312" />
@@ -760,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520451412996</updated>
     </task>
-    <option name="localTasksCounter" value="1360" />
+    <task id="LOCAL-01360" summary="Working on entity placement validation">
+      <created>1520456554637</created>
+      <option name="number" value="01360" />
+      <option name="presentableId" value="LOCAL-01360" />
+      <option name="project" value="LOCAL" />
+      <updated>1520456554638</updated>
+    </task>
+    <option name="localTasksCounter" value="1361" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -840,7 +840,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added meta and other data for wizard bean" />
     <MESSAGE value="Using lower performance profile" />
     <MESSAGE value="Added a basic house to the terrain spritesheet" />
     <MESSAGE value="Adding in data for the house" />
@@ -865,7 +864,8 @@
     <MESSAGE value="Added chunks to the no spawn chunks" />
     <MESSAGE value="Fixed the chunks in the no spawn area" />
     <MESSAGE value="Making it a bit more orderly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making it a bit more orderly" />
+    <MESSAGE value="Working on entity placement validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on entity placement validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1175,8 +1175,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+        <state relative-caret-position="440">
+          <caret line="138" column="33" lean-forward="true" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
           <folding />
         </state>
       </provider>
