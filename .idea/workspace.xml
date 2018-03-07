@@ -20,8 +20,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="147" column="42" lean-forward="true" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="42" />
+            <state relative-caret-position="460">
+              <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -48,10 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>960, 730</find>
-      <find>960, 720</find>
-      <find>ch</find>
-      <find>create_chunk</find>
       <find>lambda: sprite_sheet.get_image</find>
       <find>:</find>
       <find>blit</find>
@@ -78,6 +74,10 @@
       <find>player</find>
       <find>&quot;0</find>
       <find>&quot;pos&quot;: [0, 0]</find>
+      <find>False, True</find>
+      <find>False,</find>
+      <find>True</find>
+      <find>zTrue</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -406,13 +406,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01313" summary="Yay it works">
-      <created>1520157038824</created>
-      <option name="number" value="01313" />
-      <option name="presentableId" value="LOCAL-01313" />
-      <option name="project" value="LOCAL" />
-      <updated>1520157038824</updated>
     </task>
     <task id="LOCAL-01314" summary="Hides health panels when hud closed">
       <created>1520157283153</created>
@@ -750,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520458017939</updated>
     </task>
-    <option name="localTasksCounter" value="1362" />
+    <task id="LOCAL-01362" summary="Fixed a bug thats been there for ages">
+      <created>1520459023422</created>
+      <option name="number" value="01362" />
+      <option name="presentableId" value="LOCAL-01362" />
+      <option name="project" value="LOCAL" />
+      <updated>1520459023422</updated>
+    </task>
+    <option name="localTasksCounter" value="1363" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -760,7 +760,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -830,7 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a basic house to the terrain spritesheet" />
     <MESSAGE value="Adding in data for the house" />
     <MESSAGE value="Added tile id and colour for house" />
     <MESSAGE value="Updated default decs" />
@@ -855,7 +854,8 @@
     <MESSAGE value="Making it a bit more orderly" />
     <MESSAGE value="Working on entity placement validation" />
     <MESSAGE value="Working on the entity spawning algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the entity spawning algorithm" />
+    <MESSAGE value="Fixed a bug thats been there for ages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug thats been there for ages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1165,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="147" column="42" lean-forward="true" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="42" />
+        <state relative-caret-position="460">
+          <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
           <folding />
         </state>
       </provider>

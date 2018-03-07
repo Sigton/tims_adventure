@@ -123,18 +123,18 @@ def gen_random_entities(save_path):
 
                 attempts = 0
                 tile_no = (entity_y*20)+entity_x
-                valid = 0
+                valid = [False, False]
 
-                while not valid == 2:
+                while not all(valid):
 
                     entity_x = random.randint(0, 19)
                     entity_y = random.randint(0, 14)
 
-                    if any([[entity_x, entity_y] == x["pos"] for x in entity_data["entities"][chunk]]):
-                        valid += 1
+                    if not any([[entity_x, entity_y] == x["pos"] for x in entity_data["entities"][chunk]]):
+                        valid[0] = True
 
                     if map_data[chunk]["tiles"][tile_no * 4:tile_no * 4 + 4] in spawn_tiles:
-                        valid += 1
+                        valid[1] = True
 
                     attempts += 1
                     if attempts > 10:
