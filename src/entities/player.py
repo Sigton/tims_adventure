@@ -91,13 +91,14 @@ class Player(pygame.sprite.Sprite):
         for bean in self.beans:
             bean.chunk_controller = ref
 
-    def add_bean(self):
+    def add_bean(self, bean):
 
-        pass
+        if not len(self.beans) == 5:
+            self.beans.append(bean)
 
-    def remove_bean(self):
+    def remove_bean(self, bean):
 
-        pass
+        self.beans.remove(bean)
 
     def get_trail(self):
 
