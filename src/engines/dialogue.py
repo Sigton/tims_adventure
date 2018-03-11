@@ -19,8 +19,10 @@ class DialogueController:
 
         self.scenes = {
             "villager1": [
-                            ("What's happening here?", 0),
-                            ("There's a monster!", 1)
+                ("What's happening here?", 0),
+                ("They're coming!", 1),
+                ("Who is?", 0),
+                ("We have to run!", 1)
                           ]
         }
 
