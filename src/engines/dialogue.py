@@ -18,12 +18,9 @@ class DialogueController:
         self.master = master
 
         self.scenes = {
-            "test_scene": [
-                            ("Wow I can speak!", 0),
-                            ("Ayy me too!", 1),
-                            ("That crazy man...", 0),
-                            ("Sure is bruh", 1),
-                            ("This is some really really long text just to test out having it over multiple lines", 0)
+            "villager1": [
+                            ("What's happening here?", 0),
+                            ("There's a monster!", 1)
                           ]
         }
 
