@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 
 from src.duel import duel_players
-from src.etc import gui_components, constants
+from src.etc import gui_components, constants, dialogue_scenes
 
 """
 dialogue.py
@@ -17,19 +17,7 @@ class DialogueController:
 
         self.master = master
 
-        self.scenes = {
-            "villager1": [
-                ("What's happening here?", 0),
-                ("They're coming!", 1),
-                ("Who is?", 0),
-                ("We have to run!", 1)
-            ],
-            "villager2": [
-                ("We can't stay here anymore.", 1),
-                ("Why not?", 0),
-                ("They'll be here soon, we need to leave now.", 1)
-            ]
-        }
+        self.scenes = dialogue_scenes.scenes
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
 
