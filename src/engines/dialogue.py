@@ -23,7 +23,12 @@ class DialogueController:
                 ("They're coming!", 1),
                 ("Who is?", 0),
                 ("We have to run!", 1)
-                          ]
+            ],
+            "villager2": [
+                ("We can't stay here anymore.", 1),
+                ("Why not?", 0),
+                ("They'll be here soon, we need to leave now.", 1)
+            ]
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
