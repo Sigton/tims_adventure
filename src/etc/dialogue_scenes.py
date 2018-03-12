@@ -18,6 +18,10 @@ scenes = {
         ("They'll be here soon, we need to leave now.", 1)
     ],
     "villager3": [
-        ("Strange things are happening here.", 1)
+        ("Strange things are happening here.", 1),
+        ("Do you know what is happening?", 0),
+        ("I'm not sure, I just know it's bad. Try to find the old man, he is wise and might know more.", 1),
+        ("Do you know where he could be?", 0),
+        ("He will be somewhere in the town", 1)
     ]
 }
