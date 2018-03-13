@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" />
+      <change beforePath="$PROJECT_DIR$/src/resources/map.png" afterPath="$PROJECT_DIR$/src/resources/map.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +42,8 @@
       <file leaf-file-name="dialogue_scenes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/dialogue_scenes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -418,13 +418,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01343" summary="Fixed bug">
-      <created>1520345884057</created>
-      <option name="number" value="01343" />
-      <option name="presentableId" value="LOCAL-01343" />
-      <option name="project" value="LOCAL" />
-      <updated>1520345884057</updated>
-    </task>
     <task id="LOCAL-01344" summary="Fixed bug with the solid ground">
       <created>1520348978259</created>
       <option name="number" value="01344" />
@@ -761,14 +754,20 @@
       <option name="project" value="LOCAL" />
       <updated>1520961505502</updated>
     </task>
-    <option name="localTasksCounter" value="1392" />
+    <task id="LOCAL-01392" summary="Fixing decs">
+      <created>1520961842877</created>
+      <option name="number" value="01392" />
+      <option name="presentableId" value="LOCAL-01392" />
+      <option name="project" value="LOCAL" />
+      <updated>1520961842877</updated>
+    </task>
+    <option name="localTasksCounter" value="1393" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
@@ -841,7 +840,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed a bug thats been there for ages" />
     <MESSAGE value="I think i fixed it" />
     <MESSAGE value="Populated add/remove bean functions" />
     <MESSAGE value="Removed some unnecessary lines" />
@@ -866,7 +864,8 @@
     <MESSAGE value="Fixing little things" />
     <MESSAGE value="Updated map" />
     <MESSAGE value="Adding houses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding houses" />
+    <MESSAGE value="Fixing decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1185,8 +1184,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/dialogue_scenes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
