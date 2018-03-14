@@ -145,13 +145,13 @@ class DialogueController:
 
             n -= 1
 
-        bean = self.other_bean.meta.bean if speaker else self.player.meta.bean
+        bean = self.other_bean.meta.display_name if speaker else self.player.meta.display_name
 
         self.text = [gui_components.Label(self.text_x+20, n*self.body_font.get_linesize()+self.text_y+49,
                                           sorted_lines[n], False, 20, constants.BLACK)
                      for n in range(len(sorted_lines))
                      ] + [gui_components.Label(self.text_x+20, self.text_y+10,
-                                               bean[0].upper()+bean[1:]+" Bean",
+                                               bean + " Bean",
                                                False, 32, constants.BLACK)]
 
         self.scene_progress += 1

@@ -97,8 +97,8 @@ class HealthDisplay:
         self.health_bars = [gui_components.ProgressBar(self.x+9, self.y+27+36*n, 182, 5,
                                                        (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
                             for n in range(len(self.player.beans))]
-        self.bean_labels = [gui_components.Label(self.x+9, self.y+3+40*n, "{}{} Bean".format(
-            self.player.beans[n].bean[0].upper(), self.player.beans[n].bean[1:]),
+        self.bean_labels = [gui_components.Label(self.x+9, self.y+3+40*n, "{} Bean".format(
+            self.player.beans[n].meta.display_name),
                                                  False, 20, constants.BLACK)
                             for n in range(len(self.player.beans))]
 
@@ -199,8 +199,8 @@ class BeanSelectPopup:
             gui_components.Label(self.x+9, self.y+21, "Which bean accepts the challenge?", False, 20, constants.BLACK)
         ]
 
-        self.options = [gui_components.Label(self.x+35, self.y+39+18*n, "{}{} Bean".format(
-            self.player.beans[n].bean[0].upper(), self.player.beans[n].bean[1:]),
+        self.options = [gui_components.Label(self.x+35, self.y+39+18*n, "{} Bean".format(
+            self.player.beans[n].bean.meta.display_name),
                                              False, 20, constants.BLACK) for n in range(len(self.player.beans))]
         self.options.append(gui_components.Label(self.x+35, self.y+39+18*len(self.options), "I decline the challenge",
                                                  False, 20, constants.BLACK))
@@ -620,8 +620,8 @@ class EnemyStat:
                                                      (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
         self.xp_bar = gui_components.ProgressBar(self.x+4, self.y+32, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
-        self.bean_name = gui_components.Label(self.x+4, self.y-2, "{}{} Bean".format(self.enemy_meta.bean[0].upper(),
-                                                                                     self.enemy_meta.bean[1:]),
+        self.bean_name = gui_components.Label(self.x+4, self.y-2, "{} Bean".format(
+            self.enemy_meta.bean[0].meta.display_name),
                                               False, 20, constants.BLACK)
         self.bean_level = gui_components.Label(self.x+152, self.y+36, "Level {}".format(self.enemy_meta.level),
                                                False, 20, constants.BLACK)

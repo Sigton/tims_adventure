@@ -152,8 +152,10 @@ class DuelController:
         self.attack_main_label = gui_components.Label(607, 603, moves[self.player.meta.moves[0]]["name"], True)
         self.attack_alt_label = gui_components.Label(831, 603, moves[self.player.meta.moves[1]]["name"], True)
 
-        self.player_name_label = gui_components.Label(507, 312, "{} BEAN STATS".format(self.player.meta.bean.upper()))
-        self.enemy_name_label = gui_components.Label(28, 137, "{} BEAN STATS".format(self.enemy.meta.bean.upper()))
+        self.player_name_label = gui_components.Label(507, 312, "{} BEAN STATS".format(
+            self.player.meta.display_name.upper()))
+        self.enemy_name_label = gui_components.Label(28, 137, "{} BEAN STATS".format(
+            self.enemy.meta.display_name.upper()))
 
         self.text.append(self.attack_main_label)
         self.text.append(self.attack_alt_label)
