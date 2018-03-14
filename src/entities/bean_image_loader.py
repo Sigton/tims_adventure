@@ -26,6 +26,7 @@ rabbit = (360, 0, 40, 40)
 what = (42, 40, 40, 40)
 chicken = (82, 40, 40, 40)
 wizard = (122, 40, 44, 48)
+old_villager = (166, 40, 40, 40)
 
 beans = {}
 
@@ -50,7 +51,8 @@ def load_sprite_sheet():
         "rabbit": create_images(rabbit),
         "what": create_images(what),
         "chicken": create_images(chicken),
-        "wizard": create_images(wizard)
+        "wizard": create_images(wizard),
+        "old_villager": create_images(old_villager)
     }
 
 
