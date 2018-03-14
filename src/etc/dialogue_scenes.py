@@ -22,5 +22,13 @@ scenes = {
         ("What is happening?", 0),
         ("I'm not sure, I just know it's bad. Try to find the old man, he is wise and might know more.", 1),
         ("He will be somewhere in the town. Good luck.", 1)
+    ],
+    "old_man": [
+        ("You came to see me?", 1),
+        ("Yes, what is happening here?", 0),
+        ("Dark things are happening. Dark, dark things...", 1),
+        ("It all started when they arrived in the land.", 1),
+        ("Who?", 0),
+        ("The formidable, corrupted Jelly Monster.", 1)
     ]
 }
