@@ -30,6 +30,8 @@ scenes = {
         ("It all started when they arrived in the land.", 1),
         ("Who?", 0),
         ("The formidable, corrupted Jelly Monster. It came to our lands, and brought his negativity with it.", 1),
-        ("The three wizard guardians of the land tried to stop the monster, but his negativity was too strong.", 1)
+        ("The three wizard guardians of the land tried to stop the monster, but his negativity was too strong.", 1),
+        ("""Before the wizards themselves were dragged into darkness, they united their
+        power and built gates between the sections of the land.""", 1)
     ]
 }
