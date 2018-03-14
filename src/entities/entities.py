@@ -42,6 +42,8 @@ class EntityMeta:
             self.important = False
 
             self.evil = True
+
+            self.display_name = entity_data[self.bean]["display_name"]
         else:
             self.bean = json_data["bean"]
 
@@ -60,6 +62,8 @@ class EntityMeta:
             self.important = json_data["important"]
 
             self.evil = json_data["evil"]
+
+            self.display_name = json_data["display_name"]
 
     def damage(self, amount):
 
