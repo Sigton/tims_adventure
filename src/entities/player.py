@@ -52,6 +52,7 @@ class Player(pygame.sprite.Sprite):
         for bean in self.beans:
             bean.rect.centerx = head_bean.rect.centerx + 48 * self.trail[n][0]
             bean.rect.centery = head_bean.rect.centery + 48 * self.trail[n][1]
+            bean.wobble = n
             n += 1
 
     def update(self, direction):
@@ -66,6 +67,7 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.x += self.movement_intervals[n][0]
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
+                bean.wobble += 0.5
 
         [bean.update() for bean in self.beans]
 
@@ -145,11 +147,11 @@ class Bean(pygame.sprite.Sprite):
 
         self.wobble_x = 0
         self.wobble_y = 0
+        self.wobble = 0
 
     def update(self):
 
-        self.wobble_x = math.cos((self.chunk_controller.world_offset_x-(self.rect.x*100))/10)*3
-        self.wobble_y = math.sin((self.chunk_controller.world_offset_y-(self.rect.y*100))/10)*3
+        self.wobble_y = math.sin(self.wobble)*4
 
         self.shadow.update()
 
