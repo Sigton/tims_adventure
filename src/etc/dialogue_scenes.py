@@ -29,6 +29,7 @@ scenes = {
         ("Dark things are happening. Dark, dark things...", 1),
         ("It all started when they arrived in the land.", 1),
         ("Who?", 0),
-        ("The formidable, corrupted Jelly Monster.", 1)
+        ("The formidable, corrupted Jelly Monster. It came to our lands, and brought his negativity with it.", 1),
+        ("The three wizard guardians of the land tried to stop the monster, but his negativity was too strong.", 1)
     ]
 }
