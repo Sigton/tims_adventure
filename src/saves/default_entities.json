@@ -18,9 +18,15 @@
       }
     }],
   "1691": [{"pos": [15, 4], "meta":
-      {"bean": "old_villager", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
+      {"bean": "old_villager", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 100,
         "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager3', None, 0);self.master.switch_to(3)",
         "important": true, "evil": false, "display_name": "Old"
+      }
+    }],
+  "1590": [{"pos": [18, 3], "meta":
+      {"bean": "carrot", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
+        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager3', None, 0);self.master.switch_to(3)",
+        "important": true, "evil": false, "display_name": "Carrot"
       }
     }]
 },

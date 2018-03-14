@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player.py" afterPath="$PROJECT_DIR$/src/entities/player.py" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,41 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="621" column="50" lean-forward="false" selection-start-line="621" selection-start-column="50" selection-end-line="621" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="111" column="63" lean-forward="false" selection-start-line="111" selection-start-column="63" selection-end-line="111" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="153" column="43" lean-forward="false" selection-start-line="153" selection-start-column="43" selection-end-line="153" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/entities/player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+            <state relative-caret-position="460">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -178,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
-        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
@@ -186,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
+        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
   </component>
@@ -228,19 +198,13 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="engines" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hud" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="terrain" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,13 +363,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01359" summary="Making it a bit more orderly">
-      <created>1520451412996</created>
-      <option name="number" value="01359" />
-      <option name="presentableId" value="LOCAL-01359" />
-      <option name="project" value="LOCAL" />
-      <updated>1520451412996</updated>
     </task>
     <task id="LOCAL-01360" summary="Working on entity placement validation">
       <created>1520456554637</created>
@@ -743,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521057413618</updated>
     </task>
-    <option name="localTasksCounter" value="1408" />
+    <task id="LOCAL-01408" summary="Debugging">
+      <created>1521058348575</created>
+      <option name="number" value="01408" />
+      <option name="presentableId" value="LOCAL-01408" />
+      <option name="project" value="LOCAL" />
+      <updated>1521058348575</updated>
+    </task>
+    <option name="localTasksCounter" value="1409" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a new default trail" />
     <MESSAGE value="Facing left by default" />
     <MESSAGE value="Fixing things" />
     <MESSAGE value="Fixed a decoration issue" />
@@ -848,7 +811,8 @@
     <MESSAGE value="Implemented the display names into hud" />
     <MESSAGE value="Saves upon exiting from dialogue controller" />
     <MESSAGE value="Friendly beans now show on the other beans tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Friendly beans now show on the other beans tab" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1107,14 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="10" selection-start-column="65" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/dialogue_scenes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1173,8 +1129,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+        <state relative-caret-position="635">
+          <caret line="186" column="37" lean-forward="true" selection-start-line="186" selection-start-column="37" selection-end-line="186" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding />
         </state>
       </provider>
