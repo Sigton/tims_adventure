@@ -280,7 +280,8 @@ def create_json_from_entity(entity):
                 "level": entity.meta.level,
                 "interaction": entity.meta.interaction,
                 "important": entity.meta.important,
-                "evil": entity.meta.evil
+                "evil": entity.meta.evil,
+                "display_name": entity.meta.display
             }
         }
     else:
@@ -308,7 +309,8 @@ def create_random_entity(pos):
             "level": 1,
             "interaction": None,
             "important": False,
-            "evil": True
+            "evil": True,
+            "display_name": entity_data[bean]["display_name"]
         }
     }
 
