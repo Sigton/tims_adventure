@@ -340,20 +340,23 @@ class ChunkController:
             for chunk in self.live_chunks:
                 for entity in self.map_tiles[chunk].get_entities():
                     if entity.__class__.__name__ not in constants.items:
-                        if entity.meta.interaction == "pass" or entity.meta.important:
-                            continue
+
                         distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
                                              + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
 
                         if distance < constants.interaction_distance:
-                            entity.interaction_icon.on()
+                            if not (entity.meta.interaction == "pass" or entity.meta.important):
+                                entity.interaction_icon.on()
+
                             if not entity.stat_panel_active:
                                 self.other_bean_stat_count += 1
                                 entity.stat_panel_on(self.other_bean_stat_count, 0, 0)
                                 self.other_bean_stat_panels.append(entity.stat_panel)
                                 self.hud.get_component("backing").resize(self.other_bean_stat_count+1)
                         else:
-                            entity.interaction_icon.off()
+                            if not (entity.meta.interaction == "pass" or entity.meta.important):
+                                entity.interaction_icon.off()
+
                             if entity.stat_panel_active:
                                 self.other_bean_stat_count -= 1
                                 self.other_bean_stat_panels.remove(entity.stat_panel)

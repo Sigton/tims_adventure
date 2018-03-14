@@ -621,7 +621,7 @@ class EnemyStat:
         self.xp_bar = gui_components.ProgressBar(self.x+4, self.y+32, 182, 5,
                                                  (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
         self.bean_name = gui_components.Label(self.x+4, self.y-2, "{} Bean".format(
-            self.enemy_meta.bean[0].meta.display_name),
+            self.enemy_meta.display_name),
                                               False, 20, constants.BLACK)
         self.bean_level = gui_components.Label(self.x+152, self.y+36, "Level {}".format(self.enemy_meta.level),
                                                False, 20, constants.BLACK)
