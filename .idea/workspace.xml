@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" />
       <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="107" column="44" lean-forward="true" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -42,8 +40,8 @@
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="156" column="85" lean-forward="false" selection-start-line="156" selection-start-column="85" selection-end-line="156" selection-end-column="85" />
+            <state relative-caret-position="280">
+              <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -448,13 +446,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01356" summary="Creating system to exempt chunks from entity spawning">
-      <created>1520443364253</created>
-      <option name="number" value="01356" />
-      <option name="presentableId" value="LOCAL-01356" />
-      <option name="project" value="LOCAL" />
-      <updated>1520443364253</updated>
-    </task>
     <task id="LOCAL-01357" summary="Added chunks to the no spawn chunks">
       <created>1520447807668</created>
       <option name="number" value="01357" />
@@ -791,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521055223725</updated>
     </task>
-    <option name="localTasksCounter" value="1405" />
+    <task id="LOCAL-01405" summary="Implemented the display names into hud">
+      <created>1521056805690</created>
+      <option name="number" value="01405" />
+      <option name="presentableId" value="LOCAL-01405" />
+      <option name="project" value="LOCAL" />
+      <updated>1521056805691</updated>
+    </task>
+    <option name="localTasksCounter" value="1406" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -871,7 +869,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a new default random bean" />
     <MESSAGE value="Made unique dialogue for the chili villager" />
     <MESSAGE value="Changed default start pos" />
     <MESSAGE value="Added a new default trail" />
@@ -896,7 +893,8 @@
     <MESSAGE value="Added display_name into default entities" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Changed one of the scenes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed one of the scenes" />
+    <MESSAGE value="Implemented the display names into hud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the display names into hud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1212,16 +1210,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="156" column="85" lean-forward="false" selection-start-line="156" selection-start-column="85" selection-end-line="156" selection-end-column="85" />
+        <state relative-caret-position="280">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="107" column="44" lean-forward="true" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
           <folding />
         </state>
       </provider>
