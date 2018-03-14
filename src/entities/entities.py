@@ -281,7 +281,7 @@ def create_json_from_entity(entity):
                 "interaction": entity.meta.interaction,
                 "important": entity.meta.important,
                 "evil": entity.meta.evil,
-                "display_name": entity.meta.display
+                "display_name": entity.meta.display_name
             }
         }
     else:
