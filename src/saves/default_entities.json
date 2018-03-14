@@ -2,43 +2,43 @@
   "1690": [{"pos": [7, 6], "meta":
       {"bean": "cool", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
         "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager1', None, 0);self.master.switch_to(3)",
-        "important": true, "evil": false
+        "important": true, "evil": false, "display_name": "Cool"
       }
     },
   {"pos": [17, 9], "meta":
       {"bean": "chili", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
         "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager2', None, 0);self.master.switch_to(3)",
-        "important": true, "evil": false
+        "important": true, "evil": false, , "display_name": "Chili"
       }
     }],
   "1790": [{"pos": [10, 7], "meta":
       {"bean": "strawberry", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
         "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager3', None, 0);self.master.switch_to(3)",
-        "important": true, "evil": false
+        "important": true, "evil": false, , "display_name": "Strawberry"
       }
     }],
   "1691": [{"pos": [15, 4], "meta":
       {"bean": "old_villager", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
         "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager3', None, 0);self.master.switch_to(3)",
-        "important": true, "evil": false
+        "important": true, "evil": false, "display_name": "Old"
       }
     }]
 },
   "player": [
     {"bean": "unicorn", "max_hp": 100, "moves": [0,1], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": null, "important": null, "evil": false
+        "interaction": null, "important": null, "evil": false, "display_name": "Unicorn"
       },
     {"bean": "lemon", "max_hp": 100, "moves": [0,1], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": null, "important": null, "evil": false
+        "interaction": null, "important": null, "evil": false, "display_name": "Lemon"
       },
     {"bean": "what", "max_hp": 100, "moves": [0,1], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": null, "important": null, "evil": false
+        "interaction": null, "important": null, "evil": false, "display_name": "What"
       },
     {"bean": "cool", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": null, "important": null, "evil": false
+        "interaction": null, "important": null, "evil": false, "display_name": "Cool"
       },
     {"bean": "chili", "max_hp": 100, "moves": [0,1], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": null, "important": null, "evil": false
+        "interaction": null, "important": null, "evil": false, "display_name": "Chili"
       }
   ],
   "player_meta": {"trail": [[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]], "move_history": ["L", "L", "L", "L", "L"]},
