@@ -20,8 +20,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+            <state relative-caret-position="240">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -41,17 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="498">
-              <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meta.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="0" column="3976370" lean-forward="false" selection-start-line="0" selection-start-column="3976370" selection-end-line="0" selection-end-column="3976370" />
+              <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -425,13 +415,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01352" summary="Rabbits have tails">
-      <created>1520370221617</created>
-      <option name="number" value="01352" />
-      <option name="presentableId" value="LOCAL-01352" />
-      <option name="project" value="LOCAL" />
-      <updated>1520370221617</updated>
-    </task>
     <task id="LOCAL-01353" summary="Updated beans.png">
       <created>1520370543895</created>
       <option name="number" value="01353" />
@@ -768,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521051277838</updated>
     </task>
-    <option name="localTasksCounter" value="1401" />
+    <task id="LOCAL-01401" summary="Added display_name into default entities">
+      <created>1521051668121</created>
+      <option name="number" value="01401" />
+      <option name="presentableId" value="LOCAL-01401" />
+      <option name="project" value="LOCAL" />
+      <updated>1521051668121</updated>
+    </task>
+    <option name="localTasksCounter" value="1402" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -778,7 +768,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17750533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -848,7 +838,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a random entity" />
     <MESSAGE value="Added in a new dialogue scene" />
     <MESSAGE value="Added more to scene" />
     <MESSAGE value="Added a new default random bean" />
@@ -873,7 +862,8 @@
     <MESSAGE value="Added display names to the bean meta" />
     <MESSAGE value="Added display_name attribute to EntityMeta" />
     <MESSAGE value="display names should get saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="display names should get saved" />
+    <MESSAGE value="Added display_name into default entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added display_name into default entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,15 +1176,15 @@
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
-          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+          <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+        <state relative-caret-position="240">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
