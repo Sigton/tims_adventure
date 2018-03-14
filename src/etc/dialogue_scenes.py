@@ -21,7 +21,6 @@ scenes = {
         ("Strange things are happening here.", 1),
         ("What is happening?", 0),
         ("I'm not sure, I just know it's bad. Try to find the old man, he is wise and might know more.", 1),
-        ("Do you know where he could be?", 0),
-        ("He will be somewhere in the town.", 1)
+        ("He will be somewhere in the town. Good luck.", 1)
     ]
 }
