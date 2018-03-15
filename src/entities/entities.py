@@ -296,6 +296,9 @@ def create_random_entity(pos):
 
     bean = random.choice(list(entity_data.keys()))
 
+    while bean in constants.no_spawn_beans:
+        bean = random.choice(list(entity_data.keys()))
+
     return {
         "pos": pos,
         "meta": {
