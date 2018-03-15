@@ -23,6 +23,10 @@ scenes = {
         ("I'm not sure, I just know it's bad. Try to find the old man, he is wise and might know more.", 1),
         ("He will be somewhere in the town. Good luck.", 1)
     ],
+    "villager4": [
+        ("Can you help me?", 0),
+        ("I'm not the one to be asking. There's an elder in the town, try him.", 1)
+    ]
     "old_man": [
         ("You came to see me?", 1),
         ("Yes, what is happening here?", 0),
