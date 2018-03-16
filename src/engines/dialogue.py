@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 
 from src.duel import duel_players
-from src.etc import gui_components, constants, dialogue_scenes
+from src.etc import gui_components, constants, story_data
 
 """
 dialogue.py
@@ -17,7 +17,7 @@ class DialogueController:
 
         self.master = master
 
-        self.scenes = dialogue_scenes.scenes
+        self.scenes = story_data.scenes
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
 
