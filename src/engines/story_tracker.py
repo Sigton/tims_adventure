@@ -54,3 +54,8 @@ class StoryTracker:
     def delete_item(self, item):
 
         del self.inventory[item]
+
+    def add_quest(self, quest):
+
+        if quest not in self.quests.keys():
+            self.quests[quest["name"]] = quest

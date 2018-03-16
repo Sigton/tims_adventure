@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" afterPath="$PROJECT_DIR$/src/etc/story_data.py" />
+      <change beforePath="$PROJECT_DIR$/src/engines/story_tracker.py" afterPath="$PROJECT_DIR$/src/engines/story_tracker.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+            <state relative-caret-position="872">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
-        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
@@ -156,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
+        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
       </list>
     </option>
   </component>
@@ -192,6 +202,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engines" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -363,13 +379,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01370" summary="Updated map">
-      <created>1520799030987</created>
-      <option name="number" value="01370" />
-      <option name="presentableId" value="LOCAL-01370" />
-      <option name="project" value="LOCAL" />
-      <updated>1520799030987</updated>
     </task>
     <task id="LOCAL-01371" summary="Updated map">
       <created>1520799155089</created>
@@ -707,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521187307745</updated>
     </task>
-    <option name="localTasksCounter" value="1419" />
+    <task id="LOCAL-01419" summary="Added a quests dict">
+      <created>1521187356385</created>
+      <option name="number" value="01419" />
+      <option name="presentableId" value="LOCAL-01419" />
+      <option name="project" value="LOCAL" />
+      <updated>1521187356385</updated>
+    </task>
+    <option name="localTasksCounter" value="1420" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,7 +803,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Adding houses" />
     <MESSAGE value="Fixing decs" />
     <MESSAGE value="Made wobble look nicer" />
@@ -812,7 +827,8 @@
     <MESSAGE value="Fixed formatting and a syntax error" />
     <MESSAGE value="Implemented villager4 scene" />
     <MESSAGE value="Renamed dialogue_scenes to story_data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed dialogue_scenes to story_data" />
+    <MESSAGE value="Added a quests dict" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a quests dict" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1025,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -1125,8 +1134,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+        <state relative-caret-position="872">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
