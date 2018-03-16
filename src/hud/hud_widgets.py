@@ -390,6 +390,9 @@ class Taskbar:
         self.journal_tooltip = gui_components.Tooltip("Journal", 0, 0, 20, constants.BLACK, "L")
         self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK, "L")
 
+        self.exclamation = icons.ExclamationMark(self.x, self.y)
+        self.exclamation.off()
+
         self.buttons = [
             self.inventory_button,
             self.journal_button,
@@ -402,7 +405,8 @@ class Taskbar:
             self.map_button,
             self.inventory_tooltip,
             self.journal_tooltip,
-            self.map_tooltip
+            self.map_tooltip,
+            self.exclamation
         ]
 
     def callback(self, button_id):
@@ -508,10 +512,7 @@ class InventoryDisplay(TaskGUI):
                                                  self.x+13, self.y+(40*n)+50, False)
                             for n in range(len(self.items))]
 
-        self.exclamation = icons.ExclamationMark(self.x, self.y)
-        self.exclamation.off()
-
-        self.components += [self.title, self.exclamation] + self.labels + self.item_images
+        self.components += [self.title] + self.labels + self.item_images
 
 
 class JournalDisplay(TaskGUI):
