@@ -18,7 +18,7 @@ class StoryTracker:
     def load_from_save(self, save_data):
 
         self.inventory = save_data["inventory"]
-        self.quests = save_data["inventory"]
+        self.quests = save_data["quests"]
 
     def get_story_data(self):
 
