@@ -59,3 +59,8 @@ class StoryTracker:
 
         if quest not in self.quests.keys():
             self.quests[quest] = quests[quest]
+
+    def remove_quest(self, quest):
+
+        if quest in self.quests.keys():
+            del self.quests[quest]
