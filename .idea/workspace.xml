@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/icons.py" afterPath="$PROJECT_DIR$/src/entities/icons.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +42,8 @@
           <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="592">
-                  <caret line="509" column="0" lean-forward="false" selection-start-line="509" selection-start-column="0" selection-end-line="509" selection-end-column="0" />
+                <state relative-caret-position="652">
+                  <caret line="512" column="70" lean-forward="false" selection-start-line="512" selection-start-column="70" selection-end-line="512" selection-end-column="70" />
                   <folding />
                 </state>
               </provider>
@@ -192,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -528,13 +528,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01379" summary="Made unique dialogue for the chili villager">
-      <created>1520887014414</created>
-      <option name="number" value="01379" />
-      <option name="presentableId" value="LOCAL-01379" />
-      <option name="project" value="LOCAL" />
-      <updated>1520887014415</updated>
     </task>
     <task id="LOCAL-01380" summary="Changed default start pos">
       <created>1520887797282</created>
@@ -872,7 +865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521235219811</updated>
     </task>
-    <option name="localTasksCounter" value="1428" />
+    <task id="LOCAL-01428" summary="Created an exclamation mark icon">
+      <created>1521235857539</created>
+      <option name="number" value="01428" />
+      <option name="presentableId" value="LOCAL-01428" />
+      <option name="project" value="LOCAL" />
+      <updated>1521235857539</updated>
+    </task>
+    <option name="localTasksCounter" value="1429" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -952,7 +952,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added an old villager bean to the game" />
     <MESSAGE value="Added display names to the bean meta" />
     <MESSAGE value="Added display_name attribute to EntityMeta" />
     <MESSAGE value="display names should get saved" />
@@ -977,7 +976,8 @@
     <MESSAGE value="Quests can now follow paths" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added new functions to story tracker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new functions to story tracker" />
+    <MESSAGE value="Created an exclamation mark icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created an exclamation mark icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1285,18 +1285,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="509" column="0" lean-forward="false" selection-start-line="509" selection-start-column="0" selection-end-line="509" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
           <caret line="94" column="71" lean-forward="false" selection-start-line="94" selection-start-column="71" selection-end-line="94" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="512" column="70" lean-forward="false" selection-start-line="512" selection-start-column="70" selection-end-line="512" selection-end-column="70" />
           <folding />
         </state>
       </provider>

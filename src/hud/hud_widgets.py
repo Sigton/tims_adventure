@@ -508,7 +508,9 @@ class InventoryDisplay(TaskGUI):
                                                  self.x+13, self.y+(40*n)+50, False)
                             for n in range(len(self.items))]
 
-        self.components += [self.title] + self.labels + self.item_images
+        self.exclamation = icons.ExclamationMark(self.x, self.y)
+
+        self.components += [self.title, self.exclamation] + self.labels + self.item_images
 
 
 class JournalDisplay(TaskGUI):
