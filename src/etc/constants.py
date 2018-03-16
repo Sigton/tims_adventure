@@ -45,7 +45,7 @@ default_start = (-15480, -64752)
 no_spawn_chunks = ["1590", "1690", "1790", "1890", "1591", "1691", "1791", "1891", "1592", "1692", "1792", "1892",
                    "1593", "1693", "1793", "1893"]
 
-no_spawn_beans = ["wizard", "old_villager"]
+no_spawn_beans = ["wizard", "old_villager", "villager"]
 
 
 # Entity Spawning data
