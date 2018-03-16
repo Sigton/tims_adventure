@@ -4,9 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="F">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+      <change beforePath="$PROJECT_DIR$/src/entities/icons.py" afterPath="$PROJECT_DIR$/src/entities/icons.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="385" column="91" lean-forward="true" selection-start-line="385" selection-start-column="91" selection-end-line="385" selection-end-column="91" />
+            <state relative-caret-position="856">
+              <caret line="458" column="38" lean-forward="false" selection-start-line="458" selection-start-column="38" selection-end-line="458" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icons.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="94" column="81" lean-forward="false" selection-start-line="94" selection-start-column="81" selection-end-line="94" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -174,8 +184,8 @@
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
-        <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/entities/icons.py" />
       </list>
     </option>
   </component>
@@ -510,13 +520,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01385" summary="Added another default entity">
-      <created>1520888716738</created>
-      <option name="number" value="01385" />
-      <option name="presentableId" value="LOCAL-01385" />
-      <option name="project" value="LOCAL" />
-      <updated>1520888716738</updated>
     </task>
     <task id="LOCAL-01386" summary="Created dialogue_scenes.py">
       <created>1520888878746</created>
@@ -854,7 +857,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521237579892</updated>
     </task>
-    <option name="localTasksCounter" value="1434" />
+    <task id="LOCAL-01434" summary="Better positioning">
+      <created>1521237728471</created>
+      <option name="number" value="01434" />
+      <option name="presentableId" value="LOCAL-01434" />
+      <option name="project" value="LOCAL" />
+      <updated>1521237728471</updated>
+    </task>
+    <option name="localTasksCounter" value="1435" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -934,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented the display names into hud" />
     <MESSAGE value="Saves upon exiting from dialogue controller" />
     <MESSAGE value="Friendly beans now show on the other beans tab" />
     <MESSAGE value="Debugging" />
@@ -959,7 +968,8 @@
     <MESSAGE value="Nice one putting it in the wrong class" />
     <MESSAGE value="Fixed exclamation mark position" />
     <MESSAGE value="Fixed component order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed component order" />
+    <MESSAGE value="Better positioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better positioning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1267,18 +1277,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+        <state relative-caret-position="856">
+          <caret line="458" column="38" lean-forward="false" selection-start-line="458" selection-start-column="38" selection-end-line="458" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="385" column="91" lean-forward="true" selection-start-line="385" selection-start-column="91" selection-end-line="385" selection-end-column="91" />
+        <state relative-caret-position="456">
+          <caret line="94" column="81" lean-forward="false" selection-start-line="94" selection-start-column="81" selection-end-line="94" selection-end-column="81" />
           <folding />
         </state>
       </provider>
