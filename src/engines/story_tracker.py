@@ -58,7 +58,7 @@ class StoryTracker:
     def add_quest(self, quest):
 
         if quest not in self.quests.keys():
-            self.quests[quest] = self.quests[quest]
+            self.quests[quest] = story_data.quests[quest]
 
     def remove_quest(self, quest):
 

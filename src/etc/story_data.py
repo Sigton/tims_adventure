@@ -62,5 +62,6 @@ completion_criteria = {
 
 
 quest_path = {
-    "talk_villagers": ["old_man"]
+    "talk_villagers": ["old_man"],
+    "old_man": []
 }
