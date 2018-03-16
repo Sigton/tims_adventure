@@ -509,6 +509,7 @@ class InventoryDisplay(TaskGUI):
                             for n in range(len(self.items))]
 
         self.exclamation = icons.ExclamationMark(self.x, self.y)
+        self.exclamation.off()
 
         self.components += [self.title, self.exclamation] + self.labels + self.item_images
 
