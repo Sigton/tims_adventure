@@ -15,6 +15,8 @@ class StoryTracker:
         self.inventory = {}
         self.quests = {}
 
+        self.quests_been_updated = False
+
     def load_from_save(self, save_data):
 
         self.inventory = save_data["inventory"]
@@ -71,3 +73,15 @@ class StoryTracker:
             self.add_quest(new_quest)
 
         self.remove_quest(quest)
+
+    def set_quest_updated(self):
+
+        self.quests_been_updated = True
+
+    def set_quests_seen(self):
+
+        self.quests_been_updated = False
+
+    def to_see_quests(self):
+
+        return self.quests_been_updated
