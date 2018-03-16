@@ -50,12 +50,14 @@ jelly monsters army.""", 1),
 
 
 quests = {
-    "talk_villagers": "Talk to the villagers"
+    "talk_villagers": "Talk to the villagers",
+    "old_man": "Find the elder villager"
 }
 
 
 completion_criteria = {
-    "talk_villagers": ["scene/villager3", "scene/villager4"]   
+    "talk_villagers": ["scene/villager3", "scene/villager4"],
+    "old_man": ["scene/old_man"]
 }
 
 
