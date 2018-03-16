@@ -1,4 +1,4 @@
-from src.etc import constants
+from src.etc import constants, story_data
 
 """
 story_tracker.py
@@ -58,4 +58,4 @@ class StoryTracker:
     def add_quest(self, quest):
 
         if quest not in self.quests.keys():
-            self.quests[quest["name"]] = quest
+            self.quests[quest] = quests[quest]
