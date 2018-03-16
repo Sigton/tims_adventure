@@ -402,10 +402,10 @@ class Taskbar:
             self.inventory_button,
             self.journal_button,
             self.map_button,
+            self.exclamation,
             self.inventory_tooltip,
             self.journal_tooltip,
-            self.map_tooltip,
-            self.exclamation
+            self.map_tooltip
         ]
 
     def callback(self, button_id):
