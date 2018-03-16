@@ -78,10 +78,12 @@ class DialogueController:
         self.exit_func = exit_func
         self.after_controller = after_controller
 
+        quests_to_follow = []
         for quest in self.master.story_tracker.quests.items():
             for criteria in story_data.completion_criteria[quest[0]]:
                 if criteria.split("/") == ["scene", scene]:
-                    self.master.story_tracker.follow_path(quest[0])
+                    quests_to_follow += [quest[0]]
+        [self.master.story_tracker.follow_path(quest) for quest in quests_to_follow]
 
         self.render_next()
 
