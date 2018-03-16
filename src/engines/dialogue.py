@@ -79,9 +79,9 @@ class DialogueController:
         self.after_controller = after_controller
 
         for quest in self.master.story_tracker.quests.items():
-            if quest[1].split("/") == ["scene", self.current_scene]:
-                pass
-                    
+            for criteria in story_data.completion_criteria[quest[0]]:
+                if criteria.split("/") == ["scene", scene]:
+                    print("quest compete")
 
         self.render_next()
 
