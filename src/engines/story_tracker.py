@@ -61,11 +61,13 @@ class StoryTracker:
 
         if quest not in self.quests.keys():
             self.quests[quest] = story_data.quests[quest]
+            self.set_quest_updated()
 
     def remove_quest(self, quest):
 
         if quest in self.quests.keys():
             del self.quests[quest]
+            self.set_quest_updated()
 
     def follow_path(self, quest):
 
