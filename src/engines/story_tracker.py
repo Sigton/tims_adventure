@@ -64,3 +64,10 @@ class StoryTracker:
 
         if quest in self.quests.keys():
             del self.quests[quest]
+
+    def follow_path(self, quest):
+
+        for new_quest in story_data.quest_path[quest]:
+            self.add_quest(new_quest)
+
+        self.remove_quest(quest)
