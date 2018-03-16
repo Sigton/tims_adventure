@@ -25,7 +25,7 @@ scenes = {
     ],
     "villager4": [
         ("Can you help me?", 0),
-        ("I'm not the one to be asking. There's an elder in the town, try him.", 1)
+        ("I'm not the one to be asking, I'm new here. I think there's an elder in the town, try him.", 1)
     ],
     "old_man": [
         ("You came to see me?", 1),
@@ -50,5 +50,5 @@ jelly monsters army.""", 1),
 
 
 quests = {
-
+    "talk_villagers": "Talk to the villagers"
 }
