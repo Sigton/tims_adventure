@@ -391,6 +391,7 @@ class Taskbar:
         self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK, "L")
 
         self.exclamation = icons.ExclamationMark(self.x+10, self.y+72)
+        self.exclamation.off()
 
         self.buttons = [
             self.inventory_button,
@@ -457,6 +458,11 @@ class Taskbar:
             self.map_tooltip.reposition(pygame.mouse.get_pos())
         else:
             self.map_tooltip.set_off()
+
+        if self.master.master.story_tracker.to_see_quests():
+            self.exclamation.on()
+        else:
+            self.exclamation.off()
 
     def draw(self, display):
 
