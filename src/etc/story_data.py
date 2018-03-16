@@ -52,3 +52,13 @@ jelly monsters army.""", 1),
 quests = {
     "talk_villagers": "Talk to the villagers"
 }
+
+
+completion_criteria = {
+    "talk_villagers": ["scene/villager3", "scene/villager4"]   
+}
+
+
+quest_path = {
+
+}
