@@ -519,11 +519,11 @@ class JournalDisplay(TaskGUI):
 
         self.title = gui_components.Label(self.x+9, self.y, "Journal", False, 32, constants.BLACK)
 
-        self.quests = self.master.master.story_tracker.quests.items()
+        self.quests = list(self.master.master.story_tracker.quests.items())
         self.labels = [gui_components.Label(self.x+45, self.y+(40*n)+44, self.quests[n][1], False, 32, constants.BLACK)
                        for n in range(len(self.quests))]
 
-        self.components.append(self.title)
+        self.components += [self.title] + self.labels
 
 
 class MapDisplay(TaskGUI):
