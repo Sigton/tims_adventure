@@ -390,7 +390,7 @@ class Taskbar:
         self.journal_tooltip = gui_components.Tooltip("Journal", 0, 0, 20, constants.BLACK, "L")
         self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK, "L")
 
-        self.exclamation = icons.ExclamationMark(self.x-9, self.y+76)
+        self.exclamation = icons.ExclamationMark(self.x+9, self.y+72)
 
         self.buttons = [
             self.inventory_button,
