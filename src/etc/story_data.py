@@ -47,3 +47,8 @@ jelly monsters army.""", 1),
         ("We need a brave, brave warrior to stop the jelly monster and its evil beans.", 1)
     ]
 }
+
+
+quests = {
+
+}

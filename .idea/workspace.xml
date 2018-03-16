@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" />
-      <change beforePath="$PROJECT_DIR$/src/etc/dialogue_scenes.py" afterPath="$PROJECT_DIR$/src/etc/story_data.py" />
+      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" afterPath="$PROJECT_DIR$/src/etc/story_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="852">
+              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -106,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_gui.py" />
         <option value="$PROJECT_DIR$/src/etc/spritesheet.py" />
         <option value="$PROJECT_DIR$/src/entities/particles.py" />
@@ -157,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
       </list>
     </option>
   </component>
@@ -364,13 +363,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01369" summary="Updated map">
-      <created>1520798740143</created>
-      <option name="number" value="01369" />
-      <option name="presentableId" value="LOCAL-01369" />
-      <option name="project" value="LOCAL" />
-      <updated>1520798740143</updated>
     </task>
     <task id="LOCAL-01370" summary="Updated map">
       <created>1520799030987</created>
@@ -708,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521139169940</updated>
     </task>
-    <option name="localTasksCounter" value="1418" />
+    <task id="LOCAL-01418" summary="Renamed dialogue_scenes to story_data">
+      <created>1521187307744</created>
+      <option name="number" value="01418" />
+      <option name="presentableId" value="LOCAL-01418" />
+      <option name="project" value="LOCAL" />
+      <updated>1521187307745</updated>
+    </task>
+    <option name="localTasksCounter" value="1419" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -788,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing little things" />
     <MESSAGE value="Updated map" />
     <MESSAGE value="Adding houses" />
     <MESSAGE value="Fixing decs" />
@@ -813,7 +811,8 @@
     <MESSAGE value="Fixed whitespace" />
     <MESSAGE value="Fixed formatting and a syntax error" />
     <MESSAGE value="Implemented villager4 scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented villager4 scene" />
+    <MESSAGE value="Renamed dialogue_scenes to story_data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed dialogue_scenes to story_data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1126,8 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="852">
+          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>
