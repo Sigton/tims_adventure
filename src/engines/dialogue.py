@@ -81,7 +81,7 @@ class DialogueController:
         for quest in self.master.story_tracker.quests.items():
             for criteria in story_data.completion_criteria[quest[0]]:
                 if criteria.split("/") == ["scene", scene]:
-                    print("quest compete")
+                    self.master.story_tracker.follow_path(quest[0])
 
         self.render_next()
 
