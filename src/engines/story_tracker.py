@@ -22,6 +22,9 @@ class StoryTracker:
         self.inventory = save_data["inventory"]
         self.quests = save_data["quests"]
 
+        if len(self.quests.keys()) > 0:
+            self.set_quest_updated()
+
     def get_story_data(self):
 
         return {"inventory": self.inventory,
