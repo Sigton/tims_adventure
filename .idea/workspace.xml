@@ -7,7 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/engines/story_tracker.py" afterPath="$PROJECT_DIR$/src/engines/story_tracker.py" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +66,8 @@
           <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+                <state relative-caret-position="632">
+                  <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -203,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
-        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
       </list>
     </option>
   </component>
@@ -430,13 +429,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01408" summary="Debugging">
-      <created>1521058348575</created>
-      <option name="number" value="01408" />
-      <option name="presentableId" value="LOCAL-01408" />
-      <option name="project" value="LOCAL" />
-      <updated>1521058348575</updated>
     </task>
     <task id="LOCAL-01409" summary="Added a new bean">
       <created>1521059016724</created>
@@ -774,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521392278112</updated>
     </task>
-    <option name="localTasksCounter" value="1457" />
+    <task id="LOCAL-01457" summary="Added a completed_quests">
+      <created>1521392890364</created>
+      <option name="number" value="01457" />
+      <option name="presentableId" value="LOCAL-01457" />
+      <option name="project" value="LOCAL" />
+      <updated>1521392890364</updated>
+    </task>
+    <option name="localTasksCounter" value="1458" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -854,7 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Nice one putting it in the wrong class" />
     <MESSAGE value="Fixed exclamation mark position" />
     <MESSAGE value="Fixed component order" />
     <MESSAGE value="Better positioning" />
@@ -879,7 +877,8 @@
     <MESSAGE value="Should now appropriately deal with skipping quests" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Now should be able to catch up on quests and complete the outstanding ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now should be able to catch up on quests and complete the outstanding ones" />
+    <MESSAGE value="Added a completed_quests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a completed_quests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1201,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="632">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>

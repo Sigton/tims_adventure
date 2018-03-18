@@ -83,7 +83,6 @@ class StoryTracker:
         for new_quest in story_data.quest_path[quest]:
             self.add_quest(new_quest)
 
-        self.remove_quest(quest)
         self.mark_completed(quest)
 
     def set_quest_updated(self):
@@ -101,8 +100,13 @@ class StoryTracker:
     def mark_completed(self, quest):
 
         self.quests_completed[quest] = True
-        self.set_quest_updated()
+        self.completed_quests[quest] = self.quests[quest]
+        self.remove_quest(quest)
 
     def is_complete(self, quest):
 
         return self.quests_completed[quest]
+
+    def purge_completed(self):
+
+        self.completed_quests.clear()
