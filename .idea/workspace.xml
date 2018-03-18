@@ -22,8 +22,8 @@
           <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+                <state relative-caret-position="240">
+                  <caret line="83" column="77" lean-forward="false" selection-start-line="83" selection-start-column="77" selection-end-line="83" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -66,8 +66,8 @@
           <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="376">
-                  <caret line="97" column="35" lean-forward="false" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+                <state relative-caret-position="16">
+                  <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -202,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
       </list>
     </option>
   </component>
@@ -429,13 +429,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01405" summary="Implemented the display names into hud">
-      <created>1521056805690</created>
-      <option name="number" value="01405" />
-      <option name="presentableId" value="LOCAL-01405" />
-      <option name="project" value="LOCAL" />
-      <updated>1521056805691</updated>
     </task>
     <task id="LOCAL-01406" summary="Saves upon exiting from dialogue controller">
       <created>1521056836952</created>
@@ -773,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521391458321</updated>
     </task>
-    <option name="localTasksCounter" value="1454" />
+    <task id="LOCAL-01454" summary="Debugging">
+      <created>1521391833938</created>
+      <option name="number" value="01454" />
+      <option name="presentableId" value="LOCAL-01454" />
+      <option name="project" value="LOCAL" />
+      <updated>1521391833938</updated>
+    </task>
+    <option name="localTasksCounter" value="1455" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -853,7 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added exclamation mark component" />
     <MESSAGE value="Off by default" />
     <MESSAGE value="Nice one putting it in the wrong class" />
     <MESSAGE value="Fixed exclamation mark position" />
@@ -878,7 +877,8 @@
     <MESSAGE value="Marks completed quests when completed" />
     <MESSAGE value="Defined is_complete" />
     <MESSAGE value="Should now appropriately deal with skipping quests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Should now appropriately deal with skipping quests" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,16 +1192,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="97" column="35" lean-forward="false" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+        <state relative-caret-position="16">
+          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="83" column="77" lean-forward="false" selection-start-line="83" selection-start-column="77" selection-end-line="83" selection-end-column="77" />
           <folding />
         </state>
       </provider>
