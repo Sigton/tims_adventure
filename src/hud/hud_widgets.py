@@ -531,11 +531,11 @@ class JournalDisplay(TaskGUI):
         self.quests = list(self.master.master.story_tracker.quests.items())
         self.completed_quests = list(self.master.master.story_tracker.completed_quests.items())
 
-        self.labels = [gui_components.Label(self.x+45, self.y+(40*(n+len(self.completed_quests)))+44, self.quests[n][1],
+        self.labels = [gui_components.Label(self.x+50, self.y+(40*(n+len(self.completed_quests)))+44, self.quests[n][1],
                                             False, 32, constants.BLACK)
                        for n in range(len(self.quests))]
 
-        self.labels += [gui_components.Label(self.x+45, self.y+(40*n)+44, self.completed_quests[n][1],
+        self.labels += [gui_components.Label(self.x+50, self.y+(40*n)+44, self.completed_quests[n][1],
                                              False, 32, constants.HEALTH_BAR_GREEN)
                         for n in range(len(self.completed_quests))]
 
