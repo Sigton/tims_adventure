@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/entities/icons.py" afterPath="$PROJECT_DIR$/src/entities/icons.py" />
-      <change beforePath="$PROJECT_DIR$/src/resources/icons.png" afterPath="$PROJECT_DIR$/src/resources/icons.png" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +29,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="550" column="0" lean-forward="true" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
+                <state relative-caret-position="362">
+                  <caret line="392" column="68" lean-forward="false" selection-start-line="392" selection-start-column="68" selection-end-line="392" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
@@ -50,11 +49,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="icons.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="icons.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="758">
-                  <caret line="101" column="67" lean-forward="false" selection-start-line="101" selection-start-column="67" selection-end-line="101" selection-end-column="67" />
+                <state relative-caret-position="462">
+                  <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -77,8 +76,8 @@
           <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="792">
-                  <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+                <state relative-caret-position="436">
+                  <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -213,9 +212,9 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -441,13 +440,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01414" summary="Fixed whitespace">
-      <created>1521062963054</created>
-      <option name="number" value="01414" />
-      <option name="presentableId" value="LOCAL-01414" />
-      <option name="project" value="LOCAL" />
-      <updated>1521062963054</updated>
     </task>
     <task id="LOCAL-01415" summary="Fixed whitespace">
       <created>1521063090523</created>
@@ -785,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521398748160</updated>
     </task>
-    <option name="localTasksCounter" value="1463" />
+    <task id="LOCAL-01463" summary="Finished adding arrow indicator">
+      <created>1521398917454</created>
+      <option name="number" value="01463" />
+      <option name="presentableId" value="LOCAL-01463" />
+      <option name="project" value="LOCAL" />
+      <updated>1521398917454</updated>
+    </task>
+    <option name="localTasksCounter" value="1464" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +794,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -865,7 +864,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moved it slightly" />
     <MESSAGE value="Working on toggling the exclamation on/off" />
     <MESSAGE value="Quests become seen when journal display opens" />
     <MESSAGE value="Sets updated when quests added/removed" />
@@ -890,7 +888,8 @@
     <MESSAGE value="Now purges completed after they have been opened" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Added arrow icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added arrow icon" />
+    <MESSAGE value="Finished adding arrow indicator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished adding arrow indicator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -963,13 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="39" column="77" lean-forward="false" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -1187,22 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="550" column="0" lean-forward="true" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="635">
@@ -1211,10 +1187,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/profile.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3039">
+          <caret line="39" column="77" lean-forward="false" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="101" column="67" lean-forward="false" selection-start-line="101" selection-start-column="67" selection-end-line="101" selection-end-column="67" />
+        <state relative-caret-position="462">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="392" column="68" lean-forward="false" selection-start-line="392" selection-start-column="68" selection-end-line="392" selection-end-column="68" />
           <folding />
         </state>
       </provider>
