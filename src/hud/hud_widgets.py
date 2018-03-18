@@ -532,7 +532,15 @@ class JournalDisplay(TaskGUI):
         self.labels = [gui_components.Label(self.x+45, self.y+(40*n)+44, self.quests[n][1], False, 32, constants.BLACK)
                        for n in range(len(self.quests))]
 
-        self.components += [self.title] + self.labels
+        image_data = lambda x: constants.quest_images[self.quests[x][0]]
+        self.quest_images = [gui_components.Image(icons.sprite_sheet.get_image(image_data(n)[0],
+                                                                               image_data(n)[1],
+                                                                               image_data(n)[2],
+                                                                               image_data(n)[3]),
+                                                  self.x+13, self.y+(40*n)+50, False)
+                             for n in range(len(self.quests))]
+
+        self.components += [self.title] + self.labels + self.quest_images
 
         self.master.master.story_tracker.set_quests_seen()
 
