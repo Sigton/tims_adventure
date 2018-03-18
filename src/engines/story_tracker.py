@@ -100,7 +100,7 @@ class StoryTracker:
     def mark_completed(self, quest):
 
         self.quests_completed[quest] = True
-        self.completed_quests[quest] = self.quests[quest]
+        self.completed_quests[quest] = story_data.quests[quest]
         self.remove_quest(quest)
 
     def is_complete(self, quest):
