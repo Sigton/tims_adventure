@@ -19,21 +19,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="792">
-                  <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="538">
-                  <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+                <state relative-caret-position="140">
+                  <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -63,11 +53,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="775">
                   <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="376">
+                  <caret line="97" column="35" lean-forward="false" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -202,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
+        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
       </list>
     </option>
   </component>
@@ -429,13 +429,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01404" summary="Changed one of the scenes">
-      <created>1521055223725</created>
-      <option name="number" value="01404" />
-      <option name="presentableId" value="LOCAL-01404" />
-      <option name="project" value="LOCAL" />
-      <updated>1521055223725</updated>
     </task>
     <task id="LOCAL-01405" summary="Implemented the display names into hud">
       <created>1521056805690</created>
@@ -773,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521391236912</updated>
     </task>
-    <option name="localTasksCounter" value="1453" />
+    <task id="LOCAL-01453" summary="Should now appropriately deal with skipping quests">
+      <created>1521391458321</created>
+      <option name="number" value="01453" />
+      <option name="presentableId" value="LOCAL-01453" />
+      <option name="project" value="LOCAL" />
+      <updated>1521391458321</updated>
+    </task>
+    <option name="localTasksCounter" value="1454" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -783,7 +783,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -853,7 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created an exclamation mark icon" />
     <MESSAGE value="Added exclamation mark component" />
     <MESSAGE value="Off by default" />
     <MESSAGE value="Nice one putting it in the wrong class" />
@@ -878,7 +877,8 @@
     <MESSAGE value="Created a mark completed function" />
     <MESSAGE value="Marks completed quests when completed" />
     <MESSAGE value="Defined is_complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined is_complete" />
+    <MESSAGE value="Should now appropriately deal with skipping quests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Should now appropriately deal with skipping quests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,14 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1182,14 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="186" column="1" lean-forward="false" selection-start-line="186" selection-start-column="1" selection-end-line="186" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
@@ -1198,10 +1182,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="186" column="1" lean-forward="false" selection-start-line="186" selection-start-column="1" selection-end-line="186" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="97" column="35" lean-forward="false" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
           <folding />
         </state>
       </provider>
