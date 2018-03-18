@@ -529,15 +529,17 @@ class JournalDisplay(TaskGUI):
         self.title = gui_components.Label(self.x+9, self.y, "Journal", False, 32, constants.BLACK)
 
         self.quests = list(self.master.master.story_tracker.quests.items())
-        self.labels = [gui_components.Label(self.x+45, self.y+(40*n)+44, self.quests[n][1], False, 32, constants.BLACK)
-                       for n in range(len(self.quests))]
-        
         self.completed_quests = list(self.master.master.story_tracker.completed_quests.items())
-        self.labels += [gui_components.Label(self.x+45, self.y+(40*(n+len(self.quests)))+44, self.completed_quests[n][1],
+
+        self.labels = [gui_components.Label(self.x+45, self.y+(40*(n+len(self.completed_quests)))+44, self.quests[n][1],
+                                            False, 32, constants.BLACK)
+                       for n in range(len(self.quests))]
+
+        self.labels += [gui_components.Label(self.x+45, self.y+(40*n)+44, self.completed_quests[n][1],
                                              False, 32, constants.HEALTH_BAR_GREEN)
                         for n in range(len(self.completed_quests))]
 
-        self.quests += self.completed_quests
+        self.quests = self.completed_quests + self.quests
 
         image_data = lambda x: constants.quest_images[self.quests[x][0]]
         self.quest_images = [gui_components.Image(icons.sprite_sheet.get_image(image_data(n)[0],
