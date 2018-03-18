@@ -81,6 +81,7 @@ class StoryTracker:
             self.add_quest(new_quest)
 
         self.remove_quest(quest)
+        self.mark_completed(quest)
 
     def set_quest_updated(self):
 
