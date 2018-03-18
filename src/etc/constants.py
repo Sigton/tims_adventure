@@ -179,7 +179,7 @@ bean_image_offset = {
 }
 
 
-# Items
+# Items & Quests
 
 items = [
     "EnlightenmentPotion",
@@ -194,4 +194,9 @@ item_display_names = {
 item_images = {
     "EnlightenmentPotion": (62, 11, 32, 32),
     "HealthPotion": (94, 11, 32, 32)
+}
+
+quest_images = {
+    "talk_villagers": (0, 236, 32, 32),
+    "old_man": (32, 236, 32, 32)
 }
