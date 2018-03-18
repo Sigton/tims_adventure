@@ -14,6 +14,7 @@ class StoryTracker:
 
         self.inventory = {}
         self.quests = {}
+        self.quests_completed = {}
 
         self.quests_been_updated = False
 
@@ -21,6 +22,7 @@ class StoryTracker:
 
         self.inventory = save_data["inventory"]
         self.quests = save_data["quests"]
+        self.quests_completed = save_data["quests_completed"]
 
         if len(self.quests.keys()) > 0:
             self.set_quest_updated()
@@ -28,7 +30,8 @@ class StoryTracker:
     def get_story_data(self):
 
         return {"inventory": self.inventory,
-                "quests": self.quests}
+                "quests": self.quests,
+                "quests_completed": self.quests_completed}
 
     def add_item(self, item, amount):
 
