@@ -550,6 +550,7 @@ class JournalDisplay(TaskGUI):
         self.components += [self.title] + self.labels + self.quest_images
 
         self.master.master.story_tracker.set_quests_seen()
+        self.master.master.story_tracker.purge_completed()
 
 
 class MapDisplay(TaskGUI):

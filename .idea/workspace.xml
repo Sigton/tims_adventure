@@ -32,8 +32,8 @@
           <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-38">
-                  <caret line="525" column="0" lean-forward="false" selection-start-line="525" selection-start-column="0" selection-end-line="525" selection-end-column="0" />
+                <state relative-caret-position="482">
+                  <caret line="551" column="58" lean-forward="true" selection-start-line="551" selection-start-column="58" selection-end-line="551" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -431,13 +431,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01410" summary="Moved a bean">
-      <created>1521059188909</created>
-      <option name="number" value="01410" />
-      <option name="presentableId" value="LOCAL-01410" />
-      <option name="project" value="LOCAL" />
-      <updated>1521059188909</updated>
-    </task>
     <task id="LOCAL-01411" summary="Adding old man backstory scene">
       <created>1521061897805</created>
       <option name="number" value="01411" />
@@ -774,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521392989288</updated>
     </task>
-    <option name="localTasksCounter" value="1459" />
+    <task id="LOCAL-01459" summary="Completed quests appear in green in the journal">
+      <created>1521393286303</created>
+      <option name="number" value="01459" />
+      <option name="presentableId" value="LOCAL-01459" />
+      <option name="project" value="LOCAL" />
+      <updated>1521393286303</updated>
+    </task>
+    <option name="localTasksCounter" value="1460" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -854,7 +854,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed component order" />
     <MESSAGE value="Better positioning" />
     <MESSAGE value="Flashes" />
     <MESSAGE value="Moved it slightly" />
@@ -879,7 +878,8 @@
     <MESSAGE value="Now should be able to catch up on quests and complete the outstanding ones" />
     <MESSAGE value="Added a completed_quests" />
     <MESSAGE value="Updated mark_completed and added purge_completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated mark_completed and added purge_completed" />
+    <MESSAGE value="Completed quests appear in green in the journal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed quests appear in green in the journal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1201,8 +1201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="525" column="0" lean-forward="false" selection-start-line="525" selection-start-column="0" selection-end-line="525" selection-end-column="0" />
+        <state relative-caret-position="482">
+          <caret line="551" column="58" lean-forward="true" selection-start-line="551" selection-start-column="58" selection-end-line="551" selection-end-column="58" />
           <folding />
         </state>
       </provider>
