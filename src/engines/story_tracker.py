@@ -93,3 +93,8 @@ class StoryTracker:
     def to_see_quests(self):
 
         return self.quests_been_updated
+
+    def mark_completed(self, quest):
+
+        self.quests_completed[quest] = True
+        self.set_quest_updated()

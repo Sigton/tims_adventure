@@ -7,7 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/engines/story_tracker.py" afterPath="$PROJECT_DIR$/src/engines/story_tracker.py" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,17 +17,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="792">
@@ -205,8 +204,8 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
-        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
       </list>
     </option>
   </component>
@@ -432,13 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01400" summary="display names should get saved">
-      <created>1521051277838</created>
-      <option name="number" value="01400" />
-      <option name="presentableId" value="LOCAL-01400" />
-      <option name="project" value="LOCAL" />
-      <updated>1521051277838</updated>
     </task>
     <task id="LOCAL-01401" summary="Added display_name into default entities">
       <created>1521051668121</created>
@@ -776,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521388825208</updated>
     </task>
-    <option name="localTasksCounter" value="1449" />
+    <task id="LOCAL-01449" summary="Should save and load quests_completed">
+      <created>1521391045752</created>
+      <option name="number" value="01449" />
+      <option name="presentableId" value="LOCAL-01449" />
+      <option name="project" value="LOCAL" />
+      <updated>1521391045752</updated>
+    </task>
+    <option name="localTasksCounter" value="1450" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,7 +855,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a new quest" />
     <MESSAGE value="Quests can now follow paths" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added new functions to story tracker" />
@@ -881,7 +879,8 @@
     <MESSAGE value="Adding quest icons to icons.png" />
     <MESSAGE value="Added spritesheet data for quest images" />
     <MESSAGE value="Got the quest images working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got the quest images working" />
+    <MESSAGE value="Should save and load quests_completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Should save and load quests_completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,18 +1192,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="51" column="68" lean-forward="true" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
