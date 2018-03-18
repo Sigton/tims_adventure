@@ -99,3 +99,7 @@ class StoryTracker:
 
         self.quests_completed[quest] = True
         self.set_quest_updated()
+
+    def is_complete(self, quest):
+
+        return self.quests_completed[quest]
