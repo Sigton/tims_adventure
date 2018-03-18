@@ -84,6 +84,8 @@ class DialogueController:
             if scene in path[1] and not self.master.story_tracker.is_complete(path[0]):
                 quests_to_follow += [path[0]]
 
+        [self.master.story_tracker.follow_path(quest) for quest in quests_to_follow]
+
         for quest in self.master.story_tracker.quests.items():
             for criteria in story_data.completion_criteria[quest[0]]:
                 if criteria.split("/") == ["scene", scene]:
