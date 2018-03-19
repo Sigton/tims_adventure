@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Items shouldn't spaw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/engines/save.py" afterPath="$PROJECT_DIR$/src/engines/save.py" />
     </list>
@@ -30,8 +30,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="158" column="38" lean-forward="true" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -375,13 +375,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01423" summary="Added a new quest">
-      <created>1521234067286</created>
-      <option name="number" value="01423" />
-      <option name="presentableId" value="LOCAL-01423" />
-      <option name="project" value="LOCAL" />
-      <updated>1521234067286</updated>
-    </task>
     <task id="LOCAL-01424" summary="Quests can now follow paths">
       <created>1521234407578</created>
       <option name="number" value="01424" />
@@ -718,11 +711,19 @@
       <option name="project" value="LOCAL" />
       <updated>1521445618951</updated>
     </task>
-    <option name="localTasksCounter" value="1472" />
+    <task id="LOCAL-01472" summary="Fixed the item spawning validation">
+      <created>1521446056793</created>
+      <option name="number" value="01472" />
+      <option name="presentableId" value="LOCAL-01472" />
+      <option name="project" value="LOCAL" />
+      <updated>1521446056793</updated>
+    </task>
+    <option name="localTasksCounter" value="1473" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18869936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,7 +798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated beans.png" />
     <MESSAGE value="Adding quest icons to icons.png" />
     <MESSAGE value="Added spritesheet data for quest images" />
     <MESSAGE value="Got the quest images working" />
@@ -822,7 +822,8 @@
     <MESSAGE value="Added new walls to the map" />
     <MESSAGE value="Updated the map" />
     <MESSAGE value="Fixed validation in entity spawning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed validation in entity spawning" />
+    <MESSAGE value="Fixed the item spawning validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the item spawning validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,8 +1137,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="158" column="38" lean-forward="true" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
           <folding />
         </state>
       </provider>
