@@ -164,7 +164,7 @@ def gen_random_entities(save_path):
                 if not any([[item_x, item_y] == x["pos"] for x in entity_data["entities"][chunk]]):
                     valid[0] = True
 
-                if map_data[chunk]["tiles"][tile_no*4:tile_no*4+4] not in spawn_tiles:
+                if map_data[chunk]["tiles"][tile_no*4:tile_no*4+4] in spawn_tiles:
                     valid[1] = True
 
                 attempts += 1
