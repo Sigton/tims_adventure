@@ -127,6 +127,8 @@ def gen_random_entities(save_path):
 
                 while not all(valid):
 
+                    valid = [False, False]
+
                     entity_x = random.randint(0, 19)
                     entity_y = random.randint(0, 14)
 
