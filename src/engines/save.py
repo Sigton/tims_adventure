@@ -122,7 +122,6 @@ def gen_random_entities(save_path):
                 entity_y = random.randint(0, 14)
 
                 attempts = 0
-                tile_no = (entity_y*20)+entity_x
                 valid = [False, False]
 
                 while not all(valid):
@@ -131,6 +130,7 @@ def gen_random_entities(save_path):
 
                     entity_x = random.randint(0, 19)
                     entity_y = random.randint(0, 14)
+                    tile_no = (entity_y*20)+entity_x
 
                     if not any([[entity_x, entity_y] == x["pos"] for x in entity_data["entities"][chunk]]):
                         valid[0] = True
@@ -142,8 +142,6 @@ def gen_random_entities(save_path):
                     if attempts > 10:
                         break
 
-                    print(chunk, entity_x, entity_y, attempts, valid)
-
                 if attempts < 10:
                     entity_data["entities"][chunk].append(entities.create_random_entity([entity_x, entity_y]))
 
@@ -152,7 +150,6 @@ def gen_random_entities(save_path):
             item_y = random.randint(0, 14)
 
             attempts = 0
-            tile_no = (item_y*20)+item_x
 
             valid = [False, False]
 
@@ -162,6 +159,8 @@ def gen_random_entities(save_path):
 
                 item_x = random.randint(0, 19)
                 item_y = random.randint(0, 14)
+
+                tile_no = (item_y*20)+item_x
 
                 if not any([[item_x, item_y] == x["pos"] for x in entity_data["entities"][chunk]]):
                     valid[0] = True
