@@ -203,7 +203,7 @@ class Item(icons.Icon):
 
     def __init__(self, image, x, y):
 
-        icons.Icon.__init__(self, image, x*constants.tile_w, y*constants.tile_h)
+        icons.Icon.__init__(self, image, (x*constants.tile_w)+constants.tile_w//2, y*constants.tile_h)
 
         self.shadow = shadows.Shadow(self)
         self.has_shadow = True
