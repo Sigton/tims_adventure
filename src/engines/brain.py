@@ -10,7 +10,7 @@ such as the opponents next move
 in the duelling.
 """
 
-'''
+
 weights_preset = [
     [2, 3, 4, 0.25, 3, 1, 1, 3, 1, 0.25, 3, 0.5],
     [2, 3, 0.25, 4, 3, 1, 1, 3, 1, 3, 0.25, 0.5],
@@ -82,10 +82,10 @@ if __name__ == "__main__":
         print("Scenario {}: {}. Expected outcome: {}. Cost: {}".format(n, output_idx, s[1], output_cost))
 
     print("Success rate: {}. Average cost: {}".format(c/n*100, sum(costs)/len(costs)))
-'''
+
 
 # New Brain design
-
+'''
 
 class Brain:
     def __init__(self):
@@ -113,4 +113,4 @@ class Brain:
                 pass
             else:
                 pass
-
+'''
