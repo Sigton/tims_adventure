@@ -513,7 +513,7 @@ class ChunkController:
 
         [layered_render.append(bean) for bean in self.player.beans]
 
-        for dec in sorted(layered_render, key=lambda x: x.rect.bottom):
+        for dec in sorted(layered_render, key=lambda x: x.shadow.rect.bottom if x.has_shadow else x.rect.bottom):
             if dec.__class__.__name__ not in constants.no_fade_sprites:
 
                 if any([dec.rect.colliderect(bean.rect) for bean in self.player.beans]):
