@@ -199,7 +199,14 @@ class ChunkController:
 
             elif event.type == KEYUP:
 
-                if event.key in (K_UP, K_w):
+                if event.key == K_ESCAPE:
+
+                    self.master.update_save()
+                    self.master.close_save()
+
+                    self.master.game_exit = True
+
+                elif event.key in (K_UP, K_w):
                     self.direction = self.direction.replace("U", "")
 
                 elif event.key in (K_DOWN, K_s):

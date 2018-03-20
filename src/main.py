@@ -29,7 +29,7 @@ class Main:
         pygame.init()
 
         # Create the display
-        self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
+        self.display = pygame.display.set_mode(constants.DISPLAY_SIZE, pygame.FULLSCREEN)
 
         # Set the title on the window
         pygame.display.set_caption("Bean RPG")
@@ -37,7 +37,7 @@ class Main:
         self.clock = pygame.time.Clock()
 
         self.load_components()
-        constants.load_performance_profile(2)
+        constants.load_performance_profile(3)
 
         self.loading_screen = gui_components.Image(tools.combine_images((gui_components.Fill(0, 0, 960, 720,
                                                                                              constants.BLACK),

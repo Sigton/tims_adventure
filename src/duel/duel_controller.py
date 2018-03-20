@@ -176,7 +176,10 @@ class DuelController:
 
             elif event.type == KEYUP:
 
-                if event.key == K_F11:
+                if event.key == K_ESCAPE:
+                    self.master.game_exit = True
+
+                elif event.key == K_F11:
                     self.master.set_full_screen()
 
             if self.hud_open:
