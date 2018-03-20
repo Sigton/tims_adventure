@@ -142,6 +142,8 @@ def gen_random_entities(save_path):
                     if attempts > 10:
                         break
 
+                    print(chunk, entity_x, entity_y, attempts, valid)
+
                 if attempts < 10:
                     entity_data["entities"][chunk].append(entities.create_random_entity([entity_x, entity_y]))
 
