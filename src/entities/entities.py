@@ -131,6 +131,7 @@ class RandomBean:
         else:
             self.meta = EntityMeta(self)
         self.shadow = shadows.Shadow(self)
+        self.has_shadow = True
 
         if not self.meta.important:
             self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)

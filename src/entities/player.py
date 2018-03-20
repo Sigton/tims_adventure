@@ -144,6 +144,7 @@ class Bean(pygame.sprite.Sprite):
             self.meta = entities.EntityMeta(self)
 
         self.shadow = shadows.Shadow(self)
+        self.has_shadow = True
 
         self.wobble_x = 0
         self.wobble_y = 0
