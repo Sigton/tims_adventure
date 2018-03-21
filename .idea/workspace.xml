@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="155" column="77" lean-forward="false" selection-start-line="155" selection-start-column="77" selection-end-line="155" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="202" column="32" lean-forward="false" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -172,11 +182,11 @@
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -378,13 +388,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01429" summary="Added exclamation mark component">
-      <created>1521236797789</created>
-      <option name="number" value="01429" />
-      <option name="presentableId" value="LOCAL-01429" />
-      <option name="project" value="LOCAL" />
-      <updated>1521236797789</updated>
     </task>
     <task id="LOCAL-01430" summary="Off by default">
       <created>1521236824924</created>
@@ -722,7 +725,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521619830404</updated>
     </task>
-    <option name="localTasksCounter" value="1478" />
+    <task id="LOCAL-01478" summary="Set back the movement speed">
+      <created>1521655303470</created>
+      <option name="number" value="01478" />
+      <option name="presentableId" value="LOCAL-01478" />
+      <option name="project" value="LOCAL" />
+      <updated>1521655303470</updated>
+    </task>
+    <option name="localTasksCounter" value="1479" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created a mark completed function" />
     <MESSAGE value="Marks completed quests when completed" />
     <MESSAGE value="Defined is_complete" />
     <MESSAGE value="Should now appropriately deal with skipping quests" />
@@ -827,7 +836,8 @@
     <MESSAGE value="Put movement speed back" />
     <MESSAGE value="Not on fullscreen anymore" />
     <MESSAGE value="Using a better performance profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using a better performance profile" />
+    <MESSAGE value="Set back the movement speed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set back the movement speed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1119,13 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="559" column="49" lean-forward="true" selection-start-line="559" selection-start-column="49" selection-end-line="559" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4640">
@@ -1146,6 +1149,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="155" column="77" lean-forward="false" selection-start-line="155" selection-start-column="77" selection-end-line="155" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="202" column="32" lean-forward="false" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="32" />
           <folding />
         </state>
       </provider>

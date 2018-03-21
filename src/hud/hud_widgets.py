@@ -200,7 +200,7 @@ class BeanSelectPopup:
         ]
 
         self.options = [gui_components.Label(self.x+35, self.y+39+18*n, "{} Bean".format(
-            self.player.beans[n].bean.meta.display_name),
+            self.player.beans[n].meta.display_name),
                                              False, 20, constants.BLACK) for n in range(len(self.player.beans))]
         self.options.append(gui_components.Label(self.x+35, self.y+39+18*len(self.options), "I decline the challenge",
                                                  False, 20, constants.BLACK))
