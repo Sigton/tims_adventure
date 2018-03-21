@@ -29,7 +29,7 @@ class Main:
         pygame.init()
 
         # Create the display
-        self.display = pygame.display.set_mode(constants.DISPLAY_SIZE, pygame.FULLSCREEN)
+        self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
 
         # Set the title on the window
         pygame.display.set_caption("Bean RPG")

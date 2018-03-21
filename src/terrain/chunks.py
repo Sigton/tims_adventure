@@ -250,11 +250,7 @@ class ChunkController:
                     self.master.set_full_screen()
 
                 elif event.key == K_ESCAPE:
-                    # self.master.exit_to_menu()
-
-                    self.master.close_save()
-
-                    self.master.game_exit = True
+                    self.master.exit_to_menu()
 
         if self.bean_select_popup_open:
             self.update_hud()
