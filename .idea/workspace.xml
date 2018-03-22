@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" afterPath="$PROJECT_DIR$/src/etc/constants.py" />
-      <change beforePath="$PROJECT_DIR$/src/resources/icons.png" afterPath="$PROJECT_DIR$/src/resources/icons.png" />
+      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" afterPath="$PROJECT_DIR$/src/etc/story_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            <state relative-caret-position="572">
+              <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="200" column="33" lean-forward="false" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
+            <state relative-caret-position="652">
+              <caret line="195" column="36" lean-forward="true" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -166,8 +165,8 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
       </list>
     </option>
   </component>
@@ -369,13 +368,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01434" summary="Better positioning">
-      <created>1521237728471</created>
-      <option name="number" value="01434" />
-      <option name="presentableId" value="LOCAL-01434" />
-      <option name="project" value="LOCAL" />
-      <updated>1521237728471</updated>
     </task>
     <task id="LOCAL-01435" summary="Flashes">
       <created>1521238380854</created>
@@ -713,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521747710327</updated>
     </task>
-    <option name="localTasksCounter" value="1483" />
+    <task id="LOCAL-01483" summary="Added spritesheet data">
+      <created>1521747805265</created>
+      <option name="number" value="01483" />
+      <option name="presentableId" value="LOCAL-01483" />
+      <option name="project" value="LOCAL" />
+      <updated>1521747805265</updated>
+    </task>
+    <option name="localTasksCounter" value="1484" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,7 +792,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a completed_quests" />
     <MESSAGE value="Updated mark_completed and added purge_completed" />
     <MESSAGE value="Completed quests appear in green in the journal" />
     <MESSAGE value="Now purges completed after they have been opened" />
@@ -818,7 +816,8 @@
     <MESSAGE value="Added more to the script" />
     <MESSAGE value="Adding new quest" />
     <MESSAGE value="Added new quest icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new quest icon" />
+    <MESSAGE value="Added spritesheet data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added spritesheet data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1127,18 +1126,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        <state relative-caret-position="652">
+          <caret line="195" column="36" lean-forward="true" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="200" column="33" lean-forward="false" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
+        <state relative-caret-position="572">
+          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding />
         </state>
       </provider>
