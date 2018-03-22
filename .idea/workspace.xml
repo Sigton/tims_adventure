@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" afterPath="$PROJECT_DIR$/src/etc/story_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="735">
+              <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="752">
+              <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -359,13 +368,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01432" summary="Fixed exclamation mark position">
-      <created>1521237551040</created>
-      <option name="number" value="01432" />
-      <option name="presentableId" value="LOCAL-01432" />
-      <option name="project" value="LOCAL" />
-      <updated>1521237551040</updated>
-    </task>
     <task id="LOCAL-01433" summary="Fixed component order">
       <created>1521237579891</created>
       <option name="number" value="01433" />
@@ -702,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521742401579</updated>
     </task>
-    <option name="localTasksCounter" value="1481" />
+    <task id="LOCAL-01481" summary="Adding new quest">
+      <created>1521747202041</created>
+      <option name="number" value="01481" />
+      <option name="presentableId" value="LOCAL-01481" />
+      <option name="project" value="LOCAL" />
+      <updated>1521747202041</updated>
+    </task>
+    <option name="localTasksCounter" value="1482" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -782,7 +791,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Should now appropriately deal with skipping quests" />
     <MESSAGE value="Now should be able to catch up on quests and complete the outstanding ones" />
     <MESSAGE value="Added a completed_quests" />
     <MESSAGE value="Updated mark_completed and added purge_completed" />
@@ -807,7 +815,8 @@
     <MESSAGE value="Set back the movement speed" />
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="Added more to the script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more to the script" />
+    <MESSAGE value="Adding new quest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new quest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,14 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1126,8 +1127,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="735">
+          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="200" column="32" lean-forward="true" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
           <folding />
         </state>
       </provider>
