@@ -168,7 +168,7 @@ class DialogueController:
                                           sorted_lines[n], False, 20, constants.BLACK)
                      for n in range(len(sorted_lines))
                      ] + [gui_components.Label(self.text_x+20, self.text_y+10,
-                                               bean + " Bean",
+                                               bean,
                                                False, 32, constants.BLACK)]
 
         self.scene_progress += 1
