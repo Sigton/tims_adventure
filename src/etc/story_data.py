@@ -71,19 +71,22 @@ But please hurry, we won't be able to defend ourselves for much longer.""", 1)
 quests = {
     "talk_villagers": "Talk to the villagers",
     "old_man": "Find the elder villager",
-    "heading_north": "Explore to the North"
+    "heading_north": "Explore to the North",
+    "help_village": "Help the village!"
 }
 
 
 completion_criteria = {
     "talk_villagers": ["scene/villager3", "scene/villager4"],
     "old_man": ["scene/old_man"],
-    "heading_north": ["scene/north_bean"]
+    "heading_north": ["scene/north_bean"],
+    "help_village": []
 }
 
 
 quest_path = {
     "talk_villagers": ["old_man"],
     "old_man": ["heading_north"],
-    "heading_north": []
+    "heading_north": ["help_village"],
+    "help_village": []
 }

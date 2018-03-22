@@ -199,5 +199,6 @@ item_images = {
 quest_images = {
     "talk_villagers": (0, 236, 32, 32),
     "old_man": (32, 236, 32, 32),
-    "heading_north": (64, 236, 32, 32)
+    "heading_north": (64, 236, 32, 32),
+    "help_village": (96, 236, 32, 32)
 }
