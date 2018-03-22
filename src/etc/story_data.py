@@ -44,7 +44,15 @@ the evil beans reach here.""", 1),
         ("What will happen once they reach the village?", 0),
         ("""These villagers will become corrupted. Their minds cast into darkness, and they will join the ranks of the 
 jelly monsters army.""", 1),
-        ("We need a brave, brave warrior to stop the jelly monster and its evil beans.", 1)
+        ("We need a brave, brave warrior to stop the jelly monster and its evil beans.", 1),
+        ("Someone who will not be scared by the face of evil, someone who will not stop no matter what.", 1),
+        ("Who could this warrior be?", 0),
+        ("Well done for volunteering, brave young bean.", 1),
+        ("Wait wha-", 0),
+        ("I knew you could do it!", 1),
+        ("Head north from here - an adventure awaits you!", 1),
+        ("But I'm not brave, I can't do thi-", 0),
+        ("You must hurry; you are our only hope.", 1)
     ]
 }
 
