@@ -53,6 +53,17 @@ jelly monsters army.""", 1),
         ("Head north from here - an adventure awaits you!", 1),
         ("But I'm not brave, I can't do thi-", 0),
         ("You must hurry; you are our only hope.", 1)
+    ],
+    "north_bean": [
+        ("Help! Our village is under attack! We need help!", 1),
+        ("What's happening?", 0),
+        ("Those evil beans, they're attacking our homes!", 1),
+        ("Evil beans?", 0),
+        ("The ones from the Jelly Monster! We need someone to save us!", 1),
+        ("Can you please help?", 1),
+        ("Where is your village?", 0),
+        ("""Just follow this path to the east, you'll be there in no time.
+But please hurry, we won't be able to defend ourselves for much longer.""", 1)
     ]
 }
 
@@ -67,7 +78,7 @@ quests = {
 completion_criteria = {
     "talk_villagers": ["scene/villager3", "scene/villager4"],
     "old_man": ["scene/old_man"],
-    "heading_north": []
+    "heading_north": ["scene/north_bean"]
 }
 
 
