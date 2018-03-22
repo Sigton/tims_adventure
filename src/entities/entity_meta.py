@@ -7,22 +7,22 @@ their max hp, moves, starting damage.
 """
 
 entity_data = {
-    "chili": {"max_hp": 100, "moves": [1, 0], "attack": 10, "energy": 100, "display_name": "Chili"},
-    "cool": {"max_hp": 100, "moves": [0, 2], "attack": 10, "energy": 100, "display_name": "Cool"},
-    "pickle": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Pickle"},
-    "strawberry": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Strawberry"},
-    "lemon": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Lemon"},
-    "rainbow": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Rainbow"},
-    "unicorn": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Unicorn"},
-    "hedgehog": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Hedgehog"},
-    "poison": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Poison"},
-    "carrot": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Carrot"},
-    "rabbit": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Rabbit"},
-    "what": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "What"},
-    "chicken": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Chicken"},
-    "wizard": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Wizard"},
-    "old_villager": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Old"},
-    "villager": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Villager"}
+    "chili": {"max_hp": 100, "moves": [1, 0], "attack": 10, "energy": 100, "display_name": "Chili Bean"},
+    "cool": {"max_hp": 100, "moves": [0, 2], "attack": 10, "energy": 100, "display_name": "Cool Bean"},
+    "pickle": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Pickle Bean"},
+    "strawberry": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Strawberry Bean"},
+    "lemon": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Lemon Bean"},
+    "rainbow": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Rainbow Bean"},
+    "unicorn": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Unicorn Bean"},
+    "hedgehog": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Hedgehog Bean"},
+    "poison": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Poison Bean"},
+    "carrot": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Carrot Bean"},
+    "rabbit": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Rabbit Bean"},
+    "what": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "What Beam"},
+    "chicken": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Chicken Bean"},
+    "wizard": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Wizard Bean"},
+    "old_villager": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Old Bean"},
+    "tim": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Tim"}
 }
 
 item_effects = {
