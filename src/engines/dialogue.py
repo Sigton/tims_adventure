@@ -130,6 +130,12 @@ class DialogueController:
                             exec(self.exit_func)
                         self.master.switch_to(self.after_controller)
                     else:
+                        self.scene_progress += 1
+                        self.render_next()
+
+                elif event.key == K_LEFT:
+                    if not self.scene_progress == 0:
+                        self.scene_progress -= 1
                         self.render_next()
 
     def render_next(self):
@@ -170,8 +176,6 @@ class DialogueController:
                      ] + [gui_components.Label(self.text_x+20, self.text_y+10,
                                                bean,
                                                False, 32, constants.BLACK)]
-
-        self.scene_progress += 1
         
     def draw(self, display):
 
