@@ -125,7 +125,7 @@ class DialogueController:
             if event.type == KEYUP:
 
                 if event.key == K_SPACE:
-                    if self.scene_progress >= len(self.current_scene):
+                    if self.scene_progress >= len(self.current_scene)-1:
                         if self.exit_func is not None:
                             exec(self.exit_func)
                         self.master.switch_to(self.after_controller)

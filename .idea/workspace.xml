@@ -20,8 +20,8 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="335">
+              <caret line="127" column="71" lean-forward="false" selection-start-line="127" selection-start-column="71" selection-end-line="127" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -377,13 +377,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01450" summary="Created a mark completed function">
-      <created>1521391079574</created>
-      <option name="number" value="01450" />
-      <option name="presentableId" value="LOCAL-01450" />
-      <option name="project" value="LOCAL" />
-      <updated>1521391079574</updated>
-    </task>
     <task id="LOCAL-01451" summary="Marks completed quests when completed">
       <created>1521391168690</created>
       <option name="number" value="01451" />
@@ -720,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521759538291</updated>
     </task>
-    <option name="localTasksCounter" value="1499" />
+    <task id="LOCAL-01499" summary="Can go backwards through scenes">
+      <created>1521823298423</created>
+      <option name="number" value="01499" />
+      <option name="presentableId" value="LOCAL-01499" />
+      <option name="project" value="LOCAL" />
+      <updated>1521823298424</updated>
+    </task>
+    <option name="localTasksCounter" value="1500" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,7 +732,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -800,7 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Put movement speed back" />
     <MESSAGE value="Not on fullscreen anymore" />
     <MESSAGE value="Using a better performance profile" />
@@ -825,7 +824,8 @@
     <MESSAGE value="Adjusted the icon" />
     <MESSAGE value="Updated no_spawn_chunks" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Can go backwards through scenes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can go backwards through scenes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,8 +1142,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        <state relative-caret-position="335">
+          <caret line="127" column="71" lean-forward="false" selection-start-line="127" selection-start-column="71" selection-end-line="127" selection-end-column="71" />
           <folding />
         </state>
       </provider>
