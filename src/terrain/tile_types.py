@@ -43,14 +43,16 @@ shadow_height_ratios = {
     "0031": 0.85,
     "0040": 0.6,
     "0043": 0.85,
-    "0045": 0.55
+    "0045": 0.55,
+    "0046": 0.71
 }
 
 # Thickness of the shadow
 shadow_width_ratios = {
     "duel_player": 0.2,
     "duel_enemy": 0.2,
-    "0043": 0.15
+    "0043": 0.15,
+    "0046": 0.5
 }
 
 # Width of shadow compared to width of parent
@@ -58,7 +60,8 @@ shadow_width_to_parent_ratios = {
     "duel_player": 1.2,
     "duel_enemy": 1.2,
     "0043": 1.2,
-    "0045": 1.3
+    "0045": 1.3,
+    "0046": 0.65
 }
 
 # x offset of shadow from parent center
