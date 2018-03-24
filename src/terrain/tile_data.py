@@ -49,5 +49,6 @@ tile_colors = {15724527: "0000",  # Generic ground
                15521264: "0042",  # Ground Alt
                11882385: "0043",  # House 1
                8744069: "0044",  # Solid Ground
-               2120488: "0045"  # Big Rock
+               2120488: "0045",  # Big Rock
+               2451758: "0046"  # Tiny Rock
                }
