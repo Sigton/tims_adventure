@@ -20,8 +20,8 @@
       <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+            <state relative-caret-position="200">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/entities/shadows.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+              <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -395,13 +395,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01468" summary="More paths in the map">
-      <created>1521404673268</created>
-      <option name="number" value="01468" />
-      <option name="presentableId" value="LOCAL-01468" />
-      <option name="project" value="LOCAL" />
-      <updated>1521404673268</updated>
-    </task>
     <task id="LOCAL-01469" summary="Added new walls to the map">
       <created>1521406059522</created>
       <option name="number" value="01469" />
@@ -738,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521885328355</updated>
     </task>
-    <option name="localTasksCounter" value="1517" />
+    <task id="LOCAL-01517" summary="Fixed medium rock shadow ratios">
+      <created>1521885638721</created>
+      <option name="number" value="01517" />
+      <option name="presentableId" value="LOCAL-01517" />
+      <option name="project" value="LOCAL" />
+      <updated>1521885638721</updated>
+    </task>
+    <option name="localTasksCounter" value="1518" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -818,7 +818,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a bunch more story" />
     <MESSAGE value="Tim doesnt spawn naturally" />
     <MESSAGE value="Added quest path" />
     <MESSAGE value="Fixed a tile on the map" />
@@ -843,7 +842,8 @@
     <MESSAGE value="Added a new rock texture" />
     <MESSAGE value="Added in new rock metadata" />
     <MESSAGE value="Updated decs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated decs" />
+    <MESSAGE value="Fixed medium rock shadow ratios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed medium rock shadow ratios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1153,15 +1153,15 @@
     <entry file="file://$PROJECT_DIR$/src/entities/shadows.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="200">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding />
         </state>
       </provider>
