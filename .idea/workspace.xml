@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/tile_types.py" afterPath="$PROJECT_DIR$/src/terrain/tile_types.py" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +40,8 @@
       <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            <state relative-caret-position="339">
+              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -385,20 +385,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01474" summary="Debugging">
-      <created>1521446556372</created>
-      <option name="number" value="01474" />
-      <option name="presentableId" value="LOCAL-01474" />
-      <option name="project" value="LOCAL" />
-      <updated>1521446556372</updated>
-    </task>
-    <task id="LOCAL-01475" summary="Put movement speed back">
-      <created>1521494938205</created>
-      <option name="number" value="01475" />
-      <option name="presentableId" value="LOCAL-01475" />
-      <option name="project" value="LOCAL" />
-      <updated>1521494938205</updated>
-    </task>
     <task id="LOCAL-01476" summary="Not on fullscreen anymore">
       <created>1521619591807</created>
       <option name="number" value="01476" />
@@ -728,7 +714,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522087640143</updated>
     </task>
-    <option name="localTasksCounter" value="1523" />
+    <task id="LOCAL-01523" summary="Fixed shadow ratios">
+      <created>1522087809574</created>
+      <option name="number" value="01523" />
+      <option name="presentableId" value="LOCAL-01523" />
+      <option name="project" value="LOCAL" />
+      <updated>1522087809575</updated>
+    </task>
+    <task id="LOCAL-01524" summary="Adjusted decs">
+      <created>1522087839128</created>
+      <option name="number" value="01524" />
+      <option name="presentableId" value="LOCAL-01524" />
+      <option name="project" value="LOCAL" />
+      <updated>1522087839128</updated>
+    </task>
+    <option name="localTasksCounter" value="1525" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -808,7 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added in new quest" />
     <MESSAGE value="Adjusted the icon" />
     <MESSAGE value="Updated no_spawn_chunks" />
     <MESSAGE value="Can go backwards through scenes" />
@@ -831,9 +830,10 @@
     <MESSAGE value="Changed tiny rock shadow ratios" />
     <MESSAGE value="Added buckets!" />
     <MESSAGE value="Changed the door on the house" />
-    <MESSAGE value="Fixed shadow ratios" />
     <MESSAGE value="Added bucket" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added bucket" />
+    <MESSAGE value="Fixed shadow ratios" />
+    <MESSAGE value="Adjusted decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        <state relative-caret-position="339">
+          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding />
         </state>
       </provider>
