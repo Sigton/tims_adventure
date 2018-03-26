@@ -34,7 +34,8 @@ shadowed_decs = [
     "0043",
     "0045",
     "0046",
-    "0047"
+    "0047",
+    "0048"
 ]
 
 # Vertical distance from sprite to shadow
