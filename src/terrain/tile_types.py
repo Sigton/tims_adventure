@@ -49,7 +49,8 @@ shadow_height_ratios = {
     "0045": 0.55,
     "0046": 0.71,
     "0047": 0.68,
-    "0048": 0.72
+    "0048": 0.72,
+    "0049": 0.7
 }
 
 # Thickness of the shadow
@@ -68,7 +69,8 @@ shadow_width_to_parent_ratios = {
     "0045": 1.3,
     "0046": 0.63,
     "0047": 0.9,
-    "0048": 0.9
+    "0048": 0.9,
+    "0049": 1.1
 }
 
 # x offset of shadow from parent center
