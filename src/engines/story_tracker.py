@@ -74,7 +74,11 @@ class StoryTracker:
         if quest not in self.quests.keys():
 
             if type(story_data.completion_criteria[quest]) is tuple:
-                self.objective_progress[quest] = [False for n in story_data.completion_criteria[quest]]
+                new_quest = {}
+                for criteria in story_data.completion_criteria[quest]:
+                    new_quest[criteria] = False
+
+                self.objective_progress[quest] = new_quest
 
             self.quests[quest] = story_data.quests[quest]
             self.set_quest_updated()
