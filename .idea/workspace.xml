@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/resources/terrain.png" afterPath="$PROJECT_DIR$/src/resources/terrain.png" />
       <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +21,7 @@
       <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="1540">
               <caret line="77" column="29" lean-forward="false" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
               <folding />
             </state>
@@ -30,7 +31,7 @@
       <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="1080">
               <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
               <folding />
             </state>
@@ -40,8 +41,8 @@
       <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            <state relative-caret-position="239">
+              <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -202,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,7 +232,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,13 +385,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01476" summary="Not on fullscreen anymore">
-      <created>1521619591807</created>
-      <option name="number" value="01476" />
-      <option name="presentableId" value="LOCAL-01476" />
-      <option name="project" value="LOCAL" />
-      <updated>1521619591807</updated>
     </task>
     <task id="LOCAL-01477" summary="Using a better performance profile">
       <created>1521619830403</created>
@@ -728,14 +722,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522087839128</updated>
     </task>
-    <option name="localTasksCounter" value="1525" />
+    <task id="LOCAL-01525" summary="Updated decs">
+      <created>1522088871431</created>
+      <option name="number" value="01525" />
+      <option name="presentableId" value="LOCAL-01525" />
+      <option name="project" value="LOCAL" />
+      <updated>1522088871431</updated>
+    </task>
+    <option name="localTasksCounter" value="1526" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20575693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32604167" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
@@ -825,7 +826,6 @@
     <MESSAGE value="Forgot to export terrain spritesheet oops" />
     <MESSAGE value="Added a new rock texture" />
     <MESSAGE value="Added in new rock metadata" />
-    <MESSAGE value="Updated decs" />
     <MESSAGE value="Fixed medium rock shadow ratios" />
     <MESSAGE value="Changed tiny rock shadow ratios" />
     <MESSAGE value="Added buckets!" />
@@ -833,7 +833,8 @@
     <MESSAGE value="Added bucket" />
     <MESSAGE value="Fixed shadow ratios" />
     <MESSAGE value="Adjusted decs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted decs" />
+    <MESSAGE value="Updated decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1120,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,13 +1128,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="35" column="75" lean-forward="false" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="1540">
           <caret line="77" column="29" lean-forward="false" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
           <folding />
         </state>
@@ -1142,7 +1141,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
+        <state relative-caret-position="1080">
           <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
           <folding />
         </state>
@@ -1150,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        <state relative-caret-position="239">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
           <folding />
         </state>
       </provider>
