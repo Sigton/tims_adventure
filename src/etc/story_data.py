@@ -80,7 +80,7 @@ completion_criteria = {
     "talk_villagers": ["scene/villager3", "scene/villager4"],
     "old_man": ["scene/old_man"],
     "heading_north": ["scene/north_bean"],
-    "help_village": []
+    "help_village": ("duel/6", "duel/7", "duel/8", "duel/9", "duel/10", "duel/11")
 }
 
 
