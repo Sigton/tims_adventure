@@ -140,8 +140,7 @@ class StoryTracker:
                 for criteria in story_data.completion_criteria[quest[0]]:
                     if criteria.split("/") == quest_criteria:
                         if quest[0] in self.objective_progress:
-                            self.objective_progress[quest[0]][story_data.completion_criteria[quest[0]].index(criteria)]\
-                                = True
+                            self.objective_progress[quest[0]][criteria] = True
 
                             if all(self.objective_progress[quest[0]]):
                                 quests_to_follow += [quest[0]]
