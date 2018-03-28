@@ -163,7 +163,7 @@ class DuelController:
         self.text.append(self.player_name_label)
         self.text.append(self.enemy_name_label)
 
-        self.master.story_tracker.check_complete(["duel", str(self.enemy.id)])
+        self.master.story_tracker.check_complete(["duel", str(self.enemy.meta.id)])
 
         self.reset()
 
