@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" />
+      <change beforePath="$PROJECT_DIR$/src/engines/save.py" afterPath="$PROJECT_DIR$/src/engines/save.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1540">
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="save.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="148" column="42" lean-forward="true" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="42" />
+            <state relative-caret-position="2092">
+              <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
-        <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
@@ -177,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/engines/save.py" />
       </list>
     </option>
   </component>
@@ -384,13 +384,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01494" summary="Added a new quest icon">
-      <created>1521756219922</created>
-      <option name="number" value="01494" />
-      <option name="presentableId" value="LOCAL-01494" />
-      <option name="project" value="LOCAL" />
-      <updated>1521756219922</updated>
     </task>
     <task id="LOCAL-01495" summary="Added in new quest">
       <created>1521756540878</created>
@@ -728,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522253493011</updated>
     </task>
-    <option name="localTasksCounter" value="1543" />
+    <task id="LOCAL-01543" summary="Added new attribute to default entities">
+      <created>1522253602542</created>
+      <option name="number" value="01543" />
+      <option name="presentableId" value="LOCAL-01543" />
+      <option name="project" value="LOCAL" />
+      <updated>1522253602542</updated>
+    </task>
+    <option name="localTasksCounter" value="1544" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -808,7 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added in new decs" />
     <MESSAGE value="Forgot to export terrain spritesheet oops" />
     <MESSAGE value="Added a new rock texture" />
     <MESSAGE value="Added in new rock metadata" />
@@ -833,7 +832,8 @@
     <MESSAGE value="Adding even more default entities" />
     <MESSAGE value="And a final evil bean for now" />
     <MESSAGE value="Adding id to entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding id to entities" />
+    <MESSAGE value="Added new attribute to default entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new attribute to default entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,18 +1142,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="148" column="42" lean-forward="true" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2092">
+          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding />
         </state>
       </provider>
