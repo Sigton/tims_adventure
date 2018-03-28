@@ -163,20 +163,7 @@ class DuelController:
         self.text.append(self.player_name_label)
         self.text.append(self.enemy_name_label)
 
-        quests_to_follow = []
-
-        for path in story_data.quest_path.items():
-            if enemy.meta.id in path[1] and not self.master.story_tracker.is_complete(path[0]):
-                quests_to_follow += [path[0]]
-
-        [self.master.story_tracker.follow_path(quest) for quest in quests_to_follow]
-
-        for quest in self.master.story_tracker.quests.items():
-            for criteria in story_data.completion_criteria[quest[0]]:
-                if criteria.split("/") == ["duel", enemy.meta.id]:
-                    quests_to_follow += [quest[0]]
-
-        [self.master.story_tracker.follow_path(quest) for quest in quests_to_follow]
+        self.master.story_tracker.check_complete(["duel", str(self.enemy.id)])
 
         self.reset()
 
