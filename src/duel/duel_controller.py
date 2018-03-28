@@ -163,6 +163,8 @@ class DuelController:
         self.text.append(self.player_name_label)
         self.text.append(self.enemy_name_label)
 
+        self.master.story_tracker.check_complete(["duel", str(self.enemy.meta.id)])
+
         self.reset()
 
     def update(self):
@@ -401,8 +403,6 @@ class DuelController:
             entity.meta.xp_gain(entity.energy)
 
             if winner == "Player":
-
-                self.master.story_tracker.check_complete(["duel", str(self.enemy.meta.id)])
 
                 if self.enemy.meta.evil:
                     self.enemy.meta.evil = False
