@@ -139,8 +139,12 @@ class StoryTracker:
         for quest in self.quests.items():
                 for criteria in story_data.completion_criteria[quest[0]]:
                     if criteria.split("/") == criteria:
-                        if type(story_data.completion_criteria[quest[0]]) is tuple:
-                            pass
+                        if quest[0] in self.objective_progress:
+                            self.objective_progress[quest[0]][story_data.completion_criteria[quest[0]].index(criteria)]\
+                                = True
+
+                            if all(self.objective_progress[quest[0]]):
+                                quests_to_follow += [quest[0]]
                         else:
                             quests_to_follow += [quest[0]]
 
