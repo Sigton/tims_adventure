@@ -137,9 +137,12 @@ class StoryTracker:
         [self.follow_path(quest) for quest in quests_to_follow]
 
         for quest in self.quests.items():
-            for criteria in story_data.completion_criteria[quest[0]]:
-                if criteria.split("/") == criteria:
-                    quests_to_follow += [quest[0]]
+                for criteria in story_data.completion_criteria[quest[0]]:
+                    if criteria.split("/") == criteria:
+                        if type(story_data.completion_criteria[quest[0]]) is tuple:
+                            pass
+                        else:
+                            quests_to_follow += [quest[0]]
 
         [self.follow_path(quest) for quest in quests_to_follow]
 
