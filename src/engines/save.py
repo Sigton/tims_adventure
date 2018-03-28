@@ -112,7 +112,7 @@ def gen_random_entities(save_path):
     with open(os.path.join(save_path, "meta.json"), "r") as infile:
         entity_data = json.load(infile)
 
-    entity_id = "1000"
+    entity_id = 500
 
     for chunk in map_data.keys():
         if chunk not in entity_data["entities"]:
@@ -148,7 +148,7 @@ def gen_random_entities(save_path):
                     entity_data["entities"][chunk].append(
                         entities.create_random_entity([entity_x, entity_y], entity_id)
                     )
-                    entity_id = str(int(entity_id) + 1)
+                    entity_id += 1
 
         for n in range(2):
             item_x = random.randint(0, 19)
