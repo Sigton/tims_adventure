@@ -126,19 +126,19 @@ class StoryTracker:
 
         self.completed_quests.clear()
 
-    def check_complete(self, criteria):
+    def check_complete(self, quest_criteria):
 
         quests_to_follow = []
 
         for path in story_data.quest_path.items():
-            if criteria[1] in path[1] and not self.is_complete(path[0]):
+            if quest_criteria[1] in path[1] and not self.is_complete(path[0]):
                 quests_to_follow += [path[0]]
 
         [self.follow_path(quest) for quest in quests_to_follow]
 
         for quest in self.quests.items():
                 for criteria in story_data.completion_criteria[quest[0]]:
-                    if criteria.split("/") == criteria:
+                    if criteria.split("/") == quest_criteria:
                         if quest[0] in self.objective_progress:
                             self.objective_progress[quest[0]][story_data.completion_criteria[quest[0]].index(criteria)]\
                                 = True
