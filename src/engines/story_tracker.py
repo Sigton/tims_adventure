@@ -72,7 +72,7 @@ class StoryTracker:
     def add_quest(self, quest):
 
         if quest not in self.quests.keys():
-            print(quest, story_data.completion_criteria[quest], type(story_data.completion_criteria[quest]) is tuple)
+
             if type(story_data.completion_criteria[quest]) is tuple:
                 new_quest = {}
                 for criteria in story_data.completion_criteria[quest]:
@@ -142,7 +142,7 @@ class StoryTracker:
                         if quest[0] in self.objective_progress:
                             self.objective_progress[quest[0]][criteria] = True
 
-                            if all(self.objective_progress[quest[0]]):
+                            if all([n[1] for n in list(self.objective_progress[quest[0]].items())]):
                                 quests_to_follow += [quest[0]]
                         else:
                             quests_to_follow += [quest[0]]
