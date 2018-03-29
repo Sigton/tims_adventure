@@ -193,5 +193,6 @@ def create_json_from_player(player):
         "interaction": player.meta.interaction,
         "important": player.meta.important,
         "evil": player.meta.evil,
-        "display_name": player.meta.display_name
+        "display_name": player.meta.display_name,
+        "id": player.meta.id
     }

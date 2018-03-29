@@ -72,7 +72,7 @@ class StoryTracker:
     def add_quest(self, quest):
 
         if quest not in self.quests.keys():
-
+            print(quest, story_data.completion_criteria[quest], type(story_data.completion_criteria[quest]) is tuple)
             if type(story_data.completion_criteria[quest]) is tuple:
                 new_quest = {}
                 for criteria in story_data.completion_criteria[quest]:
@@ -87,8 +87,8 @@ class StoryTracker:
 
         if quest in self.quests.keys():
 
-            if quest in self.objective_progress:
-                del self.objective_progress[quest]
+            # if quest in self.objective_progress:
+            #     del self.objective_progress[quest]
 
             del self.quests[quest]
             self.set_quest_updated()
