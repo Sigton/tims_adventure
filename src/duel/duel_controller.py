@@ -163,8 +163,6 @@ class DuelController:
         self.text.append(self.player_name_label)
         self.text.append(self.enemy_name_label)
 
-        self.master.story_tracker.check_complete(["duel", str(self.enemy.meta.id)])
-
         self.reset()
 
     def update(self):
@@ -402,13 +400,15 @@ class DuelController:
             entity.meta.level_up(1)
             entity.meta.xp_gain(entity.energy)
 
-            if winner == "Player":
+            if winner == "Player" and self.enemy.meta.evil:
 
-                if self.enemy.meta.evil:
-                    self.enemy.meta.evil = False
-                    self.enemy.terrain_entity.update_image()
+                self.enemy.meta.evil = False
+                self.enemy.terrain_entity.update_image()
 
         entity.energy = 0
+
+        if winner == "Player":
+            self.master.story_tracker.check_complete(['duel', entity.meta.id])
 
     def get_opponent_move(self):
 
