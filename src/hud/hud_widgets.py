@@ -708,3 +708,10 @@ class EnemyStat:
     def set_off(self):
 
         self.on = False
+
+
+class HealingDisplay(ItemSelect):
+
+    def __init__(self, master, controller, x, y):
+
+        ItemSelect.__init__(self, master, controller, x, y)
