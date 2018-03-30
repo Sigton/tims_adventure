@@ -18,7 +18,7 @@ class HUD:
         self.health_display = lambda: hud_widgets.HealthDisplay(self.player, self.master, self, 0, 34)
         self.bean_select = lambda: hud_widgets.BeanSelectPopup(self.player, self.master, self, 297, 452)
         self.save_select = lambda: hud_widgets.SaveSelect(self.master, self, 238, 178)
-        self.taskbar = lambda: hud_widgets.Taskbar(self.master, self, 900, 274)
+        self.taskbar = lambda: hud_widgets.Taskbar(self.master, self, 900, 246)
         self.inventory_display = lambda: hud_widgets.InventoryDisplay(self.master, self, 237, 179)
         self.journal_display = lambda: hud_widgets.JournalDisplay(self.master, self, 237, 179)
         self.map_display = lambda: hud_widgets.MapDisplay(self.master, self, 237, 179)
