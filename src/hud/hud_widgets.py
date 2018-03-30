@@ -417,16 +417,20 @@ class Taskbar:
 
         if button_id == 0:
             current_display = "inventory_display"
-            other_displays = ("journal_display", "map_display")
+            other_displays = ("journal_display", "map_display", "healing_display")
             current_button = self.inventory_button
         elif button_id == 1:
             current_display = "journal_display"
-            other_displays = ("inventory_display", "map_display")
+            other_displays = ("inventory_display", "map_display", "healing_display")
             current_button = self.journal_button
-        else:
+        elif button_id == 2:
             current_display = "map_display"
-            other_displays = ("inventory_display", "journal_display")
+            other_displays = ("inventory_display", "journal_display", "healing_display")
             current_button = self.map_button
+        else:
+            current_display = "healing_display"
+            other_displays = ("inventory_display", "journal_display", "map_display")
+            current_button = self.health_button
 
         if self.controller.has_component(current_display):
             self.controller.close_widget(current_display)
@@ -715,6 +719,8 @@ class HealingDisplay(ItemSelect):
     def __init__(self, master, controller, x, y):
 
         ItemSelect.__init__(self, master, controller, x, y)
+
+        self.id = "healing_display"
 
         self.refresh()
 

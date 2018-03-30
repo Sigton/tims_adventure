@@ -19,8 +19,17 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="613" column="22" lean-forward="true" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+            <state relative-caret-position="490">
+              <caret line="729" column="44" lean-forward="true" selection-start-line="729" selection-start-column="44" selection-end-line="729" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
             </state>
           </provider>
         </entry>
@@ -168,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
@@ -181,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
@@ -209,6 +218,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -369,13 +384,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01521" summary="Fixed shadow ratios">
-      <created>1522080496017</created>
-      <option name="number" value="01521" />
-      <option name="presentableId" value="LOCAL-01521" />
-      <option name="project" value="LOCAL" />
-      <updated>1522080496017</updated>
     </task>
     <task id="LOCAL-01522" summary="Added bucket">
       <created>1522087640143</created>
@@ -713,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522413472221</updated>
     </task>
-    <option name="localTasksCounter" value="1570" />
+    <task id="LOCAL-01570" summary="Created a refresh function that only shows healing items">
+      <created>1522413930987</created>
+      <option name="number" value="01570" />
+      <option name="presentableId" value="LOCAL-01570" />
+      <option name="project" value="LOCAL" />
+      <updated>1522413930987</updated>
+    </task>
+    <option name="localTasksCounter" value="1571" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,7 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding id to entities" />
     <MESSAGE value="Added new attribute to default entities" />
     <MESSAGE value="Implementing entity ids" />
     <MESSAGE value="Could just use ints instead of strings" />
@@ -818,7 +832,8 @@
     <MESSAGE value="Tooltip for health button works" />
     <MESSAGE value="Repositioned taskbar" />
     <MESSAGE value="Creating Healing display class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating Healing display class" />
+    <MESSAGE value="Created a refresh function that only shows healing items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a refresh function that only shows healing items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1069,13 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3002">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5042">
@@ -1125,10 +1133,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="613" column="22" lean-forward="true" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+        <state relative-caret-position="490">
+          <caret line="729" column="44" lean-forward="true" selection-start-line="729" selection-start-column="44" selection-end-line="729" selection-end-column="44" />
         </state>
       </provider>
     </entry>
