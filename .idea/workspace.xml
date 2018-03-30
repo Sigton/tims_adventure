@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_image_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_image_loader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="241" column="62" lean-forward="true" selection-start-line="241" selection-start-column="62" selection-end-line="241" selection-end-column="62" />
+            <state relative-caret-position="299">
+              <caret line="384" column="93" selection-start-line="384" selection-start-column="93" selection-end-line="384" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud_image_loader.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -134,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
@@ -156,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
       </list>
     </option>
   </component>
@@ -189,19 +198,6 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -356,20 +352,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01512" summary="Forgot to export terrain spritesheet oops">
-      <created>1521884285094</created>
-      <option name="number" value="01512" />
-      <option name="presentableId" value="LOCAL-01512" />
-      <option name="project" value="LOCAL" />
-      <updated>1521884285094</updated>
-    </task>
-    <task id="LOCAL-01513" summary="Fixed shadow ratios">
-      <created>1521884527582</created>
-      <option name="number" value="01513" />
-      <option name="presentableId" value="LOCAL-01513" />
-      <option name="project" value="LOCAL" />
-      <updated>1521884527582</updated>
     </task>
     <task id="LOCAL-01514" summary="Added a new rock texture">
       <created>1521885007184</created>
@@ -700,7 +682,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522347008457</updated>
     </task>
-    <option name="localTasksCounter" value="1561" />
+    <task id="LOCAL-01561" summary="Fixed bug with the bean select popup">
+      <created>1522406129430</created>
+      <option name="number" value="01561" />
+      <option name="presentableId" value="LOCAL-01561" />
+      <option name="project" value="LOCAL" />
+      <updated>1522406129431</updated>
+    </task>
+    <task id="LOCAL-01562" summary="Updated icons.png">
+      <created>1522406656330</created>
+      <option name="number" value="01562" />
+      <option name="presentableId" value="LOCAL-01562" />
+      <option name="project" value="LOCAL" />
+      <updated>1522406656330</updated>
+    </task>
+    <option name="localTasksCounter" value="1563" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,8 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated add and remove quests to allow for accumulative objectives" />
-    <MESSAGE value="Fixed my script a bit" />
     <MESSAGE value="Updated the no spawn chunks" />
     <MESSAGE value="Updated the rocks so that big and medium ones are solid" />
     <MESSAGE value="Added an evil bean to default entities" />
@@ -805,7 +799,9 @@
     <MESSAGE value="Debugging complete" />
     <MESSAGE value="Need to win to complete quest" />
     <MESSAGE value="Health potions are more effective" />
-    <option name="LAST_COMMIT_MESSAGE" value="Health potions are more effective" />
+    <MESSAGE value="Fixed bug with the bean select popup" />
+    <MESSAGE value="Updated icons.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated icons.png" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,13 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1114,8 +1103,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="241" column="62" lean-forward="true" selection-start-line="241" selection-start-column="62" selection-end-line="241" selection-end-column="62" />
+        <state relative-caret-position="299">
+          <caret line="384" column="93" selection-start-line="384" selection-start-column="93" selection-end-line="384" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
