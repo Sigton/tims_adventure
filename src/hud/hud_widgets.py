@@ -463,6 +463,12 @@ class Taskbar:
         else:
             self.map_tooltip.set_off()
 
+        if self.health_button.active:
+            self.health_tooltip.set_on()
+            self.health_tooltip.reposition(pygame.mouse.get_pos())
+        else:
+            self.health_tooltip.set_off()
+
         if self.master.master.story_tracker.to_see_quests():
             self.exclamation.on()
         else:
