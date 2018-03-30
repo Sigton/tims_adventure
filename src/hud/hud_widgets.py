@@ -383,10 +383,13 @@ class Taskbar:
                                                     self.x, self.y+60, lambda: self.callback(1))
         self.map_button = gui_components.Button(hud_image_loader.load_images("map_button"),
                                                 self.x, self.y+112, lambda: self.callback(2))
+        self.health_button = gui_components.Button(hud_image_loader.load_images("health_button"),
+                                                   self.x, self.y+172, lambda: self.callback(3))
 
         self.inventory_tooltip = gui_components.Tooltip("Inventory", 0, 0, 20, constants.BLACK, "L")
         self.journal_tooltip = gui_components.Tooltip("Journal", 0, 0, 20, constants.BLACK, "L")
         self.map_tooltip = gui_components.Tooltip("Map", 0, 0, 20, constants.BLACK, "L")
+        self.health_tooltip = gui_components.Tooltip("Healing", 0, 0, 20, constants.BLACK, "L")
 
         self.exclamation = icons.ArrowIndicator(self.x-24, self.y+68)
         self.exclamation.off()
@@ -394,17 +397,20 @@ class Taskbar:
         self.buttons = [
             self.inventory_button,
             self.journal_button,
-            self.map_button
+            self.map_button,
+            self.health_button
         ]
 
         self.components = [
             self.inventory_button,
             self.journal_button,
             self.map_button,
+            self.health_button,
             self.exclamation,
             self.inventory_tooltip,
             self.journal_tooltip,
-            self.map_tooltip
+            self.map_tooltip,
+            self.health_tooltip
         ]
 
     def callback(self, button_id):
