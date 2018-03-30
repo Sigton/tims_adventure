@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +19,17 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="460" column="37" lean-forward="true" selection-start-line="460" selection-start-column="37" selection-end-line="460" selection-end-column="37" />
+            <state relative-caret-position="450">
+              <caret line="613" column="22" lean-forward="true" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -149,7 +158,6 @@
         <option value="$PROJECT_DIR$/profile.log" />
         <option value="$PROJECT_DIR$/src/etc/containers.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_players.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
@@ -172,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
@@ -360,27 +369,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01518" summary="Changed tiny rock shadow ratios">
-      <created>1521885860009</created>
-      <option name="number" value="01518" />
-      <option name="presentableId" value="LOCAL-01518" />
-      <option name="project" value="LOCAL" />
-      <updated>1521885860009</updated>
-    </task>
-    <task id="LOCAL-01519" summary="Added buckets!">
-      <created>1522080153903</created>
-      <option name="number" value="01519" />
-      <option name="presentableId" value="LOCAL-01519" />
-      <option name="project" value="LOCAL" />
-      <updated>1522080153904</updated>
-    </task>
-    <task id="LOCAL-01520" summary="Changed the door on the house">
-      <created>1522080247948</created>
-      <option name="number" value="01520" />
-      <option name="presentableId" value="LOCAL-01520" />
-      <option name="project" value="LOCAL" />
-      <updated>1522080247948</updated>
     </task>
     <task id="LOCAL-01521" summary="Fixed shadow ratios">
       <created>1522080496017</created>
@@ -704,19 +692,40 @@
       <option name="project" value="LOCAL" />
       <updated>1522407285238</updated>
     </task>
-    <option name="localTasksCounter" value="1567" />
+    <task id="LOCAL-01567" summary="Tooltip for health button works">
+      <created>1522407404669</created>
+      <option name="number" value="01567" />
+      <option name="presentableId" value="LOCAL-01567" />
+      <option name="project" value="LOCAL" />
+      <updated>1522407404669</updated>
+    </task>
+    <task id="LOCAL-01568" summary="Repositioned taskbar">
+      <created>1522407459341</created>
+      <option name="number" value="01568" />
+      <option name="presentableId" value="LOCAL-01568" />
+      <option name="project" value="LOCAL" />
+      <updated>1522407459341</updated>
+    </task>
+    <task id="LOCAL-01569" summary="Creating Healing display class">
+      <created>1522413472221</created>
+      <option name="number" value="01569" />
+      <option name="presentableId" value="LOCAL-01569" />
+      <option name="project" value="LOCAL" />
+      <updated>1522413472221</updated>
+    </task>
+    <option name="localTasksCounter" value="1570" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.3256785" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.3256785" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916668" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -784,9 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding more default entities" />
-    <MESSAGE value="Adding even more default entities" />
-    <MESSAGE value="And a final evil bean for now" />
     <MESSAGE value="Adding id to entities" />
     <MESSAGE value="Added new attribute to default entities" />
     <MESSAGE value="Implementing entity ids" />
@@ -809,7 +815,10 @@
     <MESSAGE value="Added the new gui components" />
     <MESSAGE value="Updated icons.png" />
     <MESSAGE value="Fixed positions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed positions" />
+    <MESSAGE value="Tooltip for health button works" />
+    <MESSAGE value="Repositioned taskbar" />
+    <MESSAGE value="Creating Healing display class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Healing display class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,13 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1116,10 +1118,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="460" column="37" lean-forward="true" selection-start-line="460" selection-start-column="37" selection-end-line="460" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="613" column="22" lean-forward="true" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
         </state>
       </provider>
     </entry>

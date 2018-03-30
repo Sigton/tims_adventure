@@ -715,3 +715,30 @@ class HealingDisplay(ItemSelect):
     def __init__(self, master, controller, x, y):
 
         ItemSelect.__init__(self, master, controller, x, y)
+
+        self.refresh()
+
+    def refresh(self):
+
+        self.items = [item for item in list(self.master.master.story_tracker.inventory.items())
+                      if item in constants.healing_items]
+
+        self.labels = [
+            gui_components.Label(self.x + 45, self.y + (40 * n) + 44, "x{} Potion of {}".format(self.items[n][1][0],
+                                                                                                self.items[n][1][1]),
+                                 False, 32, constants.BLACK)
+            for n in range(len(self.items))]
+        image_data = lambda x: constants.item_images[self.items[x][0]]
+        self.item_images = [gui_components.Image(icons.sprite_sheet.get_image(image_data(n)[0],
+                                                                              image_data(n)[1],
+                                                                              image_data(n)[2],
+                                                                              image_data(n)[3]),
+                                                 self.x + 13, self.y + (40 * n) + 50, False)
+                            for n in range(len(self.items))]
+
+        self.components = [
+                              self.background,
+                              self.title,
+                              self.press_space,
+                              self.pointer
+                          ] + self.labels + self.item_images

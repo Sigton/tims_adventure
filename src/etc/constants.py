@@ -201,6 +201,10 @@ item_display_names = {
     "HealthPotion": "Healing"
 }
 
+healing_items = [
+    "HealthPotion"
+]
+
 item_images = {
     "EnlightenmentPotion": (62, 11, 32, 32),
     "HealthPotion": (94, 11, 32, 32)
