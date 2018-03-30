@@ -228,14 +228,14 @@ class BeanSelectPopup:
         if e.type == KEYUP:
 
             if e.key in (K_UP, K_w):
-                self.selected_option = (self.selected_option-1) % 6
+                self.selected_option = (self.selected_option-1) % (len(self.master.player.beans)+1)
 
             elif e.key in (K_DOWN, K_s):
-                self.selected_option = (self.selected_option+1) % 6
+                self.selected_option = (self.selected_option+1) % (len(self.master.player.beans)+1)
 
             elif e.key == K_SPACE:
 
-                if self.selected_option == 5:
+                if self.selected_option == len(self.master.player.beans):
                     self.master.hud.close_widget("bean_select")
                     self.master.enemy_to_duel = None
 
