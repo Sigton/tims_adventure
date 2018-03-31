@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/story_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+            <state relative-caret-position="310">
+              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="217" column="5" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -149,13 +158,13 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
   </component>
@@ -367,20 +376,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01532" summary="Updated default_entities">
-      <created>1522174874935</created>
-      <option name="number" value="01532" />
-      <option name="presentableId" value="LOCAL-01532" />
-      <option name="project" value="LOCAL" />
-      <updated>1522174874935</updated>
-    </task>
-    <task id="LOCAL-01533" summary="Updated add and remove quests to allow for accumulative objectives">
-      <created>1522175469629</created>
-      <option name="number" value="01533" />
-      <option name="presentableId" value="LOCAL-01533" />
-      <option name="project" value="LOCAL" />
-      <updated>1522175469633</updated>
     </task>
     <task id="LOCAL-01534" summary="Fixed my script a bit">
       <created>1522175965347</created>
@@ -711,7 +706,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522497267563</updated>
     </task>
-    <option name="localTasksCounter" value="1581" />
+    <task id="LOCAL-01581" summary="Created new dialogue">
+      <created>1522502479907</created>
+      <option name="number" value="01581" />
+      <option name="presentableId" value="LOCAL-01581" />
+      <option name="project" value="LOCAL" />
+      <updated>1522502479907</updated>
+    </task>
+    <task id="LOCAL-01582" summary="Created new quest icon">
+      <created>1522513499032</created>
+      <option name="number" value="01582" />
+      <option name="presentableId" value="LOCAL-01582" />
+      <option name="project" value="LOCAL" />
+      <updated>1522513499032</updated>
+    </task>
+    <option name="localTasksCounter" value="1583" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -791,8 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated check_complete function for accumulative quests" />
-    <MESSAGE value="Accumulative quests should now work" />
     <MESSAGE value="Quests with duel objectives only complete if player wins duel" />
     <MESSAGE value="Deubgging" />
     <MESSAGE value="Debugging complete" />
@@ -816,7 +823,9 @@
     <MESSAGE value="Got it working" />
     <MESSAGE value="Added a new default entity" />
     <MESSAGE value="Updated quest data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated quest data" />
+    <MESSAGE value="Created new dialogue" />
+    <MESSAGE value="Created new quest icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new quest icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1092,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1149,8 +1151,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        <state relative-caret-position="310">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="217" column="5" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="5" />
         </state>
       </provider>
     </entry>
