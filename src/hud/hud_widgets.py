@@ -727,7 +727,7 @@ class HealingDisplay(ItemSelect):
     def refresh(self):
 
         self.items = [item for item in list(self.master.master.story_tracker.inventory.items())
-                      if item in constants.healing_items]
+                      if item[0] in constants.healing_items]
 
         self.labels = [
             gui_components.Label(self.x + 45, self.y + (40 * n) + 44, "x{} Potion of {}".format(self.items[n][1][0],
