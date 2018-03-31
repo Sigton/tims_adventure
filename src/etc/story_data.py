@@ -64,6 +64,11 @@ jelly monsters army.""", 1),
         ("Where is your village?", 0),
         ("""Just follow this path to the east, you'll be there in no time.
 But please hurry, we won't be able to defend ourselves for much longer.""", 1)
+    ],
+    "help_village_bean": [
+        ("Help us, our village is being raided!", 1),
+        ("There are 6 evil beans in the village, can you defeat them for us?", 1),
+        ("I'll try!", 0)
     ]
 }
 
