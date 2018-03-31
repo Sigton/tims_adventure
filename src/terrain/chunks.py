@@ -174,6 +174,9 @@ class ChunkController:
 
                 self.hud.get_component("bean_select").handle_event(event)
 
+            elif self.hud.has_component("healing_display"):
+                self.hud.get_component("healing_display").handle_event(event)
+
             elif event.type == constants.MUSIC_START_EVENT:
 
                 self.master.sound_engine.queue_sound((random.choice(self.master.sound_engine.music), 0))
