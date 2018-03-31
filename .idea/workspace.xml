@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="762" column="86" selection-start-line="762" selection-start-column="86" selection-end-line="762" selection-end-column="86" />
+            <state relative-caret-position="180">
+              <caret line="711" column="22" lean-forward="true" selection-start-line="711" selection-start-column="22" selection-end-line="711" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -33,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -42,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="793">
-              <caret line="446" column="26" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
+              <caret line="446" column="26" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -62,8 +71,8 @@
       <file leaf-file-name="hud.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="520">
+              <caret line="26" column="97" selection-start-line="26" selection-start-column="97" selection-end-line="26" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -110,8 +119,8 @@
       <find>heal</find>
       <find>player</find>
       <find>&quot;0</find>
-      <find>&quot;pos&quot;: [0, 0]</find>
-      <find>False, True</find>
+      <find />
+      <find />
       <find>False,</find>
       <find>True</find>
       <find>zTrue</find>
@@ -122,8 +131,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find>id&quot;: &quot;1000</find>
-      <find>id&quot;: 18473</find>
+      <find />
+      <find />
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -145,7 +154,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace>: create_images(</replace>
+      <replace />
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -204,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
-        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json" />
@@ -212,10 +220,11 @@
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
   </component>
@@ -260,6 +269,12 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -421,34 +436,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01526" summary="Updated terrain.png">
-      <created>1522169108872</created>
-      <option name="number" value="01526" />
-      <option name="presentableId" value="LOCAL-01526" />
-      <option name="project" value="LOCAL" />
-      <updated>1522169108873</updated>
-    </task>
-    <task id="LOCAL-01527" summary="Updated terrain.png">
-      <created>1522169278323</created>
-      <option name="number" value="01527" />
-      <option name="presentableId" value="LOCAL-01527" />
-      <option name="project" value="LOCAL" />
-      <updated>1522169278324</updated>
-    </task>
-    <task id="LOCAL-01528" summary="Updated terrain.png">
-      <created>1522169374252</created>
-      <option name="number" value="01528" />
-      <option name="presentableId" value="LOCAL-01528" />
-      <option name="project" value="LOCAL" />
-      <updated>1522169374252</updated>
-    </task>
-    <task id="LOCAL-01529" summary="Updated terrain.png">
-      <created>1522169587234</created>
-      <option name="number" value="01529" />
-      <option name="presentableId" value="LOCAL-01529" />
-      <option name="project" value="LOCAL" />
-      <updated>1522169587234</updated>
     </task>
     <task id="LOCAL-01530" summary="Updated terrain.png">
       <created>1522174322445</created>
@@ -765,19 +752,47 @@
       <option name="project" value="LOCAL" />
       <updated>1522495312984</updated>
     </task>
-    <option name="localTasksCounter" value="1575" />
+    <task id="LOCAL-01575" summary="Created new handle event">
+      <created>1522496049977</created>
+      <option name="number" value="01575" />
+      <option name="presentableId" value="LOCAL-01575" />
+      <option name="project" value="LOCAL" />
+      <updated>1522496049977</updated>
+    </task>
+    <task id="LOCAL-01576" summary="HealingDisplay has player attribute">
+      <created>1522496116498</created>
+      <option name="number" value="01576" />
+      <option name="presentableId" value="LOCAL-01576" />
+      <option name="project" value="LOCAL" />
+      <updated>1522496116498</updated>
+    </task>
+    <task id="LOCAL-01577" summary="Now heals active bean">
+      <created>1522496219242</created>
+      <option name="number" value="01577" />
+      <option name="presentableId" value="LOCAL-01577" />
+      <option name="project" value="LOCAL" />
+      <updated>1522496219242</updated>
+    </task>
+    <task id="LOCAL-01578" summary="Got it working">
+      <created>1522496316754</created>
+      <option name="number" value="01578" />
+      <option name="presentableId" value="LOCAL-01578" />
+      <option name="project" value="LOCAL" />
+      <updated>1522496316754</updated>
+    </task>
+    <option name="localTasksCounter" value="1579" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.3256785" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.3256785" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916668" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -845,10 +860,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Could just use ints instead of strings" />
-    <MESSAGE value="Implemented quest completion through duels" />
-    <MESSAGE value="Defining a general check complete function" />
-    <MESSAGE value="Implemented the new function" />
     <MESSAGE value="Added a completion criteria for help village quest" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Updated check_complete function for accumulative quests" />
@@ -870,7 +881,11 @@
     <MESSAGE value="Implementing the new display" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Events are passed to healing display when open" />
-    <option name="LAST_COMMIT_MESSAGE" value="Events are passed to healing display when open" />
+    <MESSAGE value="Created new handle event" />
+    <MESSAGE value="HealingDisplay has player attribute" />
+    <MESSAGE value="Now heals active bean" />
+    <MESSAGE value="Got it working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got it working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1104,13 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1160,13 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1177,7 +1178,7 @@
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
-          <caret line="446" column="26" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
+          <caret line="446" column="26" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1194,17 +1195,31 @@
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="97" selection-start-line="26" selection-start-column="97" selection-end-line="26" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="762" column="86" selection-start-line="762" selection-start-column="86" selection-end-line="762" selection-end-column="86" />
+        <state relative-caret-position="180">
+          <caret line="711" column="22" lean-forward="true" selection-start-line="711" selection-start-column="22" selection-end-line="711" selection-end-column="22" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
         </state>
       </provider>
     </entry>
