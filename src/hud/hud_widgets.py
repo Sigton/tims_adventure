@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 
 from src.etc import gui_components, constants
-from src.entities import icons
+from src.entities import icons, entity_meta
 from src.menu import menu_image_loader
 from src.hud import hud_image_loader
 from src.etc import tools
@@ -748,3 +748,19 @@ class HealingDisplay(ItemSelect):
                               self.press_space,
                               self.pointer
                           ] + self.labels + self.item_images
+
+    def handle_event(self, e):
+
+        if e.type == KEYUP:
+
+            if e.key in (K_UP, K_w):
+                self.selected_item = (self.selected_item - 1) % len(self.items)
+
+            elif e.key in (K_DOWN, K_s):
+                self.selected_item = (self.selected_item + 1) % len(self.items)
+
+            elif e.key == K_SPACE:
+
+                self.master.master.story_tracker.use_item(self.items[self.selected_item][0], 1)
+                exec(entity_meta.item_effects[self.items[self.selected_item][0]])
+                self.refresh()
