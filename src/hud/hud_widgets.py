@@ -721,7 +721,7 @@ class HealingDisplay(ItemSelect):
         ItemSelect.__init__(self, master, controller, x, y)
 
         self.id = "healing_display"
-        self.player = player
+        self.player = player.beans[self.controller.get_component["health_display"].active_bean_stat]
 
         self.refresh()
 
