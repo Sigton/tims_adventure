@@ -716,11 +716,12 @@ class EnemyStat:
 
 class HealingDisplay(ItemSelect):
 
-    def __init__(self, master, controller, x, y):
+    def __init__(self, master, controller, player, x, y):
 
         ItemSelect.__init__(self, master, controller, x, y)
 
         self.id = "healing_display"
+        self.player = player
 
         self.refresh()
 
