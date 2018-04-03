@@ -17,5 +17,8 @@ self.master.sound_engine.queue_sound((self.master.sound_engine.burn, 0))""",
      "energy": 15, "xp": 15},
     {"name": "Freeze", "str_mod": 1.5, "effects":
         """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 150, 6, 5, 45, 2)""",
-     "energy": 20, "xp": 20}
+     "energy": 20, "xp": 20},
+    {"name": "Pepper Spray", "str_mod": 0.9, "effects":
+        """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 150, 6, 5, 45, 2)""",
+     "energy": 2, "xp": 2}
 ]

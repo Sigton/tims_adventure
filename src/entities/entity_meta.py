@@ -7,7 +7,7 @@ their max hp, moves, starting damage.
 """
 
 entity_data = {
-    "chili": {"max_hp": 100, "moves": [1, 0], "attack": 10, "energy": 100, "display_name": "Chili Bean"},
+    "chili": {"max_hp": 100, "moves": [1, 3], "attack": 10, "energy": 100, "display_name": "Chili Bean"},
     "cool": {"max_hp": 100, "moves": [0, 2], "attack": 10, "energy": 100, "display_name": "Cool Bean"},
     "pickle": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Pickle Bean"},
     "strawberry": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Strawberry Bean"},
