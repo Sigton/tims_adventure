@@ -112,7 +112,10 @@ tiles = [generic_ground, blue_ground, path_1,
          shore_3, shore_4, shore_5, shore_6,
          shore_7, shore_8, bush, grass, ground_alt,
          house_1, solid_ground, big_rock, tiny_rock,
-         medium_rock, bucket, barrel, sand]
+         medium_rock, bucket, barrel, sand,
+         dec_wall_1, dec_wall_2, dec_wall_3, dec_wall_4,
+         dec_wall_5, dec_wall_6, dec_wall_7, dec_wall_8,
+         dec_wall_9, dec_wall_10, dec_wall_11, dec_wall_12]
 images = {}
 
 sprite_sheet = None
