@@ -112,6 +112,9 @@ sand_shore_7 = {"template": (96, 288, 48, 48),
                 "material": 50}
 sand_shore_8 = {"template": (144, 288, 48, 48),
                 "material": 50}
+water = (
+    (),
+)
 
 
 # Indexing this array by a tiles' ID will
