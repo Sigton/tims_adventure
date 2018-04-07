@@ -96,7 +96,8 @@ health_update_rate = 120
 
 animation_thresholds = {
     "0030": 4,
-    "0072": 12
+    "0072": 12,
+    "0073": 12
 }
 
 no_fade_sprites = [

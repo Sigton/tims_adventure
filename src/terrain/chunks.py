@@ -73,7 +73,8 @@ class ChunkController:
 
         self.current_frames = {
             "0030": 0,
-            "0072": 0
+            "0072": 0,
+            "0073": 0
         }
 
         self.px, self.py = constants.player_pos

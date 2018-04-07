@@ -28,7 +28,8 @@ solid_tiles = [
 
 animated_tiles = [
     "0030",
-    "0072"
+    "0072",
+    "0073"
 ]
 
 shadowed_decs = [

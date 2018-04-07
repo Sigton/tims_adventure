@@ -122,6 +122,16 @@ water = (
     (672, 240, 48, 48),
     (720, 240, 48, 48),
 )
+walkable_water = (
+    (768, 96, 48, 48),
+    (816, 96, 48, 48),
+    (768, 144, 48, 48),
+    (816, 144, 48, 48),
+    (768, 192, 48, 48),
+    (816, 192, 48, 48),
+    (768, 240, 48, 48),
+    (816, 240, 48, 48),
+)
 
 
 # Indexing this array by a tiles' ID will
@@ -145,7 +155,7 @@ tiles = [generic_ground, blue_ground, path_1,
          dec_wall_9, dec_wall_10, dec_wall_11, dec_wall_12,
          solid_sand, sand_shore_1, sand_shore_2, sand_shore_3,
          sand_shore_4, sand_shore_5, sand_shore_6,
-         sand_shore_7, sand_shore_8, water]
+         sand_shore_7, sand_shore_8, water, walkable_water]
 images = {}
 
 sprite_sheet = None
