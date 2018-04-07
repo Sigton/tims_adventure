@@ -66,5 +66,6 @@ tile_colors = {15724527: "0000",  # Generic ground
                10027026: "0059",  # Dec Wall 9
                9175056: "0060",  # Dec Wall 10
                8388623: "0061",  # Dec Wall 11
-               7536653: "0062"  # Dec Wall 12
+               7536653: "0062",  # Dec Wall 12
+               7188415: "0063",  # Solid Sand
                }

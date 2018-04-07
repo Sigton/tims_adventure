@@ -95,6 +95,7 @@ dec_wall_9 = (864, 0, 48, 48)
 dec_wall_10 = (864, 48, 48, 48)
 dec_wall_11 = (912, 0, 48, 48)
 dec_wall_12 = (912, 48, 48, 48)
+solid_sand = (288, 0, 48, 48)
 
 
 # Indexing this array by a tiles' ID will
@@ -115,7 +116,8 @@ tiles = [generic_ground, blue_ground, path_1,
          medium_rock, bucket, barrel, sand,
          dec_wall_1, dec_wall_2, dec_wall_3, dec_wall_4,
          dec_wall_5, dec_wall_6, dec_wall_7, dec_wall_8,
-         dec_wall_9, dec_wall_10, dec_wall_11, dec_wall_12]
+         dec_wall_9, dec_wall_10, dec_wall_11, dec_wall_12,
+         solid_sand]
 images = {}
 
 sprite_sheet = None
