@@ -95,7 +95,7 @@ health_update_rate = 120
 # Tile information
 
 animation_thresholds = {
-    "0030": 16
+    "0030": 4
 }
 
 no_fade_sprites = [
