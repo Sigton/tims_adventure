@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/terrain/tile_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/tile_data.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,29 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+            <state relative-caret-position="590">
+              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="146" column="50" selection-start-line="146" selection-start-column="50" selection-end-line="146" selection-end-column="50" />
+            <state relative-caret-position="479">
+              <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -47,8 +40,8 @@
       <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+            <state relative-caret-position="810">
+              <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -56,8 +49,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="601">
+              <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -188,10 +181,10 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
       </list>
     </option>
   </component>
@@ -402,20 +395,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01582" summary="Created new quest icon">
-      <created>1522513499032</created>
-      <option name="number" value="01582" />
-      <option name="presentableId" value="LOCAL-01582" />
-      <option name="project" value="LOCAL" />
-      <updated>1522513499032</updated>
-    </task>
-    <task id="LOCAL-01583" summary="Added a new move">
-      <created>1522771392430</created>
-      <option name="number" value="01583" />
-      <option name="presentableId" value="LOCAL-01583" />
-      <option name="project" value="LOCAL" />
-      <updated>1522771392430</updated>
     </task>
     <task id="LOCAL-01584" summary="Slowing it down">
       <created>1522771677746</created>
@@ -746,7 +725,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523117054944</updated>
     </task>
-    <option name="localTasksCounter" value="1631" />
+    <task id="LOCAL-01631" summary="Working on the river">
+      <created>1523117338710</created>
+      <option name="number" value="01631" />
+      <option name="presentableId" value="LOCAL-01631" />
+      <option name="project" value="LOCAL" />
+      <updated>1523117338710</updated>
+    </task>
+    <task id="LOCAL-01632" summary="Working on the river">
+      <created>1523117448136</created>
+      <option name="number" value="01632" />
+      <option name="presentableId" value="LOCAL-01632" />
+      <option name="project" value="LOCAL" />
+      <updated>1523117448136</updated>
+    </task>
+    <option name="localTasksCounter" value="1633" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -756,7 +749,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -1075,27 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="146" column="50" selection-start-line="146" selection-start-column="50" selection-end-line="146" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1103,10 +1075,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        <state relative-caret-position="590">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
         </state>
       </provider>
     </entry>
