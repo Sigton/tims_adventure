@@ -68,4 +68,12 @@ tile_colors = {15724527: "0000",  # Generic ground
                8388623: "0061",  # Dec Wall 11
                7536653: "0062",  # Dec Wall 12
                7188415: "0063",  # Solid Sand
+               6730664: "0064",  # Sand Shore 1
+               6268572: "0065",  # Sand Shore 2
+               5740944: "0066",  # Sand Shore 3
+               5278852: "0067",  # Sand Shore 4
+               4817016: "0068",  # Sand Shore 5
+               4289388: "0069",  # Sand Shore 6
+               3827296: "0070",  # Sand Shore 7
+               3365204: "0071",  # Sand Shore 8
                }
