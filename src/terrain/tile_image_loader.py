@@ -96,6 +96,22 @@ dec_wall_10 = (864, 48, 48, 48)
 dec_wall_11 = (912, 0, 48, 48)
 dec_wall_12 = (912, 48, 48, 48)
 solid_sand = (288, 0, 48, 48)
+sand_shore_1 = {"template": (0, 240, 48, 48),
+                "material": 50}
+sand_shore_2 = {"template": (48, 240, 48, 48),
+                "material": 50}
+sand_shore_3 = {"template": (96, 240, 48, 48),
+                "material": 50}
+sand_shore_4 = {"template": (144, 240, 48, 48),
+                "material": 50}
+sand_shore_5 = {"template": (0, 288, 48, 48),
+                "material": 50}
+sand_shore_6 = {"template": (48, 288, 48, 48),
+                "material": 50}
+sand_shore_7 = {"template": (96, 288, 48, 48),
+                "material": 50}
+sand_shore_8 = {"template": (144, 288, 48, 48),
+                "material": 50}
 
 
 # Indexing this array by a tiles' ID will

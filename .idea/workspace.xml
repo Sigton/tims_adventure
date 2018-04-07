@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="520">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -31,26 +31,17 @@
       <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="630">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="370">
+              <caret line="50" column="47" lean-forward="true" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -181,10 +172,10 @@
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
       </list>
     </option>
   </component>
@@ -383,27 +374,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01544" summary="Implementing entity ids">
-      <created>1522253753210</created>
-      <option name="number" value="01544" />
-      <option name="presentableId" value="LOCAL-01544" />
-      <option name="project" value="LOCAL" />
-      <updated>1522253753210</updated>
-    </task>
-    <task id="LOCAL-01545" summary="Could just use ints instead of strings">
-      <created>1522253964855</created>
-      <option name="number" value="01545" />
-      <option name="presentableId" value="LOCAL-01545" />
-      <option name="project" value="LOCAL" />
-      <updated>1522253964855</updated>
-    </task>
-    <task id="LOCAL-01546" summary="Implemented quest completion through duels">
-      <created>1522254356323</created>
-      <option name="number" value="01546" />
-      <option name="presentableId" value="LOCAL-01546" />
-      <option name="project" value="LOCAL" />
-      <updated>1522254356323</updated>
     </task>
     <task id="LOCAL-01547" summary="Defining a general check complete function">
       <created>1522255430220</created>
@@ -727,17 +697,38 @@
       <option name="project" value="LOCAL" />
       <updated>1523095876100</updated>
     </task>
-    <option name="localTasksCounter" value="1593" />
+    <task id="LOCAL-01593" summary="Using smoother performance profile">
+      <created>1523095994463</created>
+      <option name="number" value="01593" />
+      <option name="presentableId" value="LOCAL-01593" />
+      <option name="project" value="LOCAL" />
+      <updated>1523095994463</updated>
+    </task>
+    <task id="LOCAL-01594" summary="Created a solid sand tile">
+      <created>1523096208331</created>
+      <option name="number" value="01594" />
+      <option name="presentableId" value="LOCAL-01594" />
+      <option name="project" value="LOCAL" />
+      <updated>1523096208331</updated>
+    </task>
+    <task id="LOCAL-01595" summary="Updated map">
+      <created>1523096306907</created>
+      <option name="number" value="01595" />
+      <option name="presentableId" value="LOCAL-01595" />
+      <option name="project" value="LOCAL" />
+      <updated>1523096306907</updated>
+    </task>
+    <option name="localTasksCounter" value="1596" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -779,8 +770,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed positions" />
-    <MESSAGE value="Tooltip for health button works" />
     <MESSAGE value="Repositioned taskbar" />
     <MESSAGE value="Creating Healing display class" />
     <MESSAGE value="Created a refresh function that only shows healing items" />
@@ -798,13 +787,15 @@
     <MESSAGE value="Added a new move" />
     <MESSAGE value="Slowing it down" />
     <MESSAGE value="Added a new tile" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Updated terrian.png" />
     <MESSAGE value="Added a bunch of tile data" />
     <MESSAGE value="Added a bunch more tile data" />
     <MESSAGE value="Updating map" />
     <MESSAGE value="Forgot to add them to the tiles list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forgot to add them to the tiles list" />
+    <MESSAGE value="Using smoother performance profile" />
+    <MESSAGE value="Created a solid sand tile" />
+    <MESSAGE value="Updated map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1063,31 +1054,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+    <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="162">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="520">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="630">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="370">
+          <caret line="50" column="47" lean-forward="true" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
         </state>
       </provider>
     </entry>
