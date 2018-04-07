@@ -72,7 +72,8 @@ class ChunkController:
         self.global_animation_threshold = max(constants.animation_thresholds.items(), key=operator.itemgetter(1))[0]
 
         self.current_frames = {
-            "0030": 0
+            "0030": 0,
+            "0072": 0
         }
 
         self.px, self.py = constants.player_pos
