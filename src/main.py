@@ -37,7 +37,7 @@ class Main:
         self.clock = pygame.time.Clock()
 
         self.load_components()
-        constants.load_performance_profile(3)
+        constants.load_performance_profile(1)
 
         self.loading_screen = gui_components.Image(tools.combine_images((gui_components.Fill(0, 0, 960, 720,
                                                                                              constants.BLACK),
