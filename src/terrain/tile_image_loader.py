@@ -82,6 +82,7 @@ tiny_rock = (432, 240, 48, 48)
 medium_rock = (480, 240, 48, 48)
 bucket = (528, 240, 48, 48)
 barrel = (576, 240, 56, 70)
+sand = (240, 0, 48, 48)
 
 
 # Indexing this array by a tiles' ID will
@@ -99,7 +100,7 @@ tiles = [generic_ground, blue_ground, path_1,
          shore_3, shore_4, shore_5, shore_6,
          shore_7, shore_8, bush, grass, ground_alt,
          house_1, solid_ground, big_rock, tiny_rock,
-         medium_rock, bucket, barrel]
+         medium_rock, bucket, barrel, sand]
 images = {}
 
 sprite_sheet = None

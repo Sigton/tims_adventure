@@ -53,5 +53,6 @@ tile_colors = {15724527: "0000",  # Generic ground
                2451758: "0046",  # Tiny Rock
                2849078: "0047",  # Medium Rock
                13217365: "0048",  # Bucket
-               11573318: "0049"  # Barrel
+               11573318: "0049",  # Barrel
+               9101043: "0050"  # Sand
                }
