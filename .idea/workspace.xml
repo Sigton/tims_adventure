@@ -4,7 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +24,8 @@
       <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="490">
+              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -84,8 +88,8 @@
       <find>heal</find>
       <find>player</find>
       <find>&quot;0</find>
-      <find />
-      <find />
+      <find>&quot;pos&quot;: [0, 0]</find>
+      <find>False, True</find>
       <find>False,</find>
       <find>True</find>
       <find>zTrue</find>
@@ -96,8 +100,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find />
-      <find />
+      <find>id&quot;: &quot;1000</find>
+      <find>id&quot;: 18473</find>
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -121,7 +125,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace />
+      <replace>: create_images(</replace>
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -268,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.dec_generator">
     <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bean_rpg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -402,27 +406,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01571" summary="Implementing the new display">
-      <created>1522414473970</created>
-      <option name="number" value="01571" />
-      <option name="presentableId" value="LOCAL-01571" />
-      <option name="project" value="LOCAL" />
-      <updated>1522414473970</updated>
-    </task>
-    <task id="LOCAL-01572" summary="Implementing the new display">
-      <created>1522416433789</created>
-      <option name="number" value="01572" />
-      <option name="presentableId" value="LOCAL-01572" />
-      <option name="project" value="LOCAL" />
-      <updated>1522416433789</updated>
-    </task>
-    <task id="LOCAL-01573" summary="Debugging">
-      <created>1522494805127</created>
-      <option name="number" value="01573" />
-      <option name="presentableId" value="LOCAL-01573" />
-      <option name="project" value="LOCAL" />
-      <updated>1522494805128</updated>
     </task>
     <task id="LOCAL-01574" summary="Events are passed to healing display when open">
       <created>1522495312984</created>
@@ -746,12 +729,32 @@
       <option name="project" value="LOCAL" />
       <updated>1523107296516</updated>
     </task>
-    <option name="localTasksCounter" value="1620" />
+    <task id="LOCAL-01620" summary="Testing out a pile of rocks">
+      <created>1523107549427</created>
+      <option name="number" value="01620" />
+      <option name="presentableId" value="LOCAL-01620" />
+      <option name="project" value="LOCAL" />
+      <updated>1523107549427</updated>
+    </task>
+    <task id="LOCAL-01621" summary="Testing out a pile of rocks">
+      <created>1523107620500</created>
+      <option name="number" value="01621" />
+      <option name="presentableId" value="LOCAL-01621" />
+      <option name="project" value="LOCAL" />
+      <updated>1523107620501</updated>
+    </task>
+    <task id="LOCAL-01622" summary="Added a new lake">
+      <created>1523112335039</created>
+      <option name="number" value="01622" />
+      <option name="presentableId" value="LOCAL-01622" />
+      <option name="project" value="LOCAL" />
+      <updated>1523112335039</updated>
+    </task>
+    <option name="localTasksCounter" value="1623" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -798,8 +801,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created new quest icon" />
-    <MESSAGE value="Added a new move" />
     <MESSAGE value="Slowing it down" />
     <MESSAGE value="Added a new tile" />
     <MESSAGE value="Updated terrian.png" />
@@ -823,7 +824,9 @@
     <MESSAGE value="Updated map" />
     <MESSAGE value="Added some decs" />
     <MESSAGE value="Adding more rocks to the beach" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding more rocks to the beach" />
+    <MESSAGE value="Testing out a pile of rocks" />
+    <MESSAGE value="Added a new lake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new lake" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1105,8 +1108,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="490">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
         </state>
       </provider>
     </entry>
