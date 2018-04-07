@@ -83,6 +83,18 @@ medium_rock = (480, 240, 48, 48)
 bucket = (528, 240, 48, 48)
 barrel = (576, 240, 56, 70)
 sand = (240, 0, 48, 48)
+dec_wall_1 = (672, 0, 48, 48)
+dec_wall_2 = (672, 48, 48, 48)
+dec_wall_3 = (720, 0, 48, 48)
+dec_wall_4 = (720, 48, 48, 48)
+dec_wall_5 = (768, 0, 48, 48)
+dec_wall_6 = (768, 48, 48, 48)
+dec_wall_7 = (816, 0, 48, 48)
+dec_wall_8 = (816, 48, 48, 48)
+dec_wall_9 = (864, 0, 48, 48)
+dec_wall_10 = (864, 48, 48, 48)
+dec_wall_11 = (912, 0, 48, 48)
+dec_wall_12 = (912, 48, 48, 48)
 
 
 # Indexing this array by a tiles' ID will
