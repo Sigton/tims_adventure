@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,20 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="230">
+              <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="50" column="47" lean-forward="true" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+            <state relative-caret-position="790">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -173,9 +174,9 @@
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
       </list>
     </option>
   </component>
@@ -374,20 +375,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01547" summary="Defining a general check complete function">
-      <created>1522255430220</created>
-      <option name="number" value="01547" />
-      <option name="presentableId" value="LOCAL-01547" />
-      <option name="project" value="LOCAL" />
-      <updated>1522255430220</updated>
-    </task>
-    <task id="LOCAL-01548" summary="Implemented the new function">
-      <created>1522255538772</created>
-      <option name="number" value="01548" />
-      <option name="presentableId" value="LOCAL-01548" />
-      <option name="project" value="LOCAL" />
-      <updated>1522255538772</updated>
     </task>
     <task id="LOCAL-01549" summary="Added a completion criteria for help village quest">
       <created>1522255770640</created>
@@ -718,12 +705,25 @@
       <option name="project" value="LOCAL" />
       <updated>1523096306907</updated>
     </task>
-    <option name="localTasksCounter" value="1596" />
+    <task id="LOCAL-01596" summary="Added spritesheet data">
+      <created>1523096889685</created>
+      <option name="number" value="01596" />
+      <option name="presentableId" value="LOCAL-01596" />
+      <option name="project" value="LOCAL" />
+      <updated>1523096889685</updated>
+    </task>
+    <task id="LOCAL-01597" summary="Added tile data">
+      <created>1523097131370</created>
+      <option name="number" value="01597" />
+      <option name="presentableId" value="LOCAL-01597" />
+      <option name="project" value="LOCAL" />
+      <updated>1523097131371</updated>
+    </task>
+    <option name="localTasksCounter" value="1598" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -770,8 +770,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Repositioned taskbar" />
-    <MESSAGE value="Creating Healing display class" />
     <MESSAGE value="Created a refresh function that only shows healing items" />
     <MESSAGE value="Implementing the new display" />
     <MESSAGE value="Debugging" />
@@ -795,7 +793,9 @@
     <MESSAGE value="Using smoother performance profile" />
     <MESSAGE value="Created a solid sand tile" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Added spritesheet data" />
+    <MESSAGE value="Added tile data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tile data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,17 +1068,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="790">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="50" column="47" lean-forward="true" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+        <state relative-caret-position="230">
+          <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
         </state>
       </provider>
     </entry>
