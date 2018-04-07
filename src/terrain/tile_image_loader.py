@@ -145,7 +145,7 @@ tiles = [generic_ground, blue_ground, path_1,
          dec_wall_9, dec_wall_10, dec_wall_11, dec_wall_12,
          solid_sand, sand_shore_1, sand_shore_2, sand_shore_3,
          sand_shore_4, sand_shore_5, sand_shore_6,
-         sand_shore_7, sand_shore_8]
+         sand_shore_7, sand_shore_8, water]
 images = {}
 
 sprite_sheet = None

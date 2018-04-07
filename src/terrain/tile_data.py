@@ -76,4 +76,5 @@ tile_colors = {15724527: "0000",  # Generic ground
                4289388: "0069",  # Sand Shore 6
                3827296: "0070",  # Sand Shore 7
                3365204: "0071",  # Sand Shore 8
+               16711680: "0072",  # Water
                }
