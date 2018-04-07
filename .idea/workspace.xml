@@ -32,8 +32,8 @@
       <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+            <state relative-caret-position="430">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
             </state>
           </provider>
         </entry>
@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="790">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -175,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
       </list>
     </option>
   </component>
@@ -375,27 +375,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01549" summary="Added a completion criteria for help village quest">
-      <created>1522255770640</created>
-      <option name="number" value="01549" />
-      <option name="presentableId" value="LOCAL-01549" />
-      <option name="project" value="LOCAL" />
-      <updated>1522255770640</updated>
-    </task>
-    <task id="LOCAL-01550" summary="Fixed bug">
-      <created>1522255801722</created>
-      <option name="number" value="01550" />
-      <option name="presentableId" value="LOCAL-01550" />
-      <option name="project" value="LOCAL" />
-      <updated>1522255801722</updated>
-    </task>
-    <task id="LOCAL-01551" summary="Updated check_complete function for accumulative quests">
-      <created>1522256108082</created>
-      <option name="number" value="01551" />
-      <option name="presentableId" value="LOCAL-01551" />
-      <option name="project" value="LOCAL" />
-      <updated>1522256108082</updated>
     </task>
     <task id="LOCAL-01552" summary="Accumulative quests should now work">
       <created>1522260096457</created>
@@ -719,16 +698,38 @@
       <option name="project" value="LOCAL" />
       <updated>1523097131371</updated>
     </task>
-    <option name="localTasksCounter" value="1598" />
+    <task id="LOCAL-01598" summary="Updated decs">
+      <created>1523097377828</created>
+      <option name="number" value="01598" />
+      <option name="presentableId" value="LOCAL-01598" />
+      <option name="project" value="LOCAL" />
+      <updated>1523097377828</updated>
+    </task>
+    <task id="LOCAL-01599" summary="Forgot to add to the tile list again">
+      <created>1523097457493</created>
+      <option name="number" value="01599" />
+      <option name="presentableId" value="LOCAL-01599" />
+      <option name="project" value="LOCAL" />
+      <updated>1523097457493</updated>
+    </task>
+    <task id="LOCAL-01600" summary="Updated decs">
+      <created>1523097733161</created>
+      <option name="number" value="01600" />
+      <option name="presentableId" value="LOCAL-01600" />
+      <option name="project" value="LOCAL" />
+      <updated>1523097733161</updated>
+    </task>
+    <option name="localTasksCounter" value="1601" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -770,8 +771,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created a refresh function that only shows healing items" />
-    <MESSAGE value="Implementing the new display" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Events are passed to healing display when open" />
     <MESSAGE value="Created new handle event" />
@@ -795,7 +794,9 @@
     <MESSAGE value="Updated map" />
     <MESSAGE value="Added spritesheet data" />
     <MESSAGE value="Added tile data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tile data" />
+    <MESSAGE value="Forgot to add to the tile list again" />
+    <MESSAGE value="Updated decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1071,14 +1072,14 @@
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+        <state relative-caret-position="430">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
         </state>
       </provider>
     </entry>
