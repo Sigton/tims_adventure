@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/resources/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="359">
+              <caret line="156" column="31" lean-forward="true" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -406,34 +405,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01566" summary="Fixed positions">
-      <created>1522407285237</created>
-      <option name="number" value="01566" />
-      <option name="presentableId" value="LOCAL-01566" />
-      <option name="project" value="LOCAL" />
-      <updated>1522407285238</updated>
-    </task>
-    <task id="LOCAL-01567" summary="Tooltip for health button works">
-      <created>1522407404669</created>
-      <option name="number" value="01567" />
-      <option name="presentableId" value="LOCAL-01567" />
-      <option name="project" value="LOCAL" />
-      <updated>1522407404669</updated>
-    </task>
-    <task id="LOCAL-01568" summary="Repositioned taskbar">
-      <created>1522407459341</created>
-      <option name="number" value="01568" />
-      <option name="presentableId" value="LOCAL-01568" />
-      <option name="project" value="LOCAL" />
-      <updated>1522407459341</updated>
-    </task>
-    <task id="LOCAL-01569" summary="Creating Healing display class">
-      <created>1522413472221</created>
-      <option name="number" value="01569" />
-      <option name="presentableId" value="LOCAL-01569" />
-      <option name="project" value="LOCAL" />
-      <updated>1522413472221</updated>
-    </task>
     <task id="LOCAL-01570" summary="Created a refresh function that only shows healing items">
       <created>1522413930987</created>
       <option name="number" value="01570" />
@@ -749,16 +720,44 @@
       <option name="project" value="LOCAL" />
       <updated>1523105049946</updated>
     </task>
-    <option name="localTasksCounter" value="1615" />
+    <task id="LOCAL-01615" summary="Updated map">
+      <created>1523105406090</created>
+      <option name="number" value="01615" />
+      <option name="presentableId" value="LOCAL-01615" />
+      <option name="project" value="LOCAL" />
+      <updated>1523105406091</updated>
+    </task>
+    <task id="LOCAL-01616" summary="Updated map">
+      <created>1523105496952</created>
+      <option name="number" value="01616" />
+      <option name="presentableId" value="LOCAL-01616" />
+      <option name="project" value="LOCAL" />
+      <updated>1523105496952</updated>
+    </task>
+    <task id="LOCAL-01617" summary="Updated map">
+      <created>1523105610929</created>
+      <option name="number" value="01617" />
+      <option name="presentableId" value="LOCAL-01617" />
+      <option name="project" value="LOCAL" />
+      <updated>1523105610929</updated>
+    </task>
+    <task id="LOCAL-01618" summary="Added some decs">
+      <created>1523107078497</created>
+      <option name="number" value="01618" />
+      <option name="presentableId" value="LOCAL-01618" />
+      <option name="project" value="LOCAL" />
+      <updated>1523107078497</updated>
+    </task>
+    <option name="localTasksCounter" value="1619" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -800,7 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated quest data" />
     <MESSAGE value="Created new dialogue" />
     <MESSAGE value="Created new quest icon" />
     <MESSAGE value="Added a new move" />
@@ -825,7 +823,8 @@
     <MESSAGE value="Adding data for water tile" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Added some decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1107,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="359">
+          <caret line="156" column="31" lean-forward="true" selection-start-line="156" selection-start-column="31" selection-end-line="156" selection-end-column="31" />
         </state>
       </provider>
     </entry>
