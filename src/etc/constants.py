@@ -107,6 +107,10 @@ no_fade_sprites = [
     "HealthPotion"
 ]
 
+no_fade_decs = [
+    "0074"
+]
+
 
 # Entity constants
 level_up_base = 50
