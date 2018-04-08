@@ -521,17 +521,10 @@ class ChunkController:
 
         for dec in sorted(layered_render, key=lambda x: x.shadow.rect.bottom if x.has_shadow else x.rect.bottom):
             if dec.__class__.__name__ not in constants.no_fade_sprites:
-                if dec.__class__.__name__ in ("Tile", "AnimatedTile"):
-                    if dec.tile_code not in constants.no_fade_decs:
-
-                        if any([dec.rect.colliderect(bean.rect) for bean in self.player.beans]):
-                            if dec.has_shadow:
-                                dec.shadow.draw(display)
-                            tools.blit_alpha(display, dec.image, dec.rect.topleft, 180)
-                        else:
-                            dec.draw(display)
-                    else:
-                        dec.draw(display)
+                if any([dec.rect.colliderect(bean.rect) for bean in self.player.beans]):
+                    if dec.has_shadow:
+                        dec.shadow.draw(display)
+                    tools.blit_alpha(display, dec.image, dec.rect.topleft, 180)
                 else:
                     dec.draw(display)
             else:
