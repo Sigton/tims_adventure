@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/terrain.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/terrain.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,20 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+            <state relative-caret-position="199">
+              <caret line="524" column="87" selection-start-line="524" selection-start-column="87" selection-end-line="524" selection-end-column="87" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="599">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -42,8 +41,17 @@
       <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
+            <state relative-caret-position="20">
               <caret line="136" selection-start-line="136" selection-end-line="136" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
@@ -68,7 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>inventory</find>
       <find>inv</find>
       <find>SaveS</find>
       <find>enemy_meta</find>
@@ -98,6 +105,7 @@
       <find>672</find>
       <find>720</find>
       <find>no</find>
+      <find>False</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -184,11 +192,11 @@
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
   </component>
@@ -405,20 +413,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01593" summary="Using smoother performance profile">
-      <created>1523095994463</created>
-      <option name="number" value="01593" />
-      <option name="presentableId" value="LOCAL-01593" />
-      <option name="project" value="LOCAL" />
-      <updated>1523095994463</updated>
-    </task>
-    <task id="LOCAL-01594" summary="Created a solid sand tile">
-      <created>1523096208331</created>
-      <option name="number" value="01594" />
-      <option name="presentableId" value="LOCAL-01594" />
-      <option name="project" value="LOCAL" />
-      <updated>1523096208331</updated>
     </task>
     <task id="LOCAL-01595" summary="Updated map">
       <created>1523096306907</created>
@@ -749,19 +743,33 @@
       <option name="project" value="LOCAL" />
       <updated>1523120618852</updated>
     </task>
-    <option name="localTasksCounter" value="1642" />
+    <task id="LOCAL-01642" summary="Added a list of decs that dont fade">
+      <created>1523185747868</created>
+      <option name="number" value="01642" />
+      <option name="presentableId" value="LOCAL-01642" />
+      <option name="project" value="LOCAL" />
+      <updated>1523185747869</updated>
+    </task>
+    <task id="LOCAL-01643" summary="Tryna fix the boardwalk fading">
+      <created>1523186256117</created>
+      <option name="number" value="01643" />
+      <option name="presentableId" value="LOCAL-01643" />
+      <option name="project" value="LOCAL" />
+      <updated>1523186256117</updated>
+    </task>
+    <option name="localTasksCounter" value="1644" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -801,8 +809,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Forgot to add to the tile list again" />
-    <MESSAGE value="Updated decs" />
     <MESSAGE value="Testing out an actual water texture instead of chocolate river" />
     <MESSAGE value="Changed the animation threshold and new texutre" />
     <MESSAGE value="Brought back the chocolate river" />
@@ -826,7 +832,9 @@
     <MESSAGE value="Fixing the decoration layering" />
     <MESSAGE value="Adjusted the path texture" />
     <MESSAGE value="More texture adjustments" />
-    <option name="LAST_COMMIT_MESSAGE" value="More texture adjustments" />
+    <MESSAGE value="Added a list of decs that dont fade" />
+    <MESSAGE value="Tryna fix the boardwalk fading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tryna fix the boardwalk fading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1081,24 +1089,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="517" column="62" lean-forward="true" selection-start-line="517" selection-start-column="62" selection-end-line="517" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
-          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1109,10 +1103,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="603">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="524" column="87" selection-start-line="524" selection-start-column="87" selection-end-line="524" selection-end-column="87" />
         </state>
       </provider>
     </entry>
