@@ -509,7 +509,12 @@ class ChunkController:
             chunk_to_draw = self.map_tiles[chunk]
             chunk_to_draw.draw(display)
 
-            [layered_render.append(dec) for dec in chunk_to_draw.get_decs()]
+            for dec in chunk_to_draw.get_decs():
+                if dec.tile_code in constants.no_layer_decs:
+                    dec.draw(display)
+                else:
+                    layered_render.append(dec)
+
             [layered_render.append(entity) for entity in chunk_to_draw.get_entities()]
 
         [layered_render.append(bean) for bean in self.player.beans]

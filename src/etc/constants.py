@@ -111,6 +111,10 @@ no_fade_decs = [
     "0074"
 ]
 
+no_layer_decs = [
+    "0074"
+]
+
 
 # Entity constants
 level_up_base = 50
