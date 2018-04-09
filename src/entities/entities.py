@@ -152,6 +152,9 @@ class RandomBean:
         else:
             self.image = self.images[self.facing]
 
+        self.particle_time_threshold = constants.evil_bean_particle_rate
+        self.particle_timer = random.randint(1, self.particle_time_threshold)
+
     def create_images(self, main_img):
 
         self.images.clear()
@@ -183,6 +186,10 @@ class RandomBean:
 
         if self.stat_panel is not None:
             self.stat_panel.update()
+
+        self.particle_timer += 1
+        if self.particle_timer > self.particle_time_threshold:
+            self.particle_timer = 0
 
     def draw(self, display):
 

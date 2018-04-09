@@ -91,6 +91,8 @@ interaction_distance = 75
 
 health_update_rate = 120
 
+evil_bean_particle_rate = 100
+
 
 # Tile information
 
