@@ -18,7 +18,7 @@ self.master.sound_engine.queue_sound((self.master.sound_engine.burn, 0))""",
     {"name": "Freeze", "str_mod": 1.5, "effects":
         """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 150, 6, 5, 45, 2)""",
      "energy": 20, "xp": 20},
-    {"name": "Chili Chuck", "str_mod": 0.9, "effects":
-        """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 150, 6, 5, 45, 2)""",
-     "energy": 2, "xp": 2}
+    {"name": "Chili Chuck", "str_mod": 0.7, "effects":
+        """self.particle_engine.create_particle_spread('chili', 15, {}, {}, 150, 10, 0, 10, 10)""",
+     "energy": 4, "xp": 4}
 ]
