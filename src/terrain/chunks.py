@@ -382,6 +382,11 @@ class ChunkController:
                                         n += 1
                                 self.hud.get_component("backing").resize(self.other_bean_stat_count + 1)
 
+                        if entity.particle_timer == 0:
+                            self.master.particle_engine.create_particle_spread(
+                                'smoke', 45, entity.rect.centerx, entity.rect.centery, 30, 15, 10, 10, 10
+                            )
+
                     elif entity.pickup:
                         self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                         self.map_tiles[chunk].remove_entity(entity)
