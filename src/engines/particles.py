@@ -142,3 +142,12 @@ class SnowParticle(Particle):
         self.image = particle_sprite_sheet.get_image_src_alpha(20, 0, 16, 16)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
+
+
+class ChiliParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image(36, 0, 20, 20)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
