@@ -27,7 +27,8 @@ class ParticleEngine:
 
         self.particle_types = {
             "fire": FireParticle,
-            "snow": SnowParticle
+            "snow": SnowParticle,
+            "chili": ChiliParticle
         }
 
     def update(self):
