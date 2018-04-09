@@ -8,6 +8,7 @@ import random
 import math
 import collections
 
+import src.terrain.tile_types
 from src.etc import constants, containers, tools
 from src.terrain import tiles
 from src.hud import hud
@@ -510,7 +511,7 @@ class ChunkController:
             chunk_to_draw.draw(display)
 
             for dec in chunk_to_draw.get_decs():
-                if dec.tile_code in constants.no_layer_decs:
+                if dec.tile_code in src.terrain.tile_types.no_layer_decs:
                     dec.draw(display)
                 else:
                     layered_render.append(dec)
