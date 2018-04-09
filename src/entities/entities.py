@@ -187,9 +187,10 @@ class RandomBean:
         if self.stat_panel is not None:
             self.stat_panel.update()
 
-        self.particle_timer += 1
-        if self.particle_timer > self.particle_time_threshold:
-            self.particle_timer = 0
+        if self.meta.evil:
+            self.particle_timer += 1
+            if self.particle_timer > self.particle_time_threshold:
+                self.particle_timer = 0
 
     def draw(self, display):
 
