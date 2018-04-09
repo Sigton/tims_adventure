@@ -384,7 +384,7 @@ class ChunkController:
 
                         if entity.particle_timer == 0:
                             self.master.particle_engine.create_particle_spread(
-                                'smoke', 45, entity.rect.centerx, entity.rect.centery, 30, 15, 10, 10, 10
+                                'smoke', 3, entity.rect.x, entity.rect.y, 40, 15, 3, 15, 2
                             )
 
                     elif entity.pickup:
