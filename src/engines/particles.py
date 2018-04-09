@@ -83,8 +83,8 @@ class ParticleEngine:
             ds = random.randint(0, noise_pos)
             angle = random.randint(0, 360)
 
-            new_p_x = x + ds*math.cos(angle)
-            new_p_y = y + ds*math.sin(angle)
+            new_p_x = x + ds*math.cos(math.radians(angle))
+            new_p_y = y + ds*math.sin(math.radians(angle))
 
             self.fade_in_particles.append(self.particle_types[particle_type](new_p_x,
                                                                              new_p_y,
@@ -159,6 +159,6 @@ class SmokeParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(0, 20, 30, 30)
+        self.image = particle_sprite_sheet.get_image_src_alpha(0, 20, 20, 20)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
