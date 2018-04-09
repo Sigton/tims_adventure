@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/particles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/particles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +23,8 @@
       <file leaf-file-name="moves.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="480">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -59,8 +59,8 @@
       <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="144" column="88" selection-start-line="144" selection-start-column="88" selection-end-line="144" selection-end-column="88" />
+            <state relative-caret-position="620">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -223,9 +223,9 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
       </list>
     </option>
@@ -455,27 +455,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01623" summary="Adding in decs">
-      <created>1523112840251</created>
-      <option name="number" value="01623" />
-      <option name="presentableId" value="LOCAL-01623" />
-      <option name="project" value="LOCAL" />
-      <updated>1523112840251</updated>
-    </task>
-    <task id="LOCAL-01624" summary="Moving rocks">
-      <created>1523112978469</created>
-      <option name="number" value="01624" />
-      <option name="presentableId" value="LOCAL-01624" />
-      <option name="project" value="LOCAL" />
-      <updated>1523112978469</updated>
-    </task>
-    <task id="LOCAL-01625" summary="Updated map">
-      <created>1523115728796</created>
-      <option name="number" value="01625" />
-      <option name="presentableId" value="LOCAL-01625" />
-      <option name="project" value="LOCAL" />
-      <updated>1523115728796</updated>
     </task>
     <task id="LOCAL-01626" summary="Updated map">
       <created>1523115912968</created>
@@ -799,19 +778,40 @@
       <option name="project" value="LOCAL" />
       <updated>1523283375103</updated>
     </task>
-    <option name="localTasksCounter" value="1672" />
+    <task id="LOCAL-01672" summary="Adjusted chili texture">
+      <created>1523283504834</created>
+      <option name="number" value="01672" />
+      <option name="presentableId" value="LOCAL-01672" />
+      <option name="project" value="LOCAL" />
+      <updated>1523283504834</updated>
+    </task>
+    <task id="LOCAL-01673" summary="More chilis">
+      <created>1523283520749</created>
+      <option name="number" value="01673" />
+      <option name="presentableId" value="LOCAL-01673" />
+      <option name="project" value="LOCAL" />
+      <updated>1523283520749</updated>
+    </task>
+    <task id="LOCAL-01674" summary="Changed the lifetime of chilis">
+      <created>1523283785383</created>
+      <option name="number" value="01674" />
+      <option name="presentableId" value="LOCAL-01674" />
+      <option name="project" value="LOCAL" />
+      <updated>1523283785383</updated>
+    </task>
+    <option name="localTasksCounter" value="1675" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -851,9 +851,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Deubgging" />
-    <MESSAGE value="Dont need the other stuff oops" />
-    <MESSAGE value="Added more to no_layer_decs" />
     <MESSAGE value="Updated map" />
     <MESSAGE value="Updated decs" />
     <MESSAGE value="Fixed a tile on the map" />
@@ -876,7 +873,10 @@
     <MESSAGE value="Forgot to add a move to positional moves list" />
     <MESSAGE value="Need to get image w/ source alpha" />
     <MESSAGE value="Fixed typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed typo" />
+    <MESSAGE value="Adjusted chili texture" />
+    <MESSAGE value="More chilis" />
+    <MESSAGE value="Changed the lifetime of chilis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the lifetime of chilis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1175,15 +1175,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="480">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="144" column="88" selection-start-line="144" selection-start-column="88" selection-end-line="144" selection-end-column="88" />
+        <state relative-caret-position="620">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

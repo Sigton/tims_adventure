@@ -28,7 +28,8 @@ class ParticleEngine:
         self.particle_types = {
             "fire": FireParticle,
             "snow": SnowParticle,
-            "chili": ChiliParticle
+            "chili": ChiliParticle,
+            "smoke": SmokeParticle
         }
 
     def update(self):
@@ -150,5 +151,14 @@ class ChiliParticle(Particle):
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
         self.image = particle_sprite_sheet.get_image_src_alpha(36, 0, 20, 20)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
+
+
+class SmokeParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image_src_alpha(0, 20, 30, 30)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
