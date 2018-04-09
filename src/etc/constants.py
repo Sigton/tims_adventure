@@ -134,7 +134,8 @@ shake_moves = [
 ]
 positional_moves = [
     "Burn",
-    "Freeze"
+    "Freeze",
+    "Chili Chuck"
 ]
 
 turn_cool_down = 60
