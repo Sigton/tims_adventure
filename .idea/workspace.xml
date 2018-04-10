@@ -5,7 +5,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="390" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/sounds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/ambient2.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/ambient2.ogg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+            <state relative-caret-position="239">
+              <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -30,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
+            <state relative-caret-position="37">
+              <caret line="293" selection-start-line="293" selection-end-line="293" />
             </state>
           </provider>
         </entry>
@@ -391,27 +395,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01675" summary="Added in a smoke particle class">
-      <created>1523291210269</created>
-      <option name="number" value="01675" />
-      <option name="presentableId" value="LOCAL-01675" />
-      <option name="project" value="LOCAL" />
-      <updated>1523291210269</updated>
-    </task>
-    <task id="LOCAL-01676" summary="Updated particles.png">
-      <created>1523291229759</created>
-      <option name="number" value="01676" />
-      <option name="presentableId" value="LOCAL-01676" />
-      <option name="project" value="LOCAL" />
-      <updated>1523291229759</updated>
-    </task>
-    <task id="LOCAL-01677" summary="Adding a particle timer for evil beans">
-      <created>1523291407874</created>
-      <option name="number" value="01677" />
-      <option name="presentableId" value="LOCAL-01677" />
-      <option name="project" value="LOCAL" />
-      <updated>1523291407874</updated>
-    </task>
     <task id="LOCAL-01678" summary="Only when the beans are evil">
       <created>1523291428335</created>
       <option name="number" value="01678" />
@@ -734,7 +717,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523390773549</updated>
     </task>
-    <option name="localTasksCounter" value="1724" />
+    <task id="LOCAL-01724" summary="Editing the sound">
+      <created>1523390903981</created>
+      <option name="number" value="01724" />
+      <option name="presentableId" value="LOCAL-01724" />
+      <option name="project" value="LOCAL" />
+      <updated>1523390903981</updated>
+    </task>
+    <task id="LOCAL-01725" summary="Editing the sound">
+      <created>1523390946641</created>
+      <option name="number" value="01725" />
+      <option name="presentableId" value="LOCAL-01725" />
+      <option name="project" value="LOCAL" />
+      <updated>1523390946641</updated>
+    </task>
+    <task id="LOCAL-01726" summary="Mixing">
+      <created>1523391828006</created>
+      <option name="number" value="01726" />
+      <option name="presentableId" value="LOCAL-01726" />
+      <option name="project" value="LOCAL" />
+      <updated>1523391828006</updated>
+    </task>
+    <option name="localTasksCounter" value="1727" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,8 +790,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improving evil bean particles" />
-    <MESSAGE value="Added a new tree decoration" />
     <MESSAGE value="Fixing up the new tree texture" />
     <MESSAGE value="Restarting with the trees" />
     <MESSAGE value="Adding a forest behind the lake" />
@@ -811,7 +813,9 @@
     <MESSAGE value="Adjusting things" />
     <MESSAGE value="Working on the footstep sound" />
     <MESSAGE value="Defined soundengine.playing_sound" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defined soundengine.playing_sound" />
+    <MESSAGE value="Editing the sound" />
+    <MESSAGE value="Mixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mixing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1104,6 +1108,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="293" selection-start-line="293" selection-end-line="293" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1113,18 +1124,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+        <state relative-caret-position="239">
+          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
         </state>
       </provider>
     </entry>
