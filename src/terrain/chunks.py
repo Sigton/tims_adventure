@@ -314,7 +314,7 @@ class ChunkController:
                 self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
-                self.master.sound_engine.queue_sound((self.master.sound_engine.footstep, 1))
+                self.master.sound_engine.queue_sound((self.master.sound_engine.footstep, 0))
 
         self.player.update(self.direction)
         self.update_chunks()
