@@ -135,8 +135,8 @@ walkable_water = (
 boardwalk_1 = (192, 240, 48, 48)
 boardwalk_2 = (192, 288, 48, 48)
 spruce_tree = (864, 96, 116, 192)
-boardwalk_poles_1 = (240, 240, 48, 96)
-boardwalk_poles_2 = (960, 0, 48, 96)
+boardwalk_poles_1 = (960, 0, 96, 96)
+boardwalk_poles_2 = (240, 240, 48, 96)
 
 
 # Indexing this array by a tiles' ID will
