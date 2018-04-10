@@ -57,3 +57,7 @@ class SoundEngine:
 
         # Add a sound to the queue
         self.queued_sounds += [sound]
+
+    def stop_sound(self, sound):
+
+        self.channel_linkup[sound].stop()
