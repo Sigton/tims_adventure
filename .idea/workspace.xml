@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +23,8 @@
       <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+            <state relative-caret-position="210">
+              <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -408,20 +408,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01639" summary="Fixing the decoration layering">
-      <created>1523120075406</created>
-      <option name="number" value="01639" />
-      <option name="presentableId" value="LOCAL-01639" />
-      <option name="project" value="LOCAL" />
-      <updated>1523120075406</updated>
-    </task>
-    <task id="LOCAL-01640" summary="Adjusted the path texture">
-      <created>1523120423690</created>
-      <option name="number" value="01640" />
-      <option name="presentableId" value="LOCAL-01640" />
-      <option name="project" value="LOCAL" />
-      <updated>1523120423690</updated>
-    </task>
     <task id="LOCAL-01641" summary="More texture adjustments">
       <created>1523120618852</created>
       <option name="number" value="01641" />
@@ -751,7 +737,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523361211709</updated>
     </task>
-    <option name="localTasksCounter" value="1688" />
+    <task id="LOCAL-01688" summary="Forest has rocks and more trees">
+      <created>1523361610229</created>
+      <option name="number" value="01688" />
+      <option name="presentableId" value="LOCAL-01688" />
+      <option name="project" value="LOCAL" />
+      <updated>1523361610229</updated>
+    </task>
+    <task id="LOCAL-01689" summary="Adding more decs">
+      <created>1523361793160</created>
+      <option name="number" value="01689" />
+      <option name="presentableId" value="LOCAL-01689" />
+      <option name="project" value="LOCAL" />
+      <updated>1523361793160</updated>
+    </task>
+    <option name="localTasksCounter" value="1690" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -803,8 +803,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Forgot to add the walkable water" />
-    <MESSAGE value="Updated boardwalk 2 texture" />
     <MESSAGE value="Moved no_layer_tiles to tile_types from constants" />
     <MESSAGE value="Moved a bean out of the river" />
     <MESSAGE value="Added a Chili particle class" />
@@ -828,7 +826,9 @@
     <MESSAGE value="Fixing up the new tree texture" />
     <MESSAGE value="Restarting with the trees" />
     <MESSAGE value="Adding a forest behind the lake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a forest behind the lake" />
+    <MESSAGE value="Forest has rocks and more trees" />
+    <MESSAGE value="Adding more decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding more decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1137,8 +1137,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        <state relative-caret-position="210">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
         </state>
       </provider>
     </entry>
