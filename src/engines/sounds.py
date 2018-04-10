@@ -45,7 +45,7 @@ class SoundEngine:
         [m.set_volume(0.06) for m in self.music]
         self.punch.set_volume(0.1)
         self.burn.set_volume(0.1)
-        self.footstep.set_volume(0.25)
+        self.footstep.set_volume(0.2)
 
     def play_sounds(self):
 
