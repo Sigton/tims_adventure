@@ -15,12 +15,14 @@ class SoundEngine:
         self.music_channel = pygame.mixer.Channel(0)
         self.punch_channel = pygame.mixer.Channel(1)
         self.burn_channel = pygame.mixer.Channel(2)
+        self.footstep_channel = pygame.mixer.Channel(3)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
         self.music2 = pygame.mixer.Sound("src/resources/ambient2.ogg")
         self.punch = pygame.mixer.Sound("src/resources/punch.ogg")
         self.burn = pygame.mixer.Sound("src/resources/burn.ogg")
+        self.footstep = pygame.mixer.Sound("src/resources/footstep.ogg")
 
         self.music = [self.music1,
                       self.music2]
@@ -29,7 +31,8 @@ class SoundEngine:
         self.channel_linkup = {self.music1: self.music_channel,
                                self.music2: self.music_channel,
                                self.punch: self.punch_channel,
-                               self.burn: self.burn_channel}
+                               self.burn: self.burn_channel,
+                               self.footstep: self.footstep_channel}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
