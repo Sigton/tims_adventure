@@ -2,12 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
-    <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="385" />
+    <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="389" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engines/sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/sounds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,14 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            <state relative-caret-position="790">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="315" lean-forward="true" selection-start-line="315" selection-end-line="315" />
             </state>
           </provider>
         </entry>
@@ -160,11 +169,11 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
   </component>
@@ -199,6 +208,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="engines" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="terrain" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -212,15 +227,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\bean_rpg\src\saves" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\bean_rpg\src\saves\gamesaves\save1" />
       <recent name="D:\bean_rpg\src\saves\" />
       <recent name="D:\bean_rpg\src\saves\save1" />
       <recent name="D:\bean_rpg\src\menu" />
       <recent name="D:\bean_rpg\src\hud" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bean_rpg\src\saves" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -369,20 +384,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01669" summary="Forgot to add a move to positional moves list">
-      <created>1523281865380</created>
-      <option name="number" value="01669" />
-      <option name="presentableId" value="LOCAL-01669" />
-      <option name="project" value="LOCAL" />
-      <updated>1523281865381</updated>
-    </task>
-    <task id="LOCAL-01670" summary="Need to get image w/ source alpha">
-      <created>1523281984500</created>
-      <option name="number" value="01670" />
-      <option name="presentableId" value="LOCAL-01670" />
-      <option name="project" value="LOCAL" />
-      <updated>1523281984500</updated>
     </task>
     <task id="LOCAL-01671" summary="Fixed typo">
       <created>1523283375103</created>
@@ -713,19 +714,33 @@
       <option name="project" value="LOCAL" />
       <updated>1523377345616</updated>
     </task>
-    <option name="localTasksCounter" value="1718" />
+    <task id="LOCAL-01718" summary="Added a footstep sound">
+      <created>1523386799071</created>
+      <option name="number" value="01718" />
+      <option name="presentableId" value="LOCAL-01718" />
+      <option name="project" value="LOCAL" />
+      <updated>1523386799071</updated>
+    </task>
+    <task id="LOCAL-01719" summary="Added a stop sound function">
+      <created>1523388820522</created>
+      <option name="number" value="01719" />
+      <option name="presentableId" value="LOCAL-01719" />
+      <option name="project" value="LOCAL" />
+      <updated>1523388820522</updated>
+    </task>
+    <option name="localTasksCounter" value="1720" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -765,8 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added in a smoke particle class" />
-    <MESSAGE value="Updated particles.png" />
     <MESSAGE value="Adding a particle timer for evil beans" />
     <MESSAGE value="Only when the beans are evil" />
     <MESSAGE value="Should now generate smoke particles" />
@@ -790,7 +803,9 @@
     <MESSAGE value="Updated decs" />
     <MESSAGE value="Updated terrain.png" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Added a footstep sound" />
+    <MESSAGE value="Added a stop sound function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a stop sound function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="383" lean-forward="true" selection-start-line="383" selection-end-line="383" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
@@ -1099,11 +1107,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        <state relative-caret-position="790">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="315" lean-forward="true" selection-start-line="315" selection-end-line="315" />
         </state>
       </provider>
     </entry>

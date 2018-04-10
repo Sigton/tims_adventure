@@ -314,6 +314,8 @@ class ChunkController:
                 self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
+                self.master.sound_engine.queue_sound((self.master.sound_engine.footstep, 1))
+
         self.player.update(self.direction)
         self.update_chunks()
 
@@ -322,6 +324,8 @@ class ChunkController:
         if self.moving > 0:
             self.moving -= 1
             self.move_chunks(self.movement_interval)
+        else:
+            self.master.sound_engine.stop_sound(self.master.sound_engine.footstep)
 
         # Look for any new chunks that need to be
         # created and old ones that need removed
