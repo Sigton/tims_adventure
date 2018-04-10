@@ -5,7 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="385" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +23,8 @@
       <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+            <state relative-caret-position="50">
+              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -181,7 +183,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1596" />
+    <option name="x" value="210" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -405,20 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01637" summary="Added boardwalk">
-      <created>1523119936451</created>
-      <option name="number" value="01637" />
-      <option name="presentableId" value="LOCAL-01637" />
-      <option name="project" value="LOCAL" />
-      <updated>1523119936451</updated>
-    </task>
-    <task id="LOCAL-01638" summary="Trying without shadow">
-      <created>1523120017225</created>
-      <option name="number" value="01638" />
-      <option name="presentableId" value="LOCAL-01638" />
-      <option name="project" value="LOCAL" />
-      <updated>1523120017225</updated>
     </task>
     <task id="LOCAL-01639" summary="Fixing the decoration layering">
       <created>1523120075406</created>
@@ -749,19 +737,33 @@
       <option name="project" value="LOCAL" />
       <updated>1523356602467</updated>
     </task>
-    <option name="localTasksCounter" value="1686" />
+    <task id="LOCAL-01686" summary="Restarting with the trees">
+      <created>1523360981493</created>
+      <option name="number" value="01686" />
+      <option name="presentableId" value="LOCAL-01686" />
+      <option name="project" value="LOCAL" />
+      <updated>1523360981493</updated>
+    </task>
+    <task id="LOCAL-01687" summary="Adding a forest behind the lake">
+      <created>1523361211709</created>
+      <option name="number" value="01687" />
+      <option name="presentableId" value="LOCAL-01687" />
+      <option name="project" value="LOCAL" />
+      <updated>1523361211709</updated>
+    </task>
+    <option name="localTasksCounter" value="1688" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -801,8 +803,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added boardwalks" />
-    <MESSAGE value="Updated map paths" />
     <MESSAGE value="Forgot to add the walkable water" />
     <MESSAGE value="Updated boardwalk 2 texture" />
     <MESSAGE value="Moved no_layer_tiles to tile_types from constants" />
@@ -826,7 +826,9 @@
     <MESSAGE value="Added a new tree decoration" />
     <MESSAGE value="Updated decs" />
     <MESSAGE value="Fixing up the new tree texture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing up the new tree texture" />
+    <MESSAGE value="Restarting with the trees" />
+    <MESSAGE value="Adding a forest behind the lake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a forest behind the lake" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1135,8 +1137,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+        <state relative-caret-position="50">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
         </state>
       </provider>
     </entry>
