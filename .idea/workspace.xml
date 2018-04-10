@@ -2,13 +2,10 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
-    <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="389" />
+    <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="390" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/footstep.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/footstep.ogg" afterDir="false" />
-    </list>
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="sounds.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="770">
+              <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -33,20 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="322" selection-start-line="322" selection-end-line="322" />
+            <state relative-caret-position="337">
+              <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -181,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
       </list>
     </option>
   </component>
@@ -393,20 +390,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01673" summary="More chilis">
-      <created>1523283520749</created>
-      <option name="number" value="01673" />
-      <option name="presentableId" value="LOCAL-01673" />
-      <option name="project" value="LOCAL" />
-      <updated>1523283520749</updated>
-    </task>
-    <task id="LOCAL-01674" summary="Changed the lifetime of chilis">
-      <created>1523283785383</created>
-      <option name="number" value="01674" />
-      <option name="presentableId" value="LOCAL-01674" />
-      <option name="project" value="LOCAL" />
-      <updated>1523283785383</updated>
     </task>
     <task id="LOCAL-01675" summary="Added in a smoke particle class">
       <created>1523291210269</created>
@@ -737,19 +720,33 @@
       <option name="project" value="LOCAL" />
       <updated>1523390327597</updated>
     </task>
-    <option name="localTasksCounter" value="1722" />
+    <task id="LOCAL-01722" summary="Working on the footstep sound">
+      <created>1523390728314</created>
+      <option name="number" value="01722" />
+      <option name="presentableId" value="LOCAL-01722" />
+      <option name="project" value="LOCAL" />
+      <updated>1523390728314</updated>
+    </task>
+    <task id="LOCAL-01723" summary="Defined soundengine.playing_sound">
+      <created>1523390773549</created>
+      <option name="number" value="01723" />
+      <option name="presentableId" value="LOCAL-01723" />
+      <option name="project" value="LOCAL" />
+      <updated>1523390773549</updated>
+    </task>
+    <option name="localTasksCounter" value="1724" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -789,8 +786,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Should now generate smoke particles" />
-    <MESSAGE value="Adjusting particle generation attributes" />
     <MESSAGE value="Improving evil bean particles" />
     <MESSAGE value="Added a new tree decoration" />
     <MESSAGE value="Fixing up the new tree texture" />
@@ -814,7 +809,9 @@
     <MESSAGE value="Added a stop sound function" />
     <MESSAGE value="Plays footstep sound when walking" />
     <MESSAGE value="Adjusting things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusting things" />
+    <MESSAGE value="Working on the footstep sound" />
+    <MESSAGE value="Defined soundengine.playing_sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined soundengine.playing_sound" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1107,10 +1104,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="770">
+          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1119,15 +1123,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="322" selection-start-line="322" selection-end-line="322" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="337">
+          <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
         </state>
       </provider>
     </entry>
