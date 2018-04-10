@@ -18,20 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+            <state relative-caret-position="219">
+              <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="165" column="11" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
+            <state relative-caret-position="202">
+              <caret line="145" column="40" selection-start-line="145" selection-start-column="40" selection-end-line="145" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -175,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
       </list>
     </option>
   </component>
@@ -405,20 +405,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01654" summary="Added a new tile to terrain.png">
-      <created>1523270608941</created>
-      <option name="number" value="01654" />
-      <option name="presentableId" value="LOCAL-01654" />
-      <option name="project" value="LOCAL" />
-      <updated>1523270608941</updated>
-    </task>
-    <task id="LOCAL-01655" summary="Added tile data for new tile">
-      <created>1523270863376</created>
-      <option name="number" value="01655" />
-      <option name="presentableId" value="LOCAL-01655" />
-      <option name="project" value="LOCAL" />
-      <updated>1523270863376</updated>
     </task>
     <task id="LOCAL-01656" summary="Needed to make the stream wider">
       <created>1523271315737</created>
@@ -749,7 +735,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523368813340</updated>
     </task>
-    <option name="localTasksCounter" value="1703" />
+    <task id="LOCAL-01703" summary="Updated sprite sheet">
+      <created>1523369141662</created>
+      <option name="number" value="01703" />
+      <option name="presentableId" value="LOCAL-01703" />
+      <option name="project" value="LOCAL" />
+      <updated>1523369141662</updated>
+    </task>
+    <task id="LOCAL-01704" summary="Updated spritesheet">
+      <created>1523369307515</created>
+      <option name="number" value="01704" />
+      <option name="presentableId" value="LOCAL-01704" />
+      <option name="project" value="LOCAL" />
+      <updated>1523369307515</updated>
+    </task>
+    <option name="localTasksCounter" value="1705" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -801,7 +801,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjusted chili texture" />
     <MESSAGE value="More chilis" />
     <MESSAGE value="Changed the lifetime of chilis" />
     <MESSAGE value="Added in a smoke particle class" />
@@ -826,7 +825,8 @@
     <MESSAGE value="Adding a variant of the boardwalk poles" />
     <MESSAGE value="Updated decs" />
     <MESSAGE value="Updated sprite sheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated sprite sheet" />
+    <MESSAGE value="Updated spritesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated spritesheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1119,13 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="165" column="11" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
@@ -1135,8 +1128,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+        <state relative-caret-position="219">
+          <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="145" column="40" selection-start-line="145" selection-start-column="40" selection-end-line="145" selection-end-column="40" />
         </state>
       </provider>
     </entry>
