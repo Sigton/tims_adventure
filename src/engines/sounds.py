@@ -20,16 +20,17 @@ class SoundEngine:
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
         self.music2 = pygame.mixer.Sound("src/resources/ambient2.ogg")
+        self.music3 = pygame.mixer.Sound("src/resources/ambient3.ogg")
         self.punch = pygame.mixer.Sound("src/resources/punch.ogg")
         self.burn = pygame.mixer.Sound("src/resources/burn.ogg")
         self.footstep = pygame.mixer.Sound("src/resources/footstep.ogg")
 
-        self.music = [self.music1,
-                      self.music2]
+        self.music = [self.music3]
 
         # Link the sounds to the channels they should play in
         self.channel_linkup = {self.music1: self.music_channel,
                                self.music2: self.music_channel,
+                               self.music3: self.music_channel,
                                self.punch: self.punch_channel,
                                self.burn: self.burn_channel,
                                self.footstep: self.footstep_channel}
