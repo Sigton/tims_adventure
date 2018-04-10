@@ -61,3 +61,7 @@ class SoundEngine:
     def stop_sound(self, sound):
 
         self.channel_linkup[sound].stop()
+
+    def playing_sound(self, sound):
+
+        return self.channel_linkup[sound].get_busy()
