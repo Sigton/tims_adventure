@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/footstep3.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/footstep3.ogg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="570">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -217,8 +216,8 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
       </list>
     </option>
   </component>
@@ -441,20 +440,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01695" summary="Adjusted the new tile">
-      <created>1523367356595</created>
-      <option name="number" value="01695" />
-      <option name="presentableId" value="LOCAL-01695" />
-      <option name="project" value="LOCAL" />
-      <updated>1523367356595</updated>
-    </task>
-    <task id="LOCAL-01696" summary="Updated terrain.png">
-      <created>1523367644557</created>
-      <option name="number" value="01696" />
-      <option name="presentableId" value="LOCAL-01696" />
-      <option name="project" value="LOCAL" />
-      <updated>1523367644557</updated>
     </task>
     <task id="LOCAL-01697" summary="Updated sprite sheet data">
       <created>1523367829873</created>
@@ -785,21 +770,34 @@
       <option name="project" value="LOCAL" />
       <updated>1523447271742</updated>
     </task>
-    <option name="localTasksCounter" value="1744" />
+    <task id="LOCAL-01744" summary="Updated footstep 3">
+      <created>1523450055600</created>
+      <option name="number" value="01744" />
+      <option name="presentableId" value="LOCAL-01744" />
+      <option name="project" value="LOCAL" />
+      <updated>1523450055601</updated>
+    </task>
+    <task id="LOCAL-01745" summary="Fixed footstep3">
+      <created>1523450685372</created>
+      <option name="number" value="01745" />
+      <option name="presentableId" value="LOCAL-01745" />
+      <option name="project" value="LOCAL" />
+      <updated>1523450685372</updated>
+    </task>
+    <option name="localTasksCounter" value="1746" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -837,8 +835,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated terrain.png" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Added a footstep sound" />
     <MESSAGE value="Added a stop sound function" />
     <MESSAGE value="Plays footstep sound when walking" />
@@ -862,7 +858,9 @@
     <MESSAGE value="Fixed the bugs" />
     <MESSAGE value="Working on footstep 2" />
     <MESSAGE value="Added new footstep sound" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new footstep sound" />
+    <MESSAGE value="Updated footstep 3" />
+    <MESSAGE value="Fixed footstep3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed footstep3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1168,8 +1166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="570">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
