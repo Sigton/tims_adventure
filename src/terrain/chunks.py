@@ -315,7 +315,7 @@ class ChunkController:
                 self.player.create_movement_intervals()
 
                 if not self.master.sound_engine.playing_sound(self.master.sound_engine.footstep):
-                    self.master.sound_engine.queue_sound((self.master.sound_engine.footstep, 0))
+                    self.master.sound_engine.queue_sound(("footstep", 0))
 
         self.player.update(self.direction)
         self.update_chunks()
