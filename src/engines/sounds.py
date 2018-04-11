@@ -67,10 +67,10 @@ class SoundEngine:
         [self.sound_linkup[m].set_volume(0.7) for m in self.music]
         self.punch.set_volume(0.1)
         self.burn.set_volume(0.1)
-        self.footstep.set_volume(0.25)
-        self.footstep2.set_volume(0.1)
-        self.footstep3.set_volume(0.3)
-        self.footstep4.set_volume(0.1)
+        self.footstep.set_volume(0.4)
+        self.footstep2.set_volume(0.2)
+        self.footstep3.set_volume(0.4)
+        self.footstep4.set_volume(0.2)
 
     def play_sounds(self):
 
