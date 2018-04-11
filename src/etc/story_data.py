@@ -78,7 +78,8 @@ quests = {
     "old_man": "Find the elder villager.",
     "heading_north": "Explore to the north.",
     "help_village": "Help the village!",
-    "liberate_village": "Liberate the village."
+    "liberate_village": "Liberate the village.",
+    "fisherman": "Find the fisherman."
 }
 
 
@@ -87,7 +88,8 @@ completion_criteria = {
     "old_man": ["scene/old_man"],
     "heading_north": ["scene/north_bean"],
     "help_village": ["scene/help_village_bean"],
-    "liberate_village": ("duel/6", "duel/7", "duel/8", "duel/9", "duel/10", "duel/11")
+    "liberate_village": ("duel/6", "duel/7", "duel/8", "duel/9", "duel/10", "duel/11"),
+    "fisherman": []
 }
 
 
@@ -96,5 +98,6 @@ quest_path = {
     "old_man": ["heading_north"],
     "heading_north": ["help_village"],
     "help_village": ["liberate_village"],
-    "liberate_village": []
+    "liberate_village": [],
+    "fisherman": []
 }
