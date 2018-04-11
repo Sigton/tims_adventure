@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engines/sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/sounds.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,50 +18,13 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1196">
-                    <caret line="173" column="35" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="455">
-                    <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="tile_data.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="835">
-                    <caret line="86" selection-start-line="86" selection-end-line="86" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="62">
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -92,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-341">
-              <caret line="280" column="37" lean-forward="true" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="37" />
+              <caret line="280" column="37" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -131,8 +93,8 @@
       <find>heal</find>
       <find>player</find>
       <find>&quot;0</find>
-      <find />
-      <find />
+      <find>&quot;pos&quot;: [0, 0]</find>
+      <find>False, True</find>
       <find>False,</find>
       <find>True</find>
       <find>zTrue</find>
@@ -143,8 +105,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find />
-      <find />
+      <find>id&quot;: &quot;1000</find>
+      <find>id&quot;: 18473</find>
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -174,7 +136,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace />
+      <replace>: create_images(</replace>
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -251,7 +213,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2306" />
+    <option name="x" value="214" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -469,20 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01692" summary="Updated terrain.png">
-      <created>1523366919891</created>
-      <option name="number" value="01692" />
-      <option name="presentableId" value="LOCAL-01692" />
-      <option name="project" value="LOCAL" />
-      <updated>1523366919891</updated>
-    </task>
-    <task id="LOCAL-01693" summary="Added data for new tile">
-      <created>1523367041907</created>
-      <option name="number" value="01693" />
-      <option name="presentableId" value="LOCAL-01693" />
-      <option name="project" value="LOCAL" />
-      <updated>1523367041907</updated>
     </task>
     <task id="LOCAL-01694" summary="Adding decs">
       <created>1523367071317</created>
@@ -813,19 +761,32 @@
       <option name="project" value="LOCAL" />
       <updated>1523442175566</updated>
     </task>
-    <option name="localTasksCounter" value="1741" />
+    <task id="LOCAL-01741" summary="Working on footstep 2">
+      <created>1523446226293</created>
+      <option name="number" value="01741" />
+      <option name="presentableId" value="LOCAL-01741" />
+      <option name="project" value="LOCAL" />
+      <updated>1523446226293</updated>
+    </task>
+    <task id="LOCAL-01742" summary="Working on footstep 2">
+      <created>1523446549669</created>
+      <option name="number" value="01742" />
+      <option name="presentableId" value="LOCAL-01742" />
+      <option name="project" value="LOCAL" />
+      <updated>1523446549669</updated>
+    </task>
+    <option name="localTasksCounter" value="1743" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -865,7 +826,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated decs" />
     <MESSAGE value="Updated terrain.png" />
     <MESSAGE value="Updated map" />
     <MESSAGE value="Added a footstep sound" />
@@ -890,7 +850,8 @@
     <MESSAGE value="Still working on sound engine" />
     <MESSAGE value="Using new text ids for sound in move data" />
     <MESSAGE value="Fixed the bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the bugs" />
+    <MESSAGE value="Working on footstep 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on footstep 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1159,13 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1183,7 +1137,7 @@
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-341">
-          <caret line="280" column="37" lean-forward="true" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="37" />
+          <caret line="280" column="37" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1194,10 +1148,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="62">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

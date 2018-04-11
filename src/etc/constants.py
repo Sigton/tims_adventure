@@ -165,12 +165,14 @@ PARTICLE_LIFE_MULTIPLIER = 0.75
 footstep_types = {
     "0000": "footstep2",
     "0041": "footstep2",
-    "0042": "footstep2"
+    "0042": "footstep2",
+    "0073": "footstep3"
 }
 
 footstep_sounds = [
     "footstep",
-    "footstep2"
+    "footstep2",
+    "footstep3"
 ]
 
 # Performance control
