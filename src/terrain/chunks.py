@@ -353,7 +353,7 @@ class ChunkController:
             # Delete any left over chunks
             for chunk in to_remove:
                 self.delete_chunk(chunk)
-        print(self.get_current_tile())
+
         if not self.moving:
             for chunk in self.live_chunks:
                 for entity in self.map_tiles[chunk].get_entities():
@@ -608,7 +608,7 @@ class ChunkController:
     def get_current_tile(self):
 
         pos = self.get_player_tile_nums()
-        tile_no = (pos[0]*20)+pos[1]
+        tile_no = (pos[1]*20)+pos[0]
         current_tile = self.map_seeds[self.get_current_chunk_id()].tiles[tile_no*4:tile_no*4+4]
 
         return current_tile
