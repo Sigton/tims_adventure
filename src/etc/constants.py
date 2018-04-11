@@ -166,13 +166,15 @@ footstep_types = {
     "0000": "footstep2",
     "0041": "footstep2",
     "0042": "footstep2",
-    "0073": "footstep3"
+    "0073": "footstep3",
+    "0050": "footstep4"
 }
 
 footstep_sounds = [
     "footstep",
     "footstep2",
-    "footstep3"
+    "footstep3",
+    "footstep4"
 ]
 
 # Performance control
