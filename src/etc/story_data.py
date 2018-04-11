@@ -50,9 +50,12 @@ jelly monsters army.""", 1),
         ("Well done for volunteering, brave young bean.", 1),
         ("Wait wha-", 0),
         ("I knew you could do it!", 1),
-        ("Head north from here - an adventure awaits you!", 1),
+        ("You must find the fisherman, he has more information for you.", 1),
         ("But I'm not brave, I can't do thi-", 0),
-        ("You must hurry; you are our only hope.", 1)
+        ("Be brave, young Tim. You are the last chance for all the land.", 1),
+        ("Okay, where can I find this fisherman?", 0),
+        ("Look at the pier by the lake, he shall be working.", 1),
+        ("Good luck, young bean.", 1)
     ],
     "north_bean": [
         ("Help! Our village is under attack! We need help!", 1),
@@ -95,7 +98,7 @@ completion_criteria = {
 
 quest_path = {
     "talk_villagers": ["old_man"],
-    "old_man": ["heading_north"],
+    "old_man": ["fisherman"],
     "heading_north": ["help_village"],
     "help_village": ["liberate_village"],
     "liberate_village": [],
