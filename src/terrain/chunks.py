@@ -604,3 +604,11 @@ class ChunkController:
             tile_y = ((self.py - 4) - (self.world_offset_y % 720)) // 48
 
         return [tile_x, tile_y]
+
+    def get_current_tile(self):
+
+        pos = self.get_player_tile_nums()
+        tile_no = (pos[0]*20)+pos[1]
+        current_tile = self.map_seeds[self.get_current_chunk_id()][tile_no*4:tile_no*4+4]
+
+        return current_tile
