@@ -72,6 +72,9 @@ But please hurry, we won't be able to defend ourselves for much longer.""", 1)
         ("Help us, our village is being raided!", 1),
         ("There are 6 evil beans in the village, can you defeat them for us?", 1),
         ("I'll try!", 0)
+    ],
+    "fisherman": [
+        ("Hey there!", 1)
     ]
 }
 
