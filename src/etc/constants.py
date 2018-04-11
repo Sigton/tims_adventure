@@ -162,6 +162,12 @@ LOADING_SCREEN_TIME = 45
 PARTICLE_LIFE_MULTIPLIER = 0.75
 
 
+footstep_types = {
+    "0000": "footstep2",
+    "0041": "footstep2",
+    "0042": "footstep2"
+}
+
 # Performance control
 
 performance_profiles = [
