@@ -187,7 +187,7 @@ class ChunkController:
 
             elif event.type == constants.MUSIC_END_EVENT:
 
-                pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(20, 60)*1000)
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(5, 10)*1000)
 
             elif event.type == KEYDOWN:
 
