@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="81" column="42" lean-forward="true" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+            <state relative-caret-position="570">
+              <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -61,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1010">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -70,16 +69,16 @@
         <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -212,10 +211,10 @@
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
       </list>
     </option>
   </component>
@@ -438,20 +437,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01720" summary="Plays footstep sound when walking">
-      <created>1523390113982</created>
-      <option name="number" value="01720" />
-      <option name="presentableId" value="LOCAL-01720" />
-      <option name="project" value="LOCAL" />
-      <updated>1523390113982</updated>
-    </task>
-    <task id="LOCAL-01721" summary="Adjusting things">
-      <created>1523390327596</created>
-      <option name="number" value="01721" />
-      <option name="presentableId" value="LOCAL-01721" />
-      <option name="project" value="LOCAL" />
-      <updated>1523390327597</updated>
     </task>
     <task id="LOCAL-01722" summary="Working on the footstep sound">
       <created>1523390728314</created>
@@ -782,7 +767,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523483180802</updated>
     </task>
-    <option name="localTasksCounter" value="1769" />
+    <task id="LOCAL-01769" summary="Added new bean to default entities">
+      <created>1523483358510</created>
+      <option name="number" value="01769" />
+      <option name="presentableId" value="LOCAL-01769" />
+      <option name="project" value="LOCAL" />
+      <updated>1523483358510</updated>
+    </task>
+    <task id="LOCAL-01770" summary="Added a temp scene">
+      <created>1523483829913</created>
+      <option name="number" value="01770" />
+      <option name="presentableId" value="LOCAL-01770" />
+      <option name="project" value="LOCAL" />
+      <updated>1523483829913</updated>
+    </task>
+    <option name="localTasksCounter" value="1771" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -834,8 +833,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a list of footstep types" />
-    <MESSAGE value="Adjusting how sounds are played" />
     <MESSAGE value="Working on sound engine" />
     <MESSAGE value="Still working on sound engine" />
     <MESSAGE value="Using new text ids for sound in move data" />
@@ -859,7 +856,9 @@
     <MESSAGE value="Adjusting the storyline" />
     <MESSAGE value="Updated beans spritesheet" />
     <MESSAGE value="Added new bean metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new bean metadata" />
+    <MESSAGE value="Added new bean to default entities" />
+    <MESSAGE value="Added a temp scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a temp scene" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,10 +1130,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
+    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="106" column="64" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+        <state relative-caret-position="1010">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1145,31 +1158,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="106" column="64" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="81" column="42" lean-forward="true" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/bean_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="570">
+          <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
         </state>
       </provider>
     </entry>
