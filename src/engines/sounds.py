@@ -32,7 +32,9 @@ class SoundEngine:
         self.footstep3 = pygame.mixer.Sound("src/resources/footstep3.ogg")
         self.footstep4 = pygame.mixer.Sound("src/resources/footstep4.ogg")
 
-        self.music = ["music2"]
+        self.music = ["music2",
+                      "music3",
+                      "music4"]
 
         # Link the sounds to the channels they should play in
         self.channel_linkup = {"music1": self.music_channel,
