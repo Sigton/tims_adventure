@@ -64,7 +64,7 @@ class SoundEngine:
     def play_sounds(self):
 
         # Plays all the queued sounds
-        [self.channel_linkup[sound[0]].play(sound[0], sound[1]) for sound in self.queued_sounds]
+        [self.channel_linkup[sound[0]].play(self.sound_linkup[sound[0]], sound[1]) for sound in self.queued_sounds]
 
         # And empty the queue
         self.queued_sounds = []
