@@ -32,13 +32,21 @@ class SoundEngine:
                       self.music3]
 
         # Link the sounds to the channels they should play in
-        self.channel_linkup = {self.music1: self.music_channel,
-                               self.music2: self.music_channel,
-                               self.music3: self.music_channel,
-                               self.punch: self.punch_channel,
-                               self.burn: self.burn_channel,
-                               self.footstep: self.footstep_channel,
-                               self.footstep2: self.footstep2_channel}
+        self.channel_linkup = {"music1": self.music_channel,
+                               "music2": self.music_channel,
+                               "music3": self.music_channel,
+                               "punch": self.punch_channel,
+                               "burn": self.burn_channel,
+                               "footstep": self.footstep_channel,
+                               "footstep2": self.footstep2_channel}
+
+        self.sound_linkup = {"music1": self.music1,
+                             "music2": self.music2,
+                             "music3": self.music3,
+                             "punch": self.punch,
+                             "burn": self.burn,
+                             "footstep": self.footstep,
+                             "footstep2": self.footstep2}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
