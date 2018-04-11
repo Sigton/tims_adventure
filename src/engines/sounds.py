@@ -32,9 +32,7 @@ class SoundEngine:
         self.footstep3 = pygame.mixer.Sound("src/resources/footstep3.ogg")
         self.footstep4 = pygame.mixer.Sound("src/resources/footstep4.ogg")
 
-        self.music = ["music2",
-                      "music3",
-                      "music4"]
+        self.music = ["music2"]
 
         # Link the sounds to the channels they should play in
         self.channel_linkup = {"music1": self.music_channel,
@@ -66,13 +64,13 @@ class SoundEngine:
         self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
 
         # Mix the volumes
-        [self.sound_linkup[m].set_volume(0.07) for m in self.music]
+        [self.sound_linkup[m].set_volume(0.7) for m in self.music]
         self.punch.set_volume(0.1)
         self.burn.set_volume(0.1)
-        self.footstep.set_volume(0.15)
-        self.footstep2.set_volume(0.05)
-        self.footstep3.set_volume(0.15)
-        self.footstep4.set_volume(0.05)
+        self.footstep.set_volume(0.25)
+        self.footstep2.set_volume(0.1)
+        self.footstep3.set_volume(0.3)
+        self.footstep4.set_volume(0.1)
 
     def play_sounds(self):
 
