@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="402" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" afterDir="false" />
-    </list>
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+            <state relative-caret-position="160">
+              <caret line="173" column="44" selection-start-line="173" selection-start-column="44" selection-end-line="173" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -42,16 +40,16 @@
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="530">
-              <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+              <caret line="106" column="64" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="350">
+              <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -186,8 +184,8 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
       </list>
     </option>
   </component>
@@ -404,20 +402,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01716" summary="Updated terrain.png">
-      <created>1523373650344</created>
-      <option name="number" value="01716" />
-      <option name="presentableId" value="LOCAL-01716" />
-      <option name="project" value="LOCAL" />
-      <updated>1523373650344</updated>
-    </task>
-    <task id="LOCAL-01717" summary="Updated map">
-      <created>1523377345616</created>
-      <option name="number" value="01717" />
-      <option name="presentableId" value="LOCAL-01717" />
-      <option name="project" value="LOCAL" />
-      <updated>1523377345616</updated>
     </task>
     <task id="LOCAL-01718" summary="Added a footstep sound">
       <created>1523386799071</created>
@@ -748,7 +732,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523480632212</updated>
     </task>
-    <option name="localTasksCounter" value="1765" />
+    <task id="LOCAL-01765" summary="Decreased time between songs">
+      <created>1523481059841</created>
+      <option name="number" value="01765" />
+      <option name="presentableId" value="LOCAL-01765" />
+      <option name="project" value="LOCAL" />
+      <updated>1523481059841</updated>
+    </task>
+    <task id="LOCAL-01766" summary="Adjusting the storyline">
+      <created>1523481261860</created>
+      <option name="number" value="01766" />
+      <option name="presentableId" value="LOCAL-01766" />
+      <option name="project" value="LOCAL" />
+      <updated>1523481261860</updated>
+    </task>
+    <option name="localTasksCounter" value="1767" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -800,8 +798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed the music list" />
-    <MESSAGE value="Created a function to get the tile that the player is standing on" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Fixed the function" />
     <MESSAGE value="Added a list of footstep types" />
@@ -825,7 +821,9 @@
     <MESSAGE value="Updated map" />
     <MESSAGE value="Added a new quest icon" />
     <MESSAGE value="Added more quest data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more quest data" />
+    <MESSAGE value="Decreased time between songs" />
+    <MESSAGE value="Adjusting the storyline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusting the storyline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1111,13 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1128,14 +1119,21 @@
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
-          <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+          <caret line="106" column="64" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="160">
+          <caret line="173" column="44" selection-start-line="173" selection-start-column="44" selection-end-line="173" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
         </state>
       </provider>
     </entry>

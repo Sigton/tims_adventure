@@ -22,7 +22,8 @@ entity_data = {
     "chicken": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Chicken Bean"},
     "wizard": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Wizard Bean"},
     "old_villager": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Old Bean"},
-    "tim": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Tim"}
+    "tim": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Tim"},
+    "fisherman": {"max_hp": 100, "moves": [0, 1], "attack": 10, "energy": 100, "display_name": "Fisherman"}
 }
 
 item_effects = {
