@@ -66,13 +66,13 @@ class SoundEngine:
         self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
 
         # Mix the volumes
-        [self.sound_linkup[m].set_volume(0.06) for m in self.music]
+        [self.sound_linkup[m].set_volume(0.07) for m in self.music]
         self.punch.set_volume(0.1)
         self.burn.set_volume(0.1)
-        self.footstep.set_volume(0.2)
-        self.footstep2.set_volume(0.1)
-        self.footstep3.set_volume(0.2)
-        self.footstep4.set_volume(0.1)
+        self.footstep.set_volume(0.15)
+        self.footstep2.set_volume(0.05)
+        self.footstep3.set_volume(0.15)
+        self.footstep4.set_volume(0.05)
 
     def play_sounds(self):
 
