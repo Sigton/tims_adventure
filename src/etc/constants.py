@@ -168,6 +168,11 @@ footstep_types = {
     "0042": "footstep2"
 }
 
+footstep_sounds = [
+    "footstep",
+    "footstep2"
+]
+
 # Performance control
 
 performance_profiles = [

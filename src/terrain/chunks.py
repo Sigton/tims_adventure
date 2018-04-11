@@ -314,8 +314,20 @@ class ChunkController:
                 self.player.move_history = [self.direction] + self.player.move_history[:4]
                 self.player.create_movement_intervals()
 
-                if not self.master.sound_engine.playing_sound(self.master.sound_engine.footstep):
-                    self.master.sound_engine.queue_sound(("footstep", 0))
+                current_tile = self.get_current_tile()
+
+                if current_tile in constants.footstep_types:
+
+                    [self.master.sound_engine.stop_sound(sound)
+                     for sound in [s for s in constants.footstep_sounds if s != constants.footstep_types[current_tile]]]
+                    if not self.master.sound_engine.playing_sound(constants.footstep_types[current_tile]):
+                        self.master.sound_engine.queue_sound((constants.footstep_types[current_tile], 0))
+
+                else:
+                    [self.master.sound_engine.stop_sound(sound)
+                     for sound in [s for s in constants.footstep_sounds if s!= "footstep"]]
+                    if not self.master.sound_engine.playing_sound("footstep"):
+                        self.master.sound_engine.queue_sound(("footstep", 0))
 
         self.player.update(self.direction)
         self.update_chunks()
@@ -326,7 +338,7 @@ class ChunkController:
             self.moving -= 1
             self.move_chunks(self.movement_interval)
         else:
-            self.master.sound_engine.stop_sound(self.master.sound_engine.footstep)
+            [self.master.sound_engine.stop_sound(sound) for sound in constants.footstep_sounds]
 
         # Look for any new chunks that need to be
         # created and old ones that need removed
