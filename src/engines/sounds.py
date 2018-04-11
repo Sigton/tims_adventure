@@ -69,6 +69,7 @@ class SoundEngine:
         self.footstep.set_volume(0.2)
         self.footstep2.set_volume(0.1)
         self.footstep3.set_volume(0.2)
+        self.footstep4.set_volume(0.1)
 
     def play_sounds(self):
 
