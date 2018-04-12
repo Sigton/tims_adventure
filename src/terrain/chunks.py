@@ -624,3 +624,10 @@ class ChunkController:
         current_tile = self.map_seeds[self.get_current_chunk_id()].tiles[tile_no*4:tile_no*4+4]
 
         return current_tile
+
+    def locate_entity(self, entity_id):
+
+        for chunk in self.entities:
+            for entity in chunk:
+                if entity.meta.id == entity_id:
+                    return entity
