@@ -28,5 +28,5 @@ entity_data = {
 
 item_effects = {
     "EnlightenmentPotion": "",
-    "HealthPotion": "self.player.meta.heal(40)"
+    "HealthPotion": "self.player.meta.heal(40);self.master.master.sound_engine.queue_sound(['drinking', 0])"
 }
