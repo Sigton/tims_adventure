@@ -63,6 +63,10 @@ class DialogueController:
         self.exit_func = None
         self.after_controller = -1
 
+    def load_scenes(self, scenes):
+
+        self.scenes = scenes
+
     def start_scene(self, entity1, entity2, scene, exit_func, after_controller):
 
         self.player = duel_players.DuelPlayer(entity1, "R")
