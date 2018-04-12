@@ -105,7 +105,7 @@ Using potions does count as your move, however.""", 1),
         ("Make sure you conserve your energy, because without energy you can make moves!", 1),
         ("""I'll go easy on you kid, just cause it's your first time. You still gotta beat me before I let you move on,
  though.""", 1),
-        ("Good luck.", 1)
+        ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
     ],
     "fisherman_duel1": [
         ("Hello, Mr. Fisherman.", 0),
@@ -129,7 +129,7 @@ Using potions does count as your move, however.""", 1),
         ("Make sure you conserve your energy, because without energy you can make moves!", 1),
         ("""I'll go easy on you kid, just cause it's your first time. You still gotta beat me before I let you move on,
  though.""", 1),
-        ("Good luck.", 1)
+        ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
     ]
 }
 
