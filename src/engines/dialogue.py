@@ -21,7 +21,8 @@ class DialogueController:
 
         self.scene_updates = {
             "old_man": self.update_fisherman,
-            "fisherman2": self.update_duel_fisherman
+            "fisherman2": self.update_duel_fisherman,
+            "fisherman_duel1": self.update_duel_fisherman
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
