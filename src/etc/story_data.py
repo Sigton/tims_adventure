@@ -93,7 +93,31 @@ for me.""", 0),
         ("""Meet me at the beach on the other side of town. We'll sort that out, and soon 
 you'll be a fantastic fighter.""", 1)
     ],
-    "fisherman_duel": [
+    "fisherman_duel2": [
+        ("Right kid, time to learn to fight.", 1),
+        ("There are some rules to fighting around here, you gotta make sure you stick to them. Got it?", 1),
+        ("First of all, we take it turns to attack or defend. You'll start, and then I go next.", 1),
+        ("What moves have you got?", 1),
+        ("Erm, none just now.", 0),
+        ("Right, I'll teach you how to tackle and how to throw a punch.", 1),
+        ("""You can only use those two moves, as well as any potions you pick up along the way.
+Using potions does count as your move, however.""", 1),
+        ("Make sure you conserve your energy, because without energy you can make moves!", 1),
+        (""""I'll go easy on you kid, just cause it's your first time. You still gotta beat me before I let you move on,
+ though.""", 1),
+        ("Good luck.", 1)
+    ],
+    "fisherman_duel1": [
+        ("Hello, Mr. Fisherman.", 0),
+        ("Whatcha want, kid.", 1),
+        ("""The elder villager told me to come and talk to you. He said you had information 
+for me.""", 0),
+        ("Information? Who are you?", 1),
+        ("I'm Tim, and I've bean set on an adventure to conquer the Jelly Monster.", 0),
+        ("The Jelly Monster? You are brave.", 1),
+        ("Yeah, well about tha-", 0),
+        ("Do you know how to fight?", 1),
+        ("No, I don't.", 0),
         ("Right kid, time to learn to fight.", 1),
         ("There are some rules to fighting around here, you gotta make sure you stick to them. Got it?", 1),
         ("First of all, we take it turns to attack or defend. You'll start, and then I go next.", 1),
