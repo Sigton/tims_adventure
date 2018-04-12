@@ -230,7 +230,7 @@ class DialogueController:
 
         e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'old_man2', None, 0)
-;self.master.switch_to(3)"""
+self.master.switch_to(3)"""
         e.set_important()
 
     def update_duel_fisherman2(self):
