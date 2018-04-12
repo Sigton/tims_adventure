@@ -629,6 +629,6 @@ class ChunkController:
 
         for chunk in self.entities:
             for entity in self.entities[chunk]:
-                if entity.__class__.__name__ is not "Item":
+                if entity.__class__.__name__ not in constants.items:
                     if entity.meta.id == entity_id:
                         return entity
