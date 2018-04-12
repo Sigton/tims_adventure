@@ -74,7 +74,8 @@ But please hurry, we won't be able to defend ourselves for much longer.""", 1)
         ("I'll try!", 0)
     ],
     "fisherman": [
-        ("Hey there!", 1)
+        ("Hello, Mr. Fisherman.", 0),
+        ("Whatcha want, kid.", 1)
     ]
 }
 
