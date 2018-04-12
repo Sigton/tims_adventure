@@ -628,6 +628,7 @@ class ChunkController:
     def locate_entity(self, entity_id):
 
         for chunk in self.entities:
-            for entity in chunk:
-                if entity.meta.id == entity_id:
-                    return entity
+            for entity in self.entities[chunk]:
+                if entity.__class__.__name__ is not "Item":
+                    if entity.meta.id == entity_id:
+                        return entity
