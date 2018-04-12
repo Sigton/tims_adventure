@@ -227,4 +227,4 @@ class DialogueController:
 
     def update_unimportant(self):
 
-        self.other_bean_ref.meta.important = False
+        self.other_bean_ref.toggle_important()
