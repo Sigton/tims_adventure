@@ -150,7 +150,7 @@ quests = {
     "liberate_village": "Liberate the village.",
     "fisherman": "Find the fisherman.",
     "learn_fight": "Learn to fight!",
-    "old_man2": "Return to the elder villager."
+    "old_man2": "Talk to the elder villager."
 }
 
 

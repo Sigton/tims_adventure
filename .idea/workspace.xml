@@ -7,8 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/story_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +21,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="413" lean-forward="true" selection-start-line="413" selection-end-line="413" />
+            <state relative-caret-position="130">
+              <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="152" column="45" lean-forward="true" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="232" column="27" lean-forward="true" selection-start-line="232" selection-start-column="27" selection-end-line="232" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -158,11 +175,11 @@
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
       </list>
     </option>
   </component>
@@ -397,20 +414,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01782" summary="Finished fisherman scene">
-      <created>1523528773377</created>
-      <option name="number" value="01782" />
-      <option name="presentableId" value="LOCAL-01782" />
-      <option name="project" value="LOCAL" />
-      <updated>1523528773377</updated>
-    </task>
-    <task id="LOCAL-01783" summary="Added a punch move">
-      <created>1523530710594</created>
-      <option name="number" value="01783" />
-      <option name="presentableId" value="LOCAL-01783" />
-      <option name="project" value="LOCAL" />
-      <updated>1523530710594</updated>
     </task>
     <task id="LOCAL-01784" summary="Added it to shake moves">
       <created>1523530731500</created>
@@ -741,7 +744,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523547580430</updated>
     </task>
-    <option name="localTasksCounter" value="1831" />
+    <task id="LOCAL-01831" summary="Enemies don't retreat">
+      <created>1523561337383</created>
+      <option name="number" value="01831" />
+      <option name="presentableId" value="LOCAL-01831" />
+      <option name="project" value="LOCAL" />
+      <updated>1523561337383</updated>
+    </task>
+    <task id="LOCAL-01832" summary="Debugging">
+      <created>1523561583191</created>
+      <option name="number" value="01832" />
+      <option name="presentableId" value="LOCAL-01832" />
+      <option name="project" value="LOCAL" />
+      <updated>1523561583191</updated>
+    </task>
+    <option name="localTasksCounter" value="1833" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -751,7 +768,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16257995" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -793,14 +810,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated default entities" />
     <MESSAGE value="Updated story data" />
     <MESSAGE value="Added another scene update" />
     <MESSAGE value="Updated coupla the scenes" />
     <MESSAGE value="Created a function to remove the important tag from beans" />
     <MESSAGE value="Adding in uses of update unimportant" />
     <MESSAGE value="Fixed a scene" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Updated scenes" />
     <MESSAGE value="Fisherman is made unimportant when he is finished with" />
     <MESSAGE value="Fishermen start unimportant" />
@@ -818,7 +833,9 @@
     <MESSAGE value="Fixing icon positioning" />
     <MESSAGE value="Updated decs" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Enemies don't retreat" />
+    <MESSAGE value="Debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1094,20 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1124,8 +1127,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="413" lean-forward="true" selection-start-line="413" selection-end-line="413" />
+        <state relative-caret-position="130">
+          <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="232" column="27" lean-forward="true" selection-start-line="232" selection-start-column="27" selection-end-line="232" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="152" column="45" lean-forward="true" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
         </state>
       </provider>
     </entry>
