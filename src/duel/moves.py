@@ -20,5 +20,8 @@ self.master.sound_engine.queue_sound(('burn', 0))""",
      "energy": 20, "xp": 20},
     {"name": "Chili Chuck", "str_mod": 0.7, "effects":
         """self.particle_engine.create_particle_spread('chili', 45, {}, {}, 150, 15, 10, 10, 10)""",
-     "energy": 4, "xp": 4}
+     "energy": 4, "xp": 4},
+    {"name": "Punch", "str_mod": 1.2, "effects":
+        """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
+     "energy": 8, "xp": 8},
 ]
