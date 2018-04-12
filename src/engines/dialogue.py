@@ -23,10 +23,10 @@ class DialogueController:
             "old_man": self.update_fisherman,
             "fisherman2": self.update_duel_fisherman,
             "fisherman_duel1": self.update_duel_fisherman,
-            "villager1": self.toggle_important,
-            "villager2": self.toggle_important,
-            "villager3": self.toggle_important,
-            "villager4": self.toggle_important
+            "villager1": self.set_unimportant,
+            "villager2": self.set_unimportant,
+            "villager3": self.set_unimportant,
+            "villager4": self.set_unimportant
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -206,13 +206,13 @@ class DialogueController:
         e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman2', None,
 0);self.master.switch_to(3)"""
-        e.toggle_important()
+        e.set_important()
 
         self.master.chunk_controller.locate_entity(14).meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel1', 
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
 
-        self.toggle_important()
+        self.set_unimportant()
 
     def update_duel_fisherman(self):
 
@@ -220,9 +220,9 @@ class DialogueController:
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel2', 
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
 
-        self.master.chunk_controller.locate_entity(14).toggle_important()
-        self.toggle_important()
+        self.master.chunk_controller.locate_entity(14).set_important()
+        self.set_unimportant()
 
-    def toggle_important(self):
+    def set_unimportant(self):
 
-        self.other_bean_ref.toggle_important()
+        self.other_bean_ref.set_unimportant()
