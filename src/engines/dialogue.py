@@ -22,11 +22,12 @@ class DialogueController:
         self.scene_updates = {
             "old_man": self.update_fisherman,
             "fisherman2": self.update_duel_fisherman,
-            "fisherman_duel1": self.update_duel_fisherman,
+            "fisherman_duel1": self.update_duel_fisherman2,
             "villager1": self.set_unimportant,
             "villager2": self.set_unimportant,
             "villager3": self.set_unimportant,
-            "villager4": self.set_unimportant
+            "villager4": self.set_unimportant,
+            "fisherman_duel2": self.update_old_man
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -231,6 +232,11 @@ class DialogueController:
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'old_man2', None, 0)
 ;self.master.switch_to(3)"""
         e.set_important()
+
+    def update_duel_fisherman2(self):
+
+        self.update_duel_fisherman()
+        self.update_old_man()
 
     def set_unimportant(self):
 
