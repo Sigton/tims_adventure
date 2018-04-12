@@ -23,10 +23,10 @@ class DialogueController:
             "old_man": self.update_fisherman,
             "fisherman2": self.update_duel_fisherman,
             "fisherman_duel1": self.update_duel_fisherman,
-            "villager1": self.update_unimportant,
-            "villager2": self.update_unimportant,
-            "villager3": self.update_unimportant,
-            "villager4": self.update_unimportant
+            "villager1": self.toggle_important,
+            "villager2": self.toggle_important,
+            "villager3": self.toggle_important,
+            "villager4": self.toggle_important
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -215,7 +215,7 @@ class DialogueController:
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
         e.meta.important = True
 
-        self.update_unimportant()
+        self.toggle_important()
 
     def update_duel_fisherman(self):
 
@@ -223,8 +223,8 @@ class DialogueController:
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel2', 
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
 
-        self.update_unimportant()
+        self.toggle_important()
 
-    def update_unimportant(self):
+    def toggle_important(self):
 
         self.other_bean_ref.toggle_important()
