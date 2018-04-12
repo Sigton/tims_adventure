@@ -75,7 +75,16 @@ But please hurry, we won't be able to defend ourselves for much longer.""", 1)
     ],
     "fisherman": [
         ("Hello, Mr. Fisherman.", 0),
-        ("Whatcha want, kid.", 1)
+        ("Whatcha want, kid.", 1),
+        ("The elder villager told me to come and talk to you. He said you had information for me.", 0),
+        ("Information? Who are you?", 1),
+        ("I'm Tim, and I've bean set on an adventure to conquer the Jelly Monster.", 0),
+        ("The Jelly Monster? You are brave.", 1),
+        ("Yeah, well about tha-", 0),
+        ("Do you know how to fight?", 1),
+        ("No, I don't.", 0),
+        ("Meet me at the beach on the other side of town. We'll sort that out, and soon you'll be a fantastic fighter.",
+         1)
     ]
 }
 
