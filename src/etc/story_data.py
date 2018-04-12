@@ -130,6 +130,14 @@ Using potions does count as your move, however.""", 1),
         ("""I'll go easy on you kid, just cause it's your first time. You still gotta beat me before I let you move on,
  though.""", 1),
         ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
+    ],
+    "old_man2": [
+        ("I see you have completed your trainnig. You are now ready to begin your adventure.", 1),
+        ("Brilliant, where do I go?", 0),
+        ("From here, head North.", 1),
+        ("Just North? Not to the lair of the Jelly Monster or anything?", 0),
+        ("""Patience, Tim. It is a long way to the Jelly Monster from here. Follow the Northern path, you shall meet 
+someone on the trail.""", 1)
     ]
 }
 
