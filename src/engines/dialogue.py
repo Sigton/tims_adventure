@@ -19,6 +19,10 @@ class DialogueController:
 
         self.scenes = story_data.scenes
 
+        self.scene_updates = {
+            "old_man": self.update_fisherman
+        }
+
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
 
         self.body_font = constants.load_font(20, False)
@@ -57,6 +61,7 @@ class DialogueController:
 
         ]
 
+        self.scene = ""
         self.current_scene = []
         self.scene_progress = 0
 
@@ -75,6 +80,7 @@ class DialogueController:
         self.player_ref = entity1
         self.other_bean_ref = entity2
 
+        self.scene = scene
         self.current_scene = self.scenes[scene]
         self.scene_progress = 0
 
@@ -120,6 +126,8 @@ class DialogueController:
 
                 if event.key == K_SPACE:
                     if self.scene_progress >= len(self.current_scene)-1:
+                        if self.scene in self.scene_updates:
+                            self.scene_updates[self.scene]()
                         if self.exit_func is not None:
                             exec(self.exit_func)
                         self.master.switch_to(self.after_controller)
