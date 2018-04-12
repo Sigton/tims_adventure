@@ -149,7 +149,8 @@ quests = {
     "help_village": "Help the village!",
     "liberate_village": "Liberate the village.",
     "fisherman": "Find the fisherman.",
-    "learn_fight": "Learn to fight!"
+    "learn_fight": "Learn to fight!",
+    "old_man2": "Return to the elder villager."
 }
 
 
@@ -160,7 +161,8 @@ completion_criteria = {
     "help_village": ["scene/help_village_bean"],
     "liberate_village": ("duel/6", "duel/7", "duel/8", "duel/9", "duel/10", "duel/11"),
     "fisherman": ["scene/fisherman2", "scene/fisherman_duel1"],
-    "learn_fight": ["duel/14"]
+    "learn_fight": ["duel/14"],
+    "old_man2": ["scene/old_man2"]
 }
 
 
@@ -171,5 +173,6 @@ quest_path = {
     "help_village": ["liberate_village"],
     "liberate_village": [],
     "fisherman": ["learn_fight"],
-    "learn_fight": []
+    "learn_fight": ["old_man2"],
+    "old_man2": ["heading_north"]
 }

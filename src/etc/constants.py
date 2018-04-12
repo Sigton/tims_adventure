@@ -237,5 +237,6 @@ quest_images = {
     "help_village": (96, 236, 32, 32),
     "liberate_village": (128, 236, 32, 32),
     "fisherman": (160, 236, 32, 32),
-    "learn_fight": (192, 236, 32, 32)
+    "learn_fight": (192, 236, 32, 32),
+    "old_man2": (32, 236, 32, 32),
 }
