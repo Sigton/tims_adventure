@@ -19,6 +19,7 @@ class SoundEngine:
         self.footstep2_channel = pygame.mixer.Channel(4)
         self.footstep3_channel = pygame.mixer.Channel(5)
         self.footstep4_channel = pygame.mixer.Channel(6)
+        self.drinking_channel = pygame.mixer.Channel(7)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
@@ -31,6 +32,7 @@ class SoundEngine:
         self.footstep2 = pygame.mixer.Sound("src/resources/footstep2.ogg")
         self.footstep3 = pygame.mixer.Sound("src/resources/footstep3.ogg")
         self.footstep4 = pygame.mixer.Sound("src/resources/footstep4.ogg")
+        self.drinking = pygame.mixer.Sound("src/resources/drinking.ogg")
 
         self.music = ["music2",
                       "music3",
@@ -46,7 +48,8 @@ class SoundEngine:
                                "footstep": self.footstep_channel,
                                "footstep2": self.footstep2_channel,
                                "footstep3": self.footstep3_channel,
-                               "footstep4": self.footstep4_channel}
+                               "footstep4": self.footstep4_channel,
+                               "drinking": self.drinking_channel}
 
         self.sound_linkup = {"music1": self.music1,
                              "music2": self.music2,
@@ -57,7 +60,8 @@ class SoundEngine:
                              "footstep": self.footstep,
                              "footstep2": self.footstep2,
                              "footstep3": self.footstep3,
-                             "footstep4": self.footstep4}
+                             "footstep4": self.footstep4,
+                             "drinking": self.drinking}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
@@ -73,6 +77,7 @@ class SoundEngine:
         self.footstep2.set_volume(0.2)
         self.footstep3.set_volume(0.5)
         self.footstep4.set_volume(0.23)
+        self.drinking.set_volume(0.4)
 
     def play_sounds(self):
 
