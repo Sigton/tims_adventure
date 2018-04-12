@@ -85,7 +85,7 @@
     }],
   "1491": [{"pos": [11, 6], "meta":
       {"bean": "fisherman", "max_hp": 100, "moves": [0,4], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman1', 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)",
+        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman1', None, 0);self.master.switch_to(3)",
         "important": true, "evil": false, "display_name": "Fisherman", "id": 14
       }
     }]
