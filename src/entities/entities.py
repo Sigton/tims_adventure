@@ -213,14 +213,17 @@ class RandomBean:
 
     def set_important(self):
 
-        self.interaction_icon = icons.ImportantPressSpace(self.rect.centerx, self.rect.y - 35)
-        self.interaction_icon.on()
-        self.meta.important = True
+        if not self.meta.important:
+            self.interaction_icon = icons.ImportantPressSpace(self.rect.centerx, self.rect.y - 35)
+            self.interaction_icon.on()
+            self.meta.important = True
 
     def set_unimportant(self):
-        self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
-        self.interaction_icon.off()
-        self.meta.important = False
+
+        if self.meta.important:
+            self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
+            self.interaction_icon.off()
+            self.meta.important = False
 
 
 class Item(icons.Icon):
