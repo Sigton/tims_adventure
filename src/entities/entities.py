@@ -211,6 +211,17 @@ class RandomBean:
         self.stat_panel = None
         self.stat_panel_active = False
 
+    def toggle_important(self):
+
+        if self.interaction_icon is None:
+            self.interaction_icon = icons.ImportantPressSpace(self.rect.centerx, self.rect.y - 35)
+            self.interaction_icon.on()
+            self.meta.important = True
+        else:
+            self.interaction_icon = icons.PressSpace(self.rect.centerx, self.rect.y - 35)
+            self.interaction_icon.off()
+            self.meta.important = False
+
 
 class Item(icons.Icon):
 
