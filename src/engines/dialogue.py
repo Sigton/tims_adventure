@@ -22,7 +22,11 @@ class DialogueController:
         self.scene_updates = {
             "old_man": self.update_fisherman,
             "fisherman2": self.update_duel_fisherman,
-            "fisherman_duel1": self.update_duel_fisherman
+            "fisherman_duel1": self.update_duel_fisherman,
+            "villager1": self.update_unimportant,
+            "villager2": self.update_unimportant,
+            "villager3": self.update_unimportant,
+            "villager4": self.update_unimportant
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -203,6 +207,8 @@ class DialogueController:
         self.master.chunk_controller.locate_entity(14).meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel1', 
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
+
+        self.update_unimportant()
 
     def update_duel_fisherman(self):
 
