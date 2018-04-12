@@ -201,12 +201,19 @@ class DialogueController:
 
     def update_fisherman(self):
 
-        self.master.chunk_controller.locate_entity(13).meta.interaction = \
+        e = self.master.chunk_controller.locate_entity(13)\
+
+        e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman2', None,
 0);self.master.switch_to(3)"""
-        self.master.chunk_controller.locate_entity(14).meta.interaction = \
+        e.meta.important = True
+
+        e = self.master.chunk_controller.locate_entity(14)\
+
+        e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel1', 
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
+        e.meta.important = True
 
         self.update_unimportant()
 
