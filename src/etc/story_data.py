@@ -162,5 +162,6 @@ quest_path = {
     "heading_north": ["help_village"],
     "help_village": ["liberate_village"],
     "liberate_village": [],
-    "fisherman": ["learn_fight"]
+    "fisherman": ["learn_fight"],
+    "learn_fight": []
 }
