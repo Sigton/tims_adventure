@@ -408,7 +408,7 @@ class DuelController:
         entity.energy = 0
 
         if winner == "Player":
-            self.master.story_tracker.check_complete(['duel', self.enemy.meta.id])
+            self.master.story_tracker.check_complete(['duel', str(self.enemy.meta.id)])
 
     def get_opponent_move(self):
 
