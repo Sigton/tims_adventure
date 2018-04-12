@@ -107,7 +107,7 @@ completion_criteria = {
     "help_village": ["scene/help_village_bean"],
     "liberate_village": ("duel/6", "duel/7", "duel/8", "duel/9", "duel/10", "duel/11"),
     "fisherman": ["scene/fisherman"],
-    "learn_fight": ["duel/13"]
+    "learn_fight": ["duel/14"]
 }
 
 
