@@ -132,7 +132,8 @@ def load_font(font_size=default_font_size, set_global=True):
 # Data used in dueling engine
 
 shake_moves = [
-    "Tackle"
+    "Tackle",
+    "Punch"
 ]
 positional_moves = [
     "Burn",
