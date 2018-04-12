@@ -195,4 +195,6 @@ class DialogueController:
 
     def update_fisherman(self):
 
-        pass
+        self.master.chunk_controller.locate_entity(14).meta.interaction = \
+            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman2', None,
+0);self.master.switch_to(3)"""
