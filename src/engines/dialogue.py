@@ -297,7 +297,7 @@ self.master.switch_to(3)"""
 
     def add_dan_to_team(self):
 
-        self.master.player.add_bean(self.master.chunk_controller.locate_entity(12).meta)
+        self.master.chunk_controller.player.add_bean(self.master.chunk_controller.locate_entity(12).meta)
         self.master.chunk_controller.delete_entity(12)
 
     def set_unimportant(self):
