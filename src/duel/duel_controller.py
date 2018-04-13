@@ -408,7 +408,6 @@ class DuelController:
         entity = self.player if self.winner == "Player" else self.enemy
 
         if not retreat:
-            entity.meta.level_up(1)
             entity.meta.xp_gain(entity.energy)
 
             if winner == "Player" and self.enemy.meta.evil:
