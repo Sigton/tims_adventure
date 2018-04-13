@@ -21,6 +21,7 @@ class SoundEngine:
         self.footstep4_channel = pygame.mixer.Channel(6)
         self.drinking_channel = pygame.mixer.Channel(7)
         self.click_channel = pygame.mixer.Channel(8)
+        self.speech_channel = pygame.mixer.Channel(9)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
@@ -35,6 +36,10 @@ class SoundEngine:
         self.footstep4 = pygame.mixer.Sound("src/resources/footstep4.ogg")
         self.drinking = pygame.mixer.Sound("src/resources/drinking.ogg")
         self.click = pygame.mixer.Sound("src/resources/click.ogg")
+        self.speech1 = pygame.mixer.Sound("src/resources/speech1.ogg")
+        self.speech2 = pygame.mixer.Sound("src/resources/speech2.ogg")
+        self.speech3 = pygame.mixer.Sound("src/resources/speech3.ogg")
+        self.speech4 = pygame.mixer.Sound("src/resources/speech4.ogg")
 
         self.music = ["music2",
                       "music3",
