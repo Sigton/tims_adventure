@@ -49,14 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="139">
-              <caret line="106" column="32" lean-forward="true" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -188,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
@@ -202,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
   </component>
@@ -442,27 +451,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01852" summary="Gonna need more channels">
-      <created>1523611376883</created>
-      <option name="number" value="01852" />
-      <option name="presentableId" value="LOCAL-01852" />
-      <option name="project" value="LOCAL" />
-      <updated>1523611376883</updated>
-    </task>
-    <task id="LOCAL-01853" summary="Added speech sound effects">
-      <created>1523611415470</created>
-      <option name="number" value="01853" />
-      <option name="presentableId" value="LOCAL-01853" />
-      <option name="project" value="LOCAL" />
-      <updated>1523611415470</updated>
-    </task>
-    <task id="LOCAL-01854" summary="Added new sounds and channels">
-      <created>1523611506434</created>
-      <option name="number" value="01854" />
-      <option name="presentableId" value="LOCAL-01854" />
-      <option name="project" value="LOCAL" />
-      <updated>1523611506434</updated>
     </task>
     <task id="LOCAL-01855" summary="Created linkup">
       <created>1523611609750</created>
@@ -786,7 +774,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523629785494</updated>
     </task>
-    <option name="localTasksCounter" value="1901" />
+    <task id="LOCAL-01901" summary="Added plenty of decs">
+      <created>1523630229895</created>
+      <option name="number" value="01901" />
+      <option name="presentableId" value="LOCAL-01901" />
+      <option name="project" value="LOCAL" />
+      <updated>1523630229895</updated>
+    </task>
+    <task id="LOCAL-01902" summary="Temp sped the player up">
+      <created>1523630314172</created>
+      <option name="number" value="01902" />
+      <option name="presentableId" value="LOCAL-01902" />
+      <option name="project" value="LOCAL" />
+      <updated>1523630314172</updated>
+    </task>
+    <task id="LOCAL-01903" summary="Lots of new decs">
+      <created>1523630913617</created>
+      <option name="number" value="01903" />
+      <option name="presentableId" value="LOCAL-01903" />
+      <option name="project" value="LOCAL" />
+      <updated>1523630913617</updated>
+    </task>
+    <option name="localTasksCounter" value="1904" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -838,9 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a new dialogue scene" />
-    <MESSAGE value="Added the new scene to one of the beans" />
-    <MESSAGE value="Added scene update" />
     <MESSAGE value="Added another scene" />
     <MESSAGE value="Added the scene to the pig bean" />
     <MESSAGE value="Added a scene update" />
@@ -863,7 +869,10 @@
     <MESSAGE value="Added a new part to the map for the 3rd section of the game" />
     <MESSAGE value="Adding water and sand" />
     <MESSAGE value="Added a path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a path" />
+    <MESSAGE value="Added plenty of decs" />
+    <MESSAGE value="Temp sped the player up" />
+    <MESSAGE value="Lots of new decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of new decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1069,13 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="229" column="1" selection-start-line="229" selection-start-column="1" selection-end-line="229" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1101,13 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1240">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1173,13 +1168,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
-          <caret line="106" column="32" lean-forward="true" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
         </state>
       </provider>
     </entry>
