@@ -243,7 +243,7 @@ class DuelController:
 
         if self.turn == 1 and not self.turn_cool_down and not self.game_won:
 
-            possible_moves = [0, 1, 3]  # 2 has not been implemented yet
+            possible_moves = [0, 1]
 
             if self.enemy.energy - moves[self.enemy.meta.moves[0]]["energy"] < 0:
                 possible_moves.remove(0)
@@ -252,35 +252,23 @@ class DuelController:
 
             move_no = self.get_opponent_move()
 
-            while move_no not in possible_moves:
-                move_no = self.get_opponent_move()
+            self.player.meta.damage(int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"]))
+            self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
-            if move_no < 2:
-                self.player.meta.damage(int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"]))
-                self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
+            if self.player.meta.hp <= 0:
+                self.player.meta.hp = 0
 
-                if self.player.meta.hp <= 0:
-                    self.player.meta.hp = 0
+                self.end_duel("Opponent", False)
 
-                    self.end_duel("Opponent", False)
+            self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
 
-                self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
+            move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
-                move = moves[self.enemy.meta.moves[move_no]]["effects"]
-
-                if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
-                    move = move.format("-")
-                elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
-                    move = move.format(220, 520)
-                exec(move)
-
-            elif move_no < 3:
-
-                pass
-
-            else:
-
-                self.end_duel("Player", True)
+            if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
+                move = move.format("-")
+            elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
+                move = move.format(220, 520)
+            exec(move)
 
             self.turn = 0
             self.turn_cool_down = constants.turn_cool_down
