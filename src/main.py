@@ -87,6 +87,8 @@ class Main:
 
         self.current_save = ""
 
+        self.last_song = ""
+
     def load_components(self):
 
         constants.load_font()
