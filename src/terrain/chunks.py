@@ -414,6 +414,7 @@ class ChunkController:
                         self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                         self.map_tiles[chunk].remove_entity(entity)
                         self.master.sound_engine.queue_sound(("pickup", 0))
+                        self.hud.get_component("healing_display").refresh()
 
         self.animation_clock = (self.animation_clock + 1) % \
             constants.animation_thresholds[self.global_animation_threshold]
