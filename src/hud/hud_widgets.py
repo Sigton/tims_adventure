@@ -173,6 +173,26 @@ class HealthDisplay:
                 panel_idx += 1
             self.update_required = False
 
+    def refresh(self):
+
+        self.bean_stats = [gui_components.Fill(self.x + 5, self.y + 5 + 35 * n, 190, 30, constants.GUI_FILL)
+                           for n in range(len(self.player.beans))]
+        self.health_bars = [gui_components.ProgressBar(self.x + 9, self.y + 27 + 36 * n, 182, 5,
+                                                       (constants.HEALTH_BAR_RED, constants.HEALTH_BAR_GREEN))
+                            for n in range(len(self.player.beans))]
+        self.bean_labels = [
+            gui_components.Label(self.x + 9, self.y + 3 + 40 * n, self.player.beans[n].meta.display_name,
+                                 False, 20, constants.BLACK)
+            for n in range(len(self.player.beans))]
+
+        self.xp_bar = gui_components.ProgressBar(self.x + 9, self.y + 37 + 34 * self.active_bean_stat, 182, 5,
+                                                 (constants.XP_BAR_BLUE, constants.XP_BAR_CYAN))
+
+        self.level_label = gui_components.Label(self.x, self.y + 41 + 35 * self.active_bean_stat, "Level {}".format(
+            self.player.beans[self.active_bean_stat].meta.level), False, 20, constants.BLACK)
+
+        self.components = self.bean_stats + self.health_bars + self.bean_labels + [self.xp_bar, self.level_label]
+
     def draw(self, display):
 
         if self.controller.get_component("backing").hud_open:
