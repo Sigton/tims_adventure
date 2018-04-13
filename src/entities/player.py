@@ -117,6 +117,8 @@ class Player(pygame.sprite.Sprite):
                                               for n in range(len(self.beans))])
         ]
 
+        self.beans.append(new_bean)
+
     def draw(self, display):
 
         [bean.draw(display) for bean in self.beans]
