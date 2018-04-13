@@ -34,7 +34,8 @@ class DialogueController:
             "fisherman_duel2": self.update_old_man,
             "old_man2": self.update_north,
             "north_bean": self.update_village_attack,
-            "help_village_bean": self.update_evil_beans_village
+            "help_village_bean": self.update_evil_beans_village,
+            "dan": self.add_dan_to_team
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -288,6 +289,10 @@ self.master.switch_to(3)"""
     def update_evil_beans_village(self):
 
         [self.master.chunk_controller.locate_entity(n).set_important() for n in range(6, 12)]
+
+    def add_dan_to_team(self):
+
+        pass
 
     def set_unimportant(self):
 
