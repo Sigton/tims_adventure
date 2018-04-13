@@ -174,6 +174,15 @@ class DuelController:
 
                 self.master.game_exit = True
 
+            elif event.type == constants.MUSIC_START_EVENT:
+
+                self.master.sound_engine.queue_sound((random.choice(self.master.sound_engine.music), 0))
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, 0)
+
+            elif event.type == constants.MUSIC_END_EVENT:
+
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(5, 10)*1000)
+
             elif event.type == KEYUP:
 
                 if event.key == K_ESCAPE:
