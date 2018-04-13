@@ -79,6 +79,8 @@ class DialogueController:
         self.exit_func = None
         self.after_controller = -1
 
+        self.first = True
+
     def load_scenes(self, scenes):
 
         self.scenes = scenes
@@ -124,6 +126,8 @@ class DialogueController:
         self.exit_func = None
         self.after_controller = -1
 
+        self.first = True
+
     def update(self):
 
         for event in pygame.event.get():
@@ -137,6 +141,7 @@ class DialogueController:
 
                 if event.key == K_SPACE:
                     if self.scene_progress >= len(self.current_scene)-1:
+                        self.first = True
                         if self.scene in self.scene_updates:
                             self.scene_updates[self.scene]()
                         if self.exit_func is not None:
@@ -152,6 +157,10 @@ class DialogueController:
                         self.scene_progress -= 1
                         self.render_next()
                         self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
+
+        if self.first:
+            self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
+            self.first = False
 
     def render_next(self):
 
