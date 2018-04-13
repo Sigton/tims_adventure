@@ -82,6 +82,9 @@ class MainMenu:
 
     def callback(self, button_id):
 
+        if self.save_select_open:
+            return
+
         self.master.sound_engine.queue_sound(["click", 0])
 
         if button_id == 0:
