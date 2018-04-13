@@ -74,7 +74,7 @@ jelly monsters army.""", 1),
         ("The ones from the Jelly Monster! We need someone to save us!", 1),
         ("Can you please help?", 1),
         ("Where is your village?", 0),
-        ("""Just follow this path to the east, you'll be there in no time.
+        ("""Just follow this path to the east, you'll be there in no time. 
 But please hurry, we won't be able to defend ourselves for much longer.""", 1)
     ],
     "help_village_bean": [
