@@ -241,7 +241,7 @@ class ChunkController:
                     ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
 
                     if len(ordered_ranges):
-
+                        self.master.sound_engine.queue_sound(["click", 0])
                         self.enemy_to_duel = list(ordered_ranges.items())[0][1]
 
                         if self.enemy_to_duel.meta.interaction is not None:
