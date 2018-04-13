@@ -279,7 +279,12 @@ self.master.switch_to(3)"""
     def update_village_attack(self):
 
         self.set_unimportant()
-        self.master.chunk_controller.locate_entity(12).set_important()
+        e = self.master.chunk_controller.locate_entity(12)
+
+        e.meta.interaction = \
+            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel,
+'help_village_bean', None, 0);self.master.switch_to(3)"""
+        e.set_important()
 
     def update_evil_beans_village(self):
 
