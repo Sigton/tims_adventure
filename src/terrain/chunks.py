@@ -636,3 +636,11 @@ class ChunkController:
                 if entity.__class__.__name__ not in constants.items:
                     if entity.meta.id == entity_id:
                         return entity
+
+    def delete_entity(self, entity_id):
+
+        for chunk in self.entities:
+            for entity in self.entities[chunk]:
+                if entity.__class__.__name__ not in constants.items:
+                    if entity.meta.id == entity_id:
+                        self.entities[chunk].remove(entity)
