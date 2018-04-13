@@ -3,11 +3,12 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
     <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="402" />
-    <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="36" />
+    <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="42" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -41,7 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>player</find>
       <find>&quot;0</find>
       <find>&quot;pos&quot;: [0, 0]</find>
       <find>False, True</find>
@@ -71,6 +71,7 @@
       <find>callback(self</find>
       <find>callback(se</find>
       <find>straw</find>
+      <find>lemon</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -396,13 +397,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01822" summary="Separated it into two functions rather than a toggle">
-      <created>1523540397359</created>
-      <option name="number" value="01822" />
-      <option name="presentableId" value="LOCAL-01822" />
-      <option name="project" value="LOCAL" />
-      <updated>1523540397359</updated>
     </task>
     <task id="LOCAL-01823" summary="Optimisations">
       <created>1523540435549</created>
@@ -740,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523614462650</updated>
     </task>
-    <option name="localTasksCounter" value="1871" />
+    <task id="LOCAL-01871" summary="Added another bean">
+      <created>1523614669796</created>
+      <option name="number" value="01871" />
+      <option name="presentableId" value="LOCAL-01871" />
+      <option name="project" value="LOCAL" />
+      <updated>1523614669796</updated>
+    </task>
+    <option name="localTasksCounter" value="1872" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -752,7 +753,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -792,7 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugging the HUDs connection to the sound engine" />
     <MESSAGE value="Trying a different method" />
     <MESSAGE value="This should work" />
     <MESSAGE value="Added a click sound for buttons" />
@@ -817,7 +817,8 @@
     <MESSAGE value="Changing volumes" />
     <MESSAGE value="Moving default entities about" />
     <MESSAGE value="Moved another bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved another bean" />
+    <MESSAGE value="Added another bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added another bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1130,7 +1131,7 @@
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
