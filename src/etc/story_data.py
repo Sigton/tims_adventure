@@ -144,7 +144,7 @@ Using potions does count as your move, however.""", 1),
         ("I see you have completed your training. You are now ready to begin your adventure.", 1),
         ("Brilliant, where do I go?", 0),
         ("From here, head North.", 1),
-        ("Just North? Not to the lair of the Jelly Monster or anything?", 0),
+        ("North? Is that where the lair of the Jelly Monster is?", 0),
         ("""Patience, Tim. It is a long way to the Jelly Monster from here. Follow the Northern path, you shall meet 
 someone on the trail.""", 1)
     ],
