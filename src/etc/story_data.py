@@ -109,9 +109,9 @@ you'll be a fantastic fighter.""", 1)
         ("What moves have you got?", 1),
         ("Erm, I don't know any.", 0),
         ("Right, I'll teach you how to tackle and how to throw a punch.", 1),
-        ("""You can only use those two moves, as well as any potions you pick up along the way.
+        ("""You can only use those two moves, as well as any potions you pick up along the way. 
 Using potions does count as your move, however.""", 1),
-        ("Make sure you conserve your energy, because without energy you can make moves!", 1),
+        ("Make sure you conserve your energy, because without energy you can't make moves!", 1),
         ("""I'll go easy on you kid, just cause it's your first time. You still gotta beat me before I let you move on,
  though.""", 1),
         ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
@@ -133,9 +133,9 @@ for me.""", 0),
         ("What moves have you got?", 1),
         ("Erm, I don't know any.", 0),
         ("Right, I'll teach you how to tackle and how to throw a punch.", 1),
-        ("""You can only use those two moves, as well as any potions you pick up along the way.
+        ("""You can only use those two moves, as well as any potions you pick up along the way. 
 Using potions does count as your move, however.""", 1),
-        ("Make sure you conserve your energy, because without energy you can make moves!", 1),
+        ("Make sure you conserve your energy, because without energy you can't make moves!", 1),
         ("""I'll go easy on you kid, just cause it's your first time. You still gotta beat me before I let you move on,
  though.""", 1),
         ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
