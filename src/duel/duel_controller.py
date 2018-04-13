@@ -285,6 +285,8 @@ class DuelController:
 
     def callback(self, button_id):
 
+        self.master.sound_engine.queue_sound(["click", 0])
+
         if self.turn == 1 or self.turn_cool_down:
             return
 
