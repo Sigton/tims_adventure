@@ -28,7 +28,7 @@ class Main:
         pygame.mixer.init()
         pygame.init()
 
-        pygame.mixer.set_num_channels(9)
+        pygame.mixer.set_num_channels(16)
 
         # Create the display
         self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
