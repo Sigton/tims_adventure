@@ -145,11 +145,13 @@ class DialogueController:
                     else:
                         self.scene_progress += 1
                         self.render_next()
+                        self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
 
                 elif event.key == K_LEFT:
                     if not self.scene_progress == 0:
                         self.scene_progress -= 1
                         self.render_next()
+                        self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
 
     def render_next(self):
 
@@ -190,8 +192,6 @@ class DialogueController:
                      ] + [gui_components.Label(self.text_x+20, self.text_y+10,
                                                bean,
                                                False, 32, constants.BLACK)]
-
-        self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
 
     def draw(self, display):
 
