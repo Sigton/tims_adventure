@@ -425,3 +425,8 @@ class DuelController:
         if item[0] in constants.drinking_items:
             self.master.sound_engine.queue_sound(["drinking", 0])
         self.hud.refresh()
+
+        if self.enemy.meta.hp <= 0:
+            self.enemy.meta.hp = 0
+
+            self.end_duel("Player", False)
