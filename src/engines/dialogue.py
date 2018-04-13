@@ -158,7 +158,7 @@ class DialogueController:
                         self.render_next()
                         self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
 
-        if self.first:
+        if self.first and not self.scene_progress >= len(self.current_scene)-1:
             self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
             self.first = False
 
