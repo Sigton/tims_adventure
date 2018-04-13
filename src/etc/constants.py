@@ -60,7 +60,7 @@ no_spawn_beans = ["wizard", "old_villager", "tim"]
 
 # Entity Spawning data
 
-weights = [0, 0, 0, 1]
+weights = [1, 0, 0, 0]
 
 entity_selection_matrix = [int(x) for x in sum([list(x * y) for x, y in zip(["0", "1", "2", "3"], weights)], [])]
 
