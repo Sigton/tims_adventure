@@ -240,7 +240,8 @@ class ChunkController:
                         distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
                                              + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
 
-                        if distance < constants.interaction_distance:
+                        if distance < constants.interaction_distance \
+                                and entity.__class__.__name__ not in constants.items:
                             entity_range[distance] = entity
 
                     ordered_ranges = collections.OrderedDict(sorted((entity_range.items())))
