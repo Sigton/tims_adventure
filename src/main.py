@@ -56,7 +56,7 @@ class Main:
         self.sound_engine = sounds.SoundEngine()
         self.particle_engine = particles.ParticleEngine()
         self.save_engine = save.SaveEngine()
-        self.story_tracker = story_tracker.StoryTracker()
+        self.story_tracker = story_tracker.StoryTracker(self)
 
         self.game_exit = False
 

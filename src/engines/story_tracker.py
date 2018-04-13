@@ -10,7 +10,9 @@ the players current tasks and inventory
 
 class StoryTracker:
 
-    def __init__(self):
+    def __init__(self, master):
+
+        self.master = master
 
         self.inventory = {}
         self.quests = {}
