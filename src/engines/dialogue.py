@@ -30,6 +30,7 @@ class DialogueController:
             "villager3": self.set_unimportant,
             "villager4": self.set_unimportant,
             "villager5": self.set_unimportant,
+            "villager6": self.set_unimportant,
             "fisherman_duel2": self.update_old_man,
             "old_man2": self.update_north,
             "north_bean": self.set_unimportant
