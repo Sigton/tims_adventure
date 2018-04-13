@@ -20,6 +20,10 @@ class StoryTracker:
 
         self.quests_been_updated = False
 
+        self.quest_updates = {
+            "liberate_village": self.update_dan
+        }
+
     def load_from_save(self, save_data):
 
         self.inventory = save_data["inventory"]
@@ -149,3 +153,6 @@ class StoryTracker:
 
         [self.follow_path(quest) for quest in quests_to_follow]
 
+    def update_dan(self):
+
+        pass
