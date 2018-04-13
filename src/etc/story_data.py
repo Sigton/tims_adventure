@@ -27,6 +27,11 @@ scenes = {
         ("Can you help me?", 0),
         ("I'm not the one to be asking, I'm new here. I think there's an elder in the town, try him.", 1)
     ],
+    "villager5": [
+        ("Hello young man.", 1),
+        ("Do you know what is happening here?", 0),
+        ("No, I don't bother myself with such things. You'll have to ask somebody else.", 1)
+    ],
     "old_man": [
         ("You came to see me?", 1),
         ("Yes, what is happening here?", 0),
