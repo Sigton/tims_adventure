@@ -1,6 +1,8 @@
 import pygame
 from pygame.constants import *
 
+import random
+
 from src.etc import constants, gui_components, tools
 from src.menu import menu_image_loader
 from src.hud import hud
@@ -52,6 +54,15 @@ class MainMenu:
 
             if event.type == QUIT:
                 self.master.game_exit = True
+
+            elif event.type == constants.MUSIC_START_EVENT:
+
+                self.master.sound_engine.queue_sound((random.choice(self.master.sound_engine.music), 0))
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, 0)
+
+            elif event.type == constants.MUSIC_END_EVENT:
+
+                pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(5, 10)*1000)
 
             elif self.save_select_open:
                 if not self.hud.has_component("save_select"):
