@@ -287,8 +287,6 @@ class DuelController:
 
     def callback(self, button_id):
 
-        self.master.sound_engine.queue_sound(["click", 0])
-
         if self.turn == 1 or self.turn_cool_down:
             return
 
@@ -318,8 +316,11 @@ class DuelController:
         elif button_id == 3:
 
             self.end_duel("Opponent", True)
+            self.master.sound_engine.queue_sound(["click", 0])
 
         if button_id == 2:
+            self.master.sound_engine.queue_sound(["click", 0])
+
             if self.hud_open:
                 self.hud_open = False
             else:
