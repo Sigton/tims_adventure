@@ -99,14 +99,14 @@ class SoundEngine:
         [self.sound_linkup[m].set_volume(0.7) for m in self.music]
         self.punch.set_volume(0.1)
         self.burn.set_volume(0.1)
-        self.footstep.set_volume(0.5)
-        self.footstep2.set_volume(0.2)
-        self.footstep3.set_volume(0.5)
-        self.footstep4.set_volume(0.23)
-        self.drinking.set_volume(0.3)
-        self.click.set_volume(0.7)
-        [self.sound_linkup[s].set_volume(0.4) for s in self.speech]
-        self.pickup.set_volume(0.8)
+        self.footstep.set_volume(0.8)
+        self.footstep2.set_volume(0.6)
+        self.footstep3.set_volume(0.8)
+        self.footstep4.set_volume(0.6)
+        self.drinking.set_volume(0.5)
+        self.click.set_volume(1)
+        [self.sound_linkup[s].set_volume(0.5) for s in self.speech]
+        self.pickup.set_volume(1)
 
     def play_sounds(self):
 
