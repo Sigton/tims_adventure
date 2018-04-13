@@ -88,11 +88,6 @@ class Player(pygame.sprite.Sprite):
         for bean in self.beans:
             bean.chunk_controller = ref
 
-    def add_bean(self, bean):
-
-        if not len(self.beans) == 5:
-            self.beans.append(bean)
-
     def remove_bean(self, bean):
 
         self.beans.remove(bean)
@@ -107,6 +102,20 @@ class Player(pygame.sprite.Sprite):
             ]
 
         return trail
+
+    def add_bean(self, bean):
+
+        if len(self.beans) == 5:
+            return
+
+        new_bean = Bean(None, bean)
+
+        new_bean.rect.center = [
+            self.beans[0].rect.centerx - sum([constants.dir_to_movements[self.move_history[n]][0]
+                                              for n in range(len(self.beans))]),
+            self.beans[0].rect.centery - sum([constants.dir_to_movements[self.move_history[n]][1]
+                                              for n in range(len(self.beans))])
+        ]
 
     def draw(self, display):
 
