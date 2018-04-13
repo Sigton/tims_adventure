@@ -22,6 +22,7 @@ class SoundEngine:
         self.drinking_channel = pygame.mixer.Channel(7)
         self.click_channel = pygame.mixer.Channel(8)
         self.speech_channel = pygame.mixer.Channel(9)
+        self.pickup_channel = pygame.mixer.Channel(10)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
@@ -40,6 +41,7 @@ class SoundEngine:
         self.speech2 = pygame.mixer.Sound("src/resources/speech2.ogg")
         self.speech3 = pygame.mixer.Sound("src/resources/speech3.ogg")
         self.speech4 = pygame.mixer.Sound("src/resources/speech4.ogg")
+        self.pickup = pygame.mixer.Sound("src/resources/pickup.ogg")
 
         self.music = ["music2",
                       "music3",
@@ -66,7 +68,8 @@ class SoundEngine:
                                "speech1": self.speech_channel,
                                "speech2": self.speech_channel,
                                "speech3": self.speech_channel,
-                               "speech4": self.speech_channel}
+                               "speech4": self.speech_channel,
+                               "pickup": self.pickup_channel}
 
         self.sound_linkup = {"music1": self.music1,
                              "music2": self.music2,
@@ -83,7 +86,8 @@ class SoundEngine:
                              "speech1": self.speech1,
                              "speech2": self.speech2,
                              "speech3": self.speech3,
-                             "speech4": self.speech4}
+                             "speech4": self.speech4,
+                             "pickup": self.pickup}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
@@ -102,6 +106,7 @@ class SoundEngine:
         self.drinking.set_volume(0.3)
         self.click.set_volume(0.7)
         [self.sound_linkup[s].set_volume(0.4) for s in self.speech]
+        self.pickup.set_volume(0.5)
 
     def play_sounds(self):
 
