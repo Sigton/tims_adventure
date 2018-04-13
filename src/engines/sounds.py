@@ -105,7 +105,7 @@ class SoundEngine:
         self.footstep4.set_volume(0.6)
         self.drinking.set_volume(0.5)
         self.click.set_volume(1)
-        [self.sound_linkup[s].set_volume(0.5) for s in self.speech]
+        [self.sound_linkup[s].set_volume(0.35) for s in self.speech]
         self.pickup.set_volume(1)
 
     def play_sounds(self):
