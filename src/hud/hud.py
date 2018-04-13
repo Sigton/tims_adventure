@@ -15,8 +15,6 @@ class HUD:
         self.player = player
         self.master = master
 
-        self.sound_engine = self.master.sound_engine
-
         self.health_display = lambda: hud_widgets.HealthDisplay(self.player, self.master, self, 0, 34)
         self.bean_select = lambda: hud_widgets.BeanSelectPopup(self.player, self.master, self, 297, 452)
         self.save_select = lambda: hud_widgets.SaveSelect(self.master, self, 238, 178)
