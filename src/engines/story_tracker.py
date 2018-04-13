@@ -161,6 +161,6 @@ class StoryTracker:
 
     def update_dan(self):
 
-        self.master.chunk_controller.locate_entity(14).meta.interaction = \
-            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel2', 
-'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
+        self.master.chunk_controller.locate_entity(12).meta.interaction = \
+            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'dan', 
+None, 0);self.master.switch_to(3)"""
