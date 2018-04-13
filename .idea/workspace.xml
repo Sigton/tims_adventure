@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/story_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="82" column="73" lean-forward="true" selection-start-line="82" selection-start-column="73" selection-end-line="82" selection-end-column="73" />
+            <state relative-caret-position="753">
+              <caret line="166" column="25" lean-forward="true" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -149,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
@@ -158,10 +158,11 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
       </list>
     </option>
   </component>
@@ -206,6 +207,12 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -402,27 +409,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01872" summary="Moving more beans about">
-      <created>1523615566426</created>
-      <option name="number" value="01872" />
-      <option name="presentableId" value="LOCAL-01872" />
-      <option name="project" value="LOCAL" />
-      <updated>1523615566426</updated>
-    </task>
-    <task id="LOCAL-01873" summary="Added a new dialogue scene">
-      <created>1523617594841</created>
-      <option name="number" value="01873" />
-      <option name="presentableId" value="LOCAL-01873" />
-      <option name="project" value="LOCAL" />
-      <updated>1523617594841</updated>
-    </task>
-    <task id="LOCAL-01874" summary="Added the new scene to one of the beans">
-      <created>1523617680968</created>
-      <option name="number" value="01874" />
-      <option name="presentableId" value="LOCAL-01874" />
-      <option name="project" value="LOCAL" />
-      <updated>1523617680968</updated>
     </task>
     <task id="LOCAL-01875" summary="Added scene update">
       <created>1523617699169</created>
@@ -746,7 +732,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523636255960</updated>
     </task>
-    <option name="localTasksCounter" value="1921" />
+    <task id="LOCAL-01921" summary="Welcome Dan onto the map">
+      <created>1523636437495</created>
+      <option name="number" value="01921" />
+      <option name="presentableId" value="LOCAL-01921" />
+      <option name="project" value="LOCAL" />
+      <updated>1523636437495</updated>
+    </task>
+    <task id="LOCAL-01922" summary="Added a new quest image">
+      <created>1523636594881</created>
+      <option name="number" value="01922" />
+      <option name="presentableId" value="LOCAL-01922" />
+      <option name="project" value="LOCAL" />
+      <updated>1523636594881</updated>
+    </task>
+    <task id="LOCAL-01923" summary="Added in new Dan quest">
+      <created>1523636635925</created>
+      <option name="number" value="01923" />
+      <option name="presentableId" value="LOCAL-01923" />
+      <option name="project" value="LOCAL" />
+      <updated>1523636635925</updated>
+    </task>
+    <option name="localTasksCounter" value="1924" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,9 +805,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated terrain.png" />
-    <MESSAGE value="Added spritesheet data" />
-    <MESSAGE value="Added instructions to no layer decs" />
     <MESSAGE value="Added a lsit of decs that dont fade" />
     <MESSAGE value="Implemented no fade decs" />
     <MESSAGE value="Updated decs" />
@@ -823,7 +827,10 @@
     <MESSAGE value="Tidying things up a bit" />
     <MESSAGE value="Updated bean spritesheet" />
     <MESSAGE value="Added dans metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dans metadata" />
+    <MESSAGE value="Welcome Dan onto the map" />
+    <MESSAGE value="Added a new quest image" />
+    <MESSAGE value="Added in new Dan quest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in new Dan quest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -980,13 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1026,13 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1101,13 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -1136,10 +1122,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="82" column="73" lean-forward="true" selection-start-line="82" selection-start-column="73" selection-end-line="82" selection-end-column="73" />
+        <state relative-caret-position="480">
+          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="166" column="25" lean-forward="true" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
         </state>
       </provider>
     </entry>

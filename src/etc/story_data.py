@@ -141,12 +141,31 @@ Using potions does count as your move, however.""", 1),
         ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
     ],
     "old_man2": [
-        ("I see you have completed your trainnig. You are now ready to begin your adventure.", 1),
+        ("I see you have completed your training. You are now ready to begin your adventure.", 1),
         ("Brilliant, where do I go?", 0),
         ("From here, head North.", 1),
         ("Just North? Not to the lair of the Jelly Monster or anything?", 0),
         ("""Patience, Tim. It is a long way to the Jelly Monster from here. Follow the Northern path, you shall meet 
 someone on the trail.""", 1)
+    ],
+    "dan": [
+        ("Thank you for liberating our village! We will be forever grateful.", 1),
+        ("Don't worry about it, just tryna help.", 0),
+        ("Who are you, anyways?", 1),
+        ("I'm Tim, and you are?", 0),
+        ("Dan. What brings you out here?", 1),
+        ("I'm on an adventure, I suppose.", 0),
+        ("Ooh, an adventure? I love adventures! What are you adventuring for?", 1),
+        ("I've been set a quest to conquer the Jelly Monster", 0),
+        ("The Jelly Monster? It's real?", 1),
+        ("Yeah, it was the Jelly Monster that sent these evil beans to attack your village", 0),
+        ("Who else is with you on your adventure?", 1),
+        ("Um, no-one. It's just me.", 0),
+        ("Well, count me in. You'll need some company", 1),
+        ("Are you sure? It's a long way from here.", 0),
+        ("""Yes. There's no future for me here. I'd just become a farmer or a fisherman like everyone else. I want to do
+something special!""", 1),
+        ("Well, welcome to the adventure crew, Dan!", 0)
     ]
 }
 
