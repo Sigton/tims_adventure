@@ -192,7 +192,7 @@ completion_criteria = {
     "fisherman": ["scene/fisherman2", "scene/fisherman_duel1"],
     "learn_fight": ["duel/14"],
     "old_man2": ["scene/old_man2"],
-    "dan": []
+    "dan": ["scene/dan"]
 }
 
 
