@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/terrain/tile_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/tile_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/tile_image_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +22,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tile_image_loader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="539">
+              <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tile_types.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="830">
+              <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="559" column="67" selection-start-line="559" selection-start-column="67" selection-end-line="559" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -153,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
-        <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
@@ -165,13 +182,14 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
+        <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
       </list>
     </option>
   </component>
@@ -412,41 +430,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01838" summary="Updated decs">
-      <created>1523563804788</created>
-      <option name="number" value="01838" />
-      <option name="presentableId" value="LOCAL-01838" />
-      <option name="project" value="LOCAL" />
-      <updated>1523563804789</updated>
-    </task>
-    <task id="LOCAL-01839" summary="Added a drinking sound for potions">
-      <created>1523564273787</created>
-      <option name="number" value="01839" />
-      <option name="presentableId" value="LOCAL-01839" />
-      <option name="project" value="LOCAL" />
-      <updated>1523564273787</updated>
-    </task>
-    <task id="LOCAL-01840" summary="Attempting to implement the drinking sound">
-      <created>1523564716468</created>
-      <option name="number" value="01840" />
-      <option name="presentableId" value="LOCAL-01840" />
-      <option name="project" value="LOCAL" />
-      <updated>1523564716468</updated>
-    </task>
-    <task id="LOCAL-01841" summary="Updated default entities">
-      <created>1523567506958</created>
-      <option name="number" value="01841" />
-      <option name="presentableId" value="LOCAL-01841" />
-      <option name="project" value="LOCAL" />
-      <updated>1523567506958</updated>
-    </task>
-    <task id="LOCAL-01842" summary="Added a pig bean">
-      <created>1523609291141</created>
-      <option name="number" value="01842" />
-      <option name="presentableId" value="LOCAL-01842" />
-      <option name="project" value="LOCAL" />
-      <updated>1523609291141</updated>
     </task>
     <task id="LOCAL-01843" summary="Debugging the HUDs connection to the sound engine">
       <created>1523609367966</created>
@@ -756,19 +739,54 @@
       <option name="project" value="LOCAL" />
       <updated>1523622467136</updated>
     </task>
-    <option name="localTasksCounter" value="1887" />
+    <task id="LOCAL-01887" summary="Added spritesheet data">
+      <created>1523622702434</created>
+      <option name="number" value="01887" />
+      <option name="presentableId" value="LOCAL-01887" />
+      <option name="project" value="LOCAL" />
+      <updated>1523622702434</updated>
+    </task>
+    <task id="LOCAL-01888" summary="Updated decs">
+      <created>1523622821266</created>
+      <option name="number" value="01888" />
+      <option name="presentableId" value="LOCAL-01888" />
+      <option name="project" value="LOCAL" />
+      <updated>1523622821266</updated>
+    </task>
+    <task id="LOCAL-01889" summary="Added instructions to no layer decs">
+      <created>1523623073045</created>
+      <option name="number" value="01889" />
+      <option name="presentableId" value="LOCAL-01889" />
+      <option name="project" value="LOCAL" />
+      <updated>1523623073045</updated>
+    </task>
+    <task id="LOCAL-01890" summary="Added a lsit of decs that dont fade">
+      <created>1523623118972</created>
+      <option name="number" value="01890" />
+      <option name="presentableId" value="LOCAL-01890" />
+      <option name="project" value="LOCAL" />
+      <updated>1523623118972</updated>
+    </task>
+    <task id="LOCAL-01891" summary="Implemented no fade decs">
+      <created>1523623224098</created>
+      <option name="number" value="01891" />
+      <option name="presentableId" value="LOCAL-01891" />
+      <option name="project" value="LOCAL" />
+      <updated>1523623224098</updated>
+    </task>
+    <option name="localTasksCounter" value="1892" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -808,11 +826,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added more default entities" />
-    <MESSAGE value="Clicks when you interact with an entity" />
-    <MESSAGE value="Debugging" />
-    <MESSAGE value="Moved the pig bean out of the barrel" />
-    <MESSAGE value="Added a new sound effect" />
     <MESSAGE value="Added the new sound" />
     <MESSAGE value="Implemented sound effect" />
     <MESSAGE value="Changing volumes" />
@@ -833,7 +846,12 @@
     <MESSAGE value="Set some of the villagers to important" />
     <MESSAGE value="Fixed icons.png" />
     <MESSAGE value="Updated terrain.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated terrain.png" />
+    <MESSAGE value="Added spritesheet data" />
+    <MESSAGE value="Updated decs" />
+    <MESSAGE value="Added instructions to no layer decs" />
+    <MESSAGE value="Added a lsit of decs that dont fade" />
+    <MESSAGE value="Implemented no fade decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented no fade decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,13 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/containers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2820">
@@ -1091,13 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1240">
@@ -1139,6 +1143,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -1146,10 +1157,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
+    <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="830">
+          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="559" column="67" selection-start-line="559" selection-start-column="67" selection-end-line="559" selection-end-column="67" />
         </state>
       </provider>
     </entry>
