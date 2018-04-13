@@ -182,7 +182,11 @@ class ChunkController:
 
             elif event.type == constants.MUSIC_START_EVENT:
 
-                self.master.sound_engine.queue_sound((random.choice(self.master.sound_engine.music), 0))
+                new_music = random.choice(self.master.sound_engine.music)
+                while new_music == self.master.last_music:
+                    new_music = random.choice(self.master.sound_engine.music)
+
+                self.master.sound_engine.queue_sound((new_music, 0))
                 pygame.time.set_timer(constants.MUSIC_START_EVENT, 0)
 
             elif event.type == constants.MUSIC_END_EVENT:

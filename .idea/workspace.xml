@@ -2,13 +2,15 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
-    <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="402" />
+    <bookmark url="file://$PROJECT_DIR$/src/terrain/chunks.py" line="406" />
     <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="42" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +24,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="149" column="63" selection-start-line="149" selection-start-column="63" selection-end-line="149" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
+            <state relative-caret-position="410">
+              <caret line="182" column="63" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -153,16 +185,16 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
       </list>
     </option>
@@ -425,27 +457,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01903" summary="Lots of new decs">
-      <created>1523630913617</created>
-      <option name="number" value="01903" />
-      <option name="presentableId" value="LOCAL-01903" />
-      <option name="project" value="LOCAL" />
-      <updated>1523630913617</updated>
-    </task>
-    <task id="LOCAL-01904" summary="More decs!">
-      <created>1523631189150</created>
-      <option name="number" value="01904" />
-      <option name="presentableId" value="LOCAL-01904" />
-      <option name="project" value="LOCAL" />
-      <updated>1523631189150</updated>
-    </task>
-    <task id="LOCAL-01905" summary="Fixed that part where the bridge ends">
-      <created>1523631476344</created>
-      <option name="number" value="01905" />
-      <option name="presentableId" value="LOCAL-01905" />
-      <option name="project" value="LOCAL" />
-      <updated>1523631476344</updated>
     </task>
     <task id="LOCAL-01906" summary="Fixing the map">
       <created>1523631861375</created>
@@ -769,7 +780,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523644759440</updated>
     </task>
-    <option name="localTasksCounter" value="1952" />
+    <task id="LOCAL-01952" summary="Optimising code">
+      <created>1523645183078</created>
+      <option name="number" value="01952" />
+      <option name="presentableId" value="LOCAL-01952" />
+      <option name="project" value="LOCAL" />
+      <updated>1523645183078</updated>
+    </task>
+    <task id="LOCAL-01953" summary="Killing an enemy with a potion should now work">
+      <created>1523645243620</created>
+      <option name="number" value="01953" />
+      <option name="presentableId" value="LOCAL-01953" />
+      <option name="project" value="LOCAL" />
+      <updated>1523645243620</updated>
+    </task>
+    <task id="LOCAL-01954" summary="Created a last song attribute in main">
+      <created>1523645361600</created>
+      <option name="number" value="01954" />
+      <option name="presentableId" value="LOCAL-01954" />
+      <option name="project" value="LOCAL" />
+      <updated>1523645361600</updated>
+    </task>
+    <option name="localTasksCounter" value="1955" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -821,9 +853,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Temporarily turned off entity spawning" />
-    <MESSAGE value="Added a new add bean function" />
-    <MESSAGE value="Finished new function" />
     <MESSAGE value="Unused import statement" />
     <MESSAGE value="Added new scene update" />
     <MESSAGE value="Created a delete entity function" />
@@ -846,7 +875,10 @@
     <MESSAGE value="Winner doesn't level up upon winning the fight" />
     <MESSAGE value="Duelled beans get set unimportant once duelled" />
     <MESSAGE value="Fisherman and Dan shouldn't spawn naturally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fisherman and Dan shouldn't spawn naturally" />
+    <MESSAGE value="Optimising code" />
+    <MESSAGE value="Killing an enemy with a potion should now work" />
+    <MESSAGE value="Created a last song attribute in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a last song attribute in main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,23 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="247" column="8" selection-start-line="247" selection-start-column="8" selection-end-line="249" selection-end-column="110" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1107,13 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="646" selection-start-line="646" selection-end-line="646" />
         </state>
       </provider>
     </entry>
@@ -1162,10 +1170,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="149" column="63" selection-start-line="149" selection-start-column="63" selection-end-line="149" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
+        <state relative-caret-position="410">
+          <caret line="182" column="63" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
         </state>
       </provider>
     </entry>
