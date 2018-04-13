@@ -422,4 +422,6 @@ class DuelController:
 
         exec(entity_meta.item_effects[item[0]])
         self.master.story_tracker.use_item(item[0], 1)
+        if item[0] in constants.drinking_items:
+            self.master.sound_engine.queue_sound(["drinking", 0])
         self.hud.refresh()

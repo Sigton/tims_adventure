@@ -764,4 +764,6 @@ class HealingDisplay(ItemSelect):
 
                 self.master.master.story_tracker.use_item(self.items[self.selected_item][0], 1)
                 exec(entity_meta.item_effects[self.items[self.selected_item][0]])
+                if self.items[self.selected_item][0] in constants.drinking_items:
+                    self.master.master.queue_sound(["drinking", 0])
                 self.refresh()

@@ -225,6 +225,10 @@ healing_items = [
     "HealthPotion"
 ]
 
+drinking_items = [
+    "HealthPotion"
+]
+
 item_images = {
     "EnlightenmentPotion": (62, 11, 32, 32),
     "HealthPotion": (94, 11, 32, 32)
