@@ -420,6 +420,8 @@ class DuelController:
         if winner == "Player":
             self.master.story_tracker.check_complete(['duel', str(self.enemy.meta.id)])
 
+        self.enemy.terrain_entity.set_unimportant()
+
     def get_opponent_move(self):
 
         return random.choice([0, 1])
