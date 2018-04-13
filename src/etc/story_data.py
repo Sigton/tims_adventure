@@ -32,6 +32,10 @@ scenes = {
         ("Do you know what is happening here?", 0),
         ("No, I don't bother myself with such things. You'll have to ask somebody else.", 1)
     ],
+    "villager6": [
+        ("Oi you, I don't want any trouble. Take your problems someplace else!", 1),
+        ("Of course, my bad.", 0)
+    ],
     "old_man": [
         ("You came to see me?", 1),
         ("Yes, what is happening here?", 0),
