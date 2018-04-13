@@ -97,7 +97,7 @@
     }],
     "1691": [{"pos": [2, 4], "meta":
       {"bean": "pig", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 100,
-        "interaction": "pass",
+        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager6', None, 0);self.master.switch_to(3)",
         "important": false, "evil": false, "display_name": "Pig Bean", "id": 15
       }
     },
