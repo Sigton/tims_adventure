@@ -407,6 +407,7 @@ class ChunkController:
                     elif entity.pickup:
                         self.master.story_tracker.add_item(entity.__class__.__name__, 1)
                         self.map_tiles[chunk].remove_entity(entity)
+                        self.master.sound_engine.queue_sound(("pickup", 0))
 
         self.animation_clock = (self.animation_clock + 1) % \
             constants.animation_thresholds[self.global_animation_threshold]
