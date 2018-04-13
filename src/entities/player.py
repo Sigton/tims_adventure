@@ -110,9 +110,9 @@ class Player(pygame.sprite.Sprite):
         new_bean = Bean(None, bean)
 
         new_bean.rect.center = [
-            self.beans[0].rect.centerx - sum([constants.dir_to_movements[self.move_history[n]][0]
+            self.beans[0].rect.centerx + sum([constants.dir_to_movements[self.move_history[n]][0]
                                               for n in range(len(self.beans))]),
-            self.beans[0].rect.centery - sum([constants.dir_to_movements[self.move_history[n]][1]
+            self.beans[0].rect.centery + sum([constants.dir_to_movements[self.move_history[n]][1]
                                               for n in range(len(self.beans))])
         ]
 
