@@ -33,7 +33,8 @@ class DialogueController:
             "villager6": self.set_unimportant,
             "fisherman_duel2": self.update_old_man,
             "old_man2": self.update_north,
-            "north_bean": self.update_village_attack
+            "north_bean": self.update_village_attack,
+            "help_village_bean": self.update_evil_beans_village
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -283,6 +284,10 @@ self.master.switch_to(3)"""
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'dan', None, 
 0);self.master.switch_to(3)"""
         e.set_important()
+
+    def update_evil_beans_village(self):
+
+        [self.master.chunk_controller.locate_entity(n).set_important() for n in range(6, 12)]
 
     def set_unimportant(self):
 
