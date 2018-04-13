@@ -23,7 +23,7 @@ class HUD:
         self.journal_display = lambda: hud_widgets.JournalDisplay(self.master, self, 237, 179)
         self.map_display = lambda: hud_widgets.MapDisplay(self.master, self, 237, 179)
         self.item_select = lambda: hud_widgets.ItemSelect(self.master, self, 237, 179)
-        self.backing = lambda: hud_widgets.Backing(0, 0)
+        self.backing = lambda: hud_widgets.Backing(self.master, 0, 0)
         self.healing_display = lambda: hud_widgets.HealingDisplay(self.master, self, self.player, 237, 179)
 
         self.defined_components = {

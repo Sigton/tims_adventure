@@ -17,7 +17,9 @@ displayed in the heads-up display
 
 class Backing:
 
-    def __init__(self, x, y):
+    def __init__(self, master, x, y):
+
+        self.master = master
 
         self.x = x
         self.y = y
@@ -331,7 +333,7 @@ class SaveSelect:
 
     def callback(self, button_id):
 
-        self.master.sound_engine.queue_sound(["click", 0])
+        self.master.master.sound_engine.queue_sound(["click", 0])
 
         if button_id == 0:
             self.master.master.load_save("save{}".format(len(self.saves)+1))
@@ -419,7 +421,7 @@ class Taskbar:
 
     def callback(self, button_id):
 
-        self.master.sound_engine.queue_sound(["click", 0])
+        self.master.master.sound_engine.queue_sound(["click", 0])
 
         if button_id == 0:
             current_display = "inventory_display"
