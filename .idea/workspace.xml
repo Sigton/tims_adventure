@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="182" column="25" lean-forward="true" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+            <state relative-caret-position="299">
+              <caret line="166" column="75" selection-start-line="166" selection-start-column="75" selection-end-line="166" selection-end-column="75" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -67,8 +66,17 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+            <state relative-caret-position="390">
+              <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="232" column="37" selection-start-line="232" selection-start-column="37" selection-end-line="232" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -190,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
-        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
@@ -203,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
+        <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
@@ -439,34 +447,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01812" summary="Debugging">
-      <created>1523538070744</created>
-      <option name="number" value="01812" />
-      <option name="presentableId" value="LOCAL-01812" />
-      <option name="project" value="LOCAL" />
-      <updated>1523538070744</updated>
-    </task>
-    <task id="LOCAL-01813" summary="Updated scenes">
-      <created>1523538116881</created>
-      <option name="number" value="01813" />
-      <option name="presentableId" value="LOCAL-01813" />
-      <option name="project" value="LOCAL" />
-      <updated>1523538116881</updated>
-    </task>
-    <task id="LOCAL-01814" summary="Fisherman is made unimportant when he is finished with">
-      <created>1523538177973</created>
-      <option name="number" value="01814" />
-      <option name="presentableId" value="LOCAL-01814" />
-      <option name="project" value="LOCAL" />
-      <updated>1523538177973</updated>
-    </task>
-    <task id="LOCAL-01815" summary="Fishermen start unimportant">
-      <created>1523538258706</created>
-      <option name="number" value="01815" />
-      <option name="presentableId" value="LOCAL-01815" />
-      <option name="project" value="LOCAL" />
-      <updated>1523538258706</updated>
     </task>
     <task id="LOCAL-01816" summary="Created toggle_important function">
       <created>1523538944156</created>
@@ -783,21 +763,48 @@
       <option name="project" value="LOCAL" />
       <updated>1523612138942</updated>
     </task>
-    <option name="localTasksCounter" value="1861" />
+    <task id="LOCAL-01861" summary="Added more default entities">
+      <created>1523613136919</created>
+      <option name="number" value="01861" />
+      <option name="presentableId" value="LOCAL-01861" />
+      <option name="project" value="LOCAL" />
+      <updated>1523613136919</updated>
+    </task>
+    <task id="LOCAL-01862" summary="Clicks when you interact with an entity">
+      <created>1523613319028</created>
+      <option name="number" value="01862" />
+      <option name="presentableId" value="LOCAL-01862" />
+      <option name="project" value="LOCAL" />
+      <updated>1523613319028</updated>
+    </task>
+    <task id="LOCAL-01863" summary="Debugging">
+      <created>1523613510922</created>
+      <option name="number" value="01863" />
+      <option name="presentableId" value="LOCAL-01863" />
+      <option name="project" value="LOCAL" />
+      <updated>1523613510922</updated>
+    </task>
+    <task id="LOCAL-01864" summary="Moved the pig bean out of the barrel">
+      <created>1523613529094</created>
+      <option name="number" value="01864" />
+      <option name="presentableId" value="LOCAL-01864" />
+      <option name="project" value="LOCAL" />
+      <updated>1523613529094</updated>
+    </task>
+    <option name="localTasksCounter" value="1865" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32916668" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -835,9 +842,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed a quest" />
-    <MESSAGE value="Working on the scene updates to set up the adventure north" />
-    <MESSAGE value="Worked on north bean" />
     <MESSAGE value="North bean gets set unimportant after done with" />
     <MESSAGE value="Updated decs" />
     <MESSAGE value="Added a drinking sound for potions" />
@@ -850,7 +854,6 @@
     <MESSAGE value="Added a click sound for buttons" />
     <MESSAGE value="Implemented the click sound" />
     <MESSAGE value="Increased the number of channels" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Gonna need more channels" />
     <MESSAGE value="Added speech sound effects" />
     <MESSAGE value="Added new sounds and channels" />
@@ -860,7 +863,11 @@
     <MESSAGE value="Hopefully fixed the timings" />
     <MESSAGE value="Mixing" />
     <MESSAGE value="Fixed it not playing on the first speech" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed it not playing on the first speech" />
+    <MESSAGE value="Added more default entities" />
+    <MESSAGE value="Clicks when you interact with an entity" />
+    <MESSAGE value="Debugging" />
+    <MESSAGE value="Moved the pig bean out of the barrel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the pig bean out of the barrel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,13 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="383" column="64" lean-forward="true" selection-start-line="383" selection-start-column="64" selection-end-line="383" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/icons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1160,10 +1160,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="232" column="37" selection-start-line="232" selection-start-column="37" selection-end-line="232" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="182" column="25" lean-forward="true" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+        <state relative-caret-position="299">
+          <caret line="166" column="75" selection-start-line="166" selection-start-column="75" selection-end-line="166" selection-end-column="75" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1172,8 +1179,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+        <state relative-caret-position="390">
+          <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
         </state>
       </provider>
     </entry>
