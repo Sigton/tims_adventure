@@ -6,9 +6,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="42" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
               <caret line="555" column="37" selection-start-line="555" selection-start-column="37" selection-end-line="555" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="108" column="33" lean-forward="true" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
@@ -189,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
+        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
       </list>
     </option>
   </component>
@@ -429,20 +439,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01845" summary="This should work">
-      <created>1523609732911</created>
-      <option name="number" value="01845" />
-      <option name="presentableId" value="LOCAL-01845" />
-      <option name="project" value="LOCAL" />
-      <updated>1523609732911</updated>
-    </task>
-    <task id="LOCAL-01846" summary="Debugging">
-      <created>1523609765803</created>
-      <option name="number" value="01846" />
-      <option name="presentableId" value="LOCAL-01846" />
-      <option name="project" value="LOCAL" />
-      <updated>1523609765803</updated>
     </task>
     <task id="LOCAL-01847" summary="Added a click sound for buttons">
       <created>1523610064341</created>
@@ -773,7 +769,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523624072135</updated>
     </task>
-    <option name="localTasksCounter" value="1894" />
+    <task id="LOCAL-01894" summary="Increased volumes of everything">
+      <created>1523624225979</created>
+      <option name="number" value="01894" />
+      <option name="presentableId" value="LOCAL-01894" />
+      <option name="project" value="LOCAL" />
+      <updated>1523624225979</updated>
+    </task>
+    <task id="LOCAL-01895" summary="Added lots of trees">
+      <created>1523628485240</created>
+      <option name="number" value="01895" />
+      <option name="presentableId" value="LOCAL-01895" />
+      <option name="project" value="LOCAL" />
+      <updated>1523628485240</updated>
+    </task>
+    <option name="localTasksCounter" value="1896" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -825,8 +835,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added the new sound" />
-    <MESSAGE value="Implemented sound effect" />
     <MESSAGE value="Changing volumes" />
     <MESSAGE value="Moving default entities about" />
     <MESSAGE value="Moved another bean" />
@@ -850,7 +858,9 @@
     <MESSAGE value="Added a lsit of decs that dont fade" />
     <MESSAGE value="Implemented no fade decs" />
     <MESSAGE value="Updated decs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated decs" />
+    <MESSAGE value="Increased volumes of everything" />
+    <MESSAGE value="Added lots of trees" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lots of trees" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1077,16 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="103" column="38" lean-forward="true" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1167,6 +1167,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="555" column="37" selection-start-line="555" selection-start-column="37" selection-end-line="555" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="108" column="33" lean-forward="true" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
