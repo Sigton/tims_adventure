@@ -45,6 +45,11 @@ class SoundEngine:
                       "music3",
                       "music4"]
 
+        self.speech = ["speech1",
+                       "speech2",
+                       "speech3",
+                       "speech4"]
+
         # Link the sounds to the channels they should play in
         self.channel_linkup = {"music1": self.music_channel,
                                "music2": self.music_channel,
@@ -57,7 +62,11 @@ class SoundEngine:
                                "footstep3": self.footstep3_channel,
                                "footstep4": self.footstep4_channel,
                                "drinking": self.drinking_channel,
-                               "click": self.click_channel}
+                               "click": self.click_channel,
+                               "speech1": self.speech_channel,
+                               "speech2": self.speech_channel,
+                               "speech3": self.speech_channel,
+                               "speech4": self.speech_channel}
 
         self.sound_linkup = {"music1": self.music1,
                              "music2": self.music2,
@@ -70,7 +79,11 @@ class SoundEngine:
                              "footstep3": self.footstep3,
                              "footstep4": self.footstep4,
                              "drinking": self.drinking,
-                             "click": self.click}
+                             "click": self.click,
+                             "speech1": self.speech1,
+                             "speech2": self.speech2,
+                             "speech3": self.speech3,
+                             "speech4": self.speech4}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
