@@ -33,7 +33,7 @@ class DialogueController:
             "villager6": self.set_unimportant,
             "fisherman_duel2": self.update_old_man,
             "old_man2": self.update_north,
-            "north_bean": self.set_unimportant
+            "north_bean": self.update_village_attack
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -228,7 +228,7 @@ class DialogueController:
 
     def update_fisherman(self):
 
-        e = self.master.chunk_controller.locate_entity(13)\
+        e = self.master.chunk_controller.locate_entity(13)
 
         e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman2', None,
@@ -252,7 +252,7 @@ class DialogueController:
 
     def update_old_man(self):
 
-        e = self.master.chunk_controller.locate_entity(3)\
+        e = self.master.chunk_controller.locate_entity(3)
 
         e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'old_man2', None, 0)
@@ -267,10 +267,20 @@ self.master.switch_to(3)"""
     def update_north(self):
 
         self.set_unimportant()
-        e = self.master.chunk_controller.locate_entity(5)\
+        e = self.master.chunk_controller.locate_entity(5)
 
         e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'north_bean', None, 
+0);self.master.switch_to(3)"""
+        e.set_important()
+
+    def update_village_attack(self):
+
+        self.set_unimportant()
+        e = self.master.chunk_controller.locate_entity(12)
+
+        e.meta.interaction = \
+            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'dan', None, 
 0);self.master.switch_to(3)"""
         e.set_important()
 
