@@ -1,6 +1,8 @@
 import pygame
 from pygame.locals import *
 
+import random
+
 from src.duel import duel_players
 from src.etc import gui_components, constants, story_data
 
@@ -188,7 +190,9 @@ class DialogueController:
                      ] + [gui_components.Label(self.text_x+20, self.text_y+10,
                                                bean,
                                                False, 32, constants.BLACK)]
-        
+
+        self.master.sound_engine.queue_sound([random.choice(self.master.sound_engine.speech), 0])
+
     def draw(self, display):
 
         display.blit(self.background, (0, 0))
