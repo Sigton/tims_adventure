@@ -148,8 +148,12 @@ class StoryTracker:
 
                             if all([n[1] for n in list(self.objective_progress[quest[0]].items())]):
                                 quests_to_follow += [quest[0]]
+                                if quest[0] in self.quest_updates:
+                                    self.quest_updates[quest[0]]()
                         else:
                             quests_to_follow += [quest[0]]
+                            if quest[0] in self.quest_updates:
+                                self.quest_updates[quest[0]]()
 
         [self.follow_path(quest) for quest in quests_to_follow]
 
