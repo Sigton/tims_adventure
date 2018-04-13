@@ -146,6 +146,7 @@ class DialogueController:
                 new_music = random.choice(self.master.sound_engine.music)
                 while new_music == self.master.last_song:
                     new_music = random.choice(self.master.sound_engine.music)
+                self.master.last_song = new_music
 
                 self.master.sound_engine.queue_sound((new_music, 0))
                 pygame.time.set_timer(constants.MUSIC_START_EVENT, 0)
