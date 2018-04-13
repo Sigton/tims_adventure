@@ -159,7 +159,8 @@ quests = {
     "liberate_village": "Liberate the village.",
     "fisherman": "Find the fisherman.",
     "learn_fight": "Learn to fight!",
-    "old_man2": "Talk to the elder villager."
+    "old_man2": "Talk to the elder villager.",
+    "dan": "Talk to Dan."
 }
 
 
@@ -171,7 +172,8 @@ completion_criteria = {
     "liberate_village": ("duel/6", "duel/7", "duel/8", "duel/9", "duel/10", "duel/11"),
     "fisherman": ["scene/fisherman2", "scene/fisherman_duel1"],
     "learn_fight": ["duel/14"],
-    "old_man2": ["scene/old_man2"]
+    "old_man2": ["scene/old_man2"],
+    "dan": []
 }
 
 
@@ -180,8 +182,9 @@ quest_path = {
     "old_man": ["fisherman"],
     "heading_north": ["help_village"],
     "help_village": ["liberate_village"],
-    "liberate_village": [],
+    "liberate_village": ["dan"],
     "fisherman": ["learn_fight"],
     "learn_fight": ["old_man2"],
-    "old_man2": ["heading_north"]
+    "old_man2": ["heading_north"],
+    "dan": []
 }
