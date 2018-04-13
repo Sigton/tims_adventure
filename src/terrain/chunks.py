@@ -183,7 +183,7 @@ class ChunkController:
             elif event.type == constants.MUSIC_START_EVENT:
 
                 new_music = random.choice(self.master.sound_engine.music)
-                while new_music == self.master.last_music:
+                while new_music == self.master.last_song:
                     new_music = random.choice(self.master.sound_engine.music)
 
                 self.master.sound_engine.queue_sound((new_music, 0))
