@@ -29,6 +29,7 @@ wizard = (122, 40, 44, 48)
 old_villager = (166, 40, 40, 40)
 tim = (206, 40, 40, 40)
 fisherman = (246, 40, 40, 40)
+pig = (285, 40, 42, 40)
 
 beans = {}
 
@@ -56,7 +57,8 @@ def load_sprite_sheet():
         "wizard": create_images(wizard),
         "old_villager": create_images(old_villager),
         "tim": create_images(tim),
-        "fisherman": create_images(fisherman)
+        "fisherman": create_images(fisherman),
+        "pig": create_images(pig)
     }
 
 
