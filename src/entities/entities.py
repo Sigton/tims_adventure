@@ -101,7 +101,7 @@ class EntityMeta:
 
     def get_attack_damage(self, move):
 
-        return (1+(0.05 * (self.level-1))) * self.attack * moves.moves[self.moves[move]]["str_mod"]
+        return int((1+(0.05 * (self.level-1))) * self.attack * moves.moves[self.moves[move]]["str_mod"])
 
 
 class RandomBean:
