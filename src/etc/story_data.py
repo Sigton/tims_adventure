@@ -185,7 +185,8 @@ quests = {
     "fisherman": "Find the fisherman.",
     "learn_fight": "Learn to fight!",
     "old_man2": "Talk to the elder villager.",
-    "dan": "Talk to Dan."
+    "dan": "Talk to Dan.",
+    "hermit": "Find Dermot the Hermit."
 }
 
 
@@ -198,7 +199,8 @@ completion_criteria = {
     "fisherman": ["scene/fisherman2", "scene/fisherman_duel1"],
     "learn_fight": ["duel/14"],
     "old_man2": ["scene/old_man2"],
-    "dan": ["scene/dan"]
+    "dan": ["scene/dan"],
+    "hermit": ["scene/hermit"]
 }
 
 
@@ -211,5 +213,6 @@ quest_path = {
     "fisherman": ["learn_fight"],
     "learn_fight": ["old_man2"],
     "old_man2": ["heading_north"],
-    "dan": []
+    "dan": ["hermit"],
+    "hermit": []
 }
