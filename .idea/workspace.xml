@@ -5,7 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="42" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +33,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="116" column="116" lean-forward="true" selection-start-line="116" selection-start-column="116" selection-end-line="116" selection-end-column="116" />
+            <state relative-caret-position="339">
+              <caret line="120" column="6" lean-forward="true" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -71,8 +74,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find />
-      <find />
+      <find>id&quot;: &quot;1000</find>
+      <find>id&quot;: 18473</find>
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -89,12 +92,12 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find />
+      <find>&quot;level&quot;: 100</find>
       <find>lair</find>
-      <find />
+      <find>&quot;id&quot;: 14</find>
       <find>chili&quot;</find>
       <find>dan</find>
-      <find />
+      <find>&quot;id&quot;: 19</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -113,7 +116,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace />
+      <replace>: create_images(</replace>
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -126,7 +129,7 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace />
+      <replace>&quot;level&quot;: 1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -299,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dec_generator">
+  <component name="RunManager" selected="Python.main">
     <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bean_rpg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -433,20 +436,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01977" summary="Updated map">
-      <created>1523701170854</created>
-      <option name="number" value="01977" />
-      <option name="presentableId" value="LOCAL-01977" />
-      <option name="project" value="LOCAL" />
-      <updated>1523701170854</updated>
-    </task>
-    <task id="LOCAL-01978" summary="Updated map">
-      <created>1523701600751</created>
-      <option name="number" value="01978" />
-      <option name="presentableId" value="LOCAL-01978" />
-      <option name="project" value="LOCAL" />
-      <updated>1523701600751</updated>
     </task>
     <task id="LOCAL-01979" summary="Updated map">
       <created>1523702550197</created>
@@ -777,7 +766,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523715409602</updated>
     </task>
-    <option name="localTasksCounter" value="2026" />
+    <task id="LOCAL-02026" summary="Updated decs">
+      <created>1523715551449</created>
+      <option name="number" value="02026" />
+      <option name="presentableId" value="LOCAL-02026" />
+      <option name="project" value="LOCAL" />
+      <updated>1523715551449</updated>
+    </task>
+    <task id="LOCAL-02027" summary="Updated decs">
+      <created>1523715727368</created>
+      <option name="number" value="02027" />
+      <option name="presentableId" value="LOCAL-02027" />
+      <option name="project" value="LOCAL" />
+      <updated>1523715727368</updated>
+    </task>
+    <option name="localTasksCounter" value="2028" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -852,9 +855,9 @@
     <MESSAGE value="Added the hermit bean to default entities" />
     <MESSAGE value="Working on decs at river" />
     <MESSAGE value="Fixed map" />
-    <MESSAGE value="Updated decs" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Updated decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1172,8 +1175,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="116" column="116" lean-forward="true" selection-start-line="116" selection-start-column="116" selection-end-line="116" selection-end-column="116" />
+        <state relative-caret-position="339">
+          <caret line="120" column="6" lean-forward="true" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
         </state>
       </provider>
     </entry>
