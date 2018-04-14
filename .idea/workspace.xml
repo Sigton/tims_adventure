@@ -29,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -289,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.dec_generator">
     <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bean_rpg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -423,20 +423,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01926" summary="Added a new scene update">
-      <created>1523640290341</created>
-      <option name="number" value="01926" />
-      <option name="presentableId" value="LOCAL-01926" />
-      <option name="project" value="LOCAL" />
-      <updated>1523640290341</updated>
-    </task>
-    <task id="LOCAL-01927" summary="Temporarily turned off entity spawning">
-      <created>1523640574488</created>
-      <option name="number" value="01927" />
-      <option name="presentableId" value="LOCAL-01927" />
-      <option name="project" value="LOCAL" />
-      <updated>1523640574488</updated>
     </task>
     <task id="LOCAL-01928" summary="Added a new add bean function">
       <created>1523641325308</created>
@@ -767,7 +753,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523699366978</updated>
     </task>
-    <option name="localTasksCounter" value="1975" />
+    <task id="LOCAL-01975" summary="Updated decs">
+      <created>1523700390794</created>
+      <option name="number" value="01975" />
+      <option name="presentableId" value="LOCAL-01975" />
+      <option name="project" value="LOCAL" />
+      <updated>1523700390794</updated>
+    </task>
+    <task id="LOCAL-01976" summary="Updated map">
+      <created>1523700852231</created>
+      <option name="number" value="01976" />
+      <option name="presentableId" value="LOCAL-01976" />
+      <option name="project" value="LOCAL" />
+      <updated>1523700852231</updated>
+    </task>
+    <option name="localTasksCounter" value="1977" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -819,8 +819,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Winner doesn't level up upon winning the fight" />
-    <MESSAGE value="Duelled beans get set unimportant once duelled" />
     <MESSAGE value="Fisherman and Dan shouldn't spawn naturally" />
     <MESSAGE value="Optimising code" />
     <MESSAGE value="Killing an enemy with a potion should now work" />
@@ -844,7 +842,9 @@
     <MESSAGE value="Should hopefully remove stat panel" />
     <MESSAGE value="I think I've finally fixed that bug with the music" />
     <MESSAGE value="Fixing the gui glitch when dan is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing the gui glitch when dan is added" />
+    <MESSAGE value="Updated decs" />
+    <MESSAGE value="Updated map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1153,17 +1153,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="184" column="79" selection-start-line="184" selection-start-column="79" selection-end-line="184" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
