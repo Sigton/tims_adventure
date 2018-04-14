@@ -89,7 +89,7 @@ But please hurry, we won't be able to defend ourselves for much longer.""", 1)
         ("Apologies, sir.", 0)
     ],
     "fisherman2": [
-        ("Hello, Mr. Fisherman.", 0),
+        ("Mr. Fisherman, sir?", 0),
         ("Whatcha want, kid.", 1),
         ("""The elder villager told me to come and talk to you. He said you had information 
 for me.""", 0),
@@ -117,7 +117,7 @@ Using potions does count as your move, however.""", 1),
         ("Once you have learned to fight, return to the old man. He'll tell you where to go next.", 1)
     ],
     "fisherman_duel1": [
-        ("Hello, Mr. Fisherman.", 0),
+        ("Mr. Fisherman, sir?", 0),
         ("Whatcha want, kid.", 1),
         ("""The elder villager told me to come and talk to you. He said you had information 
 for me.""", 0),
