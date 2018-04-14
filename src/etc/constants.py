@@ -144,6 +144,10 @@ positional_moves = [
     "Chili Chuck"
 ]
 
+both_moves = [
+    "Sneak Attack"
+]
+
 turn_cool_down = 60
 
 
