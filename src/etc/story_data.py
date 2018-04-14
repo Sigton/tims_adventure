@@ -238,7 +238,7 @@ completion_criteria = {
     "dan": ["scene/dan"],
     "hermit": ["scene/hermit"],
     "hidden_lake": ["scene/lake_warning"],
-    "defend_wizard": []
+    "defend_wizard": ("duel/22", "duel/23", "duel/24", "duel/25")
 }
 
 
