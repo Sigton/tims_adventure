@@ -203,7 +203,7 @@ class DialogueController:
         n = len(dialogue_in_words)
         while n > 0:
             if self.body_font.size(" ".join(dialogue_in_words[0:n]))[0] < 310:
-                
+
                 sorted_lines.append(" ".join(dialogue_in_words[0:n]))
                 dialogue_in_words = dialogue_in_words[n:len(dialogue_in_words)]
 
@@ -252,12 +252,12 @@ class DialogueController:
 
     def update_duel_fisherman(self):
 
+        self.master.chunk_controller.locate_entity(13).set_unimportant()
         self.master.chunk_controller.locate_entity(14).meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'fisherman_duel2', 
 'self.master.duel_controller.begin_duel(self.player_ref, self.other_bean_ref)', 1);self.master.switch_to(3)"""
 
         self.master.chunk_controller.locate_entity(14).set_important()
-        self.set_unimportant()
 
     def update_north(self):
 
