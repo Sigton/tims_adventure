@@ -6,7 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/entities/entity_meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/entity_meta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/entities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,20 +21,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="620">
-              <caret line="285" column="28" selection-start-line="285" selection-start-column="28" selection-end-line="285" selection-end-column="28" />
+              <caret line="291" column="33" lean-forward="true" selection-start-line="291" selection-start-column="33" selection-end-line="291" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entity_meta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="700">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="553" column="61" selection-start-line="553" selection-start-column="61" selection-end-line="553" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -41,8 +51,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
+            <state relative-caret-position="370">
+              <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -178,8 +188,8 @@
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
-        <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
+        <option value="$PROJECT_DIR$/src/entities/entities.py" />
       </list>
     </option>
   </component>
@@ -402,41 +412,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02004" summary="Moved tree off path">
-      <created>1523711640357</created>
-      <option name="number" value="02004" />
-      <option name="presentableId" value="LOCAL-02004" />
-      <option name="project" value="LOCAL" />
-      <updated>1523711640357</updated>
-    </task>
-    <task id="LOCAL-02005" summary="Fixed the rocks in the village">
-      <created>1523711791594</created>
-      <option name="number" value="02005" />
-      <option name="presentableId" value="LOCAL-02005" />
-      <option name="project" value="LOCAL" />
-      <updated>1523711791594</updated>
-    </task>
-    <task id="LOCAL-02006" summary="Updated map">
-      <created>1523711818704</created>
-      <option name="number" value="02006" />
-      <option name="presentableId" value="LOCAL-02006" />
-      <option name="project" value="LOCAL" />
-      <updated>1523711818704</updated>
-    </task>
-    <task id="LOCAL-02007" summary="Fixed a texture in terrain.png">
-      <created>1523711922976</created>
-      <option name="number" value="02007" />
-      <option name="presentableId" value="LOCAL-02007" />
-      <option name="project" value="LOCAL" />
-      <updated>1523711922976</updated>
-    </task>
-    <task id="LOCAL-02008" summary="Fixed the end of the path">
-      <created>1523712024610</created>
-      <option name="number" value="02008" />
-      <option name="presentableId" value="LOCAL-02008" />
-      <option name="project" value="LOCAL" />
-      <updated>1523712024610</updated>
     </task>
     <task id="LOCAL-02009" summary="Dan started marked as important">
       <created>1523712100361</created>
@@ -746,7 +721,42 @@
       <option name="project" value="LOCAL" />
       <updated>1523721836309</updated>
     </task>
-    <option name="localTasksCounter" value="2053" />
+    <task id="LOCAL-02053" summary="Added life potion effect">
+      <created>1523721873751</created>
+      <option name="number" value="02053" />
+      <option name="presentableId" value="LOCAL-02053" />
+      <option name="project" value="LOCAL" />
+      <updated>1523721873751</updated>
+    </task>
+    <task id="LOCAL-02054" summary="Debugging">
+      <created>1523721980408</created>
+      <option name="number" value="02054" />
+      <option name="presentableId" value="LOCAL-02054" />
+      <option name="project" value="LOCAL" />
+      <updated>1523721980409</updated>
+    </task>
+    <task id="LOCAL-02055" summary="Added another new potion icon">
+      <created>1523722223000</created>
+      <option name="number" value="02055" />
+      <option name="presentableId" value="LOCAL-02055" />
+      <option name="project" value="LOCAL" />
+      <updated>1523722223000</updated>
+    </task>
+    <task id="LOCAL-02056" summary="Added item metadata">
+      <created>1523722259893</created>
+      <option name="number" value="02056" />
+      <option name="presentableId" value="LOCAL-02056" />
+      <option name="project" value="LOCAL" />
+      <updated>1523722259893</updated>
+    </task>
+    <task id="LOCAL-02057" summary="Added item effect">
+      <created>1523722288949</created>
+      <option name="number" value="02057" />
+      <option name="presentableId" value="LOCAL-02057" />
+      <option name="project" value="LOCAL" />
+      <updated>1523722288949</updated>
+    </task>
+    <option name="localTasksCounter" value="2058" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,11 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated decs" />
-    <MESSAGE value="Updated map" />
-    <MESSAGE value="Adding decs" />
-    <MESSAGE value="Added a path" />
-    <MESSAGE value="Tidied up the trees a bit" />
     <MESSAGE value="Added some more trees" />
     <MESSAGE value="Tidying trees and adding variety" />
     <MESSAGE value="Added more path" />
@@ -823,7 +828,12 @@
     <MESSAGE value="Added a new item image" />
     <MESSAGE value="Added a lot of item metadata" />
     <MESSAGE value="Added new item class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new item class" />
+    <MESSAGE value="Added life potion effect" />
+    <MESSAGE value="Debugging" />
+    <MESSAGE value="Added another new potion icon" />
+    <MESSAGE value="Added item metadata" />
+    <MESSAGE value="Added item effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added item effect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1052,13 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="546" column="21" selection-start-line="546" selection-start-column="21" selection-end-line="546" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1127,22 +1130,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
+        <state relative-caret-position="370">
+          <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="553" column="61" selection-start-line="553" selection-start-column="61" selection-end-line="553" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
-          <caret line="285" column="28" selection-start-line="285" selection-start-column="28" selection-end-line="285" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <caret line="291" column="33" lean-forward="true" selection-start-line="291" selection-start-column="33" selection-end-line="291" selection-end-column="33" />
         </state>
       </provider>
     </entry>
