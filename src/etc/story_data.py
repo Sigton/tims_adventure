@@ -192,6 +192,20 @@ all day!""", 1),
         ("In a lonely and isolated location, just like me. He resides over the hidden lake. Good luck finding it.", 1),
         ("Thank you very much.", 0),
         ("Now go away, I don't want no more of your nonsense business.", 1)
+    ],
+    "lake_warning": [
+        ("Where are you headed, young travellers?", 1),
+        ("We're looking for the hidden lake.", 0),
+        ("You have found the hidden lake. But I cannot let you pass any further", 1),
+        ("Why not?", 0),
+        ("A hoard of evil beans just passed across this bridge.", 1),
+        ("What are they looking for?", 0),
+        ("I fear that they have come to slay the wizard.", 1),
+        ("They have been hunting down the last few wizards of the land, that have now all dropped into hiding.", 1),
+        ("Can we not help the wizard?", 0),
+        ("It is too dangerous. Those were strong evil beans that marched this way.", 1),
+        ("Well, we're going to help this wizard.", 0),
+        ("You will not make return over this bridge. It shall be the end of both of you.", 1)
     ]
 }
 
