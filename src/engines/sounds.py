@@ -98,7 +98,7 @@ class SoundEngine:
         self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
 
         # Mix the volumes
-        [self.sound_linkup[m].set_volume(0.55) for m in self.music]
+        [self.sound_linkup[m].set_volume(0.63) for m in self.music]
         self.punch.set_volume(0.1)
         self.burn.set_volume(0.1)
         self.footstep.set_volume(0.8)
