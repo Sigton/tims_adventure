@@ -32,8 +32,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+            <state relative-caret-position="239">
+              <caret line="115" column="35" lean-forward="true" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -73,8 +73,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find />
-      <find />
+      <find>id&quot;: &quot;1000</find>
+      <find>id&quot;: 18473</find>
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -91,12 +91,12 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find />
+      <find>&quot;level&quot;: 100</find>
       <find>lair</find>
-      <find />
+      <find>&quot;id&quot;: 14</find>
       <find>chili&quot;</find>
       <find>dan</find>
-      <find />
+      <find>&quot;id&quot;: 19</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -115,7 +115,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace />
+      <replace>: create_images(</replace>
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -128,7 +128,7 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace />
+      <replace>&quot;level&quot;: 1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -435,20 +435,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01972" summary="Should hopefully remove stat panel">
-      <created>1523697224540</created>
-      <option name="number" value="01972" />
-      <option name="presentableId" value="LOCAL-01972" />
-      <option name="project" value="LOCAL" />
-      <updated>1523697224540</updated>
-    </task>
-    <task id="LOCAL-01973" summary="I think I've finally fixed that bug with the music">
-      <created>1523699065626</created>
-      <option name="number" value="01973" />
-      <option name="presentableId" value="LOCAL-01973" />
-      <option name="project" value="LOCAL" />
-      <updated>1523699065626</updated>
     </task>
     <task id="LOCAL-01974" summary="Fixing the gui glitch when dan is added">
       <created>1523699366978</created>
@@ -779,7 +765,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523714854214</updated>
     </task>
-    <option name="localTasksCounter" value="2021" />
+    <task id="LOCAL-02021" summary="Updated map">
+      <created>1523714928372</created>
+      <option name="number" value="02021" />
+      <option name="presentableId" value="LOCAL-02021" />
+      <option name="project" value="LOCAL" />
+      <updated>1523714928372</updated>
+    </task>
+    <task id="LOCAL-02022" summary="Updated decs">
+      <created>1523715129536</created>
+      <option name="number" value="02022" />
+      <option name="presentableId" value="LOCAL-02022" />
+      <option name="project" value="LOCAL" />
+      <updated>1523715129536</updated>
+    </task>
+    <option name="localTasksCounter" value="2023" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -831,7 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed a pebble" />
     <MESSAGE value="Here the come the barrels" />
     <MESSAGE value="Fixed up the barrels" />
     <MESSAGE value="Added a bunch of rocks in the village" />
@@ -854,9 +853,10 @@
     <MESSAGE value="Fixed the hermits house" />
     <MESSAGE value="Added the hermit bean to default entities" />
     <MESSAGE value="Working on decs at river" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Fixed map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed map" />
+    <MESSAGE value="Updated map" />
+    <MESSAGE value="Updated decs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated decs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1174,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+        <state relative-caret-position="239">
+          <caret line="115" column="35" lean-forward="true" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
         </state>
       </provider>
     </entry>
