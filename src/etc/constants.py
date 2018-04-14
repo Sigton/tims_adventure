@@ -215,13 +215,15 @@ bean_image_offset = {
 items = [
     "EnlightenmentPotion",
     "HealthPotion",
-    "LifePotion"
+    "LifePotion",
+    "WitherPotion"
 ]
 
 item_display_names = {
     "EnlightenmentPotion": "Enlightenment",
     "HealthPotion": "Healing",
-    "LifePotion": "Life"
+    "LifePotion": "Life",
+    "WitherPotion": "Withering"
 }
 
 healing_items = [
