@@ -258,7 +258,7 @@ class DuelController:
 
             move_no = self.get_opponent_move()
 
-            self.player.meta.damage(int(self.enemy.meta.attack * moves[self.enemy.meta.moves[move_no]]["str_mod"]))
+            self.player.meta.damage(self.enemy.meta.get_attack_damage(move_no))
             self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
             if self.player.meta.hp <= 0:
@@ -296,7 +296,7 @@ class DuelController:
 
         if button_id < 2:
 
-            self.enemy.meta.damage(int(self.player.meta.attack * moves[self.player.meta.moves[button_id]]["str_mod"]))
+            self.enemy.meta.damage(self.player.meta.get_attack_damage(button_id))
             self.player.energy -= moves[self.player.meta.moves[button_id]]["energy"]
 
             if self.enemy.meta.hp <= 0:
