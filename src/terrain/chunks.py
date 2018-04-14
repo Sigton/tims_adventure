@@ -650,3 +650,16 @@ class ChunkController:
                 if entity.__class__.__name__ not in constants.items:
                     if entity.meta.id == entity_id:
                         self.entities[chunk].remove(entity)
+
+    def remove_stat_panel(self, entity):
+
+        self.other_bean_stat_count -= 1
+        self.other_bean_stat_panels.remove(entity.stat_panel)
+        entity.stat_panel_off()
+
+        if self.other_bean_stat_count > -1:
+            n = 0
+            for panel in self.other_bean_stat_panels:
+                panel.move(5, (65 * n) + 275)
+                n += 1
+        self.hud.get_component("backing").resize(self.other_bean_stat_count + 1)
