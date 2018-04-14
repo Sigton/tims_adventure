@@ -30,7 +30,8 @@ class ParticleEngine:
             "snow": SnowParticle,
             "chili": ChiliParticle,
             "smoke": SmokeParticle,
-            "snowball": SnowballParticle
+            "snowball": SnowballParticle,
+            "feather": FeatherParticle
         }
 
         self.scrolling_particles = [
@@ -191,5 +192,14 @@ class SnowballParticle(Particle):
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
         self.image = particle_sprite_sheet.get_image_src_alpha(44, 17, 12, 12)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
+
+
+class FeatherParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image_src_alpha(37, 29, 19, 19)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
