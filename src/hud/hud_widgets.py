@@ -756,6 +756,7 @@ class HealingDisplay(ItemSelect):
         self.player = player.beans[self.controller.get_component("health_display").active_bean_stat]
 
         self.refresh()
+        self.master.stop_moving()
 
     def refresh(self):
 
