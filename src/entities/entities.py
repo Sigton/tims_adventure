@@ -374,7 +374,9 @@ def create_random_entity(pos, entity_id):
 
 def create_random_item(pos):
 
+    item_options = list(items.keys())
+
     return {
         "pos": pos,
-        "item": random.choice(list(items.keys()))
+        "item": item_options[random.choice(constants.item_rarity_matrix)]
     }
