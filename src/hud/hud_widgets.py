@@ -175,6 +175,8 @@ class HealthDisplay:
 
     def refresh(self):
 
+        self.active_bean_stat = 0
+
         self.bean_stats = [gui_components.Fill(self.x + 5, self.y + 5 + 35 * n, 190, 30, constants.GUI_FILL)
                            for n in range(len(self.player.beans))]
         self.health_bars = [gui_components.ProgressBar(self.x + 9, self.y + 27 + 36 * n, 182, 5,
@@ -192,6 +194,8 @@ class HealthDisplay:
             self.player.beans[self.active_bean_stat].meta.level), False, 20, constants.BLACK)
 
         self.components = self.bean_stats + self.health_bars + self.bean_labels + [self.xp_bar, self.level_label]
+
+        self.update_required = True
 
     def draw(self, display):
 
