@@ -32,6 +32,10 @@ class ParticleEngine:
             "smoke": SmokeParticle
         }
 
+        self.scrolling_particles = [
+            "SmokeParticle"
+        ]
+
     def update(self):
 
         for particle in self.particles:
@@ -91,6 +95,12 @@ class ParticleEngine:
                                                                              lifetime+random.randint(-noise_lifetime,
                                                                                                      noise_lifetime),
                                                                              fade_out_time, fade_in_time))
+
+    def realign(self, x, y):
+
+        for particle in self.particles + self.fade_in_particles + self.fade_out_particles:
+            if str(particle) in self.scrolling_particles:
+                particle.realign(x, y)
 
 
 class Particle:
