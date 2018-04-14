@@ -17,9 +17,11 @@ class Player(pygame.sprite.Sprite):
 
     chunk_controller = None
 
-    def __init__(self, beans=None):
+    def __init__(self, master, beans=None):
 
         pygame.sprite.Sprite.__init__(self)
+
+        self.master = master
 
         self.beans = [Bean(None, bean) for bean in beans]
 
@@ -117,6 +119,8 @@ class Player(pygame.sprite.Sprite):
         ]
 
         self.beans.append(new_bean)
+
+        self.master.hud.get_component("health_display").refresh()
 
     def draw(self, display):
 
