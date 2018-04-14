@@ -289,6 +289,13 @@ class DialogueController:
         self.master.chunk_controller.remove_stat_panel(self.master.chunk_controller.locate_entity(12))
         self.master.chunk_controller.delete_entity(12)
 
+        e = self.master.chunk_controller.locate_entity(19)
+
+        e.meta.interaction = \
+            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel,
+'hermit', None, 0);self.master.switch_to(3)"""
+        e.set_important()
+
     def set_unimportant(self):
 
         self.other_bean_ref.set_unimportant()
