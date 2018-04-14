@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="142" column="86" selection-start-line="142" selection-start-column="86" selection-end-line="142" selection-end-column="86" />
+            <state relative-caret-position="250">
+              <caret line="88" column="80" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -31,8 +31,8 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="288" column="102" selection-start-line="288" selection-start-column="102" selection-end-line="288" selection-end-column="102" />
+            <state relative-caret-position="310">
+              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -40,20 +40,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <file leaf-file-name="tiles.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="240" column="65" selection-start-line="240" selection-start-column="65" selection-end-line="240" selection-end-column="65" />
+            <state relative-caret-position="419">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chunks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="480" selection-start-line="480" selection-end-line="480" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="274" column="37" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="37" />
+            <state relative-caret-position="350">
+              <caret line="255" column="38" selection-start-line="255" selection-start-column="38" selection-end-line="255" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="108" column="32" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="790">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -87,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id&quot;: &quot;1000</find>
       <find>id&quot;: 18473</find>
       <find>q</find>
       <find>ob</find>
@@ -117,9 +146,9 @@
       <find>Death</find>
       <find>Health</find>
       <find>entity_data</find>
+      <find>Hello, Mr. Fisherman.</find>
     </findStrings>
     <replaceStrings>
-      <replace>player.</replace>
       <replace>enemy.</replace>
       <replace>rect.x</replace>
       <replace>self.enemy.meta.moves</replace>
@@ -149,6 +178,7 @@
       <replace>816</replace>
       <replace>&quot;level&quot;: 1</replace>
       <replace>entity_meta.entity_data</replace>
+      <replace>Mr. Fisherman, sir?</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -191,11 +221,9 @@
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
-        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
@@ -206,9 +234,11 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
       </list>
     </option>
   </component>
@@ -437,41 +467,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02073" summary="Fixed the bug in item rarity">
-      <created>1523727089243</created>
-      <option name="number" value="02073" />
-      <option name="presentableId" value="LOCAL-02073" />
-      <option name="project" value="LOCAL" />
-      <updated>1523727089243</updated>
-    </task>
-    <task id="LOCAL-02074" summary="Created stop moving function">
-      <created>1523730421998</created>
-      <option name="number" value="02074" />
-      <option name="presentableId" value="LOCAL-02074" />
-      <option name="project" value="LOCAL" />
-      <updated>1523730421998</updated>
-    </task>
-    <task id="LOCAL-02075" summary="Fixed bug when you open healing display while moving">
-      <created>1523730614615</created>
-      <option name="number" value="02075" />
-      <option name="presentableId" value="LOCAL-02075" />
-      <option name="project" value="LOCAL" />
-      <updated>1523730614615</updated>
-    </task>
-    <task id="LOCAL-02076" summary="Added new tile to terrain.png">
-      <created>1523730703330</created>
-      <option name="number" value="02076" />
-      <option name="presentableId" value="LOCAL-02076" />
-      <option name="project" value="LOCAL" />
-      <updated>1523730703330</updated>
-    </task>
-    <task id="LOCAL-02077" summary="Added tile metadata">
-      <created>1523730862383</created>
-      <option name="number" value="02077" />
-      <option name="presentableId" value="LOCAL-02077" />
-      <option name="project" value="LOCAL" />
-      <updated>1523730862383</updated>
     </task>
     <task id="LOCAL-02078" summary="Updated map">
       <created>1523730957555</created>
@@ -781,17 +776,52 @@
       <option name="project" value="LOCAL" />
       <updated>1523741124548</updated>
     </task>
-    <option name="localTasksCounter" value="2122" />
+    <task id="LOCAL-02122" summary="Adjusted the item rarity ratios">
+      <created>1523741499750</created>
+      <option name="number" value="02122" />
+      <option name="presentableId" value="LOCAL-02122" />
+      <option name="project" value="LOCAL" />
+      <updated>1523741499750</updated>
+    </task>
+    <task id="LOCAL-02123" summary="Made poison bean look more poison-y">
+      <created>1523741568045</created>
+      <option name="number" value="02123" />
+      <option name="presentableId" value="LOCAL-02123" />
+      <option name="project" value="LOCAL" />
+      <updated>1523741568045</updated>
+    </task>
+    <task id="LOCAL-02124" summary="Made music quieter">
+      <created>1523741654294</created>
+      <option name="number" value="02124" />
+      <option name="presentableId" value="LOCAL-02124" />
+      <option name="project" value="LOCAL" />
+      <updated>1523741654294</updated>
+    </task>
+    <task id="LOCAL-02125" summary="Reworded a line">
+      <created>1523741701398</created>
+      <option name="number" value="02125" />
+      <option name="presentableId" value="LOCAL-02125" />
+      <option name="project" value="LOCAL" />
+      <updated>1523741701398</updated>
+    </task>
+    <task id="LOCAL-02126" summary="Fisherman at pier should get set unimportant">
+      <created>1523741849046</created>
+      <option name="number" value="02126" />
+      <option name="presentableId" value="LOCAL-02126" />
+      <option name="project" value="LOCAL" />
+      <updated>1523741849046</updated>
+    </task>
+    <option name="localTasksCounter" value="2127" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -833,11 +863,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Wokring on particle effects" />
-    <MESSAGE value="Adjusting particle quantities" />
-    <MESSAGE value="Adjusted particle lifetimes" />
-    <MESSAGE value="Implemented new moves onto the beans" />
-    <MESSAGE value="Adding a shake to sneak attack as well as particles" />
     <MESSAGE value="Implemented formatting of moves that use both particles and shaking" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added moves to positional moves list" />
@@ -858,7 +883,12 @@
     <MESSAGE value="typo" />
     <MESSAGE value="Added a completion criteria for defending the wizard" />
     <MESSAGE value="Fixed a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
+    <MESSAGE value="Adjusted the item rarity ratios" />
+    <MESSAGE value="Made poison bean look more poison-y" />
+    <MESSAGE value="Made music quieter" />
+    <MESSAGE value="Reworded a line" />
+    <MESSAGE value="Fisherman at pier should get set unimportant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fisherman at pier should get set unimportant" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,24 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-778">
-          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
@@ -1088,13 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="637" column="36" selection-start-line="637" selection-start-column="36" selection-end-line="637" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1133,34 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="288" column="102" selection-start-line="288" selection-start-column="102" selection-end-line="288" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="142" column="86" selection-start-line="142" selection-start-column="86" selection-end-line="142" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="240" column="65" selection-start-line="240" selection-start-column="65" selection-end-line="240" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -1173,8 +1158,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="274" column="37" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="37" />
+        <state relative-caret-position="350">
+          <caret line="255" column="38" selection-start-line="255" selection-start-column="38" selection-end-line="255" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="108" column="32" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="88" column="80" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="480" selection-start-line="480" selection-end-line="480" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terrain/tiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
