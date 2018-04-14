@@ -6,9 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/particles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/particles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/duel/moves.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/duel/moves.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,43 +18,32 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-645">
+                    <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="241" column="17" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moves.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="moves.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="231" column="11" lean-forward="true" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="103" column="104" selection-start-line="103" selection-start-column="104" selection-end-line="103" selection-end-column="104" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="760">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -172,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
-        <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
@@ -194,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
+        <option value="$PROJECT_DIR$/src/duel/moves.py" />
       </list>
     </option>
   </component>
@@ -425,20 +412,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02041" summary="Made him look more scruffy">
-      <created>1523717628898</created>
-      <option name="number" value="02041" />
-      <option name="presentableId" value="LOCAL-02041" />
-      <option name="project" value="LOCAL" />
-      <updated>1523717628898</updated>
-    </task>
-    <task id="LOCAL-02042" summary="Extended the scene with Dan">
-      <created>1523718105236</created>
-      <option name="number" value="02042" />
-      <option name="presentableId" value="LOCAL-02042" />
-      <option name="project" value="LOCAL" />
-      <updated>1523718105236</updated>
     </task>
     <task id="LOCAL-02043" summary="Added a new quest">
       <created>1523718256396</created>
@@ -769,7 +742,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523734064436</updated>
     </task>
-    <option name="localTasksCounter" value="2090" />
+    <task id="LOCAL-02090" summary="Added a lemon particle">
+      <created>1523734546933</created>
+      <option name="number" value="02090" />
+      <option name="presentableId" value="LOCAL-02090" />
+      <option name="project" value="LOCAL" />
+      <updated>1523734546934</updated>
+    </task>
+    <task id="LOCAL-02091" summary="Getting ready to add new moves">
+      <created>1523734609923</created>
+      <option name="number" value="02091" />
+      <option name="presentableId" value="LOCAL-02091" />
+      <option name="project" value="LOCAL" />
+      <updated>1523734609924</updated>
+    </task>
+    <option name="localTasksCounter" value="2092" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -821,8 +808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added death potion class" />
-    <MESSAGE value="Added item effect" />
     <MESSAGE value="Using new icon for death potions" />
     <MESSAGE value="Fixed the image overlapping" />
     <MESSAGE value="Defined an item rarity matrix" />
@@ -846,7 +831,9 @@
     <MESSAGE value="Added feather particle" />
     <MESSAGE value="Added leaf particle" />
     <MESSAGE value="Added a venom particle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a venom particle" />
+    <MESSAGE value="Added a lemon particle" />
+    <MESSAGE value="Getting ready to add new moves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting ready to add new moves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1139,13 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -1155,8 +1135,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="231" column="11" lean-forward="true" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
+        <state relative-caret-position="-645">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
         </state>
       </provider>
     </entry>
