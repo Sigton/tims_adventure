@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,29 +48,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="320" column="46" selection-start-line="320" selection-start-column="46" selection-end-line="320" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="142" column="13" lean-forward="true" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="710">
+              <caret line="132" column="6" lean-forward="true" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="288" column="102" selection-start-line="288" selection-start-column="102" selection-end-line="288" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
-              <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+              <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -206,8 +218,8 @@
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
   </component>
@@ -436,20 +448,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02060" summary="Added to no fade sprites">
-      <created>1523722506594</created>
-      <option name="number" value="02060" />
-      <option name="presentableId" value="LOCAL-02060" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722506594</updated>
-    </task>
-    <task id="LOCAL-02061" summary="Fixed the image">
-      <created>1523722689339</created>
-      <option name="number" value="02061" />
-      <option name="presentableId" value="LOCAL-02061" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722689339</updated>
     </task>
     <task id="LOCAL-02062" summary="Spawn rate too high">
       <created>1523722782945</created>
@@ -780,7 +778,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523737597191</updated>
     </task>
-    <option name="localTasksCounter" value="2109" />
+    <task id="LOCAL-02109" summary="Moved wizard bean">
+      <created>1523737703411</created>
+      <option name="number" value="02109" />
+      <option name="presentableId" value="LOCAL-02109" />
+      <option name="project" value="LOCAL" />
+      <updated>1523737703411</updated>
+    </task>
+    <task id="LOCAL-02110" summary="Added in another default entity">
+      <created>1523737940759</created>
+      <option name="number" value="02110" />
+      <option name="presentableId" value="LOCAL-02110" />
+      <option name="project" value="LOCAL" />
+      <updated>1523737940759</updated>
+    </task>
+    <option name="localTasksCounter" value="2111" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -832,8 +844,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Converting to an integer" />
-    <MESSAGE value="Implemented new function" />
     <MESSAGE value="Added snowball particle" />
     <MESSAGE value="Added feather particle" />
     <MESSAGE value="Added leaf particle" />
@@ -857,7 +867,9 @@
     <MESSAGE value="Added a nice little pier" />
     <MESSAGE value="Forgot to make the water walkable" />
     <MESSAGE value="Added a wizard bean wow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a wizard bean wow" />
+    <MESSAGE value="Moved wizard bean" />
+    <MESSAGE value="Added in another default entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added in another default entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,13 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="178" column="52" selection-start-line="178" selection-start-column="52" selection-end-line="178" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/maps.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1122,13 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="288" column="102" selection-start-line="288" selection-start-column="102" selection-end-line="288" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1900">
@@ -1160,17 +1158,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="142" column="13" lean-forward="true" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
+        <state relative-caret-position="710">
+          <caret line="132" column="6" lean-forward="true" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="288" column="102" selection-start-line="288" selection-start-column="102" selection-end-line="288" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+          <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
         </state>
       </provider>
     </entry>
