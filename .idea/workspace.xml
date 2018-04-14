@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="339">
-              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
             </state>
           </provider>
         </entry>
@@ -80,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="371" lean-forward="true" selection-start-line="371" selection-end-line="371" />
+              <caret line="371" selection-start-line="371" selection-end-line="371" />
             </state>
           </provider>
         </entry>
@@ -88,8 +88,8 @@
       <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="209" column="44" lean-forward="true" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
+            <state relative-caret-position="430">
+              <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -100,8 +100,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="321">
+              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -125,8 +125,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find>id&quot;: &quot;1000</find>
-      <find>id&quot;: 18473</find>
+      <find />
+      <find />
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -143,9 +143,9 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find>&quot;level&quot;: 100</find>
+      <find />
       <find>lair</find>
-      <find>&quot;id&quot;: 14</find>
+      <find />
       <find>chili&quot;</find>
     </findStrings>
     <replaceStrings>
@@ -165,7 +165,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace>: create_images(</replace>
+      <replace />
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -178,7 +178,7 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace>&quot;level&quot;: 1</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -225,7 +225,6 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
-        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/entities/player.py" />
@@ -239,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
+        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
   </component>
@@ -479,34 +479,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01956" summary="Fixed bug">
-      <created>1523645825887</created>
-      <option name="number" value="01956" />
-      <option name="presentableId" value="LOCAL-01956" />
-      <option name="project" value="LOCAL" />
-      <updated>1523645825887</updated>
-    </task>
-    <task id="LOCAL-01957" summary="Fixed bug">
-      <created>1523646108051</created>
-      <option name="number" value="01957" />
-      <option name="presentableId" value="LOCAL-01957" />
-      <option name="project" value="LOCAL" />
-      <updated>1523646108051</updated>
-    </task>
-    <task id="LOCAL-01958" summary="Now the same song shouldn't play twice in a row">
-      <created>1523646520949</created>
-      <option name="number" value="01958" />
-      <option name="presentableId" value="LOCAL-01958" />
-      <option name="project" value="LOCAL" />
-      <updated>1523646520949</updated>
-    </task>
-    <task id="LOCAL-01959" summary="Fixed terrain error">
-      <created>1523646571186</created>
-      <option name="number" value="01959" />
-      <option name="presentableId" value="LOCAL-01959" />
-      <option name="project" value="LOCAL" />
-      <updated>1523646571186</updated>
     </task>
     <task id="LOCAL-01960" summary="Can't duel items anymore">
       <created>1523646707416</created>
@@ -823,11 +795,40 @@
       <option name="project" value="LOCAL" />
       <updated>1523711640357</updated>
     </task>
-    <option name="localTasksCounter" value="2005" />
+    <task id="LOCAL-02005" summary="Fixed the rocks in the village">
+      <created>1523711791594</created>
+      <option name="number" value="02005" />
+      <option name="presentableId" value="LOCAL-02005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523711791594</updated>
+    </task>
+    <task id="LOCAL-02006" summary="Updated map">
+      <created>1523711818704</created>
+      <option name="number" value="02006" />
+      <option name="presentableId" value="LOCAL-02006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523711818704</updated>
+    </task>
+    <task id="LOCAL-02007" summary="Fixed a texture in terrain.png">
+      <created>1523711922976</created>
+      <option name="number" value="02007" />
+      <option name="presentableId" value="LOCAL-02007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523711922976</updated>
+    </task>
+    <task id="LOCAL-02008" summary="Fixed the end of the path">
+      <created>1523712024610</created>
+      <option name="number" value="02008" />
+      <option name="presentableId" value="LOCAL-02008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523712024610</updated>
+    </task>
+    <option name="localTasksCounter" value="2009" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -874,10 +875,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed an issue on the map" />
-    <MESSAGE value="Fixing a possible quest skip" />
-    <MESSAGE value="Added new quest update in story tracker" />
-    <MESSAGE value="Lots and lots of decorations" />
     <MESSAGE value="Fixing the decs" />
     <MESSAGE value="Add some nice pebbles to the beach" />
     <MESSAGE value="More pebbles" />
@@ -899,7 +896,11 @@
     <MESSAGE value="Nicer way of writing it" />
     <MESSAGE value="Particle drawing is now handled by the individual controllers" />
     <MESSAGE value="Moved tree off path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved tree off path" />
+    <MESSAGE value="Fixed the rocks in the village" />
+    <MESSAGE value="Updated map" />
+    <MESSAGE value="Fixed a texture in terrain.png" />
+    <MESSAGE value="Fixed the end of the path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the end of the path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1180,7 +1181,7 @@
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
@@ -1201,14 +1202,14 @@
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="371" lean-forward="true" selection-start-line="371" selection-end-line="371" />
+          <caret line="371" selection-start-line="371" selection-end-line="371" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="209" column="44" lean-forward="true" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
+        <state relative-caret-position="430">
+          <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -1217,8 +1218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        <state relative-caret-position="321">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
         </state>
       </provider>
     </entry>
