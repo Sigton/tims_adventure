@@ -55,7 +55,7 @@ no_spawn_chunks = ['1488', '1489', '1490', '1491', '1492', '1493',
                    '2287', '2288', '2289', '2386', '2387', '2388',
                    '2389']
 
-no_spawn_beans = ["wizard", "old_villager", "tim", "fisherman", "dan"]
+no_spawn_beans = ["wizard", "old_villager", "tim", "fisherman", "dan", "hermit"]
 
 
 # Entity Spawning data
