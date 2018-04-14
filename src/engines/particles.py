@@ -105,6 +105,8 @@ class Particle:
         self.rect.x = x
         self.rect.y = y
 
+        self.offset_x, self.offset_y = self.rect.topleft
+
         self.lifetime = int(lifetime * constants.PARTICLE_LIFE_MULTIPLIER)
         if self.lifetime <= 0:
             self.lifetime = 1
@@ -126,6 +128,11 @@ class Particle:
     def draw(self, display):
 
         display.blit(self.image, (self.rect.x, self.rect.y))
+
+    def realign(self, x, y):
+
+        self.rect.x = x + self.offset_x
+        self.rect.y = y + self.offset_y
 
 
 class FireParticle(Particle):
