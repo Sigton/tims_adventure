@@ -288,10 +288,18 @@ class WitherPotion(Item):
         Item.__init__(self, icons.sprite_sheet.get_image(151, 0, 48, 48), x, y)
 
 
+class DeathPotion(Item):
+
+    def __init__(self, x, y):
+
+        Item.__init__(self, icons.sprite_sheet.get_image(183, 0, 48, 48), x, y)
+
+
 items = {
     "HealthPotion": HealthPotion,
     "LifePotion": LifePotion,
-    "WitherPotion": WitherPotion
+    "WitherPotion": WitherPotion,
+    "DeathPotion": DeathPotion
 }
 
 
