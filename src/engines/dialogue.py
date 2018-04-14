@@ -24,14 +24,13 @@ class DialogueController:
         self.scene_updates = {
             "old_man": self.update_fisherman,
             "fisherman2": self.update_duel_fisherman,
-            "fisherman_duel1": self.update_duel_fisherman2,
+            "fisherman_duel1": self.update_duel_fisherman,
             "villager1": self.set_unimportant,
             "villager2": self.set_unimportant,
             "villager3": self.set_unimportant,
             "villager4": self.set_unimportant,
             "villager5": self.set_unimportant,
             "villager6": self.set_unimportant,
-            "fisherman_duel2": self.update_old_man,
             "old_man2": self.update_north,
             "north_bean": self.update_village_attack,
             "help_village_bean": self.update_evil_beans_village,
@@ -257,20 +256,6 @@ class DialogueController:
 
         self.master.chunk_controller.locate_entity(14).set_important()
         self.set_unimportant()
-
-    def update_old_man(self):
-
-        e = self.master.chunk_controller.locate_entity(3)
-
-        e.meta.interaction = \
-            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'old_man2', None, 0)
-self.master.switch_to(3)"""
-        e.set_important()
-
-    def update_duel_fisherman2(self):
-
-        self.update_duel_fisherman()
-        self.update_old_man()
 
     def update_north(self):
 
