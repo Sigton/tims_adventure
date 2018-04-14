@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/terrain.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/terrain.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="108" column="6" lean-forward="true" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
+            <state relative-caret-position="250">
+              <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -436,27 +436,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01984" summary="Fixing the decs">
-      <created>1523703874339</created>
-      <option name="number" value="01984" />
-      <option name="presentableId" value="LOCAL-01984" />
-      <option name="project" value="LOCAL" />
-      <updated>1523703874339</updated>
-    </task>
-    <task id="LOCAL-01985" summary="Add some nice pebbles to the beach">
-      <created>1523704121650</created>
-      <option name="number" value="01985" />
-      <option name="presentableId" value="LOCAL-01985" />
-      <option name="project" value="LOCAL" />
-      <updated>1523704121650</updated>
-    </task>
-    <task id="LOCAL-01986" summary="More pebbles">
-      <created>1523704483485</created>
-      <option name="number" value="01986" />
-      <option name="presentableId" value="LOCAL-01986" />
-      <option name="project" value="LOCAL" />
-      <updated>1523704483485</updated>
-    </task>
     <task id="LOCAL-01987" summary="Should be the last of the pebbeles">
       <created>1523705939851</created>
       <option name="number" value="01987" />
@@ -779,18 +758,40 @@
       <option name="project" value="LOCAL" />
       <updated>1523716689414</updated>
     </task>
-    <option name="localTasksCounter" value="2033" />
+    <task id="LOCAL-02033" summary="Added some more trees">
+      <created>1523716839898</created>
+      <option name="number" value="02033" />
+      <option name="presentableId" value="LOCAL-02033" />
+      <option name="project" value="LOCAL" />
+      <updated>1523716839898</updated>
+    </task>
+    <task id="LOCAL-02034" summary="Tidying trees and adding variety">
+      <created>1523716952271</created>
+      <option name="number" value="02034" />
+      <option name="presentableId" value="LOCAL-02034" />
+      <option name="project" value="LOCAL" />
+      <updated>1523716952271</updated>
+    </task>
+    <task id="LOCAL-02035" summary="Added more path">
+      <created>1523717057332</created>
+      <option name="number" value="02035" />
+      <option name="presentableId" value="LOCAL-02035" />
+      <option name="project" value="LOCAL" />
+      <updated>1523717057332</updated>
+    </task>
+    <option name="localTasksCounter" value="2036" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -830,9 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Particles can now theoretically scroll" />
-    <MESSAGE value="Created a master realign function" />
-    <MESSAGE value="Defined __str__ for particle" />
     <MESSAGE value="Calling particle engine realign from chunk controller" />
     <MESSAGE value="Fixed particle scrolling" />
     <MESSAGE value="Nicer way of writing it" />
@@ -855,7 +853,10 @@
     <MESSAGE value="Adding decs" />
     <MESSAGE value="Added a path" />
     <MESSAGE value="Tidied up the trees a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tidied up the trees a bit" />
+    <MESSAGE value="Added some more trees" />
+    <MESSAGE value="Tidying trees and adding variety" />
+    <MESSAGE value="Added more path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="108" column="6" lean-forward="true" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
+        <state relative-caret-position="250">
+          <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
         </state>
       </provider>
     </entry>
