@@ -106,7 +106,8 @@ no_fade_sprites = [
     "Bean",
     "RandomBean",
     "EnlightenmentPotion",
-    "HealthPotion"
+    "HealthPotion",
+    "LifePotion"
 ]
 
 # Entity constants
