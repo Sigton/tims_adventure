@@ -18,10 +18,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="459">
               <caret line="293" column="32" selection-start-line="293" selection-start-column="32" selection-end-line="293" selection-end-column="32" />
             </state>
           </provider>
@@ -30,8 +30,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
+            <state relative-caret-position="302">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
             </state>
           </provider>
         </entry>
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+            <state relative-caret-position="459">
+              <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -194,8 +194,8 @@
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
-        <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/engines/save.py" />
       </list>
     </option>
   </component>
@@ -418,20 +418,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02012" summary="Added hermit bean spritesheet data">
-      <created>1523713197475</created>
-      <option name="number" value="02012" />
-      <option name="presentableId" value="LOCAL-02012" />
-      <option name="project" value="LOCAL" />
-      <updated>1523713197475</updated>
-    </task>
-    <task id="LOCAL-02013" summary="Added hermit bean metadata">
-      <created>1523713280567</created>
-      <option name="number" value="02013" />
-      <option name="presentableId" value="LOCAL-02013" />
-      <option name="project" value="LOCAL" />
-      <updated>1523713280568</updated>
     </task>
     <task id="LOCAL-02014" summary="Updated map">
       <created>1523713984150</created>
@@ -762,7 +748,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523722506594</updated>
     </task>
-    <option name="localTasksCounter" value="2061" />
+    <task id="LOCAL-02061" summary="Fixed the image">
+      <created>1523722689339</created>
+      <option name="number" value="02061" />
+      <option name="presentableId" value="LOCAL-02061" />
+      <option name="project" value="LOCAL" />
+      <updated>1523722689339</updated>
+    </task>
+    <task id="LOCAL-02062" summary="Spawn rate too high">
+      <created>1523722782945</created>
+      <option name="number" value="02062" />
+      <option name="presentableId" value="LOCAL-02062" />
+      <option name="project" value="LOCAL" />
+      <updated>1523722782945</updated>
+    </task>
+    <option name="localTasksCounter" value="2063" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -814,8 +814,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a new tile" />
-    <MESSAGE value="And tile metadata" />
     <MESSAGE value="Added some path dots" />
     <MESSAGE value="Moved a bucket" />
     <MESSAGE value="Make dermots eyebrows more prominant" />
@@ -839,7 +837,9 @@
     <MESSAGE value="Added item class" />
     <MESSAGE value="Increased item spawn rates" />
     <MESSAGE value="Added to no fade sprites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to no fade sprites" />
+    <MESSAGE value="Fixed the image" />
+    <MESSAGE value="Spawn rate too high" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spawn rate too high" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1134,20 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="293" column="32" selection-start-line="293" selection-start-column="32" selection-end-line="293" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/chunks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -1155,10 +1141,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        <state relative-caret-position="459">
+          <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="293" column="32" selection-start-line="293" selection-start-column="32" selection-end-line="293" selection-end-column="32" />
         </state>
       </provider>
     </entry>

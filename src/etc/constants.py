@@ -108,7 +108,8 @@ no_fade_sprites = [
     "EnlightenmentPotion",
     "HealthPotion",
     "LifePotion",
-    "WitherPotion"
+    "WitherPotion",
+    "DeathPotion"
 ]
 
 # Entity constants
@@ -217,14 +218,16 @@ items = [
     "EnlightenmentPotion",
     "HealthPotion",
     "LifePotion",
-    "WitherPotion"
+    "WitherPotion",
+    "DeathPotion"
 ]
 
 item_display_names = {
     "EnlightenmentPotion": "Enlightenment",
     "HealthPotion": "Healing",
     "LifePotion": "Life",
-    "WitherPotion": "Withering"
+    "WitherPotion": "Withering",
+    "DeathPotion": "Death"
 }
 
 healing_items = [
