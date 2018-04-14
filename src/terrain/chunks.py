@@ -596,6 +596,8 @@ class ChunkController:
         for chunk in self.live_chunks:
             self.assign_chunk_pos(chunk, movement)
 
+        self.master.particle_engine.realign(movement[0], movement[1])
+
     def get_current_chunk_id(self):
 
         return create_id((abs(self.world_offset_x-480))//960,
