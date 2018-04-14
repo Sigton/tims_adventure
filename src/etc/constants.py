@@ -213,25 +213,30 @@ bean_image_offset = {
 
 items = [
     "EnlightenmentPotion",
-    "HealthPotion"
+    "HealthPotion",
+    "LifePotion"
 ]
 
 item_display_names = {
     "EnlightenmentPotion": "Enlightenment",
-    "HealthPotion": "Healing"
+    "HealthPotion": "Healing",
+    "LifePotion": "Life"
 }
 
 healing_items = [
-    "HealthPotion"
+    "HealthPotion",
+    "LifePotion"
 ]
 
 drinking_items = [
-    "HealthPotion"
+    "HealthPotion",
+    "LifePotion"
 ]
 
 item_images = {
     "EnlightenmentPotion": (62, 11, 32, 32),
-    "HealthPotion": (94, 11, 32, 32)
+    "HealthPotion": (94, 11, 32, 32),
+    "LifePotion": (126, 11, 32, 32)
 }
 
 quest_images = {
