@@ -3,6 +3,7 @@ import pygame
 from src.etc import constants
 from src.entities import bean_image_loader, icons, shadows, entity_meta
 from src.hud import hud_widgets
+from src.duel import moves
 
 import random
 import math
@@ -100,7 +101,7 @@ class EntityMeta:
 
     def get_attack_damage(self, move):
 
-        pass
+        return (0.05 * (self.level-1) + self.attack) * moves.moves[self.moves[move]]["attack"]
 
 
 class RandomBean:
