@@ -268,7 +268,8 @@ quest_images = {
     "old_man2": (32, 236, 32, 32),
     "dan": (224, 236, 32, 32),
     "hermit": (256, 236, 32, 32),
-    "hidden_lake": (0, 268, 32, 32)
+    "hidden_lake": (0, 268, 32, 32),
+    "defend_wizard": (32, 268, 32, 32)
 }
 
 item_rarity_weights = [0, 550, 300, 450, 250]

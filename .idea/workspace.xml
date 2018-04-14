@@ -7,6 +7,7 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,8 +73,8 @@
       <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+            <state relative-caret-position="570">
+              <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
             </state>
           </provider>
         </entry>
@@ -82,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
-              <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
+              <caret line="271" column="5" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -207,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
@@ -219,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
@@ -448,27 +449,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02062" summary="Spawn rate too high">
-      <created>1523722782945</created>
-      <option name="number" value="02062" />
-      <option name="presentableId" value="LOCAL-02062" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722782945</updated>
-    </task>
-    <task id="LOCAL-02063" summary="Added new potion to spritesheet">
-      <created>1523722964919</created>
-      <option name="number" value="02063" />
-      <option name="presentableId" value="LOCAL-02063" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722964919</updated>
-    </task>
-    <task id="LOCAL-02064" summary="Added item metadata">
-      <created>1523723026291</created>
-      <option name="number" value="02064" />
-      <option name="presentableId" value="LOCAL-02064" />
-      <option name="project" value="LOCAL" />
-      <updated>1523723026291</updated>
     </task>
     <task id="LOCAL-02065" summary="Added death potion class">
       <created>1523723132881</created>
@@ -792,7 +772,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523737940759</updated>
     </task>
-    <option name="localTasksCounter" value="2111" />
+    <task id="LOCAL-02111" summary="Added a new quest icon">
+      <created>1523738142889</created>
+      <option name="number" value="02111" />
+      <option name="presentableId" value="LOCAL-02111" />
+      <option name="project" value="LOCAL" />
+      <updated>1523738142889</updated>
+    </task>
+    <task id="LOCAL-02112" summary="Added new quest">
+      <created>1523738239548</created>
+      <option name="number" value="02112" />
+      <option name="presentableId" value="LOCAL-02112" />
+      <option name="project" value="LOCAL" />
+      <updated>1523738239548</updated>
+    </task>
+    <task id="LOCAL-02113" summary="Created lake warning scene">
+      <created>1523738596572</created>
+      <option name="number" value="02113" />
+      <option name="presentableId" value="LOCAL-02113" />
+      <option name="project" value="LOCAL" />
+      <updated>1523738596572</updated>
+    </task>
+    <option name="localTasksCounter" value="2114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -844,9 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added snowball particle" />
-    <MESSAGE value="Added feather particle" />
-    <MESSAGE value="Added leaf particle" />
     <MESSAGE value="Added a venom particle" />
     <MESSAGE value="Added a lemon particle" />
     <MESSAGE value="Getting ready to add new moves" />
@@ -869,7 +867,10 @@
     <MESSAGE value="Added a wizard bean wow" />
     <MESSAGE value="Moved wizard bean" />
     <MESSAGE value="Added in another default entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in another default entity" />
+    <MESSAGE value="Added a new quest icon" />
+    <MESSAGE value="Added new quest" />
+    <MESSAGE value="Created lake warning scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created lake warning scene" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1177,15 +1178,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+        <state relative-caret-position="570">
+          <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
+          <caret line="271" column="5" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
         </state>
       </provider>
     </entry>
