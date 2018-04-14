@@ -5,7 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="42" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/resources/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/map.png" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +32,8 @@
       <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="119" column="7" lean-forward="true" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
+            <state relative-caret-position="159">
+              <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -71,8 +73,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find>id&quot;: &quot;1000</find>
-      <find>id&quot;: 18473</find>
+      <find />
+      <find />
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -89,12 +91,12 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find>&quot;level&quot;: 100</find>
+      <find />
       <find>lair</find>
-      <find>&quot;id&quot;: 14</find>
+      <find />
       <find>chili&quot;</find>
       <find>dan</find>
-      <find>&quot;id&quot;: 19</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -113,7 +115,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace>: create_images(</replace>
+      <replace />
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -126,7 +128,7 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace>&quot;level&quot;: 1</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -243,6 +245,12 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -427,27 +435,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01969" summary="Added a refresh function for healing display">
-      <created>1523651436297</created>
-      <option name="number" value="01969" />
-      <option name="presentableId" value="LOCAL-01969" />
-      <option name="project" value="LOCAL" />
-      <updated>1523651436297</updated>
-    </task>
-    <task id="LOCAL-01970" summary="Hud refreshes when a new bean is added">
-      <created>1523696401684</created>
-      <option name="number" value="01970" />
-      <option name="presentableId" value="LOCAL-01970" />
-      <option name="project" value="LOCAL" />
-      <updated>1523696401686</updated>
-    </task>
-    <task id="LOCAL-01971" summary="Created a function to remove the stat panel">
-      <created>1523697009199</created>
-      <option name="number" value="01971" />
-      <option name="presentableId" value="LOCAL-01971" />
-      <option name="project" value="LOCAL" />
-      <updated>1523697009199</updated>
     </task>
     <task id="LOCAL-01972" summary="Should hopefully remove stat panel">
       <created>1523697224540</created>
@@ -771,7 +758,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523714490484</updated>
     </task>
-    <option name="localTasksCounter" value="2018" />
+    <task id="LOCAL-02018" summary="Working on decs at river">
+      <created>1523714659335</created>
+      <option name="number" value="02018" />
+      <option name="presentableId" value="LOCAL-02018" />
+      <option name="project" value="LOCAL" />
+      <updated>1523714659335</updated>
+    </task>
+    <task id="LOCAL-02019" summary="Updated map">
+      <created>1523714819029</created>
+      <option name="number" value="02019" />
+      <option name="presentableId" value="LOCAL-02019" />
+      <option name="project" value="LOCAL" />
+      <updated>1523714819029</updated>
+    </task>
+    <task id="LOCAL-02020" summary="Fixed map">
+      <created>1523714854214</created>
+      <option name="number" value="02020" />
+      <option name="presentableId" value="LOCAL-02020" />
+      <option name="project" value="LOCAL" />
+      <updated>1523714854214</updated>
+    </task>
+    <option name="localTasksCounter" value="2021" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,8 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some buckets" />
-    <MESSAGE value="Fixed the buckets" />
     <MESSAGE value="Fixed a pebble" />
     <MESSAGE value="Here the come the barrels" />
     <MESSAGE value="Fixed up the barrels" />
@@ -845,10 +851,12 @@
     <MESSAGE value="Added Dermot the Hermit bean" />
     <MESSAGE value="Added hermit bean spritesheet data" />
     <MESSAGE value="Added hermit bean metadata" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Fixed the hermits house" />
     <MESSAGE value="Added the hermit bean to default entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the hermit bean to default entities" />
+    <MESSAGE value="Working on decs at river" />
+    <MESSAGE value="Updated map" />
+    <MESSAGE value="Fixed map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1166,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="119" column="7" lean-forward="true" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
+        <state relative-caret-position="159">
+          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
         </state>
       </provider>
     </entry>
