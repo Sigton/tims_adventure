@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
-    </list>
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +57,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+            <state relative-caret-position="59">
+              <caret line="142" column="13" lean-forward="true" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -265,21 +263,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="saves" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-              <item name="save1" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -316,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dec_generator">
+  <component name="RunManager" selected="Python.main">
     <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bean_rpg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -450,27 +433,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02056" summary="Added item metadata">
-      <created>1523722259893</created>
-      <option name="number" value="02056" />
-      <option name="presentableId" value="LOCAL-02056" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722259893</updated>
-    </task>
-    <task id="LOCAL-02057" summary="Added item effect">
-      <created>1523722288949</created>
-      <option name="number" value="02057" />
-      <option name="presentableId" value="LOCAL-02057" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722288949</updated>
-    </task>
-    <task id="LOCAL-02058" summary="Added item class">
-      <created>1523722397192</created>
-      <option name="number" value="02058" />
-      <option name="presentableId" value="LOCAL-02058" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722397192</updated>
     </task>
     <task id="LOCAL-02059" summary="Increased item spawn rates">
       <created>1523722489449</created>
@@ -794,7 +756,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523736575154</updated>
     </task>
-    <option name="localTasksCounter" value="2105" />
+    <task id="LOCAL-02105" summary="Moved a barrel">
+      <created>1523737148587</created>
+      <option name="number" value="02105" />
+      <option name="presentableId" value="LOCAL-02105" />
+      <option name="project" value="LOCAL" />
+      <updated>1523737148587</updated>
+    </task>
+    <task id="LOCAL-02106" summary="Added a nice little pier">
+      <created>1523737187615</created>
+      <option name="number" value="02106" />
+      <option name="presentableId" value="LOCAL-02106" />
+      <option name="project" value="LOCAL" />
+      <updated>1523737187615</updated>
+    </task>
+    <task id="LOCAL-02107" summary="Forgot to make the water walkable">
+      <created>1523737303407</created>
+      <option name="number" value="02107" />
+      <option name="presentableId" value="LOCAL-02107" />
+      <option name="project" value="LOCAL" />
+      <updated>1523737303407</updated>
+    </task>
+    <option name="localTasksCounter" value="2108" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -846,9 +829,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on a get attack damage function" />
-    <MESSAGE value="Finished get_attack_damage function" />
-    <MESSAGE value="Adjusted the function" />
     <MESSAGE value="Used wrong attribute name" />
     <MESSAGE value="Converting to an integer" />
     <MESSAGE value="Implemented new function" />
@@ -871,7 +851,10 @@
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added moves to positional moves list" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Moved a barrel" />
+    <MESSAGE value="Added a nice little pier" />
+    <MESSAGE value="Forgot to make the water walkable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forgot to make the water walkable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1183,8 +1166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+        <state relative-caret-position="59">
+          <caret line="142" column="13" lean-forward="true" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
         </state>
       </provider>
     </entry>
