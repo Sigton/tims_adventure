@@ -318,7 +318,7 @@ class DuelController:
             elif moves[self.player.meta.moves[button_id]]["name"] in constants.positional_moves:
                 move = move.format(750, 170)
             elif moves[self.enemy.meta.moves[button_id]]["name"] in constants.both_moves:
-                move = move.format(750, 170, "-")
+                move = move.format(750, 170, "")
             exec(move)
 
         elif button_id == 3:
