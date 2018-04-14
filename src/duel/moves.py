@@ -24,19 +24,19 @@ self.master.sound_engine.queue_sound(('burn', 0))""",
     {"name": "Punch", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
-    {"name": "Punch", "str_mod": 1.2, "effects":
+    {"name": "Snowball", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
-    {"name": "Punch", "str_mod": 1.2, "effects":
+    {"name": "Feathers", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
-    {"name": "Punch", "str_mod": 1.2, "effects":
+    {"name": "Sneak Attack", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
-    {"name": "Punch", "str_mod": 1.2, "effects":
+    {"name": "Poison Spit", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
-    {"name": "Punch", "str_mod": 1.2, "effects":
+    {"name": "Citrus Spray", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
 ]
