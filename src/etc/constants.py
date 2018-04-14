@@ -144,7 +144,6 @@ positional_moves = [
     "Chili Chuck",
     "Snowball",
     "Feathers",
-    "Sneak Attack",
     "Poison Spit",
     "Citrus Spray"
 ]
