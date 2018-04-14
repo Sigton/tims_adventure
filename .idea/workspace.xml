@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/entities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/save.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="219">
+              <caret line="163" selection-start-line="163" selection-end-line="163" />
             </state>
           </provider>
         </entry>
@@ -48,20 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="342" column="57" lean-forward="true" selection-start-line="342" selection-start-column="57" selection-end-line="342" selection-end-column="57" />
+            <state relative-caret-position="790">
+              <caret line="380" selection-start-line="380" selection-end-line="380" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+            <state relative-caret-position="379">
+              <caret line="264" column="54" lean-forward="true" selection-start-line="264" selection-start-column="54" selection-end-line="264" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -77,10 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>display_name</find>
-      <find>upper</find>
-      <find>self.completed_quests</find>
-      <find>display_</find>
       <find>id</find>
       <find>id&quot;: &quot;1000</find>
       <find>id&quot;: 18473</find>
@@ -107,6 +102,10 @@
       <find>dan</find>
       <find>&quot;id&quot;: 19</find>
       <find>-</find>
+      <find>Dam</find>
+      <find>Wither</find>
+      <find>Death</find>
+      <find>Health</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -437,20 +436,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-02023" summary="Updated map">
-      <created>1523715170133</created>
-      <option name="number" value="02023" />
-      <option name="presentableId" value="LOCAL-02023" />
-      <option name="project" value="LOCAL" />
-      <updated>1523715170133</updated>
-    </task>
-    <task id="LOCAL-02024" summary="Updated decs">
-      <created>1523715329820</created>
-      <option name="number" value="02024" />
-      <option name="presentableId" value="LOCAL-02024" />
-      <option name="project" value="LOCAL" />
-      <updated>1523715329820</updated>
-    </task>
     <task id="LOCAL-02025" summary="Updated map">
       <created>1523715409602</created>
       <option name="number" value="02025" />
@@ -780,19 +765,33 @@
       <option name="project" value="LOCAL" />
       <updated>1523724945303</updated>
     </task>
-    <option name="localTasksCounter" value="2072" />
+    <task id="LOCAL-02072" summary="Fixed the bug with the items">
+      <created>1523726124347</created>
+      <option name="number" value="02072" />
+      <option name="presentableId" value="LOCAL-02072" />
+      <option name="project" value="LOCAL" />
+      <updated>1523726124347</updated>
+    </task>
+    <task id="LOCAL-02073" summary="Fixed the bug in item rarity">
+      <created>1523727089243</created>
+      <option name="number" value="02073" />
+      <option name="presentableId" value="LOCAL-02073" />
+      <option name="project" value="LOCAL" />
+      <updated>1523727089243</updated>
+    </task>
+    <option name="localTasksCounter" value="2074" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -832,8 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added the hermit scene" />
-    <MESSAGE value="Hermit should get its scene attached when Dan si added to the team" />
     <MESSAGE value="Reverted the movement speed" />
     <MESSAGE value="Touching up the scenes" />
     <MESSAGE value="Only health potions just now" />
@@ -857,7 +854,9 @@
     <MESSAGE value="Defined an item rarity matrix" />
     <MESSAGE value="Implemented the item rarity matrix" />
     <MESSAGE value="Debugging and testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debugging and testing" />
+    <MESSAGE value="Fixed the bug with the items" />
+    <MESSAGE value="Fixed the bug in item rarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the bug in item rarity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1124,20 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2320">
@@ -1154,15 +1139,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret column="368736" selection-start-column="368736" selection-end-column="368736" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        <state relative-caret-position="270">
+          <caret column="41477" selection-start-column="41477" selection-end-column="41477" />
         </state>
       </provider>
     </entry>
@@ -1173,10 +1151,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="342" column="57" lean-forward="true" selection-start-line="342" selection-start-column="57" selection-end-line="342" selection-end-column="57" />
+        <state relative-caret-position="790">
+          <caret line="380" selection-start-line="380" selection-end-line="380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="264" column="54" lean-forward="true" selection-start-line="264" selection-start-column="54" selection-end-line="264" selection-end-column="54" />
         </state>
       </provider>
     </entry>
