@@ -25,7 +25,7 @@ self.master.sound_engine.queue_sound(('burn', 0))""",
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
     {"name": "Snowball", "str_mod": 0.6, "effects":
-        """self.particle_engine.create_particle_spread('snowball', 45, {}, {}, 150, 15, 10, 10, 10)""",
+        """self.particle_engine.create_particle_spread('snowball', 15, {}, {}, 150, 15, 10, 10, 10)""",
      "energy": 4, "xp": 4},
     {"name": "Feathers", "str_mod": 0.9, "effects":
         """self.particle_engine.create_particle_spread('feather', 45, {}, {}, 150, 15, 10, 10, 10)""",
@@ -34,9 +34,9 @@ self.master.sound_engine.queue_sound(('burn', 0))""",
         """self.particle_engine.create_particle_spread('leaf', 45, {}, {}, 150, 15, 10, 10, 10)""",
      "energy": 13, "xp": 13},
     {"name": "Poison Spit", "str_mod": 1.7, "effects":
-        """self.particle_engine.create_particle_spread('venom', 45, {}, {}, 150, 15, 10, 10, 10)""",
+        """self.particle_engine.create_particle_spread('venom', 20, {}, {}, 150, 15, 10, 10, 10)""",
      "energy": 23, "xp": 23},
     {"name": "Citrus Spray", "str_mod": 1.2, "effects":
-        """self.particle_engine.create_particle_spread('lemon', 45, {}, {}, 150, 15, 10, 10, 10)""",
+        """self.particle_engine.create_particle_spread('lemon', 25, {}, {}, 150, 15, 10, 10, 10)""",
      "energy": 10, "xp": 10},
 ]
