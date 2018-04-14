@@ -31,6 +31,7 @@ tim = (206, 40, 40, 40)
 fisherman = (246, 40, 40, 40)
 pig = (286, 40, 42, 40)
 dan = (328, 40, 40, 40)
+hermit = (0, 84, 40, 40)
 
 beans = {}
 
@@ -60,7 +61,8 @@ def load_sprite_sheet():
         "tim": create_images(tim),
         "fisherman": create_images(fisherman),
         "pig": create_images(pig),
-        "dan": create_images(dan)
+        "dan": create_images(dan),
+        "hermit": create_images(hermit)
     }
 
 
