@@ -141,7 +141,12 @@ shake_moves = [
 positional_moves = [
     "Burn",
     "Freeze",
-    "Chili Chuck"
+    "Chili Chuck",
+    "Snowball",
+    "Feathers",
+    "Sneak Attack",
+    "Poison Spit",
+    "Citrus Spray"
 ]
 
 both_moves = [
