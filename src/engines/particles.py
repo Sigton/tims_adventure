@@ -141,8 +141,8 @@ class Particle:
 
     def realign(self, x, y):
 
-        self.rect.x = x + self.offset_x
-        self.rect.y = y + self.offset_y
+        self.rect.x = self.rect.x + x
+        self.rect.y = self.rect.y + y
 
     def __str__(self):
 
