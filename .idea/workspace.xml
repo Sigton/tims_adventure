@@ -5,10 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/saves/default_entities.json" line="42" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
-    </list>
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+            <state relative-caret-position="319">
+              <caret line="119" column="7" lean-forward="true" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -48,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -68,7 +65,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zTrue</find>
       <find>[False</find>
       <find>display_name</find>
       <find>upper</find>
@@ -98,6 +94,7 @@
       <find>&quot;id&quot;: 14</find>
       <find>chili&quot;</find>
       <find>dan</find>
+      <find>&quot;id&quot;: 19</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -188,8 +185,8 @@
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
-        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
   </component>
@@ -430,20 +427,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01967" summary="Didn't work">
-      <created>1523651274223</created>
-      <option name="number" value="01967" />
-      <option name="presentableId" value="LOCAL-01967" />
-      <option name="project" value="LOCAL" />
-      <updated>1523651274223</updated>
-    </task>
-    <task id="LOCAL-01968" summary="Added completion criteria for dan quest">
-      <created>1523651319423</created>
-      <option name="number" value="01968" />
-      <option name="presentableId" value="LOCAL-01968" />
-      <option name="project" value="LOCAL" />
-      <updated>1523651319423</updated>
     </task>
     <task id="LOCAL-01969" summary="Added a refresh function for healing display">
       <created>1523651436297</created>
@@ -774,7 +757,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523714198129</updated>
     </task>
-    <option name="localTasksCounter" value="2016" />
+    <task id="LOCAL-02016" summary="Fixed the hermits house">
+      <created>1523714360103</created>
+      <option name="number" value="02016" />
+      <option name="presentableId" value="LOCAL-02016" />
+      <option name="project" value="LOCAL" />
+      <updated>1523714360103</updated>
+    </task>
+    <task id="LOCAL-02017" summary="Added the hermit bean to default entities">
+      <created>1523714490484</created>
+      <option name="number" value="02017" />
+      <option name="presentableId" value="LOCAL-02017" />
+      <option name="project" value="LOCAL" />
+      <updated>1523714490484</updated>
+    </task>
+    <option name="localTasksCounter" value="2018" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -826,8 +823,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Swapped some of the pebbles for bigger rocks" />
-    <MESSAGE value="Made the big rocks solid" />
     <MESSAGE value="Added some buckets" />
     <MESSAGE value="Fixed the buckets" />
     <MESSAGE value="Fixed a pebble" />
@@ -851,7 +846,9 @@
     <MESSAGE value="Added hermit bean spritesheet data" />
     <MESSAGE value="Added hermit bean metadata" />
     <MESSAGE value="Updated map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
+    <MESSAGE value="Fixed the hermits house" />
+    <MESSAGE value="Added the hermit bean to default entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the hermit bean to default entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1160,17 +1157,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="184" column="78" selection-start-line="184" selection-start-column="78" selection-end-line="184" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="119" column="7" lean-forward="true" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
         </state>
       </provider>
     </entry>
