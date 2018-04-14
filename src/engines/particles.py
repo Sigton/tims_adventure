@@ -144,6 +144,10 @@ class Particle:
         self.rect.x = x + self.offset_x
         self.rect.y = y + self.offset_y
 
+    def __str__(self):
+
+        return self.__class__.__name__
+
 
 class FireParticle(Particle):
 
