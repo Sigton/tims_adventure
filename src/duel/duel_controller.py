@@ -186,7 +186,8 @@ class DuelController:
 
             elif event.type == constants.MUSIC_END_EVENT:
 
-                pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(5, 10)*1000)
+                if not self.master.sound_engine.playing_sound("music"):
+                    pygame.time.set_timer(constants.MUSIC_START_EVENT, random.randint(5, 10)*1000)
 
             elif event.type == KEYUP:
 

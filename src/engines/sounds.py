@@ -57,6 +57,7 @@ class SoundEngine:
                                "music2": self.music_channel,
                                "music3": self.music_channel,
                                "music4": self.music_channel,
+                               "music": self.music_channel,
                                "punch": self.punch_channel,
                                "burn": self.burn_channel,
                                "footstep": self.footstep_channel,
@@ -69,6 +70,7 @@ class SoundEngine:
                                "speech2": self.speech_channel,
                                "speech3": self.speech_channel,
                                "speech4": self.speech_channel,
+                               "speech": self.speech_channel,
                                "pickup": self.pickup_channel}
 
         self.sound_linkup = {"music1": self.music1,
