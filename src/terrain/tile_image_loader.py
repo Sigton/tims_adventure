@@ -138,7 +138,8 @@ spruce_tree = (864, 96, 116, 192)
 boardwalk_poles_1 = (960, 0, 96, 96)
 boardwalk_poles_2 = (240, 240, 48, 96)
 instructions = (1008, 96, 96, 144)
-path_dot = (336, 96, 48, 48)
+path_dot = (336, 96, 48, 48),
+no_spawn_ground = (336, 0, 48, 48)
 
 
 # Indexing this array by a tiles' ID will
@@ -165,7 +166,7 @@ tiles = [generic_ground, blue_ground, path_1,
          sand_shore_7, sand_shore_8, water, walkable_water,
          boardwalk_1, boardwalk_2, spruce_tree,
          boardwalk_poles_1, boardwalk_poles_2, instructions,
-         path_dot]
+         path_dot, no_spawn_ground]
 images = {}
 
 sprite_sheet = None

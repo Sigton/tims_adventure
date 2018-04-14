@@ -85,4 +85,5 @@ tile_colors = {15724527: "0000",  # Generic ground
                6514176: "0078",  # Boardwalk Poles 2
                255: "0079",  # Instructions
                16711756: "0080",  # Path Dot
+               24831: "0081",  # No Spawn Ground
                }
