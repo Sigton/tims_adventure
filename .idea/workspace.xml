@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/map.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,20 +49,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="640">
-              <caret line="320" column="43" selection-start-line="320" selection-start-column="43" selection-end-line="320" selection-end-column="43" />
+              <caret line="320" column="46" selection-start-line="320" selection-start-column="46" selection-end-line="320" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="147" column="18" lean-forward="true" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+            <state relative-caret-position="179">
+              <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -207,8 +207,8 @@
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
-        <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
   </component>
@@ -452,27 +452,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02052" summary="Added new item class">
-      <created>1523721836309</created>
-      <option name="number" value="02052" />
-      <option name="presentableId" value="LOCAL-02052" />
-      <option name="project" value="LOCAL" />
-      <updated>1523721836309</updated>
-    </task>
-    <task id="LOCAL-02053" summary="Added life potion effect">
-      <created>1523721873751</created>
-      <option name="number" value="02053" />
-      <option name="presentableId" value="LOCAL-02053" />
-      <option name="project" value="LOCAL" />
-      <updated>1523721873751</updated>
-    </task>
-    <task id="LOCAL-02054" summary="Debugging">
-      <created>1523721980408</created>
-      <option name="number" value="02054" />
-      <option name="presentableId" value="LOCAL-02054" />
-      <option name="project" value="LOCAL" />
-      <updated>1523721980409</updated>
     </task>
     <task id="LOCAL-02055" summary="Added another new potion icon">
       <created>1523722223000</created>
@@ -796,17 +775,38 @@
       <option name="project" value="LOCAL" />
       <updated>1523735913512</updated>
     </task>
-    <option name="localTasksCounter" value="2101" />
+    <task id="LOCAL-02101" summary="Implemented formatting of moves that use both particles and shaking">
+      <created>1523736025230</created>
+      <option name="number" value="02101" />
+      <option name="presentableId" value="LOCAL-02101" />
+      <option name="project" value="LOCAL" />
+      <updated>1523736025231</updated>
+    </task>
+    <task id="LOCAL-02102" summary="Fixed bug">
+      <created>1523736190201</created>
+      <option name="number" value="02102" />
+      <option name="presentableId" value="LOCAL-02102" />
+      <option name="project" value="LOCAL" />
+      <updated>1523736190201</updated>
+    </task>
+    <task id="LOCAL-02103" summary="Added moves to positional moves list">
+      <created>1523736243626</created>
+      <option name="number" value="02103" />
+      <option name="presentableId" value="LOCAL-02103" />
+      <option name="project" value="LOCAL" />
+      <updated>1523736243626</updated>
+    </task>
+    <option name="localTasksCounter" value="2104" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -848,9 +848,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added new tile to terrain.png" />
-    <MESSAGE value="Added tile metadata" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Changed spawn rates" />
     <MESSAGE value="Working on a get attack damage function" />
     <MESSAGE value="Finished get_attack_damage function" />
@@ -873,7 +870,10 @@
     <MESSAGE value="Adjusted particle lifetimes" />
     <MESSAGE value="Implemented new moves onto the beans" />
     <MESSAGE value="Adding a shake to sneak attack as well as particles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a shake to sneak attack as well as particles" />
+    <MESSAGE value="Implemented formatting of moves that use both particles and shaking" />
+    <MESSAGE value="Fixed bug" />
+    <MESSAGE value="Added moves to positional moves list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added moves to positional moves list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1176,17 +1176,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="147" column="18" lean-forward="true" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
-          <caret line="320" column="43" selection-start-line="320" selection-start-column="43" selection-end-line="320" selection-end-column="43" />
+          <caret line="320" column="46" selection-start-line="320" selection-start-column="46" selection-end-line="320" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
         </state>
       </provider>
     </entry>
