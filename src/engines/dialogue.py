@@ -233,6 +233,8 @@ class DialogueController:
         [component.draw(display) for component in self.components]
         [text.draw(display) for text in self.text]
 
+        self.master.particle_engine.draw(display)
+
     def update_fisherman(self):
 
         e = self.master.chunk_controller.locate_entity(13)

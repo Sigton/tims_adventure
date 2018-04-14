@@ -368,6 +368,8 @@ class DuelController:
         [bar.draw(display) for bar in self.progress_bars]
         [label.draw(display) for label in self.text]
 
+        self.master.particle_engine.draw(display)
+
         if self.hud_open:
             self.hud.draw(display)
 

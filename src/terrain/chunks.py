@@ -566,6 +566,8 @@ class ChunkController:
 
         [entity.draw(display) for entity in self.assorted_entities]
 
+        self.master.particle_engine.draw(display)
+
         if self.hud_on:
             self.hud.draw(display)
             if self.hud.get_component("backing").hud_open:

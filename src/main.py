@@ -143,8 +143,6 @@ class Main:
 
             self.controllers[self.game_mode].draw(self.display)
 
-            self.particle_engine.draw(self.display)
-
             if self.fade > self.loading_screen_time//2:
                 self.fade_screen.set_opacity(int((((self.loading_screen_time//2) -
                                                    (self.fade-(self.loading_screen_time//2)))
