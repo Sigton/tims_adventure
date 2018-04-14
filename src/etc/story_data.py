@@ -172,6 +172,24 @@ someone on the trail.""", 1)
         ("Dermot?", 0),
         ("He's a bit of a hermit, he lives in the forest. We should go check if he's all okay.", 1),
         ("Okay, let's go!", 0)
+    ],
+    "hermit": [
+        ("Mr Dermot?", 0),
+        ("What have you came here to bother me with.", 1),
+        ("We were just stopping by to see if you're alright.", 0),
+        ("If I'm alright? Well of course I'm alright! Why wouldn't I be alright?", 1),
+        ("""Well, there were some evil beans that came from this direction and we were wondering if they had done 
+anything to you""", 0),
+        ("I'm too crabbit already for any of those horrible things to have any effect on me.", 1),
+        ("Ah well, that's good I suppose.", 0),
+        ("""Yes, now if you wouldn't mind could I have some peace and quiet? I didn't move to this forest just to have 
+you pesky kids come knocking on my door to ask useless questions all day!""", 1),
+        ("One moment, sir. Do you know perhaps where the evil beans came from?", 0),
+        ("I don't know and neither do I wan't to know! Ask the wizard, he'll know!", 1),
+        ("Wizard? Where is this wizard?", 0),
+        ("In a lonely and isolated location, just like me. He resides over the hidden lake. Good luck finding it.", 1),
+        ("Thank you very much.", 0),
+        ("Now go away, I don't want no more of your nonsense business.", 1)
     ]
 }
 
