@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +26,7 @@
               <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="475">
-                    <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+                    <caret line="88" selection-start-line="88" selection-end-line="88" />
                   </state>
                 </provider>
               </entry>
@@ -37,7 +35,7 @@
               <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="680">
-                    <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+                    <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
                   </state>
                 </provider>
               </entry>
@@ -61,8 +59,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+            <state relative-caret-position="199">
+              <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -71,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -318,7 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.dec_generator">
     <configuration name="brain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bean_rpg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -452,13 +450,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02055" summary="Added another new potion icon">
-      <created>1523722223000</created>
-      <option name="number" value="02055" />
-      <option name="presentableId" value="LOCAL-02055" />
-      <option name="project" value="LOCAL" />
-      <updated>1523722223000</updated>
     </task>
     <task id="LOCAL-02056" summary="Added item metadata">
       <created>1523722259893</created>
@@ -796,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523736243626</updated>
     </task>
-    <option name="localTasksCounter" value="2104" />
+    <task id="LOCAL-02104" summary="Updated map">
+      <created>1523736575154</created>
+      <option name="number" value="02104" />
+      <option name="presentableId" value="LOCAL-02104" />
+      <option name="project" value="LOCAL" />
+      <updated>1523736575154</updated>
+    </task>
+    <option name="localTasksCounter" value="2105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -848,7 +846,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed spawn rates" />
     <MESSAGE value="Working on a get attack damage function" />
     <MESSAGE value="Finished get_attack_damage function" />
     <MESSAGE value="Adjusted the function" />
@@ -873,7 +870,8 @@
     <MESSAGE value="Implemented formatting of moves that use both particles and shaking" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Added moves to positional moves list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added moves to positional moves list" />
+    <MESSAGE value="Updated map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,21 +1156,21 @@
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1185,8 +1183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+        <state relative-caret-position="199">
+          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
         </state>
       </provider>
     </entry>
