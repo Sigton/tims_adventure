@@ -33,8 +33,8 @@ class ParticleEngine:
             "snowball": SnowballParticle,
             "feather": FeatherParticle,
             "leaf": LeafParticle,
-            "Venom": VenomParticle,
-            "Lemon": LemonParticle
+            "venom": VenomParticle,
+            "lemon": LemonParticle
         }
 
         self.scrolling_particles = [
