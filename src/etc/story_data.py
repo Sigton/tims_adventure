@@ -206,7 +206,8 @@ quests = {
     "learn_fight": "Learn to fight!",
     "old_man2": "Talk to the elder villager.",
     "dan": "Talk to Dan.",
-    "hermit": "Find Dermot the Hermit."
+    "hermit": "Find Dermot the Hermit.",
+    "hidden_lake": "Find the hidden lake."
 }
 
 
@@ -220,7 +221,8 @@ completion_criteria = {
     "learn_fight": ["duel/14"],
     "old_man2": ["scene/old_man2"],
     "dan": ["scene/dan"],
-    "hermit": ["scene/hermit"]
+    "hermit": ["scene/hermit"],
+    "hidden_lake": ["scene/lake_warning"]
 }
 
 
@@ -234,5 +236,6 @@ quest_path = {
     "learn_fight": ["old_man2"],
     "old_man2": ["heading_north"],
     "dan": ["hermit"],
-    "hermit": []
+    "hermit": ["hidden_lake"],
+    "hidden_lake": []
 }
