@@ -1,8 +1,7 @@
 import pygame
 
 from src.etc import constants
-from src.entities import bean_image_loader, icons, shadows
-from src.entities.entity_meta import entity_data
+from src.entities import bean_image_loader, icons, shadows, entity_meta
 from src.hud import hud_widgets
 
 import random
@@ -25,16 +24,16 @@ class EntityMeta:
 
             self.bean = self.parent.bean
 
-            self.max_hp = entity_data[self.bean]["max_hp"]
+            self.max_hp = entity_meta.entity_data[self.bean]["max_hp"]
             self.hp = self.max_hp
 
             self.level = 1
             self.xp = 0
 
-            self.energy = entity_data[self.bean]["energy"]
+            self.energy = entity_meta.entity_data[self.bean]["energy"]
 
-            self.moves = entity_data[self.bean]["moves"]
-            self.attack = entity_data[self.bean]["attack"]
+            self.moves = entity_meta.entity_data[self.bean]["moves"]
+            self.attack = entity_meta.entity_data[self.bean]["attack"]
 
             self.images = self.parent.images
 
@@ -43,7 +42,7 @@ class EntityMeta:
 
             self.evil = True
 
-            self.display_name = entity_data[self.bean]["display_name"]
+            self.display_name = entity_meta.entity_data[self.bean]["display_name"]
 
             self.id = "0000"
         else:
@@ -98,6 +97,10 @@ class EntityMeta:
     def get_level_up_threshold(self):
 
         return int(constants.level_up_base * (constants.level_up_multiplier ** self.level))
+
+    def get_attack_damage(self, move):
+
+        pass
 
 
 class RandomBean:
@@ -347,26 +350,26 @@ def create_json_from_entity(entity):
 
 def create_random_entity(pos, entity_id):
 
-    bean = random.choice(list(entity_data.keys()))
+    bean = random.choice(list(entity_meta.entity_data.keys()))
 
     while bean in constants.no_spawn_beans:
-        bean = random.choice(list(entity_data.keys()))
+        bean = random.choice(list(entity_meta.entity_data.keys()))
 
     return {
         "pos": pos,
         "meta": {
             "bean": bean,
-            "max_hp": entity_data[bean]["max_hp"],
-            "moves": entity_data[bean]["moves"],
-            "attack": entity_data[bean]["attack"],
-            "energy": entity_data[bean]["energy"],
-            "hp": entity_data[bean]["max_hp"],
+            "max_hp": entity_meta.entity_data[bean]["max_hp"],
+            "moves": entity_meta.entity_data[bean]["moves"],
+            "attack": entity_meta.entity_data[bean]["attack"],
+            "energy": entity_meta.entity_data[bean]["energy"],
+            "hp": entity_meta.entity_data[bean]["max_hp"],
             "xp": 0,
             "level": 1,
             "interaction": None,
             "important": False,
             "evil": True,
-            "display_name": entity_data[bean]["display_name"],
+            "display_name": entity_meta.entity_data[bean]["display_name"],
             "id": entity_id
         }
     }
