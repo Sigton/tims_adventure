@@ -33,7 +33,8 @@ class ParticleEngine:
             "snowball": SnowballParticle,
             "feather": FeatherParticle,
             "leaf": LeafParticle,
-            "Venom": VenomParticle
+            "Venom": VenomParticle,
+            "Lemon": LemonParticle
         }
 
         self.scrolling_particles = [
@@ -224,3 +225,11 @@ class VenomParticle(Particle):
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
+
+class LemonParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image_src_alpha(0, 34, 15, 16)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
