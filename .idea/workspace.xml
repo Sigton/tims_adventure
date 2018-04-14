@@ -35,8 +35,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
+            <state relative-caret-position="579">
+              <caret line="204" lean-forward="true" selection-start-line="204" selection-end-line="204" />
             </state>
           </provider>
         </entry>
@@ -415,27 +415,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-01939" summary="Set a reference from story tracker back to main">
-      <created>1523642274654</created>
-      <option name="number" value="01939" />
-      <option name="presentableId" value="LOCAL-01939" />
-      <option name="project" value="LOCAL" />
-      <updated>1523642274654</updated>
-    </task>
-    <task id="LOCAL-01940" summary="Slowed the player back down">
-      <created>1523642471185</created>
-      <option name="number" value="01940" />
-      <option name="presentableId" value="LOCAL-01940" />
-      <option name="project" value="LOCAL" />
-      <updated>1523642471185</updated>
-    </task>
-    <task id="LOCAL-01941" summary="Turned down speech volume">
-      <created>1523643785459</created>
-      <option name="number" value="01941" />
-      <option name="presentableId" value="LOCAL-01941" />
-      <option name="project" value="LOCAL" />
-      <updated>1523643785459</updated>
-    </task>
     <task id="LOCAL-01942" summary="Some beans had level 100 that shouldn't have">
       <created>1523643827483</created>
       <option name="number" value="01942" />
@@ -758,19 +737,40 @@
       <option name="project" value="LOCAL" />
       <updated>1523705939851</updated>
     </task>
-    <option name="localTasksCounter" value="1988" />
+    <task id="LOCAL-01988" summary="Fixed the pebbles that need fixed">
+      <created>1523706272964</created>
+      <option name="number" value="01988" />
+      <option name="presentableId" value="LOCAL-01988" />
+      <option name="project" value="LOCAL" />
+      <updated>1523706272964</updated>
+    </task>
+    <task id="LOCAL-01989" summary="Swapped some of the pebbles for bigger rocks">
+      <created>1523706309202</created>
+      <option name="number" value="01989" />
+      <option name="presentableId" value="LOCAL-01989" />
+      <option name="project" value="LOCAL" />
+      <updated>1523706309202</updated>
+    </task>
+    <task id="LOCAL-01990" summary="Made the big rocks solid">
+      <created>1523706790808</created>
+      <option name="number" value="01990" />
+      <option name="presentableId" value="LOCAL-01990" />
+      <option name="project" value="LOCAL" />
+      <updated>1523706790808</updated>
+    </task>
+    <option name="localTasksCounter" value="1991" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -810,9 +810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Can't duel items anymore" />
-    <MESSAGE value="Dan gets added to the team" />
-    <MESSAGE value="Only item and retreat button click in duel controller" />
     <MESSAGE value="Fixing typos" />
     <MESSAGE value="Hopefully Dan is fixed" />
     <MESSAGE value="Tryna fix the music bug" />
@@ -835,7 +832,10 @@
     <MESSAGE value="Add some nice pebbles to the beach" />
     <MESSAGE value="More pebbles" />
     <MESSAGE value="Should be the last of the pebbeles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Should be the last of the pebbeles" />
+    <MESSAGE value="Fixed the pebbles that need fixed" />
+    <MESSAGE value="Swapped some of the pebbles for bigger rocks" />
+    <MESSAGE value="Made the big rocks solid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the big rocks solid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1153,8 +1153,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        <state relative-caret-position="579">
+          <caret line="204" lean-forward="true" selection-start-line="204" selection-end-line="204" />
         </state>
       </provider>
     </entry>
