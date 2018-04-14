@@ -292,7 +292,7 @@ class DeathPotion(Item):
 
     def __init__(self, x, y):
 
-        Item.__init__(self, icons.sprite_sheet.get_image(183, 0, 48, 48), x, y)
+        Item.__init__(self, icons.sprite_sheet.get_image(189, 0, 48, 48), x, y)
 
 
 items = {

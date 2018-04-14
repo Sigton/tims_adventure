@@ -245,7 +245,7 @@ item_images = {
     "HealthPotion": (94, 11, 32, 32),
     "LifePotion": (126, 11, 32, 32),
     "WitherPotion": (159, 11, 32, 32),
-    "DeathPotion": (191, 11, 32, 32)
+    "DeathPotion": (197, 11, 32, 32)
 }
 
 quest_images = {
