@@ -7,10 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/duel/duel_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/duel/duel_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/terrain/chunks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/terrain/chunks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_decs.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_decs.json.gz" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,14 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
+            <state relative-caret-position="150">
+              <caret line="209" column="44" lean-forward="true" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -120,8 +126,8 @@
       <find>self.completed_quests</find>
       <find>display_</find>
       <find>id</find>
-      <find>id&quot;: &quot;1000</find>
-      <find>id&quot;: 18473</find>
+      <find />
+      <find />
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -138,9 +144,9 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find>&quot;level&quot;: 100</find>
+      <find />
       <find>lair</find>
-      <find>&quot;id&quot;: 14</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -159,7 +165,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace>: create_images(</replace>
+      <replace />
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -172,7 +178,7 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace>&quot;level&quot;: 1</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -473,20 +479,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-01954" summary="Created a last song attribute in main">
-      <created>1523645361600</created>
-      <option name="number" value="01954" />
-      <option name="presentableId" value="LOCAL-01954" />
-      <option name="project" value="LOCAL" />
-      <updated>1523645361600</updated>
-    </task>
-    <task id="LOCAL-01955" summary="Same song shouldn't play twice in a row">
-      <created>1523645479147</created>
-      <option name="number" value="01955" />
-      <option name="presentableId" value="LOCAL-01955" />
-      <option name="project" value="LOCAL" />
-      <updated>1523645479147</updated>
     </task>
     <task id="LOCAL-01956" summary="Fixed bug">
       <created>1523645825887</created>
@@ -817,12 +809,25 @@
       <option name="project" value="LOCAL" />
       <updated>1523710631079</updated>
     </task>
-    <option name="localTasksCounter" value="2003" />
+    <task id="LOCAL-02003" summary="Particle drawing is now handled by the individual controllers">
+      <created>1523711185299</created>
+      <option name="number" value="02003" />
+      <option name="presentableId" value="LOCAL-02003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523711185299</updated>
+    </task>
+    <task id="LOCAL-02004" summary="Moved tree off path">
+      <created>1523711640357</created>
+      <option name="number" value="02004" />
+      <option name="presentableId" value="LOCAL-02004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523711640357</updated>
+    </task>
+    <option name="localTasksCounter" value="2005" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -869,8 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated decs" />
-    <MESSAGE value="Updated map" />
     <MESSAGE value="Fixed an issue on the map" />
     <MESSAGE value="Fixing a possible quest skip" />
     <MESSAGE value="Added new quest update in story tracker" />
@@ -894,7 +897,9 @@
     <MESSAGE value="Calling particle engine realign from chunk controller" />
     <MESSAGE value="Fixed particle scrolling" />
     <MESSAGE value="Nicer way of writing it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nicer way of writing it" />
+    <MESSAGE value="Particle drawing is now handled by the individual controllers" />
+    <MESSAGE value="Moved tree off path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved tree off path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1089,13 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="88" column="80" lean-forward="true" selection-start-line="88" selection-start-column="80" selection-end-line="88" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1209,11 +1207,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="235" column="49" selection-start-line="235" selection-start-column="49" selection-end-line="235" selection-end-column="49" />
+        <state relative-caret-position="150">
+          <caret line="209" column="44" lean-forward="true" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
         </state>
       </provider>
     </entry>
