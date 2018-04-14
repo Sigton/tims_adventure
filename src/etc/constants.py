@@ -237,7 +237,8 @@ drinking_items = [
 item_images = {
     "EnlightenmentPotion": (62, 11, 32, 32),
     "HealthPotion": (94, 11, 32, 32),
-    "LifePotion": (126, 11, 32, 32)
+    "LifePotion": (126, 11, 32, 32),
+    "WitherPotion": (159, 11, 32, 32)
 }
 
 quest_images = {
