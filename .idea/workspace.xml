@@ -8,7 +8,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,25 +18,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="795">
-                    <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -62,8 +42,8 @@
       <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="187" column="14" selection-start-line="187" selection-start-column="14" selection-end-line="187" selection-end-column="14" />
+            <state relative-caret-position="810">
+              <caret line="212" column="77" selection-start-line="212" selection-start-column="77" selection-end-line="212" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -445,20 +425,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
     </task>
-    <task id="LOCAL-02037" summary="And tile metadata">
-      <created>1523717323802</created>
-      <option name="number" value="02037" />
-      <option name="presentableId" value="LOCAL-02037" />
-      <option name="project" value="LOCAL" />
-      <updated>1523717323802</updated>
-    </task>
-    <task id="LOCAL-02038" summary="Added some path dots">
-      <created>1523717400357</created>
-      <option name="number" value="02038" />
-      <option name="presentableId" value="LOCAL-02038" />
-      <option name="project" value="LOCAL" />
-      <updated>1523717400357</updated>
-    </task>
     <task id="LOCAL-02039" summary="Moved a bucket">
       <created>1523717424789</created>
       <option name="number" value="02039" />
@@ -788,7 +754,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523731982472</updated>
     </task>
-    <option name="localTasksCounter" value="2086" />
+    <task id="LOCAL-02086" summary="Added snowball particle">
+      <created>1523733019970</created>
+      <option name="number" value="02086" />
+      <option name="presentableId" value="LOCAL-02086" />
+      <option name="project" value="LOCAL" />
+      <updated>1523733019970</updated>
+    </task>
+    <task id="LOCAL-02087" summary="Added feather particle">
+      <created>1523733254751</created>
+      <option name="number" value="02087" />
+      <option name="presentableId" value="LOCAL-02087" />
+      <option name="project" value="LOCAL" />
+      <updated>1523733254751</updated>
+    </task>
+    <option name="localTasksCounter" value="2088" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -840,8 +820,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed the image" />
-    <MESSAGE value="Spawn rate too high" />
     <MESSAGE value="Added new potion to spritesheet" />
     <MESSAGE value="Added item metadata" />
     <MESSAGE value="Added death potion class" />
@@ -865,7 +843,9 @@
     <MESSAGE value="Used wrong attribute name" />
     <MESSAGE value="Converting to an integer" />
     <MESSAGE value="Implemented new function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented new function" />
+    <MESSAGE value="Added snowball particle" />
+    <MESSAGE value="Added feather particle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feather particle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,13 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1172,10 +1145,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="187" column="14" selection-start-line="187" selection-start-column="14" selection-end-line="187" selection-end-column="14" />
+        <state relative-caret-position="810">
+          <caret line="212" column="77" selection-start-line="212" selection-start-column="77" selection-end-line="212" selection-end-column="77" />
         </state>
       </provider>
     </entry>
