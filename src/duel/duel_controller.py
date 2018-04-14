@@ -256,6 +256,9 @@ class DuelController:
             if self.enemy.energy - moves[self.enemy.meta.moves[1]]["energy"] < 0:
                 possible_moves.remove(1)
 
+            if not len(possible_moves):
+                self.end_duel("Player", True)
+
             move_no = self.get_opponent_move()
 
             self.player.meta.damage(self.enemy.meta.get_attack_damage(move_no))
