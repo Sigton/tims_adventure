@@ -165,7 +165,13 @@ someone on the trail.""", 1)
         ("Are you sure? It's a long way from here.", 0),
         ("""Yes. There's no future for me here. I'd just become a farmer or a fisherman like everyone else. I want to do
  something special!""", 1),
-        ("Well, welcome to the adventure crew, Dan!", 0)
+        ("Well, welcome to the adventure crew, Dan!", 0),
+        ("Where are we going next?", 1),
+        ("Erm, I'm not sure. Where did these evil beans come from?", 0),
+        ("They came from the north-west... Oh no! That's where Dermot lives!", 1),
+        ("Dermot?", 0),
+        ("He's a bit of a hermit, he lives in the forest. We should go check if he's all okay.", 1),
+        ("Okay, let's go!", 0)
     ]
 }
 
