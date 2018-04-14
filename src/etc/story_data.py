@@ -221,7 +221,8 @@ quests = {
     "old_man2": "Talk to the elder villager.",
     "dan": "Talk to Dan.",
     "hermit": "Find Dermot the Hermit.",
-    "hidden_lake": "Find the hidden lake."
+    "hidden_lake": "Find the hidden lake.",
+    "defend_wizard": "Defend the wizard!"
 }
 
 
@@ -236,7 +237,8 @@ completion_criteria = {
     "old_man2": ["scene/old_man2"],
     "dan": ["scene/dan"],
     "hermit": ["scene/hermit"],
-    "hidden_lake": ["scene/lake_warning"]
+    "hidden_lake": ["scene/lake_warning"],
+    "defend_wizard": []
 }
 
 
@@ -251,5 +253,6 @@ quest_path = {
     "old_man2": ["heading_north"],
     "dan": ["hermit"],
     "hermit": ["hidden_lake"],
-    "hidden_lake": []
+    "hidden_lake": ["defend_wizard"],
+    "defend_wizard": []
 }
