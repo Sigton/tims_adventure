@@ -339,8 +339,8 @@ def create_json_from_entity(entity):
         }
     else:
         return {
-            "pos": [entity.rect.x // constants.tile_w,
-                    entity.rect.y // constants.tile_h],
+            "pos": [entity.offset_x // constants.tile_w,
+                    entity.offset_y // constants.tile_h],
             "item": entity.__class__.__name__
         }
 
