@@ -34,7 +34,14 @@ class Main:
         self.display = pygame.display.set_mode(constants.DISPLAY_SIZE)
 
         # Set the title on the window
-        pygame.display.set_caption("Bean RPG")
+        pygame.display.set_caption("Tim's Adventure")
+
+        icon_img = pygame.image.load("src/resources/icon.ico")
+
+        icon = pygame.Surface([32, 32], flags=pygame.SRCALPHA)
+        icon = icon.convert_alpha()
+        icon.blit(icon_img, (0, 0))
+        pygame.display.set_icon(icon)
 
         self.clock = pygame.time.Clock()
 
