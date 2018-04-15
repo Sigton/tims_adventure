@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -49,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="124" column="77" lean-forward="true" selection-start-line="124" selection-start-column="77" selection-end-line="124" selection-end-column="77" />
+            <state relative-caret-position="930">
+              <caret line="152" column="114" selection-start-line="152" selection-start-column="114" selection-end-line="152" selection-end-column="114" />
             </state>
           </provider>
         </entry>
@@ -186,11 +187,11 @@
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
-        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
+        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
   </component>
@@ -431,20 +432,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02116" summary="Added more evil beans woo">
-      <created>1523739488009</created>
-      <option name="number" value="02116" />
-      <option name="presentableId" value="LOCAL-02116" />
-      <option name="project" value="LOCAL" />
-      <updated>1523739488009</updated>
-    </task>
-    <task id="LOCAL-02117" summary="Moved 2 into another chunk">
-      <created>1523739518485</created>
-      <option name="number" value="02117" />
-      <option name="presentableId" value="LOCAL-02117" />
-      <option name="project" value="LOCAL" />
-      <updated>1523739518485</updated>
     </task>
     <task id="LOCAL-02118" summary="Editing the evil beans">
       <created>1523739903038</created>
@@ -775,7 +762,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523788710448</updated>
     </task>
-    <option name="localTasksCounter" value="2165" />
+    <task id="LOCAL-02165" summary="Improved look of a quest icon">
+      <created>1523789000555</created>
+      <option name="number" value="02165" />
+      <option name="presentableId" value="LOCAL-02165" />
+      <option name="project" value="LOCAL" />
+      <updated>1523789000555</updated>
+    </task>
+    <task id="LOCAL-02166" summary="Making the evil beans more interesting">
+      <created>1523789140146</created>
+      <option name="number" value="02166" />
+      <option name="presentableId" value="LOCAL-02166" />
+      <option name="project" value="LOCAL" />
+      <updated>1523789140146</updated>
+    </task>
+    <option name="localTasksCounter" value="2167" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -827,8 +828,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added sound effects to the moves" />
-    <MESSAGE value="Added a new scene" />
     <MESSAGE value="Another way to complete the first quest" />
     <MESSAGE value="Added another scene" />
     <MESSAGE value="Added the new scenes onto beans in the village" />
@@ -852,7 +851,9 @@
     <MESSAGE value="Added new quest" />
     <MESSAGE value="Defined new quest icon" />
     <MESSAGE value="Added a quest update to set up wizard dialogue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a quest update to set up wizard dialogue" />
+    <MESSAGE value="Improved look of a quest icon" />
+    <MESSAGE value="Making the evil beans more interesting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making the evil beans more interesting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1161,17 +1162,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="124" column="77" lean-forward="true" selection-start-line="124" selection-start-column="77" selection-end-line="124" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="152" column="114" selection-start-line="152" selection-start-column="114" selection-end-line="152" selection-end-column="114" />
         </state>
       </provider>
     </entry>
