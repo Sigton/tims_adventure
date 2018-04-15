@@ -374,6 +374,7 @@ class ChunkController:
                     if entity.__class__.__name__ not in constants.items:
 
                         if entity.meta.to_delete and entity.meta.id not in constants.entity_delete_exceptions:
+                            self.remove_stat_panel(entity)
                             self.master.particle_engine.create_particle_spread(
                                 'smoke', 12, entity.rect.centerx, entity.rect.centery, 35, 10, 0, 50, 10
                             )
