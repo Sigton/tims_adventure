@@ -158,7 +158,7 @@ class FireParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(0, 0, 20, 20)
+        self.image = particle_sprite_sheet.get_image_src_alpha(0, 0, 40, 40)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -167,7 +167,7 @@ class SnowParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(20, 0, 16, 16)
+        self.image = particle_sprite_sheet.get_image_src_alpha(40, 0, 32, 32)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -176,7 +176,7 @@ class ChiliParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(36, 0, 20, 20)
+        self.image = particle_sprite_sheet.get_image_src_alpha(72, 0, 40, 40)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -185,7 +185,7 @@ class SmokeParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(0, 20, 10, 10)
+        self.image = particle_sprite_sheet.get_image_src_alpha(0, 40, 20, 20)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -194,7 +194,7 @@ class SnowballParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(44, 17, 12, 12)
+        self.image = particle_sprite_sheet.get_image_src_alpha(88, 34, 24, 24)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -203,7 +203,7 @@ class FeatherParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(37, 29, 19, 19)
+        self.image = particle_sprite_sheet.get_image_src_alpha(74, 58, 38, 38)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -212,7 +212,7 @@ class LeafParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(27, 32, 10, 18)
+        self.image = particle_sprite_sheet.get_image_src_alpha(54, 64, 20, 36)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -221,7 +221,7 @@ class VenomParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(17, 33, 10, 17)
+        self.image = particle_sprite_sheet.get_image_src_alpha(34, 66, 20, 34)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
@@ -230,6 +230,6 @@ class LemonParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(0, 34, 15, 16)
+        self.image = particle_sprite_sheet.get_image_src_alpha(0, 68, 30, 32)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
