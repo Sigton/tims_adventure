@@ -756,6 +756,7 @@ class HealingDisplay(ItemSelect):
         ItemSelect.__init__(self, master, controller, x, y)
 
         self.id = "healing_display"
+        self.player_ref = player
         self.player = player.beans[self.controller.get_component("health_display").active_bean_stat]
 
         self.refresh()
@@ -800,7 +801,7 @@ class HealingDisplay(ItemSelect):
                 self.selected_item = (self.selected_item + 1) % len(self.items)
 
             elif e.key == K_SPACE:
-
+                self.player = self.player_ref.beans[self.controller.get_component("health_display").active_bean_stat]
                 self.master.master.story_tracker.use_item(self.items[self.selected_item][0], 1)
                 exec(entity_meta.item_effects[self.items[self.selected_item][0]])
                 if self.items[self.selected_item][0] in constants.drinking_items:
