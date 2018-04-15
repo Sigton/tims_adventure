@@ -45,7 +45,9 @@ class EntityMeta:
 
             self.display_name = entity_meta.entity_data[self.bean]["display_name"]
 
-            self.id = "0000"
+            self.id = 0
+
+            self.to_delete = False
         else:
             self.bean = json_data["bean"]
 
@@ -68,6 +70,8 @@ class EntityMeta:
             self.display_name = json_data["display_name"]
 
             self.id = json_data["id"]
+
+            self.to_delete = json_data["to_delete"]
 
     def damage(self, amount):
 
@@ -338,7 +342,8 @@ def create_json_from_entity(entity):
                 "important": entity.meta.important,
                 "evil": entity.meta.evil,
                 "display_name": entity.meta.display_name,
-                "id": entity.meta.id
+                "id": entity.meta.id,
+                "to_delete": entity.meta.id
             }
         }
     else:
@@ -371,7 +376,8 @@ def create_random_entity(pos, entity_id):
             "important": False,
             "evil": True,
             "display_name": entity_meta.entity_data[bean]["display_name"],
-            "id": entity_id
+            "id": entity_id,
+            "to_delete": False
         }
     }
 
