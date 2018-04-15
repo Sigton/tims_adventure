@@ -41,7 +41,8 @@ class ParticleEngine:
         }
 
         self.scrolling_particles = [
-            "SmokeParticle"
+            "SmokeParticle",
+            "PinkBubbleParticle"
         ]
 
     def update(self):
