@@ -26,6 +26,7 @@ class SoundEngine:
         self.splat_channel = pygame.mixer.Channel(11)
         self.impact_channel = pygame.mixer.Channel(12)
         self.potion_fizz_channel = pygame.mixer.Channel(13)
+        self.freeze_channel = pygame.mixer.Channel(14)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
@@ -48,6 +49,7 @@ class SoundEngine:
         self.splat = pygame.mixer.Sound("src/resources/splat.ogg")
         self.impact = pygame.mixer.Sound("src/resources/impact.ogg")
         self.potion_fizz = pygame.mixer.Sound("src/resources/potion_fizz.ogg")
+        self.freeze = pygame.mixer.Sound("src/resources/freeze.ogg")
 
         self.music = ["music2",
                       "music3",
@@ -80,7 +82,8 @@ class SoundEngine:
                                "pickup": self.pickup_channel,
                                "splat": self.splat_channel,
                                "impact": self.impact_channel,
-                               "potion_fizz": self.potion_fizz_channel}
+                               "potion_fizz": self.potion_fizz_channel,
+                               "freeze": self.freeze_channel}
 
         self.sound_linkup = {"music1": self.music1,
                              "music2": self.music2,
@@ -101,7 +104,8 @@ class SoundEngine:
                              "pickup": self.pickup,
                              "splat": self.splat,
                              "impact": self.impact,
-                             "potion_fizz": self.potion_fizz}
+                             "potion_fizz": self.potion_fizz,
+                             "freeze": self.freeze}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
@@ -124,6 +128,7 @@ class SoundEngine:
         self.splat.set_volume(0.5)
         self.impact.set_volume(0.5)
         self.potion_fizz.set_volume(0.4)
+        self.freeze.set_volume(1)
 
     def play_sounds(self):
 
