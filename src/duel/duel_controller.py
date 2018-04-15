@@ -241,6 +241,10 @@ class DuelController:
                 self.attack_alt_button.set_off()
             else:
                 self.attack_alt_button.set_on()
+            if not len(list(self.master.story_tracker.inventory.items())):
+                self.item_button.set_off()
+            else:
+                self.item_button.set_on()
 
         [button.update(not self.turn and not self.turn_cool_down) for button in self.buttons]
 
