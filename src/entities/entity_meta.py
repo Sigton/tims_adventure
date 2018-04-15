@@ -33,6 +33,6 @@ item_effects = {
     "EnlightenmentPotion": "",
     "HealthPotion": "self.player.meta.heal(40)",
     "LifePotion": "self.player.meta.heal(75)",
-    "WitherPotion": "self.enemy.meta.damage(25)",
-    "DeathPotion": "self.enemy.meta.damage(60)"
+    "WitherPotion": "self.enemy.meta.damage(25);self.master.sound_engine.queue_sound(('potion_fizz', 0))",
+    "DeathPotion": "self.enemy.meta.damage(60);self.master.sound_engine.queue_sound(('potion_fizz', 0))"
 }
