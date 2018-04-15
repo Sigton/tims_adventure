@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/duel/moves.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/duel/moves.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,47 +18,82 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="320" column="37" selection-start-line="320" selection-start-column="37" selection-end-line="320" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="275" column="15" selection-start-line="275" selection-start-column="15" selection-end-line="275" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="146" column="55" lean-forward="true" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="moves.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="620">
+                  <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1530">
+                  <caret line="320" column="37" selection-start-line="320" selection-start-column="37" selection-end-line="320" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="story_tracker.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/engines/story_tracker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="810">
+                  <caret line="275" column="15" selection-start-line="275" selection-start-column="15" selection-end-line="275" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="44" column="116" selection-start-line="44" selection-start-column="116" selection-end-line="44" selection-end-column="116" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="save.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="350">
+                  <caret line="145" selection-start-line="145" selection-end-line="145" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3013">
+                  <caret line="225" column="88" selection-start-line="225" selection-start-column="88" selection-end-line="225" selection-end-column="88" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -181,17 +215,17 @@
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
-        <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
-        <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
+        <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/duel/moves.py" />
       </list>
     </option>
   </component>
@@ -432,55 +466,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02125" summary="Reworded a line">
-      <created>1523741701398</created>
-      <option name="number" value="02125" />
-      <option name="presentableId" value="LOCAL-02125" />
-      <option name="project" value="LOCAL" />
-      <updated>1523741701398</updated>
-    </task>
-    <task id="LOCAL-02126" summary="Fisherman at pier should get set unimportant">
-      <created>1523741849046</created>
-      <option name="number" value="02126" />
-      <option name="presentableId" value="LOCAL-02126" />
-      <option name="project" value="LOCAL" />
-      <updated>1523741849046</updated>
-    </task>
-    <task id="LOCAL-02127" summary="Very sneaky bug">
-      <created>1523742597980</created>
-      <option name="number" value="02127" />
-      <option name="presentableId" value="LOCAL-02127" />
-      <option name="project" value="LOCAL" />
-      <updated>1523742597980</updated>
-    </task>
-    <task id="LOCAL-02128" summary="Increased music volume slightly">
-      <created>1523742630491</created>
-      <option name="number" value="02128" />
-      <option name="presentableId" value="LOCAL-02128" />
-      <option name="project" value="LOCAL" />
-      <updated>1523742630491</updated>
-    </task>
-    <task id="LOCAL-02129" summary="Debugging">
-      <created>1523743264734</created>
-      <option name="number" value="02129" />
-      <option name="presentableId" value="LOCAL-02129" />
-      <option name="project" value="LOCAL" />
-      <updated>1523743264734</updated>
-    </task>
-    <task id="LOCAL-02130" summary="Added a compass image to icons.png">
-      <created>1523783542327</created>
-      <option name="number" value="02130" />
-      <option name="presentableId" value="LOCAL-02130" />
-      <option name="project" value="LOCAL" />
-      <updated>1523783542327</updated>
-    </task>
-    <task id="LOCAL-02131" summary="Added compass image spritesheet data">
-      <created>1523783594500</created>
-      <option name="number" value="02131" />
-      <option name="presentableId" value="LOCAL-02131" />
-      <option name="project" value="LOCAL" />
-      <updated>1523783594501</updated>
     </task>
     <task id="LOCAL-02132" summary="Implemented the compass">
       <created>1523784010229</created>
@@ -776,7 +761,56 @@
       <option name="project" value="LOCAL" />
       <updated>1523789526156</updated>
     </task>
-    <option name="localTasksCounter" value="2174" />
+    <task id="LOCAL-02174" summary="Turned down tims attack strength slightly">
+      <created>1523790358514</created>
+      <option name="number" value="02174" />
+      <option name="presentableId" value="LOCAL-02174" />
+      <option name="project" value="LOCAL" />
+      <updated>1523790358514</updated>
+    </task>
+    <task id="LOCAL-02175" summary="Decreased item spawning rate">
+      <created>1523790380504</created>
+      <option name="number" value="02175" />
+      <option name="presentableId" value="LOCAL-02175" />
+      <option name="project" value="LOCAL" />
+      <updated>1523790380504</updated>
+    </task>
+    <task id="LOCAL-02176" summary="Some beans should be set to important">
+      <created>1523795434906</created>
+      <option name="number" value="02176" />
+      <option name="presentableId" value="LOCAL-02176" />
+      <option name="project" value="LOCAL" />
+      <updated>1523795434906</updated>
+    </task>
+    <task id="LOCAL-02177" summary="Increased fisherman hp">
+      <created>1523795477179</created>
+      <option name="number" value="02177" />
+      <option name="presentableId" value="LOCAL-02177" />
+      <option name="project" value="LOCAL" />
+      <updated>1523795477180</updated>
+    </task>
+    <task id="LOCAL-02178" summary="Increased difficulty of lemon bean">
+      <created>1523795521567</created>
+      <option name="number" value="02178" />
+      <option name="presentableId" value="LOCAL-02178" />
+      <option name="project" value="LOCAL" />
+      <updated>1523795521567</updated>
+    </task>
+    <task id="LOCAL-02179" summary="Simplifying stuff">
+      <created>1523795576304</created>
+      <option name="number" value="02179" />
+      <option name="presentableId" value="LOCAL-02179" />
+      <option name="project" value="LOCAL" />
+      <updated>1523795576304</updated>
+    </task>
+    <task id="LOCAL-02180" summary="Opponent could retreat and move in the same turn">
+      <created>1523795610357</created>
+      <option name="number" value="02180" />
+      <option name="presentableId" value="LOCAL-02180" />
+      <option name="project" value="LOCAL" />
+      <updated>1523795610357</updated>
+    </task>
+    <option name="localTasksCounter" value="2181" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -828,13 +862,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added freeze sound effect" />
-    <MESSAGE value="Added freeze sound effect to move" />
-    <MESSAGE value="Added sound effects to items" />
-    <MESSAGE value="Turned down item spawn rate" />
-    <MESSAGE value="What bean now gets hidden in sneak attack" />
-    <MESSAGE value="Scaling up particles.png" />
-    <MESSAGE value="Scaled up spritesheet data to match image" />
     <MESSAGE value="Fixed a tile in map.png" />
     <MESSAGE value="Shouldn't be able to open item menu when you have no items" />
     <MESSAGE value="Can't use healing display if there aren't any items to heal with" />
@@ -853,7 +880,14 @@
     <MESSAGE value="Increased tims attack stat" />
     <MESSAGE value="Increased tims max hp" />
     <MESSAGE value="Customising bean levels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customising bean levels" />
+    <MESSAGE value="Turned down tims attack strength slightly" />
+    <MESSAGE value="Decreased item spawning rate" />
+    <MESSAGE value="Some beans should be set to important" />
+    <MESSAGE value="Increased fisherman hp" />
+    <MESSAGE value="Increased difficulty of lemon bean" />
+    <MESSAGE value="Simplifying stuff" />
+    <MESSAGE value="Opponent could retreat and move in the same turn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Opponent could retreat and move in the same turn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -861,13 +895,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="147" column="68" lean-forward="true" selection-start-line="147" selection-start-column="68" selection-end-line="147" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/terrain/tile_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
@@ -1086,20 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="152" column="39" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="225" column="88" lean-forward="true" selection-start-line="225" selection-start-column="88" selection-end-line="225" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1111,13 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="590">
           <caret line="789" lean-forward="true" selection-start-line="789" selection-end-line="789" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="251" column="36" lean-forward="true" selection-start-line="251" selection-start-column="36" selection-end-line="251" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1152,13 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1169,10 +1168,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/save.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/terrain.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="146" column="55" lean-forward="true" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
+        <state relative-caret-position="160">
+          <caret line="44" column="116" selection-start-line="44" selection-start-column="116" selection-end-line="44" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3013">
+          <caret line="225" column="88" selection-start-line="225" selection-start-column="88" selection-end-line="225" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="37" column="77" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
         </state>
       </provider>
     </entry>
