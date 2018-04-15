@@ -732,8 +732,8 @@ class EnemyStat:
     def update(self):
 
         if self.enemy_meta is not None:
-            self.health_bar.update(self.enemy_meta.hp/self.enemy_meta.max_hp)
-            self.xp_bar.update(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold())
+            self.health_bar.update(round(self.enemy_meta.hp/self.enemy_meta.max_hp, 1))
+            self.xp_bar.update(round(self.enemy_meta.xp/self.enemy_meta.get_level_up_threshold(), 1))
 
     def draw(self, display):
 
