@@ -34,7 +34,7 @@ class Backing:
 
         self.close_hud_button = gui_components.Button(hud_image_loader.load_images("close_hud_button"),
                                                       self.x+200, self.y+225, lambda: self.callback(1))
-        self.compass = gui_components.Image(hud_image_loader.load_images("compass"), 802, 10, False)
+        self.compass = gui_components.Image(hud_image_loader.load_images("compass")[0], 802, 10, False)
 
         self.open_components = [
             self.my_beans,
