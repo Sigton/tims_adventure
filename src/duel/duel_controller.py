@@ -417,10 +417,9 @@ class DuelController:
         if not retreat:
             entity.meta.xp_gain(entity.energy)
 
-            if winner == "Player" and self.enemy.meta.evil:
+            if winner == "Player":
 
-                self.enemy.meta.evil = False
-                self.enemy.terrain_entity.update_image()
+                self.enemy.meta.to_delete = True
 
         entity.energy = 0
 
