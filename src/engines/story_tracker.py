@@ -24,7 +24,8 @@ class StoryTracker:
 
         self.quest_updates = {
             "learn_fight": self.update_old_man,
-            "liberate_village": self.update_dan
+            "liberate_village": self.update_dan,
+            "defend_wizard": self.update_wizard
         }
 
     def load_from_save(self, save_data):
@@ -171,5 +172,12 @@ None, 0);self.master.switch_to(3)"""
 
         e.meta.interaction = \
             """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'old_man2', None, 0)
+self.master.switch_to(3)"""
+        e.set_important()
+
+    def update_wizard(self):
+        e = self.master.chunk_controller.locate_entity(20)
+        e.meta.interaction = \
+            """self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'wizard', None, 0)
 self.master.switch_to(3)"""
         e.set_important()
