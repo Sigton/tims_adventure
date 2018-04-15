@@ -176,7 +176,7 @@ class ChiliParticle(Particle):
 
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
-        self.image = particle_sprite_sheet.get_image_src_alpha(72, 0, 40, 40)
+        self.image = particle_sprite_sheet.get_image_src_alpha(72, 0, 40, 34)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
 
