@@ -262,31 +262,32 @@ class DuelController:
 
             if not len(possible_moves):
                 self.end_duel("Player", True)
+            else:
 
-            move_no = random.choice([0, 1])
+                move_no = random.choice([0, 1])
 
-            self.player.meta.damage(self.enemy.meta.get_attack_damage(move_no))
-            self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
+                self.player.meta.damage(self.enemy.meta.get_attack_damage(move_no))
+                self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
 
-            if self.player.meta.hp <= 0:
-                self.player.meta.hp = 0
+                if self.player.meta.hp <= 0:
+                    self.player.meta.hp = 0
 
-                self.end_duel("Opponent", False)
+                    self.end_duel("Opponent", False)
 
-            self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
+                self.enemy.meta.xp_gain(moves[self.enemy.meta.moves[move_no]]["xp"])
 
-            move = moves[self.enemy.meta.moves[move_no]]["effects"]
+                move = moves[self.enemy.meta.moves[move_no]]["effects"]
 
-            if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
-                move = move.format("-")
-            elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
-                move = move.format(220, 520)
-            elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.both_moves:
-                move = move.format(750, 170, "-")
-            exec(move)
+                if moves[self.enemy.meta.moves[move_no]]["name"] in constants.shake_moves:
+                    move = move.format("-")
+                elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.positional_moves:
+                    move = move.format(220, 520)
+                elif moves[self.enemy.meta.moves[move_no]]["name"] in constants.both_moves:
+                    move = move.format(750, 170, "-")
+                exec(move)
 
-            self.turn = 0
-            self.turn_cool_down = constants.turn_cool_down
+                self.turn = 0
+                self.turn_cool_down = constants.turn_cool_down
 
         self.shake_players()
 
