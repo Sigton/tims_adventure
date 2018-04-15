@@ -281,7 +281,10 @@ class DialogueController:
 
     def update_evil_beans_village(self):
 
-        [self.master.chunk_controller.locate_entity(n).set_important() for n in range(6, 12)]
+        for n in range(6, 12):
+            e = self.master.chunk_controller.locate_entity(n)
+            e.set_important()
+            e.meta.interaction = None
 
     def add_dan_to_team(self):
 
