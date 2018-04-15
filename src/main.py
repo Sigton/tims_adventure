@@ -1,6 +1,6 @@
 import sys
 import os
-import cProfile
+import random
 
 import pygame
 
@@ -107,6 +107,10 @@ class Main:
             self.full_screen = False
 
     def run(self):
+
+        music = random.choice(self.sound_engine.music)
+        self.sound_engine.queue_sound([music, 0])
+        self.last_song = music
 
         pygame.time.set_timer(constants.MUSIC_START_EVENT, 7000)
 
