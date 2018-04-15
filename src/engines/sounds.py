@@ -24,6 +24,7 @@ class SoundEngine:
         self.speech_channel = pygame.mixer.Channel(9)
         self.pickup_channel = pygame.mixer.Channel(10)
         self.splat_channel = pygame.mixer.Channel(11)
+        self.impact_channel = pygame.mixer.Channel(12)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
@@ -44,6 +45,7 @@ class SoundEngine:
         self.speech4 = pygame.mixer.Sound("src/resources/speech4.ogg")
         self.pickup = pygame.mixer.Sound("src/resources/pickup.ogg")
         self.splat = pygame.mixer.Sound("src/resources/splat.ogg")
+        self.impact = pygame.mixer.Sound("src/resources/impact.ogg")
 
         self.music = ["music2",
                       "music3",
@@ -74,7 +76,8 @@ class SoundEngine:
                                "speech4": self.speech_channel,
                                "speech": self.speech_channel,
                                "pickup": self.pickup_channel,
-                               "splat": self.splat_channel}
+                               "splat": self.splat_channel,
+                               "impact": self.impact_channel}
 
         self.sound_linkup = {"music1": self.music1,
                              "music2": self.music2,
@@ -93,7 +96,8 @@ class SoundEngine:
                              "speech3": self.speech3,
                              "speech4": self.speech4,
                              "pickup": self.pickup,
-                             "splat": self.splat}
+                             "splat": self.splat,
+                             "impact": self.impact}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
@@ -114,6 +118,7 @@ class SoundEngine:
         [self.sound_linkup[s].set_volume(0.35) for s in self.speech]
         self.pickup.set_volume(1)
         self.splat.set_volume(0.5)
+        self.impact.set_volume(0.5)
 
     def play_sounds(self):
 
