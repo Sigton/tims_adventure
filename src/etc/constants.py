@@ -222,7 +222,8 @@ bean_image_offset = {
 
 
 entity_delete_exceptions = [
-    14
+    "player", 0, 1, 2, 3, 4, 5, 12, 13,
+    14, 15, 16, 17, 18, 19, 20, 21
 ]
 
 # Items & Quests
