@@ -263,7 +263,7 @@ class DuelController:
             if not len(possible_moves):
                 self.end_duel("Player", True)
 
-            move_no = self.get_opponent_move()
+            move_no = random.choice([0, 1])
 
             self.player.meta.damage(self.enemy.meta.get_attack_damage(move_no))
             self.enemy.energy -= moves[self.enemy.meta.moves[move_no]]["energy"]
@@ -429,10 +429,6 @@ class DuelController:
             self.master.story_tracker.check_complete(['duel', str(self.enemy.meta.id)])
 
         self.enemy.terrain_entity.set_unimportant()
-
-    def get_opponent_move(self):
-
-        return random.choice([0, 1])
 
     def use_item(self, item):
 
