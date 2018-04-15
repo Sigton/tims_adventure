@@ -46,4 +46,8 @@ self.master.sound_engine.queue_sound(('splat', 0))""",
         """self.particle_engine.create_particle_spread('lemon', 25, {}, {}, 200, 20, 10, 10, 10)
 self.master.sound_engine.queue_sound(('splat', 0))""",
      "energy": 10, "xp": 10},
+    {"name": "Stone Throw", "str_mod": 1.4, "effects":
+        """self.particle_engine.create_particle_spread('stone', 15, {}, {}, 200, 20, 10, 10, 10)
+self.master.sound_engine.queue_sound(('impact', 0))""",
+     "energy": 17, "xp": 17},
 ]
