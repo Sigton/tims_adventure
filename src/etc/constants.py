@@ -276,6 +276,6 @@ quest_images = {
     "wizard": (64, 268, 32, 32)
 }
 
-item_rarity_weights = [0, 24, 5, 8, 3]
+item_rarity_weights = [0, 25, 6, 9, 3]
 item_rarity_matrix = [int(x) for x in sum([list(x * y)
                                            for x, y in zip(["0", "1", "2", "3", "4"], item_rarity_weights)], [])]
