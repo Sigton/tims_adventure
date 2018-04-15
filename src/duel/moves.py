@@ -16,7 +16,7 @@ moves = [
 self.master.sound_engine.queue_sound(('burn', 0))""",
      "energy": 15, "xp": 15},
     {"name": "Freeze", "str_mod": 1.5, "effects":
-        """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 200, 6, 5, 45, 2)
+        """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 200, 20, 5, 45, 7)
 self.master.sound_engine.queue_sound(('freeze', 0))""",
      "energy": 20, "xp": 20},
     {"name": "Chili Chuck", "str_mod": 0.7, "effects":
