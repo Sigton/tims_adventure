@@ -440,6 +440,11 @@ class DuelController:
             self.master.sound_engine.queue_sound(["drinking", 0])
         self.hud.refresh()
 
+        if item[0] in constants.healing_items:
+            self.particle_engine.create_particle_spread('pink_bubbles', 45, 220, 520, 200, 1, 0, 30, 30)
+        elif item[0] in constants.damaging_items:
+            self.particle_engine.create_particle_spread('blue_bubbles', 45, 750, 170, 200, 1, 0, 30, 30)
+
         if self.enemy.meta.hp <= 0:
             self.enemy.meta.hp = 0
 
