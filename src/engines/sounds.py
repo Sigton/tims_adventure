@@ -111,7 +111,9 @@ class SoundEngine:
         self.queued_sounds = []
 
         # Mix the volumes
-        [self.sound_linkup[m].set_volume(0.63) for m in self.music]
+        self.music2.set_volume(0.6)
+        self.music3.set_volume(0.5)
+        self.music4.set_volume(0.65)
         self.punch.set_volume(0.3)
         self.burn.set_volume(0.15)
         self.footstep.set_volume(0.8)
