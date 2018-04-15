@@ -35,7 +35,9 @@ class ParticleEngine:
             "leaf": LeafParticle,
             "venom": VenomParticle,
             "lemon": LemonParticle,
-            "stone": StoneParticle
+            "stone": StoneParticle,
+            "pink_bubbles": PinkBubbleParticle,
+            "blue_bubbles": BlueBubbleParticle
         }
 
         self.scrolling_particles = [
@@ -241,5 +243,23 @@ class StoneParticle(Particle):
     def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
 
         self.image = particle_sprite_sheet.get_image_src_alpha(68, 34, 20, 20)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
+
+
+class PinkBubbleParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image_src_alpha(52, 32, 16, 16)
+
+        Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)
+
+
+class BlueBubbleParticle(Particle):
+
+    def __init__(self, x, y, lifetime, fade_out_time, fade_in_time):
+
+        self.image = particle_sprite_sheet.get_image_src_alpha(52, 48, 16, 16)
 
         Particle.__init__(self, self.image, x, y, lifetime, fade_out_time, fade_in_time)

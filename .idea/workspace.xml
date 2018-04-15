@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/story_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/story_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/particles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/particles.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +21,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="203" column="36" lean-forward="true" selection-start-line="203" selection-start-column="36" selection-end-line="203" selection-end-column="36" />
+            <state relative-caret-position="2601">
+              <caret line="220" column="15" lean-forward="true" selection-start-line="220" selection-start-column="15" selection-end-line="220" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="256" column="16" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -40,7 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
       <find>q</find>
       <find>ob</find>
       <find>tim</find>
@@ -57,19 +78,20 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find />
+      <find>&quot;level&quot;: 100</find>
       <find>lair</find>
-      <find />
+      <find>&quot;id&quot;: 14</find>
       <find>chili&quot;</find>
       <find>dan</find>
-      <find />
+      <find>&quot;id&quot;: 19</find>
       <find>-</find>
       <find>Dam</find>
       <find>Wither</find>
       <find>Death</find>
       <find>Health</find>
       <find>entity_data</find>
-      <find />
+      <find>Hello, Mr. Fisherman.</find>
+      <find>came</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy.</replace>
@@ -86,7 +108,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace />
+      <replace>: create_images(</replace>
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -99,9 +121,9 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace />
+      <replace>&quot;level&quot;: 1</replace>
       <replace>entity_meta.entity_data</replace>
-      <replace />
+      <replace>Mr. Fisherman, sir?</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -156,12 +178,12 @@
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
-        <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
+        <option value="$PROJECT_DIR$/src/engines/particles.py" />
       </list>
     </option>
   </component>
@@ -336,27 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02170" summary="Increased tims attack stat">
-      <created>1523789364586</created>
-      <option name="number" value="02170" />
-      <option name="presentableId" value="LOCAL-02170" />
-      <option name="project" value="LOCAL" />
-      <updated>1523789364586</updated>
-    </task>
-    <task id="LOCAL-02171" summary="Customising bean levels">
-      <created>1523789426398</created>
-      <option name="number" value="02171" />
-      <option name="presentableId" value="LOCAL-02171" />
-      <option name="project" value="LOCAL" />
-      <updated>1523789426398</updated>
-    </task>
-    <task id="LOCAL-02172" summary="Increased tims max hp">
-      <created>1523789455175</created>
-      <option name="number" value="02172" />
-      <option name="presentableId" value="LOCAL-02172" />
-      <option name="project" value="LOCAL" />
-      <updated>1523789455175</updated>
     </task>
     <task id="LOCAL-02173" summary="Customising bean levels">
       <created>1523789526156</created>
@@ -680,7 +681,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523804271624</updated>
     </task>
-    <option name="localTasksCounter" value="2219" />
+    <task id="LOCAL-02219" summary="Fixing spelling and punctuation">
+      <created>1523804476947</created>
+      <option name="number" value="02219" />
+      <option name="presentableId" value="LOCAL-02219" />
+      <option name="project" value="LOCAL" />
+      <updated>1523804476947</updated>
+    </task>
+    <task id="LOCAL-02220" summary="Edited icons.png">
+      <created>1523804542432</created>
+      <option name="number" value="02220" />
+      <option name="presentableId" value="LOCAL-02220" />
+      <option name="project" value="LOCAL" />
+      <updated>1523804542432</updated>
+    </task>
+    <task id="LOCAL-02221" summary="Villagers 7 and 8 get set unimportant">
+      <created>1523804647956</created>
+      <option name="number" value="02221" />
+      <option name="presentableId" value="LOCAL-02221" />
+      <option name="project" value="LOCAL" />
+      <updated>1523804647956</updated>
+    </task>
+    <option name="localTasksCounter" value="2222" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,9 +754,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added new attribute to default entities" />
-    <MESSAGE value="Beating an entity marks it to be deleted" />
-    <MESSAGE value="Entities should get removed with a puff of smoke" />
     <MESSAGE value="Menu plays music now" />
     <MESSAGE value="Music plays immediately" />
     <MESSAGE value="Fisherman shouldn't delete when beat" />
@@ -757,7 +776,10 @@
     <MESSAGE value="Balanced energy usage" />
     <MESSAGE value="Fixed bug" />
     <MESSAGE value="Punch takes more energy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Punch takes more energy" />
+    <MESSAGE value="Fixing spelling and punctuation" />
+    <MESSAGE value="Edited icons.png" />
+    <MESSAGE value="Villagers 7 and 8 get set unimportant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Villagers 7 and 8 get set unimportant" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1034,23 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -1074,8 +1079,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="203" column="36" lean-forward="true" selection-start-line="203" selection-start-column="36" selection-end-line="203" selection-end-column="36" />
+        <state relative-caret-position="2601">
+          <caret line="220" column="15" lean-forward="true" selection-start-line="220" selection-start-column="15" selection-end-line="220" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="256" column="16" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
         </state>
       </provider>
     </entry>
