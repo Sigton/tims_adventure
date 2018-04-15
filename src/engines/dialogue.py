@@ -310,7 +310,7 @@ class DialogueController:
 
         self.set_unimportant()
 
-        for n in range(23, 26):
+        for n in range(22, 26):
             e = self.master.chunk_controller.locate_entity(n)
             e.set_important()
             e.meta.interaction = None
