@@ -150,7 +150,7 @@ def gen_random_entities(save_path):
                     )
                     entity_id += 1
 
-        for n in range(random.randint(1, 2)):
+        for n in range(random.choice(([0, 1, 1, 1, 2, 2]))):
             item_x = random.randint(0, 19)
             item_y = random.randint(0, 14)
 
