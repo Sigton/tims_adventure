@@ -273,7 +273,8 @@ quest_images = {
     "hermit": (256, 236, 32, 32),
     "hidden_lake": (0, 268, 32, 32),
     "defend_wizard": (32, 268, 32, 32),
-    "wizard": (64, 268, 32, 32)
+    "wizard": (64, 268, 32, 32),
+    "thanks": (96, 268, 32, 32)
 }
 
 item_rarity_weights = [0, 25, 6, 9, 3]
