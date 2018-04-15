@@ -35,7 +35,7 @@ self.master.sound_engine.queue_sound(('impact', 0))""",
 self.master.sound_engine.queue_sound(('impact', 0))""",
      "energy": 6, "xp": 6},
     {"name": "Sneak Attack", "str_mod": 1.3, "effects":
-        """self.particle_engine.create_particle_spread('leaf', 45, {}, {}, 150, 45, 10, 10, 10)
+        """self.particle_engine.create_particle_spread('leaf', 60, {}, {}, 200, 45, 10, 10, 10)
 self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 13, "xp": 13},
     {"name": "Poison Spit", "str_mod": 1.7, "effects":
