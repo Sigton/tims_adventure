@@ -23,6 +23,7 @@ class SoundEngine:
         self.click_channel = pygame.mixer.Channel(8)
         self.speech_channel = pygame.mixer.Channel(9)
         self.pickup_channel = pygame.mixer.Channel(10)
+        self.splat_channel = pygame.mixer.Channel(11)
 
         # Load all the sounds
         self.music1 = pygame.mixer.Sound("src/resources/ambient1.ogg")
@@ -42,6 +43,7 @@ class SoundEngine:
         self.speech3 = pygame.mixer.Sound("src/resources/speech3.ogg")
         self.speech4 = pygame.mixer.Sound("src/resources/speech4.ogg")
         self.pickup = pygame.mixer.Sound("src/resources/pickup.ogg")
+        self.splat = pygame.mixer.Sound("src/resources/splat.ogg")
 
         self.music = ["music2",
                       "music3",
@@ -71,7 +73,8 @@ class SoundEngine:
                                "speech3": self.speech_channel,
                                "speech4": self.speech_channel,
                                "speech": self.speech_channel,
-                               "pickup": self.pickup_channel}
+                               "pickup": self.pickup_channel,
+                               "splat": self.splat_channel}
 
         self.sound_linkup = {"music1": self.music1,
                              "music2": self.music2,
@@ -89,7 +92,8 @@ class SoundEngine:
                              "speech2": self.speech2,
                              "speech3": self.speech3,
                              "speech4": self.speech4,
-                             "pickup": self.pickup}
+                             "pickup": self.pickup,
+                             "splat": self.splat}
 
         # This is all the sounds that need to be played
         self.queued_sounds = []
@@ -99,8 +103,8 @@ class SoundEngine:
 
         # Mix the volumes
         [self.sound_linkup[m].set_volume(0.63) for m in self.music]
-        self.punch.set_volume(0.1)
-        self.burn.set_volume(0.1)
+        self.punch.set_volume(0.3)
+        self.burn.set_volume(0.15)
         self.footstep.set_volume(0.8)
         self.footstep2.set_volume(0.6)
         self.footstep3.set_volume(0.8)
@@ -109,6 +113,7 @@ class SoundEngine:
         self.click.set_volume(1)
         [self.sound_linkup[s].set_volume(0.35) for s in self.speech]
         self.pickup.set_volume(1)
+        self.splat.set_volume(0.5)
 
     def play_sounds(self):
 
