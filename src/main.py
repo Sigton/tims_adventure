@@ -36,7 +36,7 @@ class Main:
         # Set the title on the window
         pygame.display.set_caption("Tim's Adventure")
 
-        icon_img = pygame.image.load("src/resources/icon.ico")
+        icon_img = pygame.image.load("src/resources/icon.png")
 
         icon = pygame.Surface([32, 32], flags=pygame.SRCALPHA)
         icon = icon.convert_alpha()
