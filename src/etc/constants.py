@@ -145,7 +145,8 @@ positional_moves = [
     "Snowball",
     "Feathers",
     "Poison Spit",
-    "Citrus Spray"
+    "Citrus Spray",
+    "Stone Throw"
 ]
 
 both_moves = [
