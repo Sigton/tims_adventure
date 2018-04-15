@@ -26,7 +26,7 @@ self.master.sound_engine.queue_sound(('impact', 0))""",
     {"name": "Punch", "str_mod": 1.2, "effects":
         """self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))""",
      "energy": 8, "xp": 8},
-    {"name": "Snowball", "str_mod": 0.6, "effects":
+    {"name": "Snowball", "str_mod": 0.8, "effects":
         """self.particle_engine.create_particle_spread('snowball', 15, {}, {}, 200, 15, 10, 30, 2)
 self.master.sound_engine.queue_sound(('impact', 0))""",
      "energy": 4, "xp": 4},
