@@ -660,6 +660,9 @@ class ChunkController:
 
     def remove_stat_panel(self, entity):
 
+        if entity.stat_panel not in self.other_bean_stat_count:
+            return
+
         self.other_bean_stat_count -= 1
         self.other_bean_stat_panels.remove(entity.stat_panel)
         entity.stat_panel_off()
