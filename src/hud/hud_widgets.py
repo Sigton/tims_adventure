@@ -808,6 +808,6 @@ class HealingDisplay(ItemSelect):
                     self.master.master.sound_engine.queue_sound(["drinking", 0])
                 self.refresh()
 
-                self.master.particle_engine.create_particle_spread(
+                self.master.master.particle_engine.create_particle_spread(
                     'pink_bubbles', 8, self.player.rect.centerx, self.player.rect.centery, 35, 1, 0, 30, 30
                 )
