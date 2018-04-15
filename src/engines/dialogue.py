@@ -35,7 +35,8 @@ class DialogueController:
             "north_bean": self.update_village_attack,
             "help_village_bean": self.update_evil_beans_village,
             "dan": self.add_dan_to_team,
-            "hermit": self.update_hermit
+            "hermit": self.update_hermit,
+            "lake_warning": self.update_lake_warning
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -309,6 +310,15 @@ class DialogueController:
         e.set_important()
 
         self.set_unimportant()
+
+    def update_lake_warning(self):
+
+        self.set_unimportant()
+
+        for n in range(23, 26):
+            e = self.master.chunk_controller.locate_entity(n)
+            e.set_important()
+            e.meta.interaction = None
 
     def set_unimportant(self):
 

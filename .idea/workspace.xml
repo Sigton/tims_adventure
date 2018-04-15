@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/dialogue.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/dialogue.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,23 +22,53 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="20">
-                    <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf>
+                <file leaf-file-name="story_data.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="-2860">
+                        <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="401">
+                        <caret line="136" column="80" lean-forward="true" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
         </state>
       </content>
     </window>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dialogue.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -159,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/terrain/tile_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
@@ -170,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
       </list>
     </option>
   </component>
@@ -410,13 +441,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02108" summary="Added a wizard bean wow">
-      <created>1523737597191</created>
-      <option name="number" value="02108" />
-      <option name="presentableId" value="LOCAL-02108" />
-      <option name="project" value="LOCAL" />
-      <updated>1523737597191</updated>
     </task>
     <task id="LOCAL-02109" summary="Moved wizard bean">
       <created>1523737703411</created>
@@ -754,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523787445178</updated>
     </task>
-    <option name="localTasksCounter" value="2157" />
+    <task id="LOCAL-02157" summary="Added a hermit scene update">
+      <created>1523787811551</created>
+      <option name="number" value="02157" />
+      <option name="presentableId" value="LOCAL-02157" />
+      <option name="project" value="LOCAL" />
+      <updated>1523787811551</updated>
+    </task>
+    <option name="localTasksCounter" value="2158" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -806,7 +837,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added compass image spritesheet data" />
     <MESSAGE value="Implemented the compass" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="More debugging" />
@@ -831,7 +861,8 @@
     <MESSAGE value="Shouldn't be able to open item menu when you have no items" />
     <MESSAGE value="Can't use healing display if there aren't any items to heal with" />
     <MESSAGE value="Fixed item spawning weighting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed item spawning weighting" />
+    <MESSAGE value="Added a hermit scene update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a hermit scene update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -957,6 +988,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,6 +1040,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1900">
           <caret line="103" column="104" selection-start-line="103" selection-start-column="104" selection-end-line="103" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,23 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
           <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="105" column="82" selection-start-line="105" selection-start-column="82" selection-end-line="105" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1143,8 +1163,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="-2860">
           <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="136" column="80" lean-forward="true" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
