@@ -216,7 +216,7 @@ all day!""", 1),
         ("Can we not help the wizard?", 0),
         ("It is too dangerous. Those were strong evil beans that marched this way.", 1),
         ("Well, we're going to help this wizard.", 0),
-        ("You will not make return over this bridge. It shall be the end of both of you.", 1)
+        ("You will not return over this bridge. It shall be the end of both of you.", 1)
     ],
     "wizard": [
         ("Hello there, young travellers.", 1),
