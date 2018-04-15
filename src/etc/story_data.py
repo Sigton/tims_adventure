@@ -233,7 +233,7 @@ quests = {
 
 
 completion_criteria = {
-    "talk_villagers": ["scene/villager3", "scene/villager4"],
+    "talk_villagers": ["scene/villager3", "scene/villager4", "scene/villager7"],
     "old_man": ["scene/old_man"],
     "heading_north": ["scene/north_bean"],
     "help_village": ["scene/help_village_bean"],
