@@ -208,5 +208,6 @@ def create_json_from_player(player):
         "important": player.meta.important,
         "evil": player.meta.evil,
         "display_name": player.meta.display_name,
-        "id": player.meta.id
+        "id": player.meta.id,
+        "to_delete": player.meta.to_delete
     }
