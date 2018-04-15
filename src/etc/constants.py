@@ -220,6 +220,10 @@ bean_image_offset = {
 }
 
 
+entity_delete_exceptions = [
+    14
+]
+
 # Items & Quests
 
 items = [
