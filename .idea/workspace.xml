@@ -4,8 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="Can't use healing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +20,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duel_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="251" column="36" lean-forward="true" selection-start-line="251" selection-start-column="36" selection-end-line="251" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="791" column="18" selection-start-line="791" selection-start-column="18" selection-end-line="791" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="particles.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="590">
@@ -151,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
@@ -159,8 +177,9 @@
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
-        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
+        <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -401,27 +420,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02103" summary="Added moves to positional moves list">
-      <created>1523736243626</created>
-      <option name="number" value="02103" />
-      <option name="presentableId" value="LOCAL-02103" />
-      <option name="project" value="LOCAL" />
-      <updated>1523736243626</updated>
-    </task>
-    <task id="LOCAL-02104" summary="Updated map">
-      <created>1523736575154</created>
-      <option name="number" value="02104" />
-      <option name="presentableId" value="LOCAL-02104" />
-      <option name="project" value="LOCAL" />
-      <updated>1523736575154</updated>
-    </task>
-    <task id="LOCAL-02105" summary="Moved a barrel">
-      <created>1523737148587</created>
-      <option name="number" value="02105" />
-      <option name="presentableId" value="LOCAL-02105" />
-      <option name="project" value="LOCAL" />
-      <updated>1523737148587</updated>
     </task>
     <task id="LOCAL-02106" summary="Added a nice little pier">
       <created>1523737187615</created>
@@ -745,7 +743,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523787044647</updated>
     </task>
-    <option name="localTasksCounter" value="2152" />
+    <task id="LOCAL-02152" summary="Scaled up spritesheet data to match image">
+      <created>1523787134709</created>
+      <option name="number" value="02152" />
+      <option name="presentableId" value="LOCAL-02152" />
+      <option name="project" value="LOCAL" />
+      <updated>1523787134709</updated>
+    </task>
+    <task id="LOCAL-02153" summary="Fixed a tile in map.png">
+      <created>1523787192116</created>
+      <option name="number" value="02153" />
+      <option name="presentableId" value="LOCAL-02153" />
+      <option name="project" value="LOCAL" />
+      <updated>1523787192116</updated>
+    </task>
+    <task id="LOCAL-02154" summary="Shouldn't be able to open item menu when you have no items">
+      <created>1523787337601</created>
+      <option name="number" value="02154" />
+      <option name="presentableId" value="LOCAL-02154" />
+      <option name="project" value="LOCAL" />
+      <updated>1523787337601</updated>
+    </task>
+    <option name="localTasksCounter" value="2155" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,9 +816,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reworded a line" />
-    <MESSAGE value="Fisherman at pier should get set unimportant" />
-    <MESSAGE value="Very sneaky bug" />
     <MESSAGE value="Increased music volume slightly" />
     <MESSAGE value="Added a compass image to icons.png" />
     <MESSAGE value="Added compass image spritesheet data" />
@@ -822,7 +838,10 @@
     <MESSAGE value="Turned down item spawn rate" />
     <MESSAGE value="What bean now gets hidden in sneak attack" />
     <MESSAGE value="Scaling up particles.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scaling up particles.png" />
+    <MESSAGE value="Scaled up spritesheet data to match image" />
+    <MESSAGE value="Fixed a tile in map.png" />
+    <MESSAGE value="Shouldn't be able to open item menu when you have no items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shouldn't be able to open item menu when you have no items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1056,13 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
@@ -1125,17 +1130,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="321" column="22" lean-forward="true" selection-start-line="321" selection-start-column="22" selection-end-line="321" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="590">
           <caret line="225" column="88" lean-forward="true" selection-start-line="225" selection-start-column="88" selection-end-line="225" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/duel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="251" column="36" lean-forward="true" selection-start-line="251" selection-start-column="36" selection-end-line="251" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="791" column="18" selection-start-line="791" selection-start-column="18" selection-end-line="791" selection-end-column="18" />
         </state>
       </provider>
     </entry>

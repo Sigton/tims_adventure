@@ -788,6 +788,9 @@ class HealingDisplay(ItemSelect):
 
     def handle_event(self, e):
 
+        if not len(self.items):
+            return
+
         if e.type == KEYUP:
 
             if e.key in (K_UP, K_w):
