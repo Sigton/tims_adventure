@@ -12,7 +12,7 @@ moves = [
         "self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch', 0))",
      "energy": 6, "xp": 6},
     {"name": "Burn", "str_mod": 1.4, "effects":
-        """self.particle_engine.create_particle_spread('fire', 30, {}, {}, 1750, 25, 20, 25, 5)
+        """self.particle_engine.create_particle_spread('fire', 30, {}, {}, 175, 25, 20, 25, 5)
 self.master.sound_engine.queue_sound(('burn', 0))""",
      "energy": 15, "xp": 15},
     {"name": "Freeze", "str_mod": 1.5, "effects":
