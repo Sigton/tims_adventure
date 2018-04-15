@@ -327,7 +327,7 @@ class ChunkController:
 
                 else:
                     [self.master.sound_engine.stop_sound(sound)
-                     for sound in [s for s in constants.footstep_sounds if s!= "footstep"]]
+                     for sound in [s for s in constants.footstep_sounds if s != "footstep"]]
                     if not self.master.sound_engine.playing_sound("footstep"):
                         self.master.sound_engine.queue_sound(("footstep", 0))
 
@@ -373,38 +373,44 @@ class ChunkController:
                 for entity in self.map_tiles[chunk].get_entities():
                     if entity.__class__.__name__ not in constants.items:
 
-                        distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
-                                             + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
-
-                        if distance < constants.interaction_distance:
-                            if not (entity.meta.interaction == "pass" or entity.meta.important):
-                                entity.interaction_icon.on()
-
-                            if not entity.stat_panel_active:
-                                self.other_bean_stat_count += 1
-                                entity.stat_panel_on(self.other_bean_stat_count, 0, 0)
-                                self.other_bean_stat_panels.append(entity.stat_panel)
-                                self.hud.get_component("backing").resize(self.other_bean_stat_count+1)
-                        else:
-                            if not (entity.meta.interaction == "pass" or entity.meta.important):
-                                entity.interaction_icon.off()
-
-                            if entity.stat_panel_active:
-                                self.other_bean_stat_count -= 1
-                                self.other_bean_stat_panels.remove(entity.stat_panel)
-                                entity.stat_panel_off()
-
-                                if self.other_bean_stat_count > -1:
-                                    n = 0
-                                    for panel in self.other_bean_stat_panels:
-                                        panel.move(5, (65*n)+275)
-                                        n += 1
-                                self.hud.get_component("backing").resize(self.other_bean_stat_count + 1)
-
-                        if entity.particle_timer == 0:
+                        if entity.meta.to_delete:
                             self.master.particle_engine.create_particle_spread(
                                 'smoke', 12, entity.rect.centerx, entity.rect.centery, 35, 10, 0, 50, 10
                             )
+                            self.map_tiles[chunk].remove_entity(entity)
+                        else:
+                            distance = math.sqrt(math.pow(self.player.beans[0].rect.centerx - entity.rect.centerx, 2)
+                                                 + math.pow(self.player.beans[0].rect.centery - entity.rect.centery, 2))
+
+                            if distance < constants.interaction_distance:
+                                if not (entity.meta.interaction == "pass" or entity.meta.important):
+                                    entity.interaction_icon.on()
+
+                                if not entity.stat_panel_active:
+                                    self.other_bean_stat_count += 1
+                                    entity.stat_panel_on(self.other_bean_stat_count, 0, 0)
+                                    self.other_bean_stat_panels.append(entity.stat_panel)
+                                    self.hud.get_component("backing").resize(self.other_bean_stat_count+1)
+                            else:
+                                if not (entity.meta.interaction == "pass" or entity.meta.important):
+                                    entity.interaction_icon.off()
+
+                                if entity.stat_panel_active:
+                                    self.other_bean_stat_count -= 1
+                                    self.other_bean_stat_panels.remove(entity.stat_panel)
+                                    entity.stat_panel_off()
+
+                                    if self.other_bean_stat_count > -1:
+                                        n = 0
+                                        for panel in self.other_bean_stat_panels:
+                                            panel.move(5, (65*n)+275)
+                                            n += 1
+                                    self.hud.get_component("backing").resize(self.other_bean_stat_count + 1)
+
+                            if entity.particle_timer == 0:
+                                self.master.particle_engine.create_particle_spread(
+                                    'smoke', 12, entity.rect.centerx, entity.rect.centery, 35, 10, 0, 50, 10
+                                )
 
                     elif entity.pickup:
                         self.master.story_tracker.add_item(entity.__class__.__name__, 1)
