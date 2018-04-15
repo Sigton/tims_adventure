@@ -110,9 +110,6 @@ class SoundEngine:
         # This is all the sounds that need to be played
         self.queued_sounds = []
 
-        # When the music channel stops playing it should que another sound to be played
-        self.music_channel.set_endevent(constants.MUSIC_END_EVENT)
-
         # Mix the volumes
         [self.sound_linkup[m].set_volume(0.63) for m in self.music]
         self.punch.set_volume(0.3)
