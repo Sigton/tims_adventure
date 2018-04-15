@@ -14,11 +14,11 @@ moves = [
     {"name": "Burn", "str_mod": 1.4, "effects":
         """self.particle_engine.create_particle_spread('fire', 30, {}, {}, 175, 25, 20, 25, 5)
 self.master.sound_engine.queue_sound(('burn', 0))""",
-     "energy": 15, "xp": 15},
+     "energy": 14, "xp": 14},
     {"name": "Freeze", "str_mod": 1.5, "effects":
         """self.particle_engine.create_particle_spread('snow', 50, {}, {}, 200, 20, 5, 45, 7)
 self.master.sound_engine.queue_sound(('freeze', 0))""",
-     "energy": 20, "xp": 20},
+     "energy": 16, "xp": 16},
     {"name": "Chili Chuck", "str_mod": 0.7, "effects":
         """self.particle_engine.create_particle_spread('chili', 45, {}, {}, 200, 15, 10, 10, 10)
 self.master.sound_engine.queue_sound(('impact', 0))""",
@@ -41,7 +41,7 @@ self.start_shake(18, 10, 10, {}1);self.master.sound_engine.queue_sound(('punch',
     {"name": "Poison Spit", "str_mod": 1.7, "effects":
         """self.particle_engine.create_particle_spread('venom', 20, {}, {}, 200, 10, 10, 40, 4)
 self.master.sound_engine.queue_sound(('splat', 0))""",
-     "energy": 23, "xp": 23},
+     "energy": 18, "xp": 18},
     {"name": "Citrus Spray", "str_mod": 1.2, "effects":
         """self.particle_engine.create_particle_spread('lemon', 25, {}, {}, 200, 20, 10, 10, 10)
 self.master.sound_engine.queue_sound(('splat', 0))""",
