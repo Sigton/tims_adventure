@@ -248,6 +248,11 @@ healing_items = [
     "LifePotion"
 ]
 
+damaging_items = [
+    "WitherPotion",
+    "DeathPotion"
+]
+
 drinking_items = [
     "HealthPotion",
     "LifePotion"
