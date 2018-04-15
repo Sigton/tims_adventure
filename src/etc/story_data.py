@@ -238,7 +238,8 @@ quests = {
     "dan": "Talk to Dan.",
     "hermit": "Find Dermot the Hermit.",
     "hidden_lake": "Find the hidden lake.",
-    "defend_wizard": "Defend the wizard!"
+    "defend_wizard": "Defend the wizard!",
+    "wizard": "Talk to the wizard."
 }
 
 
@@ -254,7 +255,8 @@ completion_criteria = {
     "dan": ["scene/dan"],
     "hermit": ["scene/hermit"],
     "hidden_lake": ["scene/lake_warning"],
-    "defend_wizard": ("duel/22", "duel/23", "duel/24", "duel/25")
+    "defend_wizard": ("duel/22", "duel/23", "duel/24", "duel/25"),
+    "wizard": ["scene/wizard"]
 }
 
 
@@ -270,5 +272,6 @@ quest_path = {
     "dan": ["hermit"],
     "hermit": ["hidden_lake"],
     "hidden_lake": ["defend_wizard"],
-    "defend_wizard": []
+    "defend_wizard": ["wizard"],
+    "wizard": []
 }
