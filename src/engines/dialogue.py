@@ -36,7 +36,8 @@ class DialogueController:
             "help_village_bean": self.update_evil_beans_village,
             "dan": self.add_dan_to_team,
             "hermit": self.update_hermit,
-            "lake_warning": self.update_lake_warning
+            "lake_warning": self.update_lake_warning,
+            "wizard": self.set_unimportant
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
