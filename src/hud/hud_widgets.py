@@ -807,3 +807,7 @@ class HealingDisplay(ItemSelect):
                 if self.items[self.selected_item][0] in constants.drinking_items:
                     self.master.master.sound_engine.queue_sound(["drinking", 0])
                 self.refresh()
+
+                self.master.particle_engine.create_particle_spread(
+                    'pink_bubbles', 8, self.player.rect.centerx, self.player.rect.centery, 35, 1, 0, 30, 30
+                )
