@@ -103,13 +103,13 @@
     },
   {"pos": [3, 12], "meta":
       {"bean": "rainbow", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": "pass",
+        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager7', None, 0);self.master.switch_to(3)",
         "important": false, "evil": false, "display_name": "Rainbow Bean", "id": 16
       }
     },
   {"pos": [18, 11], "meta":
       {"bean": "hedgehog", "max_hp": 100, "moves": [0,2], "attack": 10, "energy": 100, "hp": 100, "xp": 0, "level": 1,
-        "interaction": "pass",
+        "interaction": "self.master.dialogue_controller.start_scene(self.player.beans[0], self.enemy_to_duel, 'villager8', None, 0);self.master.switch_to(3)",
         "important": false, "evil": false, "display_name": "Hedgehog Bean", "id": 17
       }
     }],
