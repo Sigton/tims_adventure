@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/particles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/particles.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
+      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="276" column="30" selection-start-line="276" selection-start-column="30" selection-end-line="276" selection-end-column="30" />
+            <state relative-caret-position="510">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -148,8 +149,6 @@
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
-        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
@@ -157,11 +156,13 @@
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
-        <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
+        <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
+        <option value="$PROJECT_DIR$/src/engines/particles.py" />
       </list>
     </option>
   </component>
@@ -188,6 +189,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engines" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -324,27 +331,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02161" summary="Added a quest icon">
-      <created>1523788442638</created>
-      <option name="number" value="02161" />
-      <option name="presentableId" value="LOCAL-02161" />
-      <option name="project" value="LOCAL" />
-      <updated>1523788442638</updated>
-    </task>
-    <task id="LOCAL-02162" summary="Added new quest">
-      <created>1523788503385</created>
-      <option name="number" value="02162" />
-      <option name="presentableId" value="LOCAL-02162" />
-      <option name="project" value="LOCAL" />
-      <updated>1523788503385</updated>
-    </task>
-    <task id="LOCAL-02163" summary="Defined new quest icon">
-      <created>1523788522969</created>
-      <option name="number" value="02163" />
-      <option name="presentableId" value="LOCAL-02163" />
-      <option name="project" value="LOCAL" />
-      <updated>1523788522969</updated>
     </task>
     <task id="LOCAL-02164" summary="Added a quest update to set up wizard dialogue">
       <created>1523788710448</created>
@@ -668,7 +654,28 @@
       <option name="project" value="LOCAL" />
       <updated>1523801361965</updated>
     </task>
-    <option name="localTasksCounter" value="2210" />
+    <task id="LOCAL-02210" summary="Added new quest icon">
+      <created>1523801575818</created>
+      <option name="number" value="02210" />
+      <option name="presentableId" value="LOCAL-02210" />
+      <option name="project" value="LOCAL" />
+      <updated>1523801575818</updated>
+    </task>
+    <task id="LOCAL-02211" summary="Made the last quest.">
+      <created>1523801639532</created>
+      <option name="number" value="02211" />
+      <option name="presentableId" value="LOCAL-02211" />
+      <option name="project" value="LOCAL" />
+      <updated>1523801639532</updated>
+    </task>
+    <task id="LOCAL-02212" summary="Wizard gets set unimportant after youve talked to it">
+      <created>1523801684507</created>
+      <option name="number" value="02212" />
+      <option name="presentableId" value="LOCAL-02212" />
+      <option name="project" value="LOCAL" />
+      <updated>1523801684507</updated>
+    </task>
+    <option name="localTasksCounter" value="2213" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -720,9 +727,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Generally made the evil beans more difficult" />
-    <MESSAGE value="Mixing the music independantly" />
-    <MESSAGE value="Fixed some trees on some rocks" />
     <MESSAGE value="Fixed grammar error" />
     <MESSAGE value="Increased strength of poison bean on the bridge" />
     <MESSAGE value="Fixed the moves for the evil beans" />
@@ -745,7 +749,10 @@
     <MESSAGE value="Fixed bug with healing display" />
     <MESSAGE value="Snowballs do more damage" />
     <MESSAGE value="Decreased item spawn rates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decreased item spawn rates" />
+    <MESSAGE value="Added new quest icon" />
+    <MESSAGE value="Made the last quest." />
+    <MESSAGE value="Wizard gets set unimportant after youve talked to it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wizard gets set unimportant after youve talked to it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -939,23 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="298" column="28" lean-forward="true" selection-start-line="298" selection-start-column="28" selection-end-line="298" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2900">
@@ -1032,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engines/save.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
@@ -1060,10 +1043,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="276" column="30" selection-start-line="276" selection-start-column="30" selection-end-line="276" selection-end-column="30" />
+        <state relative-caret-position="730">
+          <caret line="278" lean-forward="true" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/dialogue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
         </state>
       </provider>
     </entry>
