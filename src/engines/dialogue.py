@@ -31,6 +31,8 @@ class DialogueController:
             "villager4": self.set_unimportant,
             "villager5": self.set_unimportant,
             "villager6": self.set_unimportant,
+            "villager7": self.set_unimportant,
+            "villager8": self.set_unimportant,
             "old_man2": self.update_north,
             "north_bean": self.update_village_attack,
             "help_village_bean": self.update_evil_beans_village,
