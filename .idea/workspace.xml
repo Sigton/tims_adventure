@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engines/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/particles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/particles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/particles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saves/default_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/saves/default_entities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="particles.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/engines/particles.py">
+      <file leaf-file-name="default_entities.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="402">
+              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moves.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -154,15 +162,15 @@
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/terrain/chunks.py" />
-        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
-        <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
+        <option value="$PROJECT_DIR$/src/duel/moves.py" />
+        <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
       </list>
     </option>
   </component>
@@ -189,6 +197,12 @@
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="duel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -331,20 +345,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02164" summary="Added a quest update to set up wizard dialogue">
-      <created>1523788710448</created>
-      <option name="number" value="02164" />
-      <option name="presentableId" value="LOCAL-02164" />
-      <option name="project" value="LOCAL" />
-      <updated>1523788710448</updated>
-    </task>
-    <task id="LOCAL-02165" summary="Improved look of a quest icon">
-      <created>1523789000555</created>
-      <option name="number" value="02165" />
-      <option name="presentableId" value="LOCAL-02165" />
-      <option name="project" value="LOCAL" />
-      <updated>1523789000555</updated>
     </task>
     <task id="LOCAL-02166" summary="Making the evil beans more interesting">
       <created>1523789140146</created>
@@ -675,7 +675,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523801684507</updated>
     </task>
-    <option name="localTasksCounter" value="2213" />
+    <task id="LOCAL-02213" summary="Added a stone particle">
+      <created>1523802215065</created>
+      <option name="number" value="02213" />
+      <option name="presentableId" value="LOCAL-02213" />
+      <option name="project" value="LOCAL" />
+      <updated>1523802215065</updated>
+    </task>
+    <task id="LOCAL-02214" summary="Added new move">
+      <created>1523802302143</created>
+      <option name="number" value="02214" />
+      <option name="presentableId" value="LOCAL-02214" />
+      <option name="project" value="LOCAL" />
+      <updated>1523802302143</updated>
+    </task>
+    <option name="localTasksCounter" value="2215" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -727,8 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed grammar error" />
-    <MESSAGE value="Increased strength of poison bean on the bridge" />
     <MESSAGE value="Fixed the moves for the evil beans" />
     <MESSAGE value="Fixed bug in scene update" />
     <MESSAGE value="Increased snow particle lifetime" />
@@ -752,7 +764,9 @@
     <MESSAGE value="Added new quest icon" />
     <MESSAGE value="Made the last quest." />
     <MESSAGE value="Wizard gets set unimportant after youve talked to it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wizard gets set unimportant after youve talked to it" />
+    <MESSAGE value="Added a stone particle" />
+    <MESSAGE value="Added new move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new move" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="112" column="103" lean-forward="true" selection-start-line="112" selection-start-column="103" selection-end-line="112" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/entity_meta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1026,13 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
           <caret line="173" column="35" lean-forward="true" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1071,6 +1071,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duel/moves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
         </state>
       </provider>
     </entry>
