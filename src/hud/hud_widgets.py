@@ -871,6 +871,7 @@ class OptionsMenu:
         else:
 
             self.controller.close_widget(self.id)
+            self.master.options_menu_open = False
 
     def draw(self, display):
 
