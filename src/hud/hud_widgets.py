@@ -825,7 +825,7 @@ class OptionsMenu:
 
         self.id = "options_menu"
 
-        self.selected_button = 2
+        self.selected_button = 1
 
         loaded_images = menu_image_loader.load_images()
         self.images = [loaded_images["smoothest_button"],
@@ -863,7 +863,10 @@ class OptionsMenu:
 
         if button_id < 5:
 
-            pass
+            if not button_id == self.selected_button:
+
+                self.selected_button = button_id
+                constants.load_performance_profile(button_id)
 
         else:
 
