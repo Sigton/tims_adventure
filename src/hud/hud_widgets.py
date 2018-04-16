@@ -827,10 +827,13 @@ class OptionsMenu:
         self.background = gui_components.Fill(self.x, self.y, 500, 260, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 490, 250, constants.GUI_FILL)
 
+        self.buttons = [gui_components.Button(None, self.x+21, self.y + (97 * n) + 10, None)
+                        for n in range(5)]
+
         self.components = [
             self.background,
             self.background_fill
-        ]
+        ] + self.buttons
 
     def update(self):
 
