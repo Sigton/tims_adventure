@@ -343,7 +343,7 @@ def create_json_from_entity(entity):
                 "evil": entity.meta.evil,
                 "display_name": entity.meta.display_name,
                 "id": entity.meta.id,
-                "to_delete": entity.meta.id
+                "to_delete": entity.meta.to_delete
             }
         }
     else:
