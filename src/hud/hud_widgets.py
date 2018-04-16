@@ -813,8 +813,11 @@ class HealingDisplay(ItemSelect):
                 )
 
 
-class PerformanceProfileSelect:
+class OptionsMenu:
 
-    def __init__(self):
+    def __init__(self, master, x, y):
 
-        pass
+        self.x = x
+        self.y = y
+
+        self.id = "options_menu"
