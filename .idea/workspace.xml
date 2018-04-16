@@ -51,8 +51,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="828" lean-forward="true" selection-start-line="828" selection-end-line="828" />
+            <state relative-caret-position="650">
+              <caret line="855" column="13" lean-forward="true" selection-start-line="855" selection-start-column="13" selection-end-line="855" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -147,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/entities/shadows.py" />
         <option value="$PROJECT_DIR$/src/terrain/hud.py" />
         <option value="$PROJECT_DIR$/src/engines/menu.py" />
-        <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/decs.json" />
         <option value="$PROJECT_DIR$/src/saves/gamesaves/save1/progress.json" />
         <option value="$PROJECT_DIR$/setup.py" />
@@ -189,6 +188,7 @@
         <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
+        <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
@@ -352,41 +352,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02198" summary="Music plays immediately">
-      <created>1523798909645</created>
-      <option name="number" value="02198" />
-      <option name="presentableId" value="LOCAL-02198" />
-      <option name="project" value="LOCAL" />
-      <updated>1523798909645</updated>
-    </task>
-    <task id="LOCAL-02199" summary="Fisherman shouldn't delete when beat">
-      <created>1523799316331</created>
-      <option name="number" value="02199" />
-      <option name="presentableId" value="LOCAL-02199" />
-      <option name="project" value="LOCAL" />
-      <updated>1523799316331</updated>
-    </task>
-    <task id="LOCAL-02200" summary="Stat panel gets removed">
-      <created>1523799343288</created>
-      <option name="number" value="02200" />
-      <option name="presentableId" value="LOCAL-02200" />
-      <option name="project" value="LOCAL" />
-      <updated>1523799343288</updated>
-    </task>
-    <task id="LOCAL-02201" summary="Made fisherman more difficult">
-      <created>1523799491650</created>
-      <option name="number" value="02201" />
-      <option name="presentableId" value="LOCAL-02201" />
-      <option name="project" value="LOCAL" />
-      <updated>1523799491650</updated>
-    </task>
-    <task id="LOCAL-02202" summary="Reduced damage from potion of death">
-      <created>1523800794143</created>
-      <option name="number" value="02202" />
-      <option name="presentableId" value="LOCAL-02202" />
-      <option name="project" value="LOCAL" />
-      <updated>1523800794143</updated>
     </task>
     <task id="LOCAL-02203" summary="Potion of death is less common">
       <created>1523800825660</created>
@@ -696,7 +661,42 @@
       <option name="project" value="LOCAL" />
       <updated>1523897405176</updated>
     </task>
-    <option name="localTasksCounter" value="2247" />
+    <task id="LOCAL-02247" summary="Added a list of buttons">
+      <created>1523897669959</created>
+      <option name="number" value="02247" />
+      <option name="presentableId" value="LOCAL-02247" />
+      <option name="project" value="LOCAL" />
+      <updated>1523897669959</updated>
+    </task>
+    <task id="LOCAL-02248" summary="Added spritesheet data for buttons">
+      <created>1523898059814</created>
+      <option name="number" value="02248" />
+      <option name="presentableId" value="LOCAL-02248" />
+      <option name="project" value="LOCAL" />
+      <updated>1523898059814</updated>
+    </task>
+    <task id="LOCAL-02249" summary="Connected the images to the hud widgets">
+      <created>1523898337644</created>
+      <option name="number" value="02249" />
+      <option name="presentableId" value="LOCAL-02249" />
+      <option name="project" value="LOCAL" />
+      <updated>1523898337644</updated>
+    </task>
+    <task id="LOCAL-02250" summary="Buttons are updated">
+      <created>1523898389407</created>
+      <option name="number" value="02250" />
+      <option name="presentableId" value="LOCAL-02250" />
+      <option name="project" value="LOCAL" />
+      <updated>1523898389407</updated>
+    </task>
+    <task id="LOCAL-02251" summary="Added a callback function">
+      <created>1523898474468</created>
+      <option name="number" value="02251" />
+      <option name="presentableId" value="LOCAL-02251" />
+      <option name="project" value="LOCAL" />
+      <updated>1523898474468</updated>
+    </task>
+    <option name="localTasksCounter" value="2252" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -748,11 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing spelling and punctuation" />
-    <MESSAGE value="Edited icons.png" />
-    <MESSAGE value="Villagers 7 and 8 get set unimportant" />
-    <MESSAGE value="Added in more particles" />
-    <MESSAGE value="Added a list of damaging items" />
     <MESSAGE value="Implemented potion particle effects into the duel engine" />
     <MESSAGE value="Drinking healing potions has a particle effect" />
     <MESSAGE value="Updated icons.png" />
@@ -773,7 +768,12 @@
     <MESSAGE value="Added generic attributes to options menu" />
     <MESSAGE value="Adding components" />
     <MESSAGE value="Added update and draw methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added update and draw methods" />
+    <MESSAGE value="Added a list of buttons" />
+    <MESSAGE value="Added spritesheet data for buttons" />
+    <MESSAGE value="Connected the images to the hud widgets" />
+    <MESSAGE value="Buttons are updated" />
+    <MESSAGE value="Added a callback function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a callback function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,13 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-768">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1076,10 +1069,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="127" column="37" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="828" lean-forward="true" selection-start-line="828" selection-end-line="828" />
+        <state relative-caret-position="650">
+          <caret line="855" column="13" lean-forward="true" selection-start-line="855" selection-start-column="13" selection-end-line="855" selection-end-column="13" />
         </state>
       </provider>
     </entry>

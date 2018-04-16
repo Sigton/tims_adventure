@@ -849,7 +849,13 @@ class OptionsMenu:
 
     def callback(self, button_id):
 
-        pass
+        if button_id < 5:
+
+            pass
+
+        else:
+
+            pass
 
     def draw(self, display):
 
