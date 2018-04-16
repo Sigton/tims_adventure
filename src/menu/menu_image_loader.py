@@ -127,27 +127,27 @@ def load_images():
                                                               image[1],
                                                               image[2],
                                                               image[3]) for image
-                             in SpriteSheetData.cancel_save_button],
+                             in SpriteSheetData.smoothest_button],
         "smooth_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                            image[1],
                                                            image[2],
                                                            image[3]) for image
-                          in SpriteSheetData.cancel_save_button],
+                          in SpriteSheetData.smooth_button],
         "fast_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                          image[1],
                                                          image[2],
                                                          image[3]) for image
-                        in SpriteSheetData.cancel_save_button],
+                        in SpriteSheetData.fast_button],
         "fastest_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                             image[1],
                                                             image[2],
                                                             image[3]) for image
-                           in SpriteSheetData.cancel_save_button],
+                           in SpriteSheetData.fastest_button],
         "close_button": [sprite_sheet.get_image_src_alpha(image[0],
                                                           image[1],
                                                           image[2],
                                                           image[3]) for image
-                         in SpriteSheetData.cancel_save_button]
+                         in SpriteSheetData.close_button]
     }
 
     return images
