@@ -43,10 +43,11 @@ class MainMenu:
 
         self.hud = hud.HUD(None, self)
 
-        self.hud.save_hud("menu", ["save_select", ])
+        self.hud.save_hud("menu", ["save_select", "options_menu"])
         self.hud.load_saved_hud("menu")
 
         self.save_select_open = False
+        self.options_menu_open = False
 
     def update(self):
 
@@ -74,19 +75,19 @@ class MainMenu:
 
                 self.hud.get_component("save_select").handle_event(event)
 
-        if self.save_select_open:
+        if self.save_select_open or self.options_menu_open:
             self.background.image = self.dark_background
         else:
             self.background.image = self.normal_background
 
         [button.update() for button in self.buttons]
 
-        if self.save_select_open:
+        if self.save_select_open or self.options_menu_open:
             self.hud.update()
 
     def callback(self, button_id):
 
-        if self.save_select_open:
+        if self.save_select_open or self.options_menu_open:
             return
 
         self.master.sound_engine.queue_sound(["click", 0])
@@ -95,7 +96,8 @@ class MainMenu:
             self.save_select_open = True
 
         elif button_id == 1:
-            pass
+            self.options_menu_open = True
+            self.hud.open_widget("options_menu")
 
         else:
             self.master.game_exit = True
@@ -104,7 +106,7 @@ class MainMenu:
 
         self.background.draw(display)
 
-        if self.save_select_open:
+        if self.save_select_open or self.options_menu_open:
             self.hud.draw(display)
         else:
             [button.draw(display) for button in self.buttons]

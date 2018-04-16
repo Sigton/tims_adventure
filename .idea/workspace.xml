@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/menu.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,15 +19,15 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DockManager">
-    <window id="1">
+    <window id="2">
       <content type="file-editors">
         <state>
           <leaf>
             <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="2700">
-                    <caret line="143" column="60" lean-forward="true" selection-start-line="143" selection-start-column="60" selection-end-line="143" selection-end-column="60" />
+                  <state relative-caret-position="218">
+                    <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
                   </state>
                 </provider>
               </entry>
@@ -39,20 +39,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="1670">
+              <caret line="108" column="59" lean-forward="true" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="650">
-              <caret line="855" column="13" lean-forward="true" selection-start-line="855" selection-start-column="13" selection-end-line="855" selection-end-column="13" />
+              <caret line="868" column="61" lean-forward="true" selection-start-line="868" selection-start-column="61" selection-end-line="868" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -68,7 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>no</find>
       <find>False</find>
       <find>queue</find>
       <find>_channel</find>
@@ -98,6 +97,7 @@
       <find>&quot;to_delete&quot;</find>
       <find>xp_bar.</find>
       <find>Save</find>
+      <find>savese</find>
     </findStrings>
     <replaceStrings>
       <replace>self.enemy.meta.moves</replace>
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/terrain/tiles.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_image_loader.py" />
         <option value="$PROJECT_DIR$/src/engines/story_tracker.py" />
-        <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/entities/entity_meta.py" />
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
@@ -190,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
+        <option value="$PROJECT_DIR$/src/menu/menu.py" />
       </list>
     </option>
   </component>
@@ -352,34 +352,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02203" summary="Potion of death is less common">
-      <created>1523800825660</created>
-      <option name="number" value="02203" />
-      <option name="presentableId" value="LOCAL-02203" />
-      <option name="project" value="LOCAL" />
-      <updated>1523800825661</updated>
-    </task>
-    <task id="LOCAL-02204" summary="Fixed chili particle sprite sheet data">
-      <created>1523800938345</created>
-      <option name="number" value="02204" />
-      <option name="presentableId" value="LOCAL-02204" />
-      <option name="project" value="LOCAL" />
-      <updated>1523800938345</updated>
-    </task>
-    <task id="LOCAL-02205" summary="Fixed burn particle position noise">
-      <created>1523800969196</created>
-      <option name="number" value="02205" />
-      <option name="presentableId" value="LOCAL-02205" />
-      <option name="project" value="LOCAL" />
-      <updated>1523800969196</updated>
-    </task>
-    <task id="LOCAL-02206" summary="Adjusted quest icon">
-      <created>1523801162658</created>
-      <option name="number" value="02206" />
-      <option name="presentableId" value="LOCAL-02206" />
-      <option name="project" value="LOCAL" />
-      <updated>1523801162658</updated>
     </task>
     <task id="LOCAL-02207" summary="Fixed bug with healing display">
       <created>1523801257996</created>
@@ -696,7 +668,35 @@
       <option name="project" value="LOCAL" />
       <updated>1523898474468</updated>
     </task>
-    <option name="localTasksCounter" value="2252" />
+    <task id="LOCAL-02252" summary="Populating callback">
+      <created>1523898626943</created>
+      <option name="number" value="02252" />
+      <option name="presentableId" value="LOCAL-02252" />
+      <option name="project" value="LOCAL" />
+      <updated>1523898626943</updated>
+    </task>
+    <task id="LOCAL-02253" summary="Added controller attribute and implemented close button">
+      <created>1523898714899</created>
+      <option name="number" value="02253" />
+      <option name="presentableId" value="LOCAL-02253" />
+      <option name="project" value="LOCAL" />
+      <updated>1523898714900</updated>
+    </task>
+    <task id="LOCAL-02254" summary="Finished update function">
+      <created>1523899059506</created>
+      <option name="number" value="02254" />
+      <option name="presentableId" value="LOCAL-02254" />
+      <option name="project" value="LOCAL" />
+      <updated>1523899059506</updated>
+    </task>
+    <task id="LOCAL-02255" summary="Hopefully all that should work">
+      <created>1523899119163</created>
+      <option name="number" value="02255" />
+      <option name="presentableId" value="LOCAL-02255" />
+      <option name="project" value="LOCAL" />
+      <updated>1523899119163</updated>
+    </task>
+    <option name="localTasksCounter" value="2256" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -748,10 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented potion particle effects into the duel engine" />
-    <MESSAGE value="Drinking healing potions has a particle effect" />
-    <MESSAGE value="Updated icons.png" />
-    <MESSAGE value="Decreased position noise for bubbles" />
     <MESSAGE value="Debugging" />
     <MESSAGE value="Decreased pos noise" />
     <MESSAGE value="Pink bubble particles now scroll" />
@@ -773,7 +769,11 @@
     <MESSAGE value="Connected the images to the hud widgets" />
     <MESSAGE value="Buttons are updated" />
     <MESSAGE value="Added a callback function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a callback function" />
+    <MESSAGE value="Populating callback" />
+    <MESSAGE value="Added controller attribute and implemented close button" />
+    <MESSAGE value="Finished update function" />
+    <MESSAGE value="Hopefully all that should work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hopefully all that should work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,20 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="143" column="60" lean-forward="true" selection-start-line="143" selection-start-column="60" selection-end-line="143" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu_image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1076,10 +1062,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
-          <caret line="855" column="13" lean-forward="true" selection-start-line="855" selection-start-column="13" selection-end-line="855" selection-end-column="13" />
+          <caret line="868" column="61" lean-forward="true" selection-start-line="868" selection-start-column="61" selection-end-line="868" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1670">
+          <caret line="108" column="59" lean-forward="true" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
         </state>
       </provider>
     </entry>
