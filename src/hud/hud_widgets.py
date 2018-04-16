@@ -825,6 +825,8 @@ class OptionsMenu:
 
         self.id = "options_menu"
 
+        self.selected_button = 2
+
         loaded_images = menu_image_loader.load_images()
         self.images = [loaded_images["smoothest_button"],
                        loaded_images["smooth_button"],
@@ -846,7 +848,16 @@ class OptionsMenu:
 
     def update(self):
 
-        [button.update() for button in self.buttons]
+        n = 0
+        for button in self.buttons:
+            if self.selected_button == n:
+                button.force_active()
+            else:
+                button.no_force_active()
+
+            button.update()
+
+            n += 1
 
     def callback(self, button_id):
 
