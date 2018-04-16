@@ -834,8 +834,8 @@ class OptionsMenu:
                        loaded_images["fastest_button"],
                        loaded_images["close_button"]]
 
-        self.background = gui_components.Fill(self.x, self.y, 500, 260, constants.GUI_BACKING)
-        self.background_fill = gui_components.Fill(self.x+5, self.y+5, 490, 250, constants.GUI_FILL)
+        self.background = gui_components.Fill(self.x, self.y, 260, 500, constants.GUI_BACKING)
+        self.background_fill = gui_components.Fill(self.x+5, self.y+5, 250, 490, constants.GUI_FILL)
 
         self.buttons = [gui_components.Button(self.images[n], self.x+21, self.y + (97 * n) + 10,
                                               lambda: self.callback(n))
