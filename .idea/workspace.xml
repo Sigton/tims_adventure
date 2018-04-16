@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,20 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1670">
-              <caret line="108" column="59" lean-forward="true" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
+            <state relative-caret-position="130">
+              <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="868" column="61" lean-forward="true" selection-start-line="868" selection-start-column="61" selection-end-line="868" selection-end-column="61" />
+            <state relative-caret-position="510">
+              <caret line="863" column="25" lean-forward="true" selection-start-line="863" selection-start-column="25" selection-end-line="863" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -164,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/etc/dialogue_scenes.py" />
         <option value="$PROJECT_DIR$/src/entities/icons.py" />
         <option value="$PROJECT_DIR$/src/engines/brain.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_types.py" />
         <option value="$PROJECT_DIR$/src/entities/bean_image_loader.py" />
         <option value="$PROJECT_DIR$/src/terrain/tile_data.py" />
@@ -188,8 +186,9 @@
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -229,12 +228,6 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -352,20 +345,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02207" summary="Fixed bug with healing display">
-      <created>1523801257996</created>
-      <option name="number" value="02207" />
-      <option name="presentableId" value="LOCAL-02207" />
-      <option name="project" value="LOCAL" />
-      <updated>1523801257996</updated>
-    </task>
-    <task id="LOCAL-02208" summary="Snowballs do more damage">
-      <created>1523801282167</created>
-      <option name="number" value="02208" />
-      <option name="presentableId" value="LOCAL-02208" />
-      <option name="project" value="LOCAL" />
-      <updated>1523801282167</updated>
     </task>
     <task id="LOCAL-02209" summary="Decreased item spawn rates">
       <created>1523801361965</created>
@@ -696,7 +675,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523899119163</updated>
     </task>
-    <option name="localTasksCounter" value="2256" />
+    <task id="LOCAL-02256" summary="Implementing the options menu into main menu">
+      <created>1523903281072</created>
+      <option name="number" value="02256" />
+      <option name="presentableId" value="LOCAL-02256" />
+      <option name="project" value="LOCAL" />
+      <updated>1523903281072</updated>
+    </task>
+    <task id="LOCAL-02257" summary="Connected options menu to hud">
+      <created>1523903434279</created>
+      <option name="number" value="02257" />
+      <option name="presentableId" value="LOCAL-02257" />
+      <option name="project" value="LOCAL" />
+      <updated>1523903434279</updated>
+    </task>
+    <option name="localTasksCounter" value="2258" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -748,8 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugging" />
-    <MESSAGE value="Decreased pos noise" />
     <MESSAGE value="Pink bubble particles now scroll" />
     <MESSAGE value="Added error catching on remove_stat_panel" />
     <MESSAGE value="Added icon" />
@@ -773,7 +764,9 @@
     <MESSAGE value="Added controller attribute and implemented close button" />
     <MESSAGE value="Finished update function" />
     <MESSAGE value="Hopefully all that should work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hopefully all that should work" />
+    <MESSAGE value="Implementing the options menu into main menu" />
+    <MESSAGE value="Connected options menu to hud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected options menu to hud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -906,13 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1069,17 +1055,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="868" column="61" lean-forward="true" selection-start-line="868" selection-start-column="61" selection-end-line="868" selection-end-column="61" />
+        <state relative-caret-position="130">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
+    <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1670">
-          <caret line="108" column="59" lean-forward="true" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
+        <state relative-caret-position="-630">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="863" column="25" lean-forward="true" selection-start-line="863" selection-start-column="25" selection-end-line="863" selection-end-column="25" />
         </state>
       </provider>
     </entry>

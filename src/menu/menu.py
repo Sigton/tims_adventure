@@ -106,7 +106,9 @@ class MainMenu:
 
         self.background.draw(display)
 
-        if self.save_select_open or self.options_menu_open:
-            self.hud.draw(display)
+        if self.save_select_open:
+            self.hud.get_component("save_select").draw(display)
+        elif self.options_menu_open:
+            self.hud.get_component("options_menu").draw(display)
         else:
             [button.draw(display) for button in self.buttons]
