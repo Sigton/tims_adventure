@@ -861,7 +861,7 @@ class OptionsMenu:
 
     def callback(self, button_id):
 
-        if button_id < 5:
+        if button_id < 4:
 
             if not button_id == self.selected_button:
 
