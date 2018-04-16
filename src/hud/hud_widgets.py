@@ -817,7 +817,17 @@ class OptionsMenu:
 
     def __init__(self, master, x, y):
 
+        self.master = master
+
         self.x = x
         self.y = y
 
         self.id = "options_menu"
+
+        self.background = gui_components.Fill(self.x, self.y, 500, 260, constants.GUI_BACKING)
+        self.background_fill = gui_components.Fill(self.x+5, self.y+5, 490, 250, constants.GUI_FILL)
+
+        self.components = [
+            self.background,
+            self.background_fill
+        ]
