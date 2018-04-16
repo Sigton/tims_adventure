@@ -827,19 +827,28 @@ class OptionsMenu:
 
         self.selected_button = 1
 
-        loaded_images = menu_image_loader.load_images()
-        self.images = [loaded_images["smoothest_button"],
-                       loaded_images["smooth_button"],
-                       loaded_images["fast_button"],
-                       loaded_images["fastest_button"],
-                       loaded_images["close_button"]]
+        self.images = menu_image_loader.load_images()
 
         self.background = gui_components.Fill(self.x, self.y, 260, 500, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 250, 490, constants.GUI_FILL)
 
-        self.buttons = [gui_components.Button(self.images[n], self.x+21, self.y + (97 * n) + 10,
-                                              lambda: self.callback(n))
-                        for n in range(5)]
+        self.smoothest_button = gui_components.Button(self.images["smoothest_button"], self.x+21, self.y + (97 * 0) + 10,
+                                                      lambda: self.callback(0))
+        self.smooth_button = gui_components.Button(self.images["smooth_button"], self.x + 21, self.y + (97 * 0) + 10,
+                                                   lambda: self.callback(1))
+        self.fast_button = gui_components.Button(self.images["fast_button"], self.x + 21, self.y + (97 * 0) + 10,
+                                                 lambda: self.callback(2))
+        self.fastest_button = gui_components.Button(self.images["fastest_button"], self.x + 21, self.y + (97 * 0) + 10,
+                                                    lambda: self.callback(3))
+        self.cancel_button = gui_components.Button(self.images["close_button"], self.x + 21, self.y + (97 * 0) + 10,
+                                                   lambda: self.callback(4))
+
+        self.buttons = [
+            self.smoothest_button,
+            self.smooth_button,
+            self.fast_button,
+            self.fastest_button
+        ]
 
         self.components = [
             self.background,
