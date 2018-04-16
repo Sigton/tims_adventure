@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +18,31 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="393">
+                    <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="-510">
               <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
             </state>
           </provider>
@@ -31,8 +51,8 @@
       <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="822" column="32" selection-start-line="822" selection-start-column="32" selection-end-line="822" selection-end-column="32" />
+            <state relative-caret-position="790">
+              <caret line="841" lean-forward="true" selection-start-line="841" selection-end-line="841" />
             </state>
           </provider>
         </entry>
@@ -332,20 +352,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02195" summary="Beating an entity marks it to be deleted">
-      <created>1523798346614</created>
-      <option name="number" value="02195" />
-      <option name="presentableId" value="LOCAL-02195" />
-      <option name="project" value="LOCAL" />
-      <updated>1523798346614</updated>
-    </task>
-    <task id="LOCAL-02196" summary="Entities should get removed with a puff of smoke">
-      <created>1523798631324</created>
-      <option name="number" value="02196" />
-      <option name="presentableId" value="LOCAL-02196" />
-      <option name="project" value="LOCAL" />
-      <updated>1523798631324</updated>
     </task>
     <task id="LOCAL-02197" summary="Menu plays music now">
       <created>1523798781316</created>
@@ -676,7 +682,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523896841648</updated>
     </task>
-    <option name="localTasksCounter" value="2244" />
+    <task id="LOCAL-02244" summary="Added generic attributes to options menu">
+      <created>1523897106831</created>
+      <option name="number" value="02244" />
+      <option name="presentableId" value="LOCAL-02244" />
+      <option name="project" value="LOCAL" />
+      <updated>1523897106831</updated>
+    </task>
+    <task id="LOCAL-02245" summary="Adding components">
+      <created>1523897343802</created>
+      <option name="number" value="02245" />
+      <option name="presentableId" value="LOCAL-02245" />
+      <option name="project" value="LOCAL" />
+      <updated>1523897343802</updated>
+    </task>
+    <option name="localTasksCounter" value="2246" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -728,8 +748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated dans moves" />
-    <MESSAGE value="Balanced energy usage" />
     <MESSAGE value="Punch takes more energy" />
     <MESSAGE value="Fixing spelling and punctuation" />
     <MESSAGE value="Edited icons.png" />
@@ -753,7 +771,9 @@
     <MESSAGE value="Updated menu buttons" />
     <MESSAGE value="Creating an options menu" />
     <MESSAGE value="Added a close button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a close button" />
+    <MESSAGE value="Added generic attributes to options menu" />
+    <MESSAGE value="Adding components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding components" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -973,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1051,15 +1064,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="-510">
           <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="822" column="32" selection-start-line="822" selection-start-column="32" selection-end-line="822" selection-end-column="32" />
+        <state relative-caret-position="790">
+          <caret line="841" lean-forward="true" selection-start-line="841" selection-end-line="841" />
         </state>
       </provider>
     </entry>
