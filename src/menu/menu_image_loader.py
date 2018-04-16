@@ -52,6 +52,36 @@ class SpriteSheetData:
         (392, 531, 196, 85)
     ]
 
+    smoothest_button = [
+        (0, 616, 212, 92),
+        (212, 616, 212, 92),
+        (424, 616, 212, 92)
+    ]
+
+    smooth_button = [
+        (0, 708, 212, 92),
+        (212, 708, 212, 92),
+        (424, 708, 212, 92)
+    ]
+
+    fast_button = [
+        (0, 800, 212, 92),
+        (212, 800, 212, 92),
+        (424, 800, 212, 92)
+    ]
+
+    fastest_button = [
+        (0, 892, 212, 92),
+        (212, 892, 212, 92),
+        (424, 892, 212, 92)
+    ]
+
+    close_button = [
+        (0, 984, 212, 92),
+        (212, 984, 212, 92),
+        (424, 984, 212, 92)
+    ]
+
 
 def load_images():
 
@@ -92,7 +122,32 @@ def load_images():
                                                                 image[1],
                                                                 image[2],
                                                                 image[3]) for image
-                               in SpriteSheetData.cancel_save_button]
+                               in SpriteSheetData.cancel_save_button],
+        "smoothest_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                              image[1],
+                                                              image[2],
+                                                              image[3]) for image
+                             in SpriteSheetData.cancel_save_button],
+        "smooth_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                           image[1],
+                                                           image[2],
+                                                           image[3]) for image
+                          in SpriteSheetData.cancel_save_button],
+        "fast_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                         image[1],
+                                                         image[2],
+                                                         image[3]) for image
+                        in SpriteSheetData.cancel_save_button],
+        "fastest_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                            image[1],
+                                                            image[2],
+                                                            image[3]) for image
+                           in SpriteSheetData.cancel_save_button],
+        "close_button": [sprite_sheet.get_image_src_alpha(image[0],
+                                                          image[1],
+                                                          image[2],
+                                                          image[3]) for image
+                         in SpriteSheetData.cancel_save_button]
     }
 
     return images
