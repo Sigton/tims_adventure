@@ -815,9 +815,10 @@ class HealingDisplay(ItemSelect):
 
 class OptionsMenu:
 
-    def __init__(self, master, x, y):
+    def __init__(self, master, controller, x, y):
 
         self.master = master
+        self.controller = controller
 
         self.x = x
         self.y = y
@@ -855,7 +856,7 @@ class OptionsMenu:
 
         else:
 
-            pass
+            self.controller.close_widget(self.id)
 
     def draw(self, display):
 
