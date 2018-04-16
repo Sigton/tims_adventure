@@ -834,20 +834,21 @@ class OptionsMenu:
 
         self.smoothest_button = gui_components.Button(self.images["smoothest_button"], self.x+21, self.y + (97 * 0) + 10,
                                                       lambda: self.callback(0))
-        self.smooth_button = gui_components.Button(self.images["smooth_button"], self.x + 21, self.y + (97 * 0) + 10,
+        self.smooth_button = gui_components.Button(self.images["smooth_button"], self.x + 21, self.y + (97 * 1) + 10,
                                                    lambda: self.callback(1))
-        self.fast_button = gui_components.Button(self.images["fast_button"], self.x + 21, self.y + (97 * 0) + 10,
+        self.fast_button = gui_components.Button(self.images["fast_button"], self.x + 21, self.y + (97 * 2) + 10,
                                                  lambda: self.callback(2))
-        self.fastest_button = gui_components.Button(self.images["fastest_button"], self.x + 21, self.y + (97 * 0) + 10,
+        self.fastest_button = gui_components.Button(self.images["fastest_button"], self.x + 21, self.y + (97 * 3) + 10,
                                                     lambda: self.callback(3))
-        self.cancel_button = gui_components.Button(self.images["close_button"], self.x + 21, self.y + (97 * 0) + 10,
+        self.close_button = gui_components.Button(self.images["close_button"], self.x + 21, self.y + (97 * 4) + 10,
                                                    lambda: self.callback(4))
 
         self.buttons = [
             self.smoothest_button,
             self.smooth_button,
             self.fast_button,
-            self.fastest_button
+            self.fastest_button,
+            self.close_button
         ]
 
         self.components = [
