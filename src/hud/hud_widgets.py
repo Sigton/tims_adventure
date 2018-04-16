@@ -811,3 +811,10 @@ class HealingDisplay(ItemSelect):
                 self.master.master.particle_engine.create_particle_spread(
                     'pink_bubbles', 8, self.player.rect.centerx, self.player.rect.centery, 35, 1, 0, 30, 30
                 )
+
+
+class PerformanceProfileSelect:
+
+    def __init__(self):
+
+        pass
