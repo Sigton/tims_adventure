@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="226" column="1" lean-forward="true" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="219" column="21" selection-start-line="219" selection-start-column="21" selection-end-line="219" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,7 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tim</find>
       <find>2086</find>
       <find>anima</find>
       <find>672</find>
@@ -54,22 +64,23 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find />
+      <find>&quot;level&quot;: 100</find>
       <find>lair</find>
-      <find />
+      <find>&quot;id&quot;: 14</find>
       <find>chili&quot;</find>
       <find>dan</find>
-      <find />
+      <find>&quot;id&quot;: 19</find>
       <find>-</find>
       <find>Dam</find>
       <find>Wither</find>
       <find>Death</find>
       <find>Health</find>
       <find>entity_data</find>
-      <find />
+      <find>Hello, Mr. Fisherman.</find>
       <find>came</find>
       <find>to_delete</find>
       <find>200</find>
+      <find>&quot;evil&quot;: true</find>
     </findStrings>
     <replaceStrings>
       <replace>self.enemy.meta.moves</replace>
@@ -84,7 +95,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace />
+      <replace>: create_images(</replace>
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -97,9 +108,9 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace />
+      <replace>&quot;level&quot;: 1</replace>
       <replace>entity_meta.entity_data</replace>
-      <replace />
+      <replace>Mr. Fisherman, sir?</replace>
       <replace>175</replace>
       <replace>150</replace>
     </replaceStrings>
@@ -160,16 +171,16 @@
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
+        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="418" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -225,21 +236,6 @@
               <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="saves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bean_rpg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saves" type="462c0819:PsiDirectoryNode" />
-              <item name="gamesaves" type="462c0819:PsiDirectoryNode" />
-              <item name="save1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bean_rpg" type="b2602c69:ProjectViewProjectNode" />
@@ -357,13 +353,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02189" summary="Increased strength of poison bean on the bridge">
-      <created>1523796796322</created>
-      <option name="number" value="02189" />
-      <option name="presentableId" value="LOCAL-02189" />
-      <option name="project" value="LOCAL" />
-      <updated>1523796796322</updated>
     </task>
     <task id="LOCAL-02190" summary="Fixed the moves for the evil beans">
       <created>1523796897534</created>
@@ -701,14 +690,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523811366571</updated>
     </task>
-    <option name="localTasksCounter" value="2238" />
+    <task id="LOCAL-02238" summary="Fixed an interesting bug where entities explode">
+      <created>1523823413841</created>
+      <option name="number" value="02238" />
+      <option name="presentableId" value="LOCAL-02238" />
+      <option name="project" value="LOCAL" />
+      <updated>1523823413841</updated>
+    </task>
+    <option name="localTasksCounter" value="2239" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1705757" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1705757" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
@@ -753,7 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added new quest icon" />
     <MESSAGE value="Made the last quest." />
     <MESSAGE value="Wizard gets set unimportant after youve talked to it" />
     <MESSAGE value="Added a stone particle" />
@@ -778,7 +773,8 @@
     <MESSAGE value="Added icon" />
     <MESSAGE value="Added icon window and changed caption" />
     <MESSAGE value="Needed to use png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Needed to use png" />
+    <MESSAGE value="Fixed an interesting bug where entities explode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed an interesting bug where entities explode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1064,16 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1093,8 +1079,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="226" column="1" lean-forward="true" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="219" column="21" selection-start-line="219" selection-start-column="21" selection-end-line="219" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

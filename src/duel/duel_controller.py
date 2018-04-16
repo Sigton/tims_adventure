@@ -344,10 +344,10 @@ class DuelController:
     def update_gui_components(self):
 
         self.player_hp_bar.update(self.player.meta.hp / self.player.meta.max_hp)
-        self.player_xp_bar.update(self.player.meta.xp / self.player.meta.get_level_up_threshold())
+        self.player_xp_bar.update(round(self.player.meta.xp / self.player.meta.get_level_up_threshold(), 1))
 
         self.enemy_hp_bar.update(self.enemy.meta.hp / self.enemy.meta.max_hp)
-        self.enemy_xp_bar.update(self.enemy.meta.xp / self.enemy.meta.get_level_up_threshold())
+        self.enemy_xp_bar.update(round(self.enemy.meta.xp / self.enemy.meta.get_level_up_threshold(), 1))
 
         self.player_energy_bar.update(self.player.energy / self.player.meta.energy)
 
