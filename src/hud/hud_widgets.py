@@ -844,7 +844,7 @@ class OptionsMenu:
 
     def update(self):
 
-        pass
+        [button.update() for button in self.buttons]
 
     def draw(self, display):
 
