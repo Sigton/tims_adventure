@@ -834,7 +834,8 @@ class OptionsMenu:
         self.background = gui_components.Fill(self.x, self.y, 500, 260, constants.GUI_BACKING)
         self.background_fill = gui_components.Fill(self.x+5, self.y+5, 490, 250, constants.GUI_FILL)
 
-        self.buttons = [gui_components.Button(self.images[n], self.x+21, self.y + (97 * n) + 10, None)
+        self.buttons = [gui_components.Button(self.images[n], self.x+21, self.y + (97 * n) + 10,
+                                              lambda: self.callback(n))
                         for n in range(5)]
 
         self.components = [
@@ -845,6 +846,10 @@ class OptionsMenu:
     def update(self):
 
         [button.update() for button in self.buttons]
+
+    def callback(self, button_id):
+
+        pass
 
     def draw(self, display):
 
