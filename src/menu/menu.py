@@ -94,6 +94,7 @@ class MainMenu:
 
         if button_id == 0:
             self.save_select_open = True
+            self.hud.open_widget("save_select")
 
         elif button_id == 1:
             self.options_menu_open = True
