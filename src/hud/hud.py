@@ -24,7 +24,8 @@ class HUD:
         self.map_display = lambda: hud_widgets.MapDisplay(self.master, self, 237, 179)
         self.item_select = lambda: hud_widgets.ItemSelect(self.master, self, 237, 179)
         self.backing = lambda: hud_widgets.Backing(self.master, 0, 0)
-        self.healing_display = lambda: hud_widgets.HealingDisplay(self.master, self, self.player, 237, 179)
+        self.healing_display = lambda: hud_widgets.HealingDisplay(self.master, self, self.player, 237, 179),
+        self.options_menu = lambda: hud_widgets.OptionsMenu(self.master, self, 350, 110)
 
         self.defined_components = {
             "health_display": self.health_display,
@@ -36,7 +37,8 @@ class HUD:
             "map_display": self.map_display,
             "item_select": self.item_select,
             "backing": self.backing,
-            "healing_display": self.healing_display
+            "healing_display": self.healing_display,
+            "options_menu": self.options_menu
         }
 
         self.components = []
