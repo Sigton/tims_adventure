@@ -229,7 +229,7 @@ all day!""", 1),
 aren't I?""", 1),
         ("Right. The evil beans. What do you wish to know?", 1),
         ("Where are they coming from?", 0),
-        (""""The come from the North, that is where the gate to this land is. The once magnificent gates between the 
+        ("""They come from the North, that is where the gate to this land is. The once magnificent gates between the 
 lands are now painted black with evil.""", 1),
         ("""They allow the passage of the evil beans, but any of us survivors wouldn't dream of going anywhere near 
 such treacherous locations.""", 1),
