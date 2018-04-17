@@ -164,6 +164,10 @@ class ChunkController:
             "story_data": self.master.story_tracker.get_story_data()
         }
 
+    def set_movement_speed(self, speed):
+
+        self.movement_speed = speed
+
     def update(self):
 
         for event in pygame.event.get():
