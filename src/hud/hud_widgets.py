@@ -360,6 +360,9 @@ class SaveSelect:
 
     def callback(self, button_id):
 
+        if not self.master.can_click:
+            return
+
         self.master.master.sound_engine.queue_sound(["click", 0])
 
         if button_id == 0:
@@ -870,6 +873,9 @@ class OptionsMenu:
             n += 1
 
     def callback(self, button_id):
+
+        if not self.master.can_click:
+            return
 
         if button_id < 4:
 

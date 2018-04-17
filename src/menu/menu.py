@@ -83,19 +83,17 @@ class MainMenu:
 
         [button.update() for button in self.buttons]
 
-        if pygame.mouse.get_pressed()[0]:
-            self.can_click = False
-        else:
-            self.can_click = True
-
         if self.save_select_open:
             self.hud.get_component("save_select").update()
         elif self.options_menu_open:
             self.hud.get_component("options_menu").update()
 
+        if not pygame.mouse.get_pressed()[0]:
+            self.can_click = True
+
     def callback(self, button_id):
 
-        if self.save_select_open or self.options_menu_open:
+        if self.save_select_open or self.options_menu_open or not self.can_click:
             return
 
         self.master.sound_engine.queue_sound(["click", 0])
@@ -110,6 +108,8 @@ class MainMenu:
 
         else:
             self.master.game_exit = True
+
+        self.can_click = False
 
     def draw(self, display):
 
