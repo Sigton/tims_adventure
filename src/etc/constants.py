@@ -93,6 +93,8 @@ health_update_rate = 120
 
 evil_bean_particle_rate = 100
 
+wobble_speed = 0.5
+
 
 # Tile information
 
@@ -193,16 +195,16 @@ footstep_sounds = [
 # Performance control
 
 performance_profiles = [
-    {"fps": 60, "loading": 60, "particle": 1, "cooldown": 80, "movement": 16},
-    {"fps": 45, "loading": 45, "particle": 0.75, "cooldown": 60, "movement": 12},
-    {"fps": 30, "loading": 30, "particle": 0.5, "cooldown": 40, "movement": 8},
-    {"fps": 15, "loading": 15, "particle": 0.25, "cooldown": 20, "movement": 4}
+    {"fps": 60, "loading": 60, "particle": 1, "cooldown": 80, "movement": 16, "wobble_speed": 0.67},
+    {"fps": 45, "loading": 45, "particle": 0.75, "cooldown": 60, "movement": 12, "wobble_speed": 0.5},
+    {"fps": 30, "loading": 30, "particle": 0.5, "cooldown": 40, "movement": 8, "wobble_speed": 0.33},
+    {"fps": 15, "loading": 15, "particle": 0.25, "cooldown": 20, "movement": 4, "wobble_speed": 0.25}
 ]
 
 
 def load_performance_profile(idx):
 
-    global FPS, LOADING_SCREEN_TIME, PARTICLE_LIFE_MULTIPLIER, turn_cool_down, movement_speed
+    global FPS, LOADING_SCREEN_TIME, PARTICLE_LIFE_MULTIPLIER, turn_cool_down, movement_speed, wobble_speed
 
     profile = performance_profiles[idx]
 
@@ -211,6 +213,7 @@ def load_performance_profile(idx):
     PARTICLE_LIFE_MULTIPLIER = profile["particle"]
     turn_cool_down = profile["cooldown"]
     movement_speed = profile["movement"]
+    wobble_speed = profile["wobble_speed"]
 
 
 # Bean related
