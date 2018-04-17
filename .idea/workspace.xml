@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/etc/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/etc/constants.py" afterDir="false" />
-    </list>
+    <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +56,8 @@
       <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+            <state relative-caret-position="313">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -68,8 +65,8 @@
       <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="198" column="99" selection-start-line="198" selection-start-column="99" selection-end-line="198" selection-end-column="99" />
+            <state relative-caret-position="350">
+              <caret line="204" column="34" lean-forward="true" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -93,23 +90,23 @@
       <find>straw</find>
       <find>lemon</find>
       <find>trail</find>
-      <find>&quot;level&quot;: 100</find>
+      <find />
       <find>lair</find>
-      <find>&quot;id&quot;: 14</find>
+      <find />
       <find>chili&quot;</find>
       <find>dan</find>
-      <find>&quot;id&quot;: 19</find>
+      <find />
       <find>-</find>
       <find>Dam</find>
       <find>Wither</find>
       <find>Death</find>
       <find>Health</find>
       <find>entity_data</find>
-      <find>Hello, Mr. Fisherman.</find>
+      <find />
       <find>came</find>
       <find>to_delete</find>
       <find>200</find>
-      <find>&quot;evil&quot;: true</find>
+      <find />
       <find>&quot;to_delete</find>
       <find>&quot;to_delete&quot;</find>
       <find>xp_bar.</find>
@@ -129,7 +126,7 @@
       <replace>4</replace>
       <replace>dialogue_in_words</replace>
       <replace>player</replace>
-      <replace>: create_images(</replace>
+      <replace />
       <replace>items</replace>
       <replace>entity</replace>
       <replace>Map</replace>
@@ -142,9 +139,9 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace>&quot;level&quot;: 1</replace>
+      <replace />
       <replace>entity_meta.entity_data</replace>
-      <replace>Mr. Fisherman, sir?</replace>
+      <replace />
       <replace>175</replace>
       <replace>150</replace>
     </replaceStrings>
@@ -192,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/engines/save.py" />
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
-        <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/duel/moves.py" />
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
@@ -206,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/entities/player.py" />
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
       </list>
     </option>
@@ -375,27 +372,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02221" summary="Villagers 7 and 8 get set unimportant">
-      <created>1523804647956</created>
-      <option name="number" value="02221" />
-      <option name="presentableId" value="LOCAL-02221" />
-      <option name="project" value="LOCAL" />
-      <updated>1523804647956</updated>
-    </task>
-    <task id="LOCAL-02222" summary="Added in more particles">
-      <created>1523805195250</created>
-      <option name="number" value="02222" />
-      <option name="presentableId" value="LOCAL-02222" />
-      <option name="project" value="LOCAL" />
-      <updated>1523805195250</updated>
-    </task>
-    <task id="LOCAL-02223" summary="Added a list of damaging items">
-      <created>1523805337698</created>
-      <option name="number" value="02223" />
-      <option name="presentableId" value="LOCAL-02223" />
-      <option name="project" value="LOCAL" />
-      <updated>1523805337698</updated>
     </task>
     <task id="LOCAL-02224" summary="Implemented potion particle effects into the duel engine">
       <created>1523805553992</created>
@@ -719,12 +695,32 @@
       <option name="project" value="LOCAL" />
       <updated>1523948177832</updated>
     </task>
-    <option name="localTasksCounter" value="2270" />
+    <task id="LOCAL-02270" summary="Added a variable wobble speed">
+      <created>1523948387596</created>
+      <option name="number" value="02270" />
+      <option name="presentableId" value="LOCAL-02270" />
+      <option name="project" value="LOCAL" />
+      <updated>1523948387596</updated>
+    </task>
+    <task id="LOCAL-02271" summary="Implemented it into player">
+      <created>1523948424567</created>
+      <option name="number" value="02271" />
+      <option name="presentableId" value="LOCAL-02271" />
+      <option name="project" value="LOCAL" />
+      <updated>1523948424568</updated>
+    </task>
+    <task id="LOCAL-02272" summary="So I forgot how sine works lol">
+      <created>1523948474865</created>
+      <option name="number" value="02272" />
+      <option name="presentableId" value="LOCAL-02272" />
+      <option name="project" value="LOCAL" />
+      <updated>1523948474865</updated>
+    </task>
+    <option name="localTasksCounter" value="2273" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -771,9 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug" />
-    <MESSAGE value="Updated menu buttons" />
-    <MESSAGE value="Creating an options menu" />
     <MESSAGE value="Added a close button" />
     <MESSAGE value="Added generic attributes to options menu" />
     <MESSAGE value="Adding components" />
@@ -796,7 +789,10 @@
     <MESSAGE value="Hopefully fixed the problem with the moving speed" />
     <MESSAGE value="Got the function name wrong" />
     <MESSAGE value="Menu's all fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu's all fixed" />
+    <MESSAGE value="Added a variable wobble speed" />
+    <MESSAGE value="Implemented it into player" />
+    <MESSAGE value="So I forgot how sine works lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="So I forgot how sine works lol" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1095,15 +1091,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        <state relative-caret-position="313">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="198" column="99" selection-start-line="198" selection-start-column="99" selection-end-line="198" selection-end-column="99" />
+        <state relative-caret-position="350">
+          <caret line="204" column="34" lean-forward="true" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
         </state>
       </provider>
     </entry>
