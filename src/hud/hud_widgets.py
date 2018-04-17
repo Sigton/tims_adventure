@@ -877,6 +877,8 @@ class OptionsMenu:
         if not self.master.can_click:
             return
 
+        self.master.master.sound_engine.queue_sound(["click", 0])
+
         if button_id < 4:
 
             if not button_id == self.selected_button:
