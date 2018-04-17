@@ -878,7 +878,7 @@ class OptionsMenu:
                 self.selected_button = button_id
                 constants.load_performance_profile(button_id)
 
-                self.master.master.chunk_controller.load_movement_speed(constants.movement_speed)
+                self.master.master.chunk_controller.set_movement_speed(constants.movement_speed)
 
         else:
 
