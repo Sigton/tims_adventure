@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hud/hud.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engines/sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engines/sounds.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,11 +48,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hud.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hud.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="26" column="107" lean-forward="true" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="107" />
+            <state relative-caret-position="460">
+              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="118" column="66" selection-start-line="118" selection-start-column="66" selection-end-line="118" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sounds.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -87,26 +105,23 @@
       <find>trail</find>
       <find />
       <find>lair</find>
-      <find />
       <find>chili&quot;</find>
       <find>dan</find>
-      <find />
       <find>-</find>
       <find>Dam</find>
       <find>Wither</find>
       <find>Death</find>
       <find>Health</find>
       <find>entity_data</find>
-      <find />
       <find>came</find>
       <find>to_delete</find>
       <find>200</find>
-      <find />
       <find>&quot;to_delete</find>
       <find>&quot;to_delete&quot;</find>
       <find>xp_bar.</find>
       <find>Save</find>
       <find>savese</find>
+      <find>does count as your move</find>
     </findStrings>
     <replaceStrings>
       <replace>self.enemy.meta.moves</replace>
@@ -134,11 +149,10 @@
       <replace>self.quests</replace>
       <replace>768</replace>
       <replace>816</replace>
-      <replace />
       <replace>entity_meta.entity_data</replace>
-      <replace />
       <replace>175</replace>
       <replace>150</replace>
+      <replace>will use up your move</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/engines/particles.py" />
         <option value="$PROJECT_DIR$/src/etc/gui_components.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
-        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
         <option value="$PROJECT_DIR$/src/duel/duel_controller.py" />
         <option value="$PROJECT_DIR$/src/entities/entities.py" />
         <option value="$PROJECT_DIR$/src/menu/menu_image_loader.py" />
@@ -196,9 +209,10 @@
         <option value="$PROJECT_DIR$/src/etc/constants.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
         <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
-        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/engines/dialogue.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
+        <option value="$PROJECT_DIR$/src/etc/story_data.py" />
+        <option value="$PROJECT_DIR$/src/engines/sounds.py" />
       </list>
     </option>
   </component>
@@ -379,20 +393,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02232" summary="Added error catching on remove_stat_panel">
-      <created>1523808442949</created>
-      <option name="number" value="02232" />
-      <option name="presentableId" value="LOCAL-02232" />
-      <option name="project" value="LOCAL" />
-      <updated>1523808442949</updated>
-    </task>
-    <task id="LOCAL-02233" summary="Fixed bug">
-      <created>1523808471754</created>
-      <option name="number" value="02233" />
-      <option name="presentableId" value="LOCAL-02233" />
-      <option name="project" value="LOCAL" />
-      <updated>1523808471754</updated>
     </task>
     <task id="LOCAL-02234" summary="Fixed bug">
       <created>1523809429972</created>
@@ -723,7 +723,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523983461165</updated>
     </task>
-    <option name="localTasksCounter" value="2281" />
+    <task id="LOCAL-02281" summary="Accidental comma">
+      <created>1523987151537</created>
+      <option name="number" value="02281" />
+      <option name="presentableId" value="LOCAL-02281" />
+      <option name="project" value="LOCAL" />
+      <updated>1523987151537</updated>
+    </task>
+    <task id="LOCAL-02282" summary="Reworded a thing">
+      <created>1523987379808</created>
+      <option name="number" value="02282" />
+      <option name="presentableId" value="LOCAL-02282" />
+      <option name="project" value="LOCAL" />
+      <updated>1523987379808</updated>
+    </task>
+    <option name="localTasksCounter" value="2283" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -733,7 +747,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019305" side_tool="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" visible="true" weight="0.38726515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4980695" weight="0.38726515" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32881" />
       <window_info anchor="right" id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -775,8 +789,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a callback function" />
-    <MESSAGE value="Populating callback" />
     <MESSAGE value="Added controller attribute and implemented close button" />
     <MESSAGE value="Finished update function" />
     <MESSAGE value="Hopefully all that should work" />
@@ -800,7 +812,9 @@
     <MESSAGE value="Options menu buttons click" />
     <MESSAGE value="Finished the wizard dialogue" />
     <MESSAGE value="Created a wizard scene update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a wizard scene update" />
+    <MESSAGE value="Accidental comma" />
+    <MESSAGE value="Reworded a thing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworded a thing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -992,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="115" column="34" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/gamesaves/save1/meta.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1083,13 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="251" lean-forward="true" selection-start-line="251" selection-end-line="251" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/saves/default_entities.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1106,8 +1106,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="107" lean-forward="true" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="107" />
+        <state relative-caret-position="460">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/story_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="118" column="66" selection-start-line="118" selection-start-column="66" selection-end-line="118" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engines/sounds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
         </state>
       </provider>
     </entry>

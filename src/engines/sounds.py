@@ -124,7 +124,7 @@ class SoundEngine:
         self.click.set_volume(1)
         [self.sound_linkup[s].set_volume(0.35) for s in self.speech]
         self.pickup.set_volume(1)
-        self.splat.set_volume(0.5)
+        self.splat.set_volume(0.6)
         self.impact.set_volume(0.5)
         self.potion_fizz.set_volume(0.4)
         self.freeze.set_volume(1)
