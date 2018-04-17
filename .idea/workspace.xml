@@ -18,13 +18,32 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="gui_components.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="438">
+                    <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="380">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -336,13 +355,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02226" summary="Debugging">
-      <created>1523806105691</created>
-      <option name="number" value="02226" />
-      <option name="presentableId" value="LOCAL-02226" />
-      <option name="project" value="LOCAL" />
-      <updated>1523806105691</updated>
     </task>
     <task id="LOCAL-02227" summary="Updated icons.png">
       <created>1523806160207</created>
@@ -680,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523979762890</updated>
     </task>
-    <option name="localTasksCounter" value="2275" />
+    <task id="LOCAL-02275" summary="Moved the buttons on the main menu">
+      <created>1523979890082</created>
+      <option name="number" value="02275" />
+      <option name="presentableId" value="LOCAL-02275" />
+      <option name="project" value="LOCAL" />
+      <updated>1523979890082</updated>
+    </task>
+    <option name="localTasksCounter" value="2276" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,7 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding components" />
     <MESSAGE value="Added update and draw methods" />
     <MESSAGE value="Added a list of buttons" />
     <MESSAGE value="Added spritesheet data for buttons" />
@@ -757,7 +775,8 @@
     <MESSAGE value="So I forgot how sine works lol" />
     <MESSAGE value="Using the unicorn and rabbit bean" />
     <MESSAGE value="Updated the title screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the title screen" />
+    <MESSAGE value="Moved the buttons on the main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the buttons on the main menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1012,13 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/etc/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1061,10 +1073,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/etc/gui_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="380">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>

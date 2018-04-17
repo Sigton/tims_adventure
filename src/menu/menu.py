@@ -48,6 +48,7 @@ class MainMenu:
 
         self.save_select_open = False
         self.options_menu_open = False
+        self.can_click = True
 
     def update(self):
 
@@ -81,6 +82,11 @@ class MainMenu:
             self.background.image = self.normal_background
 
         [button.update() for button in self.buttons]
+
+        if pygame.mouse.get_pressed()[0]:
+            self.can_click = False
+        else:
+            self.can_click = True
 
         if self.save_select_open:
             self.hud.get_component("save_select").update()
