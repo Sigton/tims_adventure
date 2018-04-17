@@ -68,7 +68,7 @@ class Player(pygame.sprite.Sprite):
                     bean.rect.x += self.movement_intervals[n][0]
                     bean.rect.y += self.movement_intervals[n][1]
                     n += 1
-                bean.wobble += 0.5
+                bean.wobble += constants.wobble_speed
 
         [bean.update() for bean in self.beans]
 
