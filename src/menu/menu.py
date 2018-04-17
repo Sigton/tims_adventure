@@ -82,8 +82,10 @@ class MainMenu:
 
         [button.update() for button in self.buttons]
 
-        if self.save_select_open or self.options_menu_open:
-            self.hud.update()
+        if self.save_select_open:
+            self.hud.get_component("save_select").update()
+        elif self.options_menu_open:
+            self.hud.get_component("options_menu").update()
 
     def callback(self, button_id):
 
