@@ -221,7 +221,32 @@ all day!""", 1),
     "wizard": [
         ("Hello there, young travellers.", 1),
         ("Thank you for defending me from those evil beans. I do not have the strength I once did, you saved me.", 1),
-        ("Now, I must ask, why have you sought me out?", 1)
+        ("Now, I must ask, why have you sought me out?", 1),
+        ("Dermot sent us here, he said you might know about the evil beans.", 0),
+        ("Ahh, Dermot. That's a face I haven't seen in a long time. I must give him a visit sometime...", 1),
+        ("Excuse me, sir, the evil beans?", 0),
+        ("""Yes, sorry. Got a little bit distracted there. I do it quite a lot sometimes actua- Ah I'm doing it again, 
+aren't I?""", 1),
+        ("Right. The evil beans. What do you wish to know?", 1),
+        ("Where are they coming from?", 0),
+        (""""The come from the North, that is where the gate to this land is. The once magnificent gates between the 
+lands are now painted black with evil.""", 1),
+        ("""They allow the passage of the evil beans, but any of us survivors wouldn't dream of going anywhere near 
+such treacherous locations.""", 1),
+        ("Is the Jelly Monster on the other side of the gateway?", 0),
+        ("There are many gates before you reach the Jelly Monster. Why do you ask?", 1),
+        ("We're on a quest to destroy the Jelly Monster.", 0),
+        ("You're either brave or foolish, but I suspect probably both.", 1),
+        ("Why are you attempting such a daring adventure?", 1),
+        ("The Elder Villager from the nearby village set me on it. Dan tagged along when I liberated his village", 0),
+        ("The Elder Villager? Ahh. He is wise, wiser than me. He was always the better wizard.", 1),
+        ("He's a wizard?", 0),
+        ("""Oh, yes. So is Dermot. There are a lot of wizards hiding around these days. We can't show ourselves any more, 
+not since the Jelly Monster took over.""", 1),
+        ("Well, will you help us with where to go next?", 0),
+        ("I can do better. I can show you where to go next.", 1),
+        ("Far too long have I sat on this beach. I shall join you on your quest.", 1),
+        ("Thank you, welcome to the team Mr. Wizard!", 0)
     ]
 }
 
