@@ -195,10 +195,10 @@ footstep_sounds = [
 # Performance control
 
 performance_profiles = [
-    {"fps": 60, "loading": 60, "particle": 1, "cooldown": 80, "movement": 16, "wobble_speed": 0.67},
+    {"fps": 60, "loading": 60, "particle": 1, "cooldown": 80, "movement": 16, "wobble_speed": 0.25},
     {"fps": 45, "loading": 45, "particle": 0.75, "cooldown": 60, "movement": 12, "wobble_speed": 0.5},
-    {"fps": 30, "loading": 30, "particle": 0.5, "cooldown": 40, "movement": 8, "wobble_speed": 0.33},
-    {"fps": 15, "loading": 15, "particle": 0.25, "cooldown": 20, "movement": 4, "wobble_speed": 0.25}
+    {"fps": 30, "loading": 30, "particle": 0.5, "cooldown": 40, "movement": 8, "wobble_speed": 0.75},
+    {"fps": 15, "loading": 15, "particle": 0.25, "cooldown": 20, "movement": 4, "wobble_speed": 1}
 ]
 
 
