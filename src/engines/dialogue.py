@@ -39,7 +39,7 @@ class DialogueController:
             "dan": self.add_dan_to_team,
             "hermit": self.update_hermit,
             "lake_warning": self.update_lake_warning,
-            "wizard": self.set_unimportant
+            "wizard": self.update_wizard
         }
 
         self.background = pygame.image.load("src/resources/dialogue_background.png").convert()
@@ -317,6 +317,15 @@ class DialogueController:
             e = self.master.chunk_controller.locate_entity(n)
             e.set_important()
             e.meta.interaction = None
+
+    def update_wizard(self):
+
+        e = self.master.chunk_controller.locate_entity(20)
+
+        e.meta.level = 3
+        self.master.chunk_controller.player.add_bean(e.meta)
+        self.master.chunk_controller.remove_stat_panel(e)
+        self.master.chunk_controller.delete_entity(20)
 
     def set_unimportant(self):
 
