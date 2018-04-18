@@ -133,7 +133,7 @@ Using potions will use up your move, however.""", 1),
         ("""The elder villager told me to come and talk to you. He said you had information 
 for me.""", 0),
         ("Information? Who are you?", 1),
-        ("I'm Tim, and I've bean set on an adventure to conquer the Jelly Monster.", 0),
+        ("I'm Tim, and I've been set on an adventure to conquer the Jelly Monster.", 0),
         ("The Jelly Monster? You are brave.", 1),
         ("Yeah, well about tha-", 0),
         ("Do you know how to fight?", 1),
