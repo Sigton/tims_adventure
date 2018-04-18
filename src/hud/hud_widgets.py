@@ -828,7 +828,7 @@ class OptionsMenu:
 
         self.id = "options_menu"
 
-        self.selected_button = 1
+        self.selected_button = 0
 
         self.images = menu_image_loader.load_images()
 
@@ -892,6 +892,17 @@ class OptionsMenu:
 
             self.controller.close_widget(self.id)
             self.master.options_menu_open = False
+
+    def set_button(self):
+
+        if constants.FPS == 60:
+            self.selected_button = 0
+        elif constants.FPS == 45:
+            self.selected_button = 1
+        elif constants.FPS == 30:
+            self.selected_button = 2
+        else:
+            self.selected_button = 3
 
     def draw(self, display):
 

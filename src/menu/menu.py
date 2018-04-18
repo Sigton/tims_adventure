@@ -105,7 +105,7 @@ class MainMenu:
         elif button_id == 1:
             self.options_menu_open = True
             self.hud.open_widget("options_menu")
-
+            self.hud.get_component("options_menu").set_button()
         else:
             self.master.game_exit = True
 
