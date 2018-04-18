@@ -7,8 +7,6 @@
     <list default="true" id="46c11165-c844-4a56-88f3-4b0db0df5de7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hud/hud_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hud/hud_widgets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/menu.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,38 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hud_widgets.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1639">
-              <caret line="915" column="36" selection-start-line="915" selection-start-column="36" selection-end-line="915" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hud.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+            <state relative-caret-position="219">
+              <caret line="800" column="60" lean-forward="true" selection-start-line="800" selection-start-column="60" selection-end-line="800" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -185,10 +156,10 @@
         <option value="$PROJECT_DIR$/src/etc/story_data.py" />
         <option value="$PROJECT_DIR$/src/saves/default_entities.json" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/hud/hud.py" />
-        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
         <option value="$PROJECT_DIR$/src/menu/menu.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/hud/hud_widgets.py" />
       </list>
     </option>
   </component>
@@ -339,20 +310,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501274942817</updated>
-    </task>
-    <task id="LOCAL-02241" summary="Updated menu buttons">
-      <created>1523896472218</created>
-      <option name="number" value="02241" />
-      <option name="presentableId" value="LOCAL-02241" />
-      <option name="project" value="LOCAL" />
-      <updated>1523896472218</updated>
-    </task>
-    <task id="LOCAL-02242" summary="Creating an options menu">
-      <created>1523896626869</created>
-      <option name="number" value="02242" />
-      <option name="presentableId" value="LOCAL-02242" />
-      <option name="project" value="LOCAL" />
-      <updated>1523896626869</updated>
     </task>
     <task id="LOCAL-02243" summary="Added a close button">
       <created>1523896841648</created>
@@ -683,7 +640,21 @@
       <option name="project" value="LOCAL" />
       <updated>1524065397676</updated>
     </task>
-    <option name="localTasksCounter" value="2290" />
+    <task id="LOCAL-02290" summary="Fixed a bug with the options menu">
+      <created>1524066915084</created>
+      <option name="number" value="02290" />
+      <option name="presentableId" value="LOCAL-02290" />
+      <option name="project" value="LOCAL" />
+      <updated>1524066915085</updated>
+    </task>
+    <task id="LOCAL-02291" summary="Fixed a thing with the image">
+      <created>1524067547973</created>
+      <option name="number" value="02291" />
+      <option name="presentableId" value="LOCAL-02291" />
+      <option name="project" value="LOCAL" />
+      <updated>1524067547973</updated>
+    </task>
+    <option name="localTasksCounter" value="2292" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -735,8 +706,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Mixed up width and height" />
-    <MESSAGE value="Debugging" />
     <MESSAGE value="Created a set movement speed function" />
     <MESSAGE value="Hopefully fixed the problem with the moving speed" />
     <MESSAGE value="Got the function name wrong" />
@@ -760,7 +729,9 @@
     <MESSAGE value="Updated wizards moves" />
     <MESSAGE value="Updated setup.py" />
     <MESSAGE value="Fixed the compass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the compass" />
+    <MESSAGE value="Fixed a bug with the options menu" />
+    <MESSAGE value="Fixed a thing with the image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a thing with the image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1043,13 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hud/hud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1057,17 +1021,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+    <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1639">
-          <caret line="915" column="36" selection-start-line="915" selection-start-column="36" selection-end-line="915" selection-end-column="36" />
+        <state relative-caret-position="379">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
+        <state relative-caret-position="170">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hud/hud_widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="800" column="60" lean-forward="true" selection-start-line="800" selection-start-column="60" selection-end-line="800" selection-end-column="60" />
         </state>
       </provider>
     </entry>

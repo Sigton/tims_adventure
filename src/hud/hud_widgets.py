@@ -762,6 +762,16 @@ class HealingDisplay(ItemSelect):
         self.player_ref = player
         self.player = player.beans[self.controller.get_component("health_display").active_bean_stat]
 
+        self.hint_arrow = gui_components.Label(self.x - 29, self.y - 138, "<-", False, 48, constants.BLACK)
+        self.hint_text1 = gui_components.Label(self.x + 28, self.y - 150, "Hover over the Bean",
+                                               False, 32, constants.BLACK)
+        self.hint_text2 = gui_components.Label(self.x + 28, self.y - 111, "you want to heal!",
+                                               False, 32, constants.BLACK)
+
+        self.components += [self.hint_arrow,
+                            self.hint_text1,
+                            self.hint_text2]
+
         self.refresh()
         self.master.stop_moving()
 
@@ -789,6 +799,17 @@ class HealingDisplay(ItemSelect):
                               self.press_space,
                               self.pointer
                           ] + self.labels + self.item_images
+
+        if len(self.controller.player.beans) > 1:
+            self.hint_arrow = gui_components.Label(self.x - 29, self.y - 138, "<-", False, 48, constants.BLACK)
+            self.hint_text1 = gui_components.Label(self.x + 28, self.y - 150, "Hover over the Bean",
+                                                   False, 32, constants.BLACK)
+            self.hint_text2 = gui_components.Label(self.x + 28, self.y - 111, "you want to heal!",
+                                                   False, 32, constants.BLACK)
+
+            self.components += [self.hint_arrow,
+                                self.hint_text1,
+                                self.hint_text2]
 
     def handle_event(self, e):
 
