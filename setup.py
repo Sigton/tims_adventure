@@ -1,7 +1,7 @@
 import cx_Freeze
 
 executables = [cx_Freeze.Executable(script="src/main.py",
-                                    icon="src/resources/icon.png",
+                                    icon="src/resources/icon.ico",
                                     targetName="Tim's Adventure.exe")]
 
 include_files = ["src"]
