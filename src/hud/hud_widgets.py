@@ -615,7 +615,9 @@ class MapDisplay(TaskGUI):
 
         self.title = gui_components.Label(self.x+9, self.y, "Map", False, 32, constants.BLACK)
 
-        self.components.append(self.title)
+        self.text = gui_components.Label(self.x + 18, self.y+44, "Coming Soon!", False, 32, constants.BLACK)
+
+        self.components += [self.title, self.text]
 
 
 class ItemSelect(InventoryDisplay):
